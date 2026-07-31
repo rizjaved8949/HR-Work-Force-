@@ -41,6 +41,11 @@ services:
       - key: MODEL_PATH
         value: models/catboost_attrition_model.cbm
 
+      # Browser origins allowed to call the API. Replace "*" with the real
+      # frontend URLs once they exist, e.g. https://your-app.vercel.app
+      - key: ALLOWED_ORIGINS
+        value: "*"
+
       - key: SUCCESSOR_LLM_ENABLED
         value: "false"
       - key: SUCCESSOR_OPENROUTER_TIMEOUT_SECONDS

@@ -52,6 +52,7 @@ load_dotenv(REPO_ROOT / ".env")
 
 
 from fastapi import FastAPI, HTTPException  # noqa: E402
+from fastapi.middleware.cors import CORSMiddleware  # noqa: E402
 from fastapi.responses import StreamingResponse  # noqa: E402
 from pydantic import BaseModel, Field  # noqa: E402
 
@@ -133,6 +134,37 @@ app = FastAPI(
         "successor recommendations, and the multilingual HR agent."
     ),
     version="3.0.0",
+)
+
+
+# ============================================================
+# CROSS-ORIGIN ACCESS
+# ============================================================
+# A browser refuses to read this API from a page served on another origin
+# unless the response carries CORS headers. The frontend runs on its own
+# origin (localhost during development, a static site in production), so
+# without this every fetch fails before the handler is ever reached.
+#
+# ALLOWED_ORIGINS is a comma-separated list in .env. "*" allows any origin,
+# which is the sensible default only while there are no cookies or
+# credentials in play. Set it to the real frontend URLs before launch.
+
+_allowed_origins = [
+    origin.strip()
+    for origin in os.getenv("ALLOWED_ORIGINS", "*").split(",")
+    if origin.strip()
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=_allowed_origins,
+
+    # Credentials cannot be combined with the "*" wildcard: the browser
+    # rejects that pairing outright. This API authenticates nothing, so
+    # credentials stay off and the wildcard keeps working.
+    allow_credentials=False,
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["*"],
 )
 
 
