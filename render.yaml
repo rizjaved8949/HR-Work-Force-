@@ -1,0 +1,49 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+#
+# Connect the GitHub repo in the Render dashboard (New > Blueprint) and Render
+# reads this file. Every setting below is applied automatically except the
+# secrets marked `sync: false`, which are typed once in the dashboard.
+
+services:
+  - type: web
+    name: hr-workforce-intelligence-api
+    runtime: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    autoDeploy: true
+
+    envVars:
+      # Secret — set this in the Render dashboard, never in the repo.
+      - key: OPENROUTER_API_KEY
+        sync: false
+
+      - key: OPENROUTER_MODEL
+        value: nvidia/nemotron-3-ultra-550b-a55b:free
+      - key: OPENROUTER_BASE_URL
+        value: https://openrouter.ai/api/v1
+      - key: OPENROUTER_TEMPERATURE
+        value: "0"
+      - key: OPENROUTER_MAX_TOKENS
+        value: "1200"
+      - key: OPENROUTER_MAX_RETRIES
+        value: "3"
+      - key: OPENROUTER_TIMEOUT_SECONDS
+        value: "120"
+      - key: OPENROUTER_REASONING
+        value: "off"
+
+      # Repo-relative paths, resolved against the app root by backend/paths.py.
+      - key: DATA_DIR
+        value: Data
+      - key: MODEL_PATH
+        value: models/catboost_attrition_model.cbm
+
+      - key: SUCCESSOR_LLM_ENABLED
+        value: "false"
+      - key: SUCCESSOR_OPENROUTER_TIMEOUT_SECONDS
+        value: "90"
+      - key: SUCCESSOR_OPENROUTER_MAX_TOKENS
+        value: "900"

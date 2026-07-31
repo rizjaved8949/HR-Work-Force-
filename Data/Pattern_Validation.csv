@@ -1,0 +1,9 @@
+﻿Pattern,Correlation,Expected_Direction,Business_Meaning
+Average skill score vs KPI achievement,0.4,Positive,Higher KPI achievement should generally align with stronger demonstrated skills.
+Performance score vs KPI achievement,0.9,Positive,"Performance score is anchored in KPI achievement but also includes quality, teamwork and manager input."
+Performance score vs performance trend,0.4,Positive,Improving employees should generally receive stronger performance outcomes.
+Attendance score vs absence days,-0.8,Negative,More absence days reduce attendance reliability.
+Teamwork score vs engagement score,0.9,Positive,Engaged employees generally collaborate more effectively.
+Manager rating vs manager relationship,0.5,Positive,"Manager assessment and relationship quality are related, but not identical."
+Experience score vs relevant experience,0.4,Positive,More role-relevant experience generally improves replacement readiness.
+Goal completion vs KPI achievement,0.9,Positive,Goal completion should strongly reflect KPI delivery.

@@ -1,0 +1,201 @@
+﻿Employee_ID,Employee_Name,Department,Position_ID,Designation,Job_Level,Tenure_Months,Years_in_Company,Total_Experience_Years,Relevant_Experience_Years,Years_in_Current_Role,Projects_Completed,High_Impact_Projects,Previous_Same_Role,Previous_Department_Experience,Leadership_Experience_Years,Cross_Functional_Projects,Project_Success_Rate_pct,Experience_Score
+EMP001,Sonia Hassan,HR,POS-001,HR Manager,Lead/Manager,140,11.7,18.7,14.2,5.9,34,7,Yes,No,3.9,13,84.4,97.7
+EMP002,Bilal Aziz,Sales,POS-002,Senior Sales Executive,Mid,37,3.1,6.4,5.1,1.9,14,4,Yes,Yes,0.0,4,89.3,98.4
+EMP003,Kamran Ali,Finance,POS-003,Financial Analyst,Mid,14,1.2,3.4,2.6,1.0,12,2,Yes,No,0.0,3,91.3,96.8
+EMP004,Ali Masood,Finance,POS-004,Financial Analyst,Mid,39,3.2,5.3,4.2,2.1,15,4,Yes,Yes,0.0,3,91.6,98.7
+EMP005,Farhan Shah,Engineering,POS-005,Junior Software Engineer,Junior,16,1.3,1.6,1.3,1.1,2,1,No,No,0.0,0,78.6,80.1
+EMP006,Sehrish Tariq,Engineering,POS-006,Software Engineer,Mid,64,5.3,9.1,6.8,3.2,18,6,No,Yes,0.0,6,85.4,97.8
+EMP007,Sonia Ahmad,Customer Support,POS-007,Support Executive,Junior,34,2.8,4.3,3.9,1.7,9,2,No,Yes,0.0,2,81.8,97.3
+EMP008,Iqra Bashir,Finance,POS-008,Finance Manager,Lead/Manager,145,12.1,21.3,15.5,2.0,34,8,Yes,Yes,4.9,5,81.2,97.2
+EMP009,Hassan Dar,Customer Support,POS-009,Customer Support Manager,Lead/Manager,162,13.5,19.3,14.2,3.1,39,10,Yes,No,6.9,9,84.2,97.6
+EMP010,Salman Shah,Engineering,POS-010,Senior Software Engineer,Senior,50,4.2,10.3,8.2,2.7,23,4,No,Yes,2.3,5,89.4,98.4
+EMP011,Khurram Iqbal,Sales,POS-011,Sales Manager,Lead/Manager,180,15.0,25.0,22.5,0.8,40,10,Yes,No,4.6,16,83.2,97.5
+EMP012,Danish Masood,HR,POS-012,HR Manager,Lead/Manager,102,8.5,19.8,13.3,4.6,34,9,Yes,No,3.4,13,83.9,97.6
+EMP013,Anum Ahmad,HR,POS-013,HR Specialist,Mid,52,4.3,9.4,7.6,0.8,16,5,No,Yes,0.0,6,95.2,99.3
+EMP014,Shahid Ali,Engineering,POS-014,Software Engineer,Mid,23,1.9,5.3,3.5,1.8,11,2,Yes,No,0.0,4,79.2,93.0
+EMP015,Anum Rehman,Engineering,POS-015,Engineering Manager,Lead/Manager,110,9.2,19.0,17.2,2.2,40,9,No,Yes,7.1,8,82.2,97.3
+EMP016,Khurram Gill,Sales,POS-016,Senior Sales Executive,Mid,68,5.7,8.5,6.8,1.4,15,3,No,Yes,0.0,4,79.0,96.8
+EMP017,Amir Haider,Customer Support,POS-017,Support Executive,Junior,22,1.8,3.6,2.7,1.2,9,2,No,Yes,0.0,3,90.7,98.6
+EMP018,Sidra Tariq,Engineering,POS-018,Software Engineer,Mid,61,5.1,6.6,5.4,2.6,16,3,No,Yes,0.0,6,79.1,96.9
+EMP019,Hina Hussain,IT,POS-019,IT Engineer,Mid,15,1.2,4.3,3.6,1.0,15,5,Yes,Yes,0.0,4,86.1,97.9
+EMP020,Waqas Khan,Customer Support,POS-020,Support Executive,Junior,36,3.0,5.0,4.2,3.0,7,2,No,No,0.0,1,83.9,97.6
+EMP021,Usman Khan,Customer Support,POS-021,Support Executive,Junior,36,3.0,3.8,2.7,3.0,4,1,No,No,0.0,1,80.2,88.7
+EMP022,Laiba Raza,Sales,POS-022,Senior Sales Executive,Mid,70,5.8,8.6,7.4,1.9,20,3,No,Yes,0.0,5,85.2,97.8
+EMP023,Fatima Masood,Operations,POS-023,Operations Officer,Junior,18,1.5,3.0,2.6,1.5,3,1,Yes,Yes,0.0,1,77.7,84.2
+EMP024,Fatima Arif,IT,POS-024,IT Engineer,Mid,68,5.7,7.7,6.9,2.9,15,2,No,No,0.0,3,82.0,97.3
+EMP025,Raza Mughal,Finance,POS-025,Financial Analyst,Mid,29,2.4,6.1,4.7,2.3,9,2,No,No,0.0,3,76.7,88.8
+EMP026,Anum Qureshi,Operations,POS-026,Operations Manager,Lead/Manager,143,11.9,23.2,18.6,4.8,40,13,Yes,No,7.5,7,82.0,97.3
+EMP027,Akbar Hassan,Customer Support,POS-027,Senior Support Executive,Mid,57,4.8,9.4,6.9,4.1,17,6,Yes,Yes,0.0,6,79.8,97.0
+EMP028,Salman Aziz,Sales,POS-028,Senior Account Manager,Senior,40,3.3,8.4,7.3,2.6,20,3,Yes,Yes,1.9,6,94.9,99.2
+EMP029,Ali Saleem,Engineering,POS-029,Software Engineer,Mid,58,4.8,6.4,5.5,2.6,10,3,Yes,No,0.0,3,81.7,91.5
+EMP030,Hamza Ahmad,Finance,POS-030,Senior Financial Analyst,Senior,128,10.7,15.7,13.6,1.3,32,5,No,No,1.2,12,88.6,98.3
+EMP031,Sadia Haider,Engineering,POS-031,Senior Software Engineer,Senior,48,4.0,11.6,8.4,0.8,19,2,Yes,Yes,0.3,7,91.8,87.3
+EMP032,Laiba Mahmood,Sales,POS-032,Sales Executive,Junior,8,0.7,2.7,2.3,0.7,6,2,No,Yes,0.0,2,82.8,97.4
+EMP033,Ali Chaudhry,IT,POS-033,Junior IT Engineer,Junior,11,0.9,1.0,0.8,0.9,7,2,No,No,0.0,2,86.5,98.0
+EMP034,Nida Sheikh,Sales,POS-034,Sales Executive,Junior,34,2.8,4.8,3.5,2.2,11,2,Yes,Yes,0.0,2,79.6,96.9
+EMP035,Shahbaz Malik,Engineering,POS-035,Software Engineer,Mid,45,3.8,8.1,6.3,1.4,13,3,No,Yes,0.0,4,87.6,98.1
+EMP036,Zoya Chaudhry,Sales,POS-036,Sales Executive,Junior,5,0.4,0.6,0.5,0.3,3,1,No,No,0.0,1,85.8,84.7
+EMP037,Zara Mahmood,IT,POS-037,IT Engineer,Mid,46,3.8,5.7,4.5,2.3,12,2,Yes,Yes,0.0,4,92.0,96.9
+EMP038,Ali Mahmood,Customer Support,POS-038,Senior Support Executive,Mid,38,3.2,7.2,6.3,2.0,20,5,No,Yes,0.0,6,85.2,97.8
+EMP039,Kamran Hussain,Operations,POS-039,Operations Officer,Junior,8,0.7,1.8,1.1,0.7,4,1,No,Yes,0.0,2,88.5,89.9
+EMP040,Ahmad Sheikh,Customer Support,POS-040,Support Executive,Junior,36,3.0,5.0,3.9,3.0,9,1,No,No,0.0,3,79.2,96.9
+EMP041,Omer Nawaz,Operations,POS-041,Operations Officer,Junior,12,1.0,3.2,2.6,1.0,5,1,Yes,Yes,0.0,2,71.3,91.5
+EMP042,Amna Aslam,Customer Support,POS-042,Senior Support Executive,Mid,43,3.6,6.1,5.3,2.9,18,5,No,Yes,0.0,7,75.7,96.3
+EMP043,Amir Javed,Operations,POS-043,Operations Specialist,Mid,55,4.6,9.8,8.4,1.1,18,6,No,No,0.0,4,88.0,98.2
+EMP044,Hafsa Khan,Finance,POS-044,Financial Analyst,Mid,36,3.0,6.5,5.0,2.2,16,3,Yes,Yes,0.0,5,88.3,98.2
+EMP045,Saad Ahmad,Operations,POS-045,Operations Officer,Junior,11,0.9,2.4,1.9,0.9,9,2,No,Yes,0.0,2,89.5,98.4
+EMP046,Salman Iqbal,Customer Support,POS-046,Support Executive,Junior,35,2.9,3.2,2.7,1.3,5,1,No,No,0.0,1,90.0,94.3
+EMP047,Mahnoor Iqbal,Finance,POS-047,Senior Financial Analyst,Senior,99,8.2,14.8,10.6,0.5,26,5,Yes,Yes,1.7,5,89.9,98.5
+EMP048,Sehrish Shah,Operations,POS-048,Operations Officer,Junior,10,0.8,2.5,1.8,0.8,6,2,Yes,Yes,0.0,2,74.0,96.1
+EMP049,Sara Aslam,Sales,POS-049,Sales Executive,Junior,23,1.9,4.1,2.7,1.2,10,3,Yes,Yes,0.0,2,83.8,97.6
+EMP050,Mohsin Butt,Finance,POS-050,Finance Officer,Junior,10,0.8,2.8,2.3,0.8,2,0,Yes,Yes,0.0,1,78.9,80.2
+EMP051,Asad Ahmad,IT,POS-051,Senior IT Engineer,Senior,122,10.2,16.9,14.2,0.8,33,8,No,Yes,2.1,12,88.5,98.3
+EMP052,Raza Hassan,Customer Support,POS-052,Support Executive,Junior,36,3.0,3.1,2.9,3.0,5,1,No,No,0.0,2,84.8,93.6
+EMP053,Zeeshan Abbasi,HR,POS-053,HR Officer,Junior,34,2.8,3.9,3.1,0.4,5,1,No,No,0.0,1,77.7,92.5
+EMP054,Waqas Aslam,Engineering,POS-054,Junior Software Engineer,Junior,8,0.7,0.7,0.6,0.7,4,1,No,No,0.0,1,83.8,89.2
+EMP055,Sadia Mahmood,Engineering,POS-055,Software Engineer,Mid,10,0.8,4.6,3.5,0.8,11,1,No,Yes,0.0,4,85.9,94.0
+EMP056,Saba Hassan,Operations,POS-056,Operations Specialist,Mid,51,4.2,9.2,6.0,3.5,19,4,No,No,0.0,3,87.4,98.1
+EMP057,Raza Haider,IT,POS-057,Junior IT Engineer,Junior,7,0.6,1.0,0.7,0.6,4,1,No,No,0.0,1,81.7,88.9
+EMP058,Shahid Malik,Engineering,POS-058,Senior Software Engineer,Senior,113,9.4,16.9,13.5,4.0,32,4,Yes,Yes,0.8,10,82.4,94.4
+EMP059,Anum Masood,Sales,POS-059,Senior Account Manager,Senior,122,10.2,14.7,12.4,4.1,33,5,Yes,Yes,1.8,8,80.5,97.1
+EMP060,Mohsin Yousaf,Sales,POS-060,Sales Executive,Junior,15,1.2,3.5,2.2,1.2,4,1,Yes,Yes,0.0,1,85.2,89.4
+EMP061,Asad Bashir,Sales,POS-061,Sales Executive,Junior,29,2.4,3.7,3.0,1.7,10,2,No,Yes,0.0,3,81.5,97.2
+EMP062,Fahad Dar,Sales,POS-062,Senior Sales Executive,Mid,38,3.2,8.2,5.8,0.5,18,2,Yes,No,0.0,6,91.7,98.8
+EMP063,Ahmad Tariq,Sales,POS-063,Sales Executive,Junior,18,1.5,3.9,3.0,1.5,8,2,Yes,Yes,0.0,2,84.4,97.7
+EMP064,Hassan Sheikh,Sales,POS-064,Sales Executive,Junior,24,2.0,4.3,3.2,2.0,12,4,No,Yes,0.0,4,92.9,98.9
+EMP065,Amna Gill,Sales,POS-065,Senior Sales Executive,Mid,17,1.4,3.6,3.1,1.4,13,2,No,Yes,0.0,4,77.8,96.7
+EMP066,Ali Gill,HR,POS-066,Senior HR Specialist,Senior,77,6.4,11.6,8.7,3.6,19,4,No,Yes,2.0,7,82.1,96.1
+EMP067,Nida Hameed,Operations,POS-067,Operations Manager,Lead/Manager,110,9.2,14.8,10.7,3.3,29,5,Yes,Yes,4.0,10,85.6,97.8
+EMP068,Sidra Hussain,Customer Support,POS-068,Customer Support Manager,Lead/Manager,173,14.4,26.4,20.5,3.0,40,11,Yes,Yes,7.8,8,82.9,97.4
+EMP069,Mehwish Hussain,Operations,POS-069,Operations Officer,Junior,18,1.5,4.0,3.4,1.2,9,1,Yes,No,0.0,2,83.2,97.5
+EMP070,Bilal Saeed,Engineering,POS-070,Engineering Manager,Lead/Manager,78,6.5,14.6,10.6,4.3,25,5,Yes,Yes,6.1,7,70.3,94.6
+EMP071,Eman Abbasi,Finance,POS-071,Financial Analyst,Mid,62,5.2,8.7,6.8,4.2,15,4,No,Yes,0.0,3,82.3,97.3
+EMP072,Fahad Hassan,Customer Support,POS-072,Team Lead - Customer Support,Senior,118,9.8,14.3,12.6,0.4,27,4,Yes,Yes,1.2,8,81.1,97.2
+EMP073,Ali Yousaf,Customer Support,POS-073,Support Executive,Junior,11,0.9,1.6,1.2,0.9,3,1,No,No,0.0,1,74.4,83.7
+EMP074,Omer Hameed,Sales,POS-074,Sales Executive,Junior,28,2.3,3.3,3.0,2.1,8,2,No,No,0.0,3,80.1,97.0
+EMP075,Asad Raza,Operations,POS-075,Operations Specialist,Mid,21,1.8,6.4,5.0,1.8,12,3,No,No,0.0,4,84.1,95.7
+EMP076,Fahad Shah,Engineering,POS-076,Software Engineer,Mid,59,4.9,8.1,6.8,1.0,16,5,Yes,No,0.0,6,82.2,97.3
+EMP077,Ahmad Awan,Customer Support,POS-077,Team Lead - Customer Support,Senior,81,6.8,14.2,10.2,1.9,26,5,Yes,Yes,1.7,8,95.1,99.3
+EMP078,Ahmad Nawaz,Engineering,POS-078,Software Engineer,Mid,25,2.1,3.6,3.0,2.0,9,2,Yes,Yes,0.0,2,82.2,89.6
+EMP079,Hina Aslam,Customer Support,POS-079,Support Executive,Junior,5,0.4,2.2,1.6,0.4,2,0,No,Yes,0.0,1,86.6,81.3
+EMP080,Ali Mughal,Engineering,POS-080,Engineering Manager,Lead/Manager,93,7.8,18.8,13.7,1.8,38,10,No,Yes,2.1,6,84.7,95.2
+EMP081,Sonia Arif,HR,POS-081,Senior HR Specialist,Senior,109,9.1,14.4,11.3,0.8,29,8,No,Yes,1.5,11,80.9,97.1
+EMP082,Ali Dar,Engineering,POS-082,Junior Software Engineer,Junior,8,0.7,0.9,0.8,0.7,5,2,No,No,0.0,1,75.2,92.1
+EMP083,Raza Aziz,Customer Support,POS-083,Support Executive,Junior,27,2.2,4.0,3.3,1.9,9,2,Yes,Yes,0.0,3,83.9,97.6
+EMP084,Zara Ullah,HR,POS-084,HR Specialist,Mid,53,4.4,9.3,7.2,2.7,16,5,Yes,Yes,0.0,4,85.3,97.8
+EMP085,Sara Yousaf,HR,POS-085,Senior HR Specialist,Senior,84,7.0,14.8,10.9,1.7,21,6,Yes,No,1.8,7,82.6,97.4
+EMP086,Hina Tariq,Operations,POS-086,Operations Officer,Junior,36,3.0,3.3,2.5,3.0,7,1,No,No,0.0,1,87.1,98.1
+EMP087,Kashif Hameed,HR,POS-087,HR Manager,Lead/Manager,108,9.0,17.3,13.3,0.7,36,9,Yes,Yes,6.1,11,88.3,98.2
+EMP088,Sana Mughal,Operations,POS-088,Operations Specialist,Mid,51,4.2,6.5,5.1,3.4,15,3,No,Yes,0.0,5,87.4,98.1
+EMP089,Muneeb Haider,HR,POS-089,HR Officer,Junior,35,2.9,5.1,4.0,2.9,10,2,Yes,No,0.0,3,94.5,99.2
+EMP090,Noman Ahmad,Finance,POS-090,Financial Analyst,Mid,32,2.7,6.9,5.1,2.3,16,4,No,No,0.0,4,79.6,96.9
+EMP091,Nida Mughal,Finance,POS-091,Senior Financial Analyst,Senior,45,3.8,10.6,7.9,3.0,17,4,Yes,No,1.4,3,84.4,93.9
+EMP092,Mahnoor Ali,Engineering,POS-092,Senior Software Engineer,Senior,42,3.5,7.5,6.6,2.8,18,3,No,Yes,1.3,5,86.0,95.4
+EMP093,Danish Siddiqui,Sales,POS-093,Senior Account Manager,Senior,130,10.8,18.6,14.9,7.2,34,5,Yes,Yes,0.8,12,86.6,95.1
+EMP094,Akbar Abbasi,IT,POS-094,Senior IT Engineer,Senior,104,8.7,15.4,13.7,7.1,24,8,Yes,No,1.6,4,70.7,95.6
+EMP095,Haris Mahmood,IT,POS-095,IT Manager,Lead/Manager,129,10.8,20.1,17.4,2.7,40,7,No,No,5.3,16,87.3,98.1
+EMP096,Ayesha Abbasi,Sales,POS-096,Senior Sales Executive,Mid,14,1.2,6.1,4.9,1.2,10,2,No,Yes,0.0,3,73.9,90.3
+EMP097,Sana Arif,Sales,POS-097,Sales Executive,Junior,7,0.6,0.8,0.6,0.6,5,1,No,No,0.0,1,84.4,93.5
+EMP098,Sidra Zafar,Customer Support,POS-098,Senior Support Executive,Mid,12,1.0,6.3,4.6,1.0,13,4,No,Yes,0.0,5,76.6,96.5
+EMP099,Bilal Aslam,Finance,POS-099,Financial Analyst,Mid,31,2.6,5.8,4.8,2.6,16,2,Yes,No,0.0,2,87.9,98.2
+EMP100,Rabia Javed,Engineering,POS-100,Senior Software Engineer,Senior,94,7.8,15.6,12.1,2.5,23,5,Yes,No,2.0,5,78.6,96.8
+EMP101,Talha Dar,IT,POS-101,IT Engineer,Mid,43,3.6,5.9,5.0,3.0,15,5,Yes,Yes,0.0,5,84.1,97.6
+EMP102,Akbar Gill,Sales,POS-102,Sales Executive,Junior,36,3.0,3.8,3.0,1.7,6,2,No,No,0.0,1,85.3,97.8
+EMP103,Noor Masood,Customer Support,POS-103,Support Executive,Junior,17,1.4,2.1,1.5,0.7,1,0,No,No,0.0,0,75.9,75.6
+EMP104,Rabia Ali,IT,POS-104,Senior IT Engineer,Senior,80,6.7,14.5,11.3,5.2,28,8,Yes,Yes,1.8,9,87.2,98.1
+EMP105,Areeba Raza,Sales,POS-105,Sales Manager,Lead/Manager,179,14.9,24.0,20.3,4.8,40,10,No,Yes,3.6,9,86.3,97.9
+EMP106,Hina Saleem,HR,POS-106,Senior HR Specialist,Senior,66,5.5,9.3,7.9,2.0,26,6,Yes,Yes,0.5,10,92.3,90.7
+EMP107,Zoya Mahmood,Engineering,POS-107,Software Engineer,Mid,37,3.1,7.0,5.3,1.5,14,4,Yes,No,0.0,2,85.8,97.9
+EMP108,Ayesha Ahmad,HR,POS-108,HR Specialist,Mid,30,2.5,7.0,5.1,2.0,16,5,Yes,No,0.0,3,87.4,98.1
+EMP109,Ali Farooq,Sales,POS-109,Sales Executive,Junior,14,1.2,1.6,1.3,1.0,4,1,No,No,0.0,1,87.8,89.8
+EMP110,Arslan Masood,IT,POS-110,Junior IT Engineer,Junior,10,0.8,2.4,1.8,0.3,5,1,Yes,Yes,0.0,1,86.4,93.8
+EMP111,Sadia Bashir,Sales,POS-111,Senior Sales Executive,Mid,55,4.6,7.3,6.4,2.4,16,3,No,Yes,0.0,4,79.3,96.9
+EMP112,Sara Javed,Sales,POS-112,Sales Executive,Junior,10,0.8,1.5,1.1,0.8,4,1,No,No,0.0,1,93.7,90.7
+EMP113,Shahbaz Gill,IT,POS-113,Junior IT Engineer,Junior,16,1.3,3.3,2.5,1.1,1,0,Yes,Yes,0.0,0,81.8,76.4
+EMP114,Hamza Hussain,HR,POS-114,HR Specialist,Mid,44,3.7,6.8,5.4,2.0,16,2,Yes,No,0.0,3,81.1,97.2
+EMP115,Hafsa Abbasi,Engineering,POS-115,Software Engineer,Mid,12,1.0,5.3,4.4,1.0,17,4,Yes,Yes,0.0,4,94.9,99.2
+EMP116,Ali Abbasi,Engineering,POS-116,Junior Software Engineer,Junior,18,1.5,3.1,2.3,1.4,7,2,No,Yes,0.0,2,88.3,98.2
+EMP117,Saad Ullah,Engineering,POS-117,Junior Software Engineer,Junior,36,3.0,4.9,3.7,3.0,11,2,No,Yes,0.0,3,80.5,97.1
+EMP118,Zoya Ali,Customer Support,POS-118,Senior Support Executive,Mid,20,1.7,5.5,4.2,1.2,9,3,Yes,Yes,0.0,1,80.5,89.4
+EMP119,Ayesha Nawaz,Customer Support,POS-119,Team Lead - Customer Support,Senior,103,8.6,12.4,8.6,2.1,21,5,Yes,Yes,1.9,3,75.1,96.3
+EMP120,Ahmad Aziz,Operations,POS-120,Operations Specialist,Mid,64,5.3,10.2,7.8,1.3,20,4,Yes,Yes,0.0,5,91.6,98.7
+EMP121,Mehwish Tariq,Operations,POS-121,Operations Officer,Junior,36,3.0,4.3,3.6,3.0,10,3,No,No,0.0,3,73.3,96.0
+EMP122,Hafsa Ullah,Operations,POS-122,Operations Officer,Junior,12,1.0,1.4,1.1,1.0,6,1,No,No,0.0,2,86.3,97.9
+EMP123,Sehrish Ullah,Finance,POS-123,Senior Financial Analyst,Senior,59,4.9,12.9,9.1,2.2,23,7,Yes,Yes,2.1,5,85.0,97.7
+EMP124,Fahad Javed,Sales,POS-124,Senior Sales Executive,Mid,36,3.0,4.8,3.7,3.0,9,3,Yes,No,0.0,3,75.8,88.7
+EMP125,Fatima Zafar,Sales,POS-125,Senior Account Manager,Senior,124,10.3,17.8,14.2,1.2,32,5,No,No,2.1,11,83.1,97.5
+EMP126,Laiba Sheikh,Customer Support,POS-126,Team Lead - Customer Support,Senior,40,3.3,7.8,6.0,2.8,15,4,Yes,Yes,1.6,2,87.6,91.9
+EMP127,Khurram Yousaf,HR,POS-127,HR Specialist,Mid,13,1.1,3.2,2.5,1.0,6,1,Yes,Yes,0.0,2,87.2,84.6
+EMP128,Zoya Farooq,Customer Support,POS-128,Customer Support Manager,Lead/Manager,120,10.0,18.2,14.6,6.8,36,9,Yes,No,7.8,11,84.8,97.7
+EMP129,Danish Dar,Engineering,POS-129,Engineering Manager,Lead/Manager,165,13.8,26.0,19.8,1.7,40,9,Yes,Yes,5.5,13,92.0,98.8
+EMP130,Waqas Siddiqui,HR,POS-130,Senior HR Specialist,Senior,108,9.0,17.2,14.9,0.8,39,13,Yes,Yes,0.4,8,91.3,90.2
+EMP131,Ahmad Yousaf,IT,POS-131,IT Engineer,Mid,39,3.2,7.7,6.5,3.2,14,2,Yes,Yes,0.0,2,77.9,96.7
+EMP132,Arham Qureshi,IT,POS-132,Junior IT Engineer,Junior,6,0.5,2.1,1.4,0.5,7,1,No,Yes,0.0,3,79.5,96.9
+EMP133,Usman Raza,Engineering,POS-133,Software Engineer,Mid,72,6.0,10.7,7.6,3.2,19,6,Yes,Yes,0.0,7,83.6,97.5
+EMP134,Talha Awan,IT,POS-134,IT Engineer,Mid,44,3.7,9.1,7.6,2.9,16,5,No,Yes,0.0,2,87.2,98.1
+EMP135,Eman Butt,Customer Support,POS-135,Senior Support Executive,Mid,46,3.8,7.9,6.3,1.1,14,3,Yes,No,0.0,2,85.0,97.7
+EMP136,Fatima Saleem,HR,POS-136,HR Specialist,Mid,36,3.0,5.6,4.2,1.9,12,4,No,Yes,0.0,2,85.0,95.8
+EMP137,Areeba Farooq,Customer Support,POS-137,Support Executive,Junior,32,2.7,2.9,2.2,1.2,7,2,No,No,0.0,1,78.9,96.8
+EMP138,Amir Saleem,Engineering,POS-138,Software Engineer,Mid,18,1.5,4.4,3.8,1.2,9,3,Yes,No,0.0,3,69.0,87.7
+EMP139,Iqra Saeed,Operations,POS-139,Operations Officer,Junior,34,2.8,3.6,3.1,1.2,9,3,No,No,0.0,3,85.7,97.9
+EMP140,Noman Rehman,Finance,POS-140,Senior Financial Analyst,Senior,128,10.7,15.1,12.5,2.0,29,8,Yes,No,1.9,11,89.8,98.5
+EMP141,Asad Zafar,Operations,POS-141,Operations Manager,Lead/Manager,149,12.4,23.8,18.4,5.0,37,6,Yes,Yes,7.9,12,73.7,96.1
+EMP142,Fahad Farooq,Engineering,POS-142,Engineering Manager,Lead/Manager,132,11.0,20.5,16.5,2.8,40,7,Yes,Yes,3.3,9,91.4,98.7
+EMP143,Hamza Awan,Finance,POS-143,Financial Analyst,Mid,47,3.9,5.6,4.4,1.0,13,2,Yes,No,0.0,2,90.1,98.5
+EMP144,Imran Ullah,Customer Support,POS-144,Customer Support Manager,Lead/Manager,122,10.2,21.3,17.3,1.2,40,8,No,No,4.2,10,78.5,96.8
+EMP145,Ahsan Anwar,Sales,POS-145,Senior Sales Executive,Mid,56,4.7,8.6,6.8,1.0,11,3,No,No,0.0,3,84.5,93.8
+EMP146,Talha Khan,Finance,POS-146,Financial Analyst,Mid,50,4.2,8.3,6.1,0.4,16,4,Yes,Yes,0.0,5,82.5,97.4
+EMP147,Hassan Javed,Customer Support,POS-147,Customer Support Manager,Lead/Manager,64,5.3,15.7,12.2,5.0,32,6,No,Yes,5.0,8,75.9,96.4
+EMP148,Sadia Malik,Sales,POS-148,Sales Executive,Junior,4,0.3,1.9,1.4,0.3,3,1,No,Yes,0.0,1,87.8,85.7
+EMP149,Muneeb Hameed,Operations,POS-149,Operations Specialist,Mid,42,3.5,9.0,6.3,1.2,14,2,Yes,Yes,0.0,5,92.0,98.8
+EMP150,Sana Nawaz,Customer Support,POS-150,Support Executive,Junior,17,1.4,2.2,1.8,1.3,3,1,No,No,0.0,1,72.8,83.4
+EMP151,Farhan Rehman,Engineering,POS-151,Junior Software Engineer,Junior,12,1.0,1.3,0.9,1.0,2,0,No,No,0.0,1,81.3,80.5
+EMP152,Mahnoor Tariq,IT,POS-152,Senior IT Engineer,Senior,112,9.3,17.7,13.7,3.6,32,8,No,Yes,1.9,12,87.8,98.2
+EMP153,Kashif Abbasi,Engineering,POS-153,Software Engineer,Mid,56,4.7,8.1,6.2,3.6,15,3,Yes,No,0.0,4,76.3,96.4
+EMP154,Hina Abbasi,Engineering,POS-154,Junior Software Engineer,Junior,15,1.2,2.8,2.0,1.2,4,1,Yes,Yes,0.0,1,81.6,88.9
+EMP155,Noman Malik,Customer Support,POS-155,Senior Support Executive,Mid,39,3.2,7.8,6.0,2.9,18,3,No,Yes,0.0,3,81.8,97.3
+EMP156,Asad Malik,Engineering,POS-156,Software Engineer,Mid,32,2.7,7.4,4.6,2.4,16,3,Yes,No,0.0,2,90.1,98.5
+EMP157,Saba Qureshi,Operations,POS-157,Operations Officer,Junior,11,0.9,3.4,2.8,0.7,9,2,No,Yes,0.0,2,88.5,98.3
+EMP158,Imran Zafar,Operations,POS-158,Operations Officer,Junior,36,3.0,4.9,4.2,3.0,9,3,Yes,Yes,0.0,2,86.7,98.0
+EMP159,Raza Ahmad,Engineering,POS-159,Senior Software Engineer,Senior,77,6.4,12.8,10.3,3.6,31,7,Yes,Yes,1.9,12,77.7,96.7
+EMP160,Rabia Ullah,Finance,POS-160,Senior Financial Analyst,Senior,85,7.1,13.0,9.8,0.2,24,4,Yes,No,2.1,6,88.5,98.3
+EMP161,Iqra Yousaf,Finance,POS-161,Financial Analyst,Mid,70,5.8,8.7,7.7,1.7,16,2,No,Yes,0.0,3,85.1,97.8
+EMP162,Bilal Shah,Customer Support,POS-162,Support Executive,Junior,6,0.5,1.3,1.0,0.5,9,2,No,No,0.0,3,89.1,98.4
+EMP163,Sidra Sheikh,Engineering,POS-163,Software Engineer,Mid,11,0.9,4.1,2.9,0.9,11,3,No,Yes,0.0,2,83.1,93.6
+EMP164,Zoya Saleem,Sales,POS-164,Sales Executive,Junior,31,2.6,3.2,3.0,1.2,6,2,No,No,0.0,1,82.3,97.3
+EMP165,Waqas Butt,Sales,POS-165,Sales Executive,Junior,12,1.0,2.0,1.9,1.0,5,1,No,Yes,0.0,2,73.8,91.9
+EMP166,Arslan Siddiqui,Sales,POS-166,Sales Manager,Lead/Manager,64,5.3,16.1,13.6,5.0,30,5,Yes,Yes,2.7,9,83.1,97.5
+EMP167,Bilal Raza,Sales,POS-167,Senior Sales Executive,Mid,48,4.0,9.0,6.8,2.2,18,3,Yes,Yes,0.0,7,87.0,98.1
+EMP168,Akbar Saleem,Customer Support,POS-168,Team Lead - Customer Support,Senior,39,3.2,6.8,4.5,3.0,13,4,Yes,No,1.7,4,82.0,88.6
+EMP169,Iqra Qureshi,IT,POS-169,IT Manager,Lead/Manager,147,12.2,24.4,17.9,0.7,40,8,Yes,Yes,4.0,12,85.4,97.8
+EMP170,Hina Ahmad,Customer Support,POS-170,Senior Support Executive,Mid,36,3.0,6.6,5.3,3.0,12,3,No,Yes,0.0,5,80.7,95.2
+EMP171,Usman Ullah,IT,POS-171,IT Manager,Lead/Manager,122,10.2,19.2,14.2,0.8,34,7,Yes,Yes,4.8,10,82.1,97.3
+EMP172,Zoya Hassan,Operations,POS-172,Operations Specialist,Mid,63,5.2,6.9,5.7,1.9,14,5,Yes,No,0.0,4,71.5,95.7
+EMP173,Sidra Abbasi,Finance,POS-173,Senior Financial Analyst,Senior,44,3.7,8.6,6.4,3.7,20,3,Yes,Yes,1.2,5,73.2,96.0
+EMP174,Hassan Aslam,Sales,POS-174,Senior Sales Executive,Mid,44,3.7,5.5,4.4,2.4,11,3,Yes,Yes,0.0,4,74.3,92.3
+EMP175,Hassan Arif,Operations,POS-175,Operations Specialist,Mid,6,0.5,4.2,2.8,0.5,12,4,No,Yes,0.0,5,90.0,96.6
+EMP176,Ahsan Aziz,Sales,POS-176,Senior Account Manager,Senior,111,9.2,13.2,9.4,0.8,24,8,Yes,Yes,1.3,9,79.6,96.9
+EMP177,Danish Anwar,HR,POS-177,HR Specialist,Mid,37,3.1,6.4,5.2,2.7,13,2,No,Yes,0.0,3,75.2,96.3
+EMP178,Fatima Rehman,Sales,POS-178,Sales Executive,Junior,5,0.4,2.9,1.8,0.4,3,1,No,Yes,0.0,1,87.8,85.7
+EMP179,Muneeb Javed,Operations,POS-179,Operations Officer,Junior,17,1.4,3.1,2.6,1.1,7,2,Yes,No,0.0,1,85.8,97.9
+EMP180,Arham Hussain,Customer Support,POS-180,Support Executive,Junior,12,1.0,2.5,2.1,1.0,8,2,No,Yes,0.0,2,80.2,97.0
+EMP181,Saad Yousaf,Operations,POS-181,Operations Officer,Junior,17,1.4,2.7,2.0,1.2,2,0,No,Yes,0.0,1,83.2,80.8
+EMP182,Waqas Ahmad,Sales,POS-182,Senior Sales Executive,Mid,23,1.9,7.3,5.4,1.3,17,6,Yes,Yes,0.0,6,89.2,98.4
+EMP183,Zain Saleem,IT,POS-183,Junior IT Engineer,Junior,36,3.0,4.4,3.6,3.0,9,3,No,Yes,0.0,3,83.0,97.5
+EMP184,Iqra Hassan,Operations,POS-184,Operations Officer,Junior,12,1.0,1.4,0.9,1.0,3,1,No,No,0.0,1,75.5,83.8
+EMP185,Salman Hameed,Finance,POS-185,Senior Financial Analyst,Senior,88,7.3,11.3,9.1,3.8,22,6,Yes,No,0.4,8,81.6,88.8
+EMP186,Zara Masood,IT,POS-186,IT Engineer,Mid,20,1.7,5.3,3.3,1.0,13,3,Yes,Yes,0.0,5,85.0,97.8
+EMP187,Nida Mahmood,Operations,POS-187,Operations Officer,Junior,30,2.5,4.0,3.1,1.2,8,2,No,Yes,0.0,1,75.1,96.3
+EMP188,Areeba Ahmad,IT,POS-188,Senior IT Engineer,Senior,112,9.3,15.2,13.6,1.2,25,7,No,Yes,1.5,4,81.4,97.2
+EMP189,Omer Masood,Engineering,POS-189,Engineering Manager,Lead/Manager,53,4.4,16.2,11.8,2.2,32,9,No,Yes,3.8,5,82.0,97.3
+EMP190,Noor Saeed,HR,POS-190,HR Officer,Junior,18,1.5,1.9,1.7,1.5,2,1,No,No,0.0,1,74.3,79.5
+EMP191,Danish Yousaf,Operations,POS-191,Operations Specialist,Mid,56,4.7,9.7,8.3,3.8,26,4,Yes,Yes,0.0,7,87.4,98.1
+EMP192,Kashif Hussain,Sales,POS-192,Sales Executive,Junior,31,2.6,4.6,4.1,1.3,7,2,Yes,Yes,0.0,2,82.3,97.3
+EMP193,Zain Qureshi,Operations,POS-193,Operations Officer,Junior,8,0.7,0.8,0.6,0.5,6,1,No,No,0.0,1,94.3,99.1
+EMP194,Shahid Ahmad,Customer Support,POS-194,Senior Support Executive,Mid,8,0.7,4.2,3.1,0.7,9,2,Yes,Yes,0.0,2,85.5,90.1
+EMP195,Mohsin Khan,Engineering,POS-195,Engineering Manager,Lead/Manager,104,8.7,15.5,12.4,1.7,32,6,Yes,Yes,2.2,11,83.7,95.7
+EMP196,Mohsin Abbasi,Engineering,POS-196,Software Engineer,Mid,27,2.2,6.2,5.4,2.1,16,2,Yes,Yes,0.0,4,82.8,97.4
+EMP197,Zeeshan Qureshi,HR,POS-197,HR Manager,Lead/Manager,56,4.7,14.3,11.5,4.4,29,10,No,No,6.2,7,85.8,97.9
+EMP198,Ali Tariq,Operations,POS-198,Operations Officer,Junior,18,1.5,1.6,1.4,1.5,1,0,No,No,0.0,0,84.8,76.9
+EMP199,Zara Tariq,Customer Support,POS-199,Support Executive,Junior,22,1.8,4.2,3.5,1.8,7,1,Yes,Yes,0.0,2,88.8,98.3
+EMP200,Ahmad Abbasi,Customer Support,POS-200,Senior Support Executive,Mid,42,3.5,6.7,4.8,3.3,14,3,Yes,Yes,0.0,3,89.6,98.4

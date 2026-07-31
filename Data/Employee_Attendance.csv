@@ -1,0 +1,201 @@
+﻿Employee_ID,Employee_Name,Department,Position_ID,Attendance_Period,Scheduled_Working_Days,Present_Days,Approved_Leave_Days,Absent_Days,Unapproved_Absent_Days,Late_Arrivals,Overtime_Hours_Last_30D,Attendance_Percentage,Punctuality_Percentage,Attendance_Score,Attendance_Status
+EMP001,Sonia Hassan,HR,POS-001,Last 90 Days,65,63,2,0,0,5,4,100.0,92.1,98.0,Excellent
+EMP002,Bilal Aziz,Sales,POS-002,Last 90 Days,65,61,4,0,0,7,8,100.0,88.5,97.1,Excellent
+EMP003,Kamran Ali,Finance,POS-003,Last 90 Days,65,62,1,2,0,0,0,96.9,100.0,97.7,Excellent
+EMP004,Ali Masood,Finance,POS-004,Last 90 Days,65,62,1,2,0,3,32,96.9,95.2,96.4,Excellent
+EMP005,Farhan Shah,Engineering,POS-005,Last 90 Days,65,60,4,1,1,1,14,98.4,98.3,95.4,Excellent
+EMP006,Sehrish Tariq,Engineering,POS-006,Last 90 Days,65,63,0,2,0,3,33,96.9,95.2,96.5,Excellent
+EMP007,Sonia Ahmad,Customer Support,POS-007,Last 90 Days,65,62,3,0,0,2,22,100.0,96.8,99.2,Excellent
+EMP008,Iqra Bashir,Finance,POS-008,Last 90 Days,65,61,4,0,0,3,13,100.0,95.1,98.8,Excellent
+EMP009,Hassan Dar,Customer Support,POS-009,Last 90 Days,65,65,0,0,0,4,25,100.0,93.8,98.5,Excellent
+EMP010,Salman Shah,Engineering,POS-010,Last 90 Days,65,61,3,1,0,5,22,98.4,91.8,96.7,Excellent
+EMP011,Khurram Iqbal,Sales,POS-011,Last 90 Days,65,60,4,1,0,0,7,98.4,100.0,98.8,Excellent
+EMP012,Danish Masood,HR,POS-012,Last 90 Days,65,62,2,1,0,6,28,98.4,90.3,96.4,Excellent
+EMP013,Anum Ahmad,HR,POS-013,Last 90 Days,65,64,0,1,0,4,14,98.5,93.8,97.3,Excellent
+EMP014,Shahid Ali,Engineering,POS-014,Last 90 Days,65,65,0,0,0,2,11,100.0,96.9,99.2,Excellent
+EMP015,Anum Rehman,Engineering,POS-015,Last 90 Days,65,61,4,0,0,4,14,100.0,93.4,98.4,Excellent
+EMP016,Khurram Gill,Sales,POS-016,Last 90 Days,65,62,1,2,0,7,30,96.9,88.7,94.8,Excellent
+EMP017,Amir Haider,Customer Support,POS-017,Last 90 Days,65,62,1,2,0,6,40,96.9,90.3,95.2,Excellent
+EMP018,Sidra Tariq,Engineering,POS-018,Last 90 Days,65,61,3,1,1,6,29,98.4,90.2,93.3,Needs Improvement
+EMP019,Hina Hussain,IT,POS-019,Last 90 Days,65,58,4,3,0,5,18,95.1,91.4,94.2,Excellent
+EMP020,Waqas Khan,Customer Support,POS-020,Last 90 Days,65,62,3,0,0,3,20,100.0,95.2,98.8,Excellent
+EMP021,Usman Khan,Customer Support,POS-021,Last 90 Days,65,62,3,0,0,2,21,100.0,96.8,99.2,Excellent
+EMP022,Laiba Raza,Sales,POS-022,Last 90 Days,65,61,2,2,0,2,15,96.8,96.7,96.8,Excellent
+EMP023,Fatima Masood,Operations,POS-023,Last 90 Days,65,59,4,2,0,3,36,96.7,94.9,96.3,Excellent
+EMP024,Fatima Arif,IT,POS-024,Last 90 Days,65,63,0,2,0,1,20,96.9,98.4,97.3,Excellent
+EMP025,Raza Mughal,Finance,POS-025,Last 90 Days,65,64,1,0,0,5,30,100.0,92.2,98.0,Excellent
+EMP026,Anum Qureshi,Operations,POS-026,Last 90 Days,65,62,1,2,1,9,27,96.9,85.5,91.0,Needs Improvement
+EMP027,Akbar Hassan,Customer Support,POS-027,Last 90 Days,65,61,2,2,1,10,46,96.8,83.6,90.5,Needs Improvement
+EMP028,Salman Aziz,Sales,POS-028,Last 90 Days,65,59,3,3,0,8,36,95.2,86.4,93.0,Needs Improvement
+EMP029,Ali Saleem,Engineering,POS-029,Last 90 Days,65,63,1,1,0,6,38,98.4,90.5,96.4,Excellent
+EMP030,Hamza Ahmad,Finance,POS-030,Last 90 Days,65,63,1,1,0,6,8,98.4,90.5,96.4,Excellent
+EMP031,Sadia Haider,Engineering,POS-031,Last 90 Days,65,61,3,1,0,3,8,98.4,95.1,97.6,Excellent
+EMP032,Laiba Mahmood,Sales,POS-032,Last 90 Days,65,64,1,0,0,2,19,100.0,96.9,99.2,Excellent
+EMP033,Ali Chaudhry,IT,POS-033,Last 90 Days,65,63,2,0,0,5,28,100.0,92.1,98.0,Excellent
+EMP034,Nida Sheikh,Sales,POS-034,Last 90 Days,65,64,1,0,0,6,22,100.0,90.6,97.7,Excellent
+EMP035,Shahbaz Malik,Engineering,POS-035,Last 90 Days,65,63,1,1,0,4,26,98.4,93.7,97.2,Excellent
+EMP036,Zoya Chaudhry,Sales,POS-036,Last 90 Days,65,60,4,1,0,4,14,98.4,93.3,97.1,Excellent
+EMP037,Zara Mahmood,IT,POS-037,Last 90 Days,65,61,3,1,0,0,19,98.4,100.0,98.8,Excellent
+EMP038,Ali Mahmood,Customer Support,POS-038,Last 90 Days,65,62,3,0,0,6,47,100.0,90.3,97.6,Excellent
+EMP039,Kamran Hussain,Operations,POS-039,Last 90 Days,65,64,1,0,0,3,22,100.0,95.3,98.8,Excellent
+EMP040,Ahmad Sheikh,Customer Support,POS-040,Last 90 Days,65,61,4,0,0,6,29,100.0,90.2,97.5,Excellent
+EMP041,Omer Nawaz,Operations,POS-041,Last 90 Days,65,64,0,1,0,4,30,98.5,93.8,97.3,Excellent
+EMP042,Amna Aslam,Customer Support,POS-042,Last 90 Days,65,60,3,2,0,6,29,96.8,90.0,95.1,Excellent
+EMP043,Amir Javed,Operations,POS-043,Last 90 Days,65,62,2,1,0,6,46,98.4,90.3,96.4,Excellent
+EMP044,Hafsa Khan,Finance,POS-044,Last 90 Days,65,63,2,0,0,3,19,100.0,95.2,98.8,Excellent
+EMP045,Saad Ahmad,Operations,POS-045,Last 90 Days,65,58,4,3,0,8,39,95.1,86.2,92.9,Needs Improvement
+EMP046,Salman Iqbal,Customer Support,POS-046,Last 90 Days,65,63,2,0,0,3,25,100.0,95.2,98.8,Excellent
+EMP047,Mahnoor Iqbal,Finance,POS-047,Last 90 Days,65,63,2,0,0,4,10,100.0,93.7,98.4,Excellent
+EMP048,Sehrish Shah,Operations,POS-048,Last 90 Days,65,60,1,4,0,3,61,93.8,95.0,94.1,Excellent
+EMP049,Sara Aslam,Sales,POS-049,Last 90 Days,65,60,3,2,1,7,39,96.8,88.3,91.7,Needs Improvement
+EMP050,Mohsin Butt,Finance,POS-050,Last 90 Days,65,64,0,1,0,3,14,98.5,95.3,97.7,Excellent
+EMP051,Asad Ahmad,IT,POS-051,Last 90 Days,65,65,0,0,0,2,22,100.0,96.9,99.2,Excellent
+EMP052,Raza Hassan,Customer Support,POS-052,Last 90 Days,65,64,1,0,0,5,25,100.0,92.2,98.0,Excellent
+EMP053,Zeeshan Abbasi,HR,POS-053,Last 90 Days,65,65,0,0,0,4,0,100.0,93.8,98.5,Excellent
+EMP054,Waqas Aslam,Engineering,POS-054,Last 90 Days,65,59,4,2,0,9,30,96.7,84.7,93.7,Excellent
+EMP055,Sadia Mahmood,Engineering,POS-055,Last 90 Days,65,62,1,2,1,3,34,96.9,95.2,93.4,Excellent
+EMP056,Saba Hassan,Operations,POS-056,Last 90 Days,65,62,3,0,0,1,24,100.0,98.4,99.6,Excellent
+EMP057,Raza Haider,IT,POS-057,Last 90 Days,65,63,0,2,0,4,43,96.9,93.7,96.1,Excellent
+EMP058,Shahid Malik,Engineering,POS-058,Last 90 Days,65,64,0,1,1,7,27,98.5,89.1,93.1,Needs Improvement
+EMP059,Anum Masood,Sales,POS-059,Last 90 Days,65,64,1,0,0,2,26,100.0,96.9,99.2,Excellent
+EMP060,Mohsin Yousaf,Sales,POS-060,Last 90 Days,65,62,3,0,0,5,21,100.0,91.9,98.0,Excellent
+EMP061,Asad Bashir,Sales,POS-061,Last 90 Days,65,64,1,0,0,5,17,100.0,92.2,98.0,Excellent
+EMP062,Fahad Dar,Sales,POS-062,Last 90 Days,65,61,4,0,0,0,6,100.0,100.0,100.0,Excellent
+EMP063,Ahmad Tariq,Sales,POS-063,Last 90 Days,65,62,3,0,0,5,7,100.0,91.9,98.0,Excellent
+EMP064,Hassan Sheikh,Sales,POS-064,Last 90 Days,65,60,4,1,0,3,31,98.4,95.0,97.5,Excellent
+EMP065,Amna Gill,Sales,POS-065,Last 90 Days,65,62,3,0,0,13,23,100.0,79.0,94.8,Excellent
+EMP066,Ali Gill,HR,POS-066,Last 90 Days,65,61,3,1,1,6,7,98.4,90.2,93.3,Excellent
+EMP067,Nida Hameed,Operations,POS-067,Last 90 Days,65,60,0,5,1,9,48,92.3,85.0,87.5,Needs Improvement
+EMP068,Sidra Hussain,Customer Support,POS-068,Last 90 Days,65,64,1,0,0,4,1,100.0,93.8,98.4,Excellent
+EMP069,Mehwish Hussain,Operations,POS-069,Last 90 Days,65,61,3,1,0,7,19,98.4,88.5,95.9,Excellent
+EMP070,Bilal Saeed,Engineering,POS-070,Last 90 Days,65,58,4,3,0,4,12,95.1,93.1,94.6,Excellent
+EMP071,Eman Abbasi,Finance,POS-071,Last 90 Days,65,59,4,2,0,2,35,96.7,96.6,96.7,Excellent
+EMP072,Fahad Hassan,Customer Support,POS-072,Last 90 Days,65,62,3,0,0,4,4,100.0,93.5,98.4,Excellent
+EMP073,Ali Yousaf,Customer Support,POS-073,Last 90 Days,65,62,0,3,1,5,42,95.4,91.9,91.5,Needs Improvement
+EMP074,Omer Hameed,Sales,POS-074,Last 90 Days,65,60,3,2,0,8,34,96.8,86.7,94.2,Excellent
+EMP075,Asad Raza,Operations,POS-075,Last 90 Days,65,61,4,0,0,2,17,100.0,96.7,99.2,Excellent
+EMP076,Fahad Shah,Engineering,POS-076,Last 90 Days,65,64,1,0,0,6,2,100.0,90.6,97.7,Excellent
+EMP077,Ahmad Awan,Customer Support,POS-077,Last 90 Days,65,65,0,0,0,2,17,100.0,96.9,99.2,Excellent
+EMP078,Ahmad Nawaz,Engineering,POS-078,Last 90 Days,65,59,4,2,0,6,20,96.7,89.8,95.0,Excellent
+EMP079,Hina Aslam,Customer Support,POS-079,Last 90 Days,65,64,0,1,0,2,11,98.5,96.9,98.1,Excellent
+EMP080,Ali Mughal,Engineering,POS-080,Last 90 Days,65,64,1,0,0,2,16,100.0,96.9,99.2,Excellent
+EMP081,Sonia Arif,HR,POS-081,Last 90 Days,65,60,3,2,0,4,0,96.8,93.3,95.9,Excellent
+EMP082,Ali Dar,Engineering,POS-082,Last 90 Days,65,64,1,0,0,0,22,100.0,100.0,100.0,Excellent
+EMP083,Raza Aziz,Customer Support,POS-083,Last 90 Days,65,62,3,0,0,3,31,100.0,95.2,98.8,Excellent
+EMP084,Zara Ullah,HR,POS-084,Last 90 Days,65,60,3,2,0,12,10,96.8,80.0,92.6,Needs Improvement
+EMP085,Sara Yousaf,HR,POS-085,Last 90 Days,65,63,1,1,0,1,22,98.4,98.4,98.4,Excellent
+EMP086,Hina Tariq,Operations,POS-086,Last 90 Days,65,64,1,0,0,0,24,100.0,100.0,100.0,Excellent
+EMP087,Kashif Hameed,HR,POS-087,Last 90 Days,65,61,3,1,0,7,3,98.4,88.5,95.9,Excellent
+EMP088,Sana Mughal,Operations,POS-088,Last 90 Days,65,62,3,0,0,2,25,100.0,96.8,99.2,Excellent
+EMP089,Muneeb Haider,HR,POS-089,Last 90 Days,65,62,2,1,0,2,22,98.4,96.8,98.0,Excellent
+EMP090,Noman Ahmad,Finance,POS-090,Last 90 Days,65,64,1,0,0,6,16,100.0,90.6,97.7,Excellent
+EMP091,Nida Mughal,Finance,POS-091,Last 90 Days,65,61,4,0,0,0,4,100.0,100.0,100.0,Excellent
+EMP092,Mahnoor Ali,Engineering,POS-092,Last 90 Days,65,62,3,0,0,4,27,100.0,93.5,98.4,Excellent
+EMP093,Danish Siddiqui,Sales,POS-093,Last 90 Days,65,63,2,0,0,1,11,100.0,98.4,99.6,Excellent
+EMP094,Akbar Abbasi,IT,POS-094,Last 90 Days,65,60,4,1,0,2,25,98.4,96.7,97.9,Excellent
+EMP095,Haris Mahmood,IT,POS-095,Last 90 Days,65,63,2,0,0,0,28,100.0,100.0,100.0,Excellent
+EMP096,Ayesha Abbasi,Sales,POS-096,Last 90 Days,65,62,3,0,0,6,42,100.0,90.3,97.6,Excellent
+EMP097,Sana Arif,Sales,POS-097,Last 90 Days,65,63,2,0,0,3,15,100.0,95.2,98.8,Excellent
+EMP098,Sidra Zafar,Customer Support,POS-098,Last 90 Days,65,63,0,2,2,7,27,96.9,88.9,88.9,Needs Improvement
+EMP099,Bilal Aslam,Finance,POS-099,Last 90 Days,65,64,1,0,0,4,18,100.0,93.8,98.4,Excellent
+EMP100,Rabia Javed,Engineering,POS-100,Last 90 Days,65,61,1,3,1,6,29,95.3,90.2,91.0,Needs Improvement
+EMP101,Talha Dar,IT,POS-101,Last 90 Days,65,65,0,0,0,0,32,100.0,100.0,100.0,Excellent
+EMP102,Akbar Gill,Sales,POS-102,Last 90 Days,65,64,0,1,0,1,17,98.5,98.4,98.5,Excellent
+EMP103,Noor Masood,Customer Support,POS-103,Last 90 Days,65,65,0,0,0,0,18,100.0,100.0,100.0,Excellent
+EMP104,Rabia Ali,IT,POS-104,Last 90 Days,65,59,4,2,0,9,18,96.7,84.7,93.7,Excellent
+EMP105,Areeba Raza,Sales,POS-105,Last 90 Days,65,61,2,2,0,3,16,96.8,95.1,96.4,Excellent
+EMP106,Hina Saleem,HR,POS-106,Last 90 Days,65,62,3,0,0,2,6,100.0,96.8,99.2,Excellent
+EMP107,Zoya Mahmood,Engineering,POS-107,Last 90 Days,65,65,0,0,0,1,31,100.0,98.5,99.6,Excellent
+EMP108,Ayesha Ahmad,HR,POS-108,Last 90 Days,65,61,4,0,0,1,11,100.0,98.4,99.6,Excellent
+EMP109,Ali Farooq,Sales,POS-109,Last 90 Days,65,59,2,4,1,7,36,93.7,88.1,89.3,Needs Improvement
+EMP110,Arslan Masood,IT,POS-110,Last 90 Days,65,61,3,1,0,1,11,98.4,98.4,98.4,Excellent
+EMP111,Sadia Bashir,Sales,POS-111,Last 90 Days,65,61,4,0,0,5,27,100.0,91.8,98.0,Excellent
+EMP112,Sara Javed,Sales,POS-112,Last 90 Days,65,65,0,0,0,2,24,100.0,96.9,99.2,Excellent
+EMP113,Shahbaz Gill,IT,POS-113,Last 90 Days,65,61,4,0,0,5,15,100.0,91.8,98.0,Excellent
+EMP114,Hamza Hussain,HR,POS-114,Last 90 Days,65,63,2,0,0,4,12,100.0,93.7,98.4,Excellent
+EMP115,Hafsa Abbasi,Engineering,POS-115,Last 90 Days,65,62,3,0,0,1,30,100.0,98.4,99.6,Excellent
+EMP116,Ali Abbasi,Engineering,POS-116,Last 90 Days,65,59,2,4,0,6,34,93.7,89.8,92.7,Needs Improvement
+EMP117,Saad Ullah,Engineering,POS-117,Last 90 Days,65,59,4,2,0,6,21,96.7,89.8,95.0,Excellent
+EMP118,Zoya Ali,Customer Support,POS-118,Last 90 Days,65,62,3,0,0,6,16,100.0,90.3,97.6,Excellent
+EMP119,Ayesha Nawaz,Customer Support,POS-119,Last 90 Days,65,61,2,2,0,1,43,96.8,98.4,97.2,Excellent
+EMP120,Ahmad Aziz,Operations,POS-120,Last 90 Days,65,60,4,1,0,2,16,98.4,96.7,97.9,Excellent
+EMP121,Mehwish Tariq,Operations,POS-121,Last 90 Days,65,62,2,1,0,0,30,98.4,100.0,98.8,Excellent
+EMP122,Hafsa Ullah,Operations,POS-122,Last 90 Days,65,62,3,0,0,0,27,100.0,100.0,100.0,Excellent
+EMP123,Sehrish Ullah,Finance,POS-123,Last 90 Days,65,60,4,1,0,2,11,98.4,96.7,97.9,Excellent
+EMP124,Fahad Javed,Sales,POS-124,Last 90 Days,65,64,0,1,0,0,43,98.5,100.0,98.8,Excellent
+EMP125,Fatima Zafar,Sales,POS-125,Last 90 Days,65,61,4,0,0,6,16,100.0,90.2,97.5,Excellent
+EMP126,Laiba Sheikh,Customer Support,POS-126,Last 90 Days,65,59,3,3,0,7,35,95.2,88.1,93.4,Excellent
+EMP127,Khurram Yousaf,HR,POS-127,Last 90 Days,65,62,3,0,0,2,0,100.0,96.8,99.2,Excellent
+EMP128,Zoya Farooq,Customer Support,POS-128,Last 90 Days,65,64,0,1,0,6,30,98.5,90.6,96.5,Excellent
+EMP129,Danish Dar,Engineering,POS-129,Last 90 Days,65,62,3,0,0,1,11,100.0,98.4,99.6,Excellent
+EMP130,Waqas Siddiqui,HR,POS-130,Last 90 Days,65,61,3,1,0,6,0,98.4,90.2,96.3,Excellent
+EMP131,Ahmad Yousaf,IT,POS-131,Last 90 Days,65,62,3,0,0,0,17,100.0,100.0,100.0,Excellent
+EMP132,Arham Qureshi,IT,POS-132,Last 90 Days,65,59,2,4,1,6,40,93.7,89.8,89.7,Needs Improvement
+EMP133,Usman Raza,Engineering,POS-133,Last 90 Days,65,61,4,0,0,5,33,100.0,91.8,98.0,Excellent
+EMP134,Talha Awan,IT,POS-134,Last 90 Days,65,59,3,3,2,10,34,95.2,83.1,86.1,Needs Improvement
+EMP135,Eman Butt,Customer Support,POS-135,Last 90 Days,65,63,1,1,0,3,17,98.4,95.2,97.6,Excellent
+EMP136,Fatima Saleem,HR,POS-136,Last 90 Days,65,64,0,1,0,1,13,98.5,98.4,98.5,Excellent
+EMP137,Areeba Farooq,Customer Support,POS-137,Last 90 Days,65,60,4,1,0,5,53,98.4,91.7,96.7,Excellent
+EMP138,Amir Saleem,Engineering,POS-138,Last 90 Days,65,59,1,5,1,3,35,92.2,94.9,89.9,Needs Improvement
+EMP139,Iqra Saeed,Operations,POS-139,Last 90 Days,65,62,2,1,0,3,27,98.4,95.2,97.6,Excellent
+EMP140,Noman Rehman,Finance,POS-140,Last 90 Days,65,63,2,0,0,5,3,100.0,92.1,98.0,Excellent
+EMP141,Asad Zafar,Operations,POS-141,Last 90 Days,65,62,3,0,0,5,9,100.0,91.9,98.0,Excellent
+EMP142,Fahad Farooq,Engineering,POS-142,Last 90 Days,65,61,2,2,1,3,8,96.8,95.1,93.4,Excellent
+EMP143,Hamza Awan,Finance,POS-143,Last 90 Days,65,64,1,0,0,6,13,100.0,90.6,97.7,Excellent
+EMP144,Imran Ullah,Customer Support,POS-144,Last 90 Days,65,60,3,2,1,3,22,96.8,95.0,93.3,Excellent
+EMP145,Ahsan Anwar,Sales,POS-145,Last 90 Days,65,61,4,0,0,0,10,100.0,100.0,100.0,Excellent
+EMP146,Talha Khan,Finance,POS-146,Last 90 Days,65,61,3,1,1,3,2,98.4,95.1,94.6,Excellent
+EMP147,Hassan Javed,Customer Support,POS-147,Last 90 Days,65,62,2,1,0,7,32,98.4,88.7,96.0,Excellent
+EMP148,Sadia Malik,Sales,POS-148,Last 90 Days,65,62,2,1,0,0,38,98.4,100.0,98.8,Excellent
+EMP149,Muneeb Hameed,Operations,POS-149,Last 90 Days,65,64,1,0,0,7,17,100.0,89.1,97.3,Excellent
+EMP150,Sana Nawaz,Customer Support,POS-150,Last 90 Days,65,60,3,2,1,3,52,96.8,95.0,93.3,Excellent
+EMP151,Farhan Rehman,Engineering,POS-151,Last 90 Days,65,62,0,3,0,3,43,95.4,95.2,95.3,Excellent
+EMP152,Mahnoor Tariq,IT,POS-152,Last 90 Days,65,62,3,0,0,5,26,100.0,91.9,98.0,Excellent
+EMP153,Kashif Abbasi,Engineering,POS-153,Last 90 Days,65,60,3,2,0,8,22,96.8,86.7,94.2,Excellent
+EMP154,Hina Abbasi,Engineering,POS-154,Last 90 Days,65,61,3,1,1,4,28,98.4,93.4,94.2,Excellent
+EMP155,Noman Malik,Customer Support,POS-155,Last 90 Days,65,63,2,0,0,6,35,100.0,90.5,97.6,Excellent
+EMP156,Asad Malik,Engineering,POS-156,Last 90 Days,65,64,1,0,0,1,28,100.0,98.4,99.6,Excellent
+EMP157,Saba Qureshi,Operations,POS-157,Last 90 Days,65,61,4,0,0,6,9,100.0,90.2,97.5,Excellent
+EMP158,Imran Zafar,Operations,POS-158,Last 90 Days,65,64,1,0,0,5,29,100.0,92.2,98.0,Excellent
+EMP159,Raza Ahmad,Engineering,POS-159,Last 90 Days,65,60,3,2,1,6,37,96.8,90.0,92.1,Needs Improvement
+EMP160,Rabia Ullah,Finance,POS-160,Last 90 Days,65,64,0,1,1,5,8,98.5,92.2,93.9,Excellent
+EMP161,Iqra Yousaf,Finance,POS-161,Last 90 Days,65,61,3,1,1,4,0,98.4,93.4,94.2,Excellent
+EMP162,Bilal Shah,Customer Support,POS-162,Last 90 Days,65,61,3,1,0,5,35,98.4,91.8,96.7,Excellent
+EMP163,Sidra Sheikh,Engineering,POS-163,Last 90 Days,65,63,0,2,0,4,26,96.9,93.7,96.1,Excellent
+EMP164,Zoya Saleem,Sales,POS-164,Last 90 Days,65,61,3,1,0,4,32,98.4,93.4,97.2,Excellent
+EMP165,Waqas Butt,Sales,POS-165,Last 90 Days,65,63,1,1,0,6,38,98.4,90.5,96.4,Excellent
+EMP166,Arslan Siddiqui,Sales,POS-166,Last 90 Days,65,64,0,1,0,5,26,98.5,92.2,96.9,Excellent
+EMP167,Bilal Raza,Sales,POS-167,Last 90 Days,65,60,3,2,1,9,26,96.8,85.0,90.8,Needs Improvement
+EMP168,Akbar Saleem,Customer Support,POS-168,Last 90 Days,65,62,1,2,0,6,56,96.9,90.3,95.2,Excellent
+EMP169,Iqra Qureshi,IT,POS-169,Last 90 Days,65,62,2,1,0,4,12,98.4,93.5,97.2,Excellent
+EMP170,Hina Ahmad,Customer Support,POS-170,Last 90 Days,65,62,3,0,0,2,22,100.0,96.8,99.2,Excellent
+EMP171,Usman Ullah,IT,POS-171,Last 90 Days,65,62,2,1,0,1,12,98.4,98.4,98.4,Excellent
+EMP172,Zoya Hassan,Operations,POS-172,Last 90 Days,65,61,3,1,1,4,31,98.4,93.4,94.2,Excellent
+EMP173,Sidra Abbasi,Finance,POS-173,Last 90 Days,65,63,2,0,0,4,15,100.0,93.7,98.4,Excellent
+EMP174,Hassan Aslam,Sales,POS-174,Last 90 Days,65,62,2,1,0,5,20,98.4,91.9,96.8,Excellent
+EMP175,Hassan Arif,Operations,POS-175,Last 90 Days,65,62,3,0,0,2,9,100.0,96.8,99.2,Excellent
+EMP176,Ahsan Aziz,Sales,POS-176,Last 90 Days,65,65,0,0,0,4,7,100.0,93.8,98.5,Excellent
+EMP177,Danish Anwar,HR,POS-177,Last 90 Days,65,64,0,1,0,11,29,98.5,82.8,94.5,Excellent
+EMP178,Fatima Rehman,Sales,POS-178,Last 90 Days,65,60,3,2,0,7,21,96.8,88.3,94.7,Excellent
+EMP179,Muneeb Javed,Operations,POS-179,Last 90 Days,65,60,4,1,0,5,40,98.4,91.7,96.7,Excellent
+EMP180,Arham Hussain,Customer Support,POS-180,Last 90 Days,65,63,2,0,0,7,25,100.0,88.9,97.2,Excellent
+EMP181,Saad Yousaf,Operations,POS-181,Last 90 Days,65,64,1,0,0,7,8,100.0,89.1,97.3,Excellent
+EMP182,Waqas Ahmad,Sales,POS-182,Last 90 Days,65,63,1,1,0,2,7,98.4,96.8,98.0,Excellent
+EMP183,Zain Saleem,IT,POS-183,Last 90 Days,65,64,0,1,0,4,21,98.5,93.8,97.3,Excellent
+EMP184,Iqra Hassan,Operations,POS-184,Last 90 Days,65,61,3,1,0,4,24,98.4,93.4,97.2,Excellent
+EMP185,Salman Hameed,Finance,POS-185,Last 90 Days,65,63,2,0,0,0,26,100.0,100.0,100.0,Excellent
+EMP186,Zara Masood,IT,POS-186,Last 90 Days,65,60,3,2,0,4,8,96.8,93.3,95.9,Excellent
+EMP187,Nida Mahmood,Operations,POS-187,Last 90 Days,65,59,4,2,1,2,48,96.7,96.6,93.7,Excellent
+EMP188,Areeba Ahmad,IT,POS-188,Last 90 Days,65,62,2,1,0,4,18,98.4,93.5,97.2,Excellent
+EMP189,Omer Masood,Engineering,POS-189,Last 90 Days,65,61,2,2,0,6,48,96.8,90.2,95.2,Excellent
+EMP190,Noor Saeed,HR,POS-190,Last 90 Days,65,58,4,3,0,0,13,95.1,100.0,96.3,Excellent
+EMP191,Danish Yousaf,Operations,POS-191,Last 90 Days,65,61,3,1,0,7,14,98.4,88.5,95.9,Excellent
+EMP192,Kashif Hussain,Sales,POS-192,Last 90 Days,65,63,2,0,0,0,23,100.0,100.0,100.0,Excellent
+EMP193,Zain Qureshi,Operations,POS-193,Last 90 Days,65,58,4,3,0,5,10,95.1,91.4,94.2,Excellent
+EMP194,Shahid Ahmad,Customer Support,POS-194,Last 90 Days,65,64,1,0,0,2,28,100.0,96.9,99.2,Excellent
+EMP195,Mohsin Khan,Engineering,POS-195,Last 90 Days,65,61,4,0,0,5,19,100.0,91.8,98.0,Excellent
+EMP196,Mohsin Abbasi,Engineering,POS-196,Last 90 Days,65,63,2,0,0,3,27,100.0,95.2,98.8,Excellent
+EMP197,Zeeshan Qureshi,HR,POS-197,Last 90 Days,65,61,2,2,0,9,31,96.8,85.2,93.9,Excellent
+EMP198,Ali Tariq,Operations,POS-198,Last 90 Days,65,61,3,1,0,3,27,98.4,95.1,97.6,Excellent
+EMP199,Zara Tariq,Customer Support,POS-199,Last 90 Days,65,63,1,1,0,3,37,98.4,95.2,97.6,Excellent
+EMP200,Ahmad Abbasi,Customer Support,POS-200,Last 90 Days,65,60,2,3,1,8,39,95.2,86.7,90.1,Needs Improvement

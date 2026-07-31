@@ -1,0 +1,201 @@
+﻿Employee_ID,Employee_Name,Department,Job_Level,Work_Mode,Shift_Type,Tenure_Months,Monthly_Salary_PKR,Salary_vs_Market_pct,Last_Increment_pct,Months_Since_Last_Promotion,KPI_Achievement_pct,Performance_Trend_6M,Overtime_Hours_Last_30D,Absence_Days_Last_90D,Engagement_Score,Job_Satisfaction_Score,Work_Life_Balance_Score,Manager_Relationship_Score,Career_Growth_Score,Commute_Minutes_One_Way,Manager_Changed_Last_6M,Pay_Concern_Raised_Last_6M,Will_Resign_in_Next_6_Months
+EMP001,Sonia Hassan,HR,Lead/Manager,Hybrid,Day,140,233000,5.3,5.7,71,100.1,0.5,4,0,3.7,4.5,4.4,3.9,2.1,33,No,No,Yes
+EMP002,Bilal Aziz,Sales,Mid,Onsite,Rotational,37,132000,19.5,8.8,23,99.2,0.5,8,0,5.0,5.0,4.1,4.9,3.5,53,No,No,No
+EMP003,Kamran Ali,Finance,Mid,Remote,Day,14,100000,-8.9,5.5,12,104.9,0.2,0,2,3.8,4.3,4.7,4.2,4.4,5,No,No,No
+EMP004,Ali Masood,Finance,Mid,Onsite,Day,39,96000,-13.0,2.8,25,107.0,-0.1,32,2,3.3,2.8,2.9,3.7,3.3,35,No,Yes,Yes
+EMP005,Farhan Shah,Engineering,Junior,Remote,Day,16,72000,4.8,6.9,13,73.1,-0.0,14,1,3.0,3.9,4.1,1.8,4.8,1,No,No,Yes
+EMP006,Sehrish Tariq,Engineering,Mid,Hybrid,Day,64,93000,-23.3,4.6,39,102.4,-0.5,33,2,2.8,1.8,3.3,3.0,2.7,18,No,Yes,Yes
+EMP007,Sonia Ahmad,Customer Support,Junior,Onsite,Day,34,54000,9.2,7.0,20,94.1,-0.0,22,0,4.1,4.8,3.1,4.4,3.6,82,No,No,No
+EMP008,Iqra Bashir,Finance,Lead/Manager,Onsite,Day,145,224000,-11.2,15.0,24,84.2,0.3,13,0,4.2,4.6,3.8,4.4,3.8,63,No,No,No
+EMP009,Hassan Dar,Customer Support,Lead/Manager,Hybrid,Night,162,170000,-13.4,8.5,37,107.3,-0.2,25,0,3.0,2.7,2.1,3.0,3.5,48,No,No,Yes
+EMP010,Salman Shah,Engineering,Senior,Hybrid,Day,50,180000,-5.3,7.1,32,97.1,-0.2,22,1,3.8,4.0,2.9,3.5,3.8,63,Yes,No,No
+EMP011,Khurram Iqbal,Sales,Lead/Manager,Onsite,Day,180,283000,12.3,5.7,9,86.9,0.1,7,1,4.6,4.9,4.2,4.1,4.9,28,No,No,No
+EMP012,Danish Masood,HR,Lead/Manager,Onsite,Rotational,102,223000,1.0,2.0,55,103.7,-0.3,28,1,2.9,2.5,2.6,2.4,2.9,100,Yes,No,Yes
+EMP013,Anum Ahmad,HR,Mid,Hybrid,Day,52,102000,5.7,10.5,9,97.0,0.3,14,1,4.0,4.2,3.8,4.3,4.3,43,No,No,No
+EMP014,Shahid Ali,Engineering,Mid,Onsite,Day,23,123000,1.9,12.8,21,94.6,-0.1,11,0,4.6,5.0,3.4,4.2,4.1,83,No,No,No
+EMP015,Anum Rehman,Engineering,Lead/Manager,Onsite,Day,110,262000,-5.0,7.8,26,86.4,0.2,14,0,4.0,4.7,3.7,3.7,3.8,46,Yes,Yes,No
+EMP016,Khurram Gill,Sales,Mid,Hybrid,Rotational,68,110000,-0.6,7.5,17,74.5,-0.2,30,2,3.0,3.3,2.1,3.0,4.0,69,No,No,Yes
+EMP017,Amir Haider,Customer Support,Junior,Remote,Rotational,22,43000,-12.8,6.2,14,104.4,0.8,40,2,3.1,2.9,1.9,3.3,4.5,6,No,No,Yes
+EMP018,Sidra Tariq,Engineering,Mid,Onsite,Day,61,113000,-6.0,7.4,31,87.2,-0.0,29,1,2.0,2.1,2.3,1.2,3.4,39,Yes,No,Yes
+EMP019,Hina Hussain,IT,Mid,Onsite,Night,15,103000,-10.5,7.8,12,107.5,-0.1,18,3,3.6,2.8,2.4,2.5,4.5,85,No,No,No
+EMP020,Waqas Khan,Customer Support,Junior,Onsite,Day,36,42000,-15.4,8.0,36,97.7,-0.1,20,0,3.3,2.9,3.3,3.3,2.9,28,No,No,Yes
+EMP021,Usman Khan,Customer Support,Junior,Remote,Day,36,45000,-8.9,5.4,36,81.4,0.1,21,0,3.5,4.0,3.4,3.5,3.4,2,No,No,Yes
+EMP022,Laiba Raza,Sales,Mid,Hybrid,Day,70,119000,7.8,11.1,23,88.6,0.5,15,2,4.4,5.0,3.7,4.1,3.4,35,No,No,No
+EMP023,Fatima Masood,Operations,Junior,Onsite,Day,18,49000,-11.2,6.6,18,81.9,-0.0,36,2,2.7,2.6,3.4,2.8,4.1,52,No,No,Yes
+EMP024,Fatima Arif,IT,Mid,Hybrid,Day,68,129000,11.8,7.2,35,91.2,0.2,20,2,3.8,4.8,3.7,2.8,3.8,43,No,No,No
+EMP025,Raza Mughal,Finance,Mid,Hybrid,Rotational,29,99000,-10.3,7.0,28,95.9,-0.4,30,0,3.4,3.2,2.3,2.9,4.3,63,No,No,Yes
+EMP026,Anum Qureshi,Operations,Lead/Manager,Hybrid,Day,143,234000,6.0,8.3,58,77.1,-0.1,27,2,1.6,2.4,3.0,1.0,2.1,56,Yes,No,Yes
+EMP027,Akbar Hassan,Customer Support,Mid,Onsite,Rotational,57,84000,-2.5,8.8,49,84.7,-0.0,46,2,2.5,3.1,2.0,2.3,2.3,90,No,No,Yes
+EMP028,Salman Aziz,Sales,Senior,Onsite,Rotational,40,154000,-11.2,5.0,31,105.1,0.3,36,3,3.2,3.1,2.2,3.1,3.4,69,No,Yes,Yes
+EMP029,Ali Saleem,Engineering,Mid,Hybrid,Rotational,58,130000,8.0,6.3,31,90.7,0.1,38,1,3.8,4.5,2.1,4.5,3.4,19,No,No,Yes
+EMP030,Hamza Ahmad,Finance,Senior,Onsite,Day,128,189000,9.2,9.3,16,96.4,0.6,8,1,4.6,5.0,3.8,3.9,3.8,87,No,No,No
+EMP031,Sadia Haider,Engineering,Senior,Onsite,Day,48,213000,12.4,9.4,9,98.2,0.6,8,1,4.7,5.0,3.6,3.9,4.2,62,No,No,No
+EMP032,Laiba Mahmood,Sales,Junior,Onsite,Day,8,62000,-1.1,8.9,8,84.0,0.1,19,0,3.4,3.8,3.3,3.0,4.4,65,Yes,No,Yes
+EMP033,Ali Chaudhry,IT,Junior,Onsite,Day,11,56000,-14.7,4.4,11,108.5,0.4,28,0,3.6,2.9,3.4,3.8,3.6,41,No,Yes,Yes
+EMP034,Nida Sheikh,Sales,Junior,Onsite,Rotational,34,60000,-4.2,5.4,26,90.9,0.1,22,0,2.8,2.9,3.4,2.0,3.5,43,Yes,No,No
+EMP035,Shahbaz Malik,Engineering,Mid,Hybrid,Day,45,118000,-2.0,7.0,17,87.4,0.4,26,1,3.5,3.3,3.2,3.4,4.2,42,No,No,No
+EMP036,Zoya Chaudhry,Sales,Junior,Onsite,Day,5,65000,2.9,6.2,4,88.3,0.1,14,1,4.9,5.0,3.7,4.5,4.7,30,No,No,No
+EMP037,Zara Mahmood,IT,Mid,Hybrid,Day,46,112000,-3.1,9.3,28,78.8,0.3,19,1,2.9,3.6,3.7,3.0,3.5,13,No,No,No
+EMP038,Ali Mahmood,Customer Support,Mid,Remote,Rotational,38,82000,-4.3,8.1,24,103.0,-0.1,47,0,2.7,3.0,1.9,2.0,3.6,10,No,No,Yes
+EMP039,Kamran Hussain,Operations,Junior,Hybrid,Day,8,51000,-8.4,5.5,8,88.9,0.1,22,0,3.1,3.2,2.5,3.6,4.6,62,No,Yes,Yes
+EMP040,Ahmad Sheikh,Customer Support,Junior,Onsite,Night,36,45000,-7.8,9.4,36,92.8,-0.2,29,0,3.0,2.9,2.3,2.7,2.7,41,Yes,Yes,Yes
+EMP041,Omer Nawaz,Operations,Junior,Onsite,Rotational,12,52000,-5.1,7.0,12,81.5,-0.2,30,1,2.9,3.6,2.8,3.1,4.5,55,No,No,Yes
+EMP042,Amna Aslam,Customer Support,Mid,Hybrid,Night,43,90000,4.9,7.2,35,92.6,0.1,29,2,3.2,3.6,2.5,2.3,3.2,31,No,No,No
+EMP043,Amir Javed,Operations,Mid,Onsite,Rotational,55,91000,-5.5,8.8,13,83.4,0.3,46,1,3.3,3.4,2.1,3.2,4.6,62,No,No,Yes
+EMP044,Hafsa Khan,Finance,Mid,Onsite,Day,36,98000,-10.8,4.2,26,97.4,0.2,19,0,3.0,3.2,4.1,2.7,3.5,56,Yes,Yes,Yes
+EMP045,Saad Ahmad,Operations,Junior,Onsite,Rotational,11,56000,0.7,9.1,11,112.6,-0.1,39,3,4.3,4.1,2.1,3.9,4.5,67,No,Yes,No
+EMP046,Salman Iqbal,Customer Support,Junior,Onsite,Day,35,44000,-10.4,8.4,16,93.2,0.1,25,0,3.0,2.8,3.0,2.3,3.4,39,No,No,Yes
+EMP047,Mahnoor Iqbal,Finance,Senior,Onsite,Day,99,187000,8.1,9.3,6,92.8,0.2,10,0,4.5,5.0,3.6,4.3,4.1,59,No,No,No
+EMP048,Sehrish Shah,Operations,Junior,Hybrid,Rotational,10,51000,-7.5,8.2,10,90.5,-0.8,61,4,3.4,2.9,1.1,3.3,3.8,54,Yes,No,Yes
+EMP049,Sara Aslam,Sales,Junior,Onsite,Rotational,23,61000,-3.8,9.4,15,94.7,0.2,39,2,3.5,3.8,1.8,3.9,4.3,54,No,No,Yes
+EMP050,Mohsin Butt,Finance,Junior,Hybrid,Day,10,59000,-5.6,5.3,10,80.1,-0.0,14,1,2.8,2.5,3.8,3.0,3.7,56,No,No,No
+EMP051,Asad Ahmad,IT,Senior,Remote,Day,122,170000,-6.5,7.6,9,89.4,0.6,22,0,3.9,4.0,3.1,4.0,4.5,3,No,No,No
+EMP052,Raza Hassan,Customer Support,Junior,Hybrid,Day,36,45000,-8.2,6.4,36,92.8,-0.5,25,0,3.0,3.5,4.2,2.2,3.3,65,No,Yes,Yes
+EMP053,Zeeshan Abbasi,HR,Junior,Onsite,Day,34,59000,6.0,12.1,5,76.3,0.5,0,0,4.5,5.0,4.2,4.9,4.7,84,No,No,No
+EMP054,Waqas Aslam,Engineering,Junior,Onsite,Day,8,55000,-20.1,6.0,8,105.9,0.5,30,2,3.9,2.7,2.6,3.0,4.6,87,No,No,Yes
+EMP055,Sadia Mahmood,Engineering,Mid,Onsite,Day,10,116000,-4.0,5.5,10,83.4,0.0,34,2,3.0,2.8,2.4,3.3,3.9,62,No,No,Yes
+EMP056,Saba Hassan,Operations,Mid,Onsite,Day,51,96000,-0.7,6.8,42,100.2,0.1,24,0,3.1,3.3,3.2,3.4,2.5,24,No,No,No
+EMP057,Raza Haider,IT,Junior,Remote,Rotational,7,62000,-6.3,7.3,7,79.6,0.2,43,2,3.2,3.6,1.6,3.0,4.0,8,No,No,Yes
+EMP058,Shahid Malik,Engineering,Senior,Onsite,Day,113,175000,-7.8,8.4,48,93.1,-0.5,27,1,2.3,2.7,3.4,2.0,2.3,89,No,No,Yes
+EMP059,Anum Masood,Sales,Senior,Onsite,Day,122,173000,0.0,5.3,49,102.5,-0.1,26,0,3.5,3.6,3.1,3.6,3.0,21,No,No,Yes
+EMP060,Mohsin Yousaf,Sales,Junior,Onsite,Rotational,15,50000,-21.2,5.9,15,105.2,0.0,21,0,2.8,2.1,2.7,2.7,3.9,80,Yes,No,Yes
+EMP061,Asad Bashir,Sales,Junior,Onsite,Day,29,65000,2.4,9.0,20,78.6,-0.0,17,0,4.1,4.8,3.3,3.7,3.7,64,No,No,No
+EMP062,Fahad Dar,Sales,Mid,Hybrid,Day,38,112000,1.7,10.0,6,101.9,0.5,6,0,4.8,5.0,4.6,4.2,4.7,36,No,No,No
+EMP063,Ahmad Tariq,Sales,Junior,Hybrid,Rotational,18,60000,-4.4,5.6,18,73.7,0.4,7,0,2.9,3.6,4.3,2.1,4.0,61,Yes,No,Yes
+EMP064,Hassan Sheikh,Sales,Junior,Hybrid,Day,24,49000,-22.4,4.9,24,110.8,-0.3,31,1,2.9,2.4,3.1,3.2,3.3,42,Yes,No,Yes
+EMP065,Amna Gill,Sales,Mid,Onsite,Rotational,17,107000,-3.4,6.5,17,85.3,-0.2,23,0,2.9,3.1,2.9,1.5,4.2,97,Yes,No,No
+EMP066,Ali Gill,HR,Senior,Onsite,Day,77,154000,1.7,7.9,43,76.4,0.1,7,1,2.3,3.6,3.5,1.6,2.8,25,Yes,No,No
+EMP067,Nida Hameed,Operations,Lead/Manager,Onsite,Rotational,110,176000,-20.4,9.2,40,95.3,-0.1,48,5,2.3,1.6,1.2,2.8,3.5,85,No,Yes,Yes
+EMP068,Sidra Hussain,Customer Support,Lead/Manager,Onsite,Rotational,173,218000,11.0,3.5,36,82.4,0.1,1,0,4.0,5.0,5.0,4.0,3.4,53,No,No,No
+EMP069,Mehwish Hussain,Operations,Junior,Hybrid,Night,18,56000,1.8,4.3,15,106.0,-0.1,19,1,2.4,3.1,2.9,1.5,4.0,68,Yes,No,No
+EMP070,Bilal Saeed,Engineering,Lead/Manager,Hybrid,Day,78,276000,0.0,6.2,52,79.2,-0.0,12,3,3.2,3.9,4.0,3.1,2.2,58,Yes,No,No
+EMP071,Eman Abbasi,Finance,Mid,Hybrid,Day,62,113000,2.7,9.2,50,78.3,-0.1,35,2,2.5,3.3,2.9,1.8,3.1,37,No,No,Yes
+EMP072,Fahad Hassan,Customer Support,Senior,Hybrid,Day,118,146000,7.6,11.8,5,90.1,0.5,4,0,4.1,5.0,4.3,3.8,4.3,48,No,No,No
+EMP073,Ali Yousaf,Customer Support,Junior,Onsite,Day,11,46000,-7.3,2.4,11,63.5,-0.4,42,3,3.0,2.4,2.4,3.5,4.2,91,No,No,Yes
+EMP074,Omer Hameed,Sales,Junior,Onsite,Day,28,55000,-13.0,7.1,25,85.7,-0.4,34,2,2.9,2.8,2.4,3.5,3.6,100,No,No,Yes
+EMP075,Asad Raza,Operations,Mid,Onsite,Day,21,94000,-2.6,6.1,21,81.4,0.4,17,0,3.8,3.9,3.4,3.9,3.7,20,No,No,No
+EMP076,Fahad Shah,Engineering,Mid,Hybrid,Night,59,131000,8.6,11.4,12,77.1,0.3,2,0,4.4,5.0,3.8,4.2,3.8,53,No,No,No
+EMP077,Ahmad Awan,Customer Support,Senior,Onsite,Day,81,136000,0.3,13.2,23,97.9,0.6,17,0,4.9,5.0,3.9,4.3,4.0,30,No,No,No
+EMP078,Ahmad Nawaz,Engineering,Mid,Hybrid,Rotational,25,130000,7.3,7.6,24,84.0,0.3,20,2,3.8,4.2,3.7,3.9,3.2,36,No,Yes,No
+EMP079,Hina Aslam,Customer Support,Junior,Hybrid,Day,5,46000,-7.4,10.2,5,82.0,0.1,11,1,4.3,4.4,3.8,3.9,4.4,41,Yes,No,No
+EMP080,Ali Mughal,Engineering,Lead/Manager,Hybrid,Day,93,316000,14.5,8.5,22,101.3,0.8,16,0,4.8,5.0,4.3,4.6,3.2,48,No,No,No
+EMP081,Sonia Arif,HR,Senior,Onsite,Day,109,175000,15.3,9.3,10,93.2,0.4,0,2,4.6,5.0,4.8,4.5,4.1,64,Yes,No,No
+EMP082,Ali Dar,Engineering,Junior,Hybrid,Day,8,71000,2.7,4.4,8,86.3,-0.7,22,0,3.1,3.5,3.6,2.9,4.7,15,No,No,No
+EMP083,Raza Aziz,Customer Support,Junior,Onsite,Rotational,27,44000,-11.0,7.6,23,74.6,0.1,31,0,3.7,3.1,2.7,4.1,4.0,50,No,No,No
+EMP084,Zara Ullah,HR,Mid,Onsite,Rotational,53,93000,-3.8,7.2,32,91.5,0.2,10,2,2.5,3.2,3.1,2.1,3.1,78,No,No,Yes
+EMP085,Sara Yousaf,HR,Senior,Onsite,Day,84,148000,-2.2,7.2,20,89.1,0.2,22,1,3.6,4.8,3.9,3.1,4.6,23,No,No,No
+EMP086,Hina Tariq,Operations,Junior,Onsite,Day,36,49000,-11.4,5.6,36,101.2,0.1,24,0,2.9,2.8,3.3,3.3,2.7,24,No,No,Yes
+EMP087,Kashif Hameed,HR,Lead/Manager,Onsite,Day,108,238000,8.0,6.2,8,96.9,0.4,3,1,4.7,5.0,4.2,4.7,4.5,92,No,No,No
+EMP088,Sana Mughal,Operations,Mid,Onsite,Day,51,109000,13.0,3.5,41,105.0,0.1,25,0,3.8,4.4,3.3,3.6,2.6,40,No,No,No
+EMP089,Muneeb Haider,HR,Junior,Onsite,Day,35,46000,-16.4,3.0,35,111.9,0.1,22,1,3.3,2.3,3.4,2.9,2.4,42,No,Yes,Yes
+EMP090,Noman Ahmad,Finance,Mid,Hybrid,Rotational,32,89000,-19.5,3.8,28,96.6,-0.1,16,0,2.2,1.8,2.9,2.1,3.7,10,No,Yes,Yes
+EMP091,Nida Mughal,Finance,Senior,Hybrid,Day,45,171000,-1.5,4.7,36,99.8,-0.4,4,0,3.7,4.3,4.6,3.2,3.2,19,No,No,No
+EMP092,Mahnoor Ali,Engineering,Senior,Hybrid,Day,42,163000,-14.0,6.0,34,95.6,0.3,27,0,3.5,3.7,3.8,3.3,3.0,19,No,Yes,No
+EMP093,Danish Siddiqui,Sales,Senior,Hybrid,Day,130,157000,-9.6,8.5,87,85.2,0.4,11,0,3.0,2.5,4.2,3.1,1.5,48,No,No,Yes
+EMP094,Akbar Abbasi,IT,Senior,Remote,Day,104,154000,-14.9,5.9,85,71.2,-0.1,25,1,2.7,2.7,3.8,4.6,1.0,10,No,No,Yes
+EMP095,Haris Mahmood,IT,Lead/Manager,Remote,Day,129,280000,6.0,9.1,32,102.1,0.1,28,0,4.2,5.0,4.1,4.5,3.6,4,No,No,No
+EMP096,Ayesha Abbasi,Sales,Mid,Hybrid,Rotational,14,114000,3.2,9.6,14,86.2,-0.2,42,0,3.6,4.3,2.4,3.9,3.9,49,No,No,Yes
+EMP097,Sana Arif,Sales,Junior,Onsite,Day,7,54000,-14.0,5.3,7,97.1,-0.4,15,0,3.9,3.4,3.4,3.6,4.1,84,No,No,Yes
+EMP098,Sidra Zafar,Customer Support,Mid,Hybrid,Rotational,12,68000,-21.6,4.5,12,82.5,-0.3,27,2,2.3,2.1,2.5,2.2,4.1,27,Yes,No,Yes
+EMP099,Bilal Aslam,Finance,Mid,Onsite,Day,31,88000,-20.5,3.7,31,97.8,-0.0,18,0,3.6,2.8,3.7,4.0,3.8,42,No,Yes,No
+EMP100,Rabia Javed,Engineering,Senior,Onsite,Day,94,159000,-16.3,5.5,30,85.1,-0.1,29,3,2.8,2.7,2.5,2.9,3.4,95,No,No,No
+EMP101,Talha Dar,IT,Mid,Hybrid,Day,43,85000,-26.6,3.7,36,109.9,-0.3,32,0,2.8,1.8,3.0,3.2,3.6,29,No,Yes,Yes
+EMP102,Akbar Gill,Sales,Junior,Onsite,Day,36,56000,-10.5,9.6,20,93.5,-0.4,17,1,3.2,3.8,3.8,3.4,3.7,18,No,No,No
+EMP103,Noor Masood,Customer Support,Junior,Onsite,Day,17,56000,13.1,9.4,8,81.8,0.1,18,0,4.5,5.0,4.5,4.3,5.0,30,No,No,No
+EMP104,Rabia Ali,IT,Senior,Onsite,Rotational,80,134000,-26.3,5.9,63,102.6,-0.1,18,2,3.0,2.8,2.3,4.3,2.2,87,No,Yes,Yes
+EMP105,Areeba Raza,Sales,Lead/Manager,Remote,Day,179,271000,7.7,7.4,57,103.8,0.4,16,2,4.5,5.0,3.9,4.8,2.6,12,No,No,No
+EMP106,Hina Saleem,HR,Senior,Hybrid,Day,66,159000,5.0,9.0,24,107.5,0.6,6,0,4.5,5.0,4.1,4.3,3.7,24,No,No,No
+EMP107,Zoya Mahmood,Engineering,Mid,Hybrid,Day,37,123000,1.8,7.3,18,87.0,-0.5,31,0,3.1,3.6,3.3,2.6,3.8,17,No,No,Yes
+EMP108,Ayesha Ahmad,HR,Mid,Hybrid,Day,30,79000,-18.5,4.5,24,109.1,-0.1,11,0,3.3,2.8,4.1,3.6,2.7,16,No,Yes,Yes
+EMP109,Ali Farooq,Sales,Junior,Hybrid,Rotational,14,59000,-5.7,7.4,12,99.9,-0.3,36,4,3.0,2.9,2.1,1.9,4.1,48,Yes,No,Yes
+EMP110,Arslan Masood,IT,Junior,Onsite,Day,10,80000,20.9,10.9,4,90.1,0.2,11,1,5.0,5.0,4.1,4.6,4.5,31,No,No,No
+EMP111,Sadia Bashir,Sales,Mid,Remote,Day,55,110000,0.0,9.4,29,90.3,0.1,27,0,3.8,4.4,3.7,4.0,3.7,12,No,No,No
+EMP112,Sara Javed,Sales,Junior,Hybrid,Day,10,59000,-6.7,4.7,10,97.8,0.4,24,0,3.2,2.8,3.3,3.4,3.9,19,No,Yes,No
+EMP113,Shahbaz Gill,IT,Junior,Hybrid,Rotational,16,71000,7.3,10.6,13,82.7,0.6,15,0,4.5,5.0,3.5,4.3,3.8,37,Yes,No,No
+EMP114,Hamza Hussain,HR,Mid,Hybrid,Rotational,44,96000,-1.1,8.8,24,94.7,0.2,12,0,3.1,3.5,3.1,1.9,3.3,42,No,No,Yes
+EMP115,Hafsa Abbasi,Engineering,Mid,Hybrid,Day,12,106000,-11.8,5.0,12,106.4,0.3,30,0,3.6,3.5,3.4,3.6,4.4,12,No,Yes,Yes
+EMP116,Ali Abbasi,Engineering,Junior,Hybrid,Night,18,76000,9.7,15.0,17,103.2,0.4,34,4,5.0,5.0,1.8,4.1,4.2,45,No,No,No
+EMP117,Saad Ullah,Engineering,Junior,Onsite,Day,36,73000,6.0,6.9,36,84.4,0.3,21,2,3.7,4.4,3.5,3.7,3.3,71,No,Yes,No
+EMP118,Zoya Ali,Customer Support,Mid,Onsite,Rotational,20,82000,-4.8,5.4,14,92.2,-0.4,16,0,3.6,4.1,3.5,3.2,4.6,56,Yes,No,No
+EMP119,Ayesha Nawaz,Customer Support,Senior,Hybrid,Night,103,133000,-2.0,7.5,25,88.0,-0.5,43,2,3.1,3.1,1.9,2.8,3.3,23,No,No,Yes
+EMP120,Ahmad Aziz,Operations,Mid,Remote,Night,64,100000,3.4,9.4,16,94.4,0.5,16,1,4.5,5.0,3.2,4.4,3.8,3,No,No,No
+EMP121,Mehwish Tariq,Operations,Junior,Onsite,Day,36,54000,-2.1,5.2,36,97.3,-0.8,30,1,3.4,3.5,3.1,3.7,3.0,47,No,No,Yes
+EMP122,Hafsa Ullah,Operations,Junior,Hybrid,Day,12,47000,-14.8,6.8,12,109.0,-0.3,27,0,3.1,3.2,3.0,2.9,3.9,45,No,No,Yes
+EMP123,Sehrish Ullah,Finance,Senior,Onsite,Day,59,162000,-6.7,3.9,26,105.0,0.4,11,1,3.4,3.2,3.2,2.6,3.0,53,No,Yes,Yes
+EMP124,Fahad Javed,Sales,Mid,Hybrid,Day,36,103000,-6.2,6.9,36,75.9,-0.4,43,1,2.7,2.7,2.4,2.4,3.4,41,No,No,Yes
+EMP125,Fatima Zafar,Sales,Senior,Onsite,Day,124,182000,5.2,10.9,14,96.0,0.6,16,0,4.1,4.7,3.3,4.3,4.2,94,No,No,No
+EMP126,Laiba Sheikh,Customer Support,Senior,Hybrid,Rotational,40,132000,-2.2,4.1,33,99.9,0.2,35,3,3.3,3.0,2.2,2.4,3.2,58,No,No,Yes
+EMP127,Khurram Yousaf,HR,Mid,Hybrid,Day,13,97000,0.6,8.3,12,88.0,0.5,0,0,4.7,5.0,5.0,4.2,4.4,10,No,Yes,No
+EMP128,Zoya Farooq,Customer Support,Lead/Manager,Hybrid,Rotational,120,193000,-2.1,6.1,82,101.9,-0.3,30,1,3.0,3.2,3.5,3.2,1.7,55,No,No,No
+EMP129,Danish Dar,Engineering,Lead/Manager,Hybrid,Day,165,324000,17.4,10.5,20,89.1,0.2,11,0,4.2,5.0,3.4,3.6,3.4,11,No,No,No
+EMP130,Waqas Siddiqui,HR,Senior,Onsite,Day,108,168000,10.8,10.5,10,100.4,0.4,0,1,5.0,5.0,3.8,4.9,4.5,94,No,No,No
+EMP131,Ahmad Yousaf,IT,Mid,Remote,Day,39,112000,-3.1,3.9,39,82.2,-0.1,17,0,3.3,3.4,4.1,4.1,3.1,1,No,Yes,Yes
+EMP132,Arham Qureshi,IT,Junior,Hybrid,Rotational,6,65000,-1.9,7.8,6,99.1,0.2,40,4,3.5,4.4,1.9,3.6,4.4,77,No,No,No
+EMP133,Usman Raza,Engineering,Mid,Hybrid,Day,72,120000,-1.0,8.3,39,102.6,0.1,33,0,3.4,4.4,3.1,3.5,3.6,57,No,No,Yes
+EMP134,Talha Awan,IT,Mid,Onsite,Day,44,84000,-27.2,3.5,35,102.4,-0.1,34,3,2.6,1.9,2.3,2.7,3.3,95,No,No,Yes
+EMP135,Eman Butt,Customer Support,Mid,Hybrid,Day,46,91000,5.7,11.0,13,83.9,0.5,17,1,3.9,4.9,3.8,4.0,4.1,13,No,No,No
+EMP136,Fatima Saleem,HR,Mid,Remote,Night,36,89000,-8.2,8.0,23,99.6,0.5,13,1,2.7,3.2,3.4,1.2,3.8,1,No,No,Yes
+EMP137,Areeba Farooq,Customer Support,Junior,Hybrid,Rotational,32,52000,6.6,10.2,14,94.1,-0.2,53,1,4.4,4.7,1.7,4.0,3.8,40,No,No,Yes
+EMP138,Amir Saleem,Engineering,Mid,Hybrid,Day,18,123000,1.6,8.9,15,76.1,-0.8,35,5,2.5,3.6,2.8,1.6,4.1,37,Yes,No,Yes
+EMP139,Iqra Saeed,Operations,Junior,Onsite,Day,34,45000,-18.1,6.3,14,95.9,-0.0,27,1,3.1,2.9,2.8,3.7,3.6,58,No,Yes,Yes
+EMP140,Noman Rehman,Finance,Senior,Hybrid,Day,128,170000,-2.1,7.1,24,102.4,0.4,3,0,3.6,3.5,4.4,1.9,3.8,71,No,No,No
+EMP141,Asad Zafar,Operations,Lead/Manager,Onsite,Day,149,193000,-12.6,6.9,60,76.7,-0.1,9,0,2.9,2.6,4.0,3.1,2.3,49,No,Yes,Yes
+EMP142,Fahad Farooq,Engineering,Lead/Manager,Hybrid,Day,132,293000,6.3,5.1,34,89.1,0.6,8,2,3.9,4.6,4.0,3.9,3.1,26,No,No,No
+EMP143,Hamza Awan,Finance,Mid,Onsite,Rotational,47,120000,8.8,8.2,12,87.7,0.2,13,0,4.4,4.8,3.1,4.7,3.8,93,No,No,No
+EMP144,Imran Ullah,Customer Support,Lead/Manager,Hybrid,Day,122,228000,15.9,8.9,14,82.4,-0.1,22,2,3.0,4.0,3.7,1.2,3.8,65,Yes,No,Yes
+EMP145,Ahsan Anwar,Sales,Mid,Onsite,Day,56,127000,15.4,6.8,12,86.1,0.4,10,0,4.2,5.0,4.1,4.4,4.0,23,No,No,No
+EMP146,Talha Khan,Finance,Mid,Onsite,Rotational,50,126000,14.5,7.3,5,89.2,0.3,2,1,5.0,5.0,4.0,4.5,5.0,28,No,No,No
+EMP147,Hassan Javed,Customer Support,Lead/Manager,Onsite,Rotational,64,163000,-17.0,4.9,60,76.9,-0.2,32,1,2.4,2.6,2.1,3.4,2.1,78,No,No,Yes
+EMP148,Sadia Malik,Sales,Junior,Remote,Day,4,54000,-15.0,4.4,4,88.8,0.2,38,1,3.1,3.7,3.1,2.9,4.3,9,No,Yes,Yes
+EMP149,Muneeb Hameed,Operations,Mid,Onsite,Night,42,90000,-6.9,6.9,15,88.0,0.4,17,0,3.4,2.7,3.1,4.2,3.8,39,Yes,Yes,Yes
+EMP150,Sana Nawaz,Customer Support,Junior,Remote,Rotational,17,48000,-1.8,4.3,16,80.8,-0.0,52,2,2.7,3.0,1.7,2.6,3.3,10,No,No,No
+EMP151,Farhan Rehman,Engineering,Junior,Hybrid,Day,12,71000,2.3,8.6,12,95.8,0.1,43,3,3.8,4.7,2.0,4.1,4.3,66,No,No,No
+EMP152,Mahnoor Tariq,IT,Senior,Onsite,Day,112,138000,-23.9,6.0,43,101.0,-0.1,26,0,2.6,2.1,2.9,3.4,2.9,56,Yes,Yes,Yes
+EMP153,Kashif Abbasi,Engineering,Mid,Onsite,Rotational,56,108000,-10.5,2.4,43,86.7,0.2,22,2,2.5,2.4,2.5,2.8,3.0,95,No,No,Yes
+EMP154,Hina Abbasi,Engineering,Junior,Onsite,Day,15,61000,-11.9,3.1,15,84.7,-0.2,28,1,3.0,3.3,3.0,4.6,4.0,63,No,Yes,Yes
+EMP155,Noman Malik,Customer Support,Mid,Hybrid,Rotational,39,72000,-16.7,2.9,35,105.2,-0.3,35,0,2.7,1.9,2.2,3.8,2.2,41,No,Yes,Yes
+EMP156,Asad Malik,Engineering,Mid,Onsite,Day,32,121000,0.5,6.1,29,105.0,0.3,28,0,4.0,4.0,3.2,3.5,3.3,18,Yes,No,No
+EMP157,Saba Qureshi,Operations,Junior,Onsite,Rotational,11,57000,3.4,7.2,8,89.1,0.5,9,0,4.5,4.9,3.6,3.8,4.1,34,Yes,No,No
+EMP158,Imran Zafar,Operations,Junior,Hybrid,Rotational,36,46000,-16.6,7.1,36,90.2,0.3,29,0,3.7,3.4,2.8,4.2,2.7,22,Yes,No,Yes
+EMP159,Raza Ahmad,Engineering,Senior,Onsite,Rotational,77,187000,-1.4,7.7,43,84.4,-0.2,37,2,2.3,2.4,1.7,3.3,2.7,36,No,No,Yes
+EMP160,Rabia Ullah,Finance,Senior,Onsite,Night,85,194000,12.2,9.8,3,95.3,0.3,8,1,4.2,5.0,3.7,3.4,4.3,91,No,No,No
+EMP161,Iqra Yousaf,Finance,Mid,Onsite,Day,70,110000,-0.4,9.2,20,97.2,0.4,0,1,4.7,5.0,4.4,3.9,3.7,92,No,No,No
+EMP162,Bilal Shah,Customer Support,Junior,Onsite,Rotational,6,50000,1.1,7.1,6,110.2,-0.6,35,1,2.8,2.5,2.4,1.6,4.5,28,No,No,Yes
+EMP163,Sidra Sheikh,Engineering,Mid,Hybrid,Day,11,120000,-0.7,6.1,11,78.8,-0.4,26,2,2.9,3.4,3.4,3.4,3.6,29,No,No,Yes
+EMP164,Zoya Saleem,Sales,Junior,Onsite,Day,31,64000,2.2,6.5,15,92.4,-0.4,32,1,2.7,3.4,2.8,1.7,3.8,70,No,No,Yes
+EMP165,Waqas Butt,Sales,Junior,Onsite,Day,12,54000,-13.5,6.7,12,78.8,0.1,38,1,3.0,2.6,2.2,3.1,3.9,97,No,No,Yes
+EMP166,Arslan Siddiqui,Sales,Lead/Manager,Onsite,Day,64,211000,-16.4,4.8,60,77.9,-0.1,26,1,2.5,2.8,2.8,3.3,2.2,78,No,No,Yes
+EMP167,Bilal Raza,Sales,Mid,Onsite,Rotational,48,110000,-0.6,11.5,27,93.2,0.2,26,2,4.4,4.6,2.3,4.7,3.5,80,No,No,No
+EMP168,Akbar Saleem,Customer Support,Senior,Hybrid,Day,39,110000,-18.7,6.2,36,77.2,-0.3,56,2,2.5,2.4,1.7,2.5,3.2,36,Yes,Yes,Yes
+EMP169,Iqra Qureshi,IT,Lead/Manager,Onsite,Day,147,294000,11.3,9.8,8,94.9,0.3,12,1,4.7,5.0,3.6,4.3,4.7,75,No,Yes,No
+EMP170,Hina Ahmad,Customer Support,Mid,Remote,Day,36,76000,-11.6,7.7,36,85.3,0.3,22,0,3.3,3.8,4.0,3.5,3.1,5,No,Yes,No
+EMP171,Usman Ullah,IT,Lead/Manager,Hybrid,Day,122,306000,15.9,9.6,10,83.9,-0.2,12,1,4.0,5.0,4.4,3.0,4.7,47,No,No,No
+EMP172,Zoya Hassan,Operations,Mid,Hybrid,Rotational,63,105000,8.2,5.0,23,85.6,-0.2,31,1,3.4,4.1,1.9,3.4,3.7,75,Yes,No,Yes
+EMP173,Sidra Abbasi,Finance,Senior,Onsite,Rotational,44,166000,-4.3,6.0,44,78.5,-0.2,15,0,3.0,3.5,3.7,3.2,2.7,21,No,Yes,Yes
+EMP174,Hassan Aslam,Sales,Mid,Onsite,Day,44,111000,0.7,4.6,29,80.4,-0.2,20,1,3.9,4.3,3.8,4.6,3.6,86,No,No,No
+EMP175,Hassan Arif,Operations,Mid,Onsite,Day,6,94000,-2.3,5.9,6,84.5,0.3,9,0,3.7,4.6,5.0,4.0,4.2,19,No,No,No
+EMP176,Ahsan Aziz,Sales,Senior,Onsite,Day,111,205000,18.3,6.9,9,92.6,-0.2,7,0,4.6,5.0,4.0,4.7,3.9,26,No,No,No
+EMP177,Danish Anwar,HR,Mid,Onsite,Day,37,96000,-0.5,9.4,32,81.7,-0.1,29,1,2.2,2.7,2.5,1.7,3.4,100,No,No,No
+EMP178,Fatima Rehman,Sales,Junior,Onsite,Day,5,63000,0.1,5.2,5,87.8,0.6,21,2,4.1,3.8,2.6,4.1,4.3,87,No,No,No
+EMP179,Muneeb Javed,Operations,Junior,Onsite,Rotational,17,62000,12.5,8.8,13,82.9,0.3,40,1,3.7,4.8,3.0,4.1,3.8,60,No,No,No
+EMP180,Arham Hussain,Customer Support,Junior,Onsite,Night,12,43000,-12.3,4.6,12,83.2,-0.0,25,0,3.0,2.9,3.1,3.5,3.9,40,No,Yes,Yes
+EMP181,Saad Yousaf,Operations,Junior,Onsite,Day,17,52000,-6.4,9.4,14,82.2,0.2,8,0,4.6,4.6,3.8,4.5,4.6,94,No,No,No
+EMP182,Waqas Ahmad,Sales,Mid,Onsite,Day,23,121000,9.5,9.1,16,103.7,-0.0,7,1,4.5,4.9,4.5,5.0,3.3,19,No,No,No
+EMP183,Zain Saleem,IT,Junior,Onsite,Day,36,60000,-9.7,2.5,36,95.0,-0.1,21,1,3.4,3.5,3.4,3.5,3.4,95,No,Yes,Yes
+EMP184,Iqra Hassan,Operations,Junior,Hybrid,Day,12,46000,-17.0,4.6,12,68.0,-0.0,24,1,3.2,2.9,3.0,3.0,4.6,40,No,No,No
+EMP185,Salman Hameed,Finance,Senior,Hybrid,Day,88,165000,-4.7,4.6,46,77.3,0.2,26,0,2.9,3.0,3.3,3.6,2.8,33,No,No,Yes
+EMP186,Zara Masood,IT,Mid,Onsite,Day,20,132000,14.4,7.4,12,84.9,0.5,8,2,4.4,5.0,4.0,3.7,4.8,76,No,No,No
+EMP187,Nida Mahmood,Operations,Junior,Remote,Rotational,30,58000,4.4,6.5,15,87.2,-0.5,48,2,3.0,3.2,2.0,1.9,3.5,4,No,No,No
+EMP188,Areeba Ahmad,IT,Senior,Hybrid,Day,112,171000,-5.6,8.1,14,69.0,0.2,18,1,3.4,4.1,3.0,3.8,3.7,38,No,No,No
+EMP189,Omer Masood,Engineering,Lead/Manager,Onsite,Day,53,255000,-7.7,3.5,27,88.8,-0.5,48,2,3.2,2.6,1.7,3.7,4.0,77,No,No,Yes
+EMP190,Noor Saeed,HR,Junior,Hybrid,Day,18,53000,-4.2,4.8,18,75.4,0.2,13,3,3.5,3.6,4.3,3.0,4.2,22,No,No,Yes
+EMP191,Danish Yousaf,Operations,Mid,Onsite,Day,56,84000,-12.9,3.7,45,104.8,-0.4,14,1,2.8,2.7,3.7,2.3,2.1,84,Yes,No,Yes
+EMP192,Kashif Hussain,Sales,Junior,Remote,Day,31,63000,0.2,11.4,16,85.1,0.4,23,0,4.2,4.9,3.8,3.7,4.2,0,No,No,No
+EMP193,Zain Qureshi,Operations,Junior,Remote,Rotational,8,61000,9.9,9.6,6,103.4,-0.1,10,3,4.1,4.8,4.3,3.5,4.6,10,Yes,No,No
+EMP194,Shahid Ahmad,Customer Support,Mid,Hybrid,Day,8,67000,-22.4,2.0,8,75.0,0.1,28,0,2.3,1.8,3.0,2.5,4.4,21,No,Yes,Yes
+EMP195,Mohsin Khan,Engineering,Lead/Manager,Onsite,Rotational,104,273000,-1.2,11.7,20,91.8,0.5,19,0,4.6,5.0,3.2,4.5,4.2,48,No,No,No
+EMP196,Mohsin Abbasi,Engineering,Mid,Onsite,Rotational,27,102000,-15.6,3.0,25,100.2,-0.0,27,0,3.7,3.3,2.8,3.6,4.3,23,No,Yes,Yes
+EMP197,Zeeshan Qureshi,HR,Lead/Manager,Hybrid,Rotational,56,227000,3.0,8.8,53,80.5,0.3,31,2,2.7,3.7,2.5,2.5,2.4,69,No,Yes,No
+EMP198,Ali Tariq,Operations,Junior,Onsite,Day,18,49000,-11.8,5.3,18,75.0,-0.0,27,1,2.2,2.7,2.9,2.5,4.0,71,No,No,Yes
+EMP199,Zara Tariq,Customer Support,Junior,Hybrid,Day,22,39000,-19.9,4.7,22,101.2,0.3,37,1,3.6,3.0,2.4,4.1,3.8,57,No,Yes,Yes
+EMP200,Ahmad Abbasi,Customer Support,Mid,Hybrid,Day,42,84000,-2.2,5.4,40,96.3,-0.1,39,3,2.2,2.7,2.3,2.9,2.8,36,Yes,No,Yes

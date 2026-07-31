@@ -1,0 +1,26 @@
+# HR Workforce Intelligence Backend
+# Install with:  pip install -r requirements.txt
+
+fastapi
+uvicorn[standard]
+python-dotenv
+
+# Data and model
+pandas
+numpy
+catboost
+rapidfuzz
+
+# Agent stack. The agent code uses the LangChain 1.x APIs
+# (create_agent, ToolRuntime, Command-returning tools).
+langchain>=1.0
+langchain-core>=1.0
+langchain-openai
+langgraph
+
+# OpenRouter is called directly over HTTP by the successor reasoning agent.
+httpx
+
+pydantic>=2.11
+typing-extensions
+pytest

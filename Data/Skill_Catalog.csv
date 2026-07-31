@@ -1,0 +1,54 @@
+﻿Skill_ID,Skill_Name,Skill_Category,Skill_Type
+S001,Python Programming,Technical,Core
+S002,SQL & Databases,Technical,Core
+S003,API Development,Technical,Core
+S004,Software Testing,Technical,Core
+S005,System Design,Technical,Core
+S006,DevOps & CI/CD,Technical,Digital
+S007,Cloud Platforms,Technical,Digital
+S008,Cybersecurity,Technical,Digital
+S009,Network Administration,Technical,Core
+S010,IT Service Management,Functional,Core
+S011,Incident Management,Functional,Core
+S012,B2B Sales,Functional,Core
+S013,Lead Generation,Functional,Core
+S014,Negotiation,Behavioral,Core
+S015,CRM Management,Digital,Core
+S016,Account Management,Functional,Core
+S017,Pipeline Management,Functional,Core
+S018,Product Knowledge,Functional,Core
+S019,Process Management,Functional,Core
+S020,SOP Compliance,Compliance,Core
+S021,Process Improvement,Functional,Core
+S022,Quality Control,Functional,Core
+S023,Risk & Controls,Compliance,Core
+S024,Workflow Coordination,Functional,Core
+S025,Financial Analysis,Functional,Core
+S026,Accounting & Reconciliation,Functional,Core
+S027,Budgeting & Forecasting,Functional,Core
+S028,Regulatory Reporting,Compliance,Core
+S029,Advanced Excel,Digital,Core
+S030,Risk Analysis,Functional,Core
+S031,Recruitment & Selection,Functional,Core
+S032,HRIS & Employee Data,Digital,Core
+S033,Performance Management,Functional,Core
+S034,Employee Relations,Behavioral,Core
+S035,Learning & Development,Functional,Core
+S036,Payroll Administration,Functional,Core
+S037,Customer Service,Functional,Core
+S038,Complaint Resolution,Behavioral,Core
+S039,Call Handling,Functional,Core
+S040,SLA Management,Functional,Core
+S041,Knowledge Base Management,Digital,Core
+S042,Communication,Behavioral,Common
+S043,Teamwork,Behavioral,Common
+S044,Problem Solving,Behavioral,Common
+S045,Stakeholder Management,Behavioral,Leadership
+S046,Leadership,Leadership,Leadership
+S047,Coaching & Mentoring,Leadership,Leadership
+S048,Adaptability,Behavioral,Common
+S049,Data Analysis,Digital,Common
+S050,Project Management,Leadership,Common
+S051,Empathy & Active Listening,Behavioral,Common
+S052,Time Management,Behavioral,Common
+S053,Documentation,Behavioral,Common

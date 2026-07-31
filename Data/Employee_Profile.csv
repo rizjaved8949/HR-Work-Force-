@@ -1,0 +1,201 @@
+﻿Employee_ID,Employee_Name,Department,Position_ID,Position_Title,Designation,Job_Level,Work_Mode,Shift_Type,Employment_Type,Employee_Status,Tenure_Months,Years_in_Company,Engagement_Score,Manager_Relationship_Score,Candidate_Base_Eligibility,Internal_Mobility_Readiness,Attrition_Label_Reference,Vacancy_Planning_Status
+EMP001,Sonia Hassan,HR,POS-001,HR Manager,HR Manager,Lead/Manager,Hybrid,Day,Permanent,Active,140,11.7,3.7,3.9,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP002,Bilal Aziz,Sales,POS-002,Account Manager,Senior Sales Executive,Mid,Onsite,Rotational,Permanent,Active,37,3.1,5.0,4.9,Eligible,Ready Now,No,No Immediate Vacancy
+EMP003,Kamran Ali,Finance,POS-003,Financial Analyst,Financial Analyst,Mid,Remote,Day,Permanent,Active,14,1.2,3.8,4.2,Eligible,Ready Now,No,No Immediate Vacancy
+EMP004,Ali Masood,Finance,POS-004,Financial Analyst,Financial Analyst,Mid,Onsite,Day,Permanent,Active,39,3.2,3.3,3.7,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP005,Farhan Shah,Engineering,POS-005,Software Engineer I,Junior Software Engineer,Junior,Remote,Day,Permanent,Active,16,1.3,3.0,1.8,Development / Hold,Not Ready,Yes,Prepare Replacement Pipeline
+EMP006,Sehrish Tariq,Engineering,POS-006,Software Engineer II,Software Engineer,Mid,Hybrid,Day,Permanent,Active,64,5.3,2.8,3.0,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP007,Sonia Ahmad,Customer Support,POS-007,Customer Support Representative,Support Executive,Junior,Onsite,Day,Contract,Active,34,2.8,4.1,4.4,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP008,Iqra Bashir,Finance,POS-008,Finance Manager,Finance Manager,Lead/Manager,Onsite,Day,Permanent,Active,145,12.1,4.2,4.4,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP009,Hassan Dar,Customer Support,POS-009,Customer Support Manager,Customer Support Manager,Lead/Manager,Hybrid,Night,Permanent,Active,162,13.5,3.0,3.0,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP010,Salman Shah,Engineering,POS-010,Senior Software Engineer,Senior Software Engineer,Senior,Hybrid,Day,Permanent,Active,50,4.2,3.8,3.5,Eligible,Ready Now,No,No Immediate Vacancy
+EMP011,Khurram Iqbal,Sales,POS-011,Sales Manager,Sales Manager,Lead/Manager,Onsite,Day,Permanent,Active,180,15.0,4.6,4.1,Eligible,Ready Now,No,No Immediate Vacancy
+EMP012,Danish Masood,HR,POS-012,HR Manager,HR Manager,Lead/Manager,Onsite,Rotational,Permanent,Active,102,8.5,2.9,2.4,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP013,Anum Ahmad,HR,POS-013,HR Generalist,HR Specialist,Mid,Hybrid,Day,Permanent,Active,52,4.3,4.0,4.3,Eligible,Ready Now,No,No Immediate Vacancy
+EMP014,Shahid Ali,Engineering,POS-014,Software Engineer II,Software Engineer,Mid,Onsite,Day,Permanent,Active,23,1.9,4.6,4.2,Eligible,Ready Now,No,No Immediate Vacancy
+EMP015,Anum Rehman,Engineering,POS-015,Engineering Lead,Engineering Manager,Lead/Manager,Onsite,Day,Permanent,Active,110,9.2,4.0,3.7,Eligible,Ready Now,No,No Immediate Vacancy
+EMP016,Khurram Gill,Sales,POS-016,Account Manager,Senior Sales Executive,Mid,Hybrid,Rotational,Permanent,Active,68,5.7,3.0,3.0,Development / Hold,Not Ready,Yes,Prepare Replacement Pipeline
+EMP017,Amir Haider,Customer Support,POS-017,Customer Support Representative,Support Executive,Junior,Remote,Rotational,Permanent,Active,22,1.8,3.1,3.3,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP018,Sidra Tariq,Engineering,POS-018,Software Engineer II,Software Engineer,Mid,Onsite,Day,Contract,Active,61,5.1,2.0,1.2,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP019,Hina Hussain,IT,POS-019,Systems Administrator,IT Engineer,Mid,Onsite,Night,Permanent,Active,15,1.2,3.6,2.5,Eligible,Ready Now,No,No Immediate Vacancy
+EMP020,Waqas Khan,Customer Support,POS-020,Customer Support Representative,Support Executive,Junior,Onsite,Day,Permanent,Active,36,3.0,3.3,3.3,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP021,Usman Khan,Customer Support,POS-021,Customer Support Representative,Support Executive,Junior,Remote,Day,Permanent,Active,36,3.0,3.5,3.5,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP022,Laiba Raza,Sales,POS-022,Account Manager,Senior Sales Executive,Mid,Hybrid,Day,Permanent,Active,70,5.8,4.4,4.1,Eligible,Ready Now,No,No Immediate Vacancy
+EMP023,Fatima Masood,Operations,POS-023,Operations Officer,Operations Officer,Junior,Onsite,Day,Permanent,Active,18,1.5,2.7,2.8,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP024,Fatima Arif,IT,POS-024,Systems Administrator,IT Engineer,Mid,Hybrid,Day,Permanent,Active,68,5.7,3.8,2.8,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP025,Raza Mughal,Finance,POS-025,Financial Analyst,Financial Analyst,Mid,Hybrid,Rotational,Permanent,Active,29,2.4,3.4,2.9,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP026,Anum Qureshi,Operations,POS-026,Operations Manager,Operations Manager,Lead/Manager,Hybrid,Day,Permanent,Active,143,11.9,1.6,1.0,Development / Hold,Not Ready,Yes,Prepare Replacement Pipeline
+EMP027,Akbar Hassan,Customer Support,POS-027,Senior Support Executive,Senior Support Executive,Mid,Onsite,Rotational,Permanent,Active,57,4.8,2.5,2.3,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP028,Salman Aziz,Sales,POS-028,Senior Account Manager,Senior Account Manager,Senior,Onsite,Rotational,Permanent,Active,40,3.3,3.2,3.1,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP029,Ali Saleem,Engineering,POS-029,Software Engineer II,Software Engineer,Mid,Hybrid,Rotational,Permanent,Active,58,4.8,3.8,4.5,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP030,Hamza Ahmad,Finance,POS-030,Senior Financial Analyst,Senior Financial Analyst,Senior,Onsite,Day,Permanent,Active,128,10.7,4.6,3.9,Eligible,Ready Now,No,No Immediate Vacancy
+EMP031,Sadia Haider,Engineering,POS-031,Senior Software Engineer,Senior Software Engineer,Senior,Onsite,Day,Permanent,Active,48,4.0,4.7,3.9,Eligible,Ready Now,No,No Immediate Vacancy
+EMP032,Laiba Mahmood,Sales,POS-032,Sales Executive,Sales Executive,Junior,Onsite,Day,Permanent,Active,8,0.7,3.4,3.0,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP033,Ali Chaudhry,IT,POS-033,IT Support Engineer,Junior IT Engineer,Junior,Onsite,Day,Permanent,Active,11,0.9,3.6,3.8,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP034,Nida Sheikh,Sales,POS-034,Sales Executive,Sales Executive,Junior,Onsite,Rotational,Permanent,Active,34,2.8,2.8,2.0,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP035,Shahbaz Malik,Engineering,POS-035,Software Engineer II,Software Engineer,Mid,Hybrid,Day,Permanent,Active,45,3.8,3.5,3.4,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP036,Zoya Chaudhry,Sales,POS-036,Sales Executive,Sales Executive,Junior,Onsite,Day,Contract,Probation,5,0.4,4.9,4.5,Not Yet Eligible,Not Ready,No,No Immediate Vacancy
+EMP037,Zara Mahmood,IT,POS-037,Systems Administrator,IT Engineer,Mid,Hybrid,Day,Permanent,Active,46,3.8,2.9,3.0,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP038,Ali Mahmood,Customer Support,POS-038,Senior Support Executive,Senior Support Executive,Mid,Remote,Rotational,Contract,Active,38,3.2,2.7,2.0,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP039,Kamran Hussain,Operations,POS-039,Operations Officer,Operations Officer,Junior,Hybrid,Day,Permanent,Active,8,0.7,3.1,3.6,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP040,Ahmad Sheikh,Customer Support,POS-040,Customer Support Representative,Support Executive,Junior,Onsite,Night,Permanent,Active,36,3.0,3.0,2.7,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP041,Omer Nawaz,Operations,POS-041,Operations Officer,Operations Officer,Junior,Onsite,Rotational,Contract,Active,12,1.0,2.9,3.1,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP042,Amna Aslam,Customer Support,POS-042,Senior Support Executive,Senior Support Executive,Mid,Hybrid,Night,Permanent,Active,43,3.6,3.2,2.3,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP043,Amir Javed,Operations,POS-043,Operations Analyst,Operations Specialist,Mid,Onsite,Rotational,Permanent,Active,55,4.6,3.3,3.2,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP044,Hafsa Khan,Finance,POS-044,Financial Analyst,Financial Analyst,Mid,Onsite,Day,Permanent,Active,36,3.0,3.0,2.7,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP045,Saad Ahmad,Operations,POS-045,Operations Officer,Operations Officer,Junior,Onsite,Rotational,Permanent,Active,11,0.9,4.3,3.9,Eligible,Ready Now,No,No Immediate Vacancy
+EMP046,Salman Iqbal,Customer Support,POS-046,Customer Support Representative,Support Executive,Junior,Onsite,Day,Permanent,Active,35,2.9,3.0,2.3,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP047,Mahnoor Iqbal,Finance,POS-047,Senior Financial Analyst,Senior Financial Analyst,Senior,Onsite,Day,Permanent,Active,99,8.2,4.5,4.3,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP048,Sehrish Shah,Operations,POS-048,Operations Officer,Operations Officer,Junior,Hybrid,Rotational,Permanent,Active,10,0.8,3.4,3.3,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP049,Sara Aslam,Sales,POS-049,Sales Executive,Sales Executive,Junior,Onsite,Rotational,Permanent,Active,23,1.9,3.5,3.9,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP050,Mohsin Butt,Finance,POS-050,Finance Officer,Finance Officer,Junior,Hybrid,Day,Permanent,Active,10,0.8,2.8,3.0,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP051,Asad Ahmad,IT,POS-051,Senior Systems Engineer,Senior IT Engineer,Senior,Remote,Day,Permanent,Active,122,10.2,3.9,4.0,Eligible,Ready Now,No,No Immediate Vacancy
+EMP052,Raza Hassan,Customer Support,POS-052,Customer Support Representative,Support Executive,Junior,Hybrid,Day,Permanent,Active,36,3.0,3.0,2.2,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP053,Zeeshan Abbasi,HR,POS-053,HR Officer,HR Officer,Junior,Onsite,Day,Permanent,Active,34,2.8,4.5,4.9,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP054,Waqas Aslam,Engineering,POS-054,Software Engineer I,Junior Software Engineer,Junior,Onsite,Day,Permanent,Active,8,0.7,3.9,3.0,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP055,Sadia Mahmood,Engineering,POS-055,Software Engineer II,Software Engineer,Mid,Onsite,Day,Permanent,Active,10,0.8,3.0,3.3,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP056,Saba Hassan,Operations,POS-056,Operations Analyst,Operations Specialist,Mid,Onsite,Day,Permanent,Active,51,4.2,3.1,3.4,Eligible,Ready Now,No,No Immediate Vacancy
+EMP057,Raza Haider,IT,POS-057,IT Support Engineer,Junior IT Engineer,Junior,Remote,Rotational,Permanent,Active,7,0.6,3.2,3.0,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP058,Shahid Malik,Engineering,POS-058,Senior Software Engineer,Senior Software Engineer,Senior,Onsite,Day,Permanent,Active,113,9.4,2.3,2.0,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP059,Anum Masood,Sales,POS-059,Senior Account Manager,Senior Account Manager,Senior,Onsite,Day,Permanent,Active,122,10.2,3.5,3.6,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP060,Mohsin Yousaf,Sales,POS-060,Sales Executive,Sales Executive,Junior,Onsite,Rotational,Permanent,Active,15,1.2,2.8,2.7,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP061,Asad Bashir,Sales,POS-061,Sales Executive,Sales Executive,Junior,Onsite,Day,Permanent,Active,29,2.4,4.1,3.7,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP062,Fahad Dar,Sales,POS-062,Account Manager,Senior Sales Executive,Mid,Hybrid,Day,Permanent,Active,38,3.2,4.8,4.2,Eligible,Ready Now,No,No Immediate Vacancy
+EMP063,Ahmad Tariq,Sales,POS-063,Sales Executive,Sales Executive,Junior,Hybrid,Rotational,Permanent,Active,18,1.5,2.9,2.1,Development / Hold,Not Ready,Yes,Prepare Replacement Pipeline
+EMP064,Hassan Sheikh,Sales,POS-064,Sales Executive,Sales Executive,Junior,Hybrid,Day,Contract,Active,24,2.0,2.9,3.2,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP065,Amna Gill,Sales,POS-065,Account Manager,Senior Sales Executive,Mid,Onsite,Rotational,Permanent,Active,17,1.4,2.9,1.5,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP066,Ali Gill,HR,POS-066,Senior HR Specialist,Senior HR Specialist,Senior,Onsite,Day,Permanent,Active,77,6.4,2.3,1.6,Development / Hold,Not Ready,No,No Immediate Vacancy
+EMP067,Nida Hameed,Operations,POS-067,Operations Manager,Operations Manager,Lead/Manager,Onsite,Rotational,Permanent,Active,110,9.2,2.3,2.8,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP068,Sidra Hussain,Customer Support,POS-068,Customer Support Manager,Customer Support Manager,Lead/Manager,Onsite,Rotational,Permanent,Active,173,14.4,4.0,4.0,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP069,Mehwish Hussain,Operations,POS-069,Operations Officer,Operations Officer,Junior,Hybrid,Night,Contract,Active,18,1.5,2.4,1.5,Eligible,Ready Now,No,No Immediate Vacancy
+EMP070,Bilal Saeed,Engineering,POS-070,Engineering Lead,Engineering Manager,Lead/Manager,Hybrid,Day,Permanent,Active,78,6.5,3.2,3.1,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP071,Eman Abbasi,Finance,POS-071,Financial Analyst,Financial Analyst,Mid,Hybrid,Day,Permanent,Active,62,5.2,2.5,1.8,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP072,Fahad Hassan,Customer Support,POS-072,Support Team Lead,Team Lead - Customer Support,Senior,Hybrid,Day,Permanent,Active,118,9.8,4.1,3.8,Eligible,Ready Now,No,No Immediate Vacancy
+EMP073,Ali Yousaf,Customer Support,POS-073,Customer Support Representative,Support Executive,Junior,Onsite,Day,Permanent,Active,11,0.9,3.0,3.5,Development / Hold,Not Ready,Yes,Prepare Replacement Pipeline
+EMP074,Omer Hameed,Sales,POS-074,Sales Executive,Sales Executive,Junior,Onsite,Day,Permanent,Active,28,2.3,2.9,3.5,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP075,Asad Raza,Operations,POS-075,Operations Analyst,Operations Specialist,Mid,Onsite,Day,Permanent,Active,21,1.8,3.8,3.9,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP076,Fahad Shah,Engineering,POS-076,Software Engineer II,Software Engineer,Mid,Hybrid,Night,Permanent,Active,59,4.9,4.4,4.2,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP077,Ahmad Awan,Customer Support,POS-077,Support Team Lead,Team Lead - Customer Support,Senior,Onsite,Day,Permanent,Active,81,6.8,4.9,4.3,Eligible,Ready Now,No,No Immediate Vacancy
+EMP078,Ahmad Nawaz,Engineering,POS-078,Software Engineer II,Software Engineer,Mid,Hybrid,Rotational,Permanent,Active,25,2.1,3.8,3.9,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP079,Hina Aslam,Customer Support,POS-079,Customer Support Representative,Support Executive,Junior,Hybrid,Day,Permanent,Probation,5,0.4,4.3,3.9,Not Yet Eligible,Not Ready,No,No Immediate Vacancy
+EMP080,Ali Mughal,Engineering,POS-080,Engineering Lead,Engineering Manager,Lead/Manager,Hybrid,Day,Permanent,Active,93,7.8,4.8,4.6,Eligible,Ready Now,No,No Immediate Vacancy
+EMP081,Sonia Arif,HR,POS-081,Senior HR Specialist,Senior HR Specialist,Senior,Onsite,Day,Permanent,Active,109,9.1,4.6,4.5,Eligible,Ready Now,No,No Immediate Vacancy
+EMP082,Ali Dar,Engineering,POS-082,Software Engineer I,Junior Software Engineer,Junior,Hybrid,Day,Permanent,Active,8,0.7,3.1,2.9,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP083,Raza Aziz,Customer Support,POS-083,Customer Support Representative,Support Executive,Junior,Onsite,Rotational,Permanent,Active,27,2.2,3.7,4.1,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP084,Zara Ullah,HR,POS-084,HR Generalist,HR Specialist,Mid,Onsite,Rotational,Permanent,Active,53,4.4,2.5,2.1,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP085,Sara Yousaf,HR,POS-085,Senior HR Specialist,Senior HR Specialist,Senior,Onsite,Day,Permanent,Active,84,7.0,3.6,3.1,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP086,Hina Tariq,Operations,POS-086,Operations Officer,Operations Officer,Junior,Onsite,Day,Permanent,Active,36,3.0,2.9,3.3,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP087,Kashif Hameed,HR,POS-087,HR Manager,HR Manager,Lead/Manager,Onsite,Day,Permanent,Active,108,9.0,4.7,4.7,Eligible,Ready Now,No,No Immediate Vacancy
+EMP088,Sana Mughal,Operations,POS-088,Operations Analyst,Operations Specialist,Mid,Onsite,Day,Permanent,Active,51,4.2,3.8,3.6,Eligible,Ready Now,No,No Immediate Vacancy
+EMP089,Muneeb Haider,HR,POS-089,HR Officer,HR Officer,Junior,Onsite,Day,Contract,Active,35,2.9,3.3,2.9,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP090,Noman Ahmad,Finance,POS-090,Financial Analyst,Financial Analyst,Mid,Hybrid,Rotational,Contract,Active,32,2.7,2.2,2.1,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP091,Nida Mughal,Finance,POS-091,Senior Financial Analyst,Senior Financial Analyst,Senior,Hybrid,Day,Permanent,Active,45,3.8,3.7,3.2,Eligible,Ready Now,No,No Immediate Vacancy
+EMP092,Mahnoor Ali,Engineering,POS-092,Senior Software Engineer,Senior Software Engineer,Senior,Hybrid,Day,Permanent,Active,42,3.5,3.5,3.3,Eligible,Ready Now,No,No Immediate Vacancy
+EMP093,Danish Siddiqui,Sales,POS-093,Senior Account Manager,Senior Account Manager,Senior,Hybrid,Day,Permanent,Active,130,10.8,3.0,3.1,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP094,Akbar Abbasi,IT,POS-094,Senior Systems Engineer,Senior IT Engineer,Senior,Remote,Day,Permanent,Active,104,8.7,2.7,4.6,Development / Hold,Not Ready,Yes,Prepare Replacement Pipeline
+EMP095,Haris Mahmood,IT,POS-095,IT Operations Manager,IT Manager,Lead/Manager,Remote,Day,Permanent,Active,129,10.8,4.2,4.5,Eligible,Ready Now,No,No Immediate Vacancy
+EMP096,Ayesha Abbasi,Sales,POS-096,Account Manager,Senior Sales Executive,Mid,Hybrid,Rotational,Permanent,Active,14,1.2,3.6,3.9,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP097,Sana Arif,Sales,POS-097,Sales Executive,Sales Executive,Junior,Onsite,Day,Permanent,Active,7,0.6,3.9,3.6,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP098,Sidra Zafar,Customer Support,POS-098,Senior Support Executive,Senior Support Executive,Mid,Hybrid,Rotational,Permanent,Active,12,1.0,2.3,2.2,Development / Hold,Not Ready,Yes,Prepare Replacement Pipeline
+EMP099,Bilal Aslam,Finance,POS-099,Financial Analyst,Financial Analyst,Mid,Onsite,Day,Permanent,Active,31,2.6,3.6,4.0,Eligible,Ready Now,No,No Immediate Vacancy
+EMP100,Rabia Javed,Engineering,POS-100,Senior Software Engineer,Senior Software Engineer,Senior,Onsite,Day,Permanent,Active,94,7.8,2.8,2.9,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP101,Talha Dar,IT,POS-101,Systems Administrator,IT Engineer,Mid,Hybrid,Day,Permanent,Active,43,3.6,2.8,3.2,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP102,Akbar Gill,Sales,POS-102,Sales Executive,Sales Executive,Junior,Onsite,Day,Permanent,Active,36,3.0,3.2,3.4,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP103,Noor Masood,Customer Support,POS-103,Customer Support Representative,Support Executive,Junior,Onsite,Day,Permanent,Active,17,1.4,4.5,4.3,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP104,Rabia Ali,IT,POS-104,Senior Systems Engineer,Senior IT Engineer,Senior,Onsite,Rotational,Permanent,Active,80,6.7,3.0,4.3,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP105,Areeba Raza,Sales,POS-105,Sales Manager,Sales Manager,Lead/Manager,Remote,Day,Permanent,Active,179,14.9,4.5,4.8,Eligible,Ready Now,No,No Immediate Vacancy
+EMP106,Hina Saleem,HR,POS-106,Senior HR Specialist,Senior HR Specialist,Senior,Hybrid,Day,Permanent,Active,66,5.5,4.5,4.3,Eligible,Ready Now,No,No Immediate Vacancy
+EMP107,Zoya Mahmood,Engineering,POS-107,Software Engineer II,Software Engineer,Mid,Hybrid,Day,Permanent,Active,37,3.1,3.1,2.6,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP108,Ayesha Ahmad,HR,POS-108,HR Generalist,HR Specialist,Mid,Hybrid,Day,Permanent,Active,30,2.5,3.3,3.6,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP109,Ali Farooq,Sales,POS-109,Sales Executive,Sales Executive,Junior,Hybrid,Rotational,Permanent,Active,14,1.2,3.0,1.9,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP110,Arslan Masood,IT,POS-110,IT Support Engineer,Junior IT Engineer,Junior,Onsite,Day,Permanent,Active,10,0.8,5.0,4.6,Eligible,Ready Now,No,No Immediate Vacancy
+EMP111,Sadia Bashir,Sales,POS-111,Account Manager,Senior Sales Executive,Mid,Remote,Day,Permanent,Active,55,4.6,3.8,4.0,Eligible,Ready Now,No,No Immediate Vacancy
+EMP112,Sara Javed,Sales,POS-112,Sales Executive,Sales Executive,Junior,Hybrid,Day,Permanent,Active,10,0.8,3.2,3.4,Eligible,Ready Now,No,No Immediate Vacancy
+EMP113,Shahbaz Gill,IT,POS-113,IT Support Engineer,Junior IT Engineer,Junior,Hybrid,Rotational,Contract,Active,16,1.3,4.5,4.3,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP114,Hamza Hussain,HR,POS-114,HR Generalist,HR Specialist,Mid,Hybrid,Rotational,Permanent,Active,44,3.7,3.1,1.9,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP115,Hafsa Abbasi,Engineering,POS-115,Software Engineer II,Software Engineer,Mid,Hybrid,Day,Permanent,Active,12,1.0,3.6,3.6,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP116,Ali Abbasi,Engineering,POS-116,Software Engineer I,Junior Software Engineer,Junior,Hybrid,Night,Permanent,Active,18,1.5,5.0,4.1,Eligible,Ready Now,No,No Immediate Vacancy
+EMP117,Saad Ullah,Engineering,POS-117,Software Engineer I,Junior Software Engineer,Junior,Onsite,Day,Permanent,Active,36,3.0,3.7,3.7,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP118,Zoya Ali,Customer Support,POS-118,Senior Support Executive,Senior Support Executive,Mid,Onsite,Rotational,Permanent,Active,20,1.7,3.6,3.2,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP119,Ayesha Nawaz,Customer Support,POS-119,Support Team Lead,Team Lead - Customer Support,Senior,Hybrid,Night,Permanent,Active,103,8.6,3.1,2.8,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP120,Ahmad Aziz,Operations,POS-120,Operations Analyst,Operations Specialist,Mid,Remote,Night,Permanent,Active,64,5.3,4.5,4.4,Eligible,Ready Now,No,No Immediate Vacancy
+EMP121,Mehwish Tariq,Operations,POS-121,Operations Officer,Operations Officer,Junior,Onsite,Day,Permanent,Active,36,3.0,3.4,3.7,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP122,Hafsa Ullah,Operations,POS-122,Operations Officer,Operations Officer,Junior,Hybrid,Day,Permanent,Active,12,1.0,3.1,2.9,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP123,Sehrish Ullah,Finance,POS-123,Senior Financial Analyst,Senior Financial Analyst,Senior,Onsite,Day,Permanent,Active,59,4.9,3.4,2.6,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP124,Fahad Javed,Sales,POS-124,Account Manager,Senior Sales Executive,Mid,Hybrid,Day,Permanent,Active,36,3.0,2.7,2.4,Development / Hold,Not Ready,Yes,Prepare Replacement Pipeline
+EMP125,Fatima Zafar,Sales,POS-125,Senior Account Manager,Senior Account Manager,Senior,Onsite,Day,Permanent,Active,124,10.3,4.1,4.3,Eligible,Ready Now,No,No Immediate Vacancy
+EMP126,Laiba Sheikh,Customer Support,POS-126,Support Team Lead,Team Lead - Customer Support,Senior,Hybrid,Rotational,Permanent,Active,40,3.3,3.3,2.4,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP127,Khurram Yousaf,HR,POS-127,HR Generalist,HR Specialist,Mid,Hybrid,Day,Permanent,Active,13,1.1,4.7,4.2,Eligible,Ready Now,No,No Immediate Vacancy
+EMP128,Zoya Farooq,Customer Support,POS-128,Customer Support Manager,Customer Support Manager,Lead/Manager,Hybrid,Rotational,Permanent,Active,120,10.0,3.0,3.2,Eligible,Ready Now,No,No Immediate Vacancy
+EMP129,Danish Dar,Engineering,POS-129,Engineering Lead,Engineering Manager,Lead/Manager,Hybrid,Day,Permanent,Active,165,13.8,4.2,3.6,Eligible,Ready Now,No,No Immediate Vacancy
+EMP130,Waqas Siddiqui,HR,POS-130,Senior HR Specialist,Senior HR Specialist,Senior,Onsite,Day,Permanent,Active,108,9.0,5.0,4.9,Eligible,Ready Now,No,No Immediate Vacancy
+EMP131,Ahmad Yousaf,IT,POS-131,Systems Administrator,IT Engineer,Mid,Remote,Day,Permanent,Active,39,3.2,3.3,4.1,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP132,Arham Qureshi,IT,POS-132,IT Support Engineer,Junior IT Engineer,Junior,Hybrid,Rotational,Permanent,Probation,6,0.5,3.5,3.6,Development / Hold,Not Ready,No,No Immediate Vacancy
+EMP133,Usman Raza,Engineering,POS-133,Software Engineer II,Software Engineer,Mid,Hybrid,Day,Permanent,Active,72,6.0,3.4,3.5,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP134,Talha Awan,IT,POS-134,Systems Administrator,IT Engineer,Mid,Onsite,Day,Permanent,Active,44,3.7,2.6,2.7,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP135,Eman Butt,Customer Support,POS-135,Senior Support Executive,Senior Support Executive,Mid,Hybrid,Day,Permanent,Active,46,3.8,3.9,4.0,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP136,Fatima Saleem,HR,POS-136,HR Generalist,HR Specialist,Mid,Remote,Night,Permanent,Active,36,3.0,2.7,1.2,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP137,Areeba Farooq,Customer Support,POS-137,Customer Support Representative,Support Executive,Junior,Hybrid,Rotational,Permanent,Active,32,2.7,4.4,4.0,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP138,Amir Saleem,Engineering,POS-138,Software Engineer II,Software Engineer,Mid,Hybrid,Day,Permanent,Active,18,1.5,2.5,1.6,Development / Hold,Not Ready,Yes,Prepare Replacement Pipeline
+EMP139,Iqra Saeed,Operations,POS-139,Operations Officer,Operations Officer,Junior,Onsite,Day,Contract,Active,34,2.8,3.1,3.7,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP140,Noman Rehman,Finance,POS-140,Senior Financial Analyst,Senior Financial Analyst,Senior,Hybrid,Day,Permanent,Active,128,10.7,3.6,1.9,Eligible,Ready Now,No,No Immediate Vacancy
+EMP141,Asad Zafar,Operations,POS-141,Operations Manager,Operations Manager,Lead/Manager,Onsite,Day,Permanent,Active,149,12.4,2.9,3.1,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP142,Fahad Farooq,Engineering,POS-142,Engineering Lead,Engineering Manager,Lead/Manager,Hybrid,Day,Permanent,Active,132,11.0,3.9,3.9,Eligible,Ready Now,No,No Immediate Vacancy
+EMP143,Hamza Awan,Finance,POS-143,Financial Analyst,Financial Analyst,Mid,Onsite,Rotational,Permanent,Active,47,3.9,4.4,4.7,Eligible,Ready Now,No,No Immediate Vacancy
+EMP144,Imran Ullah,Customer Support,POS-144,Customer Support Manager,Customer Support Manager,Lead/Manager,Hybrid,Day,Permanent,Active,122,10.2,3.0,1.2,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP145,Ahsan Anwar,Sales,POS-145,Account Manager,Senior Sales Executive,Mid,Onsite,Day,Permanent,Active,56,4.7,4.2,4.4,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP146,Talha Khan,Finance,POS-146,Financial Analyst,Financial Analyst,Mid,Onsite,Rotational,Permanent,Active,50,4.2,5.0,4.5,Eligible,Ready Now,No,No Immediate Vacancy
+EMP147,Hassan Javed,Customer Support,POS-147,Customer Support Manager,Customer Support Manager,Lead/Manager,Onsite,Rotational,Permanent,Active,64,5.3,2.4,3.4,Development / Hold,Not Ready,Yes,Prepare Replacement Pipeline
+EMP148,Sadia Malik,Sales,POS-148,Sales Executive,Sales Executive,Junior,Remote,Day,Permanent,Probation,4,0.3,3.1,2.9,Not Yet Eligible,Not Ready,Yes,Prepare Replacement Pipeline
+EMP149,Muneeb Hameed,Operations,POS-149,Operations Analyst,Operations Specialist,Mid,Onsite,Night,Permanent,Active,42,3.5,3.4,4.2,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP150,Sana Nawaz,Customer Support,POS-150,Customer Support Representative,Support Executive,Junior,Remote,Rotational,Permanent,Active,17,1.4,2.7,2.6,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP151,Farhan Rehman,Engineering,POS-151,Software Engineer I,Junior Software Engineer,Junior,Hybrid,Day,Permanent,Active,12,1.0,3.8,4.1,Eligible,Ready Now,No,No Immediate Vacancy
+EMP152,Mahnoor Tariq,IT,POS-152,Senior Systems Engineer,Senior IT Engineer,Senior,Onsite,Day,Permanent,Active,112,9.3,2.6,3.4,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP153,Kashif Abbasi,Engineering,POS-153,Software Engineer II,Software Engineer,Mid,Onsite,Rotational,Contract,Active,56,4.7,2.5,2.8,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP154,Hina Abbasi,Engineering,POS-154,Software Engineer I,Junior Software Engineer,Junior,Onsite,Day,Permanent,Active,15,1.2,3.0,4.6,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP155,Noman Malik,Customer Support,POS-155,Senior Support Executive,Senior Support Executive,Mid,Hybrid,Rotational,Permanent,Active,39,3.2,2.7,3.8,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP156,Asad Malik,Engineering,POS-156,Software Engineer II,Software Engineer,Mid,Onsite,Day,Permanent,Active,32,2.7,4.0,3.5,Eligible,Ready Now,No,No Immediate Vacancy
+EMP157,Saba Qureshi,Operations,POS-157,Operations Officer,Operations Officer,Junior,Onsite,Rotational,Permanent,Active,11,0.9,4.5,3.8,Eligible,Ready Now,No,No Immediate Vacancy
+EMP158,Imran Zafar,Operations,POS-158,Operations Officer,Operations Officer,Junior,Hybrid,Rotational,Permanent,Active,36,3.0,3.7,4.2,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP159,Raza Ahmad,Engineering,POS-159,Senior Software Engineer,Senior Software Engineer,Senior,Onsite,Rotational,Permanent,Active,77,6.4,2.3,3.3,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP160,Rabia Ullah,Finance,POS-160,Senior Financial Analyst,Senior Financial Analyst,Senior,Onsite,Night,Permanent,Active,85,7.1,4.2,3.4,Eligible,Ready Now,No,No Immediate Vacancy
+EMP161,Iqra Yousaf,Finance,POS-161,Financial Analyst,Financial Analyst,Mid,Onsite,Day,Permanent,Active,70,5.8,4.7,3.9,Eligible,Ready Now,No,No Immediate Vacancy
+EMP162,Bilal Shah,Customer Support,POS-162,Customer Support Representative,Support Executive,Junior,Onsite,Rotational,Permanent,Probation,6,0.5,2.8,1.6,Development / Hold,Not Ready,Yes,Prepare Replacement Pipeline
+EMP163,Sidra Sheikh,Engineering,POS-163,Software Engineer II,Software Engineer,Mid,Hybrid,Day,Permanent,Active,11,0.9,2.9,3.4,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP164,Zoya Saleem,Sales,POS-164,Sales Executive,Sales Executive,Junior,Onsite,Day,Permanent,Active,31,2.6,2.7,1.7,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP165,Waqas Butt,Sales,POS-165,Sales Executive,Sales Executive,Junior,Onsite,Day,Contract,Active,12,1.0,3.0,3.1,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP166,Arslan Siddiqui,Sales,POS-166,Sales Manager,Sales Manager,Lead/Manager,Onsite,Day,Contract,Active,64,5.3,2.5,3.3,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP167,Bilal Raza,Sales,POS-167,Account Manager,Senior Sales Executive,Mid,Onsite,Rotational,Permanent,Active,48,4.0,4.4,4.7,Eligible,Ready Now,No,No Immediate Vacancy
+EMP168,Akbar Saleem,Customer Support,POS-168,Support Team Lead,Team Lead - Customer Support,Senior,Hybrid,Day,Permanent,Active,39,3.2,2.5,2.5,Development / Hold,Not Ready,Yes,Prepare Replacement Pipeline
+EMP169,Iqra Qureshi,IT,POS-169,IT Operations Manager,IT Manager,Lead/Manager,Onsite,Day,Permanent,Active,147,12.2,4.7,4.3,Eligible,Ready Now,No,No Immediate Vacancy
+EMP170,Hina Ahmad,Customer Support,POS-170,Senior Support Executive,Senior Support Executive,Mid,Remote,Day,Permanent,Active,36,3.0,3.3,3.5,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP171,Usman Ullah,IT,POS-171,IT Operations Manager,IT Manager,Lead/Manager,Hybrid,Day,Permanent,Active,122,10.2,4.0,3.0,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP172,Zoya Hassan,Operations,POS-172,Operations Analyst,Operations Specialist,Mid,Hybrid,Rotational,Permanent,Active,63,5.2,3.4,3.4,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP173,Sidra Abbasi,Finance,POS-173,Senior Financial Analyst,Senior Financial Analyst,Senior,Onsite,Rotational,Permanent,Active,44,3.7,3.0,3.2,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP174,Hassan Aslam,Sales,POS-174,Account Manager,Senior Sales Executive,Mid,Onsite,Day,Permanent,Active,44,3.7,3.9,4.6,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP175,Hassan Arif,Operations,POS-175,Operations Analyst,Operations Specialist,Mid,Onsite,Day,Permanent,Probation,6,0.5,3.7,4.0,Development / Hold,Not Ready,No,No Immediate Vacancy
+EMP176,Ahsan Aziz,Sales,POS-176,Senior Account Manager,Senior Account Manager,Senior,Onsite,Day,Permanent,Active,111,9.2,4.6,4.7,Eligible,Ready Now,No,No Immediate Vacancy
+EMP177,Danish Anwar,HR,POS-177,HR Generalist,HR Specialist,Mid,Onsite,Day,Permanent,Active,37,3.1,2.2,1.7,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP178,Fatima Rehman,Sales,POS-178,Sales Executive,Sales Executive,Junior,Onsite,Day,Permanent,Probation,5,0.4,4.1,4.1,Not Yet Eligible,Not Ready,No,No Immediate Vacancy
+EMP179,Muneeb Javed,Operations,POS-179,Operations Officer,Operations Officer,Junior,Onsite,Rotational,Permanent,Active,17,1.4,3.7,4.1,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP180,Arham Hussain,Customer Support,POS-180,Customer Support Representative,Support Executive,Junior,Onsite,Night,Permanent,Active,12,1.0,3.0,3.5,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP181,Saad Yousaf,Operations,POS-181,Operations Officer,Operations Officer,Junior,Onsite,Day,Permanent,Active,17,1.4,4.6,4.5,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP182,Waqas Ahmad,Sales,POS-182,Account Manager,Senior Sales Executive,Mid,Onsite,Day,Permanent,Active,23,1.9,4.5,5.0,Eligible,Ready Now,No,No Immediate Vacancy
+EMP183,Zain Saleem,IT,POS-183,IT Support Engineer,Junior IT Engineer,Junior,Onsite,Day,Contract,Active,36,3.0,3.4,3.5,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP184,Iqra Hassan,Operations,POS-184,Operations Officer,Operations Officer,Junior,Hybrid,Day,Contract,Active,12,1.0,3.2,3.0,Development / Hold,Not Ready,No,No Immediate Vacancy
+EMP185,Salman Hameed,Finance,POS-185,Senior Financial Analyst,Senior Financial Analyst,Senior,Hybrid,Day,Permanent,Active,88,7.3,2.9,3.6,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP186,Zara Masood,IT,POS-186,Systems Administrator,IT Engineer,Mid,Onsite,Day,Permanent,Active,20,1.7,4.4,3.7,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP187,Nida Mahmood,Operations,POS-187,Operations Officer,Operations Officer,Junior,Remote,Rotational,Permanent,Active,30,2.5,3.0,1.9,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP188,Areeba Ahmad,IT,POS-188,Senior Systems Engineer,Senior IT Engineer,Senior,Hybrid,Day,Permanent,Active,112,9.3,3.4,3.8,Development / Hold,Not Ready,No,No Immediate Vacancy
+EMP189,Omer Masood,Engineering,POS-189,Engineering Lead,Engineering Manager,Lead/Manager,Onsite,Day,Permanent,Active,53,4.4,3.2,3.7,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP190,Noor Saeed,HR,POS-190,HR Officer,HR Officer,Junior,Hybrid,Day,Permanent,Active,18,1.5,3.5,3.0,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline
+EMP191,Danish Yousaf,Operations,POS-191,Operations Analyst,Operations Specialist,Mid,Onsite,Day,Contract,Active,56,4.7,2.8,2.3,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP192,Kashif Hussain,Sales,POS-192,Sales Executive,Sales Executive,Junior,Remote,Day,Permanent,Active,31,2.6,4.2,3.7,Eligible,Ready Now,No,No Immediate Vacancy
+EMP193,Zain Qureshi,Operations,POS-193,Operations Officer,Operations Officer,Junior,Remote,Rotational,Permanent,Active,8,0.7,4.1,3.5,Eligible,Ready Now,No,No Immediate Vacancy
+EMP194,Shahid Ahmad,Customer Support,POS-194,Senior Support Executive,Senior Support Executive,Mid,Hybrid,Day,Permanent,Active,8,0.7,2.3,2.5,Development / Hold,Not Ready,Yes,Prepare Replacement Pipeline
+EMP195,Mohsin Khan,Engineering,POS-195,Engineering Lead,Engineering Manager,Lead/Manager,Onsite,Rotational,Permanent,Active,104,8.7,4.6,4.5,Eligible,Ready Now,No,No Immediate Vacancy
+EMP196,Mohsin Abbasi,Engineering,POS-196,Software Engineer II,Software Engineer,Mid,Onsite,Rotational,Permanent,Active,27,2.2,3.7,3.6,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP197,Zeeshan Qureshi,HR,POS-197,HR Manager,HR Manager,Lead/Manager,Hybrid,Rotational,Permanent,Active,56,4.7,2.7,2.5,Eligible,Ready in 6-12 Months,No,No Immediate Vacancy
+EMP198,Ali Tariq,Operations,POS-198,Operations Officer,Operations Officer,Junior,Onsite,Day,Contract,Active,18,1.5,2.2,2.5,Development / Hold,Not Ready,Yes,Prepare Replacement Pipeline
+EMP199,Zara Tariq,Customer Support,POS-199,Customer Support Representative,Support Executive,Junior,Hybrid,Day,Permanent,Active,22,1.8,3.6,4.1,Eligible,Ready Now,Yes,Prepare Replacement Pipeline
+EMP200,Ahmad Abbasi,Customer Support,POS-200,Senior Support Executive,Senior Support Executive,Mid,Hybrid,Day,Permanent,Active,42,3.5,2.2,2.9,Eligible,Ready in 6-12 Months,Yes,Prepare Replacement Pipeline

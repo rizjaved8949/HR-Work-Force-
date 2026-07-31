@@ -1,0 +1,1001 @@
+﻿Position_ID,Department,Position_Title,Designation,Skill_ID,Skill_Name,Skill_Category,Requirement_Type,Mandatory_Flag,Minimum_Proficiency_Level,Minimum_Skill_Score,Skill_Weight_pct
+POS-001,HR,HR Manager,HR Manager,S046,Leadership,Leadership,Required,Yes,4,75,25
+POS-001,HR,HR Manager,HR Manager,S033,Performance Management,Functional,Required,Yes,4,75,25
+POS-001,HR,HR Manager,HR Manager,S034,Employee Relations,Behavioral,Required,Yes,4,75,20
+POS-001,HR,HR Manager,HR Manager,S035,Learning & Development,Functional,Required,No,4,75,20
+POS-001,HR,HR Manager,HR Manager,S045,Stakeholder Management,Behavioral,Preferred,No,3,65,10
+POS-002,Sales,Account Manager,Senior Sales Executive,S016,Account Management,Functional,Required,Yes,3,65,25
+POS-002,Sales,Account Manager,Senior Sales Executive,S014,Negotiation,Behavioral,Required,Yes,3,65,25
+POS-002,Sales,Account Manager,Senior Sales Executive,S015,CRM Management,Digital,Required,Yes,3,65,20
+POS-002,Sales,Account Manager,Senior Sales Executive,S017,Pipeline Management,Functional,Required,No,3,65,20
+POS-002,Sales,Account Manager,Senior Sales Executive,S018,Product Knowledge,Functional,Preferred,No,2,55,10
+POS-003,Finance,Financial Analyst,Financial Analyst,S025,Financial Analysis,Functional,Required,Yes,3,65,25
+POS-003,Finance,Financial Analyst,Financial Analyst,S026,Accounting & Reconciliation,Functional,Required,Yes,3,65,25
+POS-003,Finance,Financial Analyst,Financial Analyst,S027,Budgeting & Forecasting,Functional,Required,Yes,3,65,20
+POS-003,Finance,Financial Analyst,Financial Analyst,S029,Advanced Excel,Digital,Required,No,3,65,20
+POS-003,Finance,Financial Analyst,Financial Analyst,S030,Risk Analysis,Functional,Preferred,No,2,55,10
+POS-004,Finance,Financial Analyst,Financial Analyst,S025,Financial Analysis,Functional,Required,Yes,3,65,25
+POS-004,Finance,Financial Analyst,Financial Analyst,S026,Accounting & Reconciliation,Functional,Required,Yes,3,65,25
+POS-004,Finance,Financial Analyst,Financial Analyst,S027,Budgeting & Forecasting,Functional,Required,Yes,3,65,20
+POS-004,Finance,Financial Analyst,Financial Analyst,S029,Advanced Excel,Digital,Required,No,3,65,20
+POS-004,Finance,Financial Analyst,Financial Analyst,S030,Risk Analysis,Functional,Preferred,No,2,55,10
+POS-005,Engineering,Software Engineer I,Junior Software Engineer,S001,Python Programming,Technical,Required,Yes,2,55,25
+POS-005,Engineering,Software Engineer I,Junior Software Engineer,S002,SQL & Databases,Technical,Required,Yes,2,55,25
+POS-005,Engineering,Software Engineer I,Junior Software Engineer,S004,Software Testing,Technical,Required,Yes,2,55,20
+POS-005,Engineering,Software Engineer I,Junior Software Engineer,S044,Problem Solving,Behavioral,Required,No,2,55,20
+POS-005,Engineering,Software Engineer I,Junior Software Engineer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-006,Engineering,Software Engineer II,Software Engineer,S001,Python Programming,Technical,Required,Yes,3,65,25
+POS-006,Engineering,Software Engineer II,Software Engineer,S002,SQL & Databases,Technical,Required,Yes,3,65,25
+POS-006,Engineering,Software Engineer II,Software Engineer,S003,API Development,Technical,Required,Yes,3,65,20
+POS-006,Engineering,Software Engineer II,Software Engineer,S004,Software Testing,Technical,Required,No,3,65,20
+POS-006,Engineering,Software Engineer II,Software Engineer,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-007,Customer Support,Customer Support Representative,Support Executive,S037,Customer Service,Functional,Required,Yes,2,55,25
+POS-007,Customer Support,Customer Support Representative,Support Executive,S038,Complaint Resolution,Behavioral,Required,Yes,2,55,25
+POS-007,Customer Support,Customer Support Representative,Support Executive,S039,Call Handling,Functional,Required,Yes,2,55,20
+POS-007,Customer Support,Customer Support Representative,Support Executive,S018,Product Knowledge,Functional,Required,No,2,55,20
+POS-007,Customer Support,Customer Support Representative,Support Executive,S051,Empathy & Active Listening,Behavioral,Preferred,No,1,45,10
+POS-008,Finance,Finance Manager,Finance Manager,S046,Leadership,Leadership,Required,Yes,4,75,25
+POS-008,Finance,Finance Manager,Finance Manager,S027,Budgeting & Forecasting,Functional,Required,Yes,4,75,25
+POS-008,Finance,Finance Manager,Finance Manager,S028,Regulatory Reporting,Compliance,Required,Yes,4,75,20
+POS-008,Finance,Finance Manager,Finance Manager,S030,Risk Analysis,Functional,Required,No,4,75,20
+POS-008,Finance,Finance Manager,Finance Manager,S045,Stakeholder Management,Behavioral,Preferred,No,3,65,10
+POS-009,Customer Support,Customer Support Manager,Customer Support Manager,S046,Leadership,Leadership,Required,Yes,4,75,25
+POS-009,Customer Support,Customer Support Manager,Customer Support Manager,S047,Coaching & Mentoring,Leadership,Required,Yes,4,75,25
+POS-009,Customer Support,Customer Support Manager,Customer Support Manager,S040,SLA Management,Functional,Required,Yes,4,75,20
+POS-009,Customer Support,Customer Support Manager,Customer Support Manager,S045,Stakeholder Management,Behavioral,Required,No,4,75,20
+POS-009,Customer Support,Customer Support Manager,Customer Support Manager,S021,Process Improvement,Functional,Preferred,No,3,65,10
+POS-010,Engineering,Senior Software Engineer,Senior Software Engineer,S005,System Design,Technical,Required,Yes,4,75,25
+POS-010,Engineering,Senior Software Engineer,Senior Software Engineer,S003,API Development,Technical,Required,Yes,4,75,25
+POS-010,Engineering,Senior Software Engineer,Senior Software Engineer,S001,Python Programming,Technical,Required,Yes,4,75,20
+POS-010,Engineering,Senior Software Engineer,Senior Software Engineer,S050,Project Management,Leadership,Required,No,4,75,20
+POS-010,Engineering,Senior Software Engineer,Senior Software Engineer,S047,Coaching & Mentoring,Leadership,Preferred,No,3,65,10
+POS-011,Sales,Sales Manager,Sales Manager,S017,Pipeline Management,Functional,Required,Yes,4,75,25
+POS-011,Sales,Sales Manager,Sales Manager,S046,Leadership,Leadership,Required,Yes,4,75,25
+POS-011,Sales,Sales Manager,Sales Manager,S045,Stakeholder Management,Behavioral,Required,Yes,4,75,20
+POS-011,Sales,Sales Manager,Sales Manager,S047,Coaching & Mentoring,Leadership,Required,No,4,75,20
+POS-011,Sales,Sales Manager,Sales Manager,S014,Negotiation,Behavioral,Preferred,No,3,65,10
+POS-012,HR,HR Manager,HR Manager,S046,Leadership,Leadership,Required,Yes,4,75,25
+POS-012,HR,HR Manager,HR Manager,S033,Performance Management,Functional,Required,Yes,4,75,25
+POS-012,HR,HR Manager,HR Manager,S034,Employee Relations,Behavioral,Required,Yes,4,75,20
+POS-012,HR,HR Manager,HR Manager,S035,Learning & Development,Functional,Required,No,4,75,20
+POS-012,HR,HR Manager,HR Manager,S045,Stakeholder Management,Behavioral,Preferred,No,3,65,10
+POS-013,HR,HR Generalist,HR Specialist,S033,Performance Management,Functional,Required,Yes,3,65,25
+POS-013,HR,HR Generalist,HR Specialist,S031,Recruitment & Selection,Functional,Required,Yes,3,65,25
+POS-013,HR,HR Generalist,HR Specialist,S032,HRIS & Employee Data,Digital,Required,Yes,3,65,20
+POS-013,HR,HR Generalist,HR Specialist,S035,Learning & Development,Functional,Required,No,3,65,20
+POS-013,HR,HR Generalist,HR Specialist,S034,Employee Relations,Behavioral,Preferred,No,2,55,10
+POS-014,Engineering,Software Engineer II,Software Engineer,S001,Python Programming,Technical,Required,Yes,3,65,25
+POS-014,Engineering,Software Engineer II,Software Engineer,S002,SQL & Databases,Technical,Required,Yes,3,65,25
+POS-014,Engineering,Software Engineer II,Software Engineer,S003,API Development,Technical,Required,Yes,3,65,20
+POS-014,Engineering,Software Engineer II,Software Engineer,S004,Software Testing,Technical,Required,No,3,65,20
+POS-014,Engineering,Software Engineer II,Software Engineer,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-015,Engineering,Engineering Lead,Engineering Manager,S005,System Design,Technical,Required,Yes,4,75,25
+POS-015,Engineering,Engineering Lead,Engineering Manager,S050,Project Management,Leadership,Required,Yes,4,75,25
+POS-015,Engineering,Engineering Lead,Engineering Manager,S046,Leadership,Leadership,Required,Yes,4,75,20
+POS-015,Engineering,Engineering Lead,Engineering Manager,S045,Stakeholder Management,Behavioral,Required,No,4,75,20
+POS-015,Engineering,Engineering Lead,Engineering Manager,S006,DevOps & CI/CD,Technical,Preferred,No,3,65,10
+POS-016,Sales,Account Manager,Senior Sales Executive,S016,Account Management,Functional,Required,Yes,3,65,25
+POS-016,Sales,Account Manager,Senior Sales Executive,S014,Negotiation,Behavioral,Required,Yes,3,65,25
+POS-016,Sales,Account Manager,Senior Sales Executive,S015,CRM Management,Digital,Required,Yes,3,65,20
+POS-016,Sales,Account Manager,Senior Sales Executive,S017,Pipeline Management,Functional,Required,No,3,65,20
+POS-016,Sales,Account Manager,Senior Sales Executive,S018,Product Knowledge,Functional,Preferred,No,2,55,10
+POS-017,Customer Support,Customer Support Representative,Support Executive,S037,Customer Service,Functional,Required,Yes,2,55,25
+POS-017,Customer Support,Customer Support Representative,Support Executive,S038,Complaint Resolution,Behavioral,Required,Yes,2,55,25
+POS-017,Customer Support,Customer Support Representative,Support Executive,S039,Call Handling,Functional,Required,Yes,2,55,20
+POS-017,Customer Support,Customer Support Representative,Support Executive,S018,Product Knowledge,Functional,Required,No,2,55,20
+POS-017,Customer Support,Customer Support Representative,Support Executive,S051,Empathy & Active Listening,Behavioral,Preferred,No,1,45,10
+POS-018,Engineering,Software Engineer II,Software Engineer,S001,Python Programming,Technical,Required,Yes,3,65,25
+POS-018,Engineering,Software Engineer II,Software Engineer,S002,SQL & Databases,Technical,Required,Yes,3,65,25
+POS-018,Engineering,Software Engineer II,Software Engineer,S003,API Development,Technical,Required,Yes,3,65,20
+POS-018,Engineering,Software Engineer II,Software Engineer,S004,Software Testing,Technical,Required,No,3,65,20
+POS-018,Engineering,Software Engineer II,Software Engineer,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-019,IT,Systems Administrator,IT Engineer,S009,Network Administration,Technical,Required,Yes,3,65,25
+POS-019,IT,Systems Administrator,IT Engineer,S007,Cloud Platforms,Technical,Required,Yes,3,65,25
+POS-019,IT,Systems Administrator,IT Engineer,S010,IT Service Management,Functional,Required,Yes,3,65,20
+POS-019,IT,Systems Administrator,IT Engineer,S008,Cybersecurity,Technical,Required,No,3,65,20
+POS-019,IT,Systems Administrator,IT Engineer,S011,Incident Management,Functional,Preferred,No,2,55,10
+POS-020,Customer Support,Customer Support Representative,Support Executive,S037,Customer Service,Functional,Required,Yes,2,55,25
+POS-020,Customer Support,Customer Support Representative,Support Executive,S038,Complaint Resolution,Behavioral,Required,Yes,2,55,25
+POS-020,Customer Support,Customer Support Representative,Support Executive,S039,Call Handling,Functional,Required,Yes,2,55,20
+POS-020,Customer Support,Customer Support Representative,Support Executive,S018,Product Knowledge,Functional,Required,No,2,55,20
+POS-020,Customer Support,Customer Support Representative,Support Executive,S051,Empathy & Active Listening,Behavioral,Preferred,No,1,45,10
+POS-021,Customer Support,Customer Support Representative,Support Executive,S037,Customer Service,Functional,Required,Yes,2,55,25
+POS-021,Customer Support,Customer Support Representative,Support Executive,S038,Complaint Resolution,Behavioral,Required,Yes,2,55,25
+POS-021,Customer Support,Customer Support Representative,Support Executive,S039,Call Handling,Functional,Required,Yes,2,55,20
+POS-021,Customer Support,Customer Support Representative,Support Executive,S018,Product Knowledge,Functional,Required,No,2,55,20
+POS-021,Customer Support,Customer Support Representative,Support Executive,S051,Empathy & Active Listening,Behavioral,Preferred,No,1,45,10
+POS-022,Sales,Account Manager,Senior Sales Executive,S016,Account Management,Functional,Required,Yes,3,65,25
+POS-022,Sales,Account Manager,Senior Sales Executive,S014,Negotiation,Behavioral,Required,Yes,3,65,25
+POS-022,Sales,Account Manager,Senior Sales Executive,S015,CRM Management,Digital,Required,Yes,3,65,20
+POS-022,Sales,Account Manager,Senior Sales Executive,S017,Pipeline Management,Functional,Required,No,3,65,20
+POS-022,Sales,Account Manager,Senior Sales Executive,S018,Product Knowledge,Functional,Preferred,No,2,55,10
+POS-023,Operations,Operations Officer,Operations Officer,S020,SOP Compliance,Compliance,Required,Yes,2,55,25
+POS-023,Operations,Operations Officer,Operations Officer,S024,Workflow Coordination,Functional,Required,Yes,2,55,25
+POS-023,Operations,Operations Officer,Operations Officer,S022,Quality Control,Functional,Required,Yes,2,55,20
+POS-023,Operations,Operations Officer,Operations Officer,S029,Advanced Excel,Digital,Required,No,2,55,20
+POS-023,Operations,Operations Officer,Operations Officer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-024,IT,Systems Administrator,IT Engineer,S009,Network Administration,Technical,Required,Yes,3,65,25
+POS-024,IT,Systems Administrator,IT Engineer,S007,Cloud Platforms,Technical,Required,Yes,3,65,25
+POS-024,IT,Systems Administrator,IT Engineer,S010,IT Service Management,Functional,Required,Yes,3,65,20
+POS-024,IT,Systems Administrator,IT Engineer,S008,Cybersecurity,Technical,Required,No,3,65,20
+POS-024,IT,Systems Administrator,IT Engineer,S011,Incident Management,Functional,Preferred,No,2,55,10
+POS-025,Finance,Financial Analyst,Financial Analyst,S025,Financial Analysis,Functional,Required,Yes,3,65,25
+POS-025,Finance,Financial Analyst,Financial Analyst,S026,Accounting & Reconciliation,Functional,Required,Yes,3,65,25
+POS-025,Finance,Financial Analyst,Financial Analyst,S027,Budgeting & Forecasting,Functional,Required,Yes,3,65,20
+POS-025,Finance,Financial Analyst,Financial Analyst,S029,Advanced Excel,Digital,Required,No,3,65,20
+POS-025,Finance,Financial Analyst,Financial Analyst,S030,Risk Analysis,Functional,Preferred,No,2,55,10
+POS-026,Operations,Operations Manager,Operations Manager,S046,Leadership,Leadership,Required,Yes,4,75,25
+POS-026,Operations,Operations Manager,Operations Manager,S019,Process Management,Functional,Required,Yes,4,75,25
+POS-026,Operations,Operations Manager,Operations Manager,S023,Risk & Controls,Compliance,Required,Yes,4,75,20
+POS-026,Operations,Operations Manager,Operations Manager,S050,Project Management,Leadership,Required,No,4,75,20
+POS-026,Operations,Operations Manager,Operations Manager,S045,Stakeholder Management,Behavioral,Preferred,No,3,65,10
+POS-027,Customer Support,Senior Support Executive,Senior Support Executive,S037,Customer Service,Functional,Required,Yes,3,65,25
+POS-027,Customer Support,Senior Support Executive,Senior Support Executive,S040,SLA Management,Functional,Required,Yes,3,65,25
+POS-027,Customer Support,Senior Support Executive,Senior Support Executive,S015,CRM Management,Digital,Required,Yes,3,65,20
+POS-027,Customer Support,Senior Support Executive,Senior Support Executive,S038,Complaint Resolution,Behavioral,Required,No,3,65,20
+POS-027,Customer Support,Senior Support Executive,Senior Support Executive,S042,Communication,Behavioral,Preferred,No,2,55,10
+POS-028,Sales,Senior Account Manager,Senior Account Manager,S016,Account Management,Functional,Required,Yes,4,75,25
+POS-028,Sales,Senior Account Manager,Senior Account Manager,S014,Negotiation,Behavioral,Required,Yes,4,75,25
+POS-028,Sales,Senior Account Manager,Senior Account Manager,S017,Pipeline Management,Functional,Required,Yes,4,75,20
+POS-028,Sales,Senior Account Manager,Senior Account Manager,S045,Stakeholder Management,Behavioral,Required,No,4,75,20
+POS-028,Sales,Senior Account Manager,Senior Account Manager,S047,Coaching & Mentoring,Leadership,Preferred,No,3,65,10
+POS-029,Engineering,Software Engineer II,Software Engineer,S001,Python Programming,Technical,Required,Yes,3,65,25
+POS-029,Engineering,Software Engineer II,Software Engineer,S002,SQL & Databases,Technical,Required,Yes,3,65,25
+POS-029,Engineering,Software Engineer II,Software Engineer,S003,API Development,Technical,Required,Yes,3,65,20
+POS-029,Engineering,Software Engineer II,Software Engineer,S004,Software Testing,Technical,Required,No,3,65,20
+POS-029,Engineering,Software Engineer II,Software Engineer,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-030,Finance,Senior Financial Analyst,Senior Financial Analyst,S025,Financial Analysis,Functional,Required,Yes,4,75,25
+POS-030,Finance,Senior Financial Analyst,Senior Financial Analyst,S028,Regulatory Reporting,Compliance,Required,Yes,4,75,25
+POS-030,Finance,Senior Financial Analyst,Senior Financial Analyst,S027,Budgeting & Forecasting,Functional,Required,Yes,4,75,20
+POS-030,Finance,Senior Financial Analyst,Senior Financial Analyst,S030,Risk Analysis,Functional,Required,No,4,75,20
+POS-030,Finance,Senior Financial Analyst,Senior Financial Analyst,S045,Stakeholder Management,Behavioral,Preferred,No,3,65,10
+POS-031,Engineering,Senior Software Engineer,Senior Software Engineer,S005,System Design,Technical,Required,Yes,4,75,25
+POS-031,Engineering,Senior Software Engineer,Senior Software Engineer,S003,API Development,Technical,Required,Yes,4,75,25
+POS-031,Engineering,Senior Software Engineer,Senior Software Engineer,S001,Python Programming,Technical,Required,Yes,4,75,20
+POS-031,Engineering,Senior Software Engineer,Senior Software Engineer,S050,Project Management,Leadership,Required,No,4,75,20
+POS-031,Engineering,Senior Software Engineer,Senior Software Engineer,S047,Coaching & Mentoring,Leadership,Preferred,No,3,65,10
+POS-032,Sales,Sales Executive,Sales Executive,S012,B2B Sales,Functional,Required,Yes,2,55,25
+POS-032,Sales,Sales Executive,Sales Executive,S013,Lead Generation,Functional,Required,Yes,2,55,25
+POS-032,Sales,Sales Executive,Sales Executive,S018,Product Knowledge,Functional,Required,Yes,2,55,20
+POS-032,Sales,Sales Executive,Sales Executive,S015,CRM Management,Digital,Required,No,2,55,20
+POS-032,Sales,Sales Executive,Sales Executive,S042,Communication,Behavioral,Preferred,No,1,45,10
+POS-033,IT,IT Support Engineer,Junior IT Engineer,S010,IT Service Management,Functional,Required,Yes,2,55,25
+POS-033,IT,IT Support Engineer,Junior IT Engineer,S011,Incident Management,Functional,Required,Yes,2,55,25
+POS-033,IT,IT Support Engineer,Junior IT Engineer,S009,Network Administration,Technical,Required,Yes,2,55,20
+POS-033,IT,IT Support Engineer,Junior IT Engineer,S042,Communication,Behavioral,Required,No,2,55,20
+POS-033,IT,IT Support Engineer,Junior IT Engineer,S053,Documentation,Behavioral,Preferred,No,1,45,10
+POS-034,Sales,Sales Executive,Sales Executive,S012,B2B Sales,Functional,Required,Yes,2,55,25
+POS-034,Sales,Sales Executive,Sales Executive,S013,Lead Generation,Functional,Required,Yes,2,55,25
+POS-034,Sales,Sales Executive,Sales Executive,S018,Product Knowledge,Functional,Required,Yes,2,55,20
+POS-034,Sales,Sales Executive,Sales Executive,S015,CRM Management,Digital,Required,No,2,55,20
+POS-034,Sales,Sales Executive,Sales Executive,S042,Communication,Behavioral,Preferred,No,1,45,10
+POS-035,Engineering,Software Engineer II,Software Engineer,S001,Python Programming,Technical,Required,Yes,3,65,25
+POS-035,Engineering,Software Engineer II,Software Engineer,S002,SQL & Databases,Technical,Required,Yes,3,65,25
+POS-035,Engineering,Software Engineer II,Software Engineer,S003,API Development,Technical,Required,Yes,3,65,20
+POS-035,Engineering,Software Engineer II,Software Engineer,S004,Software Testing,Technical,Required,No,3,65,20
+POS-035,Engineering,Software Engineer II,Software Engineer,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-036,Sales,Sales Executive,Sales Executive,S012,B2B Sales,Functional,Required,Yes,2,55,25
+POS-036,Sales,Sales Executive,Sales Executive,S013,Lead Generation,Functional,Required,Yes,2,55,25
+POS-036,Sales,Sales Executive,Sales Executive,S018,Product Knowledge,Functional,Required,Yes,2,55,20
+POS-036,Sales,Sales Executive,Sales Executive,S015,CRM Management,Digital,Required,No,2,55,20
+POS-036,Sales,Sales Executive,Sales Executive,S042,Communication,Behavioral,Preferred,No,1,45,10
+POS-037,IT,Systems Administrator,IT Engineer,S009,Network Administration,Technical,Required,Yes,3,65,25
+POS-037,IT,Systems Administrator,IT Engineer,S007,Cloud Platforms,Technical,Required,Yes,3,65,25
+POS-037,IT,Systems Administrator,IT Engineer,S010,IT Service Management,Functional,Required,Yes,3,65,20
+POS-037,IT,Systems Administrator,IT Engineer,S008,Cybersecurity,Technical,Required,No,3,65,20
+POS-037,IT,Systems Administrator,IT Engineer,S011,Incident Management,Functional,Preferred,No,2,55,10
+POS-038,Customer Support,Senior Support Executive,Senior Support Executive,S037,Customer Service,Functional,Required,Yes,3,65,25
+POS-038,Customer Support,Senior Support Executive,Senior Support Executive,S040,SLA Management,Functional,Required,Yes,3,65,25
+POS-038,Customer Support,Senior Support Executive,Senior Support Executive,S015,CRM Management,Digital,Required,Yes,3,65,20
+POS-038,Customer Support,Senior Support Executive,Senior Support Executive,S038,Complaint Resolution,Behavioral,Required,No,3,65,20
+POS-038,Customer Support,Senior Support Executive,Senior Support Executive,S042,Communication,Behavioral,Preferred,No,2,55,10
+POS-039,Operations,Operations Officer,Operations Officer,S020,SOP Compliance,Compliance,Required,Yes,2,55,25
+POS-039,Operations,Operations Officer,Operations Officer,S024,Workflow Coordination,Functional,Required,Yes,2,55,25
+POS-039,Operations,Operations Officer,Operations Officer,S022,Quality Control,Functional,Required,Yes,2,55,20
+POS-039,Operations,Operations Officer,Operations Officer,S029,Advanced Excel,Digital,Required,No,2,55,20
+POS-039,Operations,Operations Officer,Operations Officer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-040,Customer Support,Customer Support Representative,Support Executive,S037,Customer Service,Functional,Required,Yes,2,55,25
+POS-040,Customer Support,Customer Support Representative,Support Executive,S038,Complaint Resolution,Behavioral,Required,Yes,2,55,25
+POS-040,Customer Support,Customer Support Representative,Support Executive,S039,Call Handling,Functional,Required,Yes,2,55,20
+POS-040,Customer Support,Customer Support Representative,Support Executive,S018,Product Knowledge,Functional,Required,No,2,55,20
+POS-040,Customer Support,Customer Support Representative,Support Executive,S051,Empathy & Active Listening,Behavioral,Preferred,No,1,45,10
+POS-041,Operations,Operations Officer,Operations Officer,S020,SOP Compliance,Compliance,Required,Yes,2,55,25
+POS-041,Operations,Operations Officer,Operations Officer,S024,Workflow Coordination,Functional,Required,Yes,2,55,25
+POS-041,Operations,Operations Officer,Operations Officer,S022,Quality Control,Functional,Required,Yes,2,55,20
+POS-041,Operations,Operations Officer,Operations Officer,S029,Advanced Excel,Digital,Required,No,2,55,20
+POS-041,Operations,Operations Officer,Operations Officer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-042,Customer Support,Senior Support Executive,Senior Support Executive,S037,Customer Service,Functional,Required,Yes,3,65,25
+POS-042,Customer Support,Senior Support Executive,Senior Support Executive,S040,SLA Management,Functional,Required,Yes,3,65,25
+POS-042,Customer Support,Senior Support Executive,Senior Support Executive,S015,CRM Management,Digital,Required,Yes,3,65,20
+POS-042,Customer Support,Senior Support Executive,Senior Support Executive,S038,Complaint Resolution,Behavioral,Required,No,3,65,20
+POS-042,Customer Support,Senior Support Executive,Senior Support Executive,S042,Communication,Behavioral,Preferred,No,2,55,10
+POS-043,Operations,Operations Analyst,Operations Specialist,S019,Process Management,Functional,Required,Yes,3,65,25
+POS-043,Operations,Operations Analyst,Operations Specialist,S021,Process Improvement,Functional,Required,Yes,3,65,25
+POS-043,Operations,Operations Analyst,Operations Specialist,S022,Quality Control,Functional,Required,Yes,3,65,20
+POS-043,Operations,Operations Analyst,Operations Specialist,S029,Advanced Excel,Digital,Required,No,3,65,20
+POS-043,Operations,Operations Analyst,Operations Specialist,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-044,Finance,Financial Analyst,Financial Analyst,S025,Financial Analysis,Functional,Required,Yes,3,65,25
+POS-044,Finance,Financial Analyst,Financial Analyst,S026,Accounting & Reconciliation,Functional,Required,Yes,3,65,25
+POS-044,Finance,Financial Analyst,Financial Analyst,S027,Budgeting & Forecasting,Functional,Required,Yes,3,65,20
+POS-044,Finance,Financial Analyst,Financial Analyst,S029,Advanced Excel,Digital,Required,No,3,65,20
+POS-044,Finance,Financial Analyst,Financial Analyst,S030,Risk Analysis,Functional,Preferred,No,2,55,10
+POS-045,Operations,Operations Officer,Operations Officer,S020,SOP Compliance,Compliance,Required,Yes,2,55,25
+POS-045,Operations,Operations Officer,Operations Officer,S024,Workflow Coordination,Functional,Required,Yes,2,55,25
+POS-045,Operations,Operations Officer,Operations Officer,S022,Quality Control,Functional,Required,Yes,2,55,20
+POS-045,Operations,Operations Officer,Operations Officer,S029,Advanced Excel,Digital,Required,No,2,55,20
+POS-045,Operations,Operations Officer,Operations Officer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-046,Customer Support,Customer Support Representative,Support Executive,S037,Customer Service,Functional,Required,Yes,2,55,25
+POS-046,Customer Support,Customer Support Representative,Support Executive,S038,Complaint Resolution,Behavioral,Required,Yes,2,55,25
+POS-046,Customer Support,Customer Support Representative,Support Executive,S039,Call Handling,Functional,Required,Yes,2,55,20
+POS-046,Customer Support,Customer Support Representative,Support Executive,S018,Product Knowledge,Functional,Required,No,2,55,20
+POS-046,Customer Support,Customer Support Representative,Support Executive,S051,Empathy & Active Listening,Behavioral,Preferred,No,1,45,10
+POS-047,Finance,Senior Financial Analyst,Senior Financial Analyst,S025,Financial Analysis,Functional,Required,Yes,4,75,25
+POS-047,Finance,Senior Financial Analyst,Senior Financial Analyst,S028,Regulatory Reporting,Compliance,Required,Yes,4,75,25
+POS-047,Finance,Senior Financial Analyst,Senior Financial Analyst,S027,Budgeting & Forecasting,Functional,Required,Yes,4,75,20
+POS-047,Finance,Senior Financial Analyst,Senior Financial Analyst,S030,Risk Analysis,Functional,Required,No,4,75,20
+POS-047,Finance,Senior Financial Analyst,Senior Financial Analyst,S045,Stakeholder Management,Behavioral,Preferred,No,3,65,10
+POS-048,Operations,Operations Officer,Operations Officer,S020,SOP Compliance,Compliance,Required,Yes,2,55,25
+POS-048,Operations,Operations Officer,Operations Officer,S024,Workflow Coordination,Functional,Required,Yes,2,55,25
+POS-048,Operations,Operations Officer,Operations Officer,S022,Quality Control,Functional,Required,Yes,2,55,20
+POS-048,Operations,Operations Officer,Operations Officer,S029,Advanced Excel,Digital,Required,No,2,55,20
+POS-048,Operations,Operations Officer,Operations Officer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-049,Sales,Sales Executive,Sales Executive,S012,B2B Sales,Functional,Required,Yes,2,55,25
+POS-049,Sales,Sales Executive,Sales Executive,S013,Lead Generation,Functional,Required,Yes,2,55,25
+POS-049,Sales,Sales Executive,Sales Executive,S018,Product Knowledge,Functional,Required,Yes,2,55,20
+POS-049,Sales,Sales Executive,Sales Executive,S015,CRM Management,Digital,Required,No,2,55,20
+POS-049,Sales,Sales Executive,Sales Executive,S042,Communication,Behavioral,Preferred,No,1,45,10
+POS-050,Finance,Finance Officer,Finance Officer,S026,Accounting & Reconciliation,Functional,Required,Yes,2,55,25
+POS-050,Finance,Finance Officer,Finance Officer,S029,Advanced Excel,Digital,Required,Yes,2,55,25
+POS-050,Finance,Finance Officer,Finance Officer,S053,Documentation,Behavioral,Required,Yes,2,55,20
+POS-050,Finance,Finance Officer,Finance Officer,S043,Teamwork,Behavioral,Required,No,2,55,20
+POS-050,Finance,Finance Officer,Finance Officer,S030,Risk Analysis,Functional,Preferred,No,1,45,10
+POS-051,IT,Senior Systems Engineer,Senior IT Engineer,S008,Cybersecurity,Technical,Required,Yes,4,75,25
+POS-051,IT,Senior Systems Engineer,Senior IT Engineer,S007,Cloud Platforms,Technical,Required,Yes,4,75,25
+POS-051,IT,Senior Systems Engineer,Senior IT Engineer,S009,Network Administration,Technical,Required,Yes,4,75,20
+POS-051,IT,Senior Systems Engineer,Senior IT Engineer,S050,Project Management,Leadership,Required,No,4,75,20
+POS-051,IT,Senior Systems Engineer,Senior IT Engineer,S044,Problem Solving,Behavioral,Preferred,No,3,65,10
+POS-052,Customer Support,Customer Support Representative,Support Executive,S037,Customer Service,Functional,Required,Yes,2,55,25
+POS-052,Customer Support,Customer Support Representative,Support Executive,S038,Complaint Resolution,Behavioral,Required,Yes,2,55,25
+POS-052,Customer Support,Customer Support Representative,Support Executive,S039,Call Handling,Functional,Required,Yes,2,55,20
+POS-052,Customer Support,Customer Support Representative,Support Executive,S018,Product Knowledge,Functional,Required,No,2,55,20
+POS-052,Customer Support,Customer Support Representative,Support Executive,S051,Empathy & Active Listening,Behavioral,Preferred,No,1,45,10
+POS-053,HR,HR Officer,HR Officer,S031,Recruitment & Selection,Functional,Required,Yes,2,55,25
+POS-053,HR,HR Officer,HR Officer,S032,HRIS & Employee Data,Digital,Required,Yes,2,55,25
+POS-053,HR,HR Officer,HR Officer,S034,Employee Relations,Behavioral,Required,Yes,2,55,20
+POS-053,HR,HR Officer,HR Officer,S042,Communication,Behavioral,Required,No,2,55,20
+POS-053,HR,HR Officer,HR Officer,S053,Documentation,Behavioral,Preferred,No,1,45,10
+POS-054,Engineering,Software Engineer I,Junior Software Engineer,S001,Python Programming,Technical,Required,Yes,2,55,25
+POS-054,Engineering,Software Engineer I,Junior Software Engineer,S002,SQL & Databases,Technical,Required,Yes,2,55,25
+POS-054,Engineering,Software Engineer I,Junior Software Engineer,S004,Software Testing,Technical,Required,Yes,2,55,20
+POS-054,Engineering,Software Engineer I,Junior Software Engineer,S044,Problem Solving,Behavioral,Required,No,2,55,20
+POS-054,Engineering,Software Engineer I,Junior Software Engineer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-055,Engineering,Software Engineer II,Software Engineer,S001,Python Programming,Technical,Required,Yes,3,65,25
+POS-055,Engineering,Software Engineer II,Software Engineer,S002,SQL & Databases,Technical,Required,Yes,3,65,25
+POS-055,Engineering,Software Engineer II,Software Engineer,S003,API Development,Technical,Required,Yes,3,65,20
+POS-055,Engineering,Software Engineer II,Software Engineer,S004,Software Testing,Technical,Required,No,3,65,20
+POS-055,Engineering,Software Engineer II,Software Engineer,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-056,Operations,Operations Analyst,Operations Specialist,S019,Process Management,Functional,Required,Yes,3,65,25
+POS-056,Operations,Operations Analyst,Operations Specialist,S021,Process Improvement,Functional,Required,Yes,3,65,25
+POS-056,Operations,Operations Analyst,Operations Specialist,S022,Quality Control,Functional,Required,Yes,3,65,20
+POS-056,Operations,Operations Analyst,Operations Specialist,S029,Advanced Excel,Digital,Required,No,3,65,20
+POS-056,Operations,Operations Analyst,Operations Specialist,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-057,IT,IT Support Engineer,Junior IT Engineer,S010,IT Service Management,Functional,Required,Yes,2,55,25
+POS-057,IT,IT Support Engineer,Junior IT Engineer,S011,Incident Management,Functional,Required,Yes,2,55,25
+POS-057,IT,IT Support Engineer,Junior IT Engineer,S009,Network Administration,Technical,Required,Yes,2,55,20
+POS-057,IT,IT Support Engineer,Junior IT Engineer,S042,Communication,Behavioral,Required,No,2,55,20
+POS-057,IT,IT Support Engineer,Junior IT Engineer,S053,Documentation,Behavioral,Preferred,No,1,45,10
+POS-058,Engineering,Senior Software Engineer,Senior Software Engineer,S005,System Design,Technical,Required,Yes,4,75,25
+POS-058,Engineering,Senior Software Engineer,Senior Software Engineer,S003,API Development,Technical,Required,Yes,4,75,25
+POS-058,Engineering,Senior Software Engineer,Senior Software Engineer,S001,Python Programming,Technical,Required,Yes,4,75,20
+POS-058,Engineering,Senior Software Engineer,Senior Software Engineer,S050,Project Management,Leadership,Required,No,4,75,20
+POS-058,Engineering,Senior Software Engineer,Senior Software Engineer,S047,Coaching & Mentoring,Leadership,Preferred,No,3,65,10
+POS-059,Sales,Senior Account Manager,Senior Account Manager,S016,Account Management,Functional,Required,Yes,4,75,25
+POS-059,Sales,Senior Account Manager,Senior Account Manager,S014,Negotiation,Behavioral,Required,Yes,4,75,25
+POS-059,Sales,Senior Account Manager,Senior Account Manager,S017,Pipeline Management,Functional,Required,Yes,4,75,20
+POS-059,Sales,Senior Account Manager,Senior Account Manager,S045,Stakeholder Management,Behavioral,Required,No,4,75,20
+POS-059,Sales,Senior Account Manager,Senior Account Manager,S047,Coaching & Mentoring,Leadership,Preferred,No,3,65,10
+POS-060,Sales,Sales Executive,Sales Executive,S012,B2B Sales,Functional,Required,Yes,2,55,25
+POS-060,Sales,Sales Executive,Sales Executive,S013,Lead Generation,Functional,Required,Yes,2,55,25
+POS-060,Sales,Sales Executive,Sales Executive,S018,Product Knowledge,Functional,Required,Yes,2,55,20
+POS-060,Sales,Sales Executive,Sales Executive,S015,CRM Management,Digital,Required,No,2,55,20
+POS-060,Sales,Sales Executive,Sales Executive,S042,Communication,Behavioral,Preferred,No,1,45,10
+POS-061,Sales,Sales Executive,Sales Executive,S012,B2B Sales,Functional,Required,Yes,2,55,25
+POS-061,Sales,Sales Executive,Sales Executive,S013,Lead Generation,Functional,Required,Yes,2,55,25
+POS-061,Sales,Sales Executive,Sales Executive,S018,Product Knowledge,Functional,Required,Yes,2,55,20
+POS-061,Sales,Sales Executive,Sales Executive,S015,CRM Management,Digital,Required,No,2,55,20
+POS-061,Sales,Sales Executive,Sales Executive,S042,Communication,Behavioral,Preferred,No,1,45,10
+POS-062,Sales,Account Manager,Senior Sales Executive,S016,Account Management,Functional,Required,Yes,3,65,25
+POS-062,Sales,Account Manager,Senior Sales Executive,S014,Negotiation,Behavioral,Required,Yes,3,65,25
+POS-062,Sales,Account Manager,Senior Sales Executive,S015,CRM Management,Digital,Required,Yes,3,65,20
+POS-062,Sales,Account Manager,Senior Sales Executive,S017,Pipeline Management,Functional,Required,No,3,65,20
+POS-062,Sales,Account Manager,Senior Sales Executive,S018,Product Knowledge,Functional,Preferred,No,2,55,10
+POS-063,Sales,Sales Executive,Sales Executive,S012,B2B Sales,Functional,Required,Yes,2,55,25
+POS-063,Sales,Sales Executive,Sales Executive,S013,Lead Generation,Functional,Required,Yes,2,55,25
+POS-063,Sales,Sales Executive,Sales Executive,S018,Product Knowledge,Functional,Required,Yes,2,55,20
+POS-063,Sales,Sales Executive,Sales Executive,S015,CRM Management,Digital,Required,No,2,55,20
+POS-063,Sales,Sales Executive,Sales Executive,S042,Communication,Behavioral,Preferred,No,1,45,10
+POS-064,Sales,Sales Executive,Sales Executive,S012,B2B Sales,Functional,Required,Yes,2,55,25
+POS-064,Sales,Sales Executive,Sales Executive,S013,Lead Generation,Functional,Required,Yes,2,55,25
+POS-064,Sales,Sales Executive,Sales Executive,S018,Product Knowledge,Functional,Required,Yes,2,55,20
+POS-064,Sales,Sales Executive,Sales Executive,S015,CRM Management,Digital,Required,No,2,55,20
+POS-064,Sales,Sales Executive,Sales Executive,S042,Communication,Behavioral,Preferred,No,1,45,10
+POS-065,Sales,Account Manager,Senior Sales Executive,S016,Account Management,Functional,Required,Yes,3,65,25
+POS-065,Sales,Account Manager,Senior Sales Executive,S014,Negotiation,Behavioral,Required,Yes,3,65,25
+POS-065,Sales,Account Manager,Senior Sales Executive,S015,CRM Management,Digital,Required,Yes,3,65,20
+POS-065,Sales,Account Manager,Senior Sales Executive,S017,Pipeline Management,Functional,Required,No,3,65,20
+POS-065,Sales,Account Manager,Senior Sales Executive,S018,Product Knowledge,Functional,Preferred,No,2,55,10
+POS-066,HR,Senior HR Specialist,Senior HR Specialist,S033,Performance Management,Functional,Required,Yes,4,75,25
+POS-066,HR,Senior HR Specialist,Senior HR Specialist,S034,Employee Relations,Behavioral,Required,Yes,4,75,25
+POS-066,HR,Senior HR Specialist,Senior HR Specialist,S035,Learning & Development,Functional,Required,Yes,4,75,20
+POS-066,HR,Senior HR Specialist,Senior HR Specialist,S047,Coaching & Mentoring,Leadership,Required,No,4,75,20
+POS-066,HR,Senior HR Specialist,Senior HR Specialist,S045,Stakeholder Management,Behavioral,Preferred,No,3,65,10
+POS-067,Operations,Operations Manager,Operations Manager,S046,Leadership,Leadership,Required,Yes,4,75,25
+POS-067,Operations,Operations Manager,Operations Manager,S019,Process Management,Functional,Required,Yes,4,75,25
+POS-067,Operations,Operations Manager,Operations Manager,S023,Risk & Controls,Compliance,Required,Yes,4,75,20
+POS-067,Operations,Operations Manager,Operations Manager,S050,Project Management,Leadership,Required,No,4,75,20
+POS-067,Operations,Operations Manager,Operations Manager,S045,Stakeholder Management,Behavioral,Preferred,No,3,65,10
+POS-068,Customer Support,Customer Support Manager,Customer Support Manager,S046,Leadership,Leadership,Required,Yes,4,75,25
+POS-068,Customer Support,Customer Support Manager,Customer Support Manager,S047,Coaching & Mentoring,Leadership,Required,Yes,4,75,25
+POS-068,Customer Support,Customer Support Manager,Customer Support Manager,S040,SLA Management,Functional,Required,Yes,4,75,20
+POS-068,Customer Support,Customer Support Manager,Customer Support Manager,S045,Stakeholder Management,Behavioral,Required,No,4,75,20
+POS-068,Customer Support,Customer Support Manager,Customer Support Manager,S021,Process Improvement,Functional,Preferred,No,3,65,10
+POS-069,Operations,Operations Officer,Operations Officer,S020,SOP Compliance,Compliance,Required,Yes,2,55,25
+POS-069,Operations,Operations Officer,Operations Officer,S024,Workflow Coordination,Functional,Required,Yes,2,55,25
+POS-069,Operations,Operations Officer,Operations Officer,S022,Quality Control,Functional,Required,Yes,2,55,20
+POS-069,Operations,Operations Officer,Operations Officer,S029,Advanced Excel,Digital,Required,No,2,55,20
+POS-069,Operations,Operations Officer,Operations Officer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-070,Engineering,Engineering Lead,Engineering Manager,S005,System Design,Technical,Required,Yes,4,75,25
+POS-070,Engineering,Engineering Lead,Engineering Manager,S050,Project Management,Leadership,Required,Yes,4,75,25
+POS-070,Engineering,Engineering Lead,Engineering Manager,S046,Leadership,Leadership,Required,Yes,4,75,20
+POS-070,Engineering,Engineering Lead,Engineering Manager,S045,Stakeholder Management,Behavioral,Required,No,4,75,20
+POS-070,Engineering,Engineering Lead,Engineering Manager,S006,DevOps & CI/CD,Technical,Preferred,No,3,65,10
+POS-071,Finance,Financial Analyst,Financial Analyst,S025,Financial Analysis,Functional,Required,Yes,3,65,25
+POS-071,Finance,Financial Analyst,Financial Analyst,S026,Accounting & Reconciliation,Functional,Required,Yes,3,65,25
+POS-071,Finance,Financial Analyst,Financial Analyst,S027,Budgeting & Forecasting,Functional,Required,Yes,3,65,20
+POS-071,Finance,Financial Analyst,Financial Analyst,S029,Advanced Excel,Digital,Required,No,3,65,20
+POS-071,Finance,Financial Analyst,Financial Analyst,S030,Risk Analysis,Functional,Preferred,No,2,55,10
+POS-072,Customer Support,Support Team Lead,Team Lead - Customer Support,S040,SLA Management,Functional,Required,Yes,4,75,25
+POS-072,Customer Support,Support Team Lead,Team Lead - Customer Support,S041,Knowledge Base Management,Digital,Required,Yes,4,75,25
+POS-072,Customer Support,Support Team Lead,Team Lead - Customer Support,S047,Coaching & Mentoring,Leadership,Required,Yes,4,75,20
+POS-072,Customer Support,Support Team Lead,Team Lead - Customer Support,S038,Complaint Resolution,Behavioral,Required,No,4,75,20
+POS-072,Customer Support,Support Team Lead,Team Lead - Customer Support,S043,Teamwork,Behavioral,Preferred,No,3,65,10
+POS-073,Customer Support,Customer Support Representative,Support Executive,S037,Customer Service,Functional,Required,Yes,2,55,25
+POS-073,Customer Support,Customer Support Representative,Support Executive,S038,Complaint Resolution,Behavioral,Required,Yes,2,55,25
+POS-073,Customer Support,Customer Support Representative,Support Executive,S039,Call Handling,Functional,Required,Yes,2,55,20
+POS-073,Customer Support,Customer Support Representative,Support Executive,S018,Product Knowledge,Functional,Required,No,2,55,20
+POS-073,Customer Support,Customer Support Representative,Support Executive,S051,Empathy & Active Listening,Behavioral,Preferred,No,1,45,10
+POS-074,Sales,Sales Executive,Sales Executive,S012,B2B Sales,Functional,Required,Yes,2,55,25
+POS-074,Sales,Sales Executive,Sales Executive,S013,Lead Generation,Functional,Required,Yes,2,55,25
+POS-074,Sales,Sales Executive,Sales Executive,S018,Product Knowledge,Functional,Required,Yes,2,55,20
+POS-074,Sales,Sales Executive,Sales Executive,S015,CRM Management,Digital,Required,No,2,55,20
+POS-074,Sales,Sales Executive,Sales Executive,S042,Communication,Behavioral,Preferred,No,1,45,10
+POS-075,Operations,Operations Analyst,Operations Specialist,S019,Process Management,Functional,Required,Yes,3,65,25
+POS-075,Operations,Operations Analyst,Operations Specialist,S021,Process Improvement,Functional,Required,Yes,3,65,25
+POS-075,Operations,Operations Analyst,Operations Specialist,S022,Quality Control,Functional,Required,Yes,3,65,20
+POS-075,Operations,Operations Analyst,Operations Specialist,S029,Advanced Excel,Digital,Required,No,3,65,20
+POS-075,Operations,Operations Analyst,Operations Specialist,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-076,Engineering,Software Engineer II,Software Engineer,S001,Python Programming,Technical,Required,Yes,3,65,25
+POS-076,Engineering,Software Engineer II,Software Engineer,S002,SQL & Databases,Technical,Required,Yes,3,65,25
+POS-076,Engineering,Software Engineer II,Software Engineer,S003,API Development,Technical,Required,Yes,3,65,20
+POS-076,Engineering,Software Engineer II,Software Engineer,S004,Software Testing,Technical,Required,No,3,65,20
+POS-076,Engineering,Software Engineer II,Software Engineer,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-077,Customer Support,Support Team Lead,Team Lead - Customer Support,S040,SLA Management,Functional,Required,Yes,4,75,25
+POS-077,Customer Support,Support Team Lead,Team Lead - Customer Support,S041,Knowledge Base Management,Digital,Required,Yes,4,75,25
+POS-077,Customer Support,Support Team Lead,Team Lead - Customer Support,S047,Coaching & Mentoring,Leadership,Required,Yes,4,75,20
+POS-077,Customer Support,Support Team Lead,Team Lead - Customer Support,S038,Complaint Resolution,Behavioral,Required,No,4,75,20
+POS-077,Customer Support,Support Team Lead,Team Lead - Customer Support,S043,Teamwork,Behavioral,Preferred,No,3,65,10
+POS-078,Engineering,Software Engineer II,Software Engineer,S001,Python Programming,Technical,Required,Yes,3,65,25
+POS-078,Engineering,Software Engineer II,Software Engineer,S002,SQL & Databases,Technical,Required,Yes,3,65,25
+POS-078,Engineering,Software Engineer II,Software Engineer,S003,API Development,Technical,Required,Yes,3,65,20
+POS-078,Engineering,Software Engineer II,Software Engineer,S004,Software Testing,Technical,Required,No,3,65,20
+POS-078,Engineering,Software Engineer II,Software Engineer,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-079,Customer Support,Customer Support Representative,Support Executive,S037,Customer Service,Functional,Required,Yes,2,55,25
+POS-079,Customer Support,Customer Support Representative,Support Executive,S038,Complaint Resolution,Behavioral,Required,Yes,2,55,25
+POS-079,Customer Support,Customer Support Representative,Support Executive,S039,Call Handling,Functional,Required,Yes,2,55,20
+POS-079,Customer Support,Customer Support Representative,Support Executive,S018,Product Knowledge,Functional,Required,No,2,55,20
+POS-079,Customer Support,Customer Support Representative,Support Executive,S051,Empathy & Active Listening,Behavioral,Preferred,No,1,45,10
+POS-080,Engineering,Engineering Lead,Engineering Manager,S005,System Design,Technical,Required,Yes,4,75,25
+POS-080,Engineering,Engineering Lead,Engineering Manager,S050,Project Management,Leadership,Required,Yes,4,75,25
+POS-080,Engineering,Engineering Lead,Engineering Manager,S046,Leadership,Leadership,Required,Yes,4,75,20
+POS-080,Engineering,Engineering Lead,Engineering Manager,S045,Stakeholder Management,Behavioral,Required,No,4,75,20
+POS-080,Engineering,Engineering Lead,Engineering Manager,S006,DevOps & CI/CD,Technical,Preferred,No,3,65,10
+POS-081,HR,Senior HR Specialist,Senior HR Specialist,S033,Performance Management,Functional,Required,Yes,4,75,25
+POS-081,HR,Senior HR Specialist,Senior HR Specialist,S034,Employee Relations,Behavioral,Required,Yes,4,75,25
+POS-081,HR,Senior HR Specialist,Senior HR Specialist,S035,Learning & Development,Functional,Required,Yes,4,75,20
+POS-081,HR,Senior HR Specialist,Senior HR Specialist,S047,Coaching & Mentoring,Leadership,Required,No,4,75,20
+POS-081,HR,Senior HR Specialist,Senior HR Specialist,S045,Stakeholder Management,Behavioral,Preferred,No,3,65,10
+POS-082,Engineering,Software Engineer I,Junior Software Engineer,S001,Python Programming,Technical,Required,Yes,2,55,25
+POS-082,Engineering,Software Engineer I,Junior Software Engineer,S002,SQL & Databases,Technical,Required,Yes,2,55,25
+POS-082,Engineering,Software Engineer I,Junior Software Engineer,S004,Software Testing,Technical,Required,Yes,2,55,20
+POS-082,Engineering,Software Engineer I,Junior Software Engineer,S044,Problem Solving,Behavioral,Required,No,2,55,20
+POS-082,Engineering,Software Engineer I,Junior Software Engineer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-083,Customer Support,Customer Support Representative,Support Executive,S037,Customer Service,Functional,Required,Yes,2,55,25
+POS-083,Customer Support,Customer Support Representative,Support Executive,S038,Complaint Resolution,Behavioral,Required,Yes,2,55,25
+POS-083,Customer Support,Customer Support Representative,Support Executive,S039,Call Handling,Functional,Required,Yes,2,55,20
+POS-083,Customer Support,Customer Support Representative,Support Executive,S018,Product Knowledge,Functional,Required,No,2,55,20
+POS-083,Customer Support,Customer Support Representative,Support Executive,S051,Empathy & Active Listening,Behavioral,Preferred,No,1,45,10
+POS-084,HR,HR Generalist,HR Specialist,S033,Performance Management,Functional,Required,Yes,3,65,25
+POS-084,HR,HR Generalist,HR Specialist,S031,Recruitment & Selection,Functional,Required,Yes,3,65,25
+POS-084,HR,HR Generalist,HR Specialist,S032,HRIS & Employee Data,Digital,Required,Yes,3,65,20
+POS-084,HR,HR Generalist,HR Specialist,S035,Learning & Development,Functional,Required,No,3,65,20
+POS-084,HR,HR Generalist,HR Specialist,S034,Employee Relations,Behavioral,Preferred,No,2,55,10
+POS-085,HR,Senior HR Specialist,Senior HR Specialist,S033,Performance Management,Functional,Required,Yes,4,75,25
+POS-085,HR,Senior HR Specialist,Senior HR Specialist,S034,Employee Relations,Behavioral,Required,Yes,4,75,25
+POS-085,HR,Senior HR Specialist,Senior HR Specialist,S035,Learning & Development,Functional,Required,Yes,4,75,20
+POS-085,HR,Senior HR Specialist,Senior HR Specialist,S047,Coaching & Mentoring,Leadership,Required,No,4,75,20
+POS-085,HR,Senior HR Specialist,Senior HR Specialist,S045,Stakeholder Management,Behavioral,Preferred,No,3,65,10
+POS-086,Operations,Operations Officer,Operations Officer,S020,SOP Compliance,Compliance,Required,Yes,2,55,25
+POS-086,Operations,Operations Officer,Operations Officer,S024,Workflow Coordination,Functional,Required,Yes,2,55,25
+POS-086,Operations,Operations Officer,Operations Officer,S022,Quality Control,Functional,Required,Yes,2,55,20
+POS-086,Operations,Operations Officer,Operations Officer,S029,Advanced Excel,Digital,Required,No,2,55,20
+POS-086,Operations,Operations Officer,Operations Officer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-087,HR,HR Manager,HR Manager,S046,Leadership,Leadership,Required,Yes,4,75,25
+POS-087,HR,HR Manager,HR Manager,S033,Performance Management,Functional,Required,Yes,4,75,25
+POS-087,HR,HR Manager,HR Manager,S034,Employee Relations,Behavioral,Required,Yes,4,75,20
+POS-087,HR,HR Manager,HR Manager,S035,Learning & Development,Functional,Required,No,4,75,20
+POS-087,HR,HR Manager,HR Manager,S045,Stakeholder Management,Behavioral,Preferred,No,3,65,10
+POS-088,Operations,Operations Analyst,Operations Specialist,S019,Process Management,Functional,Required,Yes,3,65,25
+POS-088,Operations,Operations Analyst,Operations Specialist,S021,Process Improvement,Functional,Required,Yes,3,65,25
+POS-088,Operations,Operations Analyst,Operations Specialist,S022,Quality Control,Functional,Required,Yes,3,65,20
+POS-088,Operations,Operations Analyst,Operations Specialist,S029,Advanced Excel,Digital,Required,No,3,65,20
+POS-088,Operations,Operations Analyst,Operations Specialist,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-089,HR,HR Officer,HR Officer,S031,Recruitment & Selection,Functional,Required,Yes,2,55,25
+POS-089,HR,HR Officer,HR Officer,S032,HRIS & Employee Data,Digital,Required,Yes,2,55,25
+POS-089,HR,HR Officer,HR Officer,S034,Employee Relations,Behavioral,Required,Yes,2,55,20
+POS-089,HR,HR Officer,HR Officer,S042,Communication,Behavioral,Required,No,2,55,20
+POS-089,HR,HR Officer,HR Officer,S053,Documentation,Behavioral,Preferred,No,1,45,10
+POS-090,Finance,Financial Analyst,Financial Analyst,S025,Financial Analysis,Functional,Required,Yes,3,65,25
+POS-090,Finance,Financial Analyst,Financial Analyst,S026,Accounting & Reconciliation,Functional,Required,Yes,3,65,25
+POS-090,Finance,Financial Analyst,Financial Analyst,S027,Budgeting & Forecasting,Functional,Required,Yes,3,65,20
+POS-090,Finance,Financial Analyst,Financial Analyst,S029,Advanced Excel,Digital,Required,No,3,65,20
+POS-090,Finance,Financial Analyst,Financial Analyst,S030,Risk Analysis,Functional,Preferred,No,2,55,10
+POS-091,Finance,Senior Financial Analyst,Senior Financial Analyst,S025,Financial Analysis,Functional,Required,Yes,4,75,25
+POS-091,Finance,Senior Financial Analyst,Senior Financial Analyst,S028,Regulatory Reporting,Compliance,Required,Yes,4,75,25
+POS-091,Finance,Senior Financial Analyst,Senior Financial Analyst,S027,Budgeting & Forecasting,Functional,Required,Yes,4,75,20
+POS-091,Finance,Senior Financial Analyst,Senior Financial Analyst,S030,Risk Analysis,Functional,Required,No,4,75,20
+POS-091,Finance,Senior Financial Analyst,Senior Financial Analyst,S045,Stakeholder Management,Behavioral,Preferred,No,3,65,10
+POS-092,Engineering,Senior Software Engineer,Senior Software Engineer,S005,System Design,Technical,Required,Yes,4,75,25
+POS-092,Engineering,Senior Software Engineer,Senior Software Engineer,S003,API Development,Technical,Required,Yes,4,75,25
+POS-092,Engineering,Senior Software Engineer,Senior Software Engineer,S001,Python Programming,Technical,Required,Yes,4,75,20
+POS-092,Engineering,Senior Software Engineer,Senior Software Engineer,S050,Project Management,Leadership,Required,No,4,75,20
+POS-092,Engineering,Senior Software Engineer,Senior Software Engineer,S047,Coaching & Mentoring,Leadership,Preferred,No,3,65,10
+POS-093,Sales,Senior Account Manager,Senior Account Manager,S016,Account Management,Functional,Required,Yes,4,75,25
+POS-093,Sales,Senior Account Manager,Senior Account Manager,S014,Negotiation,Behavioral,Required,Yes,4,75,25
+POS-093,Sales,Senior Account Manager,Senior Account Manager,S017,Pipeline Management,Functional,Required,Yes,4,75,20
+POS-093,Sales,Senior Account Manager,Senior Account Manager,S045,Stakeholder Management,Behavioral,Required,No,4,75,20
+POS-093,Sales,Senior Account Manager,Senior Account Manager,S047,Coaching & Mentoring,Leadership,Preferred,No,3,65,10
+POS-094,IT,Senior Systems Engineer,Senior IT Engineer,S008,Cybersecurity,Technical,Required,Yes,4,75,25
+POS-094,IT,Senior Systems Engineer,Senior IT Engineer,S007,Cloud Platforms,Technical,Required,Yes,4,75,25
+POS-094,IT,Senior Systems Engineer,Senior IT Engineer,S009,Network Administration,Technical,Required,Yes,4,75,20
+POS-094,IT,Senior Systems Engineer,Senior IT Engineer,S050,Project Management,Leadership,Required,No,4,75,20
+POS-094,IT,Senior Systems Engineer,Senior IT Engineer,S044,Problem Solving,Behavioral,Preferred,No,3,65,10
+POS-095,IT,IT Operations Manager,IT Manager,S010,IT Service Management,Functional,Required,Yes,4,75,25
+POS-095,IT,IT Operations Manager,IT Manager,S046,Leadership,Leadership,Required,Yes,4,75,25
+POS-095,IT,IT Operations Manager,IT Manager,S008,Cybersecurity,Technical,Required,Yes,4,75,20
+POS-095,IT,IT Operations Manager,IT Manager,S050,Project Management,Leadership,Required,No,4,75,20
+POS-095,IT,IT Operations Manager,IT Manager,S045,Stakeholder Management,Behavioral,Preferred,No,3,65,10
+POS-096,Sales,Account Manager,Senior Sales Executive,S016,Account Management,Functional,Required,Yes,3,65,25
+POS-096,Sales,Account Manager,Senior Sales Executive,S014,Negotiation,Behavioral,Required,Yes,3,65,25
+POS-096,Sales,Account Manager,Senior Sales Executive,S015,CRM Management,Digital,Required,Yes,3,65,20
+POS-096,Sales,Account Manager,Senior Sales Executive,S017,Pipeline Management,Functional,Required,No,3,65,20
+POS-096,Sales,Account Manager,Senior Sales Executive,S018,Product Knowledge,Functional,Preferred,No,2,55,10
+POS-097,Sales,Sales Executive,Sales Executive,S012,B2B Sales,Functional,Required,Yes,2,55,25
+POS-097,Sales,Sales Executive,Sales Executive,S013,Lead Generation,Functional,Required,Yes,2,55,25
+POS-097,Sales,Sales Executive,Sales Executive,S018,Product Knowledge,Functional,Required,Yes,2,55,20
+POS-097,Sales,Sales Executive,Sales Executive,S015,CRM Management,Digital,Required,No,2,55,20
+POS-097,Sales,Sales Executive,Sales Executive,S042,Communication,Behavioral,Preferred,No,1,45,10
+POS-098,Customer Support,Senior Support Executive,Senior Support Executive,S037,Customer Service,Functional,Required,Yes,3,65,25
+POS-098,Customer Support,Senior Support Executive,Senior Support Executive,S040,SLA Management,Functional,Required,Yes,3,65,25
+POS-098,Customer Support,Senior Support Executive,Senior Support Executive,S015,CRM Management,Digital,Required,Yes,3,65,20
+POS-098,Customer Support,Senior Support Executive,Senior Support Executive,S038,Complaint Resolution,Behavioral,Required,No,3,65,20
+POS-098,Customer Support,Senior Support Executive,Senior Support Executive,S042,Communication,Behavioral,Preferred,No,2,55,10
+POS-099,Finance,Financial Analyst,Financial Analyst,S025,Financial Analysis,Functional,Required,Yes,3,65,25
+POS-099,Finance,Financial Analyst,Financial Analyst,S026,Accounting & Reconciliation,Functional,Required,Yes,3,65,25
+POS-099,Finance,Financial Analyst,Financial Analyst,S027,Budgeting & Forecasting,Functional,Required,Yes,3,65,20
+POS-099,Finance,Financial Analyst,Financial Analyst,S029,Advanced Excel,Digital,Required,No,3,65,20
+POS-099,Finance,Financial Analyst,Financial Analyst,S030,Risk Analysis,Functional,Preferred,No,2,55,10
+POS-100,Engineering,Senior Software Engineer,Senior Software Engineer,S005,System Design,Technical,Required,Yes,4,75,25
+POS-100,Engineering,Senior Software Engineer,Senior Software Engineer,S003,API Development,Technical,Required,Yes,4,75,25
+POS-100,Engineering,Senior Software Engineer,Senior Software Engineer,S001,Python Programming,Technical,Required,Yes,4,75,20
+POS-100,Engineering,Senior Software Engineer,Senior Software Engineer,S050,Project Management,Leadership,Required,No,4,75,20
+POS-100,Engineering,Senior Software Engineer,Senior Software Engineer,S047,Coaching & Mentoring,Leadership,Preferred,No,3,65,10
+POS-101,IT,Systems Administrator,IT Engineer,S009,Network Administration,Technical,Required,Yes,3,65,25
+POS-101,IT,Systems Administrator,IT Engineer,S007,Cloud Platforms,Technical,Required,Yes,3,65,25
+POS-101,IT,Systems Administrator,IT Engineer,S010,IT Service Management,Functional,Required,Yes,3,65,20
+POS-101,IT,Systems Administrator,IT Engineer,S008,Cybersecurity,Technical,Required,No,3,65,20
+POS-101,IT,Systems Administrator,IT Engineer,S011,Incident Management,Functional,Preferred,No,2,55,10
+POS-102,Sales,Sales Executive,Sales Executive,S012,B2B Sales,Functional,Required,Yes,2,55,25
+POS-102,Sales,Sales Executive,Sales Executive,S013,Lead Generation,Functional,Required,Yes,2,55,25
+POS-102,Sales,Sales Executive,Sales Executive,S018,Product Knowledge,Functional,Required,Yes,2,55,20
+POS-102,Sales,Sales Executive,Sales Executive,S015,CRM Management,Digital,Required,No,2,55,20
+POS-102,Sales,Sales Executive,Sales Executive,S042,Communication,Behavioral,Preferred,No,1,45,10
+POS-103,Customer Support,Customer Support Representative,Support Executive,S037,Customer Service,Functional,Required,Yes,2,55,25
+POS-103,Customer Support,Customer Support Representative,Support Executive,S038,Complaint Resolution,Behavioral,Required,Yes,2,55,25
+POS-103,Customer Support,Customer Support Representative,Support Executive,S039,Call Handling,Functional,Required,Yes,2,55,20
+POS-103,Customer Support,Customer Support Representative,Support Executive,S018,Product Knowledge,Functional,Required,No,2,55,20
+POS-103,Customer Support,Customer Support Representative,Support Executive,S051,Empathy & Active Listening,Behavioral,Preferred,No,1,45,10
+POS-104,IT,Senior Systems Engineer,Senior IT Engineer,S008,Cybersecurity,Technical,Required,Yes,4,75,25
+POS-104,IT,Senior Systems Engineer,Senior IT Engineer,S007,Cloud Platforms,Technical,Required,Yes,4,75,25
+POS-104,IT,Senior Systems Engineer,Senior IT Engineer,S009,Network Administration,Technical,Required,Yes,4,75,20
+POS-104,IT,Senior Systems Engineer,Senior IT Engineer,S050,Project Management,Leadership,Required,No,4,75,20
+POS-104,IT,Senior Systems Engineer,Senior IT Engineer,S044,Problem Solving,Behavioral,Preferred,No,3,65,10
+POS-105,Sales,Sales Manager,Sales Manager,S017,Pipeline Management,Functional,Required,Yes,4,75,25
+POS-105,Sales,Sales Manager,Sales Manager,S046,Leadership,Leadership,Required,Yes,4,75,25
+POS-105,Sales,Sales Manager,Sales Manager,S045,Stakeholder Management,Behavioral,Required,Yes,4,75,20
+POS-105,Sales,Sales Manager,Sales Manager,S047,Coaching & Mentoring,Leadership,Required,No,4,75,20
+POS-105,Sales,Sales Manager,Sales Manager,S014,Negotiation,Behavioral,Preferred,No,3,65,10
+POS-106,HR,Senior HR Specialist,Senior HR Specialist,S033,Performance Management,Functional,Required,Yes,4,75,25
+POS-106,HR,Senior HR Specialist,Senior HR Specialist,S034,Employee Relations,Behavioral,Required,Yes,4,75,25
+POS-106,HR,Senior HR Specialist,Senior HR Specialist,S035,Learning & Development,Functional,Required,Yes,4,75,20
+POS-106,HR,Senior HR Specialist,Senior HR Specialist,S047,Coaching & Mentoring,Leadership,Required,No,4,75,20
+POS-106,HR,Senior HR Specialist,Senior HR Specialist,S045,Stakeholder Management,Behavioral,Preferred,No,3,65,10
+POS-107,Engineering,Software Engineer II,Software Engineer,S001,Python Programming,Technical,Required,Yes,3,65,25
+POS-107,Engineering,Software Engineer II,Software Engineer,S002,SQL & Databases,Technical,Required,Yes,3,65,25
+POS-107,Engineering,Software Engineer II,Software Engineer,S003,API Development,Technical,Required,Yes,3,65,20
+POS-107,Engineering,Software Engineer II,Software Engineer,S004,Software Testing,Technical,Required,No,3,65,20
+POS-107,Engineering,Software Engineer II,Software Engineer,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-108,HR,HR Generalist,HR Specialist,S033,Performance Management,Functional,Required,Yes,3,65,25
+POS-108,HR,HR Generalist,HR Specialist,S031,Recruitment & Selection,Functional,Required,Yes,3,65,25
+POS-108,HR,HR Generalist,HR Specialist,S032,HRIS & Employee Data,Digital,Required,Yes,3,65,20
+POS-108,HR,HR Generalist,HR Specialist,S035,Learning & Development,Functional,Required,No,3,65,20
+POS-108,HR,HR Generalist,HR Specialist,S034,Employee Relations,Behavioral,Preferred,No,2,55,10
+POS-109,Sales,Sales Executive,Sales Executive,S012,B2B Sales,Functional,Required,Yes,2,55,25
+POS-109,Sales,Sales Executive,Sales Executive,S013,Lead Generation,Functional,Required,Yes,2,55,25
+POS-109,Sales,Sales Executive,Sales Executive,S018,Product Knowledge,Functional,Required,Yes,2,55,20
+POS-109,Sales,Sales Executive,Sales Executive,S015,CRM Management,Digital,Required,No,2,55,20
+POS-109,Sales,Sales Executive,Sales Executive,S042,Communication,Behavioral,Preferred,No,1,45,10
+POS-110,IT,IT Support Engineer,Junior IT Engineer,S010,IT Service Management,Functional,Required,Yes,2,55,25
+POS-110,IT,IT Support Engineer,Junior IT Engineer,S011,Incident Management,Functional,Required,Yes,2,55,25
+POS-110,IT,IT Support Engineer,Junior IT Engineer,S009,Network Administration,Technical,Required,Yes,2,55,20
+POS-110,IT,IT Support Engineer,Junior IT Engineer,S042,Communication,Behavioral,Required,No,2,55,20
+POS-110,IT,IT Support Engineer,Junior IT Engineer,S053,Documentation,Behavioral,Preferred,No,1,45,10
+POS-111,Sales,Account Manager,Senior Sales Executive,S016,Account Management,Functional,Required,Yes,3,65,25
+POS-111,Sales,Account Manager,Senior Sales Executive,S014,Negotiation,Behavioral,Required,Yes,3,65,25
+POS-111,Sales,Account Manager,Senior Sales Executive,S015,CRM Management,Digital,Required,Yes,3,65,20
+POS-111,Sales,Account Manager,Senior Sales Executive,S017,Pipeline Management,Functional,Required,No,3,65,20
+POS-111,Sales,Account Manager,Senior Sales Executive,S018,Product Knowledge,Functional,Preferred,No,2,55,10
+POS-112,Sales,Sales Executive,Sales Executive,S012,B2B Sales,Functional,Required,Yes,2,55,25
+POS-112,Sales,Sales Executive,Sales Executive,S013,Lead Generation,Functional,Required,Yes,2,55,25
+POS-112,Sales,Sales Executive,Sales Executive,S018,Product Knowledge,Functional,Required,Yes,2,55,20
+POS-112,Sales,Sales Executive,Sales Executive,S015,CRM Management,Digital,Required,No,2,55,20
+POS-112,Sales,Sales Executive,Sales Executive,S042,Communication,Behavioral,Preferred,No,1,45,10
+POS-113,IT,IT Support Engineer,Junior IT Engineer,S010,IT Service Management,Functional,Required,Yes,2,55,25
+POS-113,IT,IT Support Engineer,Junior IT Engineer,S011,Incident Management,Functional,Required,Yes,2,55,25
+POS-113,IT,IT Support Engineer,Junior IT Engineer,S009,Network Administration,Technical,Required,Yes,2,55,20
+POS-113,IT,IT Support Engineer,Junior IT Engineer,S042,Communication,Behavioral,Required,No,2,55,20
+POS-113,IT,IT Support Engineer,Junior IT Engineer,S053,Documentation,Behavioral,Preferred,No,1,45,10
+POS-114,HR,HR Generalist,HR Specialist,S033,Performance Management,Functional,Required,Yes,3,65,25
+POS-114,HR,HR Generalist,HR Specialist,S031,Recruitment & Selection,Functional,Required,Yes,3,65,25
+POS-114,HR,HR Generalist,HR Specialist,S032,HRIS & Employee Data,Digital,Required,Yes,3,65,20
+POS-114,HR,HR Generalist,HR Specialist,S035,Learning & Development,Functional,Required,No,3,65,20
+POS-114,HR,HR Generalist,HR Specialist,S034,Employee Relations,Behavioral,Preferred,No,2,55,10
+POS-115,Engineering,Software Engineer II,Software Engineer,S001,Python Programming,Technical,Required,Yes,3,65,25
+POS-115,Engineering,Software Engineer II,Software Engineer,S002,SQL & Databases,Technical,Required,Yes,3,65,25
+POS-115,Engineering,Software Engineer II,Software Engineer,S003,API Development,Technical,Required,Yes,3,65,20
+POS-115,Engineering,Software Engineer II,Software Engineer,S004,Software Testing,Technical,Required,No,3,65,20
+POS-115,Engineering,Software Engineer II,Software Engineer,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-116,Engineering,Software Engineer I,Junior Software Engineer,S001,Python Programming,Technical,Required,Yes,2,55,25
+POS-116,Engineering,Software Engineer I,Junior Software Engineer,S002,SQL & Databases,Technical,Required,Yes,2,55,25
+POS-116,Engineering,Software Engineer I,Junior Software Engineer,S004,Software Testing,Technical,Required,Yes,2,55,20
+POS-116,Engineering,Software Engineer I,Junior Software Engineer,S044,Problem Solving,Behavioral,Required,No,2,55,20
+POS-116,Engineering,Software Engineer I,Junior Software Engineer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-117,Engineering,Software Engineer I,Junior Software Engineer,S001,Python Programming,Technical,Required,Yes,2,55,25
+POS-117,Engineering,Software Engineer I,Junior Software Engineer,S002,SQL & Databases,Technical,Required,Yes,2,55,25
+POS-117,Engineering,Software Engineer I,Junior Software Engineer,S004,Software Testing,Technical,Required,Yes,2,55,20
+POS-117,Engineering,Software Engineer I,Junior Software Engineer,S044,Problem Solving,Behavioral,Required,No,2,55,20
+POS-117,Engineering,Software Engineer I,Junior Software Engineer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-118,Customer Support,Senior Support Executive,Senior Support Executive,S037,Customer Service,Functional,Required,Yes,3,65,25
+POS-118,Customer Support,Senior Support Executive,Senior Support Executive,S040,SLA Management,Functional,Required,Yes,3,65,25
+POS-118,Customer Support,Senior Support Executive,Senior Support Executive,S015,CRM Management,Digital,Required,Yes,3,65,20
+POS-118,Customer Support,Senior Support Executive,Senior Support Executive,S038,Complaint Resolution,Behavioral,Required,No,3,65,20
+POS-118,Customer Support,Senior Support Executive,Senior Support Executive,S042,Communication,Behavioral,Preferred,No,2,55,10
+POS-119,Customer Support,Support Team Lead,Team Lead - Customer Support,S040,SLA Management,Functional,Required,Yes,4,75,25
+POS-119,Customer Support,Support Team Lead,Team Lead - Customer Support,S041,Knowledge Base Management,Digital,Required,Yes,4,75,25
+POS-119,Customer Support,Support Team Lead,Team Lead - Customer Support,S047,Coaching & Mentoring,Leadership,Required,Yes,4,75,20
+POS-119,Customer Support,Support Team Lead,Team Lead - Customer Support,S038,Complaint Resolution,Behavioral,Required,No,4,75,20
+POS-119,Customer Support,Support Team Lead,Team Lead - Customer Support,S043,Teamwork,Behavioral,Preferred,No,3,65,10
+POS-120,Operations,Operations Analyst,Operations Specialist,S019,Process Management,Functional,Required,Yes,3,65,25
+POS-120,Operations,Operations Analyst,Operations Specialist,S021,Process Improvement,Functional,Required,Yes,3,65,25
+POS-120,Operations,Operations Analyst,Operations Specialist,S022,Quality Control,Functional,Required,Yes,3,65,20
+POS-120,Operations,Operations Analyst,Operations Specialist,S029,Advanced Excel,Digital,Required,No,3,65,20
+POS-120,Operations,Operations Analyst,Operations Specialist,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-121,Operations,Operations Officer,Operations Officer,S020,SOP Compliance,Compliance,Required,Yes,2,55,25
+POS-121,Operations,Operations Officer,Operations Officer,S024,Workflow Coordination,Functional,Required,Yes,2,55,25
+POS-121,Operations,Operations Officer,Operations Officer,S022,Quality Control,Functional,Required,Yes,2,55,20
+POS-121,Operations,Operations Officer,Operations Officer,S029,Advanced Excel,Digital,Required,No,2,55,20
+POS-121,Operations,Operations Officer,Operations Officer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-122,Operations,Operations Officer,Operations Officer,S020,SOP Compliance,Compliance,Required,Yes,2,55,25
+POS-122,Operations,Operations Officer,Operations Officer,S024,Workflow Coordination,Functional,Required,Yes,2,55,25
+POS-122,Operations,Operations Officer,Operations Officer,S022,Quality Control,Functional,Required,Yes,2,55,20
+POS-122,Operations,Operations Officer,Operations Officer,S029,Advanced Excel,Digital,Required,No,2,55,20
+POS-122,Operations,Operations Officer,Operations Officer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-123,Finance,Senior Financial Analyst,Senior Financial Analyst,S025,Financial Analysis,Functional,Required,Yes,4,75,25
+POS-123,Finance,Senior Financial Analyst,Senior Financial Analyst,S028,Regulatory Reporting,Compliance,Required,Yes,4,75,25
+POS-123,Finance,Senior Financial Analyst,Senior Financial Analyst,S027,Budgeting & Forecasting,Functional,Required,Yes,4,75,20
+POS-123,Finance,Senior Financial Analyst,Senior Financial Analyst,S030,Risk Analysis,Functional,Required,No,4,75,20
+POS-123,Finance,Senior Financial Analyst,Senior Financial Analyst,S045,Stakeholder Management,Behavioral,Preferred,No,3,65,10
+POS-124,Sales,Account Manager,Senior Sales Executive,S016,Account Management,Functional,Required,Yes,3,65,25
+POS-124,Sales,Account Manager,Senior Sales Executive,S014,Negotiation,Behavioral,Required,Yes,3,65,25
+POS-124,Sales,Account Manager,Senior Sales Executive,S015,CRM Management,Digital,Required,Yes,3,65,20
+POS-124,Sales,Account Manager,Senior Sales Executive,S017,Pipeline Management,Functional,Required,No,3,65,20
+POS-124,Sales,Account Manager,Senior Sales Executive,S018,Product Knowledge,Functional,Preferred,No,2,55,10
+POS-125,Sales,Senior Account Manager,Senior Account Manager,S016,Account Management,Functional,Required,Yes,4,75,25
+POS-125,Sales,Senior Account Manager,Senior Account Manager,S014,Negotiation,Behavioral,Required,Yes,4,75,25
+POS-125,Sales,Senior Account Manager,Senior Account Manager,S017,Pipeline Management,Functional,Required,Yes,4,75,20
+POS-125,Sales,Senior Account Manager,Senior Account Manager,S045,Stakeholder Management,Behavioral,Required,No,4,75,20
+POS-125,Sales,Senior Account Manager,Senior Account Manager,S047,Coaching & Mentoring,Leadership,Preferred,No,3,65,10
+POS-126,Customer Support,Support Team Lead,Team Lead - Customer Support,S040,SLA Management,Functional,Required,Yes,4,75,25
+POS-126,Customer Support,Support Team Lead,Team Lead - Customer Support,S041,Knowledge Base Management,Digital,Required,Yes,4,75,25
+POS-126,Customer Support,Support Team Lead,Team Lead - Customer Support,S047,Coaching & Mentoring,Leadership,Required,Yes,4,75,20
+POS-126,Customer Support,Support Team Lead,Team Lead - Customer Support,S038,Complaint Resolution,Behavioral,Required,No,4,75,20
+POS-126,Customer Support,Support Team Lead,Team Lead - Customer Support,S043,Teamwork,Behavioral,Preferred,No,3,65,10
+POS-127,HR,HR Generalist,HR Specialist,S033,Performance Management,Functional,Required,Yes,3,65,25
+POS-127,HR,HR Generalist,HR Specialist,S031,Recruitment & Selection,Functional,Required,Yes,3,65,25
+POS-127,HR,HR Generalist,HR Specialist,S032,HRIS & Employee Data,Digital,Required,Yes,3,65,20
+POS-127,HR,HR Generalist,HR Specialist,S035,Learning & Development,Functional,Required,No,3,65,20
+POS-127,HR,HR Generalist,HR Specialist,S034,Employee Relations,Behavioral,Preferred,No,2,55,10
+POS-128,Customer Support,Customer Support Manager,Customer Support Manager,S046,Leadership,Leadership,Required,Yes,4,75,25
+POS-128,Customer Support,Customer Support Manager,Customer Support Manager,S047,Coaching & Mentoring,Leadership,Required,Yes,4,75,25
+POS-128,Customer Support,Customer Support Manager,Customer Support Manager,S040,SLA Management,Functional,Required,Yes,4,75,20
+POS-128,Customer Support,Customer Support Manager,Customer Support Manager,S045,Stakeholder Management,Behavioral,Required,No,4,75,20
+POS-128,Customer Support,Customer Support Manager,Customer Support Manager,S021,Process Improvement,Functional,Preferred,No,3,65,10
+POS-129,Engineering,Engineering Lead,Engineering Manager,S005,System Design,Technical,Required,Yes,4,75,25
+POS-129,Engineering,Engineering Lead,Engineering Manager,S050,Project Management,Leadership,Required,Yes,4,75,25
+POS-129,Engineering,Engineering Lead,Engineering Manager,S046,Leadership,Leadership,Required,Yes,4,75,20
+POS-129,Engineering,Engineering Lead,Engineering Manager,S045,Stakeholder Management,Behavioral,Required,No,4,75,20
+POS-129,Engineering,Engineering Lead,Engineering Manager,S006,DevOps & CI/CD,Technical,Preferred,No,3,65,10
+POS-130,HR,Senior HR Specialist,Senior HR Specialist,S033,Performance Management,Functional,Required,Yes,4,75,25
+POS-130,HR,Senior HR Specialist,Senior HR Specialist,S034,Employee Relations,Behavioral,Required,Yes,4,75,25
+POS-130,HR,Senior HR Specialist,Senior HR Specialist,S035,Learning & Development,Functional,Required,Yes,4,75,20
+POS-130,HR,Senior HR Specialist,Senior HR Specialist,S047,Coaching & Mentoring,Leadership,Required,No,4,75,20
+POS-130,HR,Senior HR Specialist,Senior HR Specialist,S045,Stakeholder Management,Behavioral,Preferred,No,3,65,10
+POS-131,IT,Systems Administrator,IT Engineer,S009,Network Administration,Technical,Required,Yes,3,65,25
+POS-131,IT,Systems Administrator,IT Engineer,S007,Cloud Platforms,Technical,Required,Yes,3,65,25
+POS-131,IT,Systems Administrator,IT Engineer,S010,IT Service Management,Functional,Required,Yes,3,65,20
+POS-131,IT,Systems Administrator,IT Engineer,S008,Cybersecurity,Technical,Required,No,3,65,20
+POS-131,IT,Systems Administrator,IT Engineer,S011,Incident Management,Functional,Preferred,No,2,55,10
+POS-132,IT,IT Support Engineer,Junior IT Engineer,S010,IT Service Management,Functional,Required,Yes,2,55,25
+POS-132,IT,IT Support Engineer,Junior IT Engineer,S011,Incident Management,Functional,Required,Yes,2,55,25
+POS-132,IT,IT Support Engineer,Junior IT Engineer,S009,Network Administration,Technical,Required,Yes,2,55,20
+POS-132,IT,IT Support Engineer,Junior IT Engineer,S042,Communication,Behavioral,Required,No,2,55,20
+POS-132,IT,IT Support Engineer,Junior IT Engineer,S053,Documentation,Behavioral,Preferred,No,1,45,10
+POS-133,Engineering,Software Engineer II,Software Engineer,S001,Python Programming,Technical,Required,Yes,3,65,25
+POS-133,Engineering,Software Engineer II,Software Engineer,S002,SQL & Databases,Technical,Required,Yes,3,65,25
+POS-133,Engineering,Software Engineer II,Software Engineer,S003,API Development,Technical,Required,Yes,3,65,20
+POS-133,Engineering,Software Engineer II,Software Engineer,S004,Software Testing,Technical,Required,No,3,65,20
+POS-133,Engineering,Software Engineer II,Software Engineer,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-134,IT,Systems Administrator,IT Engineer,S009,Network Administration,Technical,Required,Yes,3,65,25
+POS-134,IT,Systems Administrator,IT Engineer,S007,Cloud Platforms,Technical,Required,Yes,3,65,25
+POS-134,IT,Systems Administrator,IT Engineer,S010,IT Service Management,Functional,Required,Yes,3,65,20
+POS-134,IT,Systems Administrator,IT Engineer,S008,Cybersecurity,Technical,Required,No,3,65,20
+POS-134,IT,Systems Administrator,IT Engineer,S011,Incident Management,Functional,Preferred,No,2,55,10
+POS-135,Customer Support,Senior Support Executive,Senior Support Executive,S037,Customer Service,Functional,Required,Yes,3,65,25
+POS-135,Customer Support,Senior Support Executive,Senior Support Executive,S040,SLA Management,Functional,Required,Yes,3,65,25
+POS-135,Customer Support,Senior Support Executive,Senior Support Executive,S015,CRM Management,Digital,Required,Yes,3,65,20
+POS-135,Customer Support,Senior Support Executive,Senior Support Executive,S038,Complaint Resolution,Behavioral,Required,No,3,65,20
+POS-135,Customer Support,Senior Support Executive,Senior Support Executive,S042,Communication,Behavioral,Preferred,No,2,55,10
+POS-136,HR,HR Generalist,HR Specialist,S033,Performance Management,Functional,Required,Yes,3,65,25
+POS-136,HR,HR Generalist,HR Specialist,S031,Recruitment & Selection,Functional,Required,Yes,3,65,25
+POS-136,HR,HR Generalist,HR Specialist,S032,HRIS & Employee Data,Digital,Required,Yes,3,65,20
+POS-136,HR,HR Generalist,HR Specialist,S035,Learning & Development,Functional,Required,No,3,65,20
+POS-136,HR,HR Generalist,HR Specialist,S034,Employee Relations,Behavioral,Preferred,No,2,55,10
+POS-137,Customer Support,Customer Support Representative,Support Executive,S037,Customer Service,Functional,Required,Yes,2,55,25
+POS-137,Customer Support,Customer Support Representative,Support Executive,S038,Complaint Resolution,Behavioral,Required,Yes,2,55,25
+POS-137,Customer Support,Customer Support Representative,Support Executive,S039,Call Handling,Functional,Required,Yes,2,55,20
+POS-137,Customer Support,Customer Support Representative,Support Executive,S018,Product Knowledge,Functional,Required,No,2,55,20
+POS-137,Customer Support,Customer Support Representative,Support Executive,S051,Empathy & Active Listening,Behavioral,Preferred,No,1,45,10
+POS-138,Engineering,Software Engineer II,Software Engineer,S001,Python Programming,Technical,Required,Yes,3,65,25
+POS-138,Engineering,Software Engineer II,Software Engineer,S002,SQL & Databases,Technical,Required,Yes,3,65,25
+POS-138,Engineering,Software Engineer II,Software Engineer,S003,API Development,Technical,Required,Yes,3,65,20
+POS-138,Engineering,Software Engineer II,Software Engineer,S004,Software Testing,Technical,Required,No,3,65,20
+POS-138,Engineering,Software Engineer II,Software Engineer,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-139,Operations,Operations Officer,Operations Officer,S020,SOP Compliance,Compliance,Required,Yes,2,55,25
+POS-139,Operations,Operations Officer,Operations Officer,S024,Workflow Coordination,Functional,Required,Yes,2,55,25
+POS-139,Operations,Operations Officer,Operations Officer,S022,Quality Control,Functional,Required,Yes,2,55,20
+POS-139,Operations,Operations Officer,Operations Officer,S029,Advanced Excel,Digital,Required,No,2,55,20
+POS-139,Operations,Operations Officer,Operations Officer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-140,Finance,Senior Financial Analyst,Senior Financial Analyst,S025,Financial Analysis,Functional,Required,Yes,4,75,25
+POS-140,Finance,Senior Financial Analyst,Senior Financial Analyst,S028,Regulatory Reporting,Compliance,Required,Yes,4,75,25
+POS-140,Finance,Senior Financial Analyst,Senior Financial Analyst,S027,Budgeting & Forecasting,Functional,Required,Yes,4,75,20
+POS-140,Finance,Senior Financial Analyst,Senior Financial Analyst,S030,Risk Analysis,Functional,Required,No,4,75,20
+POS-140,Finance,Senior Financial Analyst,Senior Financial Analyst,S045,Stakeholder Management,Behavioral,Preferred,No,3,65,10
+POS-141,Operations,Operations Manager,Operations Manager,S046,Leadership,Leadership,Required,Yes,4,75,25
+POS-141,Operations,Operations Manager,Operations Manager,S019,Process Management,Functional,Required,Yes,4,75,25
+POS-141,Operations,Operations Manager,Operations Manager,S023,Risk & Controls,Compliance,Required,Yes,4,75,20
+POS-141,Operations,Operations Manager,Operations Manager,S050,Project Management,Leadership,Required,No,4,75,20
+POS-141,Operations,Operations Manager,Operations Manager,S045,Stakeholder Management,Behavioral,Preferred,No,3,65,10
+POS-142,Engineering,Engineering Lead,Engineering Manager,S005,System Design,Technical,Required,Yes,4,75,25
+POS-142,Engineering,Engineering Lead,Engineering Manager,S050,Project Management,Leadership,Required,Yes,4,75,25
+POS-142,Engineering,Engineering Lead,Engineering Manager,S046,Leadership,Leadership,Required,Yes,4,75,20
+POS-142,Engineering,Engineering Lead,Engineering Manager,S045,Stakeholder Management,Behavioral,Required,No,4,75,20
+POS-142,Engineering,Engineering Lead,Engineering Manager,S006,DevOps & CI/CD,Technical,Preferred,No,3,65,10
+POS-143,Finance,Financial Analyst,Financial Analyst,S025,Financial Analysis,Functional,Required,Yes,3,65,25
+POS-143,Finance,Financial Analyst,Financial Analyst,S026,Accounting & Reconciliation,Functional,Required,Yes,3,65,25
+POS-143,Finance,Financial Analyst,Financial Analyst,S027,Budgeting & Forecasting,Functional,Required,Yes,3,65,20
+POS-143,Finance,Financial Analyst,Financial Analyst,S029,Advanced Excel,Digital,Required,No,3,65,20
+POS-143,Finance,Financial Analyst,Financial Analyst,S030,Risk Analysis,Functional,Preferred,No,2,55,10
+POS-144,Customer Support,Customer Support Manager,Customer Support Manager,S046,Leadership,Leadership,Required,Yes,4,75,25
+POS-144,Customer Support,Customer Support Manager,Customer Support Manager,S047,Coaching & Mentoring,Leadership,Required,Yes,4,75,25
+POS-144,Customer Support,Customer Support Manager,Customer Support Manager,S040,SLA Management,Functional,Required,Yes,4,75,20
+POS-144,Customer Support,Customer Support Manager,Customer Support Manager,S045,Stakeholder Management,Behavioral,Required,No,4,75,20
+POS-144,Customer Support,Customer Support Manager,Customer Support Manager,S021,Process Improvement,Functional,Preferred,No,3,65,10
+POS-145,Sales,Account Manager,Senior Sales Executive,S016,Account Management,Functional,Required,Yes,3,65,25
+POS-145,Sales,Account Manager,Senior Sales Executive,S014,Negotiation,Behavioral,Required,Yes,3,65,25
+POS-145,Sales,Account Manager,Senior Sales Executive,S015,CRM Management,Digital,Required,Yes,3,65,20
+POS-145,Sales,Account Manager,Senior Sales Executive,S017,Pipeline Management,Functional,Required,No,3,65,20
+POS-145,Sales,Account Manager,Senior Sales Executive,S018,Product Knowledge,Functional,Preferred,No,2,55,10
+POS-146,Finance,Financial Analyst,Financial Analyst,S025,Financial Analysis,Functional,Required,Yes,3,65,25
+POS-146,Finance,Financial Analyst,Financial Analyst,S026,Accounting & Reconciliation,Functional,Required,Yes,3,65,25
+POS-146,Finance,Financial Analyst,Financial Analyst,S027,Budgeting & Forecasting,Functional,Required,Yes,3,65,20
+POS-146,Finance,Financial Analyst,Financial Analyst,S029,Advanced Excel,Digital,Required,No,3,65,20
+POS-146,Finance,Financial Analyst,Financial Analyst,S030,Risk Analysis,Functional,Preferred,No,2,55,10
+POS-147,Customer Support,Customer Support Manager,Customer Support Manager,S046,Leadership,Leadership,Required,Yes,4,75,25
+POS-147,Customer Support,Customer Support Manager,Customer Support Manager,S047,Coaching & Mentoring,Leadership,Required,Yes,4,75,25
+POS-147,Customer Support,Customer Support Manager,Customer Support Manager,S040,SLA Management,Functional,Required,Yes,4,75,20
+POS-147,Customer Support,Customer Support Manager,Customer Support Manager,S045,Stakeholder Management,Behavioral,Required,No,4,75,20
+POS-147,Customer Support,Customer Support Manager,Customer Support Manager,S021,Process Improvement,Functional,Preferred,No,3,65,10
+POS-148,Sales,Sales Executive,Sales Executive,S012,B2B Sales,Functional,Required,Yes,2,55,25
+POS-148,Sales,Sales Executive,Sales Executive,S013,Lead Generation,Functional,Required,Yes,2,55,25
+POS-148,Sales,Sales Executive,Sales Executive,S018,Product Knowledge,Functional,Required,Yes,2,55,20
+POS-148,Sales,Sales Executive,Sales Executive,S015,CRM Management,Digital,Required,No,2,55,20
+POS-148,Sales,Sales Executive,Sales Executive,S042,Communication,Behavioral,Preferred,No,1,45,10
+POS-149,Operations,Operations Analyst,Operations Specialist,S019,Process Management,Functional,Required,Yes,3,65,25
+POS-149,Operations,Operations Analyst,Operations Specialist,S021,Process Improvement,Functional,Required,Yes,3,65,25
+POS-149,Operations,Operations Analyst,Operations Specialist,S022,Quality Control,Functional,Required,Yes,3,65,20
+POS-149,Operations,Operations Analyst,Operations Specialist,S029,Advanced Excel,Digital,Required,No,3,65,20
+POS-149,Operations,Operations Analyst,Operations Specialist,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-150,Customer Support,Customer Support Representative,Support Executive,S037,Customer Service,Functional,Required,Yes,2,55,25
+POS-150,Customer Support,Customer Support Representative,Support Executive,S038,Complaint Resolution,Behavioral,Required,Yes,2,55,25
+POS-150,Customer Support,Customer Support Representative,Support Executive,S039,Call Handling,Functional,Required,Yes,2,55,20
+POS-150,Customer Support,Customer Support Representative,Support Executive,S018,Product Knowledge,Functional,Required,No,2,55,20
+POS-150,Customer Support,Customer Support Representative,Support Executive,S051,Empathy & Active Listening,Behavioral,Preferred,No,1,45,10
+POS-151,Engineering,Software Engineer I,Junior Software Engineer,S001,Python Programming,Technical,Required,Yes,2,55,25
+POS-151,Engineering,Software Engineer I,Junior Software Engineer,S002,SQL & Databases,Technical,Required,Yes,2,55,25
+POS-151,Engineering,Software Engineer I,Junior Software Engineer,S004,Software Testing,Technical,Required,Yes,2,55,20
+POS-151,Engineering,Software Engineer I,Junior Software Engineer,S044,Problem Solving,Behavioral,Required,No,2,55,20
+POS-151,Engineering,Software Engineer I,Junior Software Engineer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-152,IT,Senior Systems Engineer,Senior IT Engineer,S008,Cybersecurity,Technical,Required,Yes,4,75,25
+POS-152,IT,Senior Systems Engineer,Senior IT Engineer,S007,Cloud Platforms,Technical,Required,Yes,4,75,25
+POS-152,IT,Senior Systems Engineer,Senior IT Engineer,S009,Network Administration,Technical,Required,Yes,4,75,20
+POS-152,IT,Senior Systems Engineer,Senior IT Engineer,S050,Project Management,Leadership,Required,No,4,75,20
+POS-152,IT,Senior Systems Engineer,Senior IT Engineer,S044,Problem Solving,Behavioral,Preferred,No,3,65,10
+POS-153,Engineering,Software Engineer II,Software Engineer,S001,Python Programming,Technical,Required,Yes,3,65,25
+POS-153,Engineering,Software Engineer II,Software Engineer,S002,SQL & Databases,Technical,Required,Yes,3,65,25
+POS-153,Engineering,Software Engineer II,Software Engineer,S003,API Development,Technical,Required,Yes,3,65,20
+POS-153,Engineering,Software Engineer II,Software Engineer,S004,Software Testing,Technical,Required,No,3,65,20
+POS-153,Engineering,Software Engineer II,Software Engineer,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-154,Engineering,Software Engineer I,Junior Software Engineer,S001,Python Programming,Technical,Required,Yes,2,55,25
+POS-154,Engineering,Software Engineer I,Junior Software Engineer,S002,SQL & Databases,Technical,Required,Yes,2,55,25
+POS-154,Engineering,Software Engineer I,Junior Software Engineer,S004,Software Testing,Technical,Required,Yes,2,55,20
+POS-154,Engineering,Software Engineer I,Junior Software Engineer,S044,Problem Solving,Behavioral,Required,No,2,55,20
+POS-154,Engineering,Software Engineer I,Junior Software Engineer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-155,Customer Support,Senior Support Executive,Senior Support Executive,S037,Customer Service,Functional,Required,Yes,3,65,25
+POS-155,Customer Support,Senior Support Executive,Senior Support Executive,S040,SLA Management,Functional,Required,Yes,3,65,25
+POS-155,Customer Support,Senior Support Executive,Senior Support Executive,S015,CRM Management,Digital,Required,Yes,3,65,20
+POS-155,Customer Support,Senior Support Executive,Senior Support Executive,S038,Complaint Resolution,Behavioral,Required,No,3,65,20
+POS-155,Customer Support,Senior Support Executive,Senior Support Executive,S042,Communication,Behavioral,Preferred,No,2,55,10
+POS-156,Engineering,Software Engineer II,Software Engineer,S001,Python Programming,Technical,Required,Yes,3,65,25
+POS-156,Engineering,Software Engineer II,Software Engineer,S002,SQL & Databases,Technical,Required,Yes,3,65,25
+POS-156,Engineering,Software Engineer II,Software Engineer,S003,API Development,Technical,Required,Yes,3,65,20
+POS-156,Engineering,Software Engineer II,Software Engineer,S004,Software Testing,Technical,Required,No,3,65,20
+POS-156,Engineering,Software Engineer II,Software Engineer,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-157,Operations,Operations Officer,Operations Officer,S020,SOP Compliance,Compliance,Required,Yes,2,55,25
+POS-157,Operations,Operations Officer,Operations Officer,S024,Workflow Coordination,Functional,Required,Yes,2,55,25
+POS-157,Operations,Operations Officer,Operations Officer,S022,Quality Control,Functional,Required,Yes,2,55,20
+POS-157,Operations,Operations Officer,Operations Officer,S029,Advanced Excel,Digital,Required,No,2,55,20
+POS-157,Operations,Operations Officer,Operations Officer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-158,Operations,Operations Officer,Operations Officer,S020,SOP Compliance,Compliance,Required,Yes,2,55,25
+POS-158,Operations,Operations Officer,Operations Officer,S024,Workflow Coordination,Functional,Required,Yes,2,55,25
+POS-158,Operations,Operations Officer,Operations Officer,S022,Quality Control,Functional,Required,Yes,2,55,20
+POS-158,Operations,Operations Officer,Operations Officer,S029,Advanced Excel,Digital,Required,No,2,55,20
+POS-158,Operations,Operations Officer,Operations Officer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-159,Engineering,Senior Software Engineer,Senior Software Engineer,S005,System Design,Technical,Required,Yes,4,75,25
+POS-159,Engineering,Senior Software Engineer,Senior Software Engineer,S003,API Development,Technical,Required,Yes,4,75,25
+POS-159,Engineering,Senior Software Engineer,Senior Software Engineer,S001,Python Programming,Technical,Required,Yes,4,75,20
+POS-159,Engineering,Senior Software Engineer,Senior Software Engineer,S050,Project Management,Leadership,Required,No,4,75,20
+POS-159,Engineering,Senior Software Engineer,Senior Software Engineer,S047,Coaching & Mentoring,Leadership,Preferred,No,3,65,10
+POS-160,Finance,Senior Financial Analyst,Senior Financial Analyst,S025,Financial Analysis,Functional,Required,Yes,4,75,25
+POS-160,Finance,Senior Financial Analyst,Senior Financial Analyst,S028,Regulatory Reporting,Compliance,Required,Yes,4,75,25
+POS-160,Finance,Senior Financial Analyst,Senior Financial Analyst,S027,Budgeting & Forecasting,Functional,Required,Yes,4,75,20
+POS-160,Finance,Senior Financial Analyst,Senior Financial Analyst,S030,Risk Analysis,Functional,Required,No,4,75,20
+POS-160,Finance,Senior Financial Analyst,Senior Financial Analyst,S045,Stakeholder Management,Behavioral,Preferred,No,3,65,10
+POS-161,Finance,Financial Analyst,Financial Analyst,S025,Financial Analysis,Functional,Required,Yes,3,65,25
+POS-161,Finance,Financial Analyst,Financial Analyst,S026,Accounting & Reconciliation,Functional,Required,Yes,3,65,25
+POS-161,Finance,Financial Analyst,Financial Analyst,S027,Budgeting & Forecasting,Functional,Required,Yes,3,65,20
+POS-161,Finance,Financial Analyst,Financial Analyst,S029,Advanced Excel,Digital,Required,No,3,65,20
+POS-161,Finance,Financial Analyst,Financial Analyst,S030,Risk Analysis,Functional,Preferred,No,2,55,10
+POS-162,Customer Support,Customer Support Representative,Support Executive,S037,Customer Service,Functional,Required,Yes,2,55,25
+POS-162,Customer Support,Customer Support Representative,Support Executive,S038,Complaint Resolution,Behavioral,Required,Yes,2,55,25
+POS-162,Customer Support,Customer Support Representative,Support Executive,S039,Call Handling,Functional,Required,Yes,2,55,20
+POS-162,Customer Support,Customer Support Representative,Support Executive,S018,Product Knowledge,Functional,Required,No,2,55,20
+POS-162,Customer Support,Customer Support Representative,Support Executive,S051,Empathy & Active Listening,Behavioral,Preferred,No,1,45,10
+POS-163,Engineering,Software Engineer II,Software Engineer,S001,Python Programming,Technical,Required,Yes,3,65,25
+POS-163,Engineering,Software Engineer II,Software Engineer,S002,SQL & Databases,Technical,Required,Yes,3,65,25
+POS-163,Engineering,Software Engineer II,Software Engineer,S003,API Development,Technical,Required,Yes,3,65,20
+POS-163,Engineering,Software Engineer II,Software Engineer,S004,Software Testing,Technical,Required,No,3,65,20
+POS-163,Engineering,Software Engineer II,Software Engineer,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-164,Sales,Sales Executive,Sales Executive,S012,B2B Sales,Functional,Required,Yes,2,55,25
+POS-164,Sales,Sales Executive,Sales Executive,S013,Lead Generation,Functional,Required,Yes,2,55,25
+POS-164,Sales,Sales Executive,Sales Executive,S018,Product Knowledge,Functional,Required,Yes,2,55,20
+POS-164,Sales,Sales Executive,Sales Executive,S015,CRM Management,Digital,Required,No,2,55,20
+POS-164,Sales,Sales Executive,Sales Executive,S042,Communication,Behavioral,Preferred,No,1,45,10
+POS-165,Sales,Sales Executive,Sales Executive,S012,B2B Sales,Functional,Required,Yes,2,55,25
+POS-165,Sales,Sales Executive,Sales Executive,S013,Lead Generation,Functional,Required,Yes,2,55,25
+POS-165,Sales,Sales Executive,Sales Executive,S018,Product Knowledge,Functional,Required,Yes,2,55,20
+POS-165,Sales,Sales Executive,Sales Executive,S015,CRM Management,Digital,Required,No,2,55,20
+POS-165,Sales,Sales Executive,Sales Executive,S042,Communication,Behavioral,Preferred,No,1,45,10
+POS-166,Sales,Sales Manager,Sales Manager,S017,Pipeline Management,Functional,Required,Yes,4,75,25
+POS-166,Sales,Sales Manager,Sales Manager,S046,Leadership,Leadership,Required,Yes,4,75,25
+POS-166,Sales,Sales Manager,Sales Manager,S045,Stakeholder Management,Behavioral,Required,Yes,4,75,20
+POS-166,Sales,Sales Manager,Sales Manager,S047,Coaching & Mentoring,Leadership,Required,No,4,75,20
+POS-166,Sales,Sales Manager,Sales Manager,S014,Negotiation,Behavioral,Preferred,No,3,65,10
+POS-167,Sales,Account Manager,Senior Sales Executive,S016,Account Management,Functional,Required,Yes,3,65,25
+POS-167,Sales,Account Manager,Senior Sales Executive,S014,Negotiation,Behavioral,Required,Yes,3,65,25
+POS-167,Sales,Account Manager,Senior Sales Executive,S015,CRM Management,Digital,Required,Yes,3,65,20
+POS-167,Sales,Account Manager,Senior Sales Executive,S017,Pipeline Management,Functional,Required,No,3,65,20
+POS-167,Sales,Account Manager,Senior Sales Executive,S018,Product Knowledge,Functional,Preferred,No,2,55,10
+POS-168,Customer Support,Support Team Lead,Team Lead - Customer Support,S040,SLA Management,Functional,Required,Yes,4,75,25
+POS-168,Customer Support,Support Team Lead,Team Lead - Customer Support,S041,Knowledge Base Management,Digital,Required,Yes,4,75,25
+POS-168,Customer Support,Support Team Lead,Team Lead - Customer Support,S047,Coaching & Mentoring,Leadership,Required,Yes,4,75,20
+POS-168,Customer Support,Support Team Lead,Team Lead - Customer Support,S038,Complaint Resolution,Behavioral,Required,No,4,75,20
+POS-168,Customer Support,Support Team Lead,Team Lead - Customer Support,S043,Teamwork,Behavioral,Preferred,No,3,65,10
+POS-169,IT,IT Operations Manager,IT Manager,S010,IT Service Management,Functional,Required,Yes,4,75,25
+POS-169,IT,IT Operations Manager,IT Manager,S046,Leadership,Leadership,Required,Yes,4,75,25
+POS-169,IT,IT Operations Manager,IT Manager,S008,Cybersecurity,Technical,Required,Yes,4,75,20
+POS-169,IT,IT Operations Manager,IT Manager,S050,Project Management,Leadership,Required,No,4,75,20
+POS-169,IT,IT Operations Manager,IT Manager,S045,Stakeholder Management,Behavioral,Preferred,No,3,65,10
+POS-170,Customer Support,Senior Support Executive,Senior Support Executive,S037,Customer Service,Functional,Required,Yes,3,65,25
+POS-170,Customer Support,Senior Support Executive,Senior Support Executive,S040,SLA Management,Functional,Required,Yes,3,65,25
+POS-170,Customer Support,Senior Support Executive,Senior Support Executive,S015,CRM Management,Digital,Required,Yes,3,65,20
+POS-170,Customer Support,Senior Support Executive,Senior Support Executive,S038,Complaint Resolution,Behavioral,Required,No,3,65,20
+POS-170,Customer Support,Senior Support Executive,Senior Support Executive,S042,Communication,Behavioral,Preferred,No,2,55,10
+POS-171,IT,IT Operations Manager,IT Manager,S010,IT Service Management,Functional,Required,Yes,4,75,25
+POS-171,IT,IT Operations Manager,IT Manager,S046,Leadership,Leadership,Required,Yes,4,75,25
+POS-171,IT,IT Operations Manager,IT Manager,S008,Cybersecurity,Technical,Required,Yes,4,75,20
+POS-171,IT,IT Operations Manager,IT Manager,S050,Project Management,Leadership,Required,No,4,75,20
+POS-171,IT,IT Operations Manager,IT Manager,S045,Stakeholder Management,Behavioral,Preferred,No,3,65,10
+POS-172,Operations,Operations Analyst,Operations Specialist,S019,Process Management,Functional,Required,Yes,3,65,25
+POS-172,Operations,Operations Analyst,Operations Specialist,S021,Process Improvement,Functional,Required,Yes,3,65,25
+POS-172,Operations,Operations Analyst,Operations Specialist,S022,Quality Control,Functional,Required,Yes,3,65,20
+POS-172,Operations,Operations Analyst,Operations Specialist,S029,Advanced Excel,Digital,Required,No,3,65,20
+POS-172,Operations,Operations Analyst,Operations Specialist,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-173,Finance,Senior Financial Analyst,Senior Financial Analyst,S025,Financial Analysis,Functional,Required,Yes,4,75,25
+POS-173,Finance,Senior Financial Analyst,Senior Financial Analyst,S028,Regulatory Reporting,Compliance,Required,Yes,4,75,25
+POS-173,Finance,Senior Financial Analyst,Senior Financial Analyst,S027,Budgeting & Forecasting,Functional,Required,Yes,4,75,20
+POS-173,Finance,Senior Financial Analyst,Senior Financial Analyst,S030,Risk Analysis,Functional,Required,No,4,75,20
+POS-173,Finance,Senior Financial Analyst,Senior Financial Analyst,S045,Stakeholder Management,Behavioral,Preferred,No,3,65,10
+POS-174,Sales,Account Manager,Senior Sales Executive,S016,Account Management,Functional,Required,Yes,3,65,25
+POS-174,Sales,Account Manager,Senior Sales Executive,S014,Negotiation,Behavioral,Required,Yes,3,65,25
+POS-174,Sales,Account Manager,Senior Sales Executive,S015,CRM Management,Digital,Required,Yes,3,65,20
+POS-174,Sales,Account Manager,Senior Sales Executive,S017,Pipeline Management,Functional,Required,No,3,65,20
+POS-174,Sales,Account Manager,Senior Sales Executive,S018,Product Knowledge,Functional,Preferred,No,2,55,10
+POS-175,Operations,Operations Analyst,Operations Specialist,S019,Process Management,Functional,Required,Yes,3,65,25
+POS-175,Operations,Operations Analyst,Operations Specialist,S021,Process Improvement,Functional,Required,Yes,3,65,25
+POS-175,Operations,Operations Analyst,Operations Specialist,S022,Quality Control,Functional,Required,Yes,3,65,20
+POS-175,Operations,Operations Analyst,Operations Specialist,S029,Advanced Excel,Digital,Required,No,3,65,20
+POS-175,Operations,Operations Analyst,Operations Specialist,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-176,Sales,Senior Account Manager,Senior Account Manager,S016,Account Management,Functional,Required,Yes,4,75,25
+POS-176,Sales,Senior Account Manager,Senior Account Manager,S014,Negotiation,Behavioral,Required,Yes,4,75,25
+POS-176,Sales,Senior Account Manager,Senior Account Manager,S017,Pipeline Management,Functional,Required,Yes,4,75,20
+POS-176,Sales,Senior Account Manager,Senior Account Manager,S045,Stakeholder Management,Behavioral,Required,No,4,75,20
+POS-176,Sales,Senior Account Manager,Senior Account Manager,S047,Coaching & Mentoring,Leadership,Preferred,No,3,65,10
+POS-177,HR,HR Generalist,HR Specialist,S033,Performance Management,Functional,Required,Yes,3,65,25
+POS-177,HR,HR Generalist,HR Specialist,S031,Recruitment & Selection,Functional,Required,Yes,3,65,25
+POS-177,HR,HR Generalist,HR Specialist,S032,HRIS & Employee Data,Digital,Required,Yes,3,65,20
+POS-177,HR,HR Generalist,HR Specialist,S035,Learning & Development,Functional,Required,No,3,65,20
+POS-177,HR,HR Generalist,HR Specialist,S034,Employee Relations,Behavioral,Preferred,No,2,55,10
+POS-178,Sales,Sales Executive,Sales Executive,S012,B2B Sales,Functional,Required,Yes,2,55,25
+POS-178,Sales,Sales Executive,Sales Executive,S013,Lead Generation,Functional,Required,Yes,2,55,25
+POS-178,Sales,Sales Executive,Sales Executive,S018,Product Knowledge,Functional,Required,Yes,2,55,20
+POS-178,Sales,Sales Executive,Sales Executive,S015,CRM Management,Digital,Required,No,2,55,20
+POS-178,Sales,Sales Executive,Sales Executive,S042,Communication,Behavioral,Preferred,No,1,45,10
+POS-179,Operations,Operations Officer,Operations Officer,S020,SOP Compliance,Compliance,Required,Yes,2,55,25
+POS-179,Operations,Operations Officer,Operations Officer,S024,Workflow Coordination,Functional,Required,Yes,2,55,25
+POS-179,Operations,Operations Officer,Operations Officer,S022,Quality Control,Functional,Required,Yes,2,55,20
+POS-179,Operations,Operations Officer,Operations Officer,S029,Advanced Excel,Digital,Required,No,2,55,20
+POS-179,Operations,Operations Officer,Operations Officer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-180,Customer Support,Customer Support Representative,Support Executive,S037,Customer Service,Functional,Required,Yes,2,55,25
+POS-180,Customer Support,Customer Support Representative,Support Executive,S038,Complaint Resolution,Behavioral,Required,Yes,2,55,25
+POS-180,Customer Support,Customer Support Representative,Support Executive,S039,Call Handling,Functional,Required,Yes,2,55,20
+POS-180,Customer Support,Customer Support Representative,Support Executive,S018,Product Knowledge,Functional,Required,No,2,55,20
+POS-180,Customer Support,Customer Support Representative,Support Executive,S051,Empathy & Active Listening,Behavioral,Preferred,No,1,45,10
+POS-181,Operations,Operations Officer,Operations Officer,S020,SOP Compliance,Compliance,Required,Yes,2,55,25
+POS-181,Operations,Operations Officer,Operations Officer,S024,Workflow Coordination,Functional,Required,Yes,2,55,25
+POS-181,Operations,Operations Officer,Operations Officer,S022,Quality Control,Functional,Required,Yes,2,55,20
+POS-181,Operations,Operations Officer,Operations Officer,S029,Advanced Excel,Digital,Required,No,2,55,20
+POS-181,Operations,Operations Officer,Operations Officer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-182,Sales,Account Manager,Senior Sales Executive,S016,Account Management,Functional,Required,Yes,3,65,25
+POS-182,Sales,Account Manager,Senior Sales Executive,S014,Negotiation,Behavioral,Required,Yes,3,65,25
+POS-182,Sales,Account Manager,Senior Sales Executive,S015,CRM Management,Digital,Required,Yes,3,65,20
+POS-182,Sales,Account Manager,Senior Sales Executive,S017,Pipeline Management,Functional,Required,No,3,65,20
+POS-182,Sales,Account Manager,Senior Sales Executive,S018,Product Knowledge,Functional,Preferred,No,2,55,10
+POS-183,IT,IT Support Engineer,Junior IT Engineer,S010,IT Service Management,Functional,Required,Yes,2,55,25
+POS-183,IT,IT Support Engineer,Junior IT Engineer,S011,Incident Management,Functional,Required,Yes,2,55,25
+POS-183,IT,IT Support Engineer,Junior IT Engineer,S009,Network Administration,Technical,Required,Yes,2,55,20
+POS-183,IT,IT Support Engineer,Junior IT Engineer,S042,Communication,Behavioral,Required,No,2,55,20
+POS-183,IT,IT Support Engineer,Junior IT Engineer,S053,Documentation,Behavioral,Preferred,No,1,45,10
+POS-184,Operations,Operations Officer,Operations Officer,S020,SOP Compliance,Compliance,Required,Yes,2,55,25
+POS-184,Operations,Operations Officer,Operations Officer,S024,Workflow Coordination,Functional,Required,Yes,2,55,25
+POS-184,Operations,Operations Officer,Operations Officer,S022,Quality Control,Functional,Required,Yes,2,55,20
+POS-184,Operations,Operations Officer,Operations Officer,S029,Advanced Excel,Digital,Required,No,2,55,20
+POS-184,Operations,Operations Officer,Operations Officer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-185,Finance,Senior Financial Analyst,Senior Financial Analyst,S025,Financial Analysis,Functional,Required,Yes,4,75,25
+POS-185,Finance,Senior Financial Analyst,Senior Financial Analyst,S028,Regulatory Reporting,Compliance,Required,Yes,4,75,25
+POS-185,Finance,Senior Financial Analyst,Senior Financial Analyst,S027,Budgeting & Forecasting,Functional,Required,Yes,4,75,20
+POS-185,Finance,Senior Financial Analyst,Senior Financial Analyst,S030,Risk Analysis,Functional,Required,No,4,75,20
+POS-185,Finance,Senior Financial Analyst,Senior Financial Analyst,S045,Stakeholder Management,Behavioral,Preferred,No,3,65,10
+POS-186,IT,Systems Administrator,IT Engineer,S009,Network Administration,Technical,Required,Yes,3,65,25
+POS-186,IT,Systems Administrator,IT Engineer,S007,Cloud Platforms,Technical,Required,Yes,3,65,25
+POS-186,IT,Systems Administrator,IT Engineer,S010,IT Service Management,Functional,Required,Yes,3,65,20
+POS-186,IT,Systems Administrator,IT Engineer,S008,Cybersecurity,Technical,Required,No,3,65,20
+POS-186,IT,Systems Administrator,IT Engineer,S011,Incident Management,Functional,Preferred,No,2,55,10
+POS-187,Operations,Operations Officer,Operations Officer,S020,SOP Compliance,Compliance,Required,Yes,2,55,25
+POS-187,Operations,Operations Officer,Operations Officer,S024,Workflow Coordination,Functional,Required,Yes,2,55,25
+POS-187,Operations,Operations Officer,Operations Officer,S022,Quality Control,Functional,Required,Yes,2,55,20
+POS-187,Operations,Operations Officer,Operations Officer,S029,Advanced Excel,Digital,Required,No,2,55,20
+POS-187,Operations,Operations Officer,Operations Officer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-188,IT,Senior Systems Engineer,Senior IT Engineer,S008,Cybersecurity,Technical,Required,Yes,4,75,25
+POS-188,IT,Senior Systems Engineer,Senior IT Engineer,S007,Cloud Platforms,Technical,Required,Yes,4,75,25
+POS-188,IT,Senior Systems Engineer,Senior IT Engineer,S009,Network Administration,Technical,Required,Yes,4,75,20
+POS-188,IT,Senior Systems Engineer,Senior IT Engineer,S050,Project Management,Leadership,Required,No,4,75,20
+POS-188,IT,Senior Systems Engineer,Senior IT Engineer,S044,Problem Solving,Behavioral,Preferred,No,3,65,10
+POS-189,Engineering,Engineering Lead,Engineering Manager,S005,System Design,Technical,Required,Yes,4,75,25
+POS-189,Engineering,Engineering Lead,Engineering Manager,S050,Project Management,Leadership,Required,Yes,4,75,25
+POS-189,Engineering,Engineering Lead,Engineering Manager,S046,Leadership,Leadership,Required,Yes,4,75,20
+POS-189,Engineering,Engineering Lead,Engineering Manager,S045,Stakeholder Management,Behavioral,Required,No,4,75,20
+POS-189,Engineering,Engineering Lead,Engineering Manager,S006,DevOps & CI/CD,Technical,Preferred,No,3,65,10
+POS-190,HR,HR Officer,HR Officer,S031,Recruitment & Selection,Functional,Required,Yes,2,55,25
+POS-190,HR,HR Officer,HR Officer,S032,HRIS & Employee Data,Digital,Required,Yes,2,55,25
+POS-190,HR,HR Officer,HR Officer,S034,Employee Relations,Behavioral,Required,Yes,2,55,20
+POS-190,HR,HR Officer,HR Officer,S042,Communication,Behavioral,Required,No,2,55,20
+POS-190,HR,HR Officer,HR Officer,S053,Documentation,Behavioral,Preferred,No,1,45,10
+POS-191,Operations,Operations Analyst,Operations Specialist,S019,Process Management,Functional,Required,Yes,3,65,25
+POS-191,Operations,Operations Analyst,Operations Specialist,S021,Process Improvement,Functional,Required,Yes,3,65,25
+POS-191,Operations,Operations Analyst,Operations Specialist,S022,Quality Control,Functional,Required,Yes,3,65,20
+POS-191,Operations,Operations Analyst,Operations Specialist,S029,Advanced Excel,Digital,Required,No,3,65,20
+POS-191,Operations,Operations Analyst,Operations Specialist,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-192,Sales,Sales Executive,Sales Executive,S012,B2B Sales,Functional,Required,Yes,2,55,25
+POS-192,Sales,Sales Executive,Sales Executive,S013,Lead Generation,Functional,Required,Yes,2,55,25
+POS-192,Sales,Sales Executive,Sales Executive,S018,Product Knowledge,Functional,Required,Yes,2,55,20
+POS-192,Sales,Sales Executive,Sales Executive,S015,CRM Management,Digital,Required,No,2,55,20
+POS-192,Sales,Sales Executive,Sales Executive,S042,Communication,Behavioral,Preferred,No,1,45,10
+POS-193,Operations,Operations Officer,Operations Officer,S020,SOP Compliance,Compliance,Required,Yes,2,55,25
+POS-193,Operations,Operations Officer,Operations Officer,S024,Workflow Coordination,Functional,Required,Yes,2,55,25
+POS-193,Operations,Operations Officer,Operations Officer,S022,Quality Control,Functional,Required,Yes,2,55,20
+POS-193,Operations,Operations Officer,Operations Officer,S029,Advanced Excel,Digital,Required,No,2,55,20
+POS-193,Operations,Operations Officer,Operations Officer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-194,Customer Support,Senior Support Executive,Senior Support Executive,S037,Customer Service,Functional,Required,Yes,3,65,25
+POS-194,Customer Support,Senior Support Executive,Senior Support Executive,S040,SLA Management,Functional,Required,Yes,3,65,25
+POS-194,Customer Support,Senior Support Executive,Senior Support Executive,S015,CRM Management,Digital,Required,Yes,3,65,20
+POS-194,Customer Support,Senior Support Executive,Senior Support Executive,S038,Complaint Resolution,Behavioral,Required,No,3,65,20
+POS-194,Customer Support,Senior Support Executive,Senior Support Executive,S042,Communication,Behavioral,Preferred,No,2,55,10
+POS-195,Engineering,Engineering Lead,Engineering Manager,S005,System Design,Technical,Required,Yes,4,75,25
+POS-195,Engineering,Engineering Lead,Engineering Manager,S050,Project Management,Leadership,Required,Yes,4,75,25
+POS-195,Engineering,Engineering Lead,Engineering Manager,S046,Leadership,Leadership,Required,Yes,4,75,20
+POS-195,Engineering,Engineering Lead,Engineering Manager,S045,Stakeholder Management,Behavioral,Required,No,4,75,20
+POS-195,Engineering,Engineering Lead,Engineering Manager,S006,DevOps & CI/CD,Technical,Preferred,No,3,65,10
+POS-196,Engineering,Software Engineer II,Software Engineer,S001,Python Programming,Technical,Required,Yes,3,65,25
+POS-196,Engineering,Software Engineer II,Software Engineer,S002,SQL & Databases,Technical,Required,Yes,3,65,25
+POS-196,Engineering,Software Engineer II,Software Engineer,S003,API Development,Technical,Required,Yes,3,65,20
+POS-196,Engineering,Software Engineer II,Software Engineer,S004,Software Testing,Technical,Required,No,3,65,20
+POS-196,Engineering,Software Engineer II,Software Engineer,S044,Problem Solving,Behavioral,Preferred,No,2,55,10
+POS-197,HR,HR Manager,HR Manager,S046,Leadership,Leadership,Required,Yes,4,75,25
+POS-197,HR,HR Manager,HR Manager,S033,Performance Management,Functional,Required,Yes,4,75,25
+POS-197,HR,HR Manager,HR Manager,S034,Employee Relations,Behavioral,Required,Yes,4,75,20
+POS-197,HR,HR Manager,HR Manager,S035,Learning & Development,Functional,Required,No,4,75,20
+POS-197,HR,HR Manager,HR Manager,S045,Stakeholder Management,Behavioral,Preferred,No,3,65,10
+POS-198,Operations,Operations Officer,Operations Officer,S020,SOP Compliance,Compliance,Required,Yes,2,55,25
+POS-198,Operations,Operations Officer,Operations Officer,S024,Workflow Coordination,Functional,Required,Yes,2,55,25
+POS-198,Operations,Operations Officer,Operations Officer,S022,Quality Control,Functional,Required,Yes,2,55,20
+POS-198,Operations,Operations Officer,Operations Officer,S029,Advanced Excel,Digital,Required,No,2,55,20
+POS-198,Operations,Operations Officer,Operations Officer,S043,Teamwork,Behavioral,Preferred,No,1,45,10
+POS-199,Customer Support,Customer Support Representative,Support Executive,S037,Customer Service,Functional,Required,Yes,2,55,25
+POS-199,Customer Support,Customer Support Representative,Support Executive,S038,Complaint Resolution,Behavioral,Required,Yes,2,55,25
+POS-199,Customer Support,Customer Support Representative,Support Executive,S039,Call Handling,Functional,Required,Yes,2,55,20
+POS-199,Customer Support,Customer Support Representative,Support Executive,S018,Product Knowledge,Functional,Required,No,2,55,20
+POS-199,Customer Support,Customer Support Representative,Support Executive,S051,Empathy & Active Listening,Behavioral,Preferred,No,1,45,10
+POS-200,Customer Support,Senior Support Executive,Senior Support Executive,S037,Customer Service,Functional,Required,Yes,3,65,25
+POS-200,Customer Support,Senior Support Executive,Senior Support Executive,S040,SLA Management,Functional,Required,Yes,3,65,25
+POS-200,Customer Support,Senior Support Executive,Senior Support Executive,S015,CRM Management,Digital,Required,Yes,3,65,20
+POS-200,Customer Support,Senior Support Executive,Senior Support Executive,S038,Complaint Resolution,Behavioral,Required,No,3,65,20
+POS-200,Customer Support,Senior Support Executive,Senior Support Executive,S042,Communication,Behavioral,Preferred,No,2,55,10

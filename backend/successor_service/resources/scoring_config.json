@@ -1,0 +1,30 @@
+{
+  "weights": {
+    "skill_match_score": 0.5,
+    "experience_score": 0.15,
+    "performance_score": 0.15,
+    "attendance_score": 0.05,
+    "readiness_leadership_score": 0.15
+  },
+  "candidate_pool": {
+    "primary_scope": "same_department",
+    "include_development_hold": true,
+    "organization_fallback": true,
+    "minimum_pool_before_fallback": 8
+  },
+  "readiness_mapping": {
+    "Ready Now": 100,
+    "Ready in 6-12 Months": 75,
+    "Not Ready": 30
+  },
+  "ranking_status_priority": {
+    "Qualified": 3,
+    "Development Candidate": 2,
+    "Not Qualified": 1
+  },
+  "thresholds": {
+    "ready_now_score": 85,
+    "ready_soon_score": 75,
+    "maximum_development_gaps": 2
+  }
+}

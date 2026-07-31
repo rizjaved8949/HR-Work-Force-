@@ -1,0 +1,1001 @@
+﻿Employee_ID,Employee_Name,Department,Position_ID,Skill_ID,Skill_Name,Skill_Category,Skill_Type,Skill_Status,Proficiency_Level,Proficiency_Label,Skill_Score,Years_Using_Skill,Last_Assessed_Months_Ago,Certification_Status,Is_Primary_Skill
+EMP001,Sonia Hassan,HR,POS-001,S046,Leadership,Leadership,Leadership,Developing,5,Expert,93.1,7.9,13,Not Required,Yes
+EMP001,Sonia Hassan,HR,POS-001,S033,Performance Management,Functional,Core,Verified,5,Expert,97.4,10.9,8,Not Required,Yes
+EMP001,Sonia Hassan,HR,POS-001,S034,Employee Relations,Behavioral,Core,Verified,5,Expert,96.7,11.5,6,Not Required,No
+EMP001,Sonia Hassan,HR,POS-001,S035,Learning & Development,Functional,Core,Developing,4,Advanced,68.0,9.8,9,Not Required,No
+EMP001,Sonia Hassan,HR,POS-001,S045,Stakeholder Management,Behavioral,Leadership,Verified,5,Expert,90.6,11.3,10,Not Required,No
+EMP002,Bilal Aziz,Sales,POS-002,S016,Account Management,Functional,Core,Verified,4,Advanced,78.3,2.5,11,Not Required,Yes
+EMP002,Bilal Aziz,Sales,POS-002,S014,Negotiation,Behavioral,Core,Verified,4,Advanced,90.3,4.6,2,Not Required,Yes
+EMP002,Bilal Aziz,Sales,POS-002,S015,CRM Management,Digital,Core,Developing,4,Advanced,82.5,2.8,14,Not Required,No
+EMP002,Bilal Aziz,Sales,POS-002,S017,Pipeline Management,Functional,Core,Verified,4,Advanced,83.5,3.6,2,Not Required,No
+EMP002,Bilal Aziz,Sales,POS-002,S018,Product Knowledge,Functional,Core,Developing,3,Competent,61.5,2.9,16,Not Required,No
+EMP003,Kamran Ali,Finance,POS-003,S025,Financial Analysis,Functional,Core,Verified,4,Advanced,76.3,2.3,3,Certification Planned,Yes
+EMP003,Kamran Ali,Finance,POS-003,S026,Accounting & Reconciliation,Functional,Core,Developing,4,Advanced,74.7,2.3,16,Not Required,Yes
+EMP003,Kamran Ali,Finance,POS-003,S027,Budgeting & Forecasting,Functional,Core,Developing,3,Competent,62.5,2.3,5,Not Required,No
+EMP003,Kamran Ali,Finance,POS-003,S029,Advanced Excel,Digital,Core,Developing,3,Competent,60.9,1.5,7,Not Certified,No
+EMP003,Kamran Ali,Finance,POS-003,S030,Risk Analysis,Functional,Core,Developing,3,Competent,60.6,1.4,8,Not Certified,No
+EMP004,Ali Masood,Finance,POS-004,S025,Financial Analysis,Functional,Core,Developing,4,Advanced,81.0,2.2,15,Certified,Yes
+EMP004,Ali Masood,Finance,POS-004,S026,Accounting & Reconciliation,Functional,Core,Developing,4,Advanced,78.5,3.5,15,Not Required,Yes
+EMP004,Ali Masood,Finance,POS-004,S027,Budgeting & Forecasting,Functional,Core,Developing,4,Advanced,78.3,3.1,16,Not Required,No
+EMP004,Ali Masood,Finance,POS-004,S029,Advanced Excel,Digital,Core,Developing,4,Advanced,74.6,3.0,13,Certification Planned,No
+EMP004,Ali Masood,Finance,POS-004,S030,Risk Analysis,Functional,Core,Developing,4,Advanced,76.8,3.3,14,Certification Planned,No
+EMP005,Farhan Shah,Engineering,POS-005,S001,Python Programming,Technical,Core,Needs Development,2,Basic,35.0,1.1,13,Not Required,Yes
+EMP005,Farhan Shah,Engineering,POS-005,S002,SQL & Databases,Technical,Core,Developing,3,Competent,55.6,0.9,13,Not Required,Yes
+EMP005,Farhan Shah,Engineering,POS-005,S004,Software Testing,Technical,Core,Needs Development,1,Beginner,35.0,0.8,10,Not Required,No
+EMP005,Farhan Shah,Engineering,POS-005,S044,Problem Solving,Behavioral,Common,Needs Development,2,Basic,41.3,0.7,11,Not Required,No
+EMP005,Farhan Shah,Engineering,POS-005,S043,Teamwork,Behavioral,Common,Needs Development,2,Basic,35.0,0.9,7,Not Required,No
+EMP006,Sehrish Tariq,Engineering,POS-006,S001,Python Programming,Technical,Core,Verified,4,Advanced,73.3,3.3,9,Not Required,Yes
+EMP006,Sehrish Tariq,Engineering,POS-006,S002,SQL & Databases,Technical,Core,Verified,4,Advanced,74.5,3.1,5,Not Required,Yes
+EMP006,Sehrish Tariq,Engineering,POS-006,S003,API Development,Technical,Core,Verified,4,Advanced,72.7,4.6,8,Not Required,No
+EMP006,Sehrish Tariq,Engineering,POS-006,S004,Software Testing,Technical,Core,Developing,4,Advanced,67.3,5.9,11,Not Required,No
+EMP006,Sehrish Tariq,Engineering,POS-006,S044,Problem Solving,Behavioral,Common,Developing,3,Competent,55.9,3.6,15,Not Required,No
+EMP007,Sonia Ahmad,Customer Support,POS-007,S037,Customer Service,Functional,Core,Needs Development,2,Basic,42.8,2.0,17,Not Required,Yes
+EMP007,Sonia Ahmad,Customer Support,POS-007,S038,Complaint Resolution,Behavioral,Core,Developing,3,Competent,60.2,2.5,16,Not Required,Yes
+EMP007,Sonia Ahmad,Customer Support,POS-007,S039,Call Handling,Functional,Core,Developing,3,Competent,66.6,3.1,6,Not Required,No
+EMP007,Sonia Ahmad,Customer Support,POS-007,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,42.9,1.9,11,Not Required,No
+EMP007,Sonia Ahmad,Customer Support,POS-007,S051,Empathy & Active Listening,Behavioral,Common,Developing,3,Competent,63.9,1.9,12,Not Required,No
+EMP008,Iqra Bashir,Finance,POS-008,S046,Leadership,Leadership,Leadership,Developing,5,Expert,84.4,7.8,18,Not Required,Yes
+EMP008,Iqra Bashir,Finance,POS-008,S027,Budgeting & Forecasting,Functional,Core,Developing,4,Advanced,74.9,8.6,14,Not Required,Yes
+EMP008,Iqra Bashir,Finance,POS-008,S028,Regulatory Reporting,Compliance,Core,Verified,5,Expert,85.5,11.4,6,Certified,No
+EMP008,Iqra Bashir,Finance,POS-008,S030,Risk Analysis,Functional,Core,Verified,4,Advanced,71.4,12.1,5,Certification Planned,No
+EMP008,Iqra Bashir,Finance,POS-008,S045,Stakeholder Management,Behavioral,Leadership,Verified,5,Expert,88.1,8.0,8,Not Required,No
+EMP009,Hassan Dar,Customer Support,POS-009,S046,Leadership,Leadership,Leadership,Verified,5,Expert,86.3,10.9,3,Not Required,Yes
+EMP009,Hassan Dar,Customer Support,POS-009,S047,Coaching & Mentoring,Leadership,Leadership,Verified,5,Expert,89.6,9.9,6,Not Required,Yes
+EMP009,Hassan Dar,Customer Support,POS-009,S040,SLA Management,Functional,Core,Developing,5,Expert,88.2,13.1,18,Not Required,No
+EMP009,Hassan Dar,Customer Support,POS-009,S045,Stakeholder Management,Behavioral,Leadership,Verified,5,Expert,90.6,8.8,1,Not Required,No
+EMP009,Hassan Dar,Customer Support,POS-009,S021,Process Improvement,Functional,Core,Verified,5,Expert,94.6,9.4,8,Not Required,No
+EMP010,Salman Shah,Engineering,POS-010,S005,System Design,Technical,Core,Developing,4,Advanced,71.7,4.8,17,Not Required,Yes
+EMP010,Salman Shah,Engineering,POS-010,S003,API Development,Technical,Core,Verified,4,Advanced,79.1,6.7,5,Not Required,Yes
+EMP010,Salman Shah,Engineering,POS-010,S001,Python Programming,Technical,Core,Developing,4,Advanced,62.2,5.9,14,Not Required,No
+EMP010,Salman Shah,Engineering,POS-010,S050,Project Management,Leadership,Common,Verified,4,Advanced,84.0,7.1,8,Certified,No
+EMP010,Salman Shah,Engineering,POS-010,S047,Coaching & Mentoring,Leadership,Leadership,Developing,4,Advanced,75.0,5.0,13,Not Required,No
+EMP011,Khurram Iqbal,Sales,POS-011,S017,Pipeline Management,Functional,Core,Developing,4,Advanced,69.3,13.5,9,Not Required,Yes
+EMP011,Khurram Iqbal,Sales,POS-011,S046,Leadership,Leadership,Leadership,Developing,5,Expert,94.7,10.9,15,Not Required,Yes
+EMP011,Khurram Iqbal,Sales,POS-011,S045,Stakeholder Management,Behavioral,Leadership,Verified,5,Expert,91.0,12.2,3,Not Required,No
+EMP011,Khurram Iqbal,Sales,POS-011,S047,Coaching & Mentoring,Leadership,Leadership,Verified,5,Expert,82.1,18.0,11,Not Required,No
+EMP011,Khurram Iqbal,Sales,POS-011,S014,Negotiation,Behavioral,Core,Verified,4,Advanced,77.5,15.5,7,Not Required,No
+EMP012,Danish Masood,HR,POS-012,S046,Leadership,Leadership,Leadership,Developing,5,Expert,92.3,9.3,16,Not Required,Yes
+EMP012,Danish Masood,HR,POS-012,S033,Performance Management,Functional,Core,Verified,5,Expert,93.1,10.5,4,Not Required,Yes
+EMP012,Danish Masood,HR,POS-012,S034,Employee Relations,Behavioral,Core,Verified,4,Advanced,81.7,6.5,7,Not Required,No
+EMP012,Danish Masood,HR,POS-012,S035,Learning & Development,Functional,Core,Verified,5,Expert,87.8,12.2,9,Not Required,No
+EMP012,Danish Masood,HR,POS-012,S045,Stakeholder Management,Behavioral,Leadership,Verified,5,Expert,96.3,10.7,9,Not Required,No
+EMP013,Anum Ahmad,HR,POS-013,S033,Performance Management,Functional,Core,Verified,4,Advanced,85.6,4.3,7,Not Required,Yes
+EMP013,Anum Ahmad,HR,POS-013,S031,Recruitment & Selection,Functional,Core,Verified,4,Advanced,80.4,5.9,5,Not Required,Yes
+EMP013,Anum Ahmad,HR,POS-013,S032,HRIS & Employee Data,Digital,Core,Verified,4,Advanced,78.8,6.1,2,Certification Planned,No
+EMP013,Anum Ahmad,HR,POS-013,S035,Learning & Development,Functional,Core,Verified,4,Advanced,72.1,4.7,3,Not Required,No
+EMP013,Anum Ahmad,HR,POS-013,S034,Employee Relations,Behavioral,Core,Developing,4,Advanced,69.5,4.9,1,Not Required,No
+EMP014,Shahid Ali,Engineering,POS-014,S001,Python Programming,Technical,Core,Verified,4,Advanced,73.6,3.2,10,Not Required,Yes
+EMP014,Shahid Ali,Engineering,POS-014,S002,SQL & Databases,Technical,Core,Verified,4,Advanced,76.4,2.5,7,Not Required,Yes
+EMP014,Shahid Ali,Engineering,POS-014,S003,API Development,Technical,Core,Developing,3,Competent,57.7,3.0,13,Not Required,No
+EMP014,Shahid Ali,Engineering,POS-014,S004,Software Testing,Technical,Core,Developing,3,Competent,61.9,2.3,5,Not Required,No
+EMP014,Shahid Ali,Engineering,POS-014,S044,Problem Solving,Behavioral,Common,Verified,4,Advanced,76.7,2.0,2,Not Required,No
+EMP015,Anum Rehman,Engineering,POS-015,S005,System Design,Technical,Core,Verified,4,Advanced,73.8,13.2,10,Not Required,Yes
+EMP015,Anum Rehman,Engineering,POS-015,S050,Project Management,Leadership,Common,Developing,5,Expert,91.5,12.3,13,Certified,Yes
+EMP015,Anum Rehman,Engineering,POS-015,S046,Leadership,Leadership,Leadership,Verified,4,Advanced,78.9,11.9,11,Not Required,No
+EMP015,Anum Rehman,Engineering,POS-015,S045,Stakeholder Management,Behavioral,Leadership,Developing,5,Expert,92.3,13.4,13,Not Required,No
+EMP015,Anum Rehman,Engineering,POS-015,S006,DevOps & CI/CD,Technical,Digital,Verified,5,Expert,92.3,13.5,11,Certified,No
+EMP016,Khurram Gill,Sales,POS-016,S016,Account Management,Functional,Core,Developing,3,Competent,60.4,3.8,9,Not Required,Yes
+EMP016,Khurram Gill,Sales,POS-016,S014,Negotiation,Behavioral,Core,Developing,4,Advanced,66.8,4.6,10,Not Required,Yes
+EMP016,Khurram Gill,Sales,POS-016,S015,CRM Management,Digital,Core,Needs Development,3,Competent,49.1,6.0,17,Not Required,No
+EMP016,Khurram Gill,Sales,POS-016,S017,Pipeline Management,Functional,Core,Needs Development,2,Basic,37.2,3.2,16,Not Required,No
+EMP016,Khurram Gill,Sales,POS-016,S018,Product Knowledge,Functional,Core,Needs Development,3,Competent,53.8,4.1,17,Not Required,No
+EMP017,Amir Haider,Customer Support,POS-017,S037,Customer Service,Functional,Core,Verified,4,Advanced,71.2,1.9,8,Not Required,Yes
+EMP017,Amir Haider,Customer Support,POS-017,S038,Complaint Resolution,Behavioral,Core,Developing,4,Advanced,74.6,1.7,16,Not Required,Yes
+EMP017,Amir Haider,Customer Support,POS-017,S039,Call Handling,Functional,Core,Developing,3,Competent,64.2,2.5,13,Not Required,No
+EMP017,Amir Haider,Customer Support,POS-017,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,44.9,1.8,3,Not Required,No
+EMP017,Amir Haider,Customer Support,POS-017,S051,Empathy & Active Listening,Behavioral,Common,Developing,3,Competent,55.7,1.9,9,Not Required,No
+EMP018,Sidra Tariq,Engineering,POS-018,S001,Python Programming,Technical,Core,Needs Development,3,Competent,48.8,2.6,7,Not Required,Yes
+EMP018,Sidra Tariq,Engineering,POS-018,S002,SQL & Databases,Technical,Core,Developing,4,Advanced,63.8,2.6,4,Not Required,Yes
+EMP018,Sidra Tariq,Engineering,POS-018,S003,API Development,Technical,Core,Needs Development,3,Competent,52.8,4.2,7,Not Required,No
+EMP018,Sidra Tariq,Engineering,POS-018,S004,Software Testing,Technical,Core,Needs Development,3,Competent,52.3,3.1,13,Not Required,No
+EMP018,Sidra Tariq,Engineering,POS-018,S044,Problem Solving,Behavioral,Common,Needs Development,3,Competent,52.0,4.1,16,Not Required,No
+EMP019,Hina Hussain,IT,POS-019,S009,Network Administration,Technical,Core,Developing,3,Competent,66.8,2.1,6,Certification Planned,Yes
+EMP019,Hina Hussain,IT,POS-019,S007,Cloud Platforms,Technical,Digital,Verified,4,Advanced,82.2,3.2,1,Certification Planned,Yes
+EMP019,Hina Hussain,IT,POS-019,S010,IT Service Management,Functional,Core,Developing,3,Competent,60.4,2.9,18,Not Certified,No
+EMP019,Hina Hussain,IT,POS-019,S008,Cybersecurity,Technical,Digital,Verified,4,Advanced,78.8,3.4,1,Certification Planned,No
+EMP019,Hina Hussain,IT,POS-019,S011,Incident Management,Functional,Core,Verified,4,Advanced,78.6,1.8,9,Not Required,No
+EMP020,Waqas Khan,Customer Support,POS-020,S037,Customer Service,Functional,Core,Developing,3,Competent,55.4,2.9,2,Not Required,Yes
+EMP020,Waqas Khan,Customer Support,POS-020,S038,Complaint Resolution,Behavioral,Core,Needs Development,3,Competent,53.0,2.3,15,Not Required,Yes
+EMP020,Waqas Khan,Customer Support,POS-020,S039,Call Handling,Functional,Core,Needs Development,2,Basic,35.0,3.3,15,Not Required,No
+EMP020,Waqas Khan,Customer Support,POS-020,S018,Product Knowledge,Functional,Core,Needs Development,3,Competent,52.5,3.1,10,Not Required,No
+EMP020,Waqas Khan,Customer Support,POS-020,S051,Empathy & Active Listening,Behavioral,Common,Developing,3,Competent,58.9,2.3,9,Not Required,No
+EMP021,Usman Khan,Customer Support,POS-021,S037,Customer Service,Functional,Core,Needs Development,2,Basic,38.5,1.6,17,Not Required,Yes
+EMP021,Usman Khan,Customer Support,POS-021,S038,Complaint Resolution,Behavioral,Core,Developing,3,Competent,56.4,2.5,10,Not Required,Yes
+EMP021,Usman Khan,Customer Support,POS-021,S039,Call Handling,Functional,Core,Needs Development,2,Basic,41.8,2.1,5,Not Required,No
+EMP021,Usman Khan,Customer Support,POS-021,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,49.6,1.8,4,Not Required,No
+EMP021,Usman Khan,Customer Support,POS-021,S051,Empathy & Active Listening,Behavioral,Common,Needs Development,2,Basic,36.4,2.0,17,Not Required,No
+EMP022,Laiba Raza,Sales,POS-022,S016,Account Management,Functional,Core,Developing,3,Competent,58.1,4.0,4,Not Required,Yes
+EMP022,Laiba Raza,Sales,POS-022,S014,Negotiation,Behavioral,Core,Developing,4,Advanced,79.4,5.0,17,Not Required,Yes
+EMP022,Laiba Raza,Sales,POS-022,S015,CRM Management,Digital,Core,Developing,3,Competent,58.2,6.6,11,Not Required,No
+EMP022,Laiba Raza,Sales,POS-022,S017,Pipeline Management,Functional,Core,Verified,4,Advanced,73.1,6.2,11,Not Required,No
+EMP022,Laiba Raza,Sales,POS-022,S018,Product Knowledge,Functional,Core,Developing,3,Competent,59.2,4.1,12,Not Required,No
+EMP023,Fatima Masood,Operations,POS-023,S020,SOP Compliance,Compliance,Core,Needs Development,2,Basic,39.5,2.1,6,Not Required,Yes
+EMP023,Fatima Masood,Operations,POS-023,S024,Workflow Coordination,Functional,Core,Developing,3,Competent,55.4,1.5,12,Not Required,Yes
+EMP023,Fatima Masood,Operations,POS-023,S022,Quality Control,Functional,Core,Needs Development,2,Basic,35.0,2.1,2,Not Required,No
+EMP023,Fatima Masood,Operations,POS-023,S029,Advanced Excel,Digital,Core,Needs Development,2,Basic,35.2,1.2,4,Not Certified,No
+EMP023,Fatima Masood,Operations,POS-023,S043,Teamwork,Behavioral,Common,Needs Development,2,Basic,35.0,1.3,11,Not Required,No
+EMP024,Fatima Arif,IT,POS-024,S009,Network Administration,Technical,Core,Developing,4,Advanced,73.5,6.2,18,Certification Planned,Yes
+EMP024,Fatima Arif,IT,POS-024,S007,Cloud Platforms,Technical,Digital,Needs Development,3,Competent,54.3,4.0,2,Not Certified,Yes
+EMP024,Fatima Arif,IT,POS-024,S010,IT Service Management,Functional,Core,Developing,3,Competent,59.9,5.1,2,Not Certified,No
+EMP024,Fatima Arif,IT,POS-024,S008,Cybersecurity,Technical,Digital,Developing,3,Competent,57.1,4.0,11,Not Certified,No
+EMP024,Fatima Arif,IT,POS-024,S011,Incident Management,Functional,Core,Developing,3,Competent,66.7,5.3,16,Not Required,No
+EMP025,Raza Mughal,Finance,POS-025,S025,Financial Analysis,Functional,Core,Verified,4,Advanced,78.4,3.3,10,Certification Planned,Yes
+EMP025,Raza Mughal,Finance,POS-025,S026,Accounting & Reconciliation,Functional,Core,Developing,4,Advanced,68.1,4.1,18,Not Required,Yes
+EMP025,Raza Mughal,Finance,POS-025,S027,Budgeting & Forecasting,Functional,Core,Needs Development,3,Competent,53.6,4.5,3,Not Required,No
+EMP025,Raza Mughal,Finance,POS-025,S029,Advanced Excel,Digital,Core,Needs Development,3,Competent,52.6,2.6,15,Not Certified,No
+EMP025,Raza Mughal,Finance,POS-025,S030,Risk Analysis,Functional,Core,Developing,3,Competent,56.3,3.2,5,Not Certified,No
+EMP026,Anum Qureshi,Operations,POS-026,S046,Leadership,Leadership,Leadership,Developing,4,Advanced,62.2,13.6,8,Not Required,Yes
+EMP026,Anum Qureshi,Operations,POS-026,S019,Process Management,Functional,Core,Developing,4,Advanced,64.3,14.2,16,Not Required,Yes
+EMP026,Anum Qureshi,Operations,POS-026,S023,Risk & Controls,Compliance,Core,Developing,4,Advanced,58.0,13.2,13,Not Required,No
+EMP026,Anum Qureshi,Operations,POS-026,S050,Project Management,Leadership,Common,Verified,4,Advanced,73.6,15.2,5,Certification Planned,No
+EMP026,Anum Qureshi,Operations,POS-026,S045,Stakeholder Management,Behavioral,Leadership,Developing,4,Advanced,63.4,16.1,5,Not Required,No
+EMP027,Akbar Hassan,Customer Support,POS-027,S037,Customer Service,Functional,Core,Verified,4,Advanced,72.2,3.8,8,Not Required,Yes
+EMP027,Akbar Hassan,Customer Support,POS-027,S040,SLA Management,Functional,Core,Developing,4,Advanced,65.6,3.1,1,Not Required,Yes
+EMP027,Akbar Hassan,Customer Support,POS-027,S015,CRM Management,Digital,Core,Needs Development,3,Competent,50.8,5.8,4,Not Required,No
+EMP027,Akbar Hassan,Customer Support,POS-027,S038,Complaint Resolution,Behavioral,Core,Developing,3,Competent,56.9,4.5,3,Not Required,No
+EMP027,Akbar Hassan,Customer Support,POS-027,S042,Communication,Behavioral,Common,Developing,3,Competent,59.1,3.8,15,Not Required,No
+EMP028,Salman Aziz,Sales,POS-028,S016,Account Management,Functional,Core,Verified,5,Expert,98.3,3.6,1,Not Required,Yes
+EMP028,Salman Aziz,Sales,POS-028,S014,Negotiation,Behavioral,Core,Verified,5,Expert,88.6,6.1,7,Not Required,Yes
+EMP028,Salman Aziz,Sales,POS-028,S017,Pipeline Management,Functional,Core,Verified,5,Expert,91.9,3.7,2,Not Required,No
+EMP028,Salman Aziz,Sales,POS-028,S045,Stakeholder Management,Behavioral,Leadership,Developing,5,Expert,95.9,4.4,15,Not Required,No
+EMP028,Salman Aziz,Sales,POS-028,S047,Coaching & Mentoring,Leadership,Leadership,Developing,5,Expert,96.6,6.1,14,Not Required,No
+EMP029,Ali Saleem,Engineering,POS-029,S001,Python Programming,Technical,Core,Developing,3,Competent,61.1,3.1,1,Not Required,Yes
+EMP029,Ali Saleem,Engineering,POS-029,S002,SQL & Databases,Technical,Core,Developing,4,Advanced,77.6,3.8,15,Not Required,Yes
+EMP029,Ali Saleem,Engineering,POS-029,S003,API Development,Technical,Core,Developing,3,Competent,57.0,3.2,6,Not Required,No
+EMP029,Ali Saleem,Engineering,POS-029,S004,Software Testing,Technical,Core,Developing,3,Competent,60.3,3.3,12,Not Required,No
+EMP029,Ali Saleem,Engineering,POS-029,S044,Problem Solving,Behavioral,Common,Developing,4,Advanced,75.3,3.7,16,Not Required,No
+EMP030,Hamza Ahmad,Finance,POS-030,S025,Financial Analysis,Functional,Core,Verified,5,Expert,95.1,9.7,6,Certified,Yes
+EMP030,Hamza Ahmad,Finance,POS-030,S028,Regulatory Reporting,Compliance,Core,Verified,4,Advanced,78.9,9.7,2,Certification Planned,Yes
+EMP030,Hamza Ahmad,Finance,POS-030,S027,Budgeting & Forecasting,Functional,Core,Verified,4,Advanced,82.8,10.2,9,Not Required,No
+EMP030,Hamza Ahmad,Finance,POS-030,S030,Risk Analysis,Functional,Core,Verified,5,Expert,99.0,12.4,3,Certification Planned,No
+EMP030,Hamza Ahmad,Finance,POS-030,S045,Stakeholder Management,Behavioral,Leadership,Verified,5,Expert,100.0,8.6,9,Not Required,No
+EMP031,Sadia Haider,Engineering,POS-031,S005,System Design,Technical,Core,Developing,5,Expert,93.8,6.6,13,Not Required,Yes
+EMP031,Sadia Haider,Engineering,POS-031,S003,API Development,Technical,Core,Developing,5,Expert,99.6,6.6,15,Not Required,Yes
+EMP031,Sadia Haider,Engineering,POS-031,S001,Python Programming,Technical,Core,Verified,4,Advanced,79.5,5.0,11,Not Required,No
+EMP031,Sadia Haider,Engineering,POS-031,S050,Project Management,Leadership,Common,Verified,5,Expert,100.0,7.5,7,Certified,No
+EMP031,Sadia Haider,Engineering,POS-031,S047,Coaching & Mentoring,Leadership,Leadership,Verified,4,Advanced,76.2,7.5,7,Not Required,No
+EMP032,Laiba Mahmood,Sales,POS-032,S012,B2B Sales,Functional,Core,Needs Development,3,Competent,51.5,2.0,14,Not Required,Yes
+EMP032,Laiba Mahmood,Sales,POS-032,S013,Lead Generation,Functional,Core,Needs Development,2,Basic,39.8,2.0,10,Not Required,Yes
+EMP032,Laiba Mahmood,Sales,POS-032,S018,Product Knowledge,Functional,Core,Developing,3,Competent,56.2,1.2,12,Not Required,No
+EMP032,Laiba Mahmood,Sales,POS-032,S015,CRM Management,Digital,Core,Needs Development,2,Basic,40.3,1.8,6,Not Required,No
+EMP032,Laiba Mahmood,Sales,POS-032,S042,Communication,Behavioral,Common,Needs Development,2,Basic,45.3,1.2,9,Not Required,No
+EMP033,Ali Chaudhry,IT,POS-033,S010,IT Service Management,Functional,Core,Developing,3,Competent,67.2,0.7,5,Certification Planned,Yes
+EMP033,Ali Chaudhry,IT,POS-033,S011,Incident Management,Functional,Core,Needs Development,2,Basic,40.4,0.7,14,Not Required,Yes
+EMP033,Ali Chaudhry,IT,POS-033,S009,Network Administration,Technical,Core,Developing,3,Competent,64.3,0.6,5,Certification Planned,No
+EMP033,Ali Chaudhry,IT,POS-033,S042,Communication,Behavioral,Common,Developing,3,Competent,62.1,0.5,16,Not Required,No
+EMP033,Ali Chaudhry,IT,POS-033,S053,Documentation,Behavioral,Common,Developing,3,Competent,57.6,0.6,17,Not Required,No
+EMP034,Nida Sheikh,Sales,POS-034,S012,B2B Sales,Functional,Core,Developing,3,Competent,58.4,2.6,12,Not Required,Yes
+EMP034,Nida Sheikh,Sales,POS-034,S013,Lead Generation,Functional,Core,Needs Development,3,Competent,52.8,3.1,11,Not Required,Yes
+EMP034,Nida Sheikh,Sales,POS-034,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,40.4,2.6,11,Not Required,No
+EMP034,Nida Sheikh,Sales,POS-034,S015,CRM Management,Digital,Core,Needs Development,2,Basic,37.6,1.6,2,Not Required,No
+EMP034,Nida Sheikh,Sales,POS-034,S042,Communication,Behavioral,Common,Needs Development,2,Basic,35.0,2.8,3,Not Required,No
+EMP035,Shahbaz Malik,Engineering,POS-035,S001,Python Programming,Technical,Core,Developing,4,Advanced,71.2,3.6,14,Not Required,Yes
+EMP035,Shahbaz Malik,Engineering,POS-035,S002,SQL & Databases,Technical,Core,Developing,4,Advanced,76.5,4.4,13,Not Required,Yes
+EMP035,Shahbaz Malik,Engineering,POS-035,S003,API Development,Technical,Core,Needs Development,3,Competent,54.6,4.2,18,Not Required,No
+EMP035,Shahbaz Malik,Engineering,POS-035,S004,Software Testing,Technical,Core,Developing,3,Competent,63.1,5.5,14,Not Required,No
+EMP035,Shahbaz Malik,Engineering,POS-035,S044,Problem Solving,Behavioral,Common,Needs Development,3,Competent,51.3,4.3,18,Not Required,No
+EMP036,Zoya Chaudhry,Sales,POS-036,S012,B2B Sales,Functional,Core,Developing,3,Competent,60.2,0.3,4,Not Required,Yes
+EMP036,Zoya Chaudhry,Sales,POS-036,S013,Lead Generation,Functional,Core,Developing,3,Competent,65.7,0.4,11,Not Required,Yes
+EMP036,Zoya Chaudhry,Sales,POS-036,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,44.3,0.3,9,Not Required,No
+EMP036,Zoya Chaudhry,Sales,POS-036,S015,CRM Management,Digital,Core,Needs Development,2,Basic,44.3,0.5,11,Not Required,No
+EMP036,Zoya Chaudhry,Sales,POS-036,S042,Communication,Behavioral,Common,Developing,3,Competent,66.8,0.3,12,Not Required,No
+EMP037,Zara Mahmood,IT,POS-037,S009,Network Administration,Technical,Core,Developing,4,Advanced,70.0,3.0,17,Certification Planned,Yes
+EMP037,Zara Mahmood,IT,POS-037,S007,Cloud Platforms,Technical,Digital,Developing,3,Competent,55.6,2.9,7,Not Certified,Yes
+EMP037,Zara Mahmood,IT,POS-037,S010,IT Service Management,Functional,Core,Needs Development,3,Competent,52.2,3.2,2,Not Certified,No
+EMP037,Zara Mahmood,IT,POS-037,S008,Cybersecurity,Technical,Digital,Needs Development,3,Competent,53.7,2.1,14,Not Certified,No
+EMP037,Zara Mahmood,IT,POS-037,S011,Incident Management,Functional,Core,Developing,3,Competent,59.3,3.2,10,Not Required,No
+EMP038,Ali Mahmood,Customer Support,POS-038,S037,Customer Service,Functional,Core,Verified,4,Advanced,71.6,4.7,8,Not Required,Yes
+EMP038,Ali Mahmood,Customer Support,POS-038,S040,SLA Management,Functional,Core,Verified,4,Advanced,83.5,3.6,10,Not Required,Yes
+EMP038,Ali Mahmood,Customer Support,POS-038,S015,CRM Management,Digital,Core,Verified,4,Advanced,73.7,5.6,8,Not Required,No
+EMP038,Ali Mahmood,Customer Support,POS-038,S038,Complaint Resolution,Behavioral,Core,Developing,3,Competent,63.5,4.4,6,Not Required,No
+EMP038,Ali Mahmood,Customer Support,POS-038,S042,Communication,Behavioral,Common,Developing,3,Competent,61.6,4.1,14,Not Required,No
+EMP039,Kamran Hussain,Operations,POS-039,S020,SOP Compliance,Compliance,Core,Developing,3,Competent,57.4,1.0,1,Not Required,Yes
+EMP039,Kamran Hussain,Operations,POS-039,S024,Workflow Coordination,Functional,Core,Needs Development,2,Basic,41.5,0.7,8,Not Required,Yes
+EMP039,Kamran Hussain,Operations,POS-039,S022,Quality Control,Functional,Core,Needs Development,2,Basic,35.0,0.9,2,Not Required,No
+EMP039,Kamran Hussain,Operations,POS-039,S029,Advanced Excel,Digital,Core,Developing,3,Competent,59.1,0.5,11,Not Certified,No
+EMP039,Kamran Hussain,Operations,POS-039,S043,Teamwork,Behavioral,Common,Needs Development,3,Competent,52.2,0.8,6,Not Required,No
+EMP040,Ahmad Sheikh,Customer Support,POS-040,S037,Customer Service,Functional,Core,Needs Development,3,Competent,46.6,1.8,2,Not Required,Yes
+EMP040,Ahmad Sheikh,Customer Support,POS-040,S038,Complaint Resolution,Behavioral,Core,Developing,3,Competent,62.2,3.3,13,Not Required,Yes
+EMP040,Ahmad Sheikh,Customer Support,POS-040,S039,Call Handling,Functional,Core,Needs Development,2,Basic,37.9,2.5,11,Not Required,No
+EMP040,Ahmad Sheikh,Customer Support,POS-040,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,40.6,2.9,3,Not Required,No
+EMP040,Ahmad Sheikh,Customer Support,POS-040,S051,Empathy & Active Listening,Behavioral,Common,Developing,3,Competent,64.3,2.1,4,Not Required,No
+EMP041,Omer Nawaz,Operations,POS-041,S020,SOP Compliance,Compliance,Core,Needs Development,2,Basic,35.0,2.0,1,Not Required,Yes
+EMP041,Omer Nawaz,Operations,POS-041,S024,Workflow Coordination,Functional,Core,Needs Development,2,Basic,36.3,1.8,14,Not Required,Yes
+EMP041,Omer Nawaz,Operations,POS-041,S022,Quality Control,Functional,Core,Needs Development,2,Basic,35.0,1.3,7,Not Required,No
+EMP041,Omer Nawaz,Operations,POS-041,S029,Advanced Excel,Digital,Core,Needs Development,2,Basic,35.0,1.9,3,Not Certified,No
+EMP041,Omer Nawaz,Operations,POS-041,S043,Teamwork,Behavioral,Common,Needs Development,2,Basic,35.5,1.7,8,Not Required,No
+EMP042,Amna Aslam,Customer Support,POS-042,S037,Customer Service,Functional,Core,Verified,4,Advanced,75.6,4.3,10,Not Required,Yes
+EMP042,Amna Aslam,Customer Support,POS-042,S040,SLA Management,Functional,Core,Verified,4,Advanced,71.8,3.9,11,Not Required,Yes
+EMP042,Amna Aslam,Customer Support,POS-042,S015,CRM Management,Digital,Core,Developing,3,Competent,58.3,4.3,7,Not Required,No
+EMP042,Amna Aslam,Customer Support,POS-042,S038,Complaint Resolution,Behavioral,Core,Developing,3,Competent,55.8,3.8,7,Not Required,No
+EMP042,Amna Aslam,Customer Support,POS-042,S042,Communication,Behavioral,Common,Developing,3,Competent,60.5,3.2,9,Not Required,No
+EMP043,Amir Javed,Operations,POS-043,S019,Process Management,Functional,Core,Developing,4,Advanced,70.9,4.8,16,Not Required,Yes
+EMP043,Amir Javed,Operations,POS-043,S021,Process Improvement,Functional,Core,Needs Development,3,Competent,54.8,7.8,4,Not Required,Yes
+EMP043,Amir Javed,Operations,POS-043,S022,Quality Control,Functional,Core,Verified,4,Advanced,78.5,6.8,10,Not Required,No
+EMP043,Amir Javed,Operations,POS-043,S029,Advanced Excel,Digital,Core,Developing,3,Competent,56.4,7.6,16,Not Certified,No
+EMP043,Amir Javed,Operations,POS-043,S044,Problem Solving,Behavioral,Common,Developing,3,Competent,56.7,4.2,5,Not Required,No
+EMP044,Hafsa Khan,Finance,POS-044,S025,Financial Analysis,Functional,Core,Verified,4,Advanced,70.7,3.7,10,Certification Planned,Yes
+EMP044,Hafsa Khan,Finance,POS-044,S026,Accounting & Reconciliation,Functional,Core,Verified,4,Advanced,75.9,2.8,5,Not Required,Yes
+EMP044,Hafsa Khan,Finance,POS-044,S027,Budgeting & Forecasting,Functional,Core,Developing,3,Competent,57.8,2.3,12,Not Required,No
+EMP044,Hafsa Khan,Finance,POS-044,S029,Advanced Excel,Digital,Core,Verified,4,Advanced,77.2,2.5,5,Certification Planned,No
+EMP044,Hafsa Khan,Finance,POS-044,S030,Risk Analysis,Functional,Core,Needs Development,3,Competent,53.8,3.3,8,Not Certified,No
+EMP045,Saad Ahmad,Operations,POS-045,S020,SOP Compliance,Compliance,Core,Developing,3,Competent,59.1,1.4,16,Not Required,Yes
+EMP045,Saad Ahmad,Operations,POS-045,S024,Workflow Coordination,Functional,Core,Developing,3,Competent,64.3,1.8,6,Not Required,Yes
+EMP045,Saad Ahmad,Operations,POS-045,S022,Quality Control,Functional,Core,Developing,3,Competent,66.4,1.2,5,Not Required,No
+EMP045,Saad Ahmad,Operations,POS-045,S029,Advanced Excel,Digital,Core,Developing,3,Competent,61.0,1.2,5,Not Certified,No
+EMP045,Saad Ahmad,Operations,POS-045,S043,Teamwork,Behavioral,Common,Developing,3,Competent,62.4,1.7,7,Not Required,No
+EMP046,Salman Iqbal,Customer Support,POS-046,S037,Customer Service,Functional,Core,Developing,3,Competent,55.5,2.2,11,Not Required,Yes
+EMP046,Salman Iqbal,Customer Support,POS-046,S038,Complaint Resolution,Behavioral,Core,Developing,3,Competent,60.2,1.4,3,Not Required,Yes
+EMP046,Salman Iqbal,Customer Support,POS-046,S039,Call Handling,Functional,Core,Needs Development,2,Basic,43.3,2.2,17,Not Required,No
+EMP046,Salman Iqbal,Customer Support,POS-046,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,35.7,2.4,3,Not Required,No
+EMP046,Salman Iqbal,Customer Support,POS-046,S051,Empathy & Active Listening,Behavioral,Common,Needs Development,2,Basic,35.0,1.6,4,Not Required,No
+EMP047,Mahnoor Iqbal,Finance,POS-047,S025,Financial Analysis,Functional,Core,Developing,4,Advanced,84.2,8.1,18,Certification Planned,Yes
+EMP047,Mahnoor Iqbal,Finance,POS-047,S028,Regulatory Reporting,Compliance,Core,Verified,4,Advanced,71.8,6.0,4,Certification Planned,Yes
+EMP047,Mahnoor Iqbal,Finance,POS-047,S027,Budgeting & Forecasting,Functional,Core,Developing,4,Advanced,76.4,6.3,13,Not Required,No
+EMP047,Mahnoor Iqbal,Finance,POS-047,S030,Risk Analysis,Functional,Core,Verified,5,Expert,100.0,6.7,3,Certified,No
+EMP047,Mahnoor Iqbal,Finance,POS-047,S045,Stakeholder Management,Behavioral,Leadership,Verified,5,Expert,97.9,8.0,2,Not Required,No
+EMP048,Sehrish Shah,Operations,POS-048,S020,SOP Compliance,Compliance,Core,Needs Development,2,Basic,36.1,1.2,13,Not Required,Yes
+EMP048,Sehrish Shah,Operations,POS-048,S024,Workflow Coordination,Functional,Core,Needs Development,3,Competent,54.8,1.5,14,Not Required,Yes
+EMP048,Sehrish Shah,Operations,POS-048,S022,Quality Control,Functional,Core,Needs Development,2,Basic,35.0,1.2,8,Not Required,No
+EMP048,Sehrish Shah,Operations,POS-048,S029,Advanced Excel,Digital,Core,Needs Development,2,Basic,45.9,1.2,14,Not Certified,No
+EMP048,Sehrish Shah,Operations,POS-048,S043,Teamwork,Behavioral,Common,Developing,3,Competent,57.1,1.5,13,Not Required,No
+EMP049,Sara Aslam,Sales,POS-049,S012,B2B Sales,Functional,Core,Needs Development,3,Competent,54.2,1.7,5,Not Required,Yes
+EMP049,Sara Aslam,Sales,POS-049,S013,Lead Generation,Functional,Core,Needs Development,3,Competent,54.0,2.2,10,Not Required,Yes
+EMP049,Sara Aslam,Sales,POS-049,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,46.7,2.5,6,Not Required,No
+EMP049,Sara Aslam,Sales,POS-049,S015,CRM Management,Digital,Core,Developing,3,Competent,57.7,2.3,7,Not Required,No
+EMP049,Sara Aslam,Sales,POS-049,S042,Communication,Behavioral,Common,Developing,3,Competent,56.6,2.5,3,Not Required,No
+EMP050,Mohsin Butt,Finance,POS-050,S026,Accounting & Reconciliation,Functional,Core,Needs Development,2,Basic,35.0,1.9,18,Not Required,Yes
+EMP050,Mohsin Butt,Finance,POS-050,S029,Advanced Excel,Digital,Core,Needs Development,2,Basic,41.2,1.3,2,Not Certified,Yes
+EMP050,Mohsin Butt,Finance,POS-050,S053,Documentation,Behavioral,Common,Needs Development,2,Basic,35.0,2.0,3,Not Required,No
+EMP050,Mohsin Butt,Finance,POS-050,S043,Teamwork,Behavioral,Common,Needs Development,2,Basic,39.0,1.2,2,Not Required,No
+EMP050,Mohsin Butt,Finance,POS-050,S030,Risk Analysis,Functional,Core,Needs Development,2,Basic,35.7,1.7,11,Not Certified,No
+EMP051,Asad Ahmad,IT,POS-051,S008,Cybersecurity,Technical,Digital,Developing,5,Expert,86.0,7.7,17,Certified,Yes
+EMP051,Asad Ahmad,IT,POS-051,S007,Cloud Platforms,Technical,Digital,Verified,5,Expert,93.0,12.4,11,Certification Planned,Yes
+EMP051,Asad Ahmad,IT,POS-051,S009,Network Administration,Technical,Core,Developing,4,Advanced,71.2,11.1,18,Certification Planned,No
+EMP051,Asad Ahmad,IT,POS-051,S050,Project Management,Leadership,Common,Verified,5,Expert,96.3,12.3,2,Certification Planned,No
+EMP051,Asad Ahmad,IT,POS-051,S044,Problem Solving,Behavioral,Common,Developing,4,Advanced,77.3,10.7,14,Not Required,No
+EMP052,Raza Hassan,Customer Support,POS-052,S037,Customer Service,Functional,Core,Needs Development,3,Competent,46.0,1.8,2,Not Required,Yes
+EMP052,Raza Hassan,Customer Support,POS-052,S038,Complaint Resolution,Behavioral,Core,Needs Development,2,Basic,35.0,2.1,15,Not Required,Yes
+EMP052,Raza Hassan,Customer Support,POS-052,S039,Call Handling,Functional,Core,Needs Development,2,Basic,38.8,1.4,7,Not Required,No
+EMP052,Raza Hassan,Customer Support,POS-052,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,36.8,1.7,17,Not Required,No
+EMP052,Raza Hassan,Customer Support,POS-052,S051,Empathy & Active Listening,Behavioral,Common,Needs Development,2,Basic,38.6,1.6,4,Not Required,No
+EMP053,Zeeshan Abbasi,HR,POS-053,S031,Recruitment & Selection,Functional,Core,Needs Development,2,Basic,41.5,1.9,13,Not Required,Yes
+EMP053,Zeeshan Abbasi,HR,POS-053,S032,HRIS & Employee Data,Digital,Core,Developing,3,Competent,59.6,1.5,3,Not Certified,Yes
+EMP053,Zeeshan Abbasi,HR,POS-053,S034,Employee Relations,Behavioral,Core,Developing,3,Competent,57.6,1.8,3,Not Required,No
+EMP053,Zeeshan Abbasi,HR,POS-053,S042,Communication,Behavioral,Common,Needs Development,2,Basic,43.2,2.6,10,Not Required,No
+EMP053,Zeeshan Abbasi,HR,POS-053,S053,Documentation,Behavioral,Common,Needs Development,2,Basic,37.6,1.8,16,Not Required,No
+EMP054,Waqas Aslam,Engineering,POS-054,S001,Python Programming,Technical,Core,Developing,3,Competent,57.6,0.4,9,Not Required,Yes
+EMP054,Waqas Aslam,Engineering,POS-054,S002,SQL & Databases,Technical,Core,Developing,3,Competent,65.9,0.4,16,Not Required,Yes
+EMP054,Waqas Aslam,Engineering,POS-054,S004,Software Testing,Technical,Core,Developing,3,Competent,57.5,0.4,7,Not Required,No
+EMP054,Waqas Aslam,Engineering,POS-054,S044,Problem Solving,Behavioral,Common,Developing,3,Competent,64.0,0.4,1,Not Required,No
+EMP054,Waqas Aslam,Engineering,POS-054,S043,Teamwork,Behavioral,Common,Developing,3,Competent,63.3,0.5,8,Not Required,No
+EMP055,Sadia Mahmood,Engineering,POS-055,S001,Python Programming,Technical,Core,Developing,4,Advanced,66.9,2.2,9,Not Required,Yes
+EMP055,Sadia Mahmood,Engineering,POS-055,S002,SQL & Databases,Technical,Core,Developing,3,Competent,58.4,2.5,14,Not Required,Yes
+EMP055,Sadia Mahmood,Engineering,POS-055,S003,API Development,Technical,Core,Needs Development,2,Basic,35.0,2.5,1,Not Required,No
+EMP055,Sadia Mahmood,Engineering,POS-055,S004,Software Testing,Technical,Core,Needs Development,3,Competent,52.3,1.7,6,Not Required,No
+EMP055,Sadia Mahmood,Engineering,POS-055,S044,Problem Solving,Behavioral,Common,Needs Development,3,Competent,52.0,2.3,8,Not Required,No
+EMP056,Saba Hassan,Operations,POS-056,S019,Process Management,Functional,Core,Verified,4,Advanced,74.7,4.6,8,Not Required,Yes
+EMP056,Saba Hassan,Operations,POS-056,S021,Process Improvement,Functional,Core,Verified,4,Advanced,71.2,3.9,5,Not Required,Yes
+EMP056,Saba Hassan,Operations,POS-056,S022,Quality Control,Functional,Core,Needs Development,3,Competent,52.9,3.9,5,Not Required,No
+EMP056,Saba Hassan,Operations,POS-056,S029,Advanced Excel,Digital,Core,Developing,4,Advanced,77.1,5.4,13,Certification Planned,No
+EMP056,Saba Hassan,Operations,POS-056,S044,Problem Solving,Behavioral,Common,Verified,4,Advanced,82.2,4.5,12,Not Required,No
+EMP057,Raza Haider,IT,POS-057,S010,IT Service Management,Functional,Core,Needs Development,3,Competent,50.5,0.6,3,Not Certified,Yes
+EMP057,Raza Haider,IT,POS-057,S011,Incident Management,Functional,Core,Needs Development,3,Competent,51.7,0.3,5,Not Required,Yes
+EMP057,Raza Haider,IT,POS-057,S009,Network Administration,Technical,Core,Needs Development,3,Competent,51.6,0.4,9,Not Certified,No
+EMP057,Raza Haider,IT,POS-057,S042,Communication,Behavioral,Common,Needs Development,2,Basic,35.0,0.4,7,Not Required,No
+EMP057,Raza Haider,IT,POS-057,S053,Documentation,Behavioral,Common,Needs Development,2,Basic,35.0,0.7,18,Not Required,No
+EMP058,Shahid Malik,Engineering,POS-058,S005,System Design,Technical,Core,Verified,4,Advanced,70.8,6.1,2,Not Required,Yes
+EMP058,Shahid Malik,Engineering,POS-058,S003,API Development,Technical,Core,Developing,4,Advanced,64.6,6.8,7,Not Required,Yes
+EMP058,Shahid Malik,Engineering,POS-058,S001,Python Programming,Technical,Core,Verified,4,Advanced,70.2,9.6,11,Not Required,No
+EMP058,Shahid Malik,Engineering,POS-058,S050,Project Management,Leadership,Common,Verified,4,Advanced,70.2,11.7,8,Certification Planned,No
+EMP058,Shahid Malik,Engineering,POS-058,S047,Coaching & Mentoring,Leadership,Leadership,Verified,4,Advanced,72.5,10.4,5,Not Required,No
+EMP059,Anum Masood,Sales,POS-059,S016,Account Management,Functional,Core,Verified,5,Expert,87.8,6.4,9,Not Required,Yes
+EMP059,Anum Masood,Sales,POS-059,S014,Negotiation,Behavioral,Core,Verified,5,Expert,97.3,8.2,3,Not Required,Yes
+EMP059,Anum Masood,Sales,POS-059,S017,Pipeline Management,Functional,Core,Verified,4,Advanced,76.0,10.9,4,Not Required,No
+EMP059,Anum Masood,Sales,POS-059,S045,Stakeholder Management,Behavioral,Leadership,Verified,4,Advanced,73.6,11.6,4,Not Required,No
+EMP059,Anum Masood,Sales,POS-059,S047,Coaching & Mentoring,Leadership,Leadership,Verified,5,Expert,92.5,7.4,2,Not Required,No
+EMP060,Mohsin Yousaf,Sales,POS-060,S012,B2B Sales,Functional,Core,Needs Development,3,Competent,54.1,1.2,10,Not Required,Yes
+EMP060,Mohsin Yousaf,Sales,POS-060,S013,Lead Generation,Functional,Core,Developing,3,Competent,59.4,1.3,12,Not Required,Yes
+EMP060,Mohsin Yousaf,Sales,POS-060,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,35.7,1.5,16,Not Required,No
+EMP060,Mohsin Yousaf,Sales,POS-060,S015,CRM Management,Digital,Core,Developing,3,Competent,60.3,1.2,14,Not Required,No
+EMP060,Mohsin Yousaf,Sales,POS-060,S042,Communication,Behavioral,Common,Developing,3,Competent,55.6,1.6,1,Not Required,No
+EMP061,Asad Bashir,Sales,POS-061,S012,B2B Sales,Functional,Core,Developing,3,Competent,57.8,2.0,11,Not Required,Yes
+EMP061,Asad Bashir,Sales,POS-061,S013,Lead Generation,Functional,Core,Developing,3,Competent,59.3,1.6,14,Not Required,Yes
+EMP061,Asad Bashir,Sales,POS-061,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,40.8,2.0,14,Not Required,No
+EMP061,Asad Bashir,Sales,POS-061,S015,CRM Management,Digital,Core,Needs Development,2,Basic,37.9,2.6,8,Not Required,No
+EMP061,Asad Bashir,Sales,POS-061,S042,Communication,Behavioral,Common,Needs Development,2,Basic,44.1,2.0,7,Not Required,No
+EMP062,Fahad Dar,Sales,POS-062,S016,Account Management,Functional,Core,Verified,4,Advanced,79.1,2.7,7,Not Required,Yes
+EMP062,Fahad Dar,Sales,POS-062,S014,Negotiation,Behavioral,Core,Verified,5,Expert,97.8,4.2,2,Not Required,Yes
+EMP062,Fahad Dar,Sales,POS-062,S015,CRM Management,Digital,Core,Developing,4,Advanced,78.5,3.2,18,Not Required,No
+EMP062,Fahad Dar,Sales,POS-062,S017,Pipeline Management,Functional,Core,Verified,4,Advanced,83.0,5.4,11,Not Required,No
+EMP062,Fahad Dar,Sales,POS-062,S018,Product Knowledge,Functional,Core,Verified,4,Advanced,83.0,5.5,2,Not Required,No
+EMP063,Ahmad Tariq,Sales,POS-063,S012,B2B Sales,Functional,Core,Needs Development,3,Competent,53.0,2.6,15,Not Required,Yes
+EMP063,Ahmad Tariq,Sales,POS-063,S013,Lead Generation,Functional,Core,Needs Development,3,Competent,45.4,2.6,2,Not Required,Yes
+EMP063,Ahmad Tariq,Sales,POS-063,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,36.9,2.6,18,Not Required,No
+EMP063,Ahmad Tariq,Sales,POS-063,S015,CRM Management,Digital,Core,Needs Development,2,Basic,40.9,1.6,2,Not Required,No
+EMP063,Ahmad Tariq,Sales,POS-063,S042,Communication,Behavioral,Common,Needs Development,2,Basic,35.0,1.5,14,Not Required,No
+EMP064,Hassan Sheikh,Sales,POS-064,S012,B2B Sales,Functional,Core,Developing,3,Competent,59.3,2.0,4,Not Required,Yes
+EMP064,Hassan Sheikh,Sales,POS-064,S013,Lead Generation,Functional,Core,Developing,3,Competent,60.1,1.5,17,Not Required,Yes
+EMP064,Hassan Sheikh,Sales,POS-064,S018,Product Knowledge,Functional,Core,Developing,3,Competent,59.5,1.7,6,Not Required,No
+EMP064,Hassan Sheikh,Sales,POS-064,S015,CRM Management,Digital,Core,Needs Development,3,Competent,54.8,3.0,9,Not Required,No
+EMP064,Hassan Sheikh,Sales,POS-064,S042,Communication,Behavioral,Common,Developing,3,Competent,59.5,1.7,15,Not Required,No
+EMP065,Amna Gill,Sales,POS-065,S016,Account Management,Functional,Core,Needs Development,3,Competent,48.8,1.5,11,Not Required,Yes
+EMP065,Amna Gill,Sales,POS-065,S014,Negotiation,Behavioral,Core,Developing,3,Competent,55.7,2.4,4,Not Required,Yes
+EMP065,Amna Gill,Sales,POS-065,S015,CRM Management,Digital,Core,Needs Development,3,Competent,54.7,1.8,12,Not Required,No
+EMP065,Amna Gill,Sales,POS-065,S017,Pipeline Management,Functional,Core,Needs Development,3,Competent,51.7,2.3,6,Not Required,No
+EMP065,Amna Gill,Sales,POS-065,S018,Product Knowledge,Functional,Core,Needs Development,3,Competent,53.6,2.2,4,Not Required,No
+EMP066,Ali Gill,HR,POS-066,S033,Performance Management,Functional,Core,Developing,4,Advanced,72.1,5.6,14,Not Required,Yes
+EMP066,Ali Gill,HR,POS-066,S034,Employee Relations,Behavioral,Core,Needs Development,3,Competent,52.6,6.4,5,Not Required,Yes
+EMP066,Ali Gill,HR,POS-066,S035,Learning & Development,Functional,Core,Developing,4,Advanced,67.2,6.1,9,Not Required,No
+EMP066,Ali Gill,HR,POS-066,S047,Coaching & Mentoring,Leadership,Leadership,Needs Development,3,Competent,54.7,5.0,14,Not Required,No
+EMP066,Ali Gill,HR,POS-066,S045,Stakeholder Management,Behavioral,Leadership,Needs Development,3,Competent,46.5,6.2,15,Not Required,No
+EMP067,Nida Hameed,Operations,POS-067,S046,Leadership,Leadership,Leadership,Verified,5,Expert,92.1,7.7,10,Not Required,Yes
+EMP067,Nida Hameed,Operations,POS-067,S019,Process Management,Functional,Core,Verified,5,Expert,89.3,9.1,3,Not Required,Yes
+EMP067,Nida Hameed,Operations,POS-067,S023,Risk & Controls,Compliance,Core,Verified,5,Expert,82.9,9.2,11,Not Required,No
+EMP067,Nida Hameed,Operations,POS-067,S050,Project Management,Leadership,Common,Verified,4,Advanced,72.7,6.1,5,Certification Planned,No
+EMP067,Nida Hameed,Operations,POS-067,S045,Stakeholder Management,Behavioral,Leadership,Developing,4,Advanced,68.7,8.9,5,Not Required,No
+EMP068,Sidra Hussain,Customer Support,POS-068,S046,Leadership,Leadership,Leadership,Verified,5,Expert,88.5,9.6,8,Not Required,Yes
+EMP068,Sidra Hussain,Customer Support,POS-068,S047,Coaching & Mentoring,Leadership,Leadership,Verified,4,Advanced,70.5,10.4,12,Not Required,Yes
+EMP068,Sidra Hussain,Customer Support,POS-068,S040,SLA Management,Functional,Core,Verified,5,Expert,89.2,15.8,11,Not Required,No
+EMP068,Sidra Hussain,Customer Support,POS-068,S045,Stakeholder Management,Behavioral,Leadership,Verified,4,Advanced,73.3,11.6,7,Not Required,No
+EMP068,Sidra Hussain,Customer Support,POS-068,S021,Process Improvement,Functional,Core,Verified,4,Advanced,74.1,12.4,2,Not Required,No
+EMP069,Mehwish Hussain,Operations,POS-069,S020,SOP Compliance,Compliance,Core,Developing,3,Competent,60.4,1.8,7,Not Required,Yes
+EMP069,Mehwish Hussain,Operations,POS-069,S024,Workflow Coordination,Functional,Core,Needs Development,2,Basic,36.9,2.9,11,Not Required,Yes
+EMP069,Mehwish Hussain,Operations,POS-069,S022,Quality Control,Functional,Core,Developing,3,Competent,57.5,2.1,15,Not Required,No
+EMP069,Mehwish Hussain,Operations,POS-069,S029,Advanced Excel,Digital,Core,Needs Development,3,Competent,54.7,2.4,3,Not Certified,No
+EMP069,Mehwish Hussain,Operations,POS-069,S043,Teamwork,Behavioral,Common,Needs Development,2,Basic,35.8,2.2,10,Not Required,No
+EMP070,Bilal Saeed,Engineering,POS-070,S005,System Design,Technical,Core,Developing,4,Advanced,66.4,6.6,17,Not Required,Yes
+EMP070,Bilal Saeed,Engineering,POS-070,S050,Project Management,Leadership,Common,Verified,5,Expert,84.1,5.7,7,Certification Planned,Yes
+EMP070,Bilal Saeed,Engineering,POS-070,S046,Leadership,Leadership,Leadership,Verified,4,Advanced,73.3,5.4,10,Not Required,No
+EMP070,Bilal Saeed,Engineering,POS-070,S045,Stakeholder Management,Behavioral,Leadership,Developing,4,Advanced,71.8,5.9,13,Not Required,No
+EMP070,Bilal Saeed,Engineering,POS-070,S006,DevOps & CI/CD,Technical,Digital,Developing,4,Advanced,68.6,6.9,15,Certification Planned,No
+EMP071,Eman Abbasi,Finance,POS-071,S025,Financial Analysis,Functional,Core,Needs Development,3,Competent,54.0,4.7,13,Not Certified,Yes
+EMP071,Eman Abbasi,Finance,POS-071,S026,Accounting & Reconciliation,Functional,Core,Needs Development,3,Competent,52.4,3.6,17,Not Required,Yes
+EMP071,Eman Abbasi,Finance,POS-071,S027,Budgeting & Forecasting,Functional,Core,Developing,4,Advanced,67.3,3.3,17,Not Required,No
+EMP071,Eman Abbasi,Finance,POS-071,S029,Advanced Excel,Digital,Core,Needs Development,3,Competent,47.9,5.0,17,Not Certified,No
+EMP071,Eman Abbasi,Finance,POS-071,S030,Risk Analysis,Functional,Core,Needs Development,3,Competent,38.4,6.0,6,Not Certified,No
+EMP072,Fahad Hassan,Customer Support,POS-072,S040,SLA Management,Functional,Core,Verified,5,Expert,97.9,7.1,1,Not Required,Yes
+EMP072,Fahad Hassan,Customer Support,POS-072,S041,Knowledge Base Management,Digital,Core,Developing,4,Advanced,78.2,8.0,13,Not Required,Yes
+EMP072,Fahad Hassan,Customer Support,POS-072,S047,Coaching & Mentoring,Leadership,Leadership,Verified,5,Expert,92.8,6.4,3,Not Required,No
+EMP072,Fahad Hassan,Customer Support,POS-072,S038,Complaint Resolution,Behavioral,Core,Verified,4,Advanced,79.6,10.7,10,Not Required,No
+EMP072,Fahad Hassan,Customer Support,POS-072,S043,Teamwork,Behavioral,Common,Verified,4,Advanced,73.8,10.4,6,Not Required,No
+EMP073,Ali Yousaf,Customer Support,POS-073,S037,Customer Service,Functional,Core,Needs Development,2,Basic,35.0,0.6,15,Not Required,Yes
+EMP073,Ali Yousaf,Customer Support,POS-073,S038,Complaint Resolution,Behavioral,Core,Needs Development,2,Basic,35.0,0.7,2,Not Required,Yes
+EMP073,Ali Yousaf,Customer Support,POS-073,S039,Call Handling,Functional,Core,Needs Development,2,Basic,35.0,1.0,4,Not Required,No
+EMP073,Ali Yousaf,Customer Support,POS-073,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,35.0,0.8,14,Not Required,No
+EMP073,Ali Yousaf,Customer Support,POS-073,S051,Empathy & Active Listening,Behavioral,Common,Needs Development,2,Basic,35.0,0.7,7,Not Required,No
+EMP074,Omer Hameed,Sales,POS-074,S012,B2B Sales,Functional,Core,Needs Development,2,Basic,35.0,1.9,11,Not Required,Yes
+EMP074,Omer Hameed,Sales,POS-074,S013,Lead Generation,Functional,Core,Needs Development,3,Competent,46.6,1.5,4,Not Required,Yes
+EMP074,Omer Hameed,Sales,POS-074,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,36.8,2.2,17,Not Required,No
+EMP074,Omer Hameed,Sales,POS-074,S015,CRM Management,Digital,Core,Needs Development,3,Competent,47.5,1.6,11,Not Required,No
+EMP074,Omer Hameed,Sales,POS-074,S042,Communication,Behavioral,Common,Needs Development,3,Competent,51.5,2.0,1,Not Required,No
+EMP075,Asad Raza,Operations,POS-075,S019,Process Management,Functional,Core,Verified,4,Advanced,72.0,3.1,6,Not Required,Yes
+EMP075,Asad Raza,Operations,POS-075,S021,Process Improvement,Functional,Core,Developing,3,Competent,60.6,2.3,3,Not Required,Yes
+EMP075,Asad Raza,Operations,POS-075,S022,Quality Control,Functional,Core,Developing,3,Competent,61.7,2.6,12,Not Required,No
+EMP075,Asad Raza,Operations,POS-075,S029,Advanced Excel,Digital,Core,Developing,3,Competent,56.1,4.0,12,Not Certified,No
+EMP075,Asad Raza,Operations,POS-075,S044,Problem Solving,Behavioral,Common,Developing,3,Competent,61.4,3.2,2,Not Required,No
+EMP076,Fahad Shah,Engineering,POS-076,S001,Python Programming,Technical,Core,Developing,3,Competent,55.5,3.8,3,Not Required,Yes
+EMP076,Fahad Shah,Engineering,POS-076,S002,SQL & Databases,Technical,Core,Developing,3,Competent,55.7,5.0,16,Not Required,Yes
+EMP076,Fahad Shah,Engineering,POS-076,S003,API Development,Technical,Core,Developing,3,Competent,57.8,3.5,14,Not Required,No
+EMP076,Fahad Shah,Engineering,POS-076,S004,Software Testing,Technical,Core,Developing,3,Competent,56.4,6.1,7,Not Required,No
+EMP076,Fahad Shah,Engineering,POS-076,S044,Problem Solving,Behavioral,Common,Verified,4,Advanced,77.7,5.3,1,Not Required,No
+EMP077,Ahmad Awan,Customer Support,POS-077,S040,SLA Management,Functional,Core,Developing,5,Expert,100.0,5.3,15,Not Required,Yes
+EMP077,Ahmad Awan,Customer Support,POS-077,S041,Knowledge Base Management,Digital,Core,Verified,5,Expert,100.0,9.1,4,Not Required,Yes
+EMP077,Ahmad Awan,Customer Support,POS-077,S047,Coaching & Mentoring,Leadership,Leadership,Verified,5,Expert,96.1,6.3,12,Not Required,No
+EMP077,Ahmad Awan,Customer Support,POS-077,S038,Complaint Resolution,Behavioral,Core,Verified,5,Expert,99.2,9.4,10,Not Required,No
+EMP077,Ahmad Awan,Customer Support,POS-077,S043,Teamwork,Behavioral,Common,Verified,5,Expert,95.8,9.1,11,Not Required,No
+EMP078,Ahmad Nawaz,Engineering,POS-078,S001,Python Programming,Technical,Core,Developing,3,Competent,56.2,2.6,3,Not Required,Yes
+EMP078,Ahmad Nawaz,Engineering,POS-078,S002,SQL & Databases,Technical,Core,Needs Development,3,Competent,52.7,2.1,18,Not Required,Yes
+EMP078,Ahmad Nawaz,Engineering,POS-078,S003,API Development,Technical,Core,Needs Development,3,Competent,53.0,1.6,15,Not Required,No
+EMP078,Ahmad Nawaz,Engineering,POS-078,S004,Software Testing,Technical,Core,Developing,3,Competent,56.7,2.2,8,Not Required,No
+EMP078,Ahmad Nawaz,Engineering,POS-078,S044,Problem Solving,Behavioral,Common,Developing,3,Competent,64.3,2.1,4,Not Required,No
+EMP079,Hina Aslam,Customer Support,POS-079,S037,Customer Service,Functional,Core,Developing,3,Competent,59.6,0.9,6,Not Required,Yes
+EMP079,Hina Aslam,Customer Support,POS-079,S038,Complaint Resolution,Behavioral,Core,Needs Development,2,Basic,35.0,1.5,16,Not Required,Yes
+EMP079,Hina Aslam,Customer Support,POS-079,S039,Call Handling,Functional,Core,Needs Development,2,Basic,37.9,1.0,2,Not Required,No
+EMP079,Hina Aslam,Customer Support,POS-079,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,41.9,1.0,10,Not Required,No
+EMP079,Hina Aslam,Customer Support,POS-079,S051,Empathy & Active Listening,Behavioral,Common,Developing,3,Competent,62.1,0.9,17,Not Required,No
+EMP080,Ali Mughal,Engineering,POS-080,S005,System Design,Technical,Core,Developing,5,Expert,100.0,12.7,15,Not Required,Yes
+EMP080,Ali Mughal,Engineering,POS-080,S050,Project Management,Leadership,Common,Verified,5,Expert,100.0,8.6,5,Certified,Yes
+EMP080,Ali Mughal,Engineering,POS-080,S046,Leadership,Leadership,Leadership,Developing,5,Expert,99.3,8.3,14,Not Required,No
+EMP080,Ali Mughal,Engineering,POS-080,S045,Stakeholder Management,Behavioral,Leadership,Verified,5,Expert,95.1,8.8,7,Not Required,No
+EMP080,Ali Mughal,Engineering,POS-080,S006,DevOps & CI/CD,Technical,Digital,Verified,5,Expert,99.8,8.2,10,Certification Planned,No
+EMP081,Sonia Arif,HR,POS-081,S033,Performance Management,Functional,Core,Verified,5,Expert,100.0,7.9,4,Not Required,Yes
+EMP081,Sonia Arif,HR,POS-081,S034,Employee Relations,Behavioral,Core,Developing,5,Expert,89.1,8.9,16,Not Required,Yes
+EMP081,Sonia Arif,HR,POS-081,S035,Learning & Development,Functional,Core,Developing,4,Advanced,80.8,6.5,16,Not Required,No
+EMP081,Sonia Arif,HR,POS-081,S047,Coaching & Mentoring,Leadership,Leadership,Verified,5,Expert,96.3,6.9,9,Not Required,No
+EMP081,Sonia Arif,HR,POS-081,S045,Stakeholder Management,Behavioral,Leadership,Verified,4,Advanced,82.4,10.3,9,Not Required,No
+EMP082,Ali Dar,Engineering,POS-082,S001,Python Programming,Technical,Core,Needs Development,2,Basic,36.5,0.7,8,Not Required,Yes
+EMP082,Ali Dar,Engineering,POS-082,S002,SQL & Databases,Technical,Core,Needs Development,2,Basic,41.5,0.6,5,Not Required,Yes
+EMP082,Ali Dar,Engineering,POS-082,S004,Software Testing,Technical,Core,Needs Development,2,Basic,35.0,0.4,11,Not Required,No
+EMP082,Ali Dar,Engineering,POS-082,S044,Problem Solving,Behavioral,Common,Needs Development,2,Basic,35.0,0.6,5,Not Required,No
+EMP082,Ali Dar,Engineering,POS-082,S043,Teamwork,Behavioral,Common,Needs Development,2,Basic,39.5,0.5,3,Not Required,No
+EMP083,Raza Aziz,Customer Support,POS-083,S037,Customer Service,Functional,Core,Needs Development,2,Basic,35.0,2.8,6,Not Required,Yes
+EMP083,Raza Aziz,Customer Support,POS-083,S038,Complaint Resolution,Behavioral,Core,Needs Development,3,Competent,53.3,1.6,18,Not Required,Yes
+EMP083,Raza Aziz,Customer Support,POS-083,S039,Call Handling,Functional,Core,Needs Development,2,Basic,41.3,2.1,12,Not Required,No
+EMP083,Raza Aziz,Customer Support,POS-083,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,37.7,2.3,5,Not Required,No
+EMP083,Raza Aziz,Customer Support,POS-083,S051,Empathy & Active Listening,Behavioral,Common,Needs Development,2,Basic,45.2,2.5,12,Not Required,No
+EMP084,Zara Ullah,HR,POS-084,S033,Performance Management,Functional,Core,Developing,4,Advanced,65.8,5.6,4,Not Required,Yes
+EMP084,Zara Ullah,HR,POS-084,S031,Recruitment & Selection,Functional,Core,Developing,3,Competent,61.6,5.8,7,Not Required,Yes
+EMP084,Zara Ullah,HR,POS-084,S032,HRIS & Employee Data,Digital,Core,Developing,4,Advanced,67.4,6.6,3,Certification Planned,No
+EMP084,Zara Ullah,HR,POS-084,S035,Learning & Development,Functional,Core,Needs Development,3,Competent,49.7,4.9,14,Not Required,No
+EMP084,Zara Ullah,HR,POS-084,S034,Employee Relations,Behavioral,Core,Needs Development,3,Competent,53.1,4.9,3,Not Required,No
+EMP085,Sara Yousaf,HR,POS-085,S033,Performance Management,Functional,Core,Verified,4,Advanced,74.2,9.5,8,Not Required,Yes
+EMP085,Sara Yousaf,HR,POS-085,S034,Employee Relations,Behavioral,Core,Verified,4,Advanced,74.3,8.7,2,Not Required,Yes
+EMP085,Sara Yousaf,HR,POS-085,S035,Learning & Development,Functional,Core,Verified,4,Advanced,72.4,9.7,2,Not Required,No
+EMP085,Sara Yousaf,HR,POS-085,S047,Coaching & Mentoring,Leadership,Leadership,Verified,5,Expert,89.7,7.6,5,Not Required,No
+EMP085,Sara Yousaf,HR,POS-085,S045,Stakeholder Management,Behavioral,Leadership,Verified,4,Advanced,72.6,9.0,11,Not Required,No
+EMP086,Hina Tariq,Operations,POS-086,S020,SOP Compliance,Compliance,Core,Developing,3,Competent,60.0,1.2,15,Not Required,Yes
+EMP086,Hina Tariq,Operations,POS-086,S024,Workflow Coordination,Functional,Core,Developing,3,Competent,66.7,2.1,7,Not Required,Yes
+EMP086,Hina Tariq,Operations,POS-086,S022,Quality Control,Functional,Core,Developing,3,Competent,59.0,1.9,16,Not Required,No
+EMP086,Hina Tariq,Operations,POS-086,S029,Advanced Excel,Digital,Core,Developing,3,Competent,60.8,1.9,4,Not Certified,No
+EMP086,Hina Tariq,Operations,POS-086,S043,Teamwork,Behavioral,Common,Needs Development,2,Basic,39.8,2.0,12,Not Required,No
+EMP087,Kashif Hameed,HR,POS-087,S046,Leadership,Leadership,Leadership,Developing,5,Expert,94.7,10.0,13,Not Required,Yes
+EMP087,Kashif Hameed,HR,POS-087,S033,Performance Management,Functional,Core,Verified,4,Advanced,80.7,8.8,6,Not Required,Yes
+EMP087,Kashif Hameed,HR,POS-087,S034,Employee Relations,Behavioral,Core,Developing,5,Expert,95.7,9.3,17,Not Required,No
+EMP087,Kashif Hameed,HR,POS-087,S035,Learning & Development,Functional,Core,Developing,5,Expert,96.7,11.6,16,Not Required,No
+EMP087,Kashif Hameed,HR,POS-087,S045,Stakeholder Management,Behavioral,Leadership,Verified,5,Expert,97.1,10.6,12,Not Required,No
+EMP088,Sana Mughal,Operations,POS-088,S019,Process Management,Functional,Core,Verified,4,Advanced,80.4,3.7,8,Not Required,Yes
+EMP088,Sana Mughal,Operations,POS-088,S021,Process Improvement,Functional,Core,Verified,4,Advanced,79.8,4.3,11,Not Required,Yes
+EMP088,Sana Mughal,Operations,POS-088,S022,Quality Control,Functional,Core,Verified,4,Advanced,80.7,2.9,4,Not Required,No
+EMP088,Sana Mughal,Operations,POS-088,S029,Advanced Excel,Digital,Core,Verified,4,Advanced,73.8,4.4,6,Certification Planned,No
+EMP088,Sana Mughal,Operations,POS-088,S044,Problem Solving,Behavioral,Common,Developing,4,Advanced,78.0,4.4,14,Not Required,No
+EMP089,Muneeb Haider,HR,POS-089,S031,Recruitment & Selection,Functional,Core,Developing,3,Competent,62.6,2.2,18,Not Required,Yes
+EMP089,Muneeb Haider,HR,POS-089,S032,HRIS & Employee Data,Digital,Core,Developing,3,Competent,62.4,3.1,9,Certification Planned,Yes
+EMP089,Muneeb Haider,HR,POS-089,S034,Employee Relations,Behavioral,Core,Developing,3,Competent,63.3,2.6,15,Not Required,No
+EMP089,Muneeb Haider,HR,POS-089,S042,Communication,Behavioral,Common,Developing,3,Competent,58.9,2.2,12,Not Required,No
+EMP089,Muneeb Haider,HR,POS-089,S053,Documentation,Behavioral,Common,Needs Development,3,Competent,53.0,2.6,5,Not Required,No
+EMP090,Noman Ahmad,Finance,POS-090,S025,Financial Analysis,Functional,Core,Verified,4,Advanced,75.4,3.0,7,Certification Planned,Yes
+EMP090,Noman Ahmad,Finance,POS-090,S026,Accounting & Reconciliation,Functional,Core,Developing,3,Competent,56.5,4.0,13,Not Required,Yes
+EMP090,Noman Ahmad,Finance,POS-090,S027,Budgeting & Forecasting,Functional,Core,Verified,4,Advanced,76.8,2.7,7,Not Required,No
+EMP090,Noman Ahmad,Finance,POS-090,S029,Advanced Excel,Digital,Core,Developing,4,Advanced,66.0,2.4,17,Certification Planned,No
+EMP090,Noman Ahmad,Finance,POS-090,S030,Risk Analysis,Functional,Core,Developing,3,Competent,58.7,3.7,15,Not Certified,No
+EMP091,Nida Mughal,Finance,POS-091,S025,Financial Analysis,Functional,Core,Developing,4,Advanced,73.3,6.6,16,Certification Planned,Yes
+EMP091,Nida Mughal,Finance,POS-091,S028,Regulatory Reporting,Compliance,Core,Developing,5,Expert,96.7,6.0,14,Certification Planned,Yes
+EMP091,Nida Mughal,Finance,POS-091,S027,Budgeting & Forecasting,Functional,Core,Developing,4,Advanced,75.9,4.9,14,Not Required,No
+EMP091,Nida Mughal,Finance,POS-091,S030,Risk Analysis,Functional,Core,Verified,4,Advanced,81.7,5.7,4,Certified,No
+EMP091,Nida Mughal,Finance,POS-091,S045,Stakeholder Management,Behavioral,Leadership,Verified,4,Advanced,78.8,6.3,5,Not Required,No
+EMP092,Mahnoor Ali,Engineering,POS-092,S005,System Design,Technical,Core,Verified,5,Expert,82.7,5.0,9,Not Required,Yes
+EMP092,Mahnoor Ali,Engineering,POS-092,S003,API Development,Technical,Core,Verified,4,Advanced,77.9,5.9,4,Not Required,Yes
+EMP092,Mahnoor Ali,Engineering,POS-092,S001,Python Programming,Technical,Core,Verified,4,Advanced,70.3,4.5,9,Not Required,No
+EMP092,Mahnoor Ali,Engineering,POS-092,S050,Project Management,Leadership,Common,Verified,4,Advanced,74.9,6.1,11,Certification Planned,No
+EMP092,Mahnoor Ali,Engineering,POS-092,S047,Coaching & Mentoring,Leadership,Leadership,Verified,4,Advanced,73.4,4.1,5,Not Required,No
+EMP093,Danish Siddiqui,Sales,POS-093,S016,Account Management,Functional,Core,Developing,4,Advanced,76.9,6.9,15,Not Required,Yes
+EMP093,Danish Siddiqui,Sales,POS-093,S014,Negotiation,Behavioral,Core,Verified,4,Advanced,78.1,14.1,10,Not Required,Yes
+EMP093,Danish Siddiqui,Sales,POS-093,S017,Pipeline Management,Functional,Core,Developing,4,Advanced,73.5,7.4,16,Not Required,No
+EMP093,Danish Siddiqui,Sales,POS-093,S045,Stakeholder Management,Behavioral,Leadership,Developing,4,Advanced,76.4,8.8,14,Not Required,No
+EMP093,Danish Siddiqui,Sales,POS-093,S047,Coaching & Mentoring,Leadership,Leadership,Developing,4,Advanced,77.2,7.7,17,Not Required,No
+EMP094,Akbar Abbasi,IT,POS-094,S008,Cybersecurity,Technical,Digital,Verified,4,Advanced,70.8,11.9,3,Certification Planned,Yes
+EMP094,Akbar Abbasi,IT,POS-094,S007,Cloud Platforms,Technical,Digital,Developing,4,Advanced,62.5,11.4,6,Certification Planned,Yes
+EMP094,Akbar Abbasi,IT,POS-094,S009,Network Administration,Technical,Core,Needs Development,3,Competent,53.4,7.0,3,Not Certified,No
+EMP094,Akbar Abbasi,IT,POS-094,S050,Project Management,Leadership,Common,Developing,4,Advanced,71.0,6.2,17,Certification Planned,No
+EMP094,Akbar Abbasi,IT,POS-094,S044,Problem Solving,Behavioral,Common,Developing,4,Advanced,66.4,6.4,9,Not Required,No
+EMP095,Haris Mahmood,IT,POS-095,S010,IT Service Management,Functional,Core,Verified,5,Expert,90.3,10.9,6,Certification Planned,Yes
+EMP095,Haris Mahmood,IT,POS-095,S046,Leadership,Leadership,Leadership,Verified,5,Expert,99.1,8.9,9,Not Required,Yes
+EMP095,Haris Mahmood,IT,POS-095,S008,Cybersecurity,Technical,Digital,Verified,5,Expert,95.1,11.6,12,Certification Planned,No
+EMP095,Haris Mahmood,IT,POS-095,S050,Project Management,Leadership,Common,Developing,5,Expert,98.5,9.7,13,Certification Planned,No
+EMP095,Haris Mahmood,IT,POS-095,S045,Stakeholder Management,Behavioral,Leadership,Verified,5,Expert,89.8,9.9,12,Not Required,No
+EMP096,Ayesha Abbasi,Sales,POS-096,S016,Account Management,Functional,Core,Developing,3,Competent,59.8,4.0,18,Not Required,Yes
+EMP096,Ayesha Abbasi,Sales,POS-096,S014,Negotiation,Behavioral,Core,Verified,4,Advanced,76.6,4.2,10,Not Required,Yes
+EMP096,Ayesha Abbasi,Sales,POS-096,S015,CRM Management,Digital,Core,Developing,3,Competent,56.4,2.6,17,Not Required,No
+EMP096,Ayesha Abbasi,Sales,POS-096,S017,Pipeline Management,Functional,Core,Needs Development,3,Competent,54.0,3.3,12,Not Required,No
+EMP096,Ayesha Abbasi,Sales,POS-096,S018,Product Knowledge,Functional,Core,Developing,3,Competent,56.8,3.0,1,Not Required,No
+EMP097,Sana Arif,Sales,POS-097,S012,B2B Sales,Functional,Core,Needs Development,2,Basic,35.6,0.5,10,Not Required,Yes
+EMP097,Sana Arif,Sales,POS-097,S013,Lead Generation,Functional,Core,Needs Development,2,Basic,45.5,0.5,10,Not Required,Yes
+EMP097,Sana Arif,Sales,POS-097,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,41.0,0.5,6,Not Required,No
+EMP097,Sana Arif,Sales,POS-097,S015,CRM Management,Digital,Core,Developing,3,Competent,56.3,0.5,18,Not Required,No
+EMP097,Sana Arif,Sales,POS-097,S042,Communication,Behavioral,Common,Developing,3,Competent,58.8,0.4,18,Not Required,No
+EMP098,Sidra Zafar,Customer Support,POS-098,S037,Customer Service,Functional,Core,Needs Development,3,Competent,53.1,2.4,1,Not Required,Yes
+EMP098,Sidra Zafar,Customer Support,POS-098,S040,SLA Management,Functional,Core,Developing,3,Competent,56.2,3.5,1,Not Required,Yes
+EMP098,Sidra Zafar,Customer Support,POS-098,S015,CRM Management,Digital,Core,Needs Development,3,Competent,54.1,3.0,3,Not Required,No
+EMP098,Sidra Zafar,Customer Support,POS-098,S038,Complaint Resolution,Behavioral,Core,Needs Development,3,Competent,53.7,3.1,13,Not Required,No
+EMP098,Sidra Zafar,Customer Support,POS-098,S042,Communication,Behavioral,Common,Needs Development,3,Competent,53.5,3.7,13,Not Required,No
+EMP099,Bilal Aslam,Finance,POS-099,S025,Financial Analysis,Functional,Core,Developing,3,Competent,58.1,3.5,11,Not Certified,Yes
+EMP099,Bilal Aslam,Finance,POS-099,S026,Accounting & Reconciliation,Functional,Core,Developing,3,Competent,62.8,4.5,9,Not Required,Yes
+EMP099,Bilal Aslam,Finance,POS-099,S027,Budgeting & Forecasting,Functional,Core,Developing,4,Advanced,70.3,3.2,15,Not Required,No
+EMP099,Bilal Aslam,Finance,POS-099,S029,Advanced Excel,Digital,Core,Developing,3,Competent,56.7,2.7,8,Not Certified,No
+EMP099,Bilal Aslam,Finance,POS-099,S030,Risk Analysis,Functional,Core,Verified,4,Advanced,74.3,3.9,2,Certification Planned,No
+EMP100,Rabia Javed,Engineering,POS-100,S005,System Design,Technical,Core,Developing,4,Advanced,72.4,11.3,15,Not Required,Yes
+EMP100,Rabia Javed,Engineering,POS-100,S003,API Development,Technical,Core,Developing,4,Advanced,68.5,5.5,11,Not Required,Yes
+EMP100,Rabia Javed,Engineering,POS-100,S001,Python Programming,Technical,Core,Developing,4,Advanced,71.7,8.8,14,Not Required,No
+EMP100,Rabia Javed,Engineering,POS-100,S050,Project Management,Leadership,Common,Verified,5,Expert,86.5,7.5,3,Certified,No
+EMP100,Rabia Javed,Engineering,POS-100,S047,Coaching & Mentoring,Leadership,Leadership,Developing,4,Advanced,71.5,6.4,18,Not Required,No
+EMP101,Talha Dar,IT,POS-101,S009,Network Administration,Technical,Core,Developing,4,Advanced,82.5,3.9,15,Certification Planned,Yes
+EMP101,Talha Dar,IT,POS-101,S007,Cloud Platforms,Technical,Digital,Verified,4,Advanced,75.7,4.4,2,Certification Planned,Yes
+EMP101,Talha Dar,IT,POS-101,S010,IT Service Management,Functional,Core,Developing,3,Competent,57.9,3.6,16,Not Certified,No
+EMP101,Talha Dar,IT,POS-101,S008,Cybersecurity,Technical,Digital,Developing,3,Competent,62.4,2.4,6,Certification Planned,No
+EMP101,Talha Dar,IT,POS-101,S011,Incident Management,Functional,Core,Developing,3,Competent,57.2,3.7,2,Not Required,No
+EMP102,Akbar Gill,Sales,POS-102,S012,B2B Sales,Functional,Core,Developing,3,Competent,56.6,2.0,9,Not Required,Yes
+EMP102,Akbar Gill,Sales,POS-102,S013,Lead Generation,Functional,Core,Developing,3,Competent,64.2,2.5,3,Not Required,Yes
+EMP102,Akbar Gill,Sales,POS-102,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,36.2,1.7,6,Not Required,No
+EMP102,Akbar Gill,Sales,POS-102,S015,CRM Management,Digital,Core,Developing,3,Competent,58.4,2.6,17,Not Required,No
+EMP102,Akbar Gill,Sales,POS-102,S042,Communication,Behavioral,Common,Developing,3,Competent,55.5,2.6,2,Not Required,No
+EMP103,Noor Masood,Customer Support,POS-103,S037,Customer Service,Functional,Core,Needs Development,3,Competent,50.3,1.0,11,Not Required,Yes
+EMP103,Noor Masood,Customer Support,POS-103,S038,Complaint Resolution,Behavioral,Core,Developing,3,Competent,55.5,1.0,6,Not Required,Yes
+EMP103,Noor Masood,Customer Support,POS-103,S039,Call Handling,Functional,Core,Needs Development,2,Basic,44.0,0.8,8,Not Required,No
+EMP103,Noor Masood,Customer Support,POS-103,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,41.2,0.7,11,Not Required,No
+EMP103,Noor Masood,Customer Support,POS-103,S051,Empathy & Active Listening,Behavioral,Common,Needs Development,2,Basic,47.9,1.1,9,Not Required,No
+EMP104,Rabia Ali,IT,POS-104,S008,Cybersecurity,Technical,Digital,Developing,5,Expert,91.0,5.1,18,Certification Planned,Yes
+EMP104,Rabia Ali,IT,POS-104,S007,Cloud Platforms,Technical,Digital,Verified,5,Expert,98.3,9.4,12,Certification Planned,Yes
+EMP104,Rabia Ali,IT,POS-104,S009,Network Administration,Technical,Core,Verified,4,Advanced,75.5,10.6,12,Certification Planned,No
+EMP104,Rabia Ali,IT,POS-104,S050,Project Management,Leadership,Common,Verified,5,Expert,86.7,5.5,11,Certification Planned,No
+EMP104,Rabia Ali,IT,POS-104,S044,Problem Solving,Behavioral,Common,Verified,5,Expert,91.9,10.5,3,Not Required,No
+EMP105,Areeba Raza,Sales,POS-105,S017,Pipeline Management,Functional,Core,Developing,5,Expert,91.4,14.3,16,Not Required,Yes
+EMP105,Areeba Raza,Sales,POS-105,S046,Leadership,Leadership,Leadership,Verified,5,Expert,100.0,15.8,12,Not Required,Yes
+EMP105,Areeba Raza,Sales,POS-105,S045,Stakeholder Management,Behavioral,Leadership,Verified,5,Expert,99.5,18.2,8,Not Required,No
+EMP105,Areeba Raza,Sales,POS-105,S047,Coaching & Mentoring,Leadership,Leadership,Verified,5,Expert,99.3,10.6,1,Not Required,No
+EMP105,Areeba Raza,Sales,POS-105,S014,Negotiation,Behavioral,Core,Verified,5,Expert,98.0,13.7,12,Not Required,No
+EMP106,Hina Saleem,HR,POS-106,S033,Performance Management,Functional,Core,Developing,5,Expert,92.3,7.1,16,Not Required,Yes
+EMP106,Hina Saleem,HR,POS-106,S034,Employee Relations,Behavioral,Core,Verified,5,Expert,100.0,3.9,7,Not Required,Yes
+EMP106,Hina Saleem,HR,POS-106,S035,Learning & Development,Functional,Core,Verified,5,Expert,100.0,6.4,11,Not Required,No
+EMP106,Hina Saleem,HR,POS-106,S047,Coaching & Mentoring,Leadership,Leadership,Verified,5,Expert,98.9,5.1,3,Not Required,No
+EMP106,Hina Saleem,HR,POS-106,S045,Stakeholder Management,Behavioral,Leadership,Verified,5,Expert,100.0,7.2,10,Not Required,No
+EMP107,Zoya Mahmood,Engineering,POS-107,S001,Python Programming,Technical,Core,Verified,4,Advanced,72.1,4.3,9,Not Required,Yes
+EMP107,Zoya Mahmood,Engineering,POS-107,S002,SQL & Databases,Technical,Core,Developing,3,Competent,57.1,2.7,14,Not Required,Yes
+EMP107,Zoya Mahmood,Engineering,POS-107,S003,API Development,Technical,Core,Developing,3,Competent,55.0,4.6,12,Not Required,No
+EMP107,Zoya Mahmood,Engineering,POS-107,S004,Software Testing,Technical,Core,Needs Development,3,Competent,53.5,2.6,1,Not Required,No
+EMP107,Zoya Mahmood,Engineering,POS-107,S044,Problem Solving,Behavioral,Common,Needs Development,3,Competent,50.5,4.9,16,Not Required,No
+EMP108,Ayesha Ahmad,HR,POS-108,S033,Performance Management,Functional,Core,Developing,4,Advanced,74.8,4.0,16,Not Required,Yes
+EMP108,Ayesha Ahmad,HR,POS-108,S031,Recruitment & Selection,Functional,Core,Verified,4,Advanced,78.9,2.8,8,Not Required,Yes
+EMP108,Ayesha Ahmad,HR,POS-108,S032,HRIS & Employee Data,Digital,Core,Needs Development,3,Competent,54.9,3.2,18,Not Certified,No
+EMP108,Ayesha Ahmad,HR,POS-108,S035,Learning & Development,Functional,Core,Verified,4,Advanced,74.6,2.5,8,Not Required,No
+EMP108,Ayesha Ahmad,HR,POS-108,S034,Employee Relations,Behavioral,Core,Verified,4,Advanced,75.1,2.4,7,Not Required,No
+EMP109,Ali Farooq,Sales,POS-109,S012,B2B Sales,Functional,Core,Needs Development,3,Competent,53.8,0.7,8,Not Required,Yes
+EMP109,Ali Farooq,Sales,POS-109,S013,Lead Generation,Functional,Core,Developing,3,Competent,55.4,0.8,15,Not Required,Yes
+EMP109,Ali Farooq,Sales,POS-109,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,39.2,1.2,1,Not Required,No
+EMP109,Ali Farooq,Sales,POS-109,S015,CRM Management,Digital,Core,Needs Development,2,Basic,43.5,0.7,18,Not Required,No
+EMP109,Ali Farooq,Sales,POS-109,S042,Communication,Behavioral,Common,Needs Development,3,Competent,51.9,0.7,7,Not Required,No
+EMP110,Arslan Masood,IT,POS-110,S010,IT Service Management,Functional,Core,Needs Development,2,Basic,50.3,1.4,7,Not Certified,Yes
+EMP110,Arslan Masood,IT,POS-110,S011,Incident Management,Functional,Core,Needs Development,2,Basic,49.9,1.0,13,Not Required,Yes
+EMP110,Arslan Masood,IT,POS-110,S009,Network Administration,Technical,Core,Needs Development,2,Basic,45.2,1.6,10,Not Certified,No
+EMP110,Arslan Masood,IT,POS-110,S042,Communication,Behavioral,Common,Developing,3,Competent,63.7,1.4,6,Not Required,No
+EMP110,Arslan Masood,IT,POS-110,S053,Documentation,Behavioral,Common,Developing,3,Competent,62.8,1.2,8,Not Required,No
+EMP111,Sadia Bashir,Sales,POS-111,S016,Account Management,Functional,Core,Developing,3,Competent,58.1,5.8,10,Not Required,Yes
+EMP111,Sadia Bashir,Sales,POS-111,S014,Negotiation,Behavioral,Core,Verified,4,Advanced,74.2,4.3,12,Not Required,Yes
+EMP111,Sadia Bashir,Sales,POS-111,S015,CRM Management,Digital,Core,Developing,3,Competent,59.0,3.7,9,Not Required,No
+EMP111,Sadia Bashir,Sales,POS-111,S017,Pipeline Management,Functional,Core,Developing,3,Competent,63.0,3.4,4,Not Required,No
+EMP111,Sadia Bashir,Sales,POS-111,S018,Product Knowledge,Functional,Core,Developing,3,Competent,59.5,5.1,11,Not Required,No
+EMP112,Sara Javed,Sales,POS-112,S012,B2B Sales,Functional,Core,Needs Development,2,Basic,36.9,0.9,6,Not Required,Yes
+EMP112,Sara Javed,Sales,POS-112,S013,Lead Generation,Functional,Core,Developing,3,Competent,58.4,0.6,16,Not Required,Yes
+EMP112,Sara Javed,Sales,POS-112,S018,Product Knowledge,Functional,Core,Needs Development,3,Competent,50.3,0.9,5,Not Required,No
+EMP112,Sara Javed,Sales,POS-112,S015,CRM Management,Digital,Core,Needs Development,2,Basic,40.7,0.5,15,Not Required,No
+EMP112,Sara Javed,Sales,POS-112,S042,Communication,Behavioral,Common,Developing,3,Competent,62.9,0.9,6,Not Required,No
+EMP113,Shahbaz Gill,IT,POS-113,S010,IT Service Management,Functional,Core,Needs Development,2,Basic,42.1,1.6,11,Not Certified,Yes
+EMP113,Shahbaz Gill,IT,POS-113,S011,Incident Management,Functional,Core,Developing,3,Competent,58.7,1.6,13,Not Required,Yes
+EMP113,Shahbaz Gill,IT,POS-113,S009,Network Administration,Technical,Core,Developing,3,Competent,56.9,1.3,3,Not Certified,No
+EMP113,Shahbaz Gill,IT,POS-113,S042,Communication,Behavioral,Common,Needs Development,3,Competent,49.2,2.4,11,Not Required,No
+EMP113,Shahbaz Gill,IT,POS-113,S053,Documentation,Behavioral,Common,Developing,3,Competent,59.2,1.6,9,Not Required,No
+EMP114,Hamza Hussain,HR,POS-114,S033,Performance Management,Functional,Core,Developing,4,Advanced,78.5,4.6,17,Not Required,Yes
+EMP114,Hamza Hussain,HR,POS-114,S031,Recruitment & Selection,Functional,Core,Developing,3,Competent,64.5,3.7,2,Not Required,Yes
+EMP114,Hamza Hussain,HR,POS-114,S032,HRIS & Employee Data,Digital,Core,Needs Development,3,Competent,52.8,4.5,14,Not Certified,No
+EMP114,Hamza Hussain,HR,POS-114,S035,Learning & Development,Functional,Core,Needs Development,3,Competent,51.9,3.5,3,Not Required,No
+EMP114,Hamza Hussain,HR,POS-114,S034,Employee Relations,Behavioral,Core,Developing,3,Competent,61.1,3.6,3,Not Required,No
+EMP115,Hafsa Abbasi,Engineering,POS-115,S001,Python Programming,Technical,Core,Verified,4,Advanced,83.6,4.1,1,Not Required,Yes
+EMP115,Hafsa Abbasi,Engineering,POS-115,S002,SQL & Databases,Technical,Core,Verified,4,Advanced,75.2,2.4,10,Not Required,Yes
+EMP115,Hafsa Abbasi,Engineering,POS-115,S003,API Development,Technical,Core,Developing,3,Competent,61.5,3.7,14,Not Required,No
+EMP115,Hafsa Abbasi,Engineering,POS-115,S004,Software Testing,Technical,Core,Verified,4,Advanced,79.3,3.9,11,Not Required,No
+EMP115,Hafsa Abbasi,Engineering,POS-115,S044,Problem Solving,Behavioral,Common,Developing,4,Advanced,80.8,3.0,14,Not Required,No
+EMP116,Ali Abbasi,Engineering,POS-116,S001,Python Programming,Technical,Core,Developing,3,Competent,68.3,1.3,4,Not Required,Yes
+EMP116,Ali Abbasi,Engineering,POS-116,S002,SQL & Databases,Technical,Core,Developing,3,Competent,68.9,1.7,5,Not Required,Yes
+EMP116,Ali Abbasi,Engineering,POS-116,S004,Software Testing,Technical,Core,Developing,3,Competent,66.8,1.7,3,Not Required,No
+EMP116,Ali Abbasi,Engineering,POS-116,S044,Problem Solving,Behavioral,Common,Developing,3,Competent,68.6,1.1,15,Not Required,No
+EMP116,Ali Abbasi,Engineering,POS-116,S043,Teamwork,Behavioral,Common,Developing,3,Competent,65.1,1.5,17,Not Required,No
+EMP117,Saad Ullah,Engineering,POS-117,S001,Python Programming,Technical,Core,Needs Development,2,Basic,44.0,2.6,7,Not Required,Yes
+EMP117,Saad Ullah,Engineering,POS-117,S002,SQL & Databases,Technical,Core,Needs Development,2,Basic,35.0,3.3,18,Not Required,Yes
+EMP117,Saad Ullah,Engineering,POS-117,S004,Software Testing,Technical,Core,Needs Development,2,Basic,42.5,3.4,13,Not Required,No
+EMP117,Saad Ullah,Engineering,POS-117,S044,Problem Solving,Behavioral,Common,Needs Development,2,Basic,44.8,2.4,5,Not Required,No
+EMP117,Saad Ullah,Engineering,POS-117,S043,Teamwork,Behavioral,Common,Developing,3,Competent,62.6,2.9,4,Not Required,No
+EMP118,Zoya Ali,Customer Support,POS-118,S037,Customer Service,Functional,Core,Developing,3,Competent,56.6,2.5,9,Not Required,Yes
+EMP118,Zoya Ali,Customer Support,POS-118,S040,SLA Management,Functional,Core,Verified,4,Advanced,71.7,1.9,1,Not Required,Yes
+EMP118,Zoya Ali,Customer Support,POS-118,S015,CRM Management,Digital,Core,Needs Development,3,Competent,54.1,3.0,18,Not Required,No
+EMP118,Zoya Ali,Customer Support,POS-118,S038,Complaint Resolution,Behavioral,Core,Needs Development,3,Competent,53.7,3.1,15,Not Required,No
+EMP118,Zoya Ali,Customer Support,POS-118,S042,Communication,Behavioral,Common,Needs Development,3,Competent,53.7,2.3,3,Not Required,No
+EMP119,Ayesha Nawaz,Customer Support,POS-119,S040,SLA Management,Functional,Core,Developing,4,Advanced,67.8,7.4,5,Not Required,Yes
+EMP119,Ayesha Nawaz,Customer Support,POS-119,S041,Knowledge Base Management,Digital,Core,Verified,4,Advanced,71.5,7.1,7,Not Required,Yes
+EMP119,Ayesha Nawaz,Customer Support,POS-119,S047,Coaching & Mentoring,Leadership,Leadership,Verified,4,Advanced,72.7,8.0,2,Not Required,No
+EMP119,Ayesha Nawaz,Customer Support,POS-119,S038,Complaint Resolution,Behavioral,Core,Developing,4,Advanced,67.8,5.1,7,Not Required,No
+EMP119,Ayesha Nawaz,Customer Support,POS-119,S043,Teamwork,Behavioral,Common,Verified,4,Advanced,71.2,6.7,10,Not Required,No
+EMP120,Ahmad Aziz,Operations,POS-120,S019,Process Management,Functional,Core,Verified,4,Advanced,83.0,6.2,12,Not Required,Yes
+EMP120,Ahmad Aziz,Operations,POS-120,S021,Process Improvement,Functional,Core,Verified,4,Advanced,80.5,5.4,5,Not Required,Yes
+EMP120,Ahmad Aziz,Operations,POS-120,S022,Quality Control,Functional,Core,Verified,4,Advanced,75.9,6.9,10,Not Required,No
+EMP120,Ahmad Aziz,Operations,POS-120,S029,Advanced Excel,Digital,Core,Developing,3,Competent,60.3,6.4,13,Not Certified,No
+EMP120,Ahmad Aziz,Operations,POS-120,S044,Problem Solving,Behavioral,Common,Verified,4,Advanced,80.0,6.0,3,Not Required,No
+EMP121,Mehwish Tariq,Operations,POS-121,S020,SOP Compliance,Compliance,Core,Needs Development,3,Competent,54.2,3.2,14,Not Required,Yes
+EMP121,Mehwish Tariq,Operations,POS-121,S024,Workflow Coordination,Functional,Core,Needs Development,3,Competent,54.3,2.0,4,Not Required,Yes
+EMP121,Mehwish Tariq,Operations,POS-121,S022,Quality Control,Functional,Core,Developing,3,Competent,59.0,2.7,12,Not Required,No
+EMP121,Mehwish Tariq,Operations,POS-121,S029,Advanced Excel,Digital,Core,Needs Development,2,Basic,36.8,3.0,14,Not Certified,No
+EMP121,Mehwish Tariq,Operations,POS-121,S043,Teamwork,Behavioral,Common,Developing,3,Competent,55.0,1.8,7,Not Required,No
+EMP122,Hafsa Ullah,Operations,POS-122,S020,SOP Compliance,Compliance,Core,Developing,3,Competent,59.9,0.5,11,Not Required,Yes
+EMP122,Hafsa Ullah,Operations,POS-122,S024,Workflow Coordination,Functional,Core,Developing,3,Competent,62.3,0.9,16,Not Required,Yes
+EMP122,Hafsa Ullah,Operations,POS-122,S022,Quality Control,Functional,Core,Needs Development,2,Basic,41.1,0.7,2,Not Required,No
+EMP122,Hafsa Ullah,Operations,POS-122,S029,Advanced Excel,Digital,Core,Needs Development,2,Basic,36.8,0.9,2,Not Certified,No
+EMP122,Hafsa Ullah,Operations,POS-122,S043,Teamwork,Behavioral,Common,Developing,3,Competent,63.2,1.0,2,Not Required,No
+EMP123,Sehrish Ullah,Finance,POS-123,S025,Financial Analysis,Functional,Core,Verified,5,Expert,97.1,6.6,11,Certified,Yes
+EMP123,Sehrish Ullah,Finance,POS-123,S028,Regulatory Reporting,Compliance,Core,Verified,5,Expert,91.1,6.8,7,Certified,Yes
+EMP123,Sehrish Ullah,Finance,POS-123,S027,Budgeting & Forecasting,Functional,Core,Verified,4,Advanced,81.0,7.9,7,Not Required,No
+EMP123,Sehrish Ullah,Finance,POS-123,S030,Risk Analysis,Functional,Core,Developing,4,Advanced,79.7,7.2,16,Certified,No
+EMP123,Sehrish Ullah,Finance,POS-123,S045,Stakeholder Management,Behavioral,Leadership,Verified,4,Advanced,74.7,5.6,1,Not Required,No
+EMP124,Fahad Javed,Sales,POS-124,S016,Account Management,Functional,Core,Developing,3,Competent,55.3,2.5,10,Not Required,Yes
+EMP124,Fahad Javed,Sales,POS-124,S014,Negotiation,Behavioral,Core,Needs Development,3,Competent,47.2,1.9,17,Not Required,Yes
+EMP124,Fahad Javed,Sales,POS-124,S015,CRM Management,Digital,Core,Needs Development,3,Competent,44.8,3.2,11,Not Required,No
+EMP124,Fahad Javed,Sales,POS-124,S017,Pipeline Management,Functional,Core,Needs Development,3,Competent,54.1,3.0,12,Not Required,No
+EMP124,Fahad Javed,Sales,POS-124,S018,Product Knowledge,Functional,Core,Needs Development,3,Competent,53.0,3.3,12,Not Required,No
+EMP125,Fatima Zafar,Sales,POS-125,S016,Account Management,Functional,Core,Verified,5,Expert,98.8,7.7,1,Not Required,Yes
+EMP125,Fatima Zafar,Sales,POS-125,S014,Negotiation,Behavioral,Core,Verified,5,Expert,93.3,6.7,12,Not Required,Yes
+EMP125,Fatima Zafar,Sales,POS-125,S017,Pipeline Management,Functional,Core,Verified,4,Advanced,77.9,7.1,7,Not Required,No
+EMP125,Fatima Zafar,Sales,POS-125,S045,Stakeholder Management,Behavioral,Leadership,Developing,4,Advanced,81.4,11.0,18,Not Required,No
+EMP125,Fatima Zafar,Sales,POS-125,S047,Coaching & Mentoring,Leadership,Leadership,Verified,5,Expert,97.2,12.8,4,Not Required,No
+EMP126,Laiba Sheikh,Customer Support,POS-126,S040,SLA Management,Functional,Core,Verified,4,Advanced,72.7,4.1,8,Not Required,Yes
+EMP126,Laiba Sheikh,Customer Support,POS-126,S041,Knowledge Base Management,Digital,Core,Verified,4,Advanced,77.5,2.7,8,Not Required,Yes
+EMP126,Laiba Sheikh,Customer Support,POS-126,S047,Coaching & Mentoring,Leadership,Leadership,Verified,4,Advanced,76.5,4.2,11,Not Required,No
+EMP126,Laiba Sheikh,Customer Support,POS-126,S038,Complaint Resolution,Behavioral,Core,Verified,4,Advanced,75.8,2.8,8,Not Required,No
+EMP126,Laiba Sheikh,Customer Support,POS-126,S043,Teamwork,Behavioral,Common,Developing,4,Advanced,77.8,3.2,16,Not Required,No
+EMP127,Khurram Yousaf,HR,POS-127,S033,Performance Management,Functional,Core,Developing,4,Advanced,73.8,1.8,17,Not Required,Yes
+EMP127,Khurram Yousaf,HR,POS-127,S031,Recruitment & Selection,Functional,Core,Developing,3,Competent,60.9,1.3,1,Not Required,Yes
+EMP127,Khurram Yousaf,HR,POS-127,S032,HRIS & Employee Data,Digital,Core,Developing,3,Competent,57.4,1.2,11,Not Certified,No
+EMP127,Khurram Yousaf,HR,POS-127,S035,Learning & Development,Functional,Core,Developing,3,Competent,60.1,1.2,18,Not Required,No
+EMP127,Khurram Yousaf,HR,POS-127,S034,Employee Relations,Behavioral,Core,Developing,3,Competent,60.6,1.9,15,Not Required,No
+EMP128,Zoya Farooq,Customer Support,POS-128,S046,Leadership,Leadership,Leadership,Verified,5,Expert,92.9,9.7,1,Not Required,Yes
+EMP128,Zoya Farooq,Customer Support,POS-128,S047,Coaching & Mentoring,Leadership,Leadership,Verified,5,Expert,83.2,11.3,6,Not Required,Yes
+EMP128,Zoya Farooq,Customer Support,POS-128,S040,SLA Management,Functional,Core,Verified,5,Expert,92.3,13.0,1,Not Required,No
+EMP128,Zoya Farooq,Customer Support,POS-128,S045,Stakeholder Management,Behavioral,Leadership,Developing,4,Advanced,66.2,9.0,6,Not Required,No
+EMP128,Zoya Farooq,Customer Support,POS-128,S021,Process Improvement,Functional,Core,Verified,4,Advanced,73.8,7.3,6,Not Required,No
+EMP129,Danish Dar,Engineering,POS-129,S005,System Design,Technical,Core,Verified,5,Expert,96.1,15.6,11,Not Required,Yes
+EMP129,Danish Dar,Engineering,POS-129,S050,Project Management,Leadership,Common,Verified,5,Expert,95.3,17.9,4,Certified,Yes
+EMP129,Danish Dar,Engineering,POS-129,S046,Leadership,Leadership,Leadership,Developing,5,Expert,95.4,12.1,14,Not Required,No
+EMP129,Danish Dar,Engineering,POS-129,S045,Stakeholder Management,Behavioral,Leadership,Developing,5,Expert,91.5,10.9,15,Not Required,No
+EMP129,Danish Dar,Engineering,POS-129,S006,DevOps & CI/CD,Technical,Digital,Developing,5,Expert,96.8,11.7,13,Certification Planned,No
+EMP130,Waqas Siddiqui,HR,POS-130,S033,Performance Management,Functional,Core,Verified,5,Expert,98.2,9.9,2,Not Required,Yes
+EMP130,Waqas Siddiqui,HR,POS-130,S034,Employee Relations,Behavioral,Core,Verified,5,Expert,96.6,6.7,9,Not Required,Yes
+EMP130,Waqas Siddiqui,HR,POS-130,S035,Learning & Development,Functional,Core,Verified,5,Expert,100.0,12.4,8,Not Required,No
+EMP130,Waqas Siddiqui,HR,POS-130,S047,Coaching & Mentoring,Leadership,Leadership,Verified,5,Expert,100.0,13.4,11,Not Required,No
+EMP130,Waqas Siddiqui,HR,POS-130,S045,Stakeholder Management,Behavioral,Leadership,Verified,5,Expert,100.0,11.7,1,Not Required,No
+EMP131,Ahmad Yousaf,IT,POS-131,S009,Network Administration,Technical,Core,Developing,3,Competent,55.0,5.2,15,Not Certified,Yes
+EMP131,Ahmad Yousaf,IT,POS-131,S007,Cloud Platforms,Technical,Digital,Developing,3,Competent,56.9,4.9,1,Not Certified,Yes
+EMP131,Ahmad Yousaf,IT,POS-131,S010,IT Service Management,Functional,Core,Developing,3,Competent,55.7,4.7,3,Not Certified,No
+EMP131,Ahmad Yousaf,IT,POS-131,S008,Cybersecurity,Technical,Digital,Needs Development,3,Competent,51.3,6.1,13,Not Certified,No
+EMP131,Ahmad Yousaf,IT,POS-131,S011,Incident Management,Functional,Core,Developing,3,Competent,61.2,5.3,4,Not Required,No
+EMP132,Arham Qureshi,IT,POS-132,S010,IT Service Management,Functional,Core,Developing,3,Competent,59.2,1.2,13,Not Certified,Yes
+EMP132,Arham Qureshi,IT,POS-132,S011,Incident Management,Functional,Core,Needs Development,2,Basic,43.2,0.8,13,Not Required,Yes
+EMP132,Arham Qureshi,IT,POS-132,S009,Network Administration,Technical,Core,Developing,3,Competent,57.8,1.3,7,Not Certified,No
+EMP132,Arham Qureshi,IT,POS-132,S042,Communication,Behavioral,Common,Developing,3,Competent,59.4,0.7,11,Not Required,No
+EMP132,Arham Qureshi,IT,POS-132,S053,Documentation,Behavioral,Common,Needs Development,3,Competent,54.3,0.8,15,Not Required,No
+EMP133,Usman Raza,Engineering,POS-133,S001,Python Programming,Technical,Core,Verified,4,Advanced,79.3,5.5,10,Not Required,Yes
+EMP133,Usman Raza,Engineering,POS-133,S002,SQL & Databases,Technical,Core,Developing,4,Advanced,75.7,4.3,15,Not Required,Yes
+EMP133,Usman Raza,Engineering,POS-133,S003,API Development,Technical,Core,Verified,4,Advanced,75.9,4.3,6,Not Required,No
+EMP133,Usman Raza,Engineering,POS-133,S004,Software Testing,Technical,Core,Developing,3,Competent,60.6,6.7,4,Not Required,No
+EMP133,Usman Raza,Engineering,POS-133,S044,Problem Solving,Behavioral,Common,Developing,3,Competent,58.3,5.9,4,Not Required,No
+EMP134,Talha Awan,IT,POS-134,S009,Network Administration,Technical,Core,Verified,5,Expert,88.0,4.8,5,Certification Planned,Yes
+EMP134,Talha Awan,IT,POS-134,S007,Cloud Platforms,Technical,Digital,Developing,4,Advanced,74.0,5.5,16,Certification Planned,Yes
+EMP134,Talha Awan,IT,POS-134,S010,IT Service Management,Functional,Core,Developing,3,Competent,58.0,4.4,13,Not Certified,No
+EMP134,Talha Awan,IT,POS-134,S008,Cybersecurity,Technical,Digital,Verified,4,Advanced,79.1,5.0,2,Certification Planned,No
+EMP134,Talha Awan,IT,POS-134,S011,Incident Management,Functional,Core,Verified,4,Advanced,71.0,6.3,1,Not Required,No
+EMP135,Eman Butt,Customer Support,POS-135,S037,Customer Service,Functional,Core,Verified,4,Advanced,71.6,2.9,9,Not Required,Yes
+EMP135,Eman Butt,Customer Support,POS-135,S040,SLA Management,Functional,Core,Verified,4,Advanced,75.7,5.6,9,Not Required,Yes
+EMP135,Eman Butt,Customer Support,POS-135,S015,CRM Management,Digital,Core,Verified,4,Advanced,77.2,4.5,8,Not Required,No
+EMP135,Eman Butt,Customer Support,POS-135,S038,Complaint Resolution,Behavioral,Core,Developing,4,Advanced,66.5,5.2,3,Not Required,No
+EMP135,Eman Butt,Customer Support,POS-135,S042,Communication,Behavioral,Common,Verified,4,Advanced,72.3,4.9,11,Not Required,No
+EMP136,Fatima Saleem,HR,POS-136,S033,Performance Management,Functional,Core,Developing,4,Advanced,75.2,2.9,17,Not Required,Yes
+EMP136,Fatima Saleem,HR,POS-136,S031,Recruitment & Selection,Functional,Core,Verified,4,Advanced,74.7,3.9,6,Not Required,Yes
+EMP136,Fatima Saleem,HR,POS-136,S032,HRIS & Employee Data,Digital,Core,Developing,3,Competent,56.3,2.0,8,Not Certified,No
+EMP136,Fatima Saleem,HR,POS-136,S035,Learning & Development,Functional,Core,Verified,4,Advanced,72.4,2.5,6,Not Required,No
+EMP136,Fatima Saleem,HR,POS-136,S034,Employee Relations,Behavioral,Core,Developing,3,Competent,60.7,2.3,12,Not Required,No
+EMP137,Areeba Farooq,Customer Support,POS-137,S037,Customer Service,Functional,Core,Developing,3,Competent,60.9,1.3,15,Not Required,Yes
+EMP137,Areeba Farooq,Customer Support,POS-137,S038,Complaint Resolution,Behavioral,Core,Developing,3,Competent,57.4,1.2,11,Not Required,Yes
+EMP137,Areeba Farooq,Customer Support,POS-137,S039,Call Handling,Functional,Core,Developing,3,Competent,55.9,1.3,7,Not Required,No
+EMP137,Areeba Farooq,Customer Support,POS-137,S018,Product Knowledge,Functional,Core,Developing,3,Competent,61.9,1.7,18,Not Required,No
+EMP137,Areeba Farooq,Customer Support,POS-137,S051,Empathy & Active Listening,Behavioral,Common,Developing,3,Competent,62.8,1.6,11,Not Required,No
+EMP138,Amir Saleem,Engineering,POS-138,S001,Python Programming,Technical,Core,Developing,3,Competent,55.6,2.0,8,Not Required,Yes
+EMP138,Amir Saleem,Engineering,POS-138,S002,SQL & Databases,Technical,Core,Needs Development,3,Competent,47.0,1.8,16,Not Required,Yes
+EMP138,Amir Saleem,Engineering,POS-138,S003,API Development,Technical,Core,Needs Development,3,Competent,48.5,3.3,3,Not Required,No
+EMP138,Amir Saleem,Engineering,POS-138,S004,Software Testing,Technical,Core,Needs Development,3,Competent,48.9,2.3,16,Not Required,No
+EMP138,Amir Saleem,Engineering,POS-138,S044,Problem Solving,Behavioral,Common,Needs Development,2,Basic,35.0,3.5,1,Not Required,No
+EMP139,Iqra Saeed,Operations,POS-139,S020,SOP Compliance,Compliance,Core,Developing,3,Competent,58.3,1.6,12,Not Required,Yes
+EMP139,Iqra Saeed,Operations,POS-139,S024,Workflow Coordination,Functional,Core,Developing,3,Competent,62.5,2.8,11,Not Required,Yes
+EMP139,Iqra Saeed,Operations,POS-139,S022,Quality Control,Functional,Core,Needs Development,3,Competent,54.2,2.5,14,Not Required,No
+EMP139,Iqra Saeed,Operations,POS-139,S029,Advanced Excel,Digital,Core,Needs Development,2,Basic,43.4,1.6,18,Not Certified,No
+EMP139,Iqra Saeed,Operations,POS-139,S043,Teamwork,Behavioral,Common,Needs Development,2,Basic,35.0,2.1,5,Not Required,No
+EMP140,Noman Rehman,Finance,POS-140,S025,Financial Analysis,Functional,Core,Verified,5,Expert,97.2,11.6,6,Certified,Yes
+EMP140,Noman Rehman,Finance,POS-140,S028,Regulatory Reporting,Compliance,Core,Developing,5,Expert,95.4,11.5,15,Certification Planned,Yes
+EMP140,Noman Rehman,Finance,POS-140,S027,Budgeting & Forecasting,Functional,Core,Developing,4,Advanced,77.4,8.1,18,Not Required,No
+EMP140,Noman Rehman,Finance,POS-140,S030,Risk Analysis,Functional,Core,Developing,5,Expert,88.8,6.1,14,Certification Planned,No
+EMP140,Noman Rehman,Finance,POS-140,S045,Stakeholder Management,Behavioral,Leadership,Verified,5,Expert,100.0,9.7,6,Not Required,No
+EMP141,Asad Zafar,Operations,POS-141,S046,Leadership,Leadership,Leadership,Verified,5,Expert,79.9,9.5,8,Not Required,Yes
+EMP141,Asad Zafar,Operations,POS-141,S019,Process Management,Functional,Core,Developing,4,Advanced,74.4,9.9,18,Not Required,Yes
+EMP141,Asad Zafar,Operations,POS-141,S023,Risk & Controls,Compliance,Core,Developing,4,Advanced,67.9,9.2,8,Not Required,No
+EMP141,Asad Zafar,Operations,POS-141,S050,Project Management,Leadership,Common,Verified,4,Advanced,74.8,8.9,6,Certification Planned,No
+EMP141,Asad Zafar,Operations,POS-141,S045,Stakeholder Management,Behavioral,Leadership,Developing,4,Advanced,75.2,9.9,16,Not Required,No
+EMP142,Fahad Farooq,Engineering,POS-142,S005,System Design,Technical,Core,Verified,5,Expert,91.2,10.1,2,Not Required,Yes
+EMP142,Fahad Farooq,Engineering,POS-142,S050,Project Management,Leadership,Common,Verified,5,Expert,96.8,14.0,8,Certified,Yes
+EMP142,Fahad Farooq,Engineering,POS-142,S046,Leadership,Leadership,Leadership,Verified,5,Expert,87.8,14.0,10,Not Required,No
+EMP142,Fahad Farooq,Engineering,POS-142,S045,Stakeholder Management,Behavioral,Leadership,Verified,4,Advanced,77.6,10.8,12,Not Required,No
+EMP142,Fahad Farooq,Engineering,POS-142,S006,DevOps & CI/CD,Technical,Digital,Developing,5,Expert,92.7,11.2,13,Certified,No
+EMP143,Hamza Awan,Finance,POS-143,S025,Financial Analysis,Functional,Core,Verified,4,Advanced,80.4,4.1,6,Certified,Yes
+EMP143,Hamza Awan,Finance,POS-143,S026,Accounting & Reconciliation,Functional,Core,Verified,4,Advanced,73.0,2.4,1,Not Required,Yes
+EMP143,Hamza Awan,Finance,POS-143,S027,Budgeting & Forecasting,Functional,Core,Developing,3,Competent,61.1,3.2,12,Not Required,No
+EMP143,Hamza Awan,Finance,POS-143,S029,Advanced Excel,Digital,Core,Verified,4,Advanced,70.7,2.4,7,Certification Planned,No
+EMP143,Hamza Awan,Finance,POS-143,S030,Risk Analysis,Functional,Core,Developing,3,Competent,58.3,3.7,11,Not Certified,No
+EMP144,Imran Ullah,Customer Support,POS-144,S046,Leadership,Leadership,Leadership,Verified,4,Advanced,72.5,15.0,7,Not Required,Yes
+EMP144,Imran Ullah,Customer Support,POS-144,S047,Coaching & Mentoring,Leadership,Leadership,Developing,4,Advanced,72.2,10.9,16,Not Required,Yes
+EMP144,Imran Ullah,Customer Support,POS-144,S040,SLA Management,Functional,Core,Developing,4,Advanced,68.0,13.2,7,Not Required,No
+EMP144,Imran Ullah,Customer Support,POS-144,S045,Stakeholder Management,Behavioral,Leadership,Developing,4,Advanced,68.5,8.1,1,Not Required,No
+EMP144,Imran Ullah,Customer Support,POS-144,S021,Process Improvement,Functional,Core,Developing,4,Advanced,68.4,13.4,14,Not Required,No
+EMP145,Ahsan Anwar,Sales,POS-145,S016,Account Management,Functional,Core,Verified,4,Advanced,72.2,3.3,9,Not Required,Yes
+EMP145,Ahsan Anwar,Sales,POS-145,S014,Negotiation,Behavioral,Core,Developing,4,Advanced,84.5,5.0,18,Not Required,Yes
+EMP145,Ahsan Anwar,Sales,POS-145,S015,CRM Management,Digital,Core,Developing,3,Competent,57.9,5.0,12,Not Required,No
+EMP145,Ahsan Anwar,Sales,POS-145,S017,Pipeline Management,Functional,Core,Developing,3,Competent,61.0,3.2,12,Not Required,No
+EMP145,Ahsan Anwar,Sales,POS-145,S018,Product Knowledge,Functional,Core,Developing,3,Competent,56.8,3.8,6,Not Required,No
+EMP146,Talha Khan,Finance,POS-146,S025,Financial Analysis,Functional,Core,Needs Development,3,Competent,53.0,5.3,15,Not Certified,Yes
+EMP146,Talha Khan,Finance,POS-146,S026,Accounting & Reconciliation,Functional,Core,Verified,4,Advanced,73.7,3.1,7,Not Required,Yes
+EMP146,Talha Khan,Finance,POS-146,S027,Budgeting & Forecasting,Functional,Core,Verified,4,Advanced,79.1,4.9,7,Not Required,No
+EMP146,Talha Khan,Finance,POS-146,S029,Advanced Excel,Digital,Core,Verified,4,Advanced,83.6,3.6,10,Certified,No
+EMP146,Talha Khan,Finance,POS-146,S030,Risk Analysis,Functional,Core,Developing,3,Competent,65.1,3.3,2,Certification Planned,No
+EMP147,Hassan Javed,Customer Support,POS-147,S046,Leadership,Leadership,Leadership,Developing,4,Advanced,65.0,6.9,14,Not Required,Yes
+EMP147,Hassan Javed,Customer Support,POS-147,S047,Coaching & Mentoring,Leadership,Leadership,Developing,5,Expert,78.1,8.5,18,Not Required,Yes
+EMP147,Hassan Javed,Customer Support,POS-147,S040,SLA Management,Functional,Core,Developing,4,Advanced,60.9,9.7,11,Not Required,No
+EMP147,Hassan Javed,Customer Support,POS-147,S045,Stakeholder Management,Behavioral,Leadership,Verified,4,Advanced,73.5,6.9,3,Not Required,No
+EMP147,Hassan Javed,Customer Support,POS-147,S021,Process Improvement,Functional,Core,Developing,4,Advanced,64.1,6.1,3,Not Required,No
+EMP148,Sadia Malik,Sales,POS-148,S012,B2B Sales,Functional,Core,Developing,3,Competent,60.7,0.6,7,Not Required,Yes
+EMP148,Sadia Malik,Sales,POS-148,S013,Lead Generation,Functional,Core,Needs Development,2,Basic,35.0,0.8,4,Not Required,Yes
+EMP148,Sadia Malik,Sales,POS-148,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,43.1,1.3,17,Not Required,No
+EMP148,Sadia Malik,Sales,POS-148,S015,CRM Management,Digital,Core,Needs Development,2,Basic,38.1,0.6,8,Not Required,No
+EMP148,Sadia Malik,Sales,POS-148,S042,Communication,Behavioral,Common,Needs Development,2,Basic,40.4,0.8,3,Not Required,No
+EMP149,Muneeb Hameed,Operations,POS-149,S019,Process Management,Functional,Core,Developing,3,Competent,62.6,3.9,3,Not Required,Yes
+EMP149,Muneeb Hameed,Operations,POS-149,S021,Process Improvement,Functional,Core,Needs Development,3,Competent,53.5,4.2,10,Not Required,Yes
+EMP149,Muneeb Hameed,Operations,POS-149,S022,Quality Control,Functional,Core,Developing,3,Competent,63.6,5.6,5,Not Required,No
+EMP149,Muneeb Hameed,Operations,POS-149,S029,Advanced Excel,Digital,Core,Developing,3,Competent,61.5,3.6,7,Not Certified,No
+EMP149,Muneeb Hameed,Operations,POS-149,S044,Problem Solving,Behavioral,Common,Developing,4,Advanced,73.7,3.6,18,Not Required,No
+EMP150,Sana Nawaz,Customer Support,POS-150,S037,Customer Service,Functional,Core,Needs Development,2,Basic,38.0,1.4,13,Not Required,Yes
+EMP150,Sana Nawaz,Customer Support,POS-150,S038,Complaint Resolution,Behavioral,Core,Needs Development,3,Competent,53.6,1.2,10,Not Required,Yes
+EMP150,Sana Nawaz,Customer Support,POS-150,S039,Call Handling,Functional,Core,Needs Development,2,Basic,37.5,1.1,6,Not Required,No
+EMP150,Sana Nawaz,Customer Support,POS-150,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,36.5,0.9,15,Not Required,No
+EMP150,Sana Nawaz,Customer Support,POS-150,S051,Empathy & Active Listening,Behavioral,Common,Needs Development,2,Basic,39.3,1.3,12,Not Required,No
+EMP151,Farhan Rehman,Engineering,POS-151,S001,Python Programming,Technical,Core,Developing,3,Competent,57.8,0.4,15,Not Required,Yes
+EMP151,Farhan Rehman,Engineering,POS-151,S002,SQL & Databases,Technical,Core,Needs Development,2,Basic,45.0,0.6,3,Not Required,Yes
+EMP151,Farhan Rehman,Engineering,POS-151,S004,Software Testing,Technical,Core,Needs Development,2,Basic,42.6,0.7,4,Not Required,No
+EMP151,Farhan Rehman,Engineering,POS-151,S044,Problem Solving,Behavioral,Common,Needs Development,2,Basic,43.2,0.6,16,Not Required,No
+EMP151,Farhan Rehman,Engineering,POS-151,S043,Teamwork,Behavioral,Common,Developing,3,Competent,61.0,0.6,13,Not Required,No
+EMP152,Mahnoor Tariq,IT,POS-152,S008,Cybersecurity,Technical,Digital,Verified,5,Expert,91.5,6.5,6,Certified,Yes
+EMP152,Mahnoor Tariq,IT,POS-152,S007,Cloud Platforms,Technical,Digital,Verified,4,Advanced,72.7,7.5,9,Certification Planned,Yes
+EMP152,Mahnoor Tariq,IT,POS-152,S009,Network Administration,Technical,Core,Verified,5,Expert,89.4,11.1,1,Certified,No
+EMP152,Mahnoor Tariq,IT,POS-152,S050,Project Management,Leadership,Common,Verified,5,Expert,92.0,7.6,12,Certified,No
+EMP152,Mahnoor Tariq,IT,POS-152,S044,Problem Solving,Behavioral,Common,Developing,4,Advanced,70.8,6.3,18,Not Required,No
+EMP153,Kashif Abbasi,Engineering,POS-153,S001,Python Programming,Technical,Core,Developing,3,Competent,55.4,3.8,10,Not Required,Yes
+EMP153,Kashif Abbasi,Engineering,POS-153,S002,SQL & Databases,Technical,Core,Needs Development,3,Competent,54.7,5.9,3,Not Required,Yes
+EMP153,Kashif Abbasi,Engineering,POS-153,S003,API Development,Technical,Core,Developing,4,Advanced,62.5,5.8,7,Not Required,No
+EMP153,Kashif Abbasi,Engineering,POS-153,S004,Software Testing,Technical,Core,Needs Development,3,Competent,53.1,3.5,11,Not Required,No
+EMP153,Kashif Abbasi,Engineering,POS-153,S044,Problem Solving,Behavioral,Common,Developing,3,Competent,57.6,5.7,4,Not Required,No
+EMP154,Hina Abbasi,Engineering,POS-154,S001,Python Programming,Technical,Core,Needs Development,2,Basic,35.0,1.6,4,Not Required,Yes
+EMP154,Hina Abbasi,Engineering,POS-154,S002,SQL & Databases,Technical,Core,Needs Development,3,Competent,52.2,1.3,7,Not Required,Yes
+EMP154,Hina Abbasi,Engineering,POS-154,S004,Software Testing,Technical,Core,Needs Development,2,Basic,38.1,1.3,18,Not Required,No
+EMP154,Hina Abbasi,Engineering,POS-154,S044,Problem Solving,Behavioral,Common,Needs Development,2,Basic,35.0,1.4,3,Not Required,No
+EMP154,Hina Abbasi,Engineering,POS-154,S043,Teamwork,Behavioral,Common,Developing,3,Competent,56.9,1.5,17,Not Required,No
+EMP155,Noman Malik,Customer Support,POS-155,S037,Customer Service,Functional,Core,Verified,4,Advanced,71.0,3.9,11,Not Required,Yes
+EMP155,Noman Malik,Customer Support,POS-155,S040,SLA Management,Functional,Core,Developing,4,Advanced,65.8,2.9,14,Not Required,Yes
+EMP155,Noman Malik,Customer Support,POS-155,S015,CRM Management,Digital,Core,Developing,4,Advanced,71.0,4.8,15,Not Required,No
+EMP155,Noman Malik,Customer Support,POS-155,S038,Complaint Resolution,Behavioral,Core,Developing,3,Competent,57.6,4.4,17,Not Required,No
+EMP155,Noman Malik,Customer Support,POS-155,S042,Communication,Behavioral,Common,Verified,4,Advanced,70.7,3.2,8,Not Required,No
+EMP156,Asad Malik,Engineering,POS-156,S001,Python Programming,Technical,Core,Verified,4,Advanced,89.0,3.0,11,Not Required,Yes
+EMP156,Asad Malik,Engineering,POS-156,S002,SQL & Databases,Technical,Core,Developing,4,Advanced,83.6,3.8,13,Not Required,Yes
+EMP156,Asad Malik,Engineering,POS-156,S003,API Development,Technical,Core,Verified,4,Advanced,85.8,2.2,7,Not Required,No
+EMP156,Asad Malik,Engineering,POS-156,S004,Software Testing,Technical,Core,Verified,4,Advanced,85.2,4.1,1,Not Required,No
+EMP156,Asad Malik,Engineering,POS-156,S044,Problem Solving,Behavioral,Common,Verified,4,Advanced,78.6,3.0,9,Not Required,No
+EMP157,Saba Qureshi,Operations,POS-157,S020,SOP Compliance,Compliance,Core,Developing,3,Competent,59.7,1.3,3,Not Required,Yes
+EMP157,Saba Qureshi,Operations,POS-157,S024,Workflow Coordination,Functional,Core,Needs Development,2,Basic,48.4,2.6,14,Not Required,Yes
+EMP157,Saba Qureshi,Operations,POS-157,S022,Quality Control,Functional,Core,Needs Development,2,Basic,45.5,1.7,5,Not Required,No
+EMP157,Saba Qureshi,Operations,POS-157,S029,Advanced Excel,Digital,Core,Needs Development,2,Basic,49.1,1.5,14,Not Certified,No
+EMP157,Saba Qureshi,Operations,POS-157,S043,Teamwork,Behavioral,Common,Developing,3,Competent,60.9,2.5,14,Not Required,No
+EMP158,Imran Zafar,Operations,POS-158,S020,SOP Compliance,Compliance,Core,Needs Development,2,Basic,37.2,2.1,6,Not Required,Yes
+EMP158,Imran Zafar,Operations,POS-158,S024,Workflow Coordination,Functional,Core,Developing,3,Competent,62.6,3.2,8,Not Required,Yes
+EMP158,Imran Zafar,Operations,POS-158,S022,Quality Control,Functional,Core,Developing,3,Competent,59.0,2.7,1,Not Required,No
+EMP158,Imran Zafar,Operations,POS-158,S029,Advanced Excel,Digital,Core,Developing,3,Competent,55.7,3.7,11,Not Certified,No
+EMP158,Imran Zafar,Operations,POS-158,S043,Teamwork,Behavioral,Common,Needs Development,3,Competent,52.8,3.4,15,Not Required,No
+EMP159,Raza Ahmad,Engineering,POS-159,S005,System Design,Technical,Core,Verified,5,Expert,84.5,8.4,5,Not Required,Yes
+EMP159,Raza Ahmad,Engineering,POS-159,S003,API Development,Technical,Core,Developing,4,Advanced,60.9,5.6,17,Not Required,Yes
+EMP159,Raza Ahmad,Engineering,POS-159,S001,Python Programming,Technical,Core,Developing,4,Advanced,66.2,7.1,13,Not Required,No
+EMP159,Raza Ahmad,Engineering,POS-159,S050,Project Management,Leadership,Common,Developing,5,Expert,83.7,9.0,14,Certification Planned,No
+EMP159,Raza Ahmad,Engineering,POS-159,S047,Coaching & Mentoring,Leadership,Leadership,Verified,4,Advanced,73.0,7.2,7,Not Required,No
+EMP160,Rabia Ullah,Finance,POS-160,S025,Financial Analysis,Functional,Core,Developing,4,Advanced,77.2,7.2,13,Certification Planned,Yes
+EMP160,Rabia Ullah,Finance,POS-160,S028,Regulatory Reporting,Compliance,Core,Developing,5,Expert,86.6,9.0,16,Certified,Yes
+EMP160,Rabia Ullah,Finance,POS-160,S027,Budgeting & Forecasting,Functional,Core,Developing,4,Advanced,78.8,8.5,14,Not Required,No
+EMP160,Rabia Ullah,Finance,POS-160,S030,Risk Analysis,Functional,Core,Verified,4,Advanced,81.7,5.5,4,Certified,No
+EMP160,Rabia Ullah,Finance,POS-160,S045,Stakeholder Management,Behavioral,Leadership,Verified,4,Advanced,76.9,7.7,10,Not Required,No
+EMP161,Iqra Yousaf,Finance,POS-161,S025,Financial Analysis,Functional,Core,Developing,4,Advanced,78.8,5.8,17,Certified,Yes
+EMP161,Iqra Yousaf,Finance,POS-161,S026,Accounting & Reconciliation,Functional,Core,Verified,4,Advanced,78.4,4.6,7,Not Required,Yes
+EMP161,Iqra Yousaf,Finance,POS-161,S027,Budgeting & Forecasting,Functional,Core,Verified,4,Advanced,70.4,5.2,4,Not Required,No
+EMP161,Iqra Yousaf,Finance,POS-161,S029,Advanced Excel,Digital,Core,Verified,4,Advanced,74.6,7.2,10,Certification Planned,No
+EMP161,Iqra Yousaf,Finance,POS-161,S030,Risk Analysis,Functional,Core,Developing,3,Competent,58.5,5.9,9,Not Certified,No
+EMP162,Bilal Shah,Customer Support,POS-162,S037,Customer Service,Functional,Core,Needs Development,3,Competent,51.1,0.5,2,Not Required,Yes
+EMP162,Bilal Shah,Customer Support,POS-162,S038,Complaint Resolution,Behavioral,Core,Needs Development,2,Basic,47.7,0.5,9,Not Required,Yes
+EMP162,Bilal Shah,Customer Support,POS-162,S039,Call Handling,Functional,Core,Needs Development,2,Basic,49.6,0.5,16,Not Required,No
+EMP162,Bilal Shah,Customer Support,POS-162,S018,Product Knowledge,Functional,Core,Developing,3,Competent,62.5,0.8,2,Not Required,No
+EMP162,Bilal Shah,Customer Support,POS-162,S051,Empathy & Active Listening,Behavioral,Common,Needs Development,2,Basic,45.1,0.8,17,Not Required,No
+EMP163,Sidra Sheikh,Engineering,POS-163,S001,Python Programming,Technical,Core,Needs Development,3,Competent,47.4,2.1,16,Not Required,Yes
+EMP163,Sidra Sheikh,Engineering,POS-163,S002,SQL & Databases,Technical,Core,Needs Development,2,Basic,35.0,2.7,13,Not Required,Yes
+EMP163,Sidra Sheikh,Engineering,POS-163,S003,API Development,Technical,Core,Developing,3,Competent,57.8,2.6,13,Not Required,No
+EMP163,Sidra Sheikh,Engineering,POS-163,S004,Software Testing,Technical,Core,Needs Development,3,Competent,51.0,1.9,7,Not Required,No
+EMP163,Sidra Sheikh,Engineering,POS-163,S044,Problem Solving,Behavioral,Common,Needs Development,3,Competent,52.6,2.7,15,Not Required,No
+EMP164,Zoya Saleem,Sales,POS-164,S012,B2B Sales,Functional,Core,Needs Development,3,Competent,49.8,1.4,13,Not Required,Yes
+EMP164,Zoya Saleem,Sales,POS-164,S013,Lead Generation,Functional,Core,Needs Development,2,Basic,35.0,1.9,13,Not Required,Yes
+EMP164,Zoya Saleem,Sales,POS-164,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,36.2,2.3,9,Not Required,No
+EMP164,Zoya Saleem,Sales,POS-164,S015,CRM Management,Digital,Core,Needs Development,2,Basic,37.4,2.3,16,Not Required,No
+EMP164,Zoya Saleem,Sales,POS-164,S042,Communication,Behavioral,Common,Needs Development,2,Basic,35.0,1.4,16,Not Required,No
+EMP165,Waqas Butt,Sales,POS-165,S012,B2B Sales,Functional,Core,Needs Development,2,Basic,35.0,0.9,13,Not Required,Yes
+EMP165,Waqas Butt,Sales,POS-165,S013,Lead Generation,Functional,Core,Needs Development,3,Competent,52.5,1.5,12,Not Required,Yes
+EMP165,Waqas Butt,Sales,POS-165,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,36.0,1.0,14,Not Required,No
+EMP165,Waqas Butt,Sales,POS-165,S015,CRM Management,Digital,Core,Needs Development,2,Basic,36.4,1.3,16,Not Required,No
+EMP165,Waqas Butt,Sales,POS-165,S042,Communication,Behavioral,Common,Needs Development,2,Basic,38.5,1.0,1,Not Required,No
+EMP166,Arslan Siddiqui,Sales,POS-166,S017,Pipeline Management,Functional,Core,Verified,5,Expert,89.8,9.4,8,Not Required,Yes
+EMP166,Arslan Siddiqui,Sales,POS-166,S046,Leadership,Leadership,Leadership,Verified,5,Expert,91.7,10.5,3,Not Required,Yes
+EMP166,Arslan Siddiqui,Sales,POS-166,S045,Stakeholder Management,Behavioral,Leadership,Verified,4,Advanced,70.1,9.2,3,Not Required,No
+EMP166,Arslan Siddiqui,Sales,POS-166,S047,Coaching & Mentoring,Leadership,Leadership,Developing,5,Expert,85.6,12.1,15,Not Required,No
+EMP166,Arslan Siddiqui,Sales,POS-166,S014,Negotiation,Behavioral,Core,Developing,4,Advanced,57.7,12.0,10,Not Required,No
+EMP167,Bilal Raza,Sales,POS-167,S016,Account Management,Functional,Core,Verified,4,Advanced,75.8,5.4,8,Not Required,Yes
+EMP167,Bilal Raza,Sales,POS-167,S014,Negotiation,Behavioral,Core,Verified,4,Advanced,71.2,3.4,2,Not Required,Yes
+EMP167,Bilal Raza,Sales,POS-167,S015,CRM Management,Digital,Core,Developing,4,Advanced,75.2,4.9,16,Not Required,No
+EMP167,Bilal Raza,Sales,POS-167,S017,Pipeline Management,Functional,Core,Developing,3,Competent,63.0,4.5,3,Not Required,No
+EMP167,Bilal Raza,Sales,POS-167,S018,Product Knowledge,Functional,Core,Developing,4,Advanced,77.3,3.6,17,Not Required,No
+EMP168,Akbar Saleem,Customer Support,POS-168,S040,SLA Management,Functional,Core,Developing,4,Advanced,60.9,2.7,10,Not Required,Yes
+EMP168,Akbar Saleem,Customer Support,POS-168,S041,Knowledge Base Management,Digital,Core,Developing,4,Advanced,65.3,3.1,7,Not Required,Yes
+EMP168,Akbar Saleem,Customer Support,POS-168,S047,Coaching & Mentoring,Leadership,Leadership,Needs Development,3,Competent,51.1,4.1,4,Not Required,No
+EMP168,Akbar Saleem,Customer Support,POS-168,S038,Complaint Resolution,Behavioral,Core,Developing,4,Advanced,69.7,2.1,11,Not Required,No
+EMP168,Akbar Saleem,Customer Support,POS-168,S043,Teamwork,Behavioral,Common,Developing,4,Advanced,64.1,2.7,14,Not Required,No
+EMP169,Iqra Qureshi,IT,POS-169,S010,IT Service Management,Functional,Core,Developing,5,Expert,94.0,11.8,18,Certification Planned,Yes
+EMP169,Iqra Qureshi,IT,POS-169,S046,Leadership,Leadership,Leadership,Verified,5,Expert,95.0,15.9,5,Not Required,Yes
+EMP169,Iqra Qureshi,IT,POS-169,S008,Cybersecurity,Technical,Digital,Verified,4,Advanced,83.4,14.4,10,Certified,No
+EMP169,Iqra Qureshi,IT,POS-169,S050,Project Management,Leadership,Common,Verified,5,Expert,96.4,9.1,9,Certified,No
+EMP169,Iqra Qureshi,IT,POS-169,S045,Stakeholder Management,Behavioral,Leadership,Verified,5,Expert,92.5,14.4,9,Not Required,No
+EMP170,Hina Ahmad,Customer Support,POS-170,S037,Customer Service,Functional,Core,Needs Development,3,Competent,44.9,4.3,12,Not Required,Yes
+EMP170,Hina Ahmad,Customer Support,POS-170,S040,SLA Management,Functional,Core,Developing,3,Competent,60.7,2.8,17,Not Required,Yes
+EMP170,Hina Ahmad,Customer Support,POS-170,S015,CRM Management,Digital,Core,Needs Development,3,Competent,54.6,4.8,10,Not Required,No
+EMP170,Hina Ahmad,Customer Support,POS-170,S038,Complaint Resolution,Behavioral,Core,Developing,3,Competent,58.8,5.0,4,Not Required,No
+EMP170,Hina Ahmad,Customer Support,POS-170,S042,Communication,Behavioral,Common,Needs Development,3,Competent,50.1,2.4,1,Not Required,No
+EMP171,Usman Ullah,IT,POS-171,S010,IT Service Management,Functional,Core,Verified,4,Advanced,72.4,9.6,10,Certification Planned,Yes
+EMP171,Usman Ullah,IT,POS-171,S046,Leadership,Leadership,Leadership,Developing,5,Expert,88.6,10.9,16,Not Required,Yes
+EMP171,Usman Ullah,IT,POS-171,S008,Cybersecurity,Technical,Digital,Developing,4,Advanced,76.2,8.5,15,Certification Planned,No
+EMP171,Usman Ullah,IT,POS-171,S050,Project Management,Leadership,Common,Developing,5,Expert,87.7,9.3,15,Certified,No
+EMP171,Usman Ullah,IT,POS-171,S045,Stakeholder Management,Behavioral,Leadership,Verified,5,Expert,89.6,9.7,6,Not Required,No
+EMP172,Zoya Hassan,Operations,POS-172,S019,Process Management,Functional,Core,Needs Development,3,Competent,54.0,4.7,14,Not Required,Yes
+EMP172,Zoya Hassan,Operations,POS-172,S021,Process Improvement,Functional,Core,Needs Development,3,Competent,48.3,4.8,6,Not Required,Yes
+EMP172,Zoya Hassan,Operations,POS-172,S022,Quality Control,Functional,Core,Needs Development,3,Competent,54.9,3.5,10,Not Required,No
+EMP172,Zoya Hassan,Operations,POS-172,S029,Advanced Excel,Digital,Core,Developing,3,Competent,60.1,4.3,4,Not Certified,No
+EMP172,Zoya Hassan,Operations,POS-172,S044,Problem Solving,Behavioral,Common,Needs Development,3,Competent,49.6,4.0,2,Not Required,No
+EMP173,Sidra Abbasi,Finance,POS-173,S025,Financial Analysis,Functional,Core,Developing,4,Advanced,74.9,3.8,16,Certification Planned,Yes
+EMP173,Sidra Abbasi,Finance,POS-173,S028,Regulatory Reporting,Compliance,Core,Developing,4,Advanced,69.9,4.8,2,Certification Planned,Yes
+EMP173,Sidra Abbasi,Finance,POS-173,S027,Budgeting & Forecasting,Functional,Core,Verified,4,Advanced,70.8,5.6,1,Not Required,No
+EMP173,Sidra Abbasi,Finance,POS-173,S030,Risk Analysis,Functional,Core,Developing,4,Advanced,68.7,3.6,4,Certification Planned,No
+EMP173,Sidra Abbasi,Finance,POS-173,S045,Stakeholder Management,Behavioral,Leadership,Developing,4,Advanced,68.1,5.5,16,Not Required,No
+EMP174,Hassan Aslam,Sales,POS-174,S016,Account Management,Functional,Core,Developing,3,Competent,60.9,3.9,6,Not Required,Yes
+EMP174,Hassan Aslam,Sales,POS-174,S014,Negotiation,Behavioral,Core,Verified,4,Advanced,73.8,3.8,11,Not Required,Yes
+EMP174,Hassan Aslam,Sales,POS-174,S015,CRM Management,Digital,Core,Needs Development,3,Competent,52.8,3.8,13,Not Required,No
+EMP174,Hassan Aslam,Sales,POS-174,S017,Pipeline Management,Functional,Core,Needs Development,3,Competent,51.6,2.0,17,Not Required,No
+EMP174,Hassan Aslam,Sales,POS-174,S018,Product Knowledge,Functional,Core,Needs Development,3,Competent,53.6,2.1,13,Not Required,No
+EMP175,Hassan Arif,Operations,POS-175,S019,Process Management,Functional,Core,Verified,4,Advanced,77.2,1.4,6,Not Required,Yes
+EMP175,Hassan Arif,Operations,POS-175,S021,Process Improvement,Functional,Core,Developing,3,Competent,62.0,1.6,4,Not Required,Yes
+EMP175,Hassan Arif,Operations,POS-175,S022,Quality Control,Functional,Core,Developing,3,Competent,59.8,1.5,11,Not Required,No
+EMP175,Hassan Arif,Operations,POS-175,S029,Advanced Excel,Digital,Core,Developing,3,Competent,58.4,2.1,15,Not Certified,No
+EMP175,Hassan Arif,Operations,POS-175,S044,Problem Solving,Behavioral,Common,Needs Development,3,Competent,54.7,2.1,1,Not Required,No
+EMP176,Ahsan Aziz,Sales,POS-176,S016,Account Management,Functional,Core,Developing,5,Expert,95.9,6.0,16,Not Required,Yes
+EMP176,Ahsan Aziz,Sales,POS-176,S014,Negotiation,Behavioral,Core,Verified,5,Expert,93.1,6.7,5,Not Required,Yes
+EMP176,Ahsan Aziz,Sales,POS-176,S017,Pipeline Management,Functional,Core,Verified,4,Advanced,74.6,6.0,11,Not Required,No
+EMP176,Ahsan Aziz,Sales,POS-176,S045,Stakeholder Management,Behavioral,Leadership,Verified,4,Advanced,73.6,8.1,12,Not Required,No
+EMP176,Ahsan Aziz,Sales,POS-176,S047,Coaching & Mentoring,Leadership,Leadership,Developing,5,Expert,93.6,7.8,14,Not Required,No
+EMP177,Danish Anwar,HR,POS-177,S033,Performance Management,Functional,Core,Needs Development,3,Competent,51.6,4.4,12,Not Required,Yes
+EMP177,Danish Anwar,HR,POS-177,S031,Recruitment & Selection,Functional,Core,Needs Development,3,Competent,46.6,3.7,4,Not Required,Yes
+EMP177,Danish Anwar,HR,POS-177,S032,HRIS & Employee Data,Digital,Core,Needs Development,3,Competent,46.9,3.1,6,Not Certified,No
+EMP177,Danish Anwar,HR,POS-177,S035,Learning & Development,Functional,Core,Needs Development,3,Competent,50.6,4.9,16,Not Required,No
+EMP177,Danish Anwar,HR,POS-177,S034,Employee Relations,Behavioral,Core,Needs Development,3,Competent,54.2,3.6,11,Not Required,No
+EMP178,Fatima Rehman,Sales,POS-178,S012,B2B Sales,Functional,Core,Developing,3,Competent,62.9,1.2,12,Not Required,Yes
+EMP178,Fatima Rehman,Sales,POS-178,S013,Lead Generation,Functional,Core,Needs Development,3,Competent,50.3,1.0,13,Not Required,Yes
+EMP178,Fatima Rehman,Sales,POS-178,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,42.7,1.1,8,Not Required,No
+EMP178,Fatima Rehman,Sales,POS-178,S015,CRM Management,Digital,Core,Developing,3,Competent,59.2,1.1,12,Not Required,No
+EMP178,Fatima Rehman,Sales,POS-178,S042,Communication,Behavioral,Common,Developing,3,Competent,61.9,0.8,12,Not Required,No
+EMP179,Muneeb Javed,Operations,POS-179,S020,SOP Compliance,Compliance,Core,Needs Development,2,Basic,42.8,2.1,7,Not Required,Yes
+EMP179,Muneeb Javed,Operations,POS-179,S024,Workflow Coordination,Functional,Core,Needs Development,3,Competent,54.0,2.2,10,Not Required,Yes
+EMP179,Muneeb Javed,Operations,POS-179,S022,Quality Control,Functional,Core,Developing,3,Competent,59.7,1.6,5,Not Required,No
+EMP179,Muneeb Javed,Operations,POS-179,S029,Advanced Excel,Digital,Core,Needs Development,2,Basic,41.0,1.6,12,Not Certified,No
+EMP179,Muneeb Javed,Operations,POS-179,S043,Teamwork,Behavioral,Common,Developing,3,Competent,58.4,1.7,14,Not Required,No
+EMP180,Arham Hussain,Customer Support,POS-180,S037,Customer Service,Functional,Core,Needs Development,2,Basic,41.0,1.8,11,Not Required,Yes
+EMP180,Arham Hussain,Customer Support,POS-180,S038,Complaint Resolution,Behavioral,Core,Needs Development,2,Basic,38.6,1.3,14,Not Required,Yes
+EMP180,Arham Hussain,Customer Support,POS-180,S039,Call Handling,Functional,Core,Needs Development,3,Competent,53.4,1.0,15,Not Required,No
+EMP180,Arham Hussain,Customer Support,POS-180,S018,Product Knowledge,Functional,Core,Needs Development,3,Competent,49.5,1.1,16,Not Required,No
+EMP180,Arham Hussain,Customer Support,POS-180,S051,Empathy & Active Listening,Behavioral,Common,Needs Development,2,Basic,40.8,1.8,3,Not Required,No
+EMP181,Saad Yousaf,Operations,POS-181,S020,SOP Compliance,Compliance,Core,Developing,3,Competent,58.6,1.4,12,Not Required,Yes
+EMP181,Saad Yousaf,Operations,POS-181,S024,Workflow Coordination,Functional,Core,Needs Development,3,Competent,51.2,1.0,8,Not Required,Yes
+EMP181,Saad Yousaf,Operations,POS-181,S022,Quality Control,Functional,Core,Developing,3,Competent,59.4,1.7,14,Not Required,No
+EMP181,Saad Yousaf,Operations,POS-181,S029,Advanced Excel,Digital,Core,Needs Development,2,Basic,49.0,1.2,14,Not Certified,No
+EMP181,Saad Yousaf,Operations,POS-181,S043,Teamwork,Behavioral,Common,Needs Development,3,Competent,54.8,0.9,3,Not Required,No
+EMP182,Waqas Ahmad,Sales,POS-182,S016,Account Management,Functional,Core,Verified,4,Advanced,74.9,4.3,2,Not Required,Yes
+EMP182,Waqas Ahmad,Sales,POS-182,S014,Negotiation,Behavioral,Core,Developing,4,Advanced,77.7,4.8,14,Not Required,Yes
+EMP182,Waqas Ahmad,Sales,POS-182,S015,CRM Management,Digital,Core,Verified,4,Advanced,86.2,3.2,6,Not Required,No
+EMP182,Waqas Ahmad,Sales,POS-182,S017,Pipeline Management,Functional,Core,Verified,4,Advanced,88.7,4.1,11,Not Required,No
+EMP182,Waqas Ahmad,Sales,POS-182,S018,Product Knowledge,Functional,Core,Verified,4,Advanced,74.8,2.6,7,Not Required,No
+EMP183,Zain Saleem,IT,POS-183,S010,IT Service Management,Functional,Core,Developing,3,Competent,60.7,2.7,9,Not Certified,Yes
+EMP183,Zain Saleem,IT,POS-183,S011,Incident Management,Functional,Core,Needs Development,3,Competent,52.9,2.4,7,Not Required,Yes
+EMP183,Zain Saleem,IT,POS-183,S009,Network Administration,Technical,Core,Needs Development,2,Basic,36.1,1.8,16,Not Certified,No
+EMP183,Zain Saleem,IT,POS-183,S042,Communication,Behavioral,Common,Needs Development,2,Basic,47.0,2.5,13,Not Required,No
+EMP183,Zain Saleem,IT,POS-183,S053,Documentation,Behavioral,Common,Developing,3,Competent,60.5,3.0,8,Not Required,No
+EMP184,Iqra Hassan,Operations,POS-184,S020,SOP Compliance,Compliance,Core,Needs Development,2,Basic,35.1,0.6,12,Not Required,Yes
+EMP184,Iqra Hassan,Operations,POS-184,S024,Workflow Coordination,Functional,Core,Needs Development,2,Basic,37.6,0.6,11,Not Required,Yes
+EMP184,Iqra Hassan,Operations,POS-184,S022,Quality Control,Functional,Core,Needs Development,2,Basic,35.0,0.7,15,Not Required,No
+EMP184,Iqra Hassan,Operations,POS-184,S029,Advanced Excel,Digital,Core,Needs Development,2,Basic,40.2,0.8,13,Not Certified,No
+EMP184,Iqra Hassan,Operations,POS-184,S043,Teamwork,Behavioral,Common,Needs Development,2,Basic,36.5,0.7,18,Not Required,No
+EMP185,Salman Hameed,Finance,POS-185,S025,Financial Analysis,Functional,Core,Developing,4,Advanced,73.1,4.2,15,Certification Planned,Yes
+EMP185,Salman Hameed,Finance,POS-185,S028,Regulatory Reporting,Compliance,Core,Developing,4,Advanced,73.3,5.3,13,Certification Planned,Yes
+EMP185,Salman Hameed,Finance,POS-185,S027,Budgeting & Forecasting,Functional,Core,Developing,4,Advanced,67.6,7.1,13,Not Required,No
+EMP185,Salman Hameed,Finance,POS-185,S030,Risk Analysis,Functional,Core,Developing,4,Advanced,69.0,7.4,11,Certification Planned,No
+EMP185,Salman Hameed,Finance,POS-185,S045,Stakeholder Management,Behavioral,Leadership,Developing,4,Advanced,59.9,5.2,16,Not Required,No
+EMP186,Zara Masood,IT,POS-186,S009,Network Administration,Technical,Core,Verified,4,Advanced,75.6,1.9,11,Certification Planned,Yes
+EMP186,Zara Masood,IT,POS-186,S007,Cloud Platforms,Technical,Digital,Verified,4,Advanced,75.5,2.0,5,Certification Planned,Yes
+EMP186,Zara Masood,IT,POS-186,S010,IT Service Management,Functional,Core,Developing,3,Competent,59.4,2.6,14,Not Certified,No
+EMP186,Zara Masood,IT,POS-186,S008,Cybersecurity,Technical,Digital,Developing,4,Advanced,76.1,2.8,13,Certification Planned,No
+EMP186,Zara Masood,IT,POS-186,S011,Incident Management,Functional,Core,Developing,3,Competent,58.9,1.6,14,Not Required,No
+EMP187,Nida Mahmood,Operations,POS-187,S020,SOP Compliance,Compliance,Core,Developing,3,Competent,57.6,2.4,17,Not Required,Yes
+EMP187,Nida Mahmood,Operations,POS-187,S024,Workflow Coordination,Functional,Core,Needs Development,2,Basic,35.5,1.8,18,Not Required,Yes
+EMP187,Nida Mahmood,Operations,POS-187,S022,Quality Control,Functional,Core,Needs Development,2,Basic,37.7,1.8,9,Not Required,No
+EMP187,Nida Mahmood,Operations,POS-187,S029,Advanced Excel,Digital,Core,Needs Development,2,Basic,38.7,2.0,3,Not Certified,No
+EMP187,Nida Mahmood,Operations,POS-187,S043,Teamwork,Behavioral,Common,Needs Development,2,Basic,39.9,2.2,14,Not Required,No
+EMP188,Areeba Ahmad,IT,POS-188,S008,Cybersecurity,Technical,Digital,Verified,4,Advanced,73.8,12.5,10,Certification Planned,Yes
+EMP188,Areeba Ahmad,IT,POS-188,S007,Cloud Platforms,Technical,Digital,Developing,4,Advanced,63.3,11.0,17,Certification Planned,Yes
+EMP188,Areeba Ahmad,IT,POS-188,S009,Network Administration,Technical,Core,Developing,4,Advanced,70.3,11.9,18,Certification Planned,No
+EMP188,Areeba Ahmad,IT,POS-188,S050,Project Management,Leadership,Common,Developing,4,Advanced,68.8,7.8,15,Certification Planned,No
+EMP188,Areeba Ahmad,IT,POS-188,S044,Problem Solving,Behavioral,Common,Needs Development,3,Competent,51.5,9.1,12,Not Required,No
+EMP189,Omer Masood,Engineering,POS-189,S005,System Design,Technical,Core,Developing,4,Advanced,67.5,8.9,14,Not Required,Yes
+EMP189,Omer Masood,Engineering,POS-189,S050,Project Management,Leadership,Common,Verified,5,Expert,92.6,9.5,3,Certification Planned,Yes
+EMP189,Omer Masood,Engineering,POS-189,S046,Leadership,Leadership,Leadership,Verified,5,Expert,89.8,8.8,12,Not Required,No
+EMP189,Omer Masood,Engineering,POS-189,S045,Stakeholder Management,Behavioral,Leadership,Developing,4,Advanced,71.2,8.7,14,Not Required,No
+EMP189,Omer Masood,Engineering,POS-189,S006,DevOps & CI/CD,Technical,Digital,Verified,4,Advanced,71.0,7.2,7,Certification Planned,No
+EMP190,Noor Saeed,HR,POS-190,S031,Recruitment & Selection,Functional,Core,Needs Development,2,Basic,35.0,1.5,13,Not Required,Yes
+EMP190,Noor Saeed,HR,POS-190,S032,HRIS & Employee Data,Digital,Core,Needs Development,2,Basic,37.9,1.1,3,Not Certified,Yes
+EMP190,Noor Saeed,HR,POS-190,S034,Employee Relations,Behavioral,Core,Needs Development,2,Basic,35.0,1.4,3,Not Required,No
+EMP190,Noor Saeed,HR,POS-190,S042,Communication,Behavioral,Common,Needs Development,2,Basic,41.3,1.5,1,Not Required,No
+EMP190,Noor Saeed,HR,POS-190,S053,Documentation,Behavioral,Common,Needs Development,2,Basic,36.1,1.1,11,Not Required,No
+EMP191,Danish Yousaf,Operations,POS-191,S019,Process Management,Functional,Core,Verified,4,Advanced,72.0,4.9,8,Not Required,Yes
+EMP191,Danish Yousaf,Operations,POS-191,S021,Process Improvement,Functional,Core,Verified,4,Advanced,73.9,4.7,2,Not Required,Yes
+EMP191,Danish Yousaf,Operations,POS-191,S022,Quality Control,Functional,Core,Verified,4,Advanced,71.2,5.8,4,Not Required,No
+EMP191,Danish Yousaf,Operations,POS-191,S029,Advanced Excel,Digital,Core,Verified,4,Advanced,72.2,7.0,8,Certification Planned,No
+EMP191,Danish Yousaf,Operations,POS-191,S044,Problem Solving,Behavioral,Common,Developing,4,Advanced,80.7,4.6,14,Not Required,No
+EMP192,Kashif Hussain,Sales,POS-192,S012,B2B Sales,Functional,Core,Developing,3,Competent,67.2,3.8,18,Not Required,Yes
+EMP192,Kashif Hussain,Sales,POS-192,S013,Lead Generation,Functional,Core,Developing,3,Competent,61.3,2.7,10,Not Required,Yes
+EMP192,Kashif Hussain,Sales,POS-192,S018,Product Knowledge,Functional,Core,Needs Development,2,Basic,39.1,2.0,17,Not Required,No
+EMP192,Kashif Hussain,Sales,POS-192,S015,CRM Management,Digital,Core,Needs Development,2,Basic,40.8,3.2,3,Not Required,No
+EMP192,Kashif Hussain,Sales,POS-192,S042,Communication,Behavioral,Common,Developing,3,Competent,59.0,3.3,9,Not Required,No
+EMP193,Zain Qureshi,Operations,POS-193,S020,SOP Compliance,Compliance,Core,Developing,3,Competent,59.6,0.4,11,Not Required,Yes
+EMP193,Zain Qureshi,Operations,POS-193,S024,Workflow Coordination,Functional,Core,Developing,3,Competent,60.0,0.3,1,Not Required,Yes
+EMP193,Zain Qureshi,Operations,POS-193,S022,Quality Control,Functional,Core,Developing,3,Competent,58.7,0.4,8,Not Required,No
+EMP193,Zain Qureshi,Operations,POS-193,S029,Advanced Excel,Digital,Core,Needs Development,3,Competent,53.7,0.5,1,Not Certified,No
+EMP193,Zain Qureshi,Operations,POS-193,S043,Teamwork,Behavioral,Common,Developing,3,Competent,58.5,0.6,15,Not Required,No
+EMP194,Shahid Ahmad,Customer Support,POS-194,S037,Customer Service,Functional,Core,Needs Development,3,Competent,50.1,2.3,11,Not Required,Yes
+EMP194,Shahid Ahmad,Customer Support,POS-194,S040,SLA Management,Functional,Core,Needs Development,3,Competent,52.0,1.5,12,Not Required,Yes
+EMP194,Shahid Ahmad,Customer Support,POS-194,S015,CRM Management,Digital,Core,Needs Development,3,Competent,51.3,2.6,13,Not Required,No
+EMP194,Shahid Ahmad,Customer Support,POS-194,S038,Complaint Resolution,Behavioral,Core,Needs Development,3,Competent,53.8,2.6,12,Not Required,No
+EMP194,Shahid Ahmad,Customer Support,POS-194,S042,Communication,Behavioral,Common,Needs Development,3,Competent,48.5,2.2,11,Not Required,No
+EMP195,Mohsin Khan,Engineering,POS-195,S005,System Design,Technical,Core,Verified,5,Expert,96.2,5.8,11,Not Required,Yes
+EMP195,Mohsin Khan,Engineering,POS-195,S050,Project Management,Leadership,Common,Verified,5,Expert,96.9,10.3,5,Certified,Yes
+EMP195,Mohsin Khan,Engineering,POS-195,S046,Leadership,Leadership,Leadership,Developing,5,Expert,100.0,7.8,13,Not Required,No
+EMP195,Mohsin Khan,Engineering,POS-195,S045,Stakeholder Management,Behavioral,Leadership,Developing,5,Expert,95.9,9.7,15,Not Required,No
+EMP195,Mohsin Khan,Engineering,POS-195,S006,DevOps & CI/CD,Technical,Digital,Verified,5,Expert,93.4,8.6,8,Certified,No
+EMP196,Mohsin Abbasi,Engineering,POS-196,S001,Python Programming,Technical,Core,Verified,4,Advanced,78.6,4.7,1,Not Required,Yes
+EMP196,Mohsin Abbasi,Engineering,POS-196,S002,SQL & Databases,Technical,Core,Verified,4,Advanced,75.9,3.6,9,Not Required,Yes
+EMP196,Mohsin Abbasi,Engineering,POS-196,S003,API Development,Technical,Core,Developing,3,Competent,58.0,4.3,8,Not Required,No
+EMP196,Mohsin Abbasi,Engineering,POS-196,S004,Software Testing,Technical,Core,Developing,4,Advanced,75.1,3.4,18,Not Required,No
+EMP196,Mohsin Abbasi,Engineering,POS-196,S044,Problem Solving,Behavioral,Common,Developing,4,Advanced,76.0,2.7,17,Not Required,No
+EMP197,Zeeshan Qureshi,HR,POS-197,S046,Leadership,Leadership,Leadership,Verified,4,Advanced,73.1,7.0,6,Not Required,Yes
+EMP197,Zeeshan Qureshi,HR,POS-197,S033,Performance Management,Functional,Core,Developing,4,Advanced,68.5,9.9,17,Not Required,Yes
+EMP197,Zeeshan Qureshi,HR,POS-197,S034,Employee Relations,Behavioral,Core,Developing,4,Advanced,74.5,8.5,15,Not Required,No
+EMP197,Zeeshan Qureshi,HR,POS-197,S035,Learning & Development,Functional,Core,Verified,5,Expert,86.2,9.8,10,Not Required,No
+EMP197,Zeeshan Qureshi,HR,POS-197,S045,Stakeholder Management,Behavioral,Leadership,Developing,4,Advanced,75.3,5.6,16,Not Required,No
+EMP198,Ali Tariq,Operations,POS-198,S020,SOP Compliance,Compliance,Core,Needs Development,2,Basic,35.0,0.8,11,Not Required,Yes
+EMP198,Ali Tariq,Operations,POS-198,S024,Workflow Coordination,Functional,Core,Needs Development,2,Basic,35.0,1.3,18,Not Required,Yes
+EMP198,Ali Tariq,Operations,POS-198,S022,Quality Control,Functional,Core,Needs Development,2,Basic,36.0,0.7,2,Not Required,No
+EMP198,Ali Tariq,Operations,POS-198,S029,Advanced Excel,Digital,Core,Needs Development,2,Basic,35.0,1.0,13,Not Certified,No
+EMP198,Ali Tariq,Operations,POS-198,S043,Teamwork,Behavioral,Common,Needs Development,2,Basic,35.0,0.9,18,Not Required,No
+EMP199,Zara Tariq,Customer Support,POS-199,S037,Customer Service,Functional,Core,Developing,3,Competent,70.9,3.0,18,Not Required,Yes
+EMP199,Zara Tariq,Customer Support,POS-199,S038,Complaint Resolution,Behavioral,Core,Developing,3,Competent,65.3,3.3,13,Not Required,Yes
+EMP199,Zara Tariq,Customer Support,POS-199,S039,Call Handling,Functional,Core,Needs Development,3,Competent,53.7,2.4,2,Not Required,No
+EMP199,Zara Tariq,Customer Support,POS-199,S018,Product Knowledge,Functional,Core,Developing,3,Competent,60.6,2.2,2,Not Required,No
+EMP199,Zara Tariq,Customer Support,POS-199,S051,Empathy & Active Listening,Behavioral,Common,Developing,3,Competent,59.0,3.3,13,Not Required,No
+EMP200,Ahmad Abbasi,Customer Support,POS-200,S037,Customer Service,Functional,Core,Developing,3,Competent,57.4,4.2,6,Not Required,Yes
+EMP200,Ahmad Abbasi,Customer Support,POS-200,S040,SLA Management,Functional,Core,Developing,4,Advanced,69.9,2.6,3,Not Required,Yes
+EMP200,Ahmad Abbasi,Customer Support,POS-200,S015,CRM Management,Digital,Core,Needs Development,3,Competent,51.0,3.6,14,Not Required,No
+EMP200,Ahmad Abbasi,Customer Support,POS-200,S038,Complaint Resolution,Behavioral,Core,Needs Development,3,Competent,49.1,3.0,8,Not Required,No
+EMP200,Ahmad Abbasi,Customer Support,POS-200,S042,Communication,Behavioral,Common,Needs Development,3,Competent,51.4,3.0,18,Not Required,No

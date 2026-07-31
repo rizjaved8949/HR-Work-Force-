@@ -1,0 +1,19 @@
+# Secrets — the single project .env
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+
+# IDE — keep the shared import-path settings, ignore personal ones
+.vscode/*
+!.vscode/settings.json
+.idea/
+
+# Logs and temporary files
+*.log

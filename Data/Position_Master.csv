@@ -1,0 +1,208 @@
+﻿Position_ID,Position_Title,Designation,Department,Job_Level,Reporting_Position_ID,Reporting_Title,Employment_Type,Work_Mode_Requirement,Shift_Requirement,Position_Status,Vacancy_Planning_Status,Position_Criticality,Current_Employee_ID,Current_Employee_Name
+POS-001,HR Manager,HR Manager,HR,Lead/Manager,EXEC-HR-HEAD,Head of HR,Permanent,Hybrid,Day,Filled,Prepare Replacement Pipeline,High,EMP001,Sonia Hassan
+POS-002,Account Manager,Senior Sales Executive,Sales,Mid,POS-093,Senior Account Manager,Permanent,Onsite,Rotational,Filled,No Immediate Vacancy,Medium,EMP002,Bilal Aziz
+POS-003,Financial Analyst,Financial Analyst,Finance,Mid,POS-030,Senior Financial Analyst,Permanent,Remote,Day,Filled,No Immediate Vacancy,Medium,EMP003,Kamran Ali
+POS-004,Financial Analyst,Financial Analyst,Finance,Mid,POS-030,Senior Financial Analyst,Permanent,Onsite,Day,Filled,Prepare Replacement Pipeline,Medium,EMP004,Ali Masood
+POS-005,Software Engineer I,Junior Software Engineer,Engineering,Junior,POS-133,Software Engineer II,Permanent,Remote,Day,Filled,Prepare Replacement Pipeline,Low,EMP005,Farhan Shah
+POS-006,Software Engineer II,Software Engineer,Engineering,Mid,POS-058,Senior Software Engineer,Permanent,Hybrid,Day,Filled,Prepare Replacement Pipeline,Medium,EMP006,Sehrish Tariq
+POS-007,Customer Support Representative,Support Executive,Customer Support,Junior,POS-027,Senior Support Executive,Contract,Onsite,Day,Filled,No Immediate Vacancy,Medium,EMP007,Sonia Ahmad
+POS-008,Finance Manager,Finance Manager,Finance,Lead/Manager,EXEC-FIN-HEAD,Head of Finance,Permanent,Onsite,Day,Filled,No Immediate Vacancy,High,EMP008,Iqra Bashir
+POS-009,Customer Support Manager,Customer Support Manager,Customer Support,Lead/Manager,EXEC-CS-HEAD,Head of Customer Support,Permanent,Hybrid,Night,Filled,Prepare Replacement Pipeline,High,EMP009,Hassan Dar
+POS-010,Senior Software Engineer,Senior Software Engineer,Engineering,Senior,POS-129,Engineering Lead,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,High,EMP010,Salman Shah
+POS-011,Sales Manager,Sales Manager,Sales,Lead/Manager,EXEC-SAL-HEAD,Head of Sales,Permanent,Onsite,Day,Filled,No Immediate Vacancy,High,EMP011,Khurram Iqbal
+POS-012,HR Manager,HR Manager,HR,Lead/Manager,EXEC-HR-HEAD,Head of HR,Permanent,Onsite,Rotational,Filled,Prepare Replacement Pipeline,High,EMP012,Danish Masood
+POS-013,HR Generalist,HR Specialist,HR,Mid,POS-081,Senior HR Specialist,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,Medium,EMP013,Anum Ahmad
+POS-014,Software Engineer II,Software Engineer,Engineering,Mid,POS-058,Senior Software Engineer,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Medium,EMP014,Shahid Ali
+POS-015,Engineering Lead,Engineering Manager,Engineering,Lead/Manager,EXEC-ENG-HEAD,Head of Engineering,Permanent,Onsite,Day,Filled,No Immediate Vacancy,High,EMP015,Anum Rehman
+POS-016,Account Manager,Senior Sales Executive,Sales,Mid,POS-093,Senior Account Manager,Permanent,Hybrid,Rotational,Filled,Prepare Replacement Pipeline,Medium,EMP016,Khurram Gill
+POS-017,Customer Support Representative,Support Executive,Customer Support,Junior,POS-027,Senior Support Executive,Permanent,Remote,Rotational,Filled,Prepare Replacement Pipeline,Medium,EMP017,Amir Haider
+POS-018,Software Engineer II,Software Engineer,Engineering,Mid,POS-058,Senior Software Engineer,Contract,Onsite,Day,Filled,Prepare Replacement Pipeline,Medium,EMP018,Sidra Tariq
+POS-019,Systems Administrator,IT Engineer,IT,Mid,POS-051,Senior Systems Engineer,Permanent,Onsite,Night,Filled,No Immediate Vacancy,Medium,EMP019,Hina Hussain
+POS-020,Customer Support Representative,Support Executive,Customer Support,Junior,POS-027,Senior Support Executive,Permanent,Onsite,Day,Filled,Prepare Replacement Pipeline,Medium,EMP020,Waqas Khan
+POS-021,Customer Support Representative,Support Executive,Customer Support,Junior,POS-027,Senior Support Executive,Permanent,Remote,Day,Filled,Prepare Replacement Pipeline,Medium,EMP021,Usman Khan
+POS-022,Account Manager,Senior Sales Executive,Sales,Mid,POS-093,Senior Account Manager,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,Medium,EMP022,Laiba Raza
+POS-023,Operations Officer,Operations Officer,Operations,Junior,POS-120,Operations Analyst,Permanent,Onsite,Day,Filled,Prepare Replacement Pipeline,Medium,EMP023,Fatima Masood
+POS-024,Systems Administrator,IT Engineer,IT,Mid,POS-051,Senior Systems Engineer,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,Medium,EMP024,Fatima Arif
+POS-025,Financial Analyst,Financial Analyst,Finance,Mid,POS-030,Senior Financial Analyst,Permanent,Hybrid,Rotational,Filled,Prepare Replacement Pipeline,Medium,EMP025,Raza Mughal
+POS-026,Operations Manager,Operations Manager,Operations,Lead/Manager,EXEC-OPS-HEAD,Head of Operations,Permanent,Hybrid,Day,Filled,Prepare Replacement Pipeline,High,EMP026,Anum Qureshi
+POS-027,Senior Support Executive,Senior Support Executive,Customer Support,Mid,POS-072,Support Team Lead,Permanent,Onsite,Rotational,Filled,Prepare Replacement Pipeline,Medium,EMP027,Akbar Hassan
+POS-028,Senior Account Manager,Senior Account Manager,Sales,Senior,POS-011,Sales Manager,Permanent,Onsite,Rotational,Filled,Prepare Replacement Pipeline,High,EMP028,Salman Aziz
+POS-029,Software Engineer II,Software Engineer,Engineering,Mid,POS-058,Senior Software Engineer,Permanent,Hybrid,Rotational,Filled,Prepare Replacement Pipeline,Medium,EMP029,Ali Saleem
+POS-030,Senior Financial Analyst,Senior Financial Analyst,Finance,Senior,POS-008,Finance Manager,Permanent,Onsite,Day,Filled,No Immediate Vacancy,High,EMP030,Hamza Ahmad
+POS-031,Senior Software Engineer,Senior Software Engineer,Engineering,Senior,POS-129,Engineering Lead,Permanent,Onsite,Day,Filled,No Immediate Vacancy,High,EMP031,Sadia Haider
+POS-032,Sales Executive,Sales Executive,Sales,Junior,POS-022,Account Manager,Permanent,Onsite,Day,Filled,Prepare Replacement Pipeline,Low,EMP032,Laiba Mahmood
+POS-033,IT Support Engineer,Junior IT Engineer,IT,Junior,POS-024,Systems Administrator,Permanent,Onsite,Day,Filled,Prepare Replacement Pipeline,Low,EMP033,Ali Chaudhry
+POS-034,Sales Executive,Sales Executive,Sales,Junior,POS-022,Account Manager,Permanent,Onsite,Rotational,Filled,No Immediate Vacancy,Low,EMP034,Nida Sheikh
+POS-035,Software Engineer II,Software Engineer,Engineering,Mid,POS-058,Senior Software Engineer,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,Medium,EMP035,Shahbaz Malik
+POS-036,Sales Executive,Sales Executive,Sales,Junior,POS-022,Account Manager,Contract,Onsite,Day,Filled,No Immediate Vacancy,Low,EMP036,Zoya Chaudhry
+POS-037,Systems Administrator,IT Engineer,IT,Mid,POS-051,Senior Systems Engineer,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,Medium,EMP037,Zara Mahmood
+POS-038,Senior Support Executive,Senior Support Executive,Customer Support,Mid,POS-072,Support Team Lead,Contract,Remote,Rotational,Filled,Prepare Replacement Pipeline,Medium,EMP038,Ali Mahmood
+POS-039,Operations Officer,Operations Officer,Operations,Junior,POS-120,Operations Analyst,Permanent,Hybrid,Day,Filled,Prepare Replacement Pipeline,Medium,EMP039,Kamran Hussain
+POS-040,Customer Support Representative,Support Executive,Customer Support,Junior,POS-027,Senior Support Executive,Permanent,Onsite,Night,Filled,Prepare Replacement Pipeline,Medium,EMP040,Ahmad Sheikh
+POS-041,Operations Officer,Operations Officer,Operations,Junior,POS-120,Operations Analyst,Contract,Onsite,Rotational,Filled,Prepare Replacement Pipeline,Medium,EMP041,Omer Nawaz
+POS-042,Senior Support Executive,Senior Support Executive,Customer Support,Mid,POS-072,Support Team Lead,Permanent,Hybrid,Night,Filled,No Immediate Vacancy,Medium,EMP042,Amna Aslam
+POS-043,Operations Analyst,Operations Specialist,Operations,Mid,POS-141,Operations Manager,Permanent,Onsite,Rotational,Filled,Prepare Replacement Pipeline,Medium,EMP043,Amir Javed
+POS-044,Financial Analyst,Financial Analyst,Finance,Mid,POS-030,Senior Financial Analyst,Permanent,Onsite,Day,Filled,Prepare Replacement Pipeline,Medium,EMP044,Hafsa Khan
+POS-045,Operations Officer,Operations Officer,Operations,Junior,POS-120,Operations Analyst,Permanent,Onsite,Rotational,Filled,No Immediate Vacancy,Medium,EMP045,Saad Ahmad
+POS-046,Customer Support Representative,Support Executive,Customer Support,Junior,POS-027,Senior Support Executive,Permanent,Onsite,Day,Filled,Prepare Replacement Pipeline,Medium,EMP046,Salman Iqbal
+POS-047,Senior Financial Analyst,Senior Financial Analyst,Finance,Senior,POS-008,Finance Manager,Permanent,Onsite,Day,Filled,No Immediate Vacancy,High,EMP047,Mahnoor Iqbal
+POS-048,Operations Officer,Operations Officer,Operations,Junior,POS-120,Operations Analyst,Permanent,Hybrid,Rotational,Filled,Prepare Replacement Pipeline,Medium,EMP048,Sehrish Shah
+POS-049,Sales Executive,Sales Executive,Sales,Junior,POS-022,Account Manager,Permanent,Onsite,Rotational,Filled,Prepare Replacement Pipeline,Low,EMP049,Sara Aslam
+POS-050,Finance Officer,Finance Officer,Finance,Junior,POS-161,Financial Analyst,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,Low,EMP050,Mohsin Butt
+POS-051,Senior Systems Engineer,Senior IT Engineer,IT,Senior,POS-169,IT Operations Manager,Permanent,Remote,Day,Filled,No Immediate Vacancy,High,EMP051,Asad Ahmad
+POS-052,Customer Support Representative,Support Executive,Customer Support,Junior,POS-027,Senior Support Executive,Permanent,Hybrid,Day,Filled,Prepare Replacement Pipeline,Medium,EMP052,Raza Hassan
+POS-053,HR Officer,HR Officer,HR,Junior,POS-084,HR Generalist,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Low,EMP053,Zeeshan Abbasi
+POS-054,Software Engineer I,Junior Software Engineer,Engineering,Junior,POS-133,Software Engineer II,Permanent,Onsite,Day,Filled,Prepare Replacement Pipeline,Low,EMP054,Waqas Aslam
+POS-055,Software Engineer II,Software Engineer,Engineering,Mid,POS-058,Senior Software Engineer,Permanent,Onsite,Day,Filled,Prepare Replacement Pipeline,Medium,EMP055,Sadia Mahmood
+POS-056,Operations Analyst,Operations Specialist,Operations,Mid,POS-141,Operations Manager,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Medium,EMP056,Saba Hassan
+POS-057,IT Support Engineer,Junior IT Engineer,IT,Junior,POS-024,Systems Administrator,Permanent,Remote,Rotational,Filled,Prepare Replacement Pipeline,Low,EMP057,Raza Haider
+POS-058,Senior Software Engineer,Senior Software Engineer,Engineering,Senior,POS-129,Engineering Lead,Permanent,Onsite,Day,Filled,Prepare Replacement Pipeline,High,EMP058,Shahid Malik
+POS-059,Senior Account Manager,Senior Account Manager,Sales,Senior,POS-011,Sales Manager,Permanent,Onsite,Day,Filled,Prepare Replacement Pipeline,High,EMP059,Anum Masood
+POS-060,Sales Executive,Sales Executive,Sales,Junior,POS-022,Account Manager,Permanent,Onsite,Rotational,Filled,Prepare Replacement Pipeline,Low,EMP060,Mohsin Yousaf
+POS-061,Sales Executive,Sales Executive,Sales,Junior,POS-022,Account Manager,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Low,EMP061,Asad Bashir
+POS-062,Account Manager,Senior Sales Executive,Sales,Mid,POS-093,Senior Account Manager,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,Medium,EMP062,Fahad Dar
+POS-063,Sales Executive,Sales Executive,Sales,Junior,POS-022,Account Manager,Permanent,Hybrid,Rotational,Filled,Prepare Replacement Pipeline,Low,EMP063,Ahmad Tariq
+POS-064,Sales Executive,Sales Executive,Sales,Junior,POS-022,Account Manager,Contract,Hybrid,Day,Filled,Prepare Replacement Pipeline,Low,EMP064,Hassan Sheikh
+POS-065,Account Manager,Senior Sales Executive,Sales,Mid,POS-093,Senior Account Manager,Permanent,Onsite,Rotational,Filled,No Immediate Vacancy,Medium,EMP065,Amna Gill
+POS-066,Senior HR Specialist,Senior HR Specialist,HR,Senior,POS-001,HR Manager,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Medium,EMP066,Ali Gill
+POS-067,Operations Manager,Operations Manager,Operations,Lead/Manager,EXEC-OPS-HEAD,Head of Operations,Permanent,Onsite,Rotational,Filled,Prepare Replacement Pipeline,High,EMP067,Nida Hameed
+POS-068,Customer Support Manager,Customer Support Manager,Customer Support,Lead/Manager,EXEC-CS-HEAD,Head of Customer Support,Permanent,Onsite,Rotational,Filled,No Immediate Vacancy,High,EMP068,Sidra Hussain
+POS-069,Operations Officer,Operations Officer,Operations,Junior,POS-120,Operations Analyst,Contract,Hybrid,Night,Filled,No Immediate Vacancy,Medium,EMP069,Mehwish Hussain
+POS-070,Engineering Lead,Engineering Manager,Engineering,Lead/Manager,EXEC-ENG-HEAD,Head of Engineering,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,High,EMP070,Bilal Saeed
+POS-071,Financial Analyst,Financial Analyst,Finance,Mid,POS-030,Senior Financial Analyst,Permanent,Hybrid,Day,Filled,Prepare Replacement Pipeline,Medium,EMP071,Eman Abbasi
+POS-072,Support Team Lead,Team Lead - Customer Support,Customer Support,Senior,POS-068,Customer Support Manager,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,Medium,EMP072,Fahad Hassan
+POS-073,Customer Support Representative,Support Executive,Customer Support,Junior,POS-027,Senior Support Executive,Permanent,Onsite,Day,Filled,Prepare Replacement Pipeline,Medium,EMP073,Ali Yousaf
+POS-074,Sales Executive,Sales Executive,Sales,Junior,POS-022,Account Manager,Permanent,Onsite,Day,Filled,Prepare Replacement Pipeline,Low,EMP074,Omer Hameed
+POS-075,Operations Analyst,Operations Specialist,Operations,Mid,POS-141,Operations Manager,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Medium,EMP075,Asad Raza
+POS-076,Software Engineer II,Software Engineer,Engineering,Mid,POS-058,Senior Software Engineer,Permanent,Hybrid,Night,Filled,No Immediate Vacancy,Medium,EMP076,Fahad Shah
+POS-077,Support Team Lead,Team Lead - Customer Support,Customer Support,Senior,POS-068,Customer Support Manager,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Medium,EMP077,Ahmad Awan
+POS-078,Software Engineer II,Software Engineer,Engineering,Mid,POS-058,Senior Software Engineer,Permanent,Hybrid,Rotational,Filled,No Immediate Vacancy,Medium,EMP078,Ahmad Nawaz
+POS-079,Customer Support Representative,Support Executive,Customer Support,Junior,POS-027,Senior Support Executive,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,Medium,EMP079,Hina Aslam
+POS-080,Engineering Lead,Engineering Manager,Engineering,Lead/Manager,EXEC-ENG-HEAD,Head of Engineering,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,High,EMP080,Ali Mughal
+POS-081,Senior HR Specialist,Senior HR Specialist,HR,Senior,POS-001,HR Manager,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Medium,EMP081,Sonia Arif
+POS-082,Software Engineer I,Junior Software Engineer,Engineering,Junior,POS-133,Software Engineer II,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,Low,EMP082,Ali Dar
+POS-083,Customer Support Representative,Support Executive,Customer Support,Junior,POS-027,Senior Support Executive,Permanent,Onsite,Rotational,Filled,No Immediate Vacancy,Medium,EMP083,Raza Aziz
+POS-084,HR Generalist,HR Specialist,HR,Mid,POS-081,Senior HR Specialist,Permanent,Onsite,Rotational,Filled,Prepare Replacement Pipeline,Medium,EMP084,Zara Ullah
+POS-085,Senior HR Specialist,Senior HR Specialist,HR,Senior,POS-001,HR Manager,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Medium,EMP085,Sara Yousaf
+POS-086,Operations Officer,Operations Officer,Operations,Junior,POS-120,Operations Analyst,Permanent,Onsite,Day,Filled,Prepare Replacement Pipeline,Medium,EMP086,Hina Tariq
+POS-087,HR Manager,HR Manager,HR,Lead/Manager,EXEC-HR-HEAD,Head of HR,Permanent,Onsite,Day,Filled,No Immediate Vacancy,High,EMP087,Kashif Hameed
+POS-088,Operations Analyst,Operations Specialist,Operations,Mid,POS-141,Operations Manager,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Medium,EMP088,Sana Mughal
+POS-089,HR Officer,HR Officer,HR,Junior,POS-084,HR Generalist,Contract,Onsite,Day,Filled,Prepare Replacement Pipeline,Low,EMP089,Muneeb Haider
+POS-090,Financial Analyst,Financial Analyst,Finance,Mid,POS-030,Senior Financial Analyst,Contract,Hybrid,Rotational,Filled,Prepare Replacement Pipeline,Medium,EMP090,Noman Ahmad
+POS-091,Senior Financial Analyst,Senior Financial Analyst,Finance,Senior,POS-008,Finance Manager,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,High,EMP091,Nida Mughal
+POS-092,Senior Software Engineer,Senior Software Engineer,Engineering,Senior,POS-129,Engineering Lead,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,High,EMP092,Mahnoor Ali
+POS-093,Senior Account Manager,Senior Account Manager,Sales,Senior,POS-011,Sales Manager,Permanent,Hybrid,Day,Filled,Prepare Replacement Pipeline,High,EMP093,Danish Siddiqui
+POS-094,Senior Systems Engineer,Senior IT Engineer,IT,Senior,POS-169,IT Operations Manager,Permanent,Remote,Day,Filled,Prepare Replacement Pipeline,High,EMP094,Akbar Abbasi
+POS-095,IT Operations Manager,IT Manager,IT,Lead/Manager,EXEC-IT-HEAD,Head of IT,Permanent,Remote,Day,Filled,No Immediate Vacancy,High,EMP095,Haris Mahmood
+POS-096,Account Manager,Senior Sales Executive,Sales,Mid,POS-093,Senior Account Manager,Permanent,Hybrid,Rotational,Filled,Prepare Replacement Pipeline,Medium,EMP096,Ayesha Abbasi
+POS-097,Sales Executive,Sales Executive,Sales,Junior,POS-022,Account Manager,Permanent,Onsite,Day,Filled,Prepare Replacement Pipeline,Low,EMP097,Sana Arif
+POS-098,Senior Support Executive,Senior Support Executive,Customer Support,Mid,POS-072,Support Team Lead,Permanent,Hybrid,Rotational,Filled,Prepare Replacement Pipeline,Medium,EMP098,Sidra Zafar
+POS-099,Financial Analyst,Financial Analyst,Finance,Mid,POS-030,Senior Financial Analyst,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Medium,EMP099,Bilal Aslam
+POS-100,Senior Software Engineer,Senior Software Engineer,Engineering,Senior,POS-129,Engineering Lead,Permanent,Onsite,Day,Filled,No Immediate Vacancy,High,EMP100,Rabia Javed
+POS-101,Systems Administrator,IT Engineer,IT,Mid,POS-051,Senior Systems Engineer,Permanent,Hybrid,Day,Filled,Prepare Replacement Pipeline,Medium,EMP101,Talha Dar
+POS-102,Sales Executive,Sales Executive,Sales,Junior,POS-022,Account Manager,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Low,EMP102,Akbar Gill
+POS-103,Customer Support Representative,Support Executive,Customer Support,Junior,POS-027,Senior Support Executive,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Medium,EMP103,Noor Masood
+POS-104,Senior Systems Engineer,Senior IT Engineer,IT,Senior,POS-169,IT Operations Manager,Permanent,Onsite,Rotational,Filled,Prepare Replacement Pipeline,High,EMP104,Rabia Ali
+POS-105,Sales Manager,Sales Manager,Sales,Lead/Manager,EXEC-SAL-HEAD,Head of Sales,Permanent,Remote,Day,Filled,No Immediate Vacancy,High,EMP105,Areeba Raza
+POS-106,Senior HR Specialist,Senior HR Specialist,HR,Senior,POS-001,HR Manager,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,Medium,EMP106,Hina Saleem
+POS-107,Software Engineer II,Software Engineer,Engineering,Mid,POS-058,Senior Software Engineer,Permanent,Hybrid,Day,Filled,Prepare Replacement Pipeline,Medium,EMP107,Zoya Mahmood
+POS-108,HR Generalist,HR Specialist,HR,Mid,POS-081,Senior HR Specialist,Permanent,Hybrid,Day,Filled,Prepare Replacement Pipeline,Medium,EMP108,Ayesha Ahmad
+POS-109,Sales Executive,Sales Executive,Sales,Junior,POS-022,Account Manager,Permanent,Hybrid,Rotational,Filled,Prepare Replacement Pipeline,Low,EMP109,Ali Farooq
+POS-110,IT Support Engineer,Junior IT Engineer,IT,Junior,POS-024,Systems Administrator,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Low,EMP110,Arslan Masood
+POS-111,Account Manager,Senior Sales Executive,Sales,Mid,POS-093,Senior Account Manager,Permanent,Remote,Day,Filled,No Immediate Vacancy,Medium,EMP111,Sadia Bashir
+POS-112,Sales Executive,Sales Executive,Sales,Junior,POS-022,Account Manager,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,Low,EMP112,Sara Javed
+POS-113,IT Support Engineer,Junior IT Engineer,IT,Junior,POS-024,Systems Administrator,Contract,Hybrid,Rotational,Filled,No Immediate Vacancy,Low,EMP113,Shahbaz Gill
+POS-114,HR Generalist,HR Specialist,HR,Mid,POS-081,Senior HR Specialist,Permanent,Hybrid,Rotational,Filled,Prepare Replacement Pipeline,Medium,EMP114,Hamza Hussain
+POS-115,Software Engineer II,Software Engineer,Engineering,Mid,POS-058,Senior Software Engineer,Permanent,Hybrid,Day,Filled,Prepare Replacement Pipeline,Medium,EMP115,Hafsa Abbasi
+POS-116,Software Engineer I,Junior Software Engineer,Engineering,Junior,POS-133,Software Engineer II,Permanent,Hybrid,Night,Filled,No Immediate Vacancy,Low,EMP116,Ali Abbasi
+POS-117,Software Engineer I,Junior Software Engineer,Engineering,Junior,POS-133,Software Engineer II,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Low,EMP117,Saad Ullah
+POS-118,Senior Support Executive,Senior Support Executive,Customer Support,Mid,POS-072,Support Team Lead,Permanent,Onsite,Rotational,Filled,No Immediate Vacancy,Medium,EMP118,Zoya Ali
+POS-119,Support Team Lead,Team Lead - Customer Support,Customer Support,Senior,POS-068,Customer Support Manager,Permanent,Hybrid,Night,Filled,Prepare Replacement Pipeline,Medium,EMP119,Ayesha Nawaz
+POS-120,Operations Analyst,Operations Specialist,Operations,Mid,POS-141,Operations Manager,Permanent,Remote,Night,Filled,No Immediate Vacancy,Medium,EMP120,Ahmad Aziz
+POS-121,Operations Officer,Operations Officer,Operations,Junior,POS-120,Operations Analyst,Permanent,Onsite,Day,Filled,Prepare Replacement Pipeline,Medium,EMP121,Mehwish Tariq
+POS-122,Operations Officer,Operations Officer,Operations,Junior,POS-120,Operations Analyst,Permanent,Hybrid,Day,Filled,Prepare Replacement Pipeline,Medium,EMP122,Hafsa Ullah
+POS-123,Senior Financial Analyst,Senior Financial Analyst,Finance,Senior,POS-008,Finance Manager,Permanent,Onsite,Day,Filled,Prepare Replacement Pipeline,High,EMP123,Sehrish Ullah
+POS-124,Account Manager,Senior Sales Executive,Sales,Mid,POS-093,Senior Account Manager,Permanent,Hybrid,Day,Filled,Prepare Replacement Pipeline,Medium,EMP124,Fahad Javed
+POS-125,Senior Account Manager,Senior Account Manager,Sales,Senior,POS-011,Sales Manager,Permanent,Onsite,Day,Filled,No Immediate Vacancy,High,EMP125,Fatima Zafar
+POS-126,Support Team Lead,Team Lead - Customer Support,Customer Support,Senior,POS-068,Customer Support Manager,Permanent,Hybrid,Rotational,Filled,Prepare Replacement Pipeline,Medium,EMP126,Laiba Sheikh
+POS-127,HR Generalist,HR Specialist,HR,Mid,POS-081,Senior HR Specialist,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,Medium,EMP127,Khurram Yousaf
+POS-128,Customer Support Manager,Customer Support Manager,Customer Support,Lead/Manager,EXEC-CS-HEAD,Head of Customer Support,Permanent,Hybrid,Rotational,Filled,No Immediate Vacancy,High,EMP128,Zoya Farooq
+POS-129,Engineering Lead,Engineering Manager,Engineering,Lead/Manager,EXEC-ENG-HEAD,Head of Engineering,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,High,EMP129,Danish Dar
+POS-130,Senior HR Specialist,Senior HR Specialist,HR,Senior,POS-001,HR Manager,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Medium,EMP130,Waqas Siddiqui
+POS-131,Systems Administrator,IT Engineer,IT,Mid,POS-051,Senior Systems Engineer,Permanent,Remote,Day,Filled,Prepare Replacement Pipeline,Medium,EMP131,Ahmad Yousaf
+POS-132,IT Support Engineer,Junior IT Engineer,IT,Junior,POS-024,Systems Administrator,Permanent,Hybrid,Rotational,Filled,No Immediate Vacancy,Low,EMP132,Arham Qureshi
+POS-133,Software Engineer II,Software Engineer,Engineering,Mid,POS-058,Senior Software Engineer,Permanent,Hybrid,Day,Filled,Prepare Replacement Pipeline,Medium,EMP133,Usman Raza
+POS-134,Systems Administrator,IT Engineer,IT,Mid,POS-051,Senior Systems Engineer,Permanent,Onsite,Day,Filled,Prepare Replacement Pipeline,Medium,EMP134,Talha Awan
+POS-135,Senior Support Executive,Senior Support Executive,Customer Support,Mid,POS-072,Support Team Lead,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,Medium,EMP135,Eman Butt
+POS-136,HR Generalist,HR Specialist,HR,Mid,POS-081,Senior HR Specialist,Permanent,Remote,Night,Filled,Prepare Replacement Pipeline,Medium,EMP136,Fatima Saleem
+POS-137,Customer Support Representative,Support Executive,Customer Support,Junior,POS-027,Senior Support Executive,Permanent,Hybrid,Rotational,Filled,Prepare Replacement Pipeline,Medium,EMP137,Areeba Farooq
+POS-138,Software Engineer II,Software Engineer,Engineering,Mid,POS-058,Senior Software Engineer,Permanent,Hybrid,Day,Filled,Prepare Replacement Pipeline,Medium,EMP138,Amir Saleem
+POS-139,Operations Officer,Operations Officer,Operations,Junior,POS-120,Operations Analyst,Contract,Onsite,Day,Filled,Prepare Replacement Pipeline,Medium,EMP139,Iqra Saeed
+POS-140,Senior Financial Analyst,Senior Financial Analyst,Finance,Senior,POS-008,Finance Manager,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,High,EMP140,Noman Rehman
+POS-141,Operations Manager,Operations Manager,Operations,Lead/Manager,EXEC-OPS-HEAD,Head of Operations,Permanent,Onsite,Day,Filled,Prepare Replacement Pipeline,High,EMP141,Asad Zafar
+POS-142,Engineering Lead,Engineering Manager,Engineering,Lead/Manager,EXEC-ENG-HEAD,Head of Engineering,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,High,EMP142,Fahad Farooq
+POS-143,Financial Analyst,Financial Analyst,Finance,Mid,POS-030,Senior Financial Analyst,Permanent,Onsite,Rotational,Filled,No Immediate Vacancy,Medium,EMP143,Hamza Awan
+POS-144,Customer Support Manager,Customer Support Manager,Customer Support,Lead/Manager,EXEC-CS-HEAD,Head of Customer Support,Permanent,Hybrid,Day,Filled,Prepare Replacement Pipeline,High,EMP144,Imran Ullah
+POS-145,Account Manager,Senior Sales Executive,Sales,Mid,POS-093,Senior Account Manager,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Medium,EMP145,Ahsan Anwar
+POS-146,Financial Analyst,Financial Analyst,Finance,Mid,POS-030,Senior Financial Analyst,Permanent,Onsite,Rotational,Filled,No Immediate Vacancy,Medium,EMP146,Talha Khan
+POS-147,Customer Support Manager,Customer Support Manager,Customer Support,Lead/Manager,EXEC-CS-HEAD,Head of Customer Support,Permanent,Onsite,Rotational,Filled,Prepare Replacement Pipeline,High,EMP147,Hassan Javed
+POS-148,Sales Executive,Sales Executive,Sales,Junior,POS-022,Account Manager,Permanent,Remote,Day,Filled,Prepare Replacement Pipeline,Low,EMP148,Sadia Malik
+POS-149,Operations Analyst,Operations Specialist,Operations,Mid,POS-141,Operations Manager,Permanent,Onsite,Night,Filled,Prepare Replacement Pipeline,Medium,EMP149,Muneeb Hameed
+POS-150,Customer Support Representative,Support Executive,Customer Support,Junior,POS-027,Senior Support Executive,Permanent,Remote,Rotational,Filled,No Immediate Vacancy,Medium,EMP150,Sana Nawaz
+POS-151,Software Engineer I,Junior Software Engineer,Engineering,Junior,POS-133,Software Engineer II,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,Low,EMP151,Farhan Rehman
+POS-152,Senior Systems Engineer,Senior IT Engineer,IT,Senior,POS-169,IT Operations Manager,Permanent,Onsite,Day,Filled,Prepare Replacement Pipeline,High,EMP152,Mahnoor Tariq
+POS-153,Software Engineer II,Software Engineer,Engineering,Mid,POS-058,Senior Software Engineer,Contract,Onsite,Rotational,Filled,Prepare Replacement Pipeline,Medium,EMP153,Kashif Abbasi
+POS-154,Software Engineer I,Junior Software Engineer,Engineering,Junior,POS-133,Software Engineer II,Permanent,Onsite,Day,Filled,Prepare Replacement Pipeline,Low,EMP154,Hina Abbasi
+POS-155,Senior Support Executive,Senior Support Executive,Customer Support,Mid,POS-072,Support Team Lead,Permanent,Hybrid,Rotational,Filled,Prepare Replacement Pipeline,Medium,EMP155,Noman Malik
+POS-156,Software Engineer II,Software Engineer,Engineering,Mid,POS-058,Senior Software Engineer,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Medium,EMP156,Asad Malik
+POS-157,Operations Officer,Operations Officer,Operations,Junior,POS-120,Operations Analyst,Permanent,Onsite,Rotational,Filled,No Immediate Vacancy,Medium,EMP157,Saba Qureshi
+POS-158,Operations Officer,Operations Officer,Operations,Junior,POS-120,Operations Analyst,Permanent,Hybrid,Rotational,Filled,Prepare Replacement Pipeline,Medium,EMP158,Imran Zafar
+POS-159,Senior Software Engineer,Senior Software Engineer,Engineering,Senior,POS-129,Engineering Lead,Permanent,Onsite,Rotational,Filled,Prepare Replacement Pipeline,High,EMP159,Raza Ahmad
+POS-160,Senior Financial Analyst,Senior Financial Analyst,Finance,Senior,POS-008,Finance Manager,Permanent,Onsite,Night,Filled,No Immediate Vacancy,High,EMP160,Rabia Ullah
+POS-161,Financial Analyst,Financial Analyst,Finance,Mid,POS-030,Senior Financial Analyst,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Medium,EMP161,Iqra Yousaf
+POS-162,Customer Support Representative,Support Executive,Customer Support,Junior,POS-027,Senior Support Executive,Permanent,Onsite,Rotational,Filled,Prepare Replacement Pipeline,Medium,EMP162,Bilal Shah
+POS-163,Software Engineer II,Software Engineer,Engineering,Mid,POS-058,Senior Software Engineer,Permanent,Hybrid,Day,Filled,Prepare Replacement Pipeline,Medium,EMP163,Sidra Sheikh
+POS-164,Sales Executive,Sales Executive,Sales,Junior,POS-022,Account Manager,Permanent,Onsite,Day,Filled,Prepare Replacement Pipeline,Low,EMP164,Zoya Saleem
+POS-165,Sales Executive,Sales Executive,Sales,Junior,POS-022,Account Manager,Contract,Onsite,Day,Filled,Prepare Replacement Pipeline,Low,EMP165,Waqas Butt
+POS-166,Sales Manager,Sales Manager,Sales,Lead/Manager,EXEC-SAL-HEAD,Head of Sales,Contract,Onsite,Day,Filled,Prepare Replacement Pipeline,High,EMP166,Arslan Siddiqui
+POS-167,Account Manager,Senior Sales Executive,Sales,Mid,POS-093,Senior Account Manager,Permanent,Onsite,Rotational,Filled,No Immediate Vacancy,Medium,EMP167,Bilal Raza
+POS-168,Support Team Lead,Team Lead - Customer Support,Customer Support,Senior,POS-068,Customer Support Manager,Permanent,Hybrid,Day,Filled,Prepare Replacement Pipeline,Medium,EMP168,Akbar Saleem
+POS-169,IT Operations Manager,IT Manager,IT,Lead/Manager,EXEC-IT-HEAD,Head of IT,Permanent,Onsite,Day,Filled,No Immediate Vacancy,High,EMP169,Iqra Qureshi
+POS-170,Senior Support Executive,Senior Support Executive,Customer Support,Mid,POS-072,Support Team Lead,Permanent,Remote,Day,Filled,No Immediate Vacancy,Medium,EMP170,Hina Ahmad
+POS-171,IT Operations Manager,IT Manager,IT,Lead/Manager,EXEC-IT-HEAD,Head of IT,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,High,EMP171,Usman Ullah
+POS-172,Operations Analyst,Operations Specialist,Operations,Mid,POS-141,Operations Manager,Permanent,Hybrid,Rotational,Filled,Prepare Replacement Pipeline,Medium,EMP172,Zoya Hassan
+POS-173,Senior Financial Analyst,Senior Financial Analyst,Finance,Senior,POS-008,Finance Manager,Permanent,Onsite,Rotational,Filled,Prepare Replacement Pipeline,High,EMP173,Sidra Abbasi
+POS-174,Account Manager,Senior Sales Executive,Sales,Mid,POS-093,Senior Account Manager,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Medium,EMP174,Hassan Aslam
+POS-175,Operations Analyst,Operations Specialist,Operations,Mid,POS-141,Operations Manager,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Medium,EMP175,Hassan Arif
+POS-176,Senior Account Manager,Senior Account Manager,Sales,Senior,POS-011,Sales Manager,Permanent,Onsite,Day,Filled,No Immediate Vacancy,High,EMP176,Ahsan Aziz
+POS-177,HR Generalist,HR Specialist,HR,Mid,POS-081,Senior HR Specialist,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Medium,EMP177,Danish Anwar
+POS-178,Sales Executive,Sales Executive,Sales,Junior,POS-022,Account Manager,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Low,EMP178,Fatima Rehman
+POS-179,Operations Officer,Operations Officer,Operations,Junior,POS-120,Operations Analyst,Permanent,Onsite,Rotational,Filled,No Immediate Vacancy,Medium,EMP179,Muneeb Javed
+POS-180,Customer Support Representative,Support Executive,Customer Support,Junior,POS-027,Senior Support Executive,Permanent,Onsite,Night,Filled,Prepare Replacement Pipeline,Medium,EMP180,Arham Hussain
+POS-181,Operations Officer,Operations Officer,Operations,Junior,POS-120,Operations Analyst,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Medium,EMP181,Saad Yousaf
+POS-182,Account Manager,Senior Sales Executive,Sales,Mid,POS-093,Senior Account Manager,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Medium,EMP182,Waqas Ahmad
+POS-183,IT Support Engineer,Junior IT Engineer,IT,Junior,POS-024,Systems Administrator,Contract,Onsite,Day,Filled,Prepare Replacement Pipeline,Low,EMP183,Zain Saleem
+POS-184,Operations Officer,Operations Officer,Operations,Junior,POS-120,Operations Analyst,Contract,Hybrid,Day,Filled,No Immediate Vacancy,Medium,EMP184,Iqra Hassan
+POS-185,Senior Financial Analyst,Senior Financial Analyst,Finance,Senior,POS-008,Finance Manager,Permanent,Hybrid,Day,Filled,Prepare Replacement Pipeline,High,EMP185,Salman Hameed
+POS-186,Systems Administrator,IT Engineer,IT,Mid,POS-051,Senior Systems Engineer,Permanent,Onsite,Day,Filled,No Immediate Vacancy,Medium,EMP186,Zara Masood
+POS-187,Operations Officer,Operations Officer,Operations,Junior,POS-120,Operations Analyst,Permanent,Remote,Rotational,Filled,No Immediate Vacancy,Medium,EMP187,Nida Mahmood
+POS-188,Senior Systems Engineer,Senior IT Engineer,IT,Senior,POS-169,IT Operations Manager,Permanent,Hybrid,Day,Filled,No Immediate Vacancy,High,EMP188,Areeba Ahmad
+POS-189,Engineering Lead,Engineering Manager,Engineering,Lead/Manager,EXEC-ENG-HEAD,Head of Engineering,Permanent,Onsite,Day,Filled,Prepare Replacement Pipeline,High,EMP189,Omer Masood
+POS-190,HR Officer,HR Officer,HR,Junior,POS-084,HR Generalist,Permanent,Hybrid,Day,Filled,Prepare Replacement Pipeline,Low,EMP190,Noor Saeed
+POS-191,Operations Analyst,Operations Specialist,Operations,Mid,POS-141,Operations Manager,Contract,Onsite,Day,Filled,Prepare Replacement Pipeline,Medium,EMP191,Danish Yousaf
+POS-192,Sales Executive,Sales Executive,Sales,Junior,POS-022,Account Manager,Permanent,Remote,Day,Filled,No Immediate Vacancy,Low,EMP192,Kashif Hussain
+POS-193,Operations Officer,Operations Officer,Operations,Junior,POS-120,Operations Analyst,Permanent,Remote,Rotational,Filled,No Immediate Vacancy,Medium,EMP193,Zain Qureshi
+POS-194,Senior Support Executive,Senior Support Executive,Customer Support,Mid,POS-072,Support Team Lead,Permanent,Hybrid,Day,Filled,Prepare Replacement Pipeline,Medium,EMP194,Shahid Ahmad
+POS-195,Engineering Lead,Engineering Manager,Engineering,Lead/Manager,EXEC-ENG-HEAD,Head of Engineering,Permanent,Onsite,Rotational,Filled,No Immediate Vacancy,High,EMP195,Mohsin Khan
+POS-196,Software Engineer II,Software Engineer,Engineering,Mid,POS-058,Senior Software Engineer,Permanent,Onsite,Rotational,Filled,Prepare Replacement Pipeline,Medium,EMP196,Mohsin Abbasi
+POS-197,HR Manager,HR Manager,HR,Lead/Manager,EXEC-HR-HEAD,Head of HR,Permanent,Hybrid,Rotational,Filled,No Immediate Vacancy,High,EMP197,Zeeshan Qureshi
+POS-198,Operations Officer,Operations Officer,Operations,Junior,POS-120,Operations Analyst,Contract,Onsite,Day,Filled,Prepare Replacement Pipeline,Medium,EMP198,Ali Tariq
+POS-199,Customer Support Representative,Support Executive,Customer Support,Junior,POS-027,Senior Support Executive,Permanent,Hybrid,Day,Filled,Prepare Replacement Pipeline,Medium,EMP199,Zara Tariq
+POS-200,Senior Support Executive,Senior Support Executive,Customer Support,Mid,POS-072,Support Team Lead,Permanent,Hybrid,Day,Filled,Prepare Replacement Pipeline,Medium,EMP200,Ahmad Abbasi
+EXEC-HR-HEAD,Head of HR,Head of HR,HR,,,,,,,,,,,
+EXEC-FIN-HEAD,Head of Finance,Head of Finance,Finance,,,,,,,,,,,
+EXEC-CS-HEAD,Head of Customer Support,Head of Customer Support,Customer Support,,,,,,,,,,,
+EXEC-SAL-HEAD,Head of Sales,Head of Sales,Sales,,,,,,,,,,,
+EXEC-ENG-HEAD,Head of Engineering,Head of Engineering,Engineering,,,,,,,,,,,
+EXEC-OPS-HEAD,Head of Operations,Head of Operations,Operations,,,,,,,,,,,
+EXEC-IT-HEAD,Head of IT,Head of IT,IT,,,,,,,,,,,
