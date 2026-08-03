@@ -68,6 +68,9 @@ from replacement_tool import (  # noqa: E402
     create_replacement_recommendation_tool,
 )
 from settings import get_llm_settings  # noqa: E402
+from visualizations.attrition.router import (  # noqa: E402
+    create_attrition_dashboard_router,
+)
 
 
 DATA_PATH = paths.data_dir()
@@ -165,6 +168,21 @@ app.add_middleware(
     allow_credentials=False,
     allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["*"],
+)
+
+
+# ============================================================
+# ATTRITION DASHBOARD PIPELINE
+# ============================================================
+# The dashboard reuses the same CSV folder and replacement graph already
+# loaded by this application. It does not call the HR-agent LLM.
+
+app.include_router(
+    create_attrition_dashboard_router(
+        data_dir=DATA_PATH,
+        model_path=MODEL_PATH,
+        replacement_tool=replacement_recommendation_tool,
+    )
 )
 
 
