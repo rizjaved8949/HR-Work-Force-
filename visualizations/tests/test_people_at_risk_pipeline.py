@@ -38,6 +38,15 @@ assert (
     == summary["total_employees"]
 )
 
+department_risk = service.get_department_risk()
+assert department_risk["status"] == "success"
+assert department_risk["departments"]
+assert (
+    sum(item["people_at_risk"] for item in department_risk["departments"])
+    == summary["people_at_risk"]
+)
+assert department_risk["highest_risk_department"] == department_risk["departments"][0]
+
 risk_list = service.get_people_at_risk(limit=5)
 assert risk_list["total_matching"] == summary["people_at_risk"]
 assert len(risk_list["employees"]) == 5
@@ -67,5 +76,10 @@ print(f"Model path: {model_path}")
 print(f"Total employees: {summary['total_employees']}")
 print(f"People at risk: {summary['people_at_risk']}")
 print(f"Risk rate: {summary['attrition_risk_rate_percent']}%")
+print(
+    "Highest-risk department by count: "
+    f"{department_risk['highest_risk_department']['department']} "
+    f"({department_risk['highest_risk_department']['people_at_risk']} people)"
+)
 print(f"Detail employee: {first_employee['employee_id']}")
 print(f"Replacement candidates: {len(detail['recommended_replacements'])}")

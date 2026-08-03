@@ -555,6 +555,84 @@ class PeopleAtRiskService:
             "people_at_risk_endpoint": (
                 "/api/v1/dashboard/attrition/people-at-risk"
             ),
+            "department_risk_endpoint": (
+                "/api/v1/dashboard/attrition/department-risk"
+            ),
+        }
+
+    def get_department_risk(self) -> dict[str, Any]:
+        """Return attrition-risk counts grouped by department.
+
+        The chart uses ``people_at_risk`` as the bar value. The response also
+        includes each department's workforce total and risk percentage for
+        tooltips or supporting labels. All values come from the same cached
+        employee-level prediction table used by the People at Risk card.
+        """
+
+        self._ensure_fresh()
+
+        department_data = self._risk_table.copy()
+        department_data["Department"] = (
+            department_data["Department"]
+            .fillna("Not available")
+            .astype(str)
+            .str.strip()
+            .replace("", "Not available")
+        )
+
+        grouped = (
+            department_data
+            .groupby("Department", dropna=False)
+            .agg(
+                total_employees=("Employee_ID", "count"),
+                people_at_risk=("at_risk", "sum"),
+            )
+            .reset_index()
+        )
+
+        grouped["people_at_risk"] = grouped["people_at_risk"].astype(int)
+        grouped["total_employees"] = grouped["total_employees"].astype(int)
+        grouped["risk_rate_percent"] = np.where(
+            grouped["total_employees"] > 0,
+            grouped["people_at_risk"] / grouped["total_employees"] * 100,
+            0.0,
+        )
+        grouped["risk_rate_percent"] = grouped[
+            "risk_rate_percent"
+        ].round(2)
+
+        grouped = grouped.sort_values(
+            ["people_at_risk", "risk_rate_percent", "Department"],
+            ascending=[False, False, True],
+        ).reset_index(drop=True)
+
+        departments: list[dict[str, Any]] = []
+        for rank, row in grouped.iterrows():
+            department = str(row["Department"])
+            departments.append({
+                "rank": rank + 1,
+                "department": department,
+                "people_at_risk": int(row["people_at_risk"]),
+                "total_employees": int(row["total_employees"]),
+                "risk_rate_percent": float(row["risk_rate_percent"]),
+                "people_at_risk_endpoint": (
+                    "/api/v1/dashboard/attrition/people-at-risk"
+                    f"?department={department}"
+                ),
+            })
+
+        highest_risk_department = departments[0] if departments else None
+
+        return {
+            "status": "success",
+            "visual": "attrition_risk_by_department",
+            "metric": "people_at_risk",
+            "total_departments": len(departments),
+            "total_people_at_risk": int(
+                self._risk_table["at_risk"].sum()
+            ),
+            "highest_risk_department": highest_risk_department,
+            "departments": departments,
         }
 
     def get_people_at_risk(

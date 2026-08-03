@@ -33,6 +33,12 @@ def create_attrition_dashboard_router(
 
         return service.get_summary()
 
+    @router.get("/department-risk")
+    def get_department_risk():
+        """Return ranked attrition-risk counts for every department."""
+
+        return service.get_department_risk()
+
     @router.get("/people-at-risk")
     def get_people_at_risk(
         offset: int = Query(default=0, ge=0),
