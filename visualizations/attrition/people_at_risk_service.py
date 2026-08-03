@@ -8,6 +8,7 @@ files resolved through ``backend/paths.py``.
 
 from __future__ import annotations
 
+from collections import Counter
 import os
 from pathlib import Path
 from threading import RLock
@@ -558,6 +559,9 @@ class PeopleAtRiskService:
             "department_risk_endpoint": (
                 "/api/v1/dashboard/attrition/department-risk"
             ),
+            "top_risk_drivers_endpoint": (
+                "/api/v1/dashboard/attrition/top-risk-drivers"
+            ),
         }
 
     def get_department_risk(self) -> dict[str, Any]:
@@ -633,6 +637,103 @@ class PeopleAtRiskService:
             ),
             "highest_risk_department": highest_risk_department,
             "departments": departments,
+        }
+
+    def get_top_risk_drivers(self, limit: int = 3) -> dict[str, Any]:
+        """Aggregate the model's top positive risk drivers for at-risk staff.
+
+        Each at-risk employee contributes up to three SHAP-derived feature
+        names from the same batch prediction table used by the other dashboard
+        endpoints. The percentages therefore represent the share of model
+        risk-driver mentions, not confirmed resignation or exit-interview
+        reasons.
+        """
+
+        self._ensure_fresh()
+
+        if limit < 1:
+            raise ValueError("limit must be at least 1")
+
+        at_risk = self._risk_table[self._risk_table["at_risk"]]
+        mention_counter: Counter[str] = Counter()
+
+        for reason_keys in at_risk["top_reason_keys"]:
+            for feature in (reason_keys or []):
+                if feature:
+                    mention_counter[str(feature)] += 1
+
+        total_mentions = int(sum(mention_counter.values()))
+        people_at_risk = int(len(at_risk))
+
+        ranked = sorted(
+            mention_counter.items(),
+            key=lambda item: (
+                -item[1],
+                FEATURE_LABELS.get(item[0], item[0]).casefold(),
+            ),
+        )
+
+        drivers: list[dict[str, Any]] = []
+        for rank, (feature, mention_count) in enumerate(
+            ranked[:limit],
+            start=1,
+        ):
+            drivers.append({
+                "rank": rank,
+                "feature_key": feature,
+                "label": FEATURE_LABELS.get(feature, feature),
+                "mention_count": int(mention_count),
+                "share_percent": round(
+                    mention_count / total_mentions * 100
+                    if total_mentions
+                    else 0.0,
+                    2,
+                ),
+                "employee_share_percent": round(
+                    mention_count / people_at_risk * 100
+                    if people_at_risk
+                    else 0.0,
+                    2,
+                ),
+            })
+
+        top_mentions = sum(item["mention_count"] for item in drivers)
+        other_mentions = max(total_mentions - top_mentions, 0)
+
+        chart_segments = [
+            {
+                "label": item["label"],
+                "value": item["mention_count"],
+                "share_percent": item["share_percent"],
+            }
+            for item in drivers
+        ]
+        if other_mentions:
+            chart_segments.append({
+                "label": "Other model risk drivers",
+                "value": other_mentions,
+                "share_percent": round(
+                    other_mentions / total_mentions * 100,
+                    2,
+                ),
+            })
+
+        return {
+            "status": "success",
+            "visual": "top_attrition_risk_drivers",
+            "title": "Top Attrition Risk Drivers",
+            "basis": "model_top_features_for_at_risk_employees",
+            "interpretation_note": (
+                "Percentages are shares of model risk-driver mentions, "
+                "not confirmed exit reasons."
+            ),
+            "people_at_risk": people_at_risk,
+            "reasons_per_employee_maximum": 3,
+            "total_reason_mentions": total_mentions,
+            "top_driver": drivers[0] if drivers else None,
+            "drivers": drivers,
+            "other_reason_mentions": other_mentions,
+            "chart_segments": chart_segments,
         }
 
     def get_people_at_risk(

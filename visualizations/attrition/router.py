@@ -39,6 +39,14 @@ def create_attrition_dashboard_router(
 
         return service.get_department_risk()
 
+    @router.get("/top-risk-drivers")
+    def get_top_risk_drivers(
+        limit: int = Query(default=3, ge=1, le=10),
+    ):
+        """Return the most common model-derived drivers for at-risk staff."""
+
+        return service.get_top_risk_drivers(limit=limit)
+
     @router.get("/people-at-risk")
     def get_people_at_risk(
         offset: int = Query(default=0, ge=0),

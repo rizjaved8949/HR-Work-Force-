@@ -47,6 +47,17 @@ assert (
 )
 assert department_risk["highest_risk_department"] == department_risk["departments"][0]
 
+top_drivers = service.get_top_risk_drivers(limit=3)
+assert top_drivers["status"] == "success"
+assert top_drivers["people_at_risk"] == summary["people_at_risk"]
+assert 1 <= len(top_drivers["drivers"]) <= 3
+assert top_drivers["top_driver"] == top_drivers["drivers"][0]
+assert top_drivers["total_reason_mentions"] > 0
+assert (
+    sum(segment["value"] for segment in top_drivers["chart_segments"])
+    == top_drivers["total_reason_mentions"]
+)
+
 risk_list = service.get_people_at_risk(limit=5)
 assert risk_list["total_matching"] == summary["people_at_risk"]
 assert len(risk_list["employees"]) == 5
@@ -80,6 +91,12 @@ print(
     "Highest-risk department by count: "
     f"{department_risk['highest_risk_department']['department']} "
     f"({department_risk['highest_risk_department']['people_at_risk']} people)"
+)
+print(
+    "Top model risk driver: "
+    f"{top_drivers['top_driver']['label']} "
+    f"({top_drivers['top_driver']['mention_count']} mentions, "
+    f"{top_drivers['top_driver']['share_percent']}%)"
 )
 print(f"Detail employee: {first_employee['employee_id']}")
 print(f"Replacement candidates: {len(detail['recommended_replacements'])}")
