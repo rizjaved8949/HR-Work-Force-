@@ -33,6 +33,12 @@ def create_attrition_dashboard_router(
 
         return service.get_summary()
 
+    @router.get("/attrition-rate")
+    def get_attrition_rate_overview():
+        """Return Attrition Rate card values and donut-chart segments."""
+
+        return service.get_attrition_rate_overview()
+
     @router.get("/department-risk")
     def get_department_risk():
         """Return ranked attrition-risk counts for every department."""

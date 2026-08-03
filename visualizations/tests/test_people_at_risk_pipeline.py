@@ -38,6 +38,20 @@ assert (
     == summary["total_employees"]
 )
 
+attrition_rate = service.get_attrition_rate_overview()
+assert attrition_rate["status"] == "success"
+assert attrition_rate["total_employees"] == summary["total_employees"]
+assert attrition_rate["people_at_risk"] == summary["people_at_risk"]
+assert attrition_rate["people_not_at_risk"] == summary["people_not_at_risk"]
+assert (
+    sum(segment["employee_count"] for segment in attrition_rate["chart"]["segments"])
+    == summary["total_employees"]
+)
+assert round(
+    sum(segment["percentage"] for segment in attrition_rate["chart"]["segments"]),
+    2,
+) == 100.0
+
 department_risk = service.get_department_risk()
 assert department_risk["status"] == "success"
 assert department_risk["departments"]
@@ -87,6 +101,12 @@ print(f"Model path: {model_path}")
 print(f"Total employees: {summary['total_employees']}")
 print(f"People at risk: {summary['people_at_risk']}")
 print(f"Risk rate: {summary['attrition_risk_rate_percent']}%")
+print(
+    "Attrition Rate card: "
+    f"{attrition_rate['attrition_rate_percent']}% "
+    f"({attrition_rate['people_at_risk']} of "
+    f"{attrition_rate['total_employees']} employees)"
+)
 print(
     "Highest-risk department by count: "
     f"{department_risk['highest_risk_department']['department']} "

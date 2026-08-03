@@ -564,6 +564,73 @@ class PeopleAtRiskService:
             ),
         }
 
+    def get_attrition_rate_overview(self) -> dict[str, Any]:
+        """Return the Attrition Rate card and donut-chart data.
+
+        This endpoint reuses the same cached batch predictions as the People at
+        Risk card. It does not rerun a separate model or calculate values in
+        the frontend.
+        """
+
+        self._ensure_fresh()
+
+        total = int(len(self._risk_table))
+        people_at_risk = int(self._risk_table["at_risk"].sum())
+        people_not_at_risk = total - people_at_risk
+
+        at_risk_percent = round(
+            (people_at_risk / total * 100) if total else 0.0,
+            2,
+        )
+        not_at_risk_percent = round(100.0 - at_risk_percent, 2) if total else 0.0
+
+        return {
+            "status": "success",
+            "visual": "attrition_rate_overview",
+            "title": "Predicted Attrition Rate",
+            "description": (
+                "Current workforce distribution based on the attrition "
+                "prediction model."
+            ),
+            "prediction_window": "next_6_months",
+            "risk_threshold": self.risk_threshold,
+            "total_employees": total,
+            "attrition_rate_percent": at_risk_percent,
+            "people_at_risk": people_at_risk,
+            "people_not_at_risk": people_not_at_risk,
+            "card": {
+                "label": "Predicted Attrition Rate",
+                "value_percent": at_risk_percent,
+                "supporting_text": (
+                    f"{people_at_risk} of {total} employees are currently "
+                    "flagged at risk"
+                ),
+            },
+            "chart": {
+                "type": "donut",
+                "name_key": "risk_status",
+                "value_key": "employee_count",
+                "segments": [
+                    {
+                        "risk_status": "At Risk",
+                        "employee_count": people_at_risk,
+                        "percentage": at_risk_percent,
+                    },
+                    {
+                        "risk_status": "Not At Risk",
+                        "employee_count": people_not_at_risk,
+                        "percentage": not_at_risk_percent,
+                    },
+                ],
+            },
+            "interpretation_note": (
+                "This is a model prediction, not a confirmed resignation."
+            ),
+            "people_at_risk_endpoint": (
+                "/api/v1/dashboard/attrition/people-at-risk"
+            ),
+        }
+
     def get_department_risk(self) -> dict[str, Any]:
         """Return attrition-risk counts grouped by department.
 
