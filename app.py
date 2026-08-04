@@ -68,6 +68,10 @@ from replacement_tool import (  # noqa: E402
     create_replacement_recommendation_tool,
 )
 from settings import get_llm_settings  # noqa: E402
+from auth import (  # noqa: E402
+    auth_router,
+    install_authentication,
+)
 from visualizations.attrition.router import (  # noqa: E402
     create_attrition_dashboard_router,
 )
@@ -140,6 +144,10 @@ app = FastAPI(
 )
 
 
+install_authentication(app)
+app.include_router(auth_router)
+
+
 # ============================================================
 # CROSS-ORIGIN ACCESS
 # ============================================================
@@ -162,9 +170,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=_allowed_origins,
 
-    # Credentials cannot be combined with the "*" wildcard: the browser
-    # rejects that pairing outright. This API authenticates nothing, so
-    # credentials stay off and the wildcard keeps working.
+    # Supabase authentication uses the Authorization: Bearer header,
+    # not browser cookies, so credentials remain disabled.
     allow_credentials=False,
     allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["*"],
