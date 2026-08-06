@@ -24,3 +24,6 @@ httpx
 pydantic>=2.11
 typing-extensions
 pytest
+
+# Supabase authentication
+supabase
