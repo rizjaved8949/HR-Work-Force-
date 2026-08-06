@@ -1,15 +1,13 @@
-"""Supabase client used for authentication."""
-
-from functools import lru_cache
+"""Supabase client factory."""
 
 from supabase import Client, create_client
 
-from backend.auth.config import auth_settings
+from .config import auth_settings
 
 
-@lru_cache(maxsize=1)
 def get_supabase_client() -> Client:
-    """Create and cache the Supabase Python client."""
+    """Create an independent Supabase client for one operation."""
+
     if not auth_settings.enabled:
         raise RuntimeError(
             "Authentication is disabled. "
