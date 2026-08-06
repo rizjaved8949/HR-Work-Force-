@@ -15,9 +15,6 @@ The application exposes:
 - the local successor / replacement LangGraph
 - the multilingual HR reasoning agent (chat)
 """
-
-from __future__ import annotations
-
 import json
 import os
 import sys
@@ -28,15 +25,13 @@ from uuid import uuid4
 
 from dotenv import load_dotenv
 
-
 # ============================================================
 # PATH AND ENVIRONMENT SETUP
 # ============================================================
-
-REPO_ROOT = Path(__file__).resolve().parent
-
 # The backend package lives one level down. It is added to sys.path so its
 # modules can be imported without installing the project as a package.
+
+REPO_ROOT = Path(__file__).resolve().parent
 BACKEND_DIR = REPO_ROOT / "backend"
 
 if not BACKEND_DIR.is_dir():
@@ -48,8 +43,14 @@ if str(BACKEND_DIR) not in sys.path:
     sys.path.insert(0, str(BACKEND_DIR))
 
 # The single project .env, loaded before any backend module reads it.
+# `settings.py` loads the same file at import time, so this must run first
+# for the values here to be the ones that win.
 load_dotenv(REPO_ROOT / ".env")
 
+
+# ============================================================
+# BACKEND IMPORTS — MUST COME AFTER sys.path AND .env SETUP
+# ============================================================
 
 from fastapi import FastAPI, HTTPException  # noqa: E402
 from fastapi.middleware.cors import CORSMiddleware  # noqa: E402
@@ -63,6 +64,9 @@ from attrition_prediction_tool import (  # noqa: E402
 from employee_record_tool import (  # noqa: E402
     create_employee_record_tool,
 )
+from headcount.repository import HeadcountRepository  # noqa: E402
+from headcount.router import create_headcount_router  # noqa: E402
+from headcount.service import HeadcountService  # noqa: E402
 from hr_agent import create_hr_reasoning_agent  # noqa: E402
 from replacement_tool import (  # noqa: E402
     create_replacement_recommendation_tool,
@@ -122,11 +126,16 @@ attrition_prediction_tool = create_attrition_prediction_tool(MODEL_PATH)
 replacement_recommendation_tool = create_replacement_recommendation_tool(
     data_dir=DATA_PATH,
 )
-
+headcount_service = HeadcountService(
+    HeadcountRepository(
+        DATA_PATH
+    )
+)
 hr_agent = create_hr_reasoning_agent(
     employee_search_tool=employee_search_tool,
     attrition_prediction_tool=attrition_prediction_tool,
     data_path=DATA_PATH,
+    headcount_service=headcount_service,
 )
 
 
@@ -190,6 +199,17 @@ app.include_router(
         model_path=MODEL_PATH,
         replacement_tool=replacement_recommendation_tool,
     )
+)
+
+
+# ============================================================
+# DETERMINISTIC HEADCOUNT ANALYTICS
+# ============================================================
+# POST /pipeline/headcount, backed by the same HeadcountService the agent's
+# analyze_headcount tool uses, so HTTP and chat answers cannot diverge.
+
+app.include_router(
+    create_headcount_router(headcount_service)
 )
 
 
@@ -428,7 +448,21 @@ def complete_replacement_pipeline(request: ReplacementRequest):
     if status in {"completed", "no_candidates"}:
         return result
 
-    if status in {"invalid_request", "needs_clarification"}:
+    if status == "needs_clarification":
+        # "No such employee" is a 404, not a 400 asking the user to pick
+        # from an empty candidate list. Only a genuine ambiguity, where
+        # candidates are actually present, is a client-side choice.
+        resolution = result.get("resolution_status")
+
+        # A well-formed ID with no matching record is a missing resource.
+        if resolution == "not_found":
+            raise HTTPException(status_code=404, detail=result)
+
+        # A malformed ID, an ambiguity, or an ID/name mismatch are all
+        # things the caller can correct, so they stay 400.
+        raise HTTPException(status_code=400, detail=result)
+
+    if status == "invalid_request":
         raise HTTPException(status_code=400, detail=result)
 
     raise HTTPException(status_code=500, detail=result)
@@ -537,6 +571,7 @@ def stream_chat_with_hr_agent(request: ChatRequest):
     tool_status_text = {
         "check_employee_attrition": "Checking attrition risk...",
         "recommend_replacement": "Finding successor candidates...",
+        "analyze_headcount": "Analyzing headcount data...",
     }
 
     def generate():

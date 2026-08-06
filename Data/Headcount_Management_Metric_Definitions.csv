@@ -1,0 +1,16 @@
+﻿Metric_Name,Definition,Calculation_Logic,Primary_Source_Table
+Actual Employee Count,Count of active employees with a current primary assignment.,Count current Employee_Assignment_History records where Assignment_Status equals Current.,Employee_Assignment_History.csv
+Approved Position Count,Count of active positions authorized in the approved establishment.,Count Position_Master records where Approved_Position equals Yes and position is effective on the reporting date.,Position_Master.csv
+Budgeted Position Count,Count of positions with an approved people budget.,Count Position_Master records where Budgeted_Position equals Yes and position is effective on the reporting date.,Position_Master.csv
+Vacant Approved Position Count,Approved positions without a current employee assignment.,"Approved Position Count minus filled approved positions, with a minimum of zero.",Position_Master.csv and Employee_Assignment_History.csv
+Funded Vacant Position Count,Budgeted positions without a current employee assignment.,Count positions where Budgeted_Position equals Yes and Position_Status is Vacant or Frozen.,Position_Master.csv
+Headcount Variance,Difference between actual employees and approved positions.,Actual Employee Count minus Approved Position Count.,Monthly_Headcount_Snapshot.csv
+Vacancy Rate Percentage,Share of approved positions currently vacant.,Vacant Approved Position Count divided by Approved Position Count multiplied by one hundred.,Monthly_Headcount_Snapshot.csv
+Budget Utilization Percentage,Share of approved people budget consumed by actual people costs.,Total Actual People Cost divided by Total Approved People Budget multiplied by one hundred.,Department_Budget.csv
+Actual Full Time Equivalent,"Sum of assignment capacity for current employees, allowing part-time and internship schedules.",Sum Assignment_Full_Time_Equivalent for current assignments.,Employee_Assignment_History.csv
+Expected Employee Exits,Probability-weighted expected number of employees who may leave.,Sum attrition probabilities for employees in the selected scope.,Attrition prediction service output
+Workforce Availability Percentage,Employees available for work as a share of actual employees.,Employees Available for Work divided by Actual Employee Count multiplied by one hundred.,Daily_Headcount_Activity.csv
+Vacancy Age in Days,Number of calendar days a position has remained vacant.,Reporting date minus Vacancy Start Date.,Position_Vacancy_History.csv
+Monthly Net Workforce Change,"Net change produced by joiners, leavers, and transfers.",Joiners plus Transfers In minus Leavers minus Transfers Out.,Monthly_Headcount_Snapshot.csv
+Overstaffed Employee Count,Employees above the approved position count.,Maximum of Actual Employee Count minus Approved Position Count and zero.,Monthly_Headcount_Snapshot.csv
+Demand to Approved Headcount Gap,Difference between demand-driven staffing need and approved positions.,Expected Staffing Need minus Approved Position Count.,Workforce_Demand_Drivers.csv

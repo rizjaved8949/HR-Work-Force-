@@ -1,0 +1,183 @@
+"""Headcount Management backend package."""
+
+from headcount.query_planner import (
+    HeadcountPlanningError,
+    create_headcount_query_plan,
+)
+from headcount.budget_service import (
+    BUDGET_METRICS,
+    HeadcountBudgetError,
+    HeadcountBudgetScopeNotFoundError,
+    HeadcountBudgetService,
+)
+from headcount.metric_registry import (
+    DIMENSIONS,
+    METRICS,
+    DimensionDefinition,
+    MetricDefinition,
+    get_dimension_definition,
+    get_metric_definition,
+    list_dimension_names,
+    list_metric_names,
+    resolve_dimension_name,
+    resolve_metric_name,
+)
+from headcount.repository import (
+    HeadcountDataError,
+    HeadcountRepository,
+)
+from headcount.schemas import (
+    AnalyzeHeadcountInput,
+    FilterOperator,
+    HeadcountAnalysisType,
+    HeadcountDateRange,
+    HeadcountFilter,
+    HeadcountMetricResult,
+    HeadcountQueryPlan,
+    HeadcountResultStatus,
+    HeadcountScope,
+    HeadcountToolResult,
+    SortDirection,
+)
+from headcount.service import (
+    HeadcountCalculationError,
+    HeadcountScopeNotFoundError,
+    HeadcountService,
+)
+from headcount.lookup_service import (
+    HeadcountLookupAmbiguousError,
+    HeadcountLookupError,
+    HeadcountLookupInputError,
+    HeadcountLookupNotFoundError,
+    HeadcountLookupService,
+)
+from headcount.workforce_service import (
+    WORKFORCE_COMPOSITION_METRICS,
+    WORKFORCE_COMPOSITION_ONLY_METRICS,
+    WORKFORCE_GROUPING_DIMENSIONS,
+    HeadcountWorkforceError,
+    HeadcountWorkforceNotFoundError,
+    HeadcountWorkforceService,
+    should_use_workforce_service,
+)
+from headcount.combined_service import (
+    CURRENT_COMBINABLE_METRICS,
+    HeadcountCombinedError,
+    HeadcountCombinedService,
+)
+from headcount.history_service import (
+    HISTORY_METRICS,
+    HeadcountHistoryError,
+    HeadcountHistoryScopeNotFoundError,
+    HeadcountHistoryService,
+)
+from headcount.vacancy_service import (
+    VACANCY_DETAIL_ONLY_METRICS,
+    VACANCY_SERVICE_METRICS,
+    HeadcountVacancyError,
+    HeadcountVacancyNotFoundError,
+    HeadcountVacancyService,
+)
+from headcount.daily_service import (
+    DAILY_ACTIVITY_METRICS,
+    DAILY_ONLY_METRICS,
+    HeadcountDailyError,
+    HeadcountDailyScopeNotFoundError,
+    HeadcountDailyService,
+)
+from headcount.governance_service import (
+    GOVERNANCE_METRICS,
+    HeadcountGovernanceError,
+    HeadcountGovernanceNotFoundError,
+    HeadcountGovernanceService,
+)
+from headcount.router import (
+    create_headcount_router,
+)
+from headcount.tool import (
+    ANALYZE_HEADCOUNT_TOOL_DESCRIPTION,
+    ANALYZE_HEADCOUNT_TOOL_NAME,
+    AnalyzeHeadcountToolInput,
+    HeadcountToolAdapterError,
+    analyze_headcount,
+    create_analyze_headcount_callable,
+    get_default_headcount_service,
+    run_analyze_headcount_tool,
+)
+
+__all__ = [
+    "AnalyzeHeadcountInput",
+    "FilterOperator",
+    "HeadcountAnalysisType",
+    "HeadcountDataError",
+    "HeadcountDateRange",
+    "HeadcountFilter",
+    "HeadcountMetricResult",
+    "HeadcountQueryPlan",
+    "HeadcountRepository",
+    "HeadcountResultStatus",
+    "HeadcountScope",
+    "HeadcountToolResult",
+    "SortDirection",
+    "DIMENSIONS",
+    "METRICS",
+    "DimensionDefinition",
+    "MetricDefinition",
+    "get_dimension_definition",
+    "get_metric_definition",
+    "list_dimension_names",
+    "list_metric_names",
+    "resolve_dimension_name",
+    "resolve_metric_name",
+    "HeadcountPlanningError",
+    "create_headcount_query_plan",
+    "HeadcountCalculationError",
+    "HeadcountScopeNotFoundError",
+    "HeadcountService",
+    "HeadcountLookupAmbiguousError",
+     "HeadcountLookupError",
+     "HeadcountLookupInputError",
+     "HeadcountLookupNotFoundError",
+     "HeadcountLookupService",
+     "BUDGET_METRICS",
+    "HeadcountBudgetError",
+    "HeadcountBudgetScopeNotFoundError",
+    "HeadcountBudgetService",
+    "HISTORY_METRICS",
+    "HeadcountHistoryError",
+    "HeadcountHistoryScopeNotFoundError",
+    "HeadcountHistoryService",
+    "DAILY_ACTIVITY_METRICS",
+    "DAILY_ONLY_METRICS",
+    "HeadcountDailyError",
+    "HeadcountDailyScopeNotFoundError",
+    "HeadcountDailyService",
+    "GOVERNANCE_METRICS",
+    "HeadcountGovernanceError",
+    "HeadcountGovernanceNotFoundError",
+    "HeadcountGovernanceService",
+    "VACANCY_DETAIL_ONLY_METRICS",
+    "VACANCY_SERVICE_METRICS",
+    "HeadcountVacancyError",
+    "HeadcountVacancyNotFoundError",
+    "HeadcountVacancyService",
+    "WORKFORCE_COMPOSITION_METRICS",
+    "WORKFORCE_COMPOSITION_ONLY_METRICS",
+    "WORKFORCE_GROUPING_DIMENSIONS",
+    "HeadcountWorkforceError",
+    "HeadcountWorkforceNotFoundError",
+    "HeadcountWorkforceService",
+    "should_use_workforce_service",
+    "CURRENT_COMBINABLE_METRICS",
+    "HeadcountCombinedError",
+    "HeadcountCombinedService",
+    "ANALYZE_HEADCOUNT_TOOL_DESCRIPTION",
+    "ANALYZE_HEADCOUNT_TOOL_NAME",
+    "AnalyzeHeadcountToolInput",
+    "HeadcountToolAdapterError",
+    "analyze_headcount",
+    "create_analyze_headcount_callable",
+    "get_default_headcount_service",
+    "run_analyze_headcount_tool",
+    "create_headcount_router",
+]

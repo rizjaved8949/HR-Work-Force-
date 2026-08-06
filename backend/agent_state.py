@@ -36,6 +36,7 @@ class HRAgentState(AgentState):
     # Expected values may include:
     # - attrition
     # - replacement
+    # - headcount
     # - clarification
     # - general
 
@@ -59,6 +60,14 @@ class HRAgentState(AgentState):
     # after any replacement call. It exists so the agent can tell a
     # genuine tool failure apart from a missing capability.
     replacement_tool_available: NotRequired[bool]
+
+    # ========================================================
+    # HEADCOUNT RESULT
+    # ========================================================
+
+    last_headcount_question: NotRequired[str | None]
+
+    last_headcount_result: NotRequired[dict[str, Any] | None]
 
     # ========================================================
     # EMPLOYEE CLARIFICATION

@@ -1,0 +1,2 @@
+﻿Organization_ID,Organization_Name,Organization_Type,Country,Currency,Fiscal_Year_Start_Month,Standard_Workweek_Hours,Workforce_Data_As_Of_Date,Dataset_Purpose,Synthetic_Data_Indicator
+ORGANIZATION-001,PeopleLens Multi-Industry Demonstration Organization,Diversified Enterprise Demonstration,Pakistan,PKR,January,40,2026-08-01,Reusable synthetic workforce dataset for attrition and headcount management demonstrations,Yes

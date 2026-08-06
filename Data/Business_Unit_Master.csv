@@ -1,0 +1,8 @@
+﻿Business_Unit_ID,Business_Unit_Name,Organization_ID,Business_Unit_Leader_Position_ID,Active_Status,Effective_Start_Date,Effective_End_Date
+BUSINESS-UNIT-001,Commercial Services,ORGANIZATION-001,,Active,2024-01-01,
+BUSINESS-UNIT-002,Corporate Services,ORGANIZATION-001,,Active,2024-01-01,
+BUSINESS-UNIT-003,Enterprise Operations,ORGANIZATION-001,,Active,2024-01-01,
+BUSINESS-UNIT-004,Healthcare Services,ORGANIZATION-001,,Active,2024-01-01,
+BUSINESS-UNIT-005,Industrial Operations,ORGANIZATION-001,,Active,2024-01-01,
+BUSINESS-UNIT-006,Learning Services,ORGANIZATION-001,,Active,2024-01-01,
+BUSINESS-UNIT-007,Technology and Innovation,ORGANIZATION-001,,Active,2024-01-01,

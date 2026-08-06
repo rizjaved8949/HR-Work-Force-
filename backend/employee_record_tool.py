@@ -29,7 +29,12 @@ import zipfile
 from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Iterable, Optional
+from typing import TYPE_CHECKING, Any, Iterable, Optional, cast
+
+if TYPE_CHECKING:
+    # Import-only for typing. The runtime path below tolerates langchain
+    # being absent, so this must not become a hard dependency.
+    from langchain_core.tools import BaseTool
 
 import pandas as pd
 from pydantic import BaseModel, Field
@@ -842,7 +847,7 @@ class EmployeeRecordRepository:
 # ---------------------------------------------------------------------------
 
 
-def create_employee_record_tool(data_path: str | Path):
+def create_employee_record_tool(data_path: str | Path) -> "BaseTool":
     """Create a LangChain tool bound to a folder, CSV, or ZIP data source."""
 
     repository = EmployeeRecordRepository(data_path)
@@ -876,7 +881,10 @@ def create_employee_record_tool(data_path: str | Path):
             office=office,
         )
 
-    return get_employee_record
+    # `tool` is resolved through the try/except above, so a type checker
+    # binds it to the no-langchain fallback and cannot see that the
+    # decorator returns a BaseTool.
+    return cast("BaseTool", get_employee_record)
 
 
 EMPLOYEE_RECORD_TOOL_INSTRUCTIONS = """

@@ -6,7 +6,7 @@ from typing import Any
 import numpy as np
 import pandas as pd
 from catboost import CatBoostClassifier, Pool
-from langchain_core.tools import tool
+from langchain_core.tools import BaseTool, tool
 from pydantic import BaseModel, Field
 
 EXPECTED_FEATURES = [
@@ -229,7 +229,7 @@ class AttritionPredictor:
         }
 
 
-def create_attrition_prediction_tool(model_path: str | Path):
+def create_attrition_prediction_tool(model_path: str | Path) -> BaseTool:
     predictor = AttritionPredictor(model_path)
 
     @tool(

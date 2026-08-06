@@ -52,3 +52,49 @@ S050,Project Management,Leadership,Common
 S051,Empathy & Active Listening,Behavioral,Common
 S052,Time Management,Behavioral,Common
 S053,Documentation,Behavioral,Common
+S054,Clinical Assessment,Healthcare,Core
+S055,Patient Care,Healthcare,Core
+S056,Clinical Documentation,Healthcare,Core
+S057,Medication Safety,Healthcare,Core
+S058,Infection Prevention,Healthcare,Core
+S059,Emergency Response,Healthcare,Core
+S060,Care Coordination,Healthcare,Core
+S061,Training Needs Analysis,Learning,Core
+S062,Curriculum Design,Learning,Core
+S063,Facilitation,Learning,Core
+S064,Learning Evaluation,Learning,Core
+S065,Learning Management Systems,Learning,Core
+S066,Office Administration,Administration,Core
+S067,Facilities Management,Administration,Core
+S068,Vendor Coordination,Administration,Core
+S069,Asset Management,Administration,Core
+S070,Records Management,Administration,Core
+S071,Contract Review,Legal and Compliance,Core
+S072,Regulatory Compliance,Legal and Compliance,Core
+S073,Policy Interpretation,Legal and Compliance,Core
+S074,Legal Research,Legal and Compliance,Core
+S075,Case Management,Legal and Compliance,Core
+S076,Strategic Sourcing,Procurement,Core
+S077,Purchase Order Management,Procurement,Core
+S078,Supplier Management,Procurement,Core
+S079,Contract Negotiation,Procurement,Core
+S080,Inventory Planning,Procurement,Core
+S081,Cost Analysis,Procurement,Core
+S082,Warehouse Operations,Logistics,Core
+S083,Inventory Control,Logistics,Core
+S084,Transport Planning,Logistics,Core
+S085,Route Optimization,Logistics,Core
+S086,Dispatch Coordination,Logistics,Core
+S087,Health and Safety,Operations,Core
+S088,Production Planning,Manufacturing,Core
+S089,Machine Operation,Manufacturing,Core
+S090,Preventive Maintenance,Manufacturing,Core
+S091,Lean Manufacturing,Manufacturing,Core
+S092,Quality Auditing,Quality,Core
+S093,Root Cause Analysis,Quality,Core
+S094,Corrective Action Management,Quality,Core
+S095,Statistical Process Control,Quality,Core
+S096,Research Methodology,Research,Core
+S097,Experimental Design,Research,Core
+S098,Technical Writing,Research,Core
+S099,Innovation Management,Research,Core
