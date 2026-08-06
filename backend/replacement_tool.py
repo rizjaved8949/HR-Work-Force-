@@ -116,6 +116,15 @@ def create_replacement_recommendation_tool(
             return {
                 "status": "needs_clarification",
                 "employee_id": normalized_employee_id,
+
+                # The graph distinguishes "no such employee" (not_found,
+                # invalid_reference) from "several employees matched"
+                # (ambiguous). Dropping it here left every failure looking
+                # like an ambiguity with an empty candidate list, which a
+                # caller cannot act on.
+                "resolution_status": response_data.get(
+                    "resolution_status"
+                ),
                 "message": response_data.get(
                     "message",
                     "The employee could not be uniquely resolved.",
@@ -181,7 +190,8 @@ def create_stateful_replacement_recommendation_tool(
     )
     def recommend_replacement(
         employee_id: Optional[str] = None,
-        runtime: ToolRuntime = None,
+        # Must stay a bare `ToolRuntime` -- see agent_tools.py for why.
+        runtime: ToolRuntime = None,  # pyright: ignore[reportArgumentType]
     ) -> Command:
         """Recommend successors without re-running local attrition search."""
 

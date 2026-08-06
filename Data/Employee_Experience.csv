@@ -1,201 +1,721 @@
-﻿Employee_ID,Employee_Name,Department,Position_ID,Designation,Job_Level,Tenure_Months,Years_in_Company,Total_Experience_Years,Relevant_Experience_Years,Years_in_Current_Role,Projects_Completed,High_Impact_Projects,Previous_Same_Role,Previous_Department_Experience,Leadership_Experience_Years,Cross_Functional_Projects,Project_Success_Rate_pct,Experience_Score
-EMP001,Sonia Hassan,HR,POS-001,HR Manager,Lead/Manager,140,11.7,18.7,14.2,5.9,34,7,Yes,No,3.9,13,84.4,97.7
-EMP002,Bilal Aziz,Sales,POS-002,Senior Sales Executive,Mid,37,3.1,6.4,5.1,1.9,14,4,Yes,Yes,0.0,4,89.3,98.4
-EMP003,Kamran Ali,Finance,POS-003,Financial Analyst,Mid,14,1.2,3.4,2.6,1.0,12,2,Yes,No,0.0,3,91.3,96.8
-EMP004,Ali Masood,Finance,POS-004,Financial Analyst,Mid,39,3.2,5.3,4.2,2.1,15,4,Yes,Yes,0.0,3,91.6,98.7
-EMP005,Farhan Shah,Engineering,POS-005,Junior Software Engineer,Junior,16,1.3,1.6,1.3,1.1,2,1,No,No,0.0,0,78.6,80.1
-EMP006,Sehrish Tariq,Engineering,POS-006,Software Engineer,Mid,64,5.3,9.1,6.8,3.2,18,6,No,Yes,0.0,6,85.4,97.8
-EMP007,Sonia Ahmad,Customer Support,POS-007,Support Executive,Junior,34,2.8,4.3,3.9,1.7,9,2,No,Yes,0.0,2,81.8,97.3
-EMP008,Iqra Bashir,Finance,POS-008,Finance Manager,Lead/Manager,145,12.1,21.3,15.5,2.0,34,8,Yes,Yes,4.9,5,81.2,97.2
-EMP009,Hassan Dar,Customer Support,POS-009,Customer Support Manager,Lead/Manager,162,13.5,19.3,14.2,3.1,39,10,Yes,No,6.9,9,84.2,97.6
-EMP010,Salman Shah,Engineering,POS-010,Senior Software Engineer,Senior,50,4.2,10.3,8.2,2.7,23,4,No,Yes,2.3,5,89.4,98.4
-EMP011,Khurram Iqbal,Sales,POS-011,Sales Manager,Lead/Manager,180,15.0,25.0,22.5,0.8,40,10,Yes,No,4.6,16,83.2,97.5
-EMP012,Danish Masood,HR,POS-012,HR Manager,Lead/Manager,102,8.5,19.8,13.3,4.6,34,9,Yes,No,3.4,13,83.9,97.6
-EMP013,Anum Ahmad,HR,POS-013,HR Specialist,Mid,52,4.3,9.4,7.6,0.8,16,5,No,Yes,0.0,6,95.2,99.3
-EMP014,Shahid Ali,Engineering,POS-014,Software Engineer,Mid,23,1.9,5.3,3.5,1.8,11,2,Yes,No,0.0,4,79.2,93.0
-EMP015,Anum Rehman,Engineering,POS-015,Engineering Manager,Lead/Manager,110,9.2,19.0,17.2,2.2,40,9,No,Yes,7.1,8,82.2,97.3
-EMP016,Khurram Gill,Sales,POS-016,Senior Sales Executive,Mid,68,5.7,8.5,6.8,1.4,15,3,No,Yes,0.0,4,79.0,96.8
-EMP017,Amir Haider,Customer Support,POS-017,Support Executive,Junior,22,1.8,3.6,2.7,1.2,9,2,No,Yes,0.0,3,90.7,98.6
-EMP018,Sidra Tariq,Engineering,POS-018,Software Engineer,Mid,61,5.1,6.6,5.4,2.6,16,3,No,Yes,0.0,6,79.1,96.9
-EMP019,Hina Hussain,IT,POS-019,IT Engineer,Mid,15,1.2,4.3,3.6,1.0,15,5,Yes,Yes,0.0,4,86.1,97.9
-EMP020,Waqas Khan,Customer Support,POS-020,Support Executive,Junior,36,3.0,5.0,4.2,3.0,7,2,No,No,0.0,1,83.9,97.6
-EMP021,Usman Khan,Customer Support,POS-021,Support Executive,Junior,36,3.0,3.8,2.7,3.0,4,1,No,No,0.0,1,80.2,88.7
-EMP022,Laiba Raza,Sales,POS-022,Senior Sales Executive,Mid,70,5.8,8.6,7.4,1.9,20,3,No,Yes,0.0,5,85.2,97.8
-EMP023,Fatima Masood,Operations,POS-023,Operations Officer,Junior,18,1.5,3.0,2.6,1.5,3,1,Yes,Yes,0.0,1,77.7,84.2
-EMP024,Fatima Arif,IT,POS-024,IT Engineer,Mid,68,5.7,7.7,6.9,2.9,15,2,No,No,0.0,3,82.0,97.3
-EMP025,Raza Mughal,Finance,POS-025,Financial Analyst,Mid,29,2.4,6.1,4.7,2.3,9,2,No,No,0.0,3,76.7,88.8
-EMP026,Anum Qureshi,Operations,POS-026,Operations Manager,Lead/Manager,143,11.9,23.2,18.6,4.8,40,13,Yes,No,7.5,7,82.0,97.3
-EMP027,Akbar Hassan,Customer Support,POS-027,Senior Support Executive,Mid,57,4.8,9.4,6.9,4.1,17,6,Yes,Yes,0.0,6,79.8,97.0
-EMP028,Salman Aziz,Sales,POS-028,Senior Account Manager,Senior,40,3.3,8.4,7.3,2.6,20,3,Yes,Yes,1.9,6,94.9,99.2
-EMP029,Ali Saleem,Engineering,POS-029,Software Engineer,Mid,58,4.8,6.4,5.5,2.6,10,3,Yes,No,0.0,3,81.7,91.5
-EMP030,Hamza Ahmad,Finance,POS-030,Senior Financial Analyst,Senior,128,10.7,15.7,13.6,1.3,32,5,No,No,1.2,12,88.6,98.3
-EMP031,Sadia Haider,Engineering,POS-031,Senior Software Engineer,Senior,48,4.0,11.6,8.4,0.8,19,2,Yes,Yes,0.3,7,91.8,87.3
-EMP032,Laiba Mahmood,Sales,POS-032,Sales Executive,Junior,8,0.7,2.7,2.3,0.7,6,2,No,Yes,0.0,2,82.8,97.4
-EMP033,Ali Chaudhry,IT,POS-033,Junior IT Engineer,Junior,11,0.9,1.0,0.8,0.9,7,2,No,No,0.0,2,86.5,98.0
-EMP034,Nida Sheikh,Sales,POS-034,Sales Executive,Junior,34,2.8,4.8,3.5,2.2,11,2,Yes,Yes,0.0,2,79.6,96.9
-EMP035,Shahbaz Malik,Engineering,POS-035,Software Engineer,Mid,45,3.8,8.1,6.3,1.4,13,3,No,Yes,0.0,4,87.6,98.1
-EMP036,Zoya Chaudhry,Sales,POS-036,Sales Executive,Junior,5,0.4,0.6,0.5,0.3,3,1,No,No,0.0,1,85.8,84.7
-EMP037,Zara Mahmood,IT,POS-037,IT Engineer,Mid,46,3.8,5.7,4.5,2.3,12,2,Yes,Yes,0.0,4,92.0,96.9
-EMP038,Ali Mahmood,Customer Support,POS-038,Senior Support Executive,Mid,38,3.2,7.2,6.3,2.0,20,5,No,Yes,0.0,6,85.2,97.8
-EMP039,Kamran Hussain,Operations,POS-039,Operations Officer,Junior,8,0.7,1.8,1.1,0.7,4,1,No,Yes,0.0,2,88.5,89.9
-EMP040,Ahmad Sheikh,Customer Support,POS-040,Support Executive,Junior,36,3.0,5.0,3.9,3.0,9,1,No,No,0.0,3,79.2,96.9
-EMP041,Omer Nawaz,Operations,POS-041,Operations Officer,Junior,12,1.0,3.2,2.6,1.0,5,1,Yes,Yes,0.0,2,71.3,91.5
-EMP042,Amna Aslam,Customer Support,POS-042,Senior Support Executive,Mid,43,3.6,6.1,5.3,2.9,18,5,No,Yes,0.0,7,75.7,96.3
-EMP043,Amir Javed,Operations,POS-043,Operations Specialist,Mid,55,4.6,9.8,8.4,1.1,18,6,No,No,0.0,4,88.0,98.2
-EMP044,Hafsa Khan,Finance,POS-044,Financial Analyst,Mid,36,3.0,6.5,5.0,2.2,16,3,Yes,Yes,0.0,5,88.3,98.2
-EMP045,Saad Ahmad,Operations,POS-045,Operations Officer,Junior,11,0.9,2.4,1.9,0.9,9,2,No,Yes,0.0,2,89.5,98.4
-EMP046,Salman Iqbal,Customer Support,POS-046,Support Executive,Junior,35,2.9,3.2,2.7,1.3,5,1,No,No,0.0,1,90.0,94.3
-EMP047,Mahnoor Iqbal,Finance,POS-047,Senior Financial Analyst,Senior,99,8.2,14.8,10.6,0.5,26,5,Yes,Yes,1.7,5,89.9,98.5
-EMP048,Sehrish Shah,Operations,POS-048,Operations Officer,Junior,10,0.8,2.5,1.8,0.8,6,2,Yes,Yes,0.0,2,74.0,96.1
-EMP049,Sara Aslam,Sales,POS-049,Sales Executive,Junior,23,1.9,4.1,2.7,1.2,10,3,Yes,Yes,0.0,2,83.8,97.6
-EMP050,Mohsin Butt,Finance,POS-050,Finance Officer,Junior,10,0.8,2.8,2.3,0.8,2,0,Yes,Yes,0.0,1,78.9,80.2
-EMP051,Asad Ahmad,IT,POS-051,Senior IT Engineer,Senior,122,10.2,16.9,14.2,0.8,33,8,No,Yes,2.1,12,88.5,98.3
-EMP052,Raza Hassan,Customer Support,POS-052,Support Executive,Junior,36,3.0,3.1,2.9,3.0,5,1,No,No,0.0,2,84.8,93.6
-EMP053,Zeeshan Abbasi,HR,POS-053,HR Officer,Junior,34,2.8,3.9,3.1,0.4,5,1,No,No,0.0,1,77.7,92.5
-EMP054,Waqas Aslam,Engineering,POS-054,Junior Software Engineer,Junior,8,0.7,0.7,0.6,0.7,4,1,No,No,0.0,1,83.8,89.2
-EMP055,Sadia Mahmood,Engineering,POS-055,Software Engineer,Mid,10,0.8,4.6,3.5,0.8,11,1,No,Yes,0.0,4,85.9,94.0
-EMP056,Saba Hassan,Operations,POS-056,Operations Specialist,Mid,51,4.2,9.2,6.0,3.5,19,4,No,No,0.0,3,87.4,98.1
-EMP057,Raza Haider,IT,POS-057,Junior IT Engineer,Junior,7,0.6,1.0,0.7,0.6,4,1,No,No,0.0,1,81.7,88.9
-EMP058,Shahid Malik,Engineering,POS-058,Senior Software Engineer,Senior,113,9.4,16.9,13.5,4.0,32,4,Yes,Yes,0.8,10,82.4,94.4
-EMP059,Anum Masood,Sales,POS-059,Senior Account Manager,Senior,122,10.2,14.7,12.4,4.1,33,5,Yes,Yes,1.8,8,80.5,97.1
-EMP060,Mohsin Yousaf,Sales,POS-060,Sales Executive,Junior,15,1.2,3.5,2.2,1.2,4,1,Yes,Yes,0.0,1,85.2,89.4
-EMP061,Asad Bashir,Sales,POS-061,Sales Executive,Junior,29,2.4,3.7,3.0,1.7,10,2,No,Yes,0.0,3,81.5,97.2
-EMP062,Fahad Dar,Sales,POS-062,Senior Sales Executive,Mid,38,3.2,8.2,5.8,0.5,18,2,Yes,No,0.0,6,91.7,98.8
-EMP063,Ahmad Tariq,Sales,POS-063,Sales Executive,Junior,18,1.5,3.9,3.0,1.5,8,2,Yes,Yes,0.0,2,84.4,97.7
-EMP064,Hassan Sheikh,Sales,POS-064,Sales Executive,Junior,24,2.0,4.3,3.2,2.0,12,4,No,Yes,0.0,4,92.9,98.9
-EMP065,Amna Gill,Sales,POS-065,Senior Sales Executive,Mid,17,1.4,3.6,3.1,1.4,13,2,No,Yes,0.0,4,77.8,96.7
-EMP066,Ali Gill,HR,POS-066,Senior HR Specialist,Senior,77,6.4,11.6,8.7,3.6,19,4,No,Yes,2.0,7,82.1,96.1
-EMP067,Nida Hameed,Operations,POS-067,Operations Manager,Lead/Manager,110,9.2,14.8,10.7,3.3,29,5,Yes,Yes,4.0,10,85.6,97.8
-EMP068,Sidra Hussain,Customer Support,POS-068,Customer Support Manager,Lead/Manager,173,14.4,26.4,20.5,3.0,40,11,Yes,Yes,7.8,8,82.9,97.4
-EMP069,Mehwish Hussain,Operations,POS-069,Operations Officer,Junior,18,1.5,4.0,3.4,1.2,9,1,Yes,No,0.0,2,83.2,97.5
-EMP070,Bilal Saeed,Engineering,POS-070,Engineering Manager,Lead/Manager,78,6.5,14.6,10.6,4.3,25,5,Yes,Yes,6.1,7,70.3,94.6
-EMP071,Eman Abbasi,Finance,POS-071,Financial Analyst,Mid,62,5.2,8.7,6.8,4.2,15,4,No,Yes,0.0,3,82.3,97.3
-EMP072,Fahad Hassan,Customer Support,POS-072,Team Lead - Customer Support,Senior,118,9.8,14.3,12.6,0.4,27,4,Yes,Yes,1.2,8,81.1,97.2
-EMP073,Ali Yousaf,Customer Support,POS-073,Support Executive,Junior,11,0.9,1.6,1.2,0.9,3,1,No,No,0.0,1,74.4,83.7
-EMP074,Omer Hameed,Sales,POS-074,Sales Executive,Junior,28,2.3,3.3,3.0,2.1,8,2,No,No,0.0,3,80.1,97.0
-EMP075,Asad Raza,Operations,POS-075,Operations Specialist,Mid,21,1.8,6.4,5.0,1.8,12,3,No,No,0.0,4,84.1,95.7
-EMP076,Fahad Shah,Engineering,POS-076,Software Engineer,Mid,59,4.9,8.1,6.8,1.0,16,5,Yes,No,0.0,6,82.2,97.3
-EMP077,Ahmad Awan,Customer Support,POS-077,Team Lead - Customer Support,Senior,81,6.8,14.2,10.2,1.9,26,5,Yes,Yes,1.7,8,95.1,99.3
-EMP078,Ahmad Nawaz,Engineering,POS-078,Software Engineer,Mid,25,2.1,3.6,3.0,2.0,9,2,Yes,Yes,0.0,2,82.2,89.6
-EMP079,Hina Aslam,Customer Support,POS-079,Support Executive,Junior,5,0.4,2.2,1.6,0.4,2,0,No,Yes,0.0,1,86.6,81.3
-EMP080,Ali Mughal,Engineering,POS-080,Engineering Manager,Lead/Manager,93,7.8,18.8,13.7,1.8,38,10,No,Yes,2.1,6,84.7,95.2
-EMP081,Sonia Arif,HR,POS-081,Senior HR Specialist,Senior,109,9.1,14.4,11.3,0.8,29,8,No,Yes,1.5,11,80.9,97.1
-EMP082,Ali Dar,Engineering,POS-082,Junior Software Engineer,Junior,8,0.7,0.9,0.8,0.7,5,2,No,No,0.0,1,75.2,92.1
-EMP083,Raza Aziz,Customer Support,POS-083,Support Executive,Junior,27,2.2,4.0,3.3,1.9,9,2,Yes,Yes,0.0,3,83.9,97.6
-EMP084,Zara Ullah,HR,POS-084,HR Specialist,Mid,53,4.4,9.3,7.2,2.7,16,5,Yes,Yes,0.0,4,85.3,97.8
-EMP085,Sara Yousaf,HR,POS-085,Senior HR Specialist,Senior,84,7.0,14.8,10.9,1.7,21,6,Yes,No,1.8,7,82.6,97.4
-EMP086,Hina Tariq,Operations,POS-086,Operations Officer,Junior,36,3.0,3.3,2.5,3.0,7,1,No,No,0.0,1,87.1,98.1
-EMP087,Kashif Hameed,HR,POS-087,HR Manager,Lead/Manager,108,9.0,17.3,13.3,0.7,36,9,Yes,Yes,6.1,11,88.3,98.2
-EMP088,Sana Mughal,Operations,POS-088,Operations Specialist,Mid,51,4.2,6.5,5.1,3.4,15,3,No,Yes,0.0,5,87.4,98.1
-EMP089,Muneeb Haider,HR,POS-089,HR Officer,Junior,35,2.9,5.1,4.0,2.9,10,2,Yes,No,0.0,3,94.5,99.2
-EMP090,Noman Ahmad,Finance,POS-090,Financial Analyst,Mid,32,2.7,6.9,5.1,2.3,16,4,No,No,0.0,4,79.6,96.9
-EMP091,Nida Mughal,Finance,POS-091,Senior Financial Analyst,Senior,45,3.8,10.6,7.9,3.0,17,4,Yes,No,1.4,3,84.4,93.9
-EMP092,Mahnoor Ali,Engineering,POS-092,Senior Software Engineer,Senior,42,3.5,7.5,6.6,2.8,18,3,No,Yes,1.3,5,86.0,95.4
-EMP093,Danish Siddiqui,Sales,POS-093,Senior Account Manager,Senior,130,10.8,18.6,14.9,7.2,34,5,Yes,Yes,0.8,12,86.6,95.1
-EMP094,Akbar Abbasi,IT,POS-094,Senior IT Engineer,Senior,104,8.7,15.4,13.7,7.1,24,8,Yes,No,1.6,4,70.7,95.6
-EMP095,Haris Mahmood,IT,POS-095,IT Manager,Lead/Manager,129,10.8,20.1,17.4,2.7,40,7,No,No,5.3,16,87.3,98.1
-EMP096,Ayesha Abbasi,Sales,POS-096,Senior Sales Executive,Mid,14,1.2,6.1,4.9,1.2,10,2,No,Yes,0.0,3,73.9,90.3
-EMP097,Sana Arif,Sales,POS-097,Sales Executive,Junior,7,0.6,0.8,0.6,0.6,5,1,No,No,0.0,1,84.4,93.5
-EMP098,Sidra Zafar,Customer Support,POS-098,Senior Support Executive,Mid,12,1.0,6.3,4.6,1.0,13,4,No,Yes,0.0,5,76.6,96.5
-EMP099,Bilal Aslam,Finance,POS-099,Financial Analyst,Mid,31,2.6,5.8,4.8,2.6,16,2,Yes,No,0.0,2,87.9,98.2
-EMP100,Rabia Javed,Engineering,POS-100,Senior Software Engineer,Senior,94,7.8,15.6,12.1,2.5,23,5,Yes,No,2.0,5,78.6,96.8
-EMP101,Talha Dar,IT,POS-101,IT Engineer,Mid,43,3.6,5.9,5.0,3.0,15,5,Yes,Yes,0.0,5,84.1,97.6
-EMP102,Akbar Gill,Sales,POS-102,Sales Executive,Junior,36,3.0,3.8,3.0,1.7,6,2,No,No,0.0,1,85.3,97.8
-EMP103,Noor Masood,Customer Support,POS-103,Support Executive,Junior,17,1.4,2.1,1.5,0.7,1,0,No,No,0.0,0,75.9,75.6
-EMP104,Rabia Ali,IT,POS-104,Senior IT Engineer,Senior,80,6.7,14.5,11.3,5.2,28,8,Yes,Yes,1.8,9,87.2,98.1
-EMP105,Areeba Raza,Sales,POS-105,Sales Manager,Lead/Manager,179,14.9,24.0,20.3,4.8,40,10,No,Yes,3.6,9,86.3,97.9
-EMP106,Hina Saleem,HR,POS-106,Senior HR Specialist,Senior,66,5.5,9.3,7.9,2.0,26,6,Yes,Yes,0.5,10,92.3,90.7
-EMP107,Zoya Mahmood,Engineering,POS-107,Software Engineer,Mid,37,3.1,7.0,5.3,1.5,14,4,Yes,No,0.0,2,85.8,97.9
-EMP108,Ayesha Ahmad,HR,POS-108,HR Specialist,Mid,30,2.5,7.0,5.1,2.0,16,5,Yes,No,0.0,3,87.4,98.1
-EMP109,Ali Farooq,Sales,POS-109,Sales Executive,Junior,14,1.2,1.6,1.3,1.0,4,1,No,No,0.0,1,87.8,89.8
-EMP110,Arslan Masood,IT,POS-110,Junior IT Engineer,Junior,10,0.8,2.4,1.8,0.3,5,1,Yes,Yes,0.0,1,86.4,93.8
-EMP111,Sadia Bashir,Sales,POS-111,Senior Sales Executive,Mid,55,4.6,7.3,6.4,2.4,16,3,No,Yes,0.0,4,79.3,96.9
-EMP112,Sara Javed,Sales,POS-112,Sales Executive,Junior,10,0.8,1.5,1.1,0.8,4,1,No,No,0.0,1,93.7,90.7
-EMP113,Shahbaz Gill,IT,POS-113,Junior IT Engineer,Junior,16,1.3,3.3,2.5,1.1,1,0,Yes,Yes,0.0,0,81.8,76.4
-EMP114,Hamza Hussain,HR,POS-114,HR Specialist,Mid,44,3.7,6.8,5.4,2.0,16,2,Yes,No,0.0,3,81.1,97.2
-EMP115,Hafsa Abbasi,Engineering,POS-115,Software Engineer,Mid,12,1.0,5.3,4.4,1.0,17,4,Yes,Yes,0.0,4,94.9,99.2
-EMP116,Ali Abbasi,Engineering,POS-116,Junior Software Engineer,Junior,18,1.5,3.1,2.3,1.4,7,2,No,Yes,0.0,2,88.3,98.2
-EMP117,Saad Ullah,Engineering,POS-117,Junior Software Engineer,Junior,36,3.0,4.9,3.7,3.0,11,2,No,Yes,0.0,3,80.5,97.1
-EMP118,Zoya Ali,Customer Support,POS-118,Senior Support Executive,Mid,20,1.7,5.5,4.2,1.2,9,3,Yes,Yes,0.0,1,80.5,89.4
-EMP119,Ayesha Nawaz,Customer Support,POS-119,Team Lead - Customer Support,Senior,103,8.6,12.4,8.6,2.1,21,5,Yes,Yes,1.9,3,75.1,96.3
-EMP120,Ahmad Aziz,Operations,POS-120,Operations Specialist,Mid,64,5.3,10.2,7.8,1.3,20,4,Yes,Yes,0.0,5,91.6,98.7
-EMP121,Mehwish Tariq,Operations,POS-121,Operations Officer,Junior,36,3.0,4.3,3.6,3.0,10,3,No,No,0.0,3,73.3,96.0
-EMP122,Hafsa Ullah,Operations,POS-122,Operations Officer,Junior,12,1.0,1.4,1.1,1.0,6,1,No,No,0.0,2,86.3,97.9
-EMP123,Sehrish Ullah,Finance,POS-123,Senior Financial Analyst,Senior,59,4.9,12.9,9.1,2.2,23,7,Yes,Yes,2.1,5,85.0,97.7
-EMP124,Fahad Javed,Sales,POS-124,Senior Sales Executive,Mid,36,3.0,4.8,3.7,3.0,9,3,Yes,No,0.0,3,75.8,88.7
-EMP125,Fatima Zafar,Sales,POS-125,Senior Account Manager,Senior,124,10.3,17.8,14.2,1.2,32,5,No,No,2.1,11,83.1,97.5
-EMP126,Laiba Sheikh,Customer Support,POS-126,Team Lead - Customer Support,Senior,40,3.3,7.8,6.0,2.8,15,4,Yes,Yes,1.6,2,87.6,91.9
-EMP127,Khurram Yousaf,HR,POS-127,HR Specialist,Mid,13,1.1,3.2,2.5,1.0,6,1,Yes,Yes,0.0,2,87.2,84.6
-EMP128,Zoya Farooq,Customer Support,POS-128,Customer Support Manager,Lead/Manager,120,10.0,18.2,14.6,6.8,36,9,Yes,No,7.8,11,84.8,97.7
-EMP129,Danish Dar,Engineering,POS-129,Engineering Manager,Lead/Manager,165,13.8,26.0,19.8,1.7,40,9,Yes,Yes,5.5,13,92.0,98.8
-EMP130,Waqas Siddiqui,HR,POS-130,Senior HR Specialist,Senior,108,9.0,17.2,14.9,0.8,39,13,Yes,Yes,0.4,8,91.3,90.2
-EMP131,Ahmad Yousaf,IT,POS-131,IT Engineer,Mid,39,3.2,7.7,6.5,3.2,14,2,Yes,Yes,0.0,2,77.9,96.7
-EMP132,Arham Qureshi,IT,POS-132,Junior IT Engineer,Junior,6,0.5,2.1,1.4,0.5,7,1,No,Yes,0.0,3,79.5,96.9
-EMP133,Usman Raza,Engineering,POS-133,Software Engineer,Mid,72,6.0,10.7,7.6,3.2,19,6,Yes,Yes,0.0,7,83.6,97.5
-EMP134,Talha Awan,IT,POS-134,IT Engineer,Mid,44,3.7,9.1,7.6,2.9,16,5,No,Yes,0.0,2,87.2,98.1
-EMP135,Eman Butt,Customer Support,POS-135,Senior Support Executive,Mid,46,3.8,7.9,6.3,1.1,14,3,Yes,No,0.0,2,85.0,97.7
-EMP136,Fatima Saleem,HR,POS-136,HR Specialist,Mid,36,3.0,5.6,4.2,1.9,12,4,No,Yes,0.0,2,85.0,95.8
-EMP137,Areeba Farooq,Customer Support,POS-137,Support Executive,Junior,32,2.7,2.9,2.2,1.2,7,2,No,No,0.0,1,78.9,96.8
-EMP138,Amir Saleem,Engineering,POS-138,Software Engineer,Mid,18,1.5,4.4,3.8,1.2,9,3,Yes,No,0.0,3,69.0,87.7
-EMP139,Iqra Saeed,Operations,POS-139,Operations Officer,Junior,34,2.8,3.6,3.1,1.2,9,3,No,No,0.0,3,85.7,97.9
-EMP140,Noman Rehman,Finance,POS-140,Senior Financial Analyst,Senior,128,10.7,15.1,12.5,2.0,29,8,Yes,No,1.9,11,89.8,98.5
-EMP141,Asad Zafar,Operations,POS-141,Operations Manager,Lead/Manager,149,12.4,23.8,18.4,5.0,37,6,Yes,Yes,7.9,12,73.7,96.1
-EMP142,Fahad Farooq,Engineering,POS-142,Engineering Manager,Lead/Manager,132,11.0,20.5,16.5,2.8,40,7,Yes,Yes,3.3,9,91.4,98.7
-EMP143,Hamza Awan,Finance,POS-143,Financial Analyst,Mid,47,3.9,5.6,4.4,1.0,13,2,Yes,No,0.0,2,90.1,98.5
-EMP144,Imran Ullah,Customer Support,POS-144,Customer Support Manager,Lead/Manager,122,10.2,21.3,17.3,1.2,40,8,No,No,4.2,10,78.5,96.8
-EMP145,Ahsan Anwar,Sales,POS-145,Senior Sales Executive,Mid,56,4.7,8.6,6.8,1.0,11,3,No,No,0.0,3,84.5,93.8
-EMP146,Talha Khan,Finance,POS-146,Financial Analyst,Mid,50,4.2,8.3,6.1,0.4,16,4,Yes,Yes,0.0,5,82.5,97.4
-EMP147,Hassan Javed,Customer Support,POS-147,Customer Support Manager,Lead/Manager,64,5.3,15.7,12.2,5.0,32,6,No,Yes,5.0,8,75.9,96.4
-EMP148,Sadia Malik,Sales,POS-148,Sales Executive,Junior,4,0.3,1.9,1.4,0.3,3,1,No,Yes,0.0,1,87.8,85.7
-EMP149,Muneeb Hameed,Operations,POS-149,Operations Specialist,Mid,42,3.5,9.0,6.3,1.2,14,2,Yes,Yes,0.0,5,92.0,98.8
-EMP150,Sana Nawaz,Customer Support,POS-150,Support Executive,Junior,17,1.4,2.2,1.8,1.3,3,1,No,No,0.0,1,72.8,83.4
-EMP151,Farhan Rehman,Engineering,POS-151,Junior Software Engineer,Junior,12,1.0,1.3,0.9,1.0,2,0,No,No,0.0,1,81.3,80.5
-EMP152,Mahnoor Tariq,IT,POS-152,Senior IT Engineer,Senior,112,9.3,17.7,13.7,3.6,32,8,No,Yes,1.9,12,87.8,98.2
-EMP153,Kashif Abbasi,Engineering,POS-153,Software Engineer,Mid,56,4.7,8.1,6.2,3.6,15,3,Yes,No,0.0,4,76.3,96.4
-EMP154,Hina Abbasi,Engineering,POS-154,Junior Software Engineer,Junior,15,1.2,2.8,2.0,1.2,4,1,Yes,Yes,0.0,1,81.6,88.9
-EMP155,Noman Malik,Customer Support,POS-155,Senior Support Executive,Mid,39,3.2,7.8,6.0,2.9,18,3,No,Yes,0.0,3,81.8,97.3
-EMP156,Asad Malik,Engineering,POS-156,Software Engineer,Mid,32,2.7,7.4,4.6,2.4,16,3,Yes,No,0.0,2,90.1,98.5
-EMP157,Saba Qureshi,Operations,POS-157,Operations Officer,Junior,11,0.9,3.4,2.8,0.7,9,2,No,Yes,0.0,2,88.5,98.3
-EMP158,Imran Zafar,Operations,POS-158,Operations Officer,Junior,36,3.0,4.9,4.2,3.0,9,3,Yes,Yes,0.0,2,86.7,98.0
-EMP159,Raza Ahmad,Engineering,POS-159,Senior Software Engineer,Senior,77,6.4,12.8,10.3,3.6,31,7,Yes,Yes,1.9,12,77.7,96.7
-EMP160,Rabia Ullah,Finance,POS-160,Senior Financial Analyst,Senior,85,7.1,13.0,9.8,0.2,24,4,Yes,No,2.1,6,88.5,98.3
-EMP161,Iqra Yousaf,Finance,POS-161,Financial Analyst,Mid,70,5.8,8.7,7.7,1.7,16,2,No,Yes,0.0,3,85.1,97.8
-EMP162,Bilal Shah,Customer Support,POS-162,Support Executive,Junior,6,0.5,1.3,1.0,0.5,9,2,No,No,0.0,3,89.1,98.4
-EMP163,Sidra Sheikh,Engineering,POS-163,Software Engineer,Mid,11,0.9,4.1,2.9,0.9,11,3,No,Yes,0.0,2,83.1,93.6
-EMP164,Zoya Saleem,Sales,POS-164,Sales Executive,Junior,31,2.6,3.2,3.0,1.2,6,2,No,No,0.0,1,82.3,97.3
-EMP165,Waqas Butt,Sales,POS-165,Sales Executive,Junior,12,1.0,2.0,1.9,1.0,5,1,No,Yes,0.0,2,73.8,91.9
-EMP166,Arslan Siddiqui,Sales,POS-166,Sales Manager,Lead/Manager,64,5.3,16.1,13.6,5.0,30,5,Yes,Yes,2.7,9,83.1,97.5
-EMP167,Bilal Raza,Sales,POS-167,Senior Sales Executive,Mid,48,4.0,9.0,6.8,2.2,18,3,Yes,Yes,0.0,7,87.0,98.1
-EMP168,Akbar Saleem,Customer Support,POS-168,Team Lead - Customer Support,Senior,39,3.2,6.8,4.5,3.0,13,4,Yes,No,1.7,4,82.0,88.6
-EMP169,Iqra Qureshi,IT,POS-169,IT Manager,Lead/Manager,147,12.2,24.4,17.9,0.7,40,8,Yes,Yes,4.0,12,85.4,97.8
-EMP170,Hina Ahmad,Customer Support,POS-170,Senior Support Executive,Mid,36,3.0,6.6,5.3,3.0,12,3,No,Yes,0.0,5,80.7,95.2
-EMP171,Usman Ullah,IT,POS-171,IT Manager,Lead/Manager,122,10.2,19.2,14.2,0.8,34,7,Yes,Yes,4.8,10,82.1,97.3
-EMP172,Zoya Hassan,Operations,POS-172,Operations Specialist,Mid,63,5.2,6.9,5.7,1.9,14,5,Yes,No,0.0,4,71.5,95.7
-EMP173,Sidra Abbasi,Finance,POS-173,Senior Financial Analyst,Senior,44,3.7,8.6,6.4,3.7,20,3,Yes,Yes,1.2,5,73.2,96.0
-EMP174,Hassan Aslam,Sales,POS-174,Senior Sales Executive,Mid,44,3.7,5.5,4.4,2.4,11,3,Yes,Yes,0.0,4,74.3,92.3
-EMP175,Hassan Arif,Operations,POS-175,Operations Specialist,Mid,6,0.5,4.2,2.8,0.5,12,4,No,Yes,0.0,5,90.0,96.6
-EMP176,Ahsan Aziz,Sales,POS-176,Senior Account Manager,Senior,111,9.2,13.2,9.4,0.8,24,8,Yes,Yes,1.3,9,79.6,96.9
-EMP177,Danish Anwar,HR,POS-177,HR Specialist,Mid,37,3.1,6.4,5.2,2.7,13,2,No,Yes,0.0,3,75.2,96.3
-EMP178,Fatima Rehman,Sales,POS-178,Sales Executive,Junior,5,0.4,2.9,1.8,0.4,3,1,No,Yes,0.0,1,87.8,85.7
-EMP179,Muneeb Javed,Operations,POS-179,Operations Officer,Junior,17,1.4,3.1,2.6,1.1,7,2,Yes,No,0.0,1,85.8,97.9
-EMP180,Arham Hussain,Customer Support,POS-180,Support Executive,Junior,12,1.0,2.5,2.1,1.0,8,2,No,Yes,0.0,2,80.2,97.0
-EMP181,Saad Yousaf,Operations,POS-181,Operations Officer,Junior,17,1.4,2.7,2.0,1.2,2,0,No,Yes,0.0,1,83.2,80.8
-EMP182,Waqas Ahmad,Sales,POS-182,Senior Sales Executive,Mid,23,1.9,7.3,5.4,1.3,17,6,Yes,Yes,0.0,6,89.2,98.4
-EMP183,Zain Saleem,IT,POS-183,Junior IT Engineer,Junior,36,3.0,4.4,3.6,3.0,9,3,No,Yes,0.0,3,83.0,97.5
-EMP184,Iqra Hassan,Operations,POS-184,Operations Officer,Junior,12,1.0,1.4,0.9,1.0,3,1,No,No,0.0,1,75.5,83.8
-EMP185,Salman Hameed,Finance,POS-185,Senior Financial Analyst,Senior,88,7.3,11.3,9.1,3.8,22,6,Yes,No,0.4,8,81.6,88.8
-EMP186,Zara Masood,IT,POS-186,IT Engineer,Mid,20,1.7,5.3,3.3,1.0,13,3,Yes,Yes,0.0,5,85.0,97.8
-EMP187,Nida Mahmood,Operations,POS-187,Operations Officer,Junior,30,2.5,4.0,3.1,1.2,8,2,No,Yes,0.0,1,75.1,96.3
-EMP188,Areeba Ahmad,IT,POS-188,Senior IT Engineer,Senior,112,9.3,15.2,13.6,1.2,25,7,No,Yes,1.5,4,81.4,97.2
-EMP189,Omer Masood,Engineering,POS-189,Engineering Manager,Lead/Manager,53,4.4,16.2,11.8,2.2,32,9,No,Yes,3.8,5,82.0,97.3
-EMP190,Noor Saeed,HR,POS-190,HR Officer,Junior,18,1.5,1.9,1.7,1.5,2,1,No,No,0.0,1,74.3,79.5
-EMP191,Danish Yousaf,Operations,POS-191,Operations Specialist,Mid,56,4.7,9.7,8.3,3.8,26,4,Yes,Yes,0.0,7,87.4,98.1
-EMP192,Kashif Hussain,Sales,POS-192,Sales Executive,Junior,31,2.6,4.6,4.1,1.3,7,2,Yes,Yes,0.0,2,82.3,97.3
-EMP193,Zain Qureshi,Operations,POS-193,Operations Officer,Junior,8,0.7,0.8,0.6,0.5,6,1,No,No,0.0,1,94.3,99.1
-EMP194,Shahid Ahmad,Customer Support,POS-194,Senior Support Executive,Mid,8,0.7,4.2,3.1,0.7,9,2,Yes,Yes,0.0,2,85.5,90.1
-EMP195,Mohsin Khan,Engineering,POS-195,Engineering Manager,Lead/Manager,104,8.7,15.5,12.4,1.7,32,6,Yes,Yes,2.2,11,83.7,95.7
-EMP196,Mohsin Abbasi,Engineering,POS-196,Software Engineer,Mid,27,2.2,6.2,5.4,2.1,16,2,Yes,Yes,0.0,4,82.8,97.4
-EMP197,Zeeshan Qureshi,HR,POS-197,HR Manager,Lead/Manager,56,4.7,14.3,11.5,4.4,29,10,No,No,6.2,7,85.8,97.9
-EMP198,Ali Tariq,Operations,POS-198,Operations Officer,Junior,18,1.5,1.6,1.4,1.5,1,0,No,No,0.0,0,84.8,76.9
-EMP199,Zara Tariq,Customer Support,POS-199,Support Executive,Junior,22,1.8,4.2,3.5,1.8,7,1,Yes,Yes,0.0,2,88.8,98.3
-EMP200,Ahmad Abbasi,Customer Support,POS-200,Senior Support Executive,Mid,42,3.5,6.7,4.8,3.3,14,3,Yes,Yes,0.0,3,89.6,98.4
+﻿Employee_ID,Employee_Name,Department,Position_ID,Designation,Job_Level,Tenure_Months,Years_in_Company,Total_Experience_Years,Relevant_Experience_Years,Years_in_Current_Role,Projects_Completed,High_Impact_Projects,Previous_Same_Role,Previous_Department_Experience,Leadership_Experience_Years,Cross_Functional_Projects,Project_Success_Rate_pct,Experience_Score,Department_ID,Business_Unit,Organizational_Unit_ID,Work_Location_ID,Cost_Center_ID,Data_As_Of_Date
+EMP001,Sonia Hassan,HR,POS-001,HR Manager,Lead/Manager,140,11.7,18.7,14.2,5.9,34,7,Yes,No,3.9,13,84.4,97.7,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP002,Bilal Aziz,Sales,POS-002,Senior Sales Executive,Mid,37,3.1,6.4,5.1,1.9,14,4,Yes,Yes,0.0,4,89.3,98.4,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-03,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP003,Kamran Ali,Finance,POS-003,Financial Analyst,Mid,14,1.2,3.4,2.6,1.0,12,2,Yes,No,0.0,3,91.3,96.8,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP004,Ali Masood,Finance,POS-004,Financial Analyst,Mid,39,3.2,5.3,4.2,2.1,15,4,Yes,Yes,0.0,3,91.6,98.7,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-02,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP005,Farhan Shah,Engineering,POS-005,Junior Software Engineer,Junior,16,1.3,1.6,1.3,1.1,2,1,No,No,0.0,0,78.6,80.1,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP006,Sehrish Tariq,Engineering,POS-006,Software Engineer,Mid,64,5.3,9.1,6.8,3.2,18,6,No,Yes,0.0,6,85.4,97.8,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-01,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP007,Sonia Ahmad,Customer Support,POS-007,Support Executive,Junior,34,2.8,4.3,3.9,1.7,9,2,No,Yes,0.0,2,81.8,97.3,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-02,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP008,Iqra Bashir,Finance,POS-008,Finance Manager,Lead/Manager,145,12.1,21.3,15.5,2.0,34,8,Yes,Yes,4.9,5,81.2,97.2,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP009,Hassan Dar,Customer Support,POS-009,Customer Support Manager,Lead/Manager,162,13.5,19.3,14.2,3.1,39,10,Yes,No,6.9,9,84.2,97.6,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP010,Salman Shah,Engineering,POS-010,Senior Software Engineer,Senior,50,4.2,10.3,8.2,2.7,23,4,No,Yes,2.3,5,89.4,98.4,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP011,Khurram Iqbal,Sales,POS-011,Sales Manager,Lead/Manager,180,15.0,25.0,22.5,0.8,40,10,Yes,No,4.6,16,83.2,97.5,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP012,Danish Masood,HR,POS-012,HR Manager,Lead/Manager,102,8.5,19.8,13.3,4.6,34,9,Yes,No,3.4,13,83.9,97.6,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP013,Anum Ahmad,HR,POS-013,HR Specialist,Mid,52,4.3,9.4,7.6,0.8,16,5,No,Yes,0.0,6,95.2,99.3,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-02,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP014,Shahid Ali,Engineering,POS-014,Software Engineer,Mid,23,1.9,5.3,3.5,1.8,11,2,Yes,No,0.0,4,79.2,93.0,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP015,Anum Rehman,Engineering,POS-015,Engineering Manager,Lead/Manager,110,9.2,19.0,17.2,2.2,40,9,No,Yes,7.1,8,82.2,97.3,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP016,Khurram Gill,Sales,POS-016,Senior Sales Executive,Mid,68,5.7,8.5,6.8,1.4,15,3,No,Yes,0.0,4,79.0,96.8,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP017,Amir Haider,Customer Support,POS-017,Support Executive,Junior,22,1.8,3.6,2.7,1.2,9,2,No,Yes,0.0,3,90.7,98.6,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP018,Sidra Tariq,Engineering,POS-018,Software Engineer,Mid,61,5.1,6.6,5.4,2.6,16,3,No,Yes,0.0,6,79.1,96.9,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-01,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP019,Hina Hussain,IT,POS-019,IT Engineer,Mid,15,1.2,4.3,3.6,1.0,15,5,Yes,Yes,0.0,4,86.1,97.9,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-02,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP020,Waqas Khan,Customer Support,POS-020,Support Executive,Junior,36,3.0,5.0,4.2,3.0,7,2,No,No,0.0,1,83.9,97.6,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP021,Usman Khan,Customer Support,POS-021,Support Executive,Junior,36,3.0,3.8,2.7,3.0,4,1,No,No,0.0,1,80.2,88.7,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP022,Laiba Raza,Sales,POS-022,Senior Sales Executive,Mid,70,5.8,8.6,7.4,1.9,20,3,No,Yes,0.0,5,85.2,97.8,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP023,Fatima Masood,Operations,POS-023,Operations Officer,Junior,18,1.5,3.0,2.6,1.5,3,1,Yes,Yes,0.0,1,77.7,84.2,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP024,Fatima Arif,IT,POS-024,IT Engineer,Mid,68,5.7,7.7,6.9,2.9,15,2,No,No,0.0,3,82.0,97.3,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP025,Raza Mughal,Finance,POS-025,Financial Analyst,Mid,29,2.4,6.1,4.7,2.3,9,2,No,No,0.0,3,76.7,88.8,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-02,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP026,Anum Qureshi,Operations,POS-026,Operations Manager,Lead/Manager,143,11.9,23.2,18.6,4.8,40,13,Yes,No,7.5,7,82.0,97.3,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP027,Akbar Hassan,Customer Support,POS-027,Senior Support Executive,Mid,57,4.8,9.4,6.9,4.1,17,6,Yes,Yes,0.0,6,79.8,97.0,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP028,Salman Aziz,Sales,POS-028,Senior Account Manager,Senior,40,3.3,8.4,7.3,2.6,20,3,Yes,Yes,1.9,6,94.9,99.2,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP029,Ali Saleem,Engineering,POS-029,Software Engineer,Mid,58,4.8,6.4,5.5,2.6,10,3,Yes,No,0.0,3,81.7,91.5,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP030,Hamza Ahmad,Finance,POS-030,Senior Financial Analyst,Senior,128,10.7,15.7,13.6,1.3,32,5,No,No,1.2,12,88.6,98.3,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP031,Sadia Haider,Engineering,POS-031,Senior Software Engineer,Senior,48,4.0,11.6,8.4,0.8,19,2,Yes,Yes,0.3,7,91.8,87.3,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP032,Laiba Mahmood,Sales,POS-032,Sales Executive,Junior,8,0.7,2.7,2.3,0.7,6,2,No,Yes,0.0,2,82.8,97.4,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-03,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP033,Ali Chaudhry,IT,POS-033,Junior IT Engineer,Junior,11,0.9,1.0,0.8,0.9,7,2,No,No,0.0,2,86.5,98.0,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP034,Nida Sheikh,Sales,POS-034,Sales Executive,Junior,34,2.8,4.8,3.5,2.2,11,2,Yes,Yes,0.0,2,79.6,96.9,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP035,Shahbaz Malik,Engineering,POS-035,Software Engineer,Mid,45,3.8,8.1,6.3,1.4,13,3,No,Yes,0.0,4,87.6,98.1,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP036,Zoya Chaudhry,Sales,POS-036,Sales Executive,Junior,5,0.4,0.6,0.5,0.3,3,1,No,No,0.0,1,85.8,84.7,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-01,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP037,Zara Mahmood,IT,POS-037,IT Engineer,Mid,46,3.8,5.7,4.5,2.3,12,2,Yes,Yes,0.0,4,92.0,96.9,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-02,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP038,Ali Mahmood,Customer Support,POS-038,Senior Support Executive,Mid,38,3.2,7.2,6.3,2.0,20,5,No,Yes,0.0,6,85.2,97.8,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP039,Kamran Hussain,Operations,POS-039,Operations Officer,Junior,8,0.7,1.8,1.1,0.7,4,1,No,Yes,0.0,2,88.5,89.9,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-01,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP040,Ahmad Sheikh,Customer Support,POS-040,Support Executive,Junior,36,3.0,5.0,3.9,3.0,9,1,No,No,0.0,3,79.2,96.9,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-02,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP041,Omer Nawaz,Operations,POS-041,Operations Officer,Junior,12,1.0,3.2,2.6,1.0,5,1,Yes,Yes,0.0,2,71.3,91.5,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP042,Amna Aslam,Customer Support,POS-042,Senior Support Executive,Mid,43,3.6,6.1,5.3,2.9,18,5,No,Yes,0.0,7,75.7,96.3,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP043,Amir Javed,Operations,POS-043,Operations Specialist,Mid,55,4.6,9.8,8.4,1.1,18,6,No,No,0.0,4,88.0,98.2,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP044,Hafsa Khan,Finance,POS-044,Financial Analyst,Mid,36,3.0,6.5,5.0,2.2,16,3,Yes,Yes,0.0,5,88.3,98.2,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP045,Saad Ahmad,Operations,POS-045,Operations Officer,Junior,11,0.9,2.4,1.9,0.9,9,2,No,Yes,0.0,2,89.5,98.4,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-01,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP046,Salman Iqbal,Customer Support,POS-046,Support Executive,Junior,35,2.9,3.2,2.7,1.3,5,1,No,No,0.0,1,90.0,94.3,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-02,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP047,Mahnoor Iqbal,Finance,POS-047,Senior Financial Analyst,Senior,99,8.2,14.8,10.6,0.5,26,5,Yes,Yes,1.7,5,89.9,98.5,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP048,Sehrish Shah,Operations,POS-048,Operations Officer,Junior,10,0.8,2.5,1.8,0.8,6,2,Yes,Yes,0.0,2,74.0,96.1,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-01,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP049,Sara Aslam,Sales,POS-049,Sales Executive,Junior,23,1.9,4.1,2.7,1.2,10,3,Yes,Yes,0.0,2,83.8,97.6,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP050,Mohsin Butt,Finance,POS-050,Finance Officer,Junior,10,0.8,2.8,2.3,0.8,2,0,Yes,Yes,0.0,1,78.9,80.2,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP051,Asad Ahmad,IT,POS-051,Senior IT Engineer,Senior,122,10.2,16.9,14.2,0.8,33,8,No,Yes,2.1,12,88.5,98.3,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP052,Raza Hassan,Customer Support,POS-052,Support Executive,Junior,36,3.0,3.1,2.9,3.0,5,1,No,No,0.0,2,84.8,93.6,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-02,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP053,Zeeshan Abbasi,HR,POS-053,HR Officer,Junior,34,2.8,3.9,3.1,0.4,5,1,No,No,0.0,1,77.7,92.5,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-03,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP054,Waqas Aslam,Engineering,POS-054,Junior Software Engineer,Junior,8,0.7,0.7,0.6,0.7,4,1,No,No,0.0,1,83.8,89.2,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-01,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP055,Sadia Mahmood,Engineering,POS-055,Software Engineer,Mid,10,0.8,4.6,3.5,0.8,11,1,No,Yes,0.0,4,85.9,94.0,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP056,Saba Hassan,Operations,POS-056,Operations Specialist,Mid,51,4.2,9.2,6.0,3.5,19,4,No,No,0.0,3,87.4,98.1,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP057,Raza Haider,IT,POS-057,Junior IT Engineer,Junior,7,0.6,1.0,0.7,0.6,4,1,No,No,0.0,1,81.7,88.9,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP058,Shahid Malik,Engineering,POS-058,Senior Software Engineer,Senior,113,9.4,16.9,13.5,4.0,32,4,Yes,Yes,0.8,10,82.4,94.4,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP059,Anum Masood,Sales,POS-059,Senior Account Manager,Senior,122,10.2,14.7,12.4,4.1,33,5,Yes,Yes,1.8,8,80.5,97.1,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-03,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP060,Mohsin Yousaf,Sales,POS-060,Sales Executive,Junior,15,1.2,3.5,2.2,1.2,4,1,Yes,Yes,0.0,1,85.2,89.4,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-01,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP061,Asad Bashir,Sales,POS-061,Sales Executive,Junior,29,2.4,3.7,3.0,1.7,10,2,No,Yes,0.0,3,81.5,97.2,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP062,Fahad Dar,Sales,POS-062,Senior Sales Executive,Mid,38,3.2,8.2,5.8,0.5,18,2,Yes,No,0.0,6,91.7,98.8,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-03,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP063,Ahmad Tariq,Sales,POS-063,Sales Executive,Junior,18,1.5,3.9,3.0,1.5,8,2,Yes,Yes,0.0,2,84.4,97.7,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-01,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP064,Hassan Sheikh,Sales,POS-064,Sales Executive,Junior,24,2.0,4.3,3.2,2.0,12,4,No,Yes,0.0,4,92.9,98.9,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP065,Amna Gill,Sales,POS-065,Senior Sales Executive,Mid,17,1.4,3.6,3.1,1.4,13,2,No,Yes,0.0,4,77.8,96.7,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-03,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP066,Ali Gill,HR,POS-066,Senior HR Specialist,Senior,77,6.4,11.6,8.7,3.6,19,4,No,Yes,2.0,7,82.1,96.1,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP067,Nida Hameed,Operations,POS-067,Operations Manager,Lead/Manager,110,9.2,14.8,10.7,3.3,29,5,Yes,Yes,4.0,10,85.6,97.8,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP068,Sidra Hussain,Customer Support,POS-068,Customer Support Manager,Lead/Manager,173,14.4,26.4,20.5,3.0,40,11,Yes,Yes,7.8,8,82.9,97.4,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP069,Mehwish Hussain,Operations,POS-069,Operations Officer,Junior,18,1.5,4.0,3.4,1.2,9,1,Yes,No,0.0,2,83.2,97.5,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-01,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP070,Bilal Saeed,Engineering,POS-070,Engineering Manager,Lead/Manager,78,6.5,14.6,10.6,4.3,25,5,Yes,Yes,6.1,7,70.3,94.6,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP071,Eman Abbasi,Finance,POS-071,Financial Analyst,Mid,62,5.2,8.7,6.8,4.2,15,4,No,Yes,0.0,3,82.3,97.3,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP072,Fahad Hassan,Customer Support,POS-072,Team Lead - Customer Support,Senior,118,9.8,14.3,12.6,0.4,27,4,Yes,Yes,1.2,8,81.1,97.2,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP073,Ali Yousaf,Customer Support,POS-073,Support Executive,Junior,11,0.9,1.6,1.2,0.9,3,1,No,No,0.0,1,74.4,83.7,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-02,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP074,Omer Hameed,Sales,POS-074,Sales Executive,Junior,28,2.3,3.3,3.0,2.1,8,2,No,No,0.0,3,80.1,97.0,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-03,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP075,Asad Raza,Operations,POS-075,Operations Specialist,Mid,21,1.8,6.4,5.0,1.8,12,3,No,No,0.0,4,84.1,95.7,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-01,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP076,Fahad Shah,Engineering,POS-076,Software Engineer,Mid,59,4.9,8.1,6.8,1.0,16,5,Yes,No,0.0,6,82.2,97.3,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP077,Ahmad Awan,Customer Support,POS-077,Team Lead - Customer Support,Senior,81,6.8,14.2,10.2,1.9,26,5,Yes,Yes,1.7,8,95.1,99.3,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP078,Ahmad Nawaz,Engineering,POS-078,Software Engineer,Mid,25,2.1,3.6,3.0,2.0,9,2,Yes,Yes,0.0,2,82.2,89.6,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-01,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP079,Hina Aslam,Customer Support,POS-079,Support Executive,Junior,5,0.4,2.2,1.6,0.4,2,0,No,Yes,0.0,1,86.6,81.3,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-02,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP080,Ali Mughal,Engineering,POS-080,Engineering Manager,Lead/Manager,93,7.8,18.8,13.7,1.8,38,10,No,Yes,2.1,6,84.7,95.2,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP081,Sonia Arif,HR,POS-081,Senior HR Specialist,Senior,109,9.1,14.4,11.3,0.8,29,8,No,Yes,1.5,11,80.9,97.1,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP082,Ali Dar,Engineering,POS-082,Junior Software Engineer,Junior,8,0.7,0.9,0.8,0.7,5,2,No,No,0.0,1,75.2,92.1,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP083,Raza Aziz,Customer Support,POS-083,Support Executive,Junior,27,2.2,4.0,3.3,1.9,9,2,Yes,Yes,0.0,3,83.9,97.6,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP084,Zara Ullah,HR,POS-084,HR Specialist,Mid,53,4.4,9.3,7.2,2.7,16,5,Yes,Yes,0.0,4,85.3,97.8,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP085,Sara Yousaf,HR,POS-085,Senior HR Specialist,Senior,84,7.0,14.8,10.9,1.7,21,6,Yes,No,1.8,7,82.6,97.4,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-02,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP086,Hina Tariq,Operations,POS-086,Operations Officer,Junior,36,3.0,3.3,2.5,3.0,7,1,No,No,0.0,1,87.1,98.1,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP087,Kashif Hameed,HR,POS-087,HR Manager,Lead/Manager,108,9.0,17.3,13.3,0.7,36,9,Yes,Yes,6.1,11,88.3,98.2,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP088,Sana Mughal,Operations,POS-088,Operations Specialist,Mid,51,4.2,6.5,5.1,3.4,15,3,No,Yes,0.0,5,87.4,98.1,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP089,Muneeb Haider,HR,POS-089,HR Officer,Junior,35,2.9,5.1,4.0,2.9,10,2,Yes,No,0.0,3,94.5,99.2,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-03,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP090,Noman Ahmad,Finance,POS-090,Financial Analyst,Mid,32,2.7,6.9,5.1,2.3,16,4,No,No,0.0,4,79.6,96.9,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP091,Nida Mughal,Finance,POS-091,Senior Financial Analyst,Senior,45,3.8,10.6,7.9,3.0,17,4,Yes,No,1.4,3,84.4,93.9,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-02,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP092,Mahnoor Ali,Engineering,POS-092,Senior Software Engineer,Senior,42,3.5,7.5,6.6,2.8,18,3,No,Yes,1.3,5,86.0,95.4,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP093,Danish Siddiqui,Sales,POS-093,Senior Account Manager,Senior,130,10.8,18.6,14.9,7.2,34,5,Yes,Yes,0.8,12,86.6,95.1,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-01,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP094,Akbar Abbasi,IT,POS-094,Senior IT Engineer,Senior,104,8.7,15.4,13.7,7.1,24,8,Yes,No,1.6,4,70.7,95.6,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-02,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP095,Haris Mahmood,IT,POS-095,IT Manager,Lead/Manager,129,10.8,20.1,17.4,2.7,40,7,No,No,5.3,16,87.3,98.1,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP096,Ayesha Abbasi,Sales,POS-096,Senior Sales Executive,Mid,14,1.2,6.1,4.9,1.2,10,2,No,Yes,0.0,3,73.9,90.3,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-01,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP097,Sana Arif,Sales,POS-097,Sales Executive,Junior,7,0.6,0.8,0.6,0.6,5,1,No,No,0.0,1,84.4,93.5,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP098,Sidra Zafar,Customer Support,POS-098,Senior Support Executive,Mid,12,1.0,6.3,4.6,1.0,13,4,No,Yes,0.0,5,76.6,96.5,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP099,Bilal Aslam,Finance,POS-099,Financial Analyst,Mid,31,2.6,5.8,4.8,2.6,16,2,Yes,No,0.0,2,87.9,98.2,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP100,Rabia Javed,Engineering,POS-100,Senior Software Engineer,Senior,94,7.8,15.6,12.1,2.5,23,5,Yes,No,2.0,5,78.6,96.8,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP101,Talha Dar,IT,POS-101,IT Engineer,Mid,43,3.6,5.9,5.0,3.0,15,5,Yes,Yes,0.0,5,84.1,97.6,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP102,Akbar Gill,Sales,POS-102,Sales Executive,Junior,36,3.0,3.8,3.0,1.7,6,2,No,No,0.0,1,85.3,97.8,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-01,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP103,Noor Masood,Customer Support,POS-103,Support Executive,Junior,17,1.4,2.1,1.5,0.7,1,0,No,No,0.0,0,75.9,75.6,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-02,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP104,Rabia Ali,IT,POS-104,Senior IT Engineer,Senior,80,6.7,14.5,11.3,5.2,28,8,Yes,Yes,1.8,9,87.2,98.1,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP105,Areeba Raza,Sales,POS-105,Sales Manager,Lead/Manager,179,14.9,24.0,20.3,4.8,40,10,No,Yes,3.6,9,86.3,97.9,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP106,Hina Saleem,HR,POS-106,Senior HR Specialist,Senior,66,5.5,9.3,7.9,2.0,26,6,Yes,Yes,0.5,10,92.3,90.7,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-02,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP107,Zoya Mahmood,Engineering,POS-107,Software Engineer,Mid,37,3.1,7.0,5.3,1.5,14,4,Yes,No,0.0,2,85.8,97.9,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP108,Ayesha Ahmad,HR,POS-108,HR Specialist,Mid,30,2.5,7.0,5.1,2.0,16,5,Yes,No,0.0,3,87.4,98.1,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP109,Ali Farooq,Sales,POS-109,Sales Executive,Junior,14,1.2,1.6,1.3,1.0,4,1,No,No,0.0,1,87.8,89.8,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP110,Arslan Masood,IT,POS-110,Junior IT Engineer,Junior,10,0.8,2.4,1.8,0.3,5,1,Yes,Yes,0.0,1,86.4,93.8,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP111,Sadia Bashir,Sales,POS-111,Senior Sales Executive,Mid,55,4.6,7.3,6.4,2.4,16,3,No,Yes,0.0,4,79.3,96.9,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-01,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP112,Sara Javed,Sales,POS-112,Sales Executive,Junior,10,0.8,1.5,1.1,0.8,4,1,No,No,0.0,1,93.7,90.7,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP113,Shahbaz Gill,IT,POS-113,Junior IT Engineer,Junior,16,1.3,3.3,2.5,1.1,1,0,Yes,Yes,0.0,0,81.8,76.4,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP114,Hamza Hussain,HR,POS-114,HR Specialist,Mid,44,3.7,6.8,5.4,2.0,16,2,Yes,No,0.0,3,81.1,97.2,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP115,Hafsa Abbasi,Engineering,POS-115,Software Engineer,Mid,12,1.0,5.3,4.4,1.0,17,4,Yes,Yes,0.0,4,94.9,99.2,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP116,Ali Abbasi,Engineering,POS-116,Junior Software Engineer,Junior,18,1.5,3.1,2.3,1.4,7,2,No,Yes,0.0,2,88.3,98.2,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP117,Saad Ullah,Engineering,POS-117,Junior Software Engineer,Junior,36,3.0,4.9,3.7,3.0,11,2,No,Yes,0.0,3,80.5,97.1,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-01,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP118,Zoya Ali,Customer Support,POS-118,Senior Support Executive,Mid,20,1.7,5.5,4.2,1.2,9,3,Yes,Yes,0.0,1,80.5,89.4,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-02,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP119,Ayesha Nawaz,Customer Support,POS-119,Team Lead - Customer Support,Senior,103,8.6,12.4,8.6,2.1,21,5,Yes,Yes,1.9,3,75.1,96.3,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP120,Ahmad Aziz,Operations,POS-120,Operations Specialist,Mid,64,5.3,10.2,7.8,1.3,20,4,Yes,Yes,0.0,5,91.6,98.7,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-01,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP121,Mehwish Tariq,Operations,POS-121,Operations Officer,Junior,36,3.0,4.3,3.6,3.0,10,3,No,No,0.0,3,73.3,96.0,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP122,Hafsa Ullah,Operations,POS-122,Operations Officer,Junior,12,1.0,1.4,1.1,1.0,6,1,No,No,0.0,2,86.3,97.9,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP123,Sehrish Ullah,Finance,POS-123,Senior Financial Analyst,Senior,59,4.9,12.9,9.1,2.2,23,7,Yes,Yes,2.1,5,85.0,97.7,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP124,Fahad Javed,Sales,POS-124,Senior Sales Executive,Mid,36,3.0,4.8,3.7,3.0,9,3,Yes,No,0.0,3,75.8,88.7,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP125,Fatima Zafar,Sales,POS-125,Senior Account Manager,Senior,124,10.3,17.8,14.2,1.2,32,5,No,No,2.1,11,83.1,97.5,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-03,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP126,Laiba Sheikh,Customer Support,POS-126,Team Lead - Customer Support,Senior,40,3.3,7.8,6.0,2.8,15,4,Yes,Yes,1.6,2,87.6,91.9,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP127,Khurram Yousaf,HR,POS-127,HR Specialist,Mid,13,1.1,3.2,2.5,1.0,6,1,Yes,Yes,0.0,2,87.2,84.6,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-02,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP128,Zoya Farooq,Customer Support,POS-128,Customer Support Manager,Lead/Manager,120,10.0,18.2,14.6,6.8,36,9,Yes,No,7.8,11,84.8,97.7,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP129,Danish Dar,Engineering,POS-129,Engineering Manager,Lead/Manager,165,13.8,26.0,19.8,1.7,40,9,Yes,Yes,5.5,13,92.0,98.8,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP130,Waqas Siddiqui,HR,POS-130,Senior HR Specialist,Senior,108,9.0,17.2,14.9,0.8,39,13,Yes,Yes,0.4,8,91.3,90.2,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-02,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP131,Ahmad Yousaf,IT,POS-131,IT Engineer,Mid,39,3.2,7.7,6.5,3.2,14,2,Yes,Yes,0.0,2,77.9,96.7,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP132,Arham Qureshi,IT,POS-132,Junior IT Engineer,Junior,6,0.5,2.1,1.4,0.5,7,1,No,Yes,0.0,3,79.5,96.9,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP133,Usman Raza,Engineering,POS-133,Software Engineer,Mid,72,6.0,10.7,7.6,3.2,19,6,Yes,Yes,0.0,7,83.6,97.5,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP134,Talha Awan,IT,POS-134,IT Engineer,Mid,44,3.7,9.1,7.6,2.9,16,5,No,Yes,0.0,2,87.2,98.1,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP135,Eman Butt,Customer Support,POS-135,Senior Support Executive,Mid,46,3.8,7.9,6.3,1.1,14,3,Yes,No,0.0,2,85.0,97.7,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP136,Fatima Saleem,HR,POS-136,HR Specialist,Mid,36,3.0,5.6,4.2,1.9,12,4,No,Yes,0.0,2,85.0,95.8,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-02,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP137,Areeba Farooq,Customer Support,POS-137,Support Executive,Junior,32,2.7,2.9,2.2,1.2,7,2,No,No,0.0,1,78.9,96.8,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP138,Amir Saleem,Engineering,POS-138,Software Engineer,Mid,18,1.5,4.4,3.8,1.2,9,3,Yes,No,0.0,3,69.0,87.7,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-01,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP139,Iqra Saeed,Operations,POS-139,Operations Officer,Junior,34,2.8,3.6,3.1,1.2,9,3,No,No,0.0,3,85.7,97.9,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP140,Noman Rehman,Finance,POS-140,Senior Financial Analyst,Senior,128,10.7,15.1,12.5,2.0,29,8,Yes,No,1.9,11,89.8,98.5,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP141,Asad Zafar,Operations,POS-141,Operations Manager,Lead/Manager,149,12.4,23.8,18.4,5.0,37,6,Yes,Yes,7.9,12,73.7,96.1,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP142,Fahad Farooq,Engineering,POS-142,Engineering Manager,Lead/Manager,132,11.0,20.5,16.5,2.8,40,7,Yes,Yes,3.3,9,91.4,98.7,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP143,Hamza Awan,Finance,POS-143,Financial Analyst,Mid,47,3.9,5.6,4.4,1.0,13,2,Yes,No,0.0,2,90.1,98.5,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP144,Imran Ullah,Customer Support,POS-144,Customer Support Manager,Lead/Manager,122,10.2,21.3,17.3,1.2,40,8,No,No,4.2,10,78.5,96.8,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP145,Ahsan Anwar,Sales,POS-145,Senior Sales Executive,Mid,56,4.7,8.6,6.8,1.0,11,3,No,No,0.0,3,84.5,93.8,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP146,Talha Khan,Finance,POS-146,Financial Analyst,Mid,50,4.2,8.3,6.1,0.4,16,4,Yes,Yes,0.0,5,82.5,97.4,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP147,Hassan Javed,Customer Support,POS-147,Customer Support Manager,Lead/Manager,64,5.3,15.7,12.2,5.0,32,6,No,Yes,5.0,8,75.9,96.4,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP148,Sadia Malik,Sales,POS-148,Sales Executive,Junior,4,0.3,1.9,1.4,0.3,3,1,No,Yes,0.0,1,87.8,85.7,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP149,Muneeb Hameed,Operations,POS-149,Operations Specialist,Mid,42,3.5,9.0,6.3,1.2,14,2,Yes,Yes,0.0,5,92.0,98.8,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP150,Sana Nawaz,Customer Support,POS-150,Support Executive,Junior,17,1.4,2.2,1.8,1.3,3,1,No,No,0.0,1,72.8,83.4,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP151,Farhan Rehman,Engineering,POS-151,Junior Software Engineer,Junior,12,1.0,1.3,0.9,1.0,2,0,No,No,0.0,1,81.3,80.5,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP152,Mahnoor Tariq,IT,POS-152,Senior IT Engineer,Senior,112,9.3,17.7,13.7,3.6,32,8,No,Yes,1.9,12,87.8,98.2,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP153,Kashif Abbasi,Engineering,POS-153,Software Engineer,Mid,56,4.7,8.1,6.2,3.6,15,3,Yes,No,0.0,4,76.3,96.4,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-01,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP154,Hina Abbasi,Engineering,POS-154,Junior Software Engineer,Junior,15,1.2,2.8,2.0,1.2,4,1,Yes,Yes,0.0,1,81.6,88.9,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP155,Noman Malik,Customer Support,POS-155,Senior Support Executive,Mid,39,3.2,7.8,6.0,2.9,18,3,No,Yes,0.0,3,81.8,97.3,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP156,Asad Malik,Engineering,POS-156,Software Engineer,Mid,32,2.7,7.4,4.6,2.4,16,3,Yes,No,0.0,2,90.1,98.5,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-01,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP157,Saba Qureshi,Operations,POS-157,Operations Officer,Junior,11,0.9,3.4,2.8,0.7,9,2,No,Yes,0.0,2,88.5,98.3,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP158,Imran Zafar,Operations,POS-158,Operations Officer,Junior,36,3.0,4.9,4.2,3.0,9,3,Yes,Yes,0.0,2,86.7,98.0,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP159,Raza Ahmad,Engineering,POS-159,Senior Software Engineer,Senior,77,6.4,12.8,10.3,3.6,31,7,Yes,Yes,1.9,12,77.7,96.7,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-01,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP160,Rabia Ullah,Finance,POS-160,Senior Financial Analyst,Senior,85,7.1,13.0,9.8,0.2,24,4,Yes,No,2.1,6,88.5,98.3,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-02,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP161,Iqra Yousaf,Finance,POS-161,Financial Analyst,Mid,70,5.8,8.7,7.7,1.7,16,2,No,Yes,0.0,3,85.1,97.8,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP162,Bilal Shah,Customer Support,POS-162,Support Executive,Junior,6,0.5,1.3,1.0,0.5,9,2,No,No,0.0,3,89.1,98.4,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP163,Sidra Sheikh,Engineering,POS-163,Software Engineer,Mid,11,0.9,4.1,2.9,0.9,11,3,No,Yes,0.0,2,83.1,93.6,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP164,Zoya Saleem,Sales,POS-164,Sales Executive,Junior,31,2.6,3.2,3.0,1.2,6,2,No,No,0.0,1,82.3,97.3,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-03,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP165,Waqas Butt,Sales,POS-165,Sales Executive,Junior,12,1.0,2.0,1.9,1.0,5,1,No,Yes,0.0,2,73.8,91.9,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-01,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP166,Arslan Siddiqui,Sales,POS-166,Sales Manager,Lead/Manager,64,5.3,16.1,13.6,5.0,30,5,Yes,Yes,2.7,9,83.1,97.5,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP167,Bilal Raza,Sales,POS-167,Senior Sales Executive,Mid,48,4.0,9.0,6.8,2.2,18,3,Yes,Yes,0.0,7,87.0,98.1,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-03,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP168,Akbar Saleem,Customer Support,POS-168,Team Lead - Customer Support,Senior,39,3.2,6.8,4.5,3.0,13,4,Yes,No,1.7,4,82.0,88.6,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP169,Iqra Qureshi,IT,POS-169,IT Manager,Lead/Manager,147,12.2,24.4,17.9,0.7,40,8,Yes,Yes,4.0,12,85.4,97.8,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP170,Hina Ahmad,Customer Support,POS-170,Senior Support Executive,Mid,36,3.0,6.6,5.3,3.0,12,3,No,Yes,0.0,5,80.7,95.2,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP171,Usman Ullah,IT,POS-171,IT Manager,Lead/Manager,122,10.2,19.2,14.2,0.8,34,7,Yes,Yes,4.8,10,82.1,97.3,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP172,Zoya Hassan,Operations,POS-172,Operations Specialist,Mid,63,5.2,6.9,5.7,1.9,14,5,Yes,No,0.0,4,71.5,95.7,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP173,Sidra Abbasi,Finance,POS-173,Senior Financial Analyst,Senior,44,3.7,8.6,6.4,3.7,20,3,Yes,Yes,1.2,5,73.2,96.0,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP174,Hassan Aslam,Sales,POS-174,Senior Sales Executive,Mid,44,3.7,5.5,4.4,2.4,11,3,Yes,Yes,0.0,4,74.3,92.3,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-01,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP175,Hassan Arif,Operations,POS-175,Operations Specialist,Mid,6,0.5,4.2,2.8,0.5,12,4,No,Yes,0.0,5,90.0,96.6,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP176,Ahsan Aziz,Sales,POS-176,Senior Account Manager,Senior,111,9.2,13.2,9.4,0.8,24,8,Yes,Yes,1.3,9,79.6,96.9,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-03,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP177,Danish Anwar,HR,POS-177,HR Specialist,Mid,37,3.1,6.4,5.2,2.7,13,2,No,Yes,0.0,3,75.2,96.3,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP178,Fatima Rehman,Sales,POS-178,Sales Executive,Junior,5,0.4,2.9,1.8,0.4,3,1,No,Yes,0.0,1,87.8,85.7,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP179,Muneeb Javed,Operations,POS-179,Operations Officer,Junior,17,1.4,3.1,2.6,1.1,7,2,Yes,No,0.0,1,85.8,97.9,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP180,Arham Hussain,Customer Support,POS-180,Support Executive,Junior,12,1.0,2.5,2.1,1.0,8,2,No,Yes,0.0,2,80.2,97.0,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP181,Saad Yousaf,Operations,POS-181,Operations Officer,Junior,17,1.4,2.7,2.0,1.2,2,0,No,Yes,0.0,1,83.2,80.8,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP182,Waqas Ahmad,Sales,POS-182,Senior Sales Executive,Mid,23,1.9,7.3,5.4,1.3,17,6,Yes,Yes,0.0,6,89.2,98.4,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-03,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP183,Zain Saleem,IT,POS-183,Junior IT Engineer,Junior,36,3.0,4.4,3.6,3.0,9,3,No,Yes,0.0,3,83.0,97.5,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP184,Iqra Hassan,Operations,POS-184,Operations Officer,Junior,12,1.0,1.4,0.9,1.0,3,1,No,No,0.0,1,75.5,83.8,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP185,Salman Hameed,Finance,POS-185,Senior Financial Analyst,Senior,88,7.3,11.3,9.1,3.8,22,6,Yes,No,0.4,8,81.6,88.8,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP186,Zara Masood,IT,POS-186,IT Engineer,Mid,20,1.7,5.3,3.3,1.0,13,3,Yes,Yes,0.0,5,85.0,97.8,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP187,Nida Mahmood,Operations,POS-187,Operations Officer,Junior,30,2.5,4.0,3.1,1.2,8,2,No,Yes,0.0,1,75.1,96.3,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP188,Areeba Ahmad,IT,POS-188,Senior IT Engineer,Senior,112,9.3,15.2,13.6,1.2,25,7,No,Yes,1.5,4,81.4,97.2,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP189,Omer Masood,Engineering,POS-189,Engineering Manager,Lead/Manager,53,4.4,16.2,11.8,2.2,32,9,No,Yes,3.8,5,82.0,97.3,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP190,Noor Saeed,HR,POS-190,HR Officer,Junior,18,1.5,1.9,1.7,1.5,2,1,No,No,0.0,1,74.3,79.5,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-02,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP191,Danish Yousaf,Operations,POS-191,Operations Specialist,Mid,56,4.7,9.7,8.3,3.8,26,4,Yes,Yes,0.0,7,87.4,98.1,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP192,Kashif Hussain,Sales,POS-192,Sales Executive,Junior,31,2.6,4.6,4.1,1.3,7,2,Yes,Yes,0.0,2,82.3,97.3,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-01,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP193,Zain Qureshi,Operations,POS-193,Operations Officer,Junior,8,0.7,0.8,0.6,0.5,6,1,No,No,0.0,1,94.3,99.1,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP194,Shahid Ahmad,Customer Support,POS-194,Senior Support Executive,Mid,8,0.7,4.2,3.1,0.7,9,2,Yes,Yes,0.0,2,85.5,90.1,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP195,Mohsin Khan,Engineering,POS-195,Engineering Manager,Lead/Manager,104,8.7,15.5,12.4,1.7,32,6,Yes,Yes,2.2,11,83.7,95.7,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP196,Mohsin Abbasi,Engineering,POS-196,Software Engineer,Mid,27,2.2,6.2,5.4,2.1,16,2,Yes,Yes,0.0,4,82.8,97.4,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP197,Zeeshan Qureshi,HR,POS-197,HR Manager,Lead/Manager,56,4.7,14.3,11.5,4.4,29,10,No,No,6.2,7,85.8,97.9,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP198,Ali Tariq,Operations,POS-198,Operations Officer,Junior,18,1.5,1.6,1.4,1.5,1,0,No,No,0.0,0,84.8,76.9,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-01,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP199,Zara Tariq,Customer Support,POS-199,Support Executive,Junior,22,1.8,4.2,3.5,1.8,7,1,Yes,Yes,0.0,2,88.8,98.3,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-02,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP200,Ahmad Abbasi,Customer Support,POS-200,Senior Support Executive,Mid,42,3.5,6.7,4.8,3.3,14,3,Yes,Yes,0.0,3,89.6,98.4,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP201,Taha Saeed,HR,EXEC-HR-HEAD,Head of HR,Executive,130,10.8,30.5,25.6,8.7,32,8,Yes,No,23.9,9,87.7,100,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP202,Usman Hashmi,HR,POS-201,HR Manager,Lead/Manager,69,5.8,18.2,13.3,2.8,42,7,No,No,14.4,8,82.4,100,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP203,Zainab Awan,HR,POS-202,HR Manager,Lead/Manager,94,7.8,15.9,12.9,4.2,32,3,No,No,11.7,7,99.4,100,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP204,Mahnoor Khan,HR,POS-203,Senior HR Business Partner,Senior,51,4.2,10.8,6.4,2.0,21,5,Yes,No,0.1,7,73.7,86.6,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP205,Farhan Nadeem,HR,POS-204,Senior HR Business Partner,Senior,112,9.3,15.1,11.8,9.3,18,3,No,Yes,0.4,6,86.0,100,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-03,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP206,Minal Abbasi,HR,POS-205,Senior HR Business Partner,Senior,112,9.3,17.8,12.4,0.2,31,6,No,No,0.1,4,97.9,100,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-03,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP207,Nida Sultan,HR,POS-206,HR Officer,Mid,28,2.3,5.5,4.0,2.0,5,1,No,No,1.2,3,77.4,76.4,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP208,Omar Rauf,HR,POS-207,HR Officer,Mid,79,6.6,10.4,6.4,5.0,15,2,No,No,0.4,1,89.1,85.8,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-02,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP209,Adnan Aziz,HR,POS-208,HR Officer,Mid,54,4.5,7.9,6.6,2.7,18,2,No,Yes,0.7,1,82.2,85.6,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP210,Maha Latif,HR,POS-209,HR Officer,Mid,25,2.1,6.1,3.6,0.6,11,1,No,No,0.5,5,99.5,78.2,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-03,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP211,Adnan Abbasi,HR,POS-210,HR Officer,Mid,56,4.7,7.0,6.1,1.7,14,2,Yes,No,0.7,4,93.2,86.3,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP212,Talha Saleem,HR,POS-211,HR Officer,Mid,68,5.7,9.4,7.6,5.5,19,5,No,No,0.3,4,84.1,92.7,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP213,Talha Khalid,HR,POS-212,HR Officer,Mid,71,5.9,11.8,9.1,0.9,20,4,No,No,0.7,1,87.7,97.2,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP214,Talha Ejaz,HR,POS-213,HR Assistant,Junior,11,0.9,2.7,1.6,0.8,2,0,No,No,1.4,5,97.1,72.0,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-03,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP215,Mehwish Baig,HR,POS-214,HR Assistant,Junior,25,2.1,2.8,1.7,2.1,4,0,No,No,0.6,0,80.1,67.3,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP216,Sana Mahmood,HR,POS-215,HR Assistant,Junior,25,2.1,2.9,2.0,0.4,6,0,No,No,0.8,0,81.8,69.0,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP217,Laiba Qureshi,HR,POS-216,HR Assistant,Junior,25,2.1,2.1,1.9,1.4,3,0,No,No,0.0,0,84.8,67.7,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP218,Laiba Zafar,HR,POS-217,HR Assistant,Junior,21,1.8,3.0,2.0,0.7,3,0,No,Yes,0.8,5,76.5,67.9,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP219,Komal Yousaf,HR,POS-218,HR Assistant,Junior,24,2.0,3.6,3.1,1.3,4,1,No,No,0.4,3,81.4,72.9,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-03,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP220,Taha Saleem,HR,POS-219,HR Assistant,Junior,24,2.0,2.6,1.5,1.2,5,1,No,No,0.7,5,88.2,70.0,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP221,Anam Akhtar,HR,POS-220,HR Assistant,Junior,34,2.8,4.1,3.4,1.3,9,1,No,No,0.6,1,85.8,75.1,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP222,Farhan Khan,HR,POS-221,HR Assistant,Junior,5,0.4,1.7,1.1,0.4,3,0,No,No,1.1,0,93.5,69.2,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP223,Talha Mahmood,HR,POS-222,HR Assistant,Junior,23,1.9,3.6,2.5,1.7,6,1,Yes,Yes,1.5,5,84.0,73.8,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP224,Laiba Ali,HR,POS-223,HR Intern,Intern,9,0.8,0.9,0.8,0.8,2,0,No,No,1.4,0,78.6,65.9,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-02,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP225,Noor Rauf,HR,POS-224,HR Intern,Intern,11,0.9,0.9,0.6,0.4,0,0,No,No,0.8,0,85.2,65.4,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-02,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP226,Taha Raza,HR,POS-225,HR Intern,Intern,11,0.9,1.8,1.3,0.3,2,0,No,Yes,1.5,1,91.4,70.2,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP227,Fahad Sheikh,Finance,EXEC-FIN-HEAD,Head of Finance,Executive,182,15.2,34.1,23.6,0.8,35,8,No,No,30.0,8,71.9,100,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP228,Ahmed Farooq,Finance,POS-226,Finance Manager,Lead/Manager,67,5.6,15.4,12.4,3.8,35,6,Yes,No,8.5,7,83.2,100,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP229,Danish Sultan,Finance,POS-227,Finance Manager,Lead/Manager,72,6.0,14.8,11.6,0.6,20,4,No,No,8.4,9,86.0,100,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP230,Saba Nadeem,Finance,POS-228,Finance Manager,Lead/Manager,185,15.4,26.7,15.0,6.8,30,7,Yes,No,20.4,8,84.4,100,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP231,Ayesha Aziz,Finance,POS-229,Finance Manager,Lead/Manager,109,9.1,21.7,16.7,7.3,35,10,Yes,No,14.9,10,91.5,100,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP232,Raza Iqbal,Finance,POS-230,Finance Manager,Lead/Manager,129,10.8,22.1,19.1,0.6,52,7,No,No,17.8,5,100,100,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP233,Eman Akhtar,Finance,POS-231,Financial Analyst,Mid,45,3.8,9.4,7.9,2.2,19,5,No,Yes,0.5,4,84.4,94.1,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP234,Hira Qureshi,Finance,POS-232,Financial Analyst,Mid,48,4.0,8.2,5.8,1.9,10,2,No,No,0.4,8,84.3,83.1,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP235,Farhan Munir,Finance,POS-233,Financial Analyst,Mid,85,7.1,13.1,10.9,0.6,13,3,No,No,0.8,9,65.9,97.0,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-02,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP236,Anam Nadeem,Finance,POS-234,Financial Analyst,Mid,64,5.3,7.9,5.4,5.0,12,1,No,Yes,0.9,6,82.8,81.1,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-02,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP237,Areeba Munir,Finance,POS-235,Accounts Assistant,Junior,39,3.2,5.3,4.5,1.0,10,2,No,Yes,0.6,0,80.1,78.7,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP238,Kinza Ali,Finance,POS-236,Accounts Assistant,Junior,10,0.8,3.4,2.7,0.6,7,0,No,No,1.5,4,75.9,71.3,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP239,Komal Sultan,Finance,POS-237,Accounts Assistant,Junior,28,2.3,2.5,1.5,1.2,4,0,No,No,0.3,0,92.2,68.5,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-02,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP240,Eman Latif,Finance,POS-238,Accounts Assistant,Junior,11,0.9,0.9,0.8,0.5,0,0,No,No,1.5,6,94.7,69.3,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP241,Mahnoor Hameed,Finance,POS-239,Accounts Assistant,Junior,6,0.5,3.5,3.1,0.4,3,0,No,No,1.5,5,79.4,73.2,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-02,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP242,Mehwish Dar,Finance,POS-240,Accounts Assistant,Junior,13,1.1,2.1,1.6,0.2,3,0,No,No,0.9,9,79.8,67.6,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP243,Mehwish Khalid,Finance,POS-241,Accounts Assistant,Junior,4,0.3,1.1,0.7,0.3,1,0,No,No,0.6,5,76.2,63.5,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP244,Saad Rauf,Finance,POS-242,Accounts Assistant,Junior,34,2.8,5.2,4.2,2.1,7,0,No,No,0.6,2,71.2,73.0,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP245,Ayesha Habib,Finance,POS-243,Accounts Assistant,Junior,10,0.8,3.4,2.9,0.6,4,0,No,No,0.4,3,75.9,69.7,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP246,Ahmed Zafar,Finance,POS-244,Accounts Assistant,Junior,25,2.1,4.1,3.1,1.3,5,0,No,No,1.1,5,71.1,70.7,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-02,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP247,Maha Aslam,Finance,POS-245,Accounts Assistant,Junior,37,3.1,3.8,2.2,0.6,8,1,No,No,0.7,10,77.3,70.0,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP248,Anam Zafar,Finance,POS-246,Accounts Assistant,Junior,39,3.2,5.6,3.9,0.3,7,1,No,No,1.5,7,94.2,80.0,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP249,Noor Qureshi,Finance,POS-247,Finance Intern,Intern,3,0.2,1.1,0.8,0.2,1,0,No,No,1.3,0,88.6,67.7,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP250,Taha Malik,Finance,POS-248,Finance Intern,Intern,12,1.0,1.4,1.1,0.3,1,0,No,No,0.1,1,71.2,62.7,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP251,Mahnoor Javed,Finance,POS-249,Finance Intern,Intern,7,0.6,1.5,1.3,0.4,2,0,No,No,0.6,0,87.7,67.6,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP252,Iqra Ismail,Sales,EXEC-SAL-HEAD,Head of Sales,Executive,101,8.4,22.2,18.8,6.0,32,7,Yes,Yes,17.3,5,87.9,100,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP253,Hassan Nawaz,Sales,POS-250,Senior Account Manager,Senior,54,4.5,13.9,8.7,2.4,31,8,No,No,0.5,0,82.1,100,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP254,Farhan Awan,Sales,POS-251,Senior Account Manager,Senior,86,7.2,14.4,12.5,2.6,33,6,No,No,0.6,3,81.2,100,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP255,Rabia Rashid,Sales,POS-252,Senior Account Manager,Senior,149,12.4,21.1,11.9,1.0,21,4,Yes,Yes,1.3,8,79.4,100,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP256,Omar Farooq,Sales,POS-253,Sales Intern,Intern,1,0.1,0.3,0.2,0.1,0,0,No,No,0.5,1,88.0,64.2,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP257,Adnan Baig,Sales,POS-254,Sales Intern,Intern,6,0.5,1.5,1.1,0.2,3,0,No,No,1.1,0,92.5,69.0,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP258,Ayesha Khalid,Sales,POS-255,Sales Intern,Intern,12,1.0,1.7,1.1,0.7,4,0,No,No,0.3,0,74.5,63.8,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-01,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP259,Usman Nasir,Customer Support,EXEC-CS-HEAD,Head of Customer Support,Executive,203,16.9,35.7,21.6,15.9,40,4,No,No,32.4,6,89.8,100,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP260,Rabia Farooq,Customer Support,POS-256,Senior Customer Support Specialist,Senior,104,8.7,17.6,13.3,8.0,24,4,No,No,0.6,3,76.5,100,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP261,Anam Ahmed,Customer Support,POS-257,Senior Customer Support Specialist,Senior,97,8.1,17.8,12.3,1.5,25,7,No,No,0.0,10,93.6,100,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP262,Omar Riaz,Customer Support,POS-258,Senior Customer Support Specialist,Senior,118,9.8,17.9,12.4,1.1,28,6,No,No,0.3,9,82.5,100,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-02,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP263,Anusha Rauf,Customer Support,POS-259,Customer Support Specialist,Mid,58,4.8,8.7,6.3,3.4,10,2,No,No,1.0,8,94.2,87.7,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP264,Areeba Rauf,Customer Support,POS-260,Customer Support Specialist,Mid,34,2.8,5.8,4.1,0.5,6,1,No,No,0.7,6,83.1,76.8,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP265,Danish Saleem,Customer Support,POS-261,Customer Support Intern,Intern,2,0.2,0.6,0.4,0.2,0,0,No,Yes,0.5,0,87.4,64.7,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP266,Maryam Khalid,Customer Support,POS-262,Customer Support Intern,Intern,7,0.6,0.9,0.6,0.5,1,0,No,No,1.1,0,90.6,67.1,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP267,Haris Awan,Customer Support,POS-263,Customer Support Intern,Intern,1,0.1,0.3,0.2,0.1,0,0,No,No,0.5,2,88.1,64.2,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP268,Fatima Mughal,Engineering,EXEC-ENG-HEAD,Head of Engineering,Executive,125,10.4,22.5,13.5,5.1,33,7,No,No,16.4,12,84.5,100,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP269,Noor Bukhari,Engineering,POS-264,Senior Software Engineer,Senior,105,8.8,17.4,11.4,6.3,27,5,No,No,0.2,7,81.7,100,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP270,Laiba Saeed,Engineering,POS-265,Senior Software Engineer,Senior,128,10.7,16.3,11.1,7.4,29,6,No,Yes,1.1,9,81.6,100,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP271,Minal Khalid,Engineering,POS-266,Junior Software Engineer,Junior,31,2.6,5.5,4.2,2.4,10,2,Yes,No,1.4,4,82.9,80.0,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP272,Ali Siddiqui,Engineering,POS-267,Junior Software Engineer,Junior,20,1.7,3.8,3.2,0.6,7,1,No,No,1.3,0,87.3,76.2,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP273,Haris Ejaz,Engineering,POS-268,Junior Software Engineer,Junior,36,3.0,3.8,3.3,0.6,6,1,No,No,0.0,2,94.1,75.2,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-01,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP274,Adnan Awan,Engineering,POS-269,Engineering Intern,Intern,2,0.2,0.4,0.3,0.2,0,0,No,No,0.5,0,92.8,65.5,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP275,Fatima Saeed,Engineering,POS-270,Engineering Intern,Intern,7,0.6,1.5,0.9,0.5,2,0,No,No,1.1,7,87.6,67.4,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-01,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP276,Ali Riaz,Engineering,POS-271,Engineering Intern,Intern,1,0.1,0.8,0.7,0.1,1,0,No,No,0.7,5,80.2,64.5,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP277,Amna Chaudhry,Operations,EXEC-OPS-HEAD,Head of Operations,Executive,223,18.6,31.3,21.3,13.5,46,4,No,No,27.2,8,76.2,100,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP278,Kinza Mirza,Operations,POS-272,Operations Manager,Lead/Manager,181,15.1,23.8,13.7,13.0,44,5,Yes,Yes,20.7,4,77.5,100,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP279,Minal Ali,Operations,POS-273,Senior Operations Officer,Senior,116,9.7,16.7,13.5,5.4,32,7,Yes,No,0.5,2,100,100,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP280,Noman Waheed,Operations,POS-274,Senior Operations Officer,Senior,40,3.3,10.7,6.6,3.3,16,2,No,No,0.2,10,84.3,85.1,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP281,Noman Shah,Operations,POS-275,Senior Operations Officer,Senior,99,8.2,16.8,15.0,7.3,33,8,No,Yes,0.6,3,87.6,100,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-01,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP282,Sana Latif,Operations,POS-276,Senior Operations Officer,Senior,109,9.1,17.0,11.5,5.0,38,5,No,No,0.5,6,85.2,100,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-01,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP283,Komal Baig,Operations,POS-277,Senior Operations Officer,Senior,130,10.8,20.8,13.9,3.7,35,4,No,Yes,0.4,6,75.6,100,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP284,Hamza Aziz,Operations,POS-278,Senior Operations Officer,Senior,118,9.8,16.4,10.4,8.9,37,9,No,No,0.2,8,92.5,100,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP285,Maryam Baig,Operations,POS-279,Senior Operations Officer,Senior,108,9.0,14.5,10.0,1.8,15,2,No,Yes,1.2,0,83.5,97.1,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP286,Taha Munir,Operations,POS-280,Senior Operations Officer,Senior,119,9.9,17.1,13.0,4.8,39,5,No,No,0.5,8,85.1,100,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-01,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP287,Komal Waheed,Operations,POS-281,Operations Officer,Mid,56,4.7,7.8,6.2,3.0,10,2,No,No,1.4,0,74.4,84.3,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP288,Hira Chaudhry,Operations,POS-282,Operations Officer,Mid,71,5.9,9.3,6.5,4.3,10,1,No,Yes,0.3,8,67.4,80.1,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-01,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP289,Ali Javed,Operations,POS-283,Operations Intern,Intern,12,1.0,1.4,0.9,0.8,2,0,No,No,1.3,0,73.4,65.0,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP290,Sara Shah,Operations,POS-284,Operations Intern,Intern,5,0.4,1.0,0.8,0.4,1,0,No,No,0.5,3,98.5,68.1,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-01,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP291,Raza Khan,Operations,POS-285,Operations Intern,Intern,12,1.0,1.5,0.8,0.2,2,0,No,No,0.4,0,78.0,63.8,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP292,Imran Mughal,IT,EXEC-IT-HEAD,Head of IT,Executive,124,10.3,24.0,20.9,2.4,44,6,No,No,20.5,8,84.6,100,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP293,Asad Akhtar,IT,POS-286,IT Manager,Lead/Manager,90,7.5,21.1,12.5,5.0,40,7,Yes,No,17.9,0,77.9,100,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP294,Sara Mirza,IT,POS-287,IT Manager,Lead/Manager,184,15.3,23.4,20.8,11.2,36,5,No,No,15.8,5,80.0,100,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP295,Raza Rehman,IT,POS-288,IT Manager,Lead/Manager,66,5.5,18.2,10.4,2.9,23,2,No,No,11.5,4,90.9,100,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP296,Fahad Aziz,IT,POS-289,Senior Systems Engineer,Senior,146,12.2,21.2,17.4,4.4,22,5,No,No,0.9,9,74.3,100,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-02,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP297,Usman Mughal,IT,POS-290,Senior Systems Engineer,Senior,52,4.3,14.2,10.8,2.0,31,6,Yes,Yes,1.5,4,89.5,100,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP298,Ayesha Mughal,IT,POS-291,Senior Systems Engineer,Senior,75,6.2,16.0,12.5,5.3,21,5,No,No,0.9,7,82.1,100,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP299,Noor Nadeem,IT,POS-292,Systems Administrator,Mid,50,4.2,7.8,6.7,1.3,17,3,No,No,1.3,9,77.7,87.7,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-02,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP300,Talha Akhtar,IT,POS-293,Systems Administrator,Mid,17,1.4,6.0,4.2,1.2,14,1,No,Yes,1.2,5,77.9,77.1,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP301,Talha Ali,IT,POS-294,Systems Administrator,Mid,21,1.8,5.4,4.2,0.4,8,1,No,No,0.0,6,95.3,78.2,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP302,Zainab Mahmood,IT,POS-295,Systems Administrator,Mid,34,2.8,5.5,3.2,1.1,5,0,Yes,No,0.1,9,80.7,70.9,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP303,Saba Hameed,IT,POS-296,Systems Administrator,Mid,58,4.8,7.7,4.9,0.5,15,2,Yes,No,0.8,9,85.4,81.4,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP304,Sana Akhtar,IT,POS-297,Systems Administrator,Mid,40,3.3,8.7,6.9,3.0,11,1,No,No,0.3,9,76.6,83.1,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-02,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP305,Talha Habib,IT,POS-298,Systems Administrator,Mid,90,7.5,9.6,6.6,0.9,16,3,No,No,1.2,1,83.6,88.4,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-02,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP306,Imran Hameed,IT,POS-299,IT Support Technician,Junior,21,1.8,3.4,2.3,1.5,6,1,No,No,0.8,2,91.7,73.3,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-02,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP307,Omar Habib,IT,POS-300,IT Support Technician,Junior,40,3.3,5.6,4.1,2.9,6,0,Yes,No,1.4,1,86.1,77.3,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-02,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP308,Adnan Riaz,IT,POS-301,IT Support Technician,Junior,19,1.6,2.5,1.7,0.9,3,0,No,No,1.3,5,77.5,68.2,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP309,Shahzaib Hashmi,IT,POS-302,IT Support Technician,Junior,42,3.5,3.7,2.2,0.4,8,1,No,Yes,0.0,4,79.0,68.9,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP310,Maryam Chaudhry,IT,POS-303,IT Support Technician,Junior,10,0.8,3.5,2.7,0.4,5,0,No,No,1.0,6,78.5,70.8,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-02,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP311,Junaid Zafar,IT,POS-304,IT Support Technician,Junior,5,0.4,1.6,1.4,0.3,3,0,No,No,0.9,6,85.6,68.1,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-02,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP312,Areeba Tariq,IT,POS-305,IT Support Technician,Junior,41,3.4,4.2,3.6,2.4,6,0,No,No,0.8,3,96.6,76.7,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP313,Kamran Mughal,IT,POS-306,IT Intern,Intern,3,0.2,0.6,0.4,0.2,0,0,No,No,1.4,0,87.8,66.6,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP314,Anam Hameed,IT,POS-307,IT Intern,Intern,12,1.0,1.6,1.2,0.3,3,0,No,No,0.9,0,84.6,67.3,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP315,Maha Abbasi,IT,POS-308,IT Intern,Intern,3,0.2,1.0,0.6,0.2,1,0,No,Yes,0.4,2,95.4,66.7,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP316,Imran Abbasi,Medical Care,EXEC-MED-HEAD,Head of Medical Care,Executive,218,18.2,30.7,27.6,7.1,38,9,No,No,23.7,8,92.9,100,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP317,Anam Khan,Medical Care,POS-309,Medical Care Manager,Lead/Manager,103,8.6,20.3,14.6,6.4,27,2,No,No,16.4,11,72.3,100,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP318,Haris Khalid,Medical Care,POS-310,Medical Care Manager,Lead/Manager,72,6.0,16.0,12.6,2.3,16,3,Yes,No,12.4,6,94.2,100,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP319,Anusha Baig,Medical Care,POS-311,Medical Care Manager,Lead/Manager,117,9.8,23.2,13.0,9.8,43,11,No,No,17.5,11,89.3,100,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP320,Shahzaib Iqbal,Medical Care,POS-312,Medical Care Manager,Lead/Manager,111,9.2,22.6,12.7,5.4,47,11,No,No,19.1,10,86.8,100,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP321,Hira Awan,Medical Care,POS-313,Medical Care Manager,Lead/Manager,184,15.3,27.0,24.2,1.6,63,6,No,Yes,20.2,6,96.8,100,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP322,Kinza Butt,Medical Care,POS-314,Medical Care Manager,Lead/Manager,172,14.3,27.0,23.6,12.5,43,5,No,Yes,20.3,5,82.6,100,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP323,Rabia Bukhari,Medical Care,POS-315,Senior Medical Officer,Senior,46,3.8,8.8,6.0,2.3,15,3,No,No,1.2,8,80.8,86.1,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP324,Waqas Farooq,Medical Care,POS-316,Senior Medical Officer,Senior,90,7.5,15.7,10.4,5.6,36,6,No,Yes,1.2,9,100,100,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP325,Eman Iqbal,Medical Care,POS-317,Senior Medical Officer,Senior,74,6.2,11.5,6.7,3.3,16,2,No,No,1.4,3,87.9,88.5,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP326,Hira Yousaf,Medical Care,POS-318,Senior Medical Officer,Senior,113,9.4,18.4,15.2,4.2,28,7,No,No,0.4,1,90.6,100,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-01,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP327,Sidra Yousaf,Medical Care,POS-319,Senior Medical Officer,Senior,145,12.1,17.1,9.7,6.8,21,2,No,No,1.5,9,83.4,96.8,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-01,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP328,Raza Javed,Medical Care,POS-320,Senior Medical Officer,Senior,84,7.0,16.0,12.6,6.9,32,6,Yes,No,1.2,5,88.2,100,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP329,Ali Aziz,Medical Care,POS-321,Senior Medical Officer,Senior,123,10.2,19.9,11.6,5.7,39,4,No,Yes,0.1,6,76.4,100,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP330,Farhan Khalid,Medical Care,POS-322,Senior Medical Officer,Senior,53,4.4,9.6,7.4,2.5,18,3,No,Yes,0.2,5,79.6,88.0,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP331,Iqra Saleem,Medical Care,POS-323,Medical Officer,Mid,75,6.2,10.2,8.2,2.1,10,2,No,No,0.5,12,90.8,91.8,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP332,Maryam Ismail,Medical Care,POS-324,Medical Officer,Mid,53,4.4,8.4,7.1,1.4,13,2,No,No,1.3,7,79.7,87.8,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-01,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP333,Bilal Zafar,Medical Care,POS-325,Medical Officer,Mid,75,6.2,9.2,6.8,2.6,12,1,Yes,No,1.3,4,71.2,83.7,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP334,Fahad Hashmi,Medical Care,POS-326,Medical Officer,Mid,44,3.7,8.5,4.9,0.4,18,4,No,No,0.8,3,88.2,84.9,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP335,Haris Rauf,Medical Care,POS-327,Medical Officer,Mid,65,5.4,10.9,6.7,0.8,25,5,No,No,1.0,9,88.0,92.2,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-01,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP336,Kinza Faisal,Medical Care,POS-328,Medical Officer,Mid,56,4.7,7.6,6.1,3.6,16,4,Yes,No,0.1,4,86.6,86.8,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP337,Junaid Mahmood,Medical Care,POS-329,Medical Officer,Mid,84,7.0,9.6,8.6,5.0,12,1,No,Yes,1.1,13,86.4,91.8,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP338,Imran Malik,Medical Care,POS-330,Medical Officer,Mid,82,6.8,11.5,8.3,0.7,27,5,Yes,No,1.1,5,92.5,98.1,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-01,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP339,Saba Saleem,Medical Care,POS-331,Medical Officer,Mid,28,2.3,5.6,4.5,0.8,9,2,Yes,Yes,1.1,0,77.6,79.2,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP340,Eman Raza,Medical Care,POS-332,Medical Officer,Mid,28,2.3,7.0,5.2,1.3,9,1,No,No,1.5,6,75.5,80.2,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP341,Kashif Latif,Medical Care,POS-333,Medical Officer,Mid,89,7.4,9.7,7.9,4.5,9,0,Yes,No,0.9,8,78.7,86.2,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP342,Maha Mughal,Medical Care,POS-334,Medical Officer,Mid,82,6.8,9.4,8.4,3.9,20,2,No,Yes,1.0,8,90.4,93.3,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP343,Taha Butt,Medical Care,POS-335,Medical Officer,Mid,24,2.0,7.7,5.1,1.3,9,0,No,No,0.1,4,69.1,74.3,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-01,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP344,Saba Latif,Medical Care,POS-336,Medical Officer,Mid,39,3.2,6.3,4.8,1.9,7,1,No,No,0.4,2,83.6,78.4,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP345,Sana Chaudhry,Medical Care,POS-337,Junior Medical Officer,Junior,25,2.1,3.9,2.6,0.4,6,0,No,No,1.0,4,79.1,70.6,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP346,Hira Hashmi,Medical Care,POS-338,Junior Medical Officer,Junior,26,2.2,3.4,2.8,0.3,5,0,No,No,1.4,1,100,76.2,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP347,Maryam Tariq,Medical Care,POS-339,Junior Medical Officer,Junior,39,3.2,3.4,2.2,0.2,3,0,No,No,0.9,6,88.3,71.1,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-01,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP348,Anusha Latif,Medical Care,POS-340,Junior Medical Officer,Junior,13,1.1,1.3,1.0,0.6,2,0,No,No,1.4,1,85.7,67.9,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP349,Iqra Nawaz,Medical Care,POS-341,Junior Medical Officer,Junior,6,0.5,2.4,1.5,0.5,3,0,No,Yes,1.5,4,68.3,66.2,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP350,Noor Abbasi,Medical Care,POS-342,Junior Medical Officer,Junior,28,2.3,4.4,2.7,1.6,10,2,No,Yes,0.4,1,96.2,76.1,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP351,Talha Shah,Medical Care,POS-343,Junior Medical Officer,Junior,35,2.9,5.1,4.6,1.1,10,1,No,No,0.6,0,91.6,79.8,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP352,Bilal Mughal,Medical Care,POS-344,Junior Medical Officer,Junior,34,2.8,4.5,2.7,2.5,6,1,No,Yes,0.5,0,75.2,70.6,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-01,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP353,Nida Latif,Medical Care,POS-345,Junior Medical Officer,Junior,7,0.6,2.3,1.5,0.4,3,0,No,No,0.4,5,82.8,66.9,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP354,Anam Khalid,Medical Care,POS-346,Junior Medical Officer,Junior,38,3.2,5.5,3.6,3.1,9,2,No,No,1.5,1,95.9,81.0,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP355,Saad Shah,Medical Care,POS-347,Junior Medical Officer,Junior,40,3.3,5.0,3.3,1.3,5,0,No,No,0.2,4,76.2,70.5,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP356,Hira Mirza,Medical Care,POS-348,Junior Medical Officer,Junior,5,0.4,1.2,0.9,0.3,1,0,No,No,0.3,5,92.2,66.7,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP357,Kamran Ismail,Medical Care,POS-349,Junior Medical Officer,Junior,34,2.8,5.6,3.3,0.4,10,1,No,No,1.4,0,92.8,77.8,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP358,Junaid Saeed,Medical Care,POS-350,Clinical Intern,Intern,11,0.9,1.5,1.2,0.7,2,0,No,No,0.6,1,89.2,67.6,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP359,Saba Mahmood,Medical Care,POS-351,Clinical Intern,Intern,5,0.4,1.2,0.9,0.3,2,0,No,No,1.5,0,95.2,69.7,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-01,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP360,Omar Qureshi,Medical Care,POS-352,Clinical Intern,Intern,2,0.2,0.3,0.3,0.2,0,0,Yes,No,1.3,9,91.6,66.8,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-01,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP361,Hira Siddiqui,Training & Development,EXEC-TRN-HEAD,Head of Training and Development,Executive,146,12.2,24.2,18.8,6.9,46,12,No,No,16.8,5,86.9,100,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP362,Iqra Mahmood,Training & Development,POS-353,Training Manager,Lead/Manager,60,5.0,16.7,12.7,2.1,38,5,No,Yes,10.3,7,79.6,100,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP363,Shahzaib Rauf,Training & Development,POS-354,Training Manager,Lead/Manager,125,10.4,21.9,16.6,5.7,39,8,No,No,16.9,5,100,100,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP364,Iqra Malik,Training & Development,POS-355,Training Manager,Lead/Manager,145,12.1,21.2,11.8,8.1,21,3,Yes,No,15.4,0,89.2,100,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP365,Noor Raza,Training & Development,POS-356,Training Manager,Lead/Manager,119,9.9,21.1,12.1,3.1,38,5,No,No,17.0,7,79.5,100,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP366,Saad Khan,Training & Development,POS-357,Training Manager,Lead/Manager,124,10.3,22.3,13.2,1.7,42,5,No,No,18.8,5,88.2,100,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP367,Laiba Siddiqui,Training & Development,POS-358,Training Manager,Lead/Manager,92,7.7,16.8,13.6,5.0,32,6,No,No,12.4,10,80.9,100,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP368,Saba Hashmi,Training & Development,POS-359,Senior Trainer,Senior,51,4.2,12.3,10.4,3.8,25,4,No,No,0.6,4,89.0,100,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP369,Maha Rauf,Training & Development,POS-360,Senior Trainer,Senior,137,11.4,18.8,15.2,2.0,39,7,No,No,1.0,1,83.6,100,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP370,Anusha Mahmood,Training & Development,POS-361,Senior Trainer,Senior,143,11.9,19.1,12.1,9.4,33,4,No,No,0.3,1,79.2,100,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-02,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP371,Omar Tariq,Training & Development,POS-362,Senior Trainer,Senior,51,4.2,11.4,8.1,1.1,26,5,No,No,0.7,5,77.5,93.7,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP372,Hassan Nadeem,Training & Development,POS-363,Senior Trainer,Senior,38,3.2,10.2,8.9,2.1,21,2,No,Yes,1.1,3,87.5,94.4,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP373,Noman Nawaz,Training & Development,POS-364,Senior Trainer,Senior,115,9.6,15.1,12.2,6.9,18,2,No,No,0.1,4,70.4,98.9,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP374,Iqra Habib,Training & Development,POS-365,Senior Trainer,Senior,66,5.5,11.9,9.6,3.3,17,2,Yes,No,0.9,0,90.9,96.8,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP375,Sana Mirza,Training & Development,POS-366,Senior Trainer,Senior,97,8.1,17.4,12.7,4.0,30,6,Yes,Yes,0.6,8,80.7,100,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-02,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP376,Amna Nasir,Training & Development,POS-367,Learning and Development Specialist,Mid,52,4.3,8.3,6.8,2.1,12,2,Yes,No,0.3,9,80.9,85.2,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP377,Anam Mirza,Training & Development,POS-368,Learning and Development Specialist,Mid,29,2.4,8.2,5.4,1.3,12,1,No,Yes,0.9,6,88.4,82.2,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-02,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP378,Anam Qureshi,Training & Development,POS-369,Learning and Development Specialist,Mid,80,6.7,10.2,6.1,4.6,17,3,No,Yes,1.1,3,71.2,84.2,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP379,Anusha Qureshi,Training & Development,POS-370,Learning and Development Specialist,Mid,46,3.8,8.4,5.2,1.7,17,3,Yes,No,1.4,4,94.5,86.8,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP380,Maha Waheed,Training & Development,POS-371,Learning and Development Specialist,Mid,37,3.1,7.1,5.1,1.1,17,2,No,No,0.7,7,80.6,80.8,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-02,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP381,Iqra Latif,Training & Development,POS-372,Learning and Development Specialist,Mid,78,6.5,9.1,5.4,4.7,19,2,Yes,No,1.1,4,92.2,84.8,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP382,Fahad Ahmed,Training & Development,POS-373,Learning and Development Specialist,Mid,60,5.0,9.3,6.4,2.2,18,4,No,No,1.0,5,70.3,86.3,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP383,Rabia Awan,Training & Development,POS-374,Learning and Development Specialist,Mid,73,6.1,8.4,6.1,1.8,12,2,No,No,1.2,9,87.7,86.2,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP384,Ayesha Farooq,Training & Development,POS-375,Learning and Development Specialist,Mid,61,5.1,7.8,5.0,3.3,15,1,No,Yes,0.4,7,87.7,79.8,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP385,Waqas Raza,Training & Development,POS-376,Learning and Development Specialist,Mid,76,6.3,10.5,8.9,4.5,19,5,No,No,0.2,9,74.7,94.5,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP386,Areeba Nasir,Training & Development,POS-377,Learning and Development Specialist,Mid,82,6.8,11.8,9.2,3.0,14,1,No,No,1.2,2,86.7,93.8,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-02,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP387,Usman Rashid,Training & Development,POS-378,Learning and Development Specialist,Mid,28,2.3,4.6,3.5,1.3,6,1,No,Yes,1.1,2,80.4,75.3,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP388,Kashif Mughal,Training & Development,POS-379,Learning and Development Specialist,Mid,30,2.5,4.8,2.8,0.6,9,2,No,No,0.7,7,67.4,71.3,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP389,Amna Latif,Training & Development,POS-380,Learning and Development Specialist,Mid,69,5.8,9.1,7.1,0.3,11,3,Yes,No,0.1,2,89.3,88.9,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP390,Nida Ali,Training & Development,POS-381,Training Coordinator,Junior,30,2.5,3.8,3.1,2.4,6,1,No,No,0.6,0,74.7,71.9,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP391,Zainab Aslam,Training & Development,POS-382,Training Coordinator,Junior,42,3.5,5.5,3.1,2.5,8,1,No,No,1.3,1,82.8,75.0,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-02,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP392,Danish Zafar,Training & Development,POS-383,Training Coordinator,Junior,18,1.5,4.3,3.0,0.2,6,1,No,No,0.7,5,86.7,74.2,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP393,Nida Awan,Training & Development,POS-384,Training Coordinator,Junior,5,0.4,2.7,1.9,0.4,4,1,No,No,1.1,3,82.8,71.0,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP394,Usman Ansari,Training & Development,POS-385,Training Coordinator,Junior,9,0.8,1.9,1.3,0.4,2,0,No,Yes,0.7,5,100,70.3,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-02,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP395,Ayesha Raza,Training & Development,POS-386,Training Coordinator,Junior,31,2.6,3.6,2.1,1.6,3,0,No,Yes,0.8,1,82.9,69.5,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP396,Minal Ahmed,Training & Development,POS-387,Training Coordinator,Junior,8,0.7,3.1,2.2,0.4,3,0,No,Yes,0.4,2,100,72.4,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP397,Maryam Ahmed,Training & Development,POS-388,Training Coordinator,Junior,24,2.0,3.3,2.6,1.9,4,1,Yes,No,1.2,1,82.3,73.2,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP398,Hassan Chaudhry,Training & Development,POS-389,Training Coordinator,Junior,27,2.2,4.9,3.5,0.8,7,1,No,No,1.4,0,81.7,76.1,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP399,Nida Khalid,Training & Development,POS-390,Training Coordinator,Junior,24,2.0,3.5,2.3,1.9,6,1,No,No,1.3,2,90.6,74.1,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP400,Hassan Shah,Training & Development,POS-391,Training Coordinator,Junior,14,1.2,3.7,2.9,0.5,3,0,No,No,1.3,2,87.3,73.8,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP401,Ahmed Malik,Training & Development,POS-392,Training Coordinator,Junior,32,2.7,4.1,2.8,1.8,4,1,No,Yes,1.4,7,73.3,72.4,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP402,Asad Habib,Training & Development,POS-393,Training Coordinator,Junior,26,2.2,3.2,2.1,2.1,5,0,No,No,1.2,1,86.8,71.1,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-02,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP403,Ayesha Khan,Training & Development,POS-394,Training Intern,Intern,3,0.2,1.0,0.6,0.2,2,0,Yes,No,0.1,2,89.0,64.8,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP404,Adnan Aslam,Training & Development,POS-395,Training Intern,Intern,1,0.1,0.3,0.2,0.1,0,0,No,No,0.8,8,82.3,63.7,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP405,Kinza Yousaf,Training & Development,POS-396,Training Intern,Intern,4,0.3,1.2,0.9,0.2,2,0,No,No,0.9,0,77.8,65.1,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-02,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP406,Taha Ejaz,Administration & Facilities,EXEC-ADM-HEAD,Head of Administration and Facilities,Executive,153,12.8,31.8,19.9,2.3,78,21,No,No,26.8,4,80.4,100,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP407,Rabia Raza,Administration & Facilities,POS-397,Administration Manager,Lead/Manager,188,15.7,29.4,24.9,2.9,63,8,No,No,21.5,7,85.6,100,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP408,Anam Yousaf,Administration & Facilities,POS-398,Administration Manager,Lead/Manager,80,6.7,17.1,11.7,5.0,30,6,No,Yes,11.5,6,90.7,100,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP409,Waqas Akhtar,Administration & Facilities,POS-399,Administration Manager,Lead/Manager,160,13.3,25.5,14.2,1.0,59,6,No,Yes,21.2,14,80.1,100,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP410,Asad Rehman,Administration & Facilities,POS-400,Administration Manager,Lead/Manager,112,9.3,22.5,19.4,2.1,25,3,No,No,17.7,6,88.5,100,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP411,Hamza Habib,Administration & Facilities,POS-401,Administration Manager,Lead/Manager,145,12.1,21.8,12.3,6.4,22,4,No,No,17.6,11,77.9,100,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP412,Noor Mahmood,Administration & Facilities,POS-402,Administration Manager,Lead/Manager,119,9.9,23.7,18.4,8.8,51,6,No,No,19.4,4,98.6,100,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP413,Ali Akhtar,Administration & Facilities,POS-403,Senior Administration Officer,Senior,52,4.3,9.4,8.0,1.0,14,1,No,No,1.0,7,73.7,87.2,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-01,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP414,Zainab Tariq,Administration & Facilities,POS-404,Senior Administration Officer,Senior,72,6.0,11.1,7.3,1.0,23,2,No,Yes,0.1,5,97.1,89.5,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-03,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP415,Mahnoor Aziz,Administration & Facilities,POS-405,Senior Administration Officer,Senior,78,6.5,16.4,9.3,0.6,40,9,No,No,0.5,5,93.2,100,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP416,Nida Raza,Administration & Facilities,POS-406,Senior Administration Officer,Senior,52,4.3,9.8,8.6,2.4,22,6,No,No,1.4,9,81.2,98.8,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-01,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP417,Saba Ali,Administration & Facilities,POS-407,Senior Administration Officer,Senior,106,8.8,16.2,10.2,2.7,35,4,No,No,0.8,6,87.1,100,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-03,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP418,Imran Raza,Administration & Facilities,POS-408,Senior Administration Officer,Senior,150,12.5,21.0,14.0,9.9,41,5,No,No,1.4,3,82.5,100,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP419,Anam Baig,Administration & Facilities,POS-409,Senior Administration Officer,Senior,106,8.8,16.8,9.4,8.1,20,4,No,No,0.6,7,85.1,97.4,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-03,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP420,Imran Faisal,Administration & Facilities,POS-410,Senior Administration Officer,Senior,42,3.5,9.0,6.5,3.0,20,4,No,No,1.4,4,81.6,89.6,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP421,Amna Mirza,Administration & Facilities,POS-411,Administration Officer,Mid,50,4.2,6.3,3.8,1.6,8,0,No,No,1.0,10,78.0,74.0,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-03,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP422,Farhan Ismail,Administration & Facilities,POS-412,Administration Officer,Mid,57,4.8,9.5,7.4,0.7,20,4,No,No,0.3,11,93.6,92.5,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP423,Danish Latif,Administration & Facilities,POS-413,Administration Officer,Mid,16,1.3,6.4,4.7,0.5,9,1,No,Yes,1.2,11,74.5,77.9,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP424,Omar Hameed,Administration & Facilities,POS-414,Administration Officer,Mid,60,5.0,9.7,8.2,1.1,14,3,Yes,Yes,1.5,0,87.8,94.7,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP425,Saad Awan,Administration & Facilities,POS-415,Administration Officer,Mid,50,4.2,8.2,4.8,4.1,18,3,Yes,No,1.4,7,91.8,85.1,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-01,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP426,Hassan Khan,Administration & Facilities,POS-416,Administration Officer,Mid,83,6.9,10.0,5.8,1.6,20,4,Yes,No,1.1,5,82.0,87.0,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP427,Zainab Ahmed,Administration & Facilities,POS-417,Administration Officer,Mid,18,1.5,4.7,4.0,1.4,5,1,Yes,Yes,1.4,3,89.1,79.1,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-03,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP428,Kinza Munir,Administration & Facilities,POS-418,Administration Officer,Mid,27,2.2,7.1,3.9,0.2,17,2,No,No,0.3,7,81.4,76.6,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP429,Komal Latif,Administration & Facilities,POS-419,Administration Officer,Mid,88,7.3,11.9,9.0,0.8,20,5,No,No,0.9,2,72.1,95.7,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP430,Saad Raza,Administration & Facilities,POS-420,Administration Officer,Mid,82,6.8,12.3,10.3,3.0,22,3,No,No,0.9,12,74.1,97.0,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-01,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP431,Noman Iqbal,Administration & Facilities,POS-421,Administration Officer,Mid,49,4.1,7.4,4.1,1.4,15,3,No,Yes,0.1,3,89.4,79.9,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-03,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP432,Kinza Hashmi,Administration & Facilities,POS-422,Administration Officer,Mid,49,4.1,9.1,7.7,1.8,12,2,No,Yes,0.9,3,84.5,89.8,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-01,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP433,Amna Mahmood,Administration & Facilities,POS-423,Administration Officer,Mid,47,3.9,7.7,6.0,3.0,14,2,Yes,No,0.9,7,83.9,84.6,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-03,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP434,Ayesha Awan,Administration & Facilities,POS-424,Administration Officer,Mid,15,1.2,5.6,5.0,0.4,6,1,Yes,No,0.1,8,81.9,78.1,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP435,Kamran Sultan,Administration & Facilities,POS-425,Administrative Assistant,Junior,20,1.7,4.4,3.3,0.8,6,1,No,Yes,0.5,3,74.5,72.3,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-01,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP436,Anusha Chaudhry,Administration & Facilities,POS-426,Administrative Assistant,Junior,4,0.3,0.8,0.5,0.2,1,0,No,No,1.2,6,96.8,68.3,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-01,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP437,Ali Ismail,Administration & Facilities,POS-427,Administrative Assistant,Junior,34,2.8,3.5,2.9,1.7,5,0,No,No,1.3,0,77.9,71.9,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP438,Fahad Habib,Administration & Facilities,POS-428,Administrative Assistant,Junior,13,1.1,3.8,2.8,0.4,5,0,No,No,1.2,7,90.8,74.0,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-01,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP439,Imran Shah,Administration & Facilities,POS-429,Administrative Assistant,Junior,8,0.7,3.3,2.6,0.4,5,1,No,No,1.4,0,84.8,74.1,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP440,Iqra Zafar,Administration & Facilities,POS-430,Administrative Assistant,Junior,30,2.5,5.4,4.4,0.9,9,1,No,No,0.1,0,80.7,76.0,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP441,Mahnoor Waheed,Administration & Facilities,POS-431,Administrative Assistant,Junior,32,2.7,2.8,1.8,1.9,5,1,No,No,1.4,6,91.2,72.9,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-03,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP442,Usman Riaz,Administration & Facilities,POS-432,Administrative Assistant,Junior,4,0.3,0.9,0.8,0.2,1,0,No,No,0.3,2,81.5,64.3,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP443,Noman Ismail,Administration & Facilities,POS-433,Administrative Assistant,Junior,19,1.6,3.3,2.6,0.4,4,0,No,No,0.4,2,79.2,69.4,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-03,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP444,Ahmed Latif,Administration & Facilities,POS-434,Administrative Assistant,Junior,40,3.3,3.3,2.4,0.8,5,1,No,No,1.1,0,91.4,74.2,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-03,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP445,Areeba Baig,Administration & Facilities,POS-435,Administrative Assistant,Junior,17,1.4,2.4,1.6,1.2,4,0,No,No,0.3,0,89.0,68.2,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP446,Nida Khan,Administration & Facilities,POS-436,Administrative Assistant,Junior,22,1.8,3.9,3.2,1.3,7,1,No,No,0.8,0,71.8,72.1,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP447,Junaid Qureshi,Administration & Facilities,POS-437,Administrative Assistant,Junior,18,1.5,3.3,1.9,1.4,7,1,No,No,0.8,2,61.6,66.1,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-01,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP448,Kashif Siddiqui,Administration & Facilities,POS-438,Administration Intern,Intern,10,0.8,1.0,0.6,0.3,1,0,No,No,0.9,0,92.2,67.0,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-01,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP449,Rabia Mahmood,Administration & Facilities,POS-439,Administration Intern,Intern,3,0.2,1.1,0.9,0.2,1,0,No,No,1.4,6,79.3,66.4,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-01,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP450,Sana Baig,Administration & Facilities,POS-440,Administration Intern,Intern,8,0.7,1.1,0.6,0.4,2,0,No,Yes,1.1,0,68.4,62.7,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-01,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP451,Nida Farooq,Legal & Compliance,EXEC-LGL-HEAD,Head of Legal and Compliance,Executive,157,13.1,25.3,16.5,6.9,32,6,No,Yes,21.1,4,80.8,100,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP452,Iqra Chaudhry,Legal & Compliance,POS-441,Legal and Compliance Manager,Lead/Manager,101,8.4,18.1,16.0,5.3,34,6,No,No,14.8,2,69.9,100,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP453,Arham Baig,Legal & Compliance,POS-442,Legal and Compliance Manager,Lead/Manager,73,6.1,17.3,14.6,1.8,29,5,No,No,12.9,6,70.0,100,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP454,Arham Rashid,Legal & Compliance,POS-443,Legal and Compliance Manager,Lead/Manager,89,7.4,18.8,13.3,4.8,21,2,No,No,13.3,8,80.7,100,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP455,Adnan Saeed,Legal & Compliance,POS-444,Legal and Compliance Manager,Lead/Manager,86,7.2,19.9,15.8,5.6,35,7,No,Yes,16.4,3,82.1,100,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP456,Areeba Saleem,Legal & Compliance,POS-445,Legal and Compliance Manager,Lead/Manager,144,12.0,22.9,13.3,8.1,53,13,No,No,15.1,8,71.0,100,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP457,Saba Abbasi,Legal & Compliance,POS-446,Legal and Compliance Manager,Lead/Manager,123,10.2,22.2,15.9,4.9,51,11,No,No,18.4,10,81.0,100,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP458,Taha Ansari,Legal & Compliance,POS-447,Senior Legal Counsel,Senior,109,9.1,14.3,8.8,1.7,21,4,No,No,1.4,3,85.6,97.3,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP459,Minal Iqbal,Legal & Compliance,POS-448,Senior Legal Counsel,Senior,73,6.1,15.7,12.7,1.6,24,4,Yes,Yes,0.2,6,95.1,100,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP460,Ayesha Javed,Legal & Compliance,POS-449,Senior Legal Counsel,Senior,130,10.8,18.5,13.5,1.7,33,7,No,No,0.9,4,88.7,100,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP461,Taha Qureshi,Legal & Compliance,POS-450,Senior Legal Counsel,Senior,81,6.8,15.9,8.9,3.7,39,6,Yes,No,0.1,9,86.9,98.3,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP462,Waqas Ali,Legal & Compliance,POS-451,Senior Legal Counsel,Senior,66,5.5,12.6,8.3,0.2,20,2,No,No,0.3,5,100,93.5,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP463,Talha Ansari,Legal & Compliance,POS-452,Senior Legal Counsel,Senior,106,8.8,15.4,10.2,3.4,25,5,Yes,Yes,0.8,7,82.9,100,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP464,Nida Ismail,Legal & Compliance,POS-453,Senior Legal Counsel,Senior,134,11.2,18.2,12.2,1.8,19,4,No,No,0.5,8,91.5,100,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP465,Amna Habib,Legal & Compliance,POS-454,Senior Legal Counsel,Senior,89,7.4,13.9,12.0,4.3,33,6,No,No,0.3,6,68.8,100,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP466,Kashif Saleem,Legal & Compliance,POS-455,Compliance Analyst,Mid,36,3.0,7.3,6.1,1.7,9,2,No,No,0.0,12,78.4,82.0,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP467,Maryam Dar,Legal & Compliance,POS-456,Compliance Analyst,Mid,16,1.3,5.8,3.7,1.1,7,1,No,Yes,1.5,9,96.8,80.0,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP468,Eman Mirza,Legal & Compliance,POS-457,Compliance Analyst,Mid,58,4.8,9.3,7.7,2.0,13,3,Yes,Yes,0.7,7,64.6,86.9,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-01,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP469,Sidra Mughal,Legal & Compliance,POS-458,Compliance Analyst,Mid,19,1.6,7.6,6.2,0.6,15,3,No,No,1.3,7,84.9,87.7,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-01,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP470,Anam Javed,Legal & Compliance,POS-459,Compliance Analyst,Mid,25,2.1,7.5,6.4,0.7,13,2,No,No,0.1,10,100,87.4,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-01,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP471,Anusha Iqbal,Legal & Compliance,POS-460,Compliance Analyst,Mid,68,5.7,8.7,4.8,2.1,15,3,Yes,No,1.1,9,80.7,82.2,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP472,Sidra Iqbal,Legal & Compliance,POS-461,Compliance Analyst,Mid,41,3.4,7.5,5.0,0.6,7,1,No,Yes,1.4,5,80.2,80.3,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP473,Areeba Saeed,Legal & Compliance,POS-462,Compliance Analyst,Mid,38,3.2,6.5,5.8,0.5,6,1,No,No,1.4,7,84.1,83.5,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP474,Mehwish Riaz,Legal & Compliance,POS-463,Compliance Analyst,Mid,84,7.0,11.7,7.7,6.2,25,3,No,No,0.7,11,84.4,90.9,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP475,Amna Akhtar,Legal & Compliance,POS-464,Compliance Analyst,Mid,14,1.2,4.7,3.3,1.1,11,2,No,No,0.0,9,78.1,73.5,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP476,Shahzaib Mahmood,Legal & Compliance,POS-465,Compliance Analyst,Mid,16,1.3,6.5,4.4,0.2,6,1,Yes,No,0.2,6,87.9,77.7,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-01,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP477,Farhan Faisal,Legal & Compliance,POS-466,Compliance Analyst,Mid,29,2.4,5.0,3.3,0.7,6,1,No,No,1.1,5,75.2,73.6,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP478,Kinza Iqbal,Legal & Compliance,POS-467,Compliance Analyst,Mid,83,6.9,11.8,7.7,1.7,27,3,No,No,1.2,2,87.6,92.5,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-01,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP479,Noman Latif,Legal & Compliance,POS-468,Compliance Analyst,Mid,56,4.7,7.2,5.8,1.7,13,3,No,No,0.1,6,92.8,85.7,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP480,Ahmed Saeed,Legal & Compliance,POS-469,Legal Assistant,Junior,19,1.6,3.7,3.1,1.5,8,1,No,No,0.7,0,85.8,74.4,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-01,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP481,Rabia Rehman,Legal & Compliance,POS-470,Legal Assistant,Junior,12,1.0,1.9,1.5,0.5,4,0,No,Yes,1.1,6,86.6,69.0,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP482,Danish Malik,Legal & Compliance,POS-471,Legal Assistant,Junior,15,1.2,3.2,2.4,0.7,6,1,No,No,0.9,3,89.4,73.4,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP483,Bilal Mahmood,Legal & Compliance,POS-472,Legal Assistant,Junior,24,2.0,2.9,1.8,1.7,5,0,Yes,No,0.7,6,91.8,70.2,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP484,Saba Mughal,Legal & Compliance,POS-473,Legal Assistant,Junior,26,2.2,2.3,1.8,0.9,3,0,No,No,0.1,1,74.1,65.4,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP485,Sana Nadeem,Legal & Compliance,POS-474,Legal Assistant,Junior,7,0.6,1.0,0.7,0.6,1,0,No,No,0.2,4,89.3,65.4,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-01,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP486,Junaid Nadeem,Legal & Compliance,POS-475,Legal Assistant,Junior,22,1.8,2.7,1.8,0.4,3,0,No,No,1.0,0,100,72.4,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP487,Talha Hashmi,Legal & Compliance,POS-476,Legal Assistant,Junior,9,0.8,1.5,1.2,0.2,2,0,Yes,No,0.2,1,81.1,65.2,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP488,Omar Akhtar,Legal & Compliance,POS-477,Legal Assistant,Junior,4,0.3,1.1,0.7,0.2,2,0,No,No,1.4,2,93.2,68.5,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP489,Sara Zafar,Legal & Compliance,POS-478,Legal Assistant,Junior,6,0.5,2.0,1.3,0.2,4,0,No,Yes,0.9,4,79.0,66.5,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-01,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP490,Farhan Hameed,Legal & Compliance,POS-479,Legal Assistant,Junior,32,2.7,2.8,2.1,0.7,5,1,No,No,0.4,6,85.6,70.7,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-01,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP491,Zainab Chaudhry,Legal & Compliance,POS-480,Legal Assistant,Junior,10,0.8,2.0,1.4,0.7,3,0,No,Yes,0.1,2,89.7,67.3,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP492,Hamza Javed,Legal & Compliance,POS-481,Legal Assistant,Junior,21,1.8,3.8,2.6,1.0,5,0,No,No,0.3,0,79.4,69.3,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP493,Komal Rehman,Legal & Compliance,POS-482,Legal Intern,Intern,12,1.0,1.1,1.0,0.3,1,0,No,No,1.1,5,89.9,68.2,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-01,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP494,Anam Mahmood,Legal & Compliance,POS-483,Legal Intern,Intern,3,0.2,1.1,0.8,0.2,2,0,No,No,1.3,2,78.6,65.7,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP495,Junaid Chaudhry,Legal & Compliance,POS-484,Legal Intern,Intern,3,0.2,0.9,0.7,0.2,1,0,No,No,0.3,5,97.5,67.2,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP496,Ali Nadeem,Procurement & Supply Chain,EXEC-PRC-HEAD,Head of Procurement and Supply Chain,Executive,167,13.9,28.1,17.4,4.6,38,6,No,No,22.0,9,90.1,100,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP497,Talha Riaz,Procurement & Supply Chain,POS-485,Procurement Manager,Lead/Manager,101,8.4,17.7,10.0,2.6,24,4,No,Yes,14.2,8,77.4,100,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP498,Usman Faisal,Procurement & Supply Chain,POS-486,Procurement Manager,Lead/Manager,128,10.7,23.6,13.2,6.9,33,5,No,Yes,20.4,12,84.1,100,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP499,Rabia Dar,Procurement & Supply Chain,POS-487,Procurement Manager,Lead/Manager,177,14.8,25.4,15.6,13.8,37,4,No,No,21.5,5,75.9,100,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP500,Kashif Nasir,Procurement & Supply Chain,POS-488,Procurement Manager,Lead/Manager,80,6.7,18.4,10.8,1.7,19,3,No,Yes,13.2,15,77.2,100,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP501,Kinza Mahmood,Procurement & Supply Chain,POS-489,Procurement Manager,Lead/Manager,156,13.0,21.7,14.1,11.7,35,7,Yes,No,14.0,9,89.1,100,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP502,Talha Rehman,Procurement & Supply Chain,POS-490,Procurement Manager,Lead/Manager,178,14.8,28.3,19.6,3.1,46,8,No,No,24.6,5,79.4,100,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP503,Sara Khan,Procurement & Supply Chain,POS-491,Senior Procurement Specialist,Senior,132,11.0,17.2,13.9,0.8,37,3,No,No,1.4,5,91.2,100,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-02,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP504,Omar Siddiqui,Procurement & Supply Chain,POS-492,Senior Procurement Specialist,Senior,77,6.4,13.8,8.3,4.5,15,3,No,No,0.1,12,75.5,89.7,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-02,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP505,Minal Butt,Procurement & Supply Chain,POS-493,Senior Procurement Specialist,Senior,83,6.9,16.8,10.5,0.6,27,5,No,No,0.5,8,81.5,100,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-01,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP506,Komal Munir,Procurement & Supply Chain,POS-494,Senior Procurement Specialist,Senior,123,10.2,19.5,17.2,0.2,37,4,No,No,0.4,7,75.8,100,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP507,Minal Malik,Procurement & Supply Chain,POS-495,Senior Procurement Specialist,Senior,108,9.0,18.9,14.5,7.7,33,6,No,No,1.5,3,89.6,100,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-02,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP508,Kinza Siddiqui,Procurement & Supply Chain,POS-496,Senior Procurement Specialist,Senior,134,11.2,18.8,12.4,1.6,38,9,No,No,0.5,10,83.4,100,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP509,Iqra Abbasi,Procurement & Supply Chain,POS-497,Senior Procurement Specialist,Senior,104,8.7,17.0,12.6,1.9,37,9,No,Yes,0.3,1,84.0,100,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-02,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP510,Laiba Butt,Procurement & Supply Chain,POS-498,Senior Procurement Specialist,Senior,76,6.3,16.1,11.3,5.1,40,8,No,No,0.5,10,92.0,100,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP511,Asad Mirza,Procurement & Supply Chain,POS-499,Procurement Officer,Mid,57,4.8,10.1,7.4,2.5,22,6,No,Yes,0.4,6,83.4,93.7,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP512,Asad Butt,Procurement & Supply Chain,POS-500,Procurement Officer,Mid,82,6.8,9.8,8.5,1.9,15,2,No,No,0.4,9,90.4,92.4,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-01,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP513,Noor Iqbal,Procurement & Supply Chain,POS-501,Procurement Officer,Mid,33,2.8,5.8,4.1,1.1,7,1,No,No,0.5,9,94.7,78.7,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP514,Sana Saleem,Procurement & Supply Chain,POS-502,Procurement Officer,Mid,51,4.2,7.9,5.5,1.1,10,2,No,Yes,1.2,13,86.5,84.2,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP515,Mehwish Ali,Procurement & Supply Chain,POS-503,Procurement Officer,Mid,90,7.5,10.4,6.8,0.7,23,4,No,No,0.8,7,74.8,88.0,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-02,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP516,Maryam Yousaf,Procurement & Supply Chain,POS-504,Procurement Officer,Mid,41,3.4,5.5,3.5,1.9,8,2,No,No,0.0,9,88.2,76.1,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP517,Anam Rehman,Procurement & Supply Chain,POS-505,Procurement Officer,Mid,71,5.9,11.6,9.6,0.5,19,2,No,No,0.4,8,75.2,92.6,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-01,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP518,Maryam Mughal,Procurement & Supply Chain,POS-506,Procurement Officer,Mid,53,4.4,7.4,5.0,1.8,15,2,Yes,No,0.1,1,77.1,78.6,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-01,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP519,Areeba Hameed,Procurement & Supply Chain,POS-507,Procurement Officer,Mid,83,6.9,10.2,9.1,1.7,17,2,Yes,No,1.2,6,74.8,92.7,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP520,Maryam Munir,Procurement & Supply Chain,POS-508,Procurement Officer,Mid,60,5.0,7.5,6.5,1.7,7,1,Yes,No,0.4,7,84.1,83.6,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP521,Noman Zafar,Procurement & Supply Chain,POS-509,Procurement Officer,Mid,73,6.1,9.6,5.4,4.1,16,3,Yes,No,1.2,4,93.2,86.7,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP522,Nida Riaz,Procurement & Supply Chain,POS-510,Procurement Officer,Mid,35,2.9,6.1,3.8,1.9,13,2,Yes,No,1.1,10,95.0,80.6,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-01,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP523,Noor Siddiqui,Procurement & Supply Chain,POS-511,Procurement Officer,Mid,69,5.8,8.2,5.5,1.6,20,5,No,No,1.1,5,78.1,86.8,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-02,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP524,Sidra Siddiqui,Procurement & Supply Chain,POS-512,Procurement Officer,Mid,84,7.0,9.9,7.0,0.9,12,1,No,No,1.1,12,84.4,86.6,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-01,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP525,Imran Nasir,Procurement & Supply Chain,POS-513,Procurement Assistant,Junior,18,1.5,2.3,1.9,1.3,4,0,No,Yes,1.0,5,87.3,70.2,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-02,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP526,Adnan Chaudhry,Procurement & Supply Chain,POS-514,Procurement Assistant,Junior,16,1.3,2.2,1.3,0.8,4,0,No,No,0.8,4,92.1,68.9,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-02,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP527,Mehwish Nasir,Procurement & Supply Chain,POS-515,Procurement Assistant,Junior,3,0.2,1.4,1.1,0.2,1,0,No,No,1.2,4,70.9,64.9,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-01,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP528,Minal Aslam,Procurement & Supply Chain,POS-516,Procurement Assistant,Junior,16,1.3,2.0,1.7,0.8,3,0,No,No,1.1,3,93.2,70.9,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-02,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP529,Ayesha Waheed,Procurement & Supply Chain,POS-517,Procurement Assistant,Junior,15,1.2,1.7,1.3,0.4,1,0,No,No,0.6,0,85.2,67.1,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP530,Kamran Rauf,Procurement & Supply Chain,POS-518,Procurement Assistant,Junior,26,2.2,2.8,2.2,1.6,3,0,No,No,0.5,2,79.8,68.6,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-01,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP531,Kamran Iqbal,Procurement & Supply Chain,POS-519,Procurement Assistant,Junior,27,2.2,2.3,1.5,1.8,2,0,No,Yes,0.3,0,77.8,65.7,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-02,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP532,Nida Habib,Procurement & Supply Chain,POS-520,Procurement Assistant,Junior,33,2.8,4.3,3.0,0.8,8,1,No,No,0.6,0,77.3,72.2,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP533,Nida Nadeem,Procurement & Supply Chain,POS-521,Procurement Assistant,Junior,32,2.7,3.3,2.2,2.3,3,0,No,No,1.2,0,78.7,69.7,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP534,Hassan Siddiqui,Procurement & Supply Chain,POS-522,Procurement Assistant,Junior,29,2.4,2.9,2.2,0.8,5,0,No,Yes,1.2,3,80.3,70.1,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-02,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP535,Komal Zafar,Procurement & Supply Chain,POS-523,Procurement Assistant,Junior,31,2.6,2.8,2.1,1.5,3,0,No,No,0.2,7,85.9,68.9,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-01,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP536,Anusha Butt,Procurement & Supply Chain,POS-524,Procurement Assistant,Junior,10,0.8,2.1,1.6,0.6,5,1,No,No,0.1,3,86.5,68.8,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-01,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP537,Maryam Bukhari,Procurement & Supply Chain,POS-525,Procurement Assistant,Junior,14,1.2,3.5,2.3,0.9,8,1,No,No,0.3,12,97.2,73.4,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-01,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP538,Saba Tariq,Procurement & Supply Chain,POS-526,Procurement Intern,Intern,4,0.3,1.1,0.9,0.3,2,0,No,No,0.5,0,92.1,67.1,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP539,Noman Ali,Procurement & Supply Chain,POS-527,Procurement Intern,Intern,2,0.2,0.9,0.5,0.2,1,0,No,Yes,0.5,0,85.4,64.6,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-02,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP540,Haris Hussain,Procurement & Supply Chain,POS-528,Procurement Intern,Intern,7,0.6,1.4,0.9,0.5,3,0,No,No,0.3,0,89.5,66.2,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP541,Asad Hashmi,Logistics & Warehouse,EXEC-LOG-HEAD,Head of Logistics and Warehouse,Executive,125,10.4,29.9,25.9,2.4,41,9,No,Yes,25.0,6,85.0,100,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP542,Kashif Chaudhry,Logistics & Warehouse,POS-529,Logistics Manager,Lead/Manager,113,9.4,19.2,10.6,5.4,22,4,Yes,No,15.5,6,81.4,100,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP543,Kamran Chaudhry,Logistics & Warehouse,POS-530,Logistics Manager,Lead/Manager,165,13.8,22.0,16.8,10.2,43,12,Yes,No,16.5,8,82.9,100,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP544,Bilal Ansari,Logistics & Warehouse,POS-531,Logistics Manager,Lead/Manager,125,10.4,21.6,13.7,6.3,31,3,No,Yes,16.8,5,74.3,100,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP545,Junaid Aslam,Logistics & Warehouse,POS-532,Logistics Manager,Lead/Manager,101,8.4,17.0,13.5,4.1,19,2,No,No,12.4,4,89.1,100,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP546,Sara Baig,Logistics & Warehouse,POS-533,Logistics Manager,Lead/Manager,82,6.8,14.8,12.8,6.1,32,4,No,Yes,9.2,8,93.9,100,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP547,Usman Ali,Logistics & Warehouse,POS-534,Logistics Manager,Lead/Manager,151,12.6,22.4,15.7,3.8,39,10,No,Yes,17.6,4,87.1,100,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP548,Maryam Faisal,Logistics & Warehouse,POS-535,Senior Logistics Officer,Senior,123,10.2,16.4,11.4,6.1,31,7,No,No,1.3,6,88.2,100,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-01,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP549,Saba Saeed,Logistics & Warehouse,POS-536,Senior Logistics Officer,Senior,121,10.1,15.5,11.8,3.9,30,7,No,No,0.7,8,89.7,100,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP550,Hira Faisal,Logistics & Warehouse,POS-537,Senior Logistics Officer,Senior,49,4.1,11.8,7.3,2.7,19,2,Yes,No,0.3,7,79.6,86.4,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP551,Saba Rehman,Logistics & Warehouse,POS-538,Senior Logistics Officer,Senior,59,4.9,10.6,8.6,3.6,16,3,No,No,1.2,9,75.8,92.9,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP552,Anam Rauf,Logistics & Warehouse,POS-539,Senior Logistics Officer,Senior,97,8.1,17.7,13.8,1.9,24,2,No,No,1.2,8,88.0,100,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP553,Iqra Mughal,Logistics & Warehouse,POS-540,Senior Logistics Officer,Senior,148,12.3,20.1,13.1,12.3,26,3,No,No,0.0,3,89.1,100,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP554,Sana Rauf,Logistics & Warehouse,POS-541,Senior Logistics Officer,Senior,102,8.5,16.8,14.4,5.4,31,7,No,No,0.4,5,82.3,100,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP555,Danish Hashmi,Logistics & Warehouse,POS-542,Senior Logistics Officer,Senior,108,9.0,18.5,12.8,5.6,30,8,Yes,Yes,0.2,7,95.4,100,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP556,Kinza Farooq,Logistics & Warehouse,POS-543,Logistics Coordinator,Mid,58,4.8,8.7,6.3,2.4,20,5,No,No,1.2,3,84.2,90.6,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-01,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP557,Ali Rashid,Logistics & Warehouse,POS-544,Logistics Coordinator,Mid,56,4.7,10.4,8.7,1.1,11,1,No,No,0.3,7,74.9,88.2,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP558,Waqas Latif,Logistics & Warehouse,POS-545,Logistics Coordinator,Mid,32,2.7,6.9,5.5,2.6,7,1,No,No,0.4,6,99.1,83.6,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-01,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP559,Minal Qureshi,Logistics & Warehouse,POS-546,Logistics Coordinator,Mid,62,5.2,8.4,7.1,3.0,16,2,No,No,0.8,2,91.8,89.3,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-01,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP560,Fahad Ali,Logistics & Warehouse,POS-547,Logistics Coordinator,Mid,61,5.1,9.8,7.7,4.1,19,5,No,No,0.8,9,93.5,95.9,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP561,Maryam Waheed,Logistics & Warehouse,POS-548,Logistics Coordinator,Mid,74,6.2,8.2,5.7,3.8,16,4,No,No,0.6,11,88.1,86.9,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP562,Komal Khan,Logistics & Warehouse,POS-549,Logistics Coordinator,Mid,58,4.8,10.1,6.4,3.7,16,2,No,No,0.4,6,75.1,83.0,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP563,Hira Ali,Logistics & Warehouse,POS-550,Logistics Coordinator,Mid,88,7.3,9.5,5.9,3.1,15,2,No,No,1.5,4,91.7,87.0,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP564,Adnan Zafar,Logistics & Warehouse,POS-551,Logistics Coordinator,Mid,81,6.8,11.0,7.8,3.9,26,2,No,No,1.2,8,97.8,93.4,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-01,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP565,Rabia Tariq,Logistics & Warehouse,POS-552,Logistics Coordinator,Mid,75,6.2,12.0,8.0,0.3,13,2,No,No,0.3,13,80.0,88.6,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-01,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP566,Talha Ismail,Logistics & Warehouse,POS-553,Logistics Coordinator,Mid,25,2.1,5.9,3.7,0.3,10,1,Yes,No,0.6,3,67.0,72.2,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP567,Hira Javed,Logistics & Warehouse,POS-554,Logistics Coordinator,Mid,49,4.1,6.4,4.4,4.1,13,2,Yes,No,1.1,8,87.9,81.0,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-01,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP568,Mehwish Javed,Logistics & Warehouse,POS-555,Logistics Coordinator,Mid,51,4.2,6.7,5.8,3.2,11,2,Yes,Yes,0.9,11,83.0,83.8,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP569,Bilal Rauf,Logistics & Warehouse,POS-556,Logistics Coordinator,Mid,18,1.5,3.5,3.1,0.9,3,0,No,Yes,1.3,9,78.0,72.5,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-01,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP570,Komal Farooq,Logistics & Warehouse,POS-557,Warehouse Assistant,Junior,13,1.1,2.2,1.6,0.3,3,0,No,Yes,0.8,6,68.0,65.0,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP571,Minal Saeed,Logistics & Warehouse,POS-558,Warehouse Assistant,Junior,22,1.8,3.5,3.1,0.4,6,0,Yes,No,0.8,2,89.3,73.8,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP572,Farhan Iqbal,Logistics & Warehouse,POS-559,Warehouse Assistant,Junior,19,1.6,4.6,2.9,0.6,6,1,No,No,0.6,2,85.1,73.4,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP573,Junaid Javed,Logistics & Warehouse,POS-560,Warehouse Assistant,Junior,12,1.0,3.4,2.7,0.5,7,1,No,Yes,0.3,6,80.5,71.3,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-01,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP574,Ahmed Javed,Logistics & Warehouse,POS-561,Warehouse Assistant,Junior,5,0.4,0.9,0.5,0.3,1,0,No,No,1.4,0,88.2,66.9,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP575,Komal Hameed,Logistics & Warehouse,POS-562,Warehouse Assistant,Junior,35,2.9,4.2,2.9,0.3,5,1,No,No,1.2,2,74.9,72.6,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-01,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP576,Fatima Sultan,Logistics & Warehouse,POS-563,Warehouse Assistant,Junior,34,2.8,3.8,2.1,1.8,5,0,No,No,0.0,4,88.9,69.1,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP577,Iqra Hussain,Logistics & Warehouse,POS-564,Warehouse Assistant,Junior,28,2.3,3.4,2.0,2.1,6,0,No,Yes,0.1,1,97.5,70.7,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP578,Maryam Rauf,Logistics & Warehouse,POS-565,Warehouse Assistant,Junior,25,2.1,3.5,2.0,1.3,6,1,No,No,1.4,0,81.0,71.5,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP579,Farhan Aziz,Logistics & Warehouse,POS-566,Warehouse Assistant,Junior,20,1.7,3.0,2.3,1.5,7,0,Yes,Yes,0.9,2,81.1,69.9,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-01,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP580,Minal Bukhari,Logistics & Warehouse,POS-567,Warehouse Assistant,Junior,40,3.3,5.1,2.9,0.3,8,2,No,No,0.7,2,95.0,77.1,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP581,Noor Khalid,Logistics & Warehouse,POS-568,Warehouse Assistant,Junior,40,3.3,5.8,3.4,3.0,11,2,No,No,1.0,0,82.4,76.7,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP582,Noor Sheikh,Logistics & Warehouse,POS-569,Warehouse Assistant,Junior,19,1.6,2.7,1.8,0.8,4,0,No,No,0.8,2,90.8,70.2,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP583,Noman Aziz,Logistics & Warehouse,POS-570,Logistics Intern,Intern,3,0.2,0.7,0.6,0.2,1,0,No,No,0.1,0,89.6,64.9,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP584,Zainab Munir,Logistics & Warehouse,POS-571,Logistics Intern,Intern,5,0.4,1.0,0.7,0.3,1,0,No,No,0.3,6,73.1,62.3,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP585,Bilal Abbasi,Logistics & Warehouse,POS-572,Logistics Intern,Intern,5,0.4,0.6,0.4,0.2,0,0,No,No,1.4,10,80.6,65.1,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP586,Fahad Akhtar,Production & Manufacturing,EXEC-PRD-HEAD,Head of Production and Manufacturing,Executive,185,15.4,34.8,24.3,0.7,63,15,No,No,29.3,14,81.8,100,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP587,Noman Baig,Production & Manufacturing,POS-573,Production Manager,Lead/Manager,83,6.9,20.1,15.1,3.6,32,4,No,No,13.9,9,77.4,100,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP588,Rabia Sultan,Production & Manufacturing,POS-574,Production Manager,Lead/Manager,121,10.1,20.3,15.3,5.9,44,8,No,Yes,16.1,6,84.7,100,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP589,Adnan Nawaz,Production & Manufacturing,POS-575,Production Manager,Lead/Manager,93,7.8,19.1,11.8,5.9,21,5,No,No,15.5,8,74.5,100,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP590,Taha Ali,Production & Manufacturing,POS-576,Production Manager,Lead/Manager,130,10.8,23.1,18.1,6.2,43,10,Yes,Yes,19.8,7,93.8,100,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP591,Adnan Hameed,Production & Manufacturing,POS-577,Production Manager,Lead/Manager,170,14.2,27.3,16.4,13.3,51,8,Yes,Yes,23.7,7,90.2,100,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP592,Hamza Qureshi,Production & Manufacturing,POS-578,Production Manager,Lead/Manager,76,6.3,19.6,13.5,3.5,32,8,No,Yes,13.2,7,91.0,100,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP593,Maha Saeed,Production & Manufacturing,POS-579,Senior Production Supervisor,Senior,131,10.9,18.3,13.9,6.8,37,10,No,Yes,1.0,8,76.7,100,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP594,Raza Mirza,Production & Manufacturing,POS-580,Senior Production Supervisor,Senior,118,9.8,16.6,12.4,6.9,34,7,No,Yes,0.8,8,86.1,100,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP595,Noman Dar,Production & Manufacturing,POS-581,Senior Production Supervisor,Senior,114,9.5,18.6,16.4,7.0,45,10,Yes,No,0.0,5,81.4,100,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP596,Laiba Yousaf,Production & Manufacturing,POS-582,Senior Production Supervisor,Senior,101,8.4,16.8,13.2,5.9,24,6,No,No,0.8,10,88.9,100,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-02,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP597,Raza Ali,Production & Manufacturing,POS-583,Senior Production Supervisor,Senior,136,11.3,20.6,12.9,11.3,47,8,Yes,No,0.4,2,96.4,100,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-02,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP598,Asad Riaz,Production & Manufacturing,POS-584,Senior Production Supervisor,Senior,114,9.5,16.8,13.0,7.5,17,3,No,No,0.1,7,74.2,100,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP599,Maryam Nawaz,Production & Manufacturing,POS-585,Senior Production Supervisor,Senior,84,7.0,15.0,11.1,3.4,26,5,Yes,No,1.3,3,86.8,100,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-02,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP600,Usman Saleem,Production & Manufacturing,POS-586,Senior Production Supervisor,Senior,104,8.7,16.9,9.8,0.2,24,5,Yes,No,1.4,10,61.9,97.1,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-01,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP601,Danish Javed,Production & Manufacturing,POS-587,Production Technician,Mid,54,4.5,8.4,7.3,4.1,11,1,No,No,0.2,6,91.5,87.1,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP602,Noor Baig,Production & Manufacturing,POS-588,Production Technician,Mid,70,5.8,9.0,5.9,1.7,21,2,No,No,0.2,6,80.4,82.2,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-01,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP603,Ayesha Qureshi,Production & Manufacturing,POS-589,Production Technician,Mid,57,4.8,9.8,6.4,2.4,13,3,Yes,Yes,0.3,2,85.6,86.4,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP604,Saba Shah,Production & Manufacturing,POS-590,Production Technician,Mid,84,7.0,10.4,8.1,4.3,19,3,Yes,No,1.1,8,79.2,91.8,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-02,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP605,Areeba Riaz,Production & Manufacturing,POS-591,Production Technician,Mid,73,6.1,9.8,6.7,3.4,10,2,No,No,1.1,7,88.6,88.0,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-02,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP606,Mahnoor Saeed,Production & Manufacturing,POS-592,Production Technician,Mid,30,2.5,6.4,4.8,0.7,9,1,No,No,1.1,13,94.3,82.0,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP607,Maryam Saeed,Production & Manufacturing,POS-593,Production Technician,Mid,20,1.7,7.2,5.9,1.6,16,3,No,No,1.1,9,76.7,84.7,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP608,Sidra Khan,Production & Manufacturing,POS-594,Production Technician,Mid,59,4.9,9.6,8.5,1.9,20,5,No,No,0.3,8,72.8,93.2,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP609,Laiba Iqbal,Production & Manufacturing,POS-595,Production Technician,Mid,31,2.6,7.7,6.2,2.2,17,4,No,Yes,1.4,9,78.1,88.0,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-01,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP610,Junaid Latif,Production & Manufacturing,POS-596,Production Technician,Mid,90,7.5,9.5,7.9,2.0,17,3,No,No,0.3,6,84.8,90.8,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP611,Omar Mahmood,Production & Manufacturing,POS-597,Production Technician,Mid,76,6.3,8.9,5.6,5.1,13,2,No,No,1.0,4,80.9,83.0,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP612,Hassan Khalid,Production & Manufacturing,POS-598,Production Technician,Mid,61,5.1,9.8,8.4,3.5,11,1,Yes,Yes,1.3,8,73.8,89.1,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-01,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP613,Sidra Saeed,Production & Manufacturing,POS-599,Production Technician,Mid,70,5.8,8.3,5.6,2.7,20,4,No,No,1.2,13,84.5,87.1,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP614,Asad Rashid,Production & Manufacturing,POS-600,Production Technician,Mid,16,1.3,3.8,2.5,1.1,7,1,No,No,0.9,7,84.8,72.8,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-02,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP615,Waqas Munir,Production & Manufacturing,POS-601,Production Operator,Junior,16,1.3,4.2,3.4,0.6,4,1,No,Yes,0.7,4,81.6,74.4,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-02,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP616,Rabia Sheikh,Production & Manufacturing,POS-602,Production Operator,Junior,18,1.5,1.5,1.3,0.3,2,0,No,Yes,0.7,3,79.5,66.2,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP617,Anusha Hussain,Production & Manufacturing,POS-603,Production Operator,Junior,4,0.3,1.5,1.1,0.3,1,0,No,No,0.3,0,71.6,63.2,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-02,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP618,Ali Malik,Production & Manufacturing,POS-604,Production Operator,Junior,30,2.5,2.7,2.0,1.6,6,0,No,No,1.0,2,81.8,69.4,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-02,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP619,Kashif Ansari,Production & Manufacturing,POS-605,Production Operator,Junior,35,2.9,5.0,3.6,0.9,5,0,No,Yes,0.5,3,84.2,73.6,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP620,Iqra Ansari,Production & Manufacturing,POS-606,Production Operator,Junior,16,1.3,2.1,1.3,1.1,4,1,No,No,1.4,0,90.4,71.3,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-02,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP621,Usman Malik,Production & Manufacturing,POS-607,Production Operator,Junior,6,0.5,2.8,2.1,0.3,6,1,No,No,0.3,3,79.8,69.4,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP622,Omar Latif,Production & Manufacturing,POS-608,Production Operator,Junior,18,1.5,3.2,2.0,0.7,6,1,No,Yes,0.8,4,76.3,69.4,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP623,Ayesha Hussain,Production & Manufacturing,POS-609,Production Operator,Junior,17,1.4,2.6,1.6,0.5,3,0,No,Yes,1.2,0,87.7,69.7,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-02,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP624,Eman Sheikh,Production & Manufacturing,POS-610,Production Operator,Junior,18,1.5,1.9,1.6,0.5,4,0,No,No,0.9,1,84.9,68.6,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-01,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP625,Arham Ahmed,Production & Manufacturing,POS-611,Production Operator,Junior,30,2.5,3.1,1.8,1.3,4,1,No,No,0.3,3,87.2,69.9,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP626,Shahzaib Mughal,Production & Manufacturing,POS-612,Production Operator,Junior,32,2.7,4.3,3.3,0.3,7,1,No,No,0.0,6,70.2,70.4,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-01,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP627,Mahnoor Ismail,Production & Manufacturing,POS-613,Production Operator,Junior,39,3.2,4.7,3.8,2.3,4,0,No,No,1.0,0,66.2,71.6,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-01,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP628,Raza Hameed,Production & Manufacturing,POS-614,Production Intern,Intern,12,1.0,1.1,1.0,0.3,2,0,No,No,0.5,0,85.4,66.1,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP629,Bilal Malik,Production & Manufacturing,POS-615,Production Intern,Intern,3,0.2,1.0,0.8,0.2,2,0,No,No,0.9,2,89.0,67.0,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-01,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP630,Saba Dar,Production & Manufacturing,POS-616,Production Intern,Intern,8,0.7,1.1,1.0,0.3,2,0,No,No,0.2,6,85.8,65.6,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-02,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP631,Noman Tariq,Quality Assurance,EXEC-QAS-HEAD,Head of Quality Assurance,Executive,142,11.8,27.2,23.7,11.1,27,4,Yes,Yes,23.2,2,89.4,100,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP632,Junaid Sultan,Quality Assurance,POS-617,Quality Assurance Manager,Lead/Manager,181,15.1,24.1,13.5,8.3,52,13,Yes,No,19.6,5,79.6,100,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP633,Sara Tariq,Quality Assurance,POS-618,Quality Assurance Manager,Lead/Manager,155,12.9,22.5,13.2,10.3,26,4,No,No,18.5,7,89.3,100,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP634,Hira Nadeem,Quality Assurance,POS-619,Quality Assurance Manager,Lead/Manager,140,11.7,19.9,11.1,5.9,38,6,Yes,Yes,16.2,9,86.3,100,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP635,Ahmed Rashid,Quality Assurance,POS-620,Quality Assurance Manager,Lead/Manager,174,14.5,23.5,15.8,11.7,25,6,Yes,No,18.0,8,77.2,100,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP636,Zainab Ejaz,Quality Assurance,POS-621,Quality Assurance Manager,Lead/Manager,152,12.7,22.2,17.4,5.3,24,5,No,No,16.3,3,76.7,100,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP637,Kamran Sheikh,Quality Assurance,POS-622,Quality Assurance Manager,Lead/Manager,85,7.1,18.7,12.9,0.9,35,8,No,No,12.9,7,81.7,100,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP638,Laiba Hashmi,Quality Assurance,POS-623,Senior Quality Engineer,Senior,100,8.3,16.8,10.8,2.5,33,8,No,No,1.0,5,90.2,100,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP639,Sana Saeed,Quality Assurance,POS-624,Senior Quality Engineer,Senior,105,8.8,16.1,12.3,4.9,16,1,No,No,1.0,2,82.1,100,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP640,Hamza Yousaf,Quality Assurance,POS-625,Senior Quality Engineer,Senior,135,11.2,18.9,13.7,4.6,19,3,Yes,No,0.8,7,78.1,100,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-02,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP641,Ahmed Awan,Quality Assurance,POS-626,Senior Quality Engineer,Senior,39,3.2,8.9,6.5,1.4,10,2,Yes,No,1.1,4,77.1,85.1,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP642,Taha Zafar,Quality Assurance,POS-627,Senior Quality Engineer,Senior,122,10.2,17.7,14.1,9.2,42,5,No,Yes,1.1,3,66.8,100,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-02,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP643,Bilal Khan,Quality Assurance,POS-628,Senior Quality Engineer,Senior,139,11.6,20.1,14.4,4.3,37,5,Yes,No,0.9,4,87.5,100,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP644,Imran Hussain,Quality Assurance,POS-629,Senior Quality Engineer,Senior,63,5.2,13.7,8.7,2.0,24,3,No,No,1.3,1,72.9,92.8,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP645,Kinza Rehman,Quality Assurance,POS-630,Senior Quality Engineer,Senior,119,9.9,15.2,8.4,1.4,30,3,No,No,0.1,7,71.2,89.1,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-02,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP646,Junaid Yousaf,Quality Assurance,POS-631,Quality Analyst,Mid,35,2.9,6.9,4.1,1.0,15,2,No,No,0.8,5,96.2,81.1,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP647,Amna Iqbal,Quality Assurance,POS-632,Quality Analyst,Mid,18,1.5,4.1,2.5,1.5,5,0,No,No,1.1,6,74.0,69.5,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-02,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP648,Kashif Hashmi,Quality Assurance,POS-633,Quality Analyst,Mid,60,5.0,8.5,6.7,0.9,15,1,No,No,1.2,6,81.4,85.3,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP649,Fatima Raza,Quality Assurance,POS-634,Quality Analyst,Mid,53,4.4,9.4,6.7,4.2,19,2,No,Yes,0.4,3,87.3,86.4,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-02,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP650,Hassan Akhtar,Quality Assurance,POS-635,Quality Analyst,Mid,58,4.8,10.7,6.7,3.7,12,1,No,Yes,0.6,7,73.4,82.5,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP651,Sana Habib,Quality Assurance,POS-636,Quality Analyst,Mid,84,7.0,9.6,5.7,4.3,15,2,No,No,1.2,5,75.5,82.6,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-02,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP652,Kinza Waheed,Quality Assurance,POS-637,Quality Analyst,Mid,44,3.7,9.6,6.7,0.6,18,3,No,No,1.4,7,85.5,89.5,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP653,Laiba Hussain,Quality Assurance,POS-638,Quality Analyst,Mid,30,2.5,6.8,3.8,2.2,11,3,Yes,No,1.4,4,73.4,78.4,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-02,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP654,Kinza Javed,Quality Assurance,POS-639,Quality Analyst,Mid,68,5.7,11.0,8.1,0.9,23,3,No,No,0.1,5,74.8,89.0,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP655,Taha Aslam,Quality Assurance,POS-640,Quality Analyst,Mid,29,2.4,7.2,5.0,1.3,7,1,Yes,Yes,1.4,11,85.1,81.3,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP656,Sara Hussain,Quality Assurance,POS-641,Quality Analyst,Mid,61,5.1,10.9,8.0,2.5,21,5,No,No,0.3,8,80.4,93.2,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP657,Mehwish Chaudhry,Quality Assurance,POS-642,Quality Analyst,Mid,31,2.6,8.5,5.1,1.2,16,4,No,Yes,0.2,8,75.4,81.8,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP658,Kinza Latif,Quality Assurance,POS-643,Quality Analyst,Mid,72,6.0,8.0,4.5,5.4,10,1,No,No,0.3,6,86.1,77.8,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP659,Fahad Sultan,Quality Assurance,POS-644,Quality Analyst,Mid,85,7.1,10.3,9.2,3.2,22,3,No,No,0.9,10,83.3,95.6,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP660,Shahzaib Saleem,Quality Assurance,POS-645,Quality Inspector,Junior,31,2.6,5.3,3.8,1.3,11,2,No,Yes,1.5,4,70.1,76.4,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP661,Fatima Sheikh,Quality Assurance,POS-646,Quality Inspector,Junior,15,1.2,1.5,0.8,0.2,1,0,No,Yes,0.5,10,78.6,64.1,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-02,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP662,Areeba Awan,Quality Assurance,POS-647,Quality Inspector,Junior,29,2.4,5.1,3.3,1.4,11,2,Yes,No,1.0,0,90.5,78.0,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP663,Eman Saleem,Quality Assurance,POS-648,Quality Inspector,Junior,31,2.6,5.5,4.1,0.2,10,1,No,No,1.1,8,90.2,79.0,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP664,Komal Shah,Quality Assurance,POS-649,Quality Inspector,Junior,15,1.2,1.8,1.3,0.6,3,0,No,No,0.3,4,94.0,68.3,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP665,Taha Waheed,Quality Assurance,POS-650,Quality Inspector,Junior,23,1.9,2.7,1.8,0.4,3,0,No,Yes,0.5,4,79.5,67.3,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP666,Saad Hashmi,Quality Assurance,POS-651,Quality Inspector,Junior,16,1.3,3.6,2.8,1.1,6,1,No,No,0.9,6,70.8,70.9,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-02,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP667,Nida Munir,Quality Assurance,POS-652,Quality Inspector,Junior,11,0.9,1.5,0.9,0.4,2,0,No,No,1.2,6,70.5,64.2,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP668,Talha Nawaz,Quality Assurance,POS-653,Quality Inspector,Junior,28,2.3,4.2,3.4,1.1,7,0,No,No,0.9,2,89.7,74.9,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP669,Saad Riaz,Quality Assurance,POS-654,Quality Inspector,Junior,10,0.8,2.5,2.0,0.8,5,1,No,No,0.7,2,86.4,71.2,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP670,Kinza Aziz,Quality Assurance,POS-655,Quality Inspector,Junior,10,0.8,1.2,0.7,0.3,1,0,No,No,1.3,0,87.4,67.2,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-02,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP671,Kashif Waheed,Quality Assurance,POS-656,Quality Inspector,Junior,11,0.9,1.0,0.7,0.6,2,0,No,Yes,0.8,6,79.9,64.7,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP672,Taha Nawaz,Quality Assurance,POS-657,Quality Inspector,Junior,4,0.3,3.0,2.7,0.3,6,0,No,No,0.0,2,84.9,70.1,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP673,Noman Javed,Quality Assurance,POS-658,Quality Assurance Intern,Intern,4,0.3,0.9,0.6,0.3,0,0,No,No,0.7,2,76.6,63.5,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP674,Rabia Ismail,Quality Assurance,POS-659,Quality Assurance Intern,Intern,9,0.8,0.9,0.6,0.4,1,0,No,No,0.4,3,67.2,61.0,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP675,Hira Munir,Quality Assurance,POS-660,Quality Assurance Intern,Intern,12,1.0,1.2,0.9,0.5,2,0,No,No,0.6,7,82.1,65.3,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-02,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP676,Fahad Bukhari,Research & Development,EXEC-RND-HEAD,Head of Research and Development,Executive,180,15.0,27.6,23.2,8.9,39,10,Yes,No,23.4,10,60.5,100,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP677,Eman Chaudhry,Research & Development,POS-661,Research and Development Manager,Lead/Manager,146,12.2,20.9,14.4,9.7,29,7,Yes,No,13.7,13,95.6,100,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP678,Imran Akhtar,Research & Development,POS-662,Research and Development Manager,Lead/Manager,169,14.1,25.8,19.4,7.9,39,11,No,No,20.0,9,85.4,100,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP679,Rabia Latif,Research & Development,POS-663,Research and Development Manager,Lead/Manager,130,10.8,21.4,13.8,9.5,52,9,No,No,18.3,10,93.6,100,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP680,Ayesha Dar,Research & Development,POS-664,Research and Development Manager,Lead/Manager,143,11.9,24.0,18.0,8.4,41,11,No,No,16.5,8,77.5,100,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP681,Kashif Ejaz,Research & Development,POS-665,Research and Development Manager,Lead/Manager,157,13.1,23.9,16.0,6.9,53,14,No,No,18.0,2,82.1,100,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP682,Hira Iqbal,Research & Development,POS-666,Research and Development Manager,Lead/Manager,183,15.2,25.1,20.9,3.5,50,9,No,No,19.3,7,93.8,100,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP683,Farhan Qureshi,Research & Development,POS-667,Senior Research Scientist,Senior,110,9.2,17.8,13.0,6.0,31,3,No,No,0.3,7,77.2,100,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP684,Kamran Mirza,Research & Development,POS-668,Senior Research Scientist,Senior,40,3.3,11.2,6.3,2.0,18,2,No,No,0.2,6,85.9,84.5,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-01,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP685,Kinza Dar,Research & Development,POS-669,Senior Research Scientist,Senior,92,7.7,14.7,8.2,6.2,27,6,No,No,0.9,5,100,100,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-02,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP686,Usman Hussain,Research & Development,POS-670,Senior Research Scientist,Senior,41,3.4,13.1,8.8,1.6,23,4,No,No,1.2,7,92.5,98.3,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP687,Arham Khan,Research & Development,POS-671,Senior Research Scientist,Senior,68,5.7,15.5,11.8,3.9,37,8,No,No,0.0,12,84.0,100,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP688,Hamza Saeed,Research & Development,POS-672,Senior Research Scientist,Senior,73,6.1,15.4,8.5,3.1,20,5,No,No,0.1,5,81.6,94.5,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP689,Areeba Latif,Research & Development,POS-673,Senior Research Scientist,Senior,55,4.6,13.7,10.2,1.4,28,7,No,No,1.1,6,77.0,100,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP690,Imran Dar,Research & Development,POS-674,Senior Research Scientist,Senior,77,6.4,11.4,6.4,6.3,15,3,Yes,Yes,1.4,4,82.0,87.9,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-02,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP691,Raza Bukhari,Research & Development,POS-675,Research Analyst,Mid,24,2.0,4.8,3.6,1.4,9,2,No,No,1.3,11,97.0,80.8,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-01,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP692,Amna Yousaf,Research & Development,POS-676,Research Analyst,Mid,39,3.2,8.0,4.4,0.2,19,2,No,No,0.4,12,87.2,79.4,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP693,Waqas Bukhari,Research & Development,POS-677,Research Analyst,Mid,18,1.5,6.9,5.2,1.4,16,4,No,No,0.7,4,83.5,84.7,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-01,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP694,Omar Khan,Research & Development,POS-678,Research Analyst,Mid,74,6.2,8.6,6.8,2.4,14,2,No,No,0.4,10,84.5,86.1,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP695,Noman Hameed,Research & Development,POS-679,Research Analyst,Mid,89,7.4,9.8,8.0,6.7,15,1,No,Yes,0.3,9,80.5,87.2,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-01,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP696,Taha Baig,Research & Development,POS-680,Research Analyst,Mid,24,2.0,5.6,4.4,0.9,13,2,Yes,No,0.9,8,70.3,77.1,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-02,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP697,Fahad Khalid,Research & Development,POS-681,Research Analyst,Mid,71,5.9,11.3,6.9,1.3,11,3,No,No,0.6,5,78.9,87.2,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP698,Amna Siddiqui,Research & Development,POS-682,Research Analyst,Mid,82,6.8,11.4,6.9,1.5,27,5,No,No,0.7,7,79.4,90.5,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-01,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP699,Maha Shah,Research & Development,POS-683,Research Analyst,Mid,74,6.2,10.6,9.5,3.1,22,6,No,No,0.8,9,80.6,100,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-02,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP700,Eman Ismail,Research & Development,POS-684,Research Analyst,Mid,78,6.5,11.3,9.1,5.2,26,6,Yes,No,1.5,10,87.8,100,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-02,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP701,Zainab Faisal,Research & Development,POS-685,Research Analyst,Mid,88,7.3,9.7,5.4,4.8,23,3,No,No,0.0,6,78.6,81.4,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-02,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP702,Laiba Sultan,Research & Development,POS-686,Research Analyst,Mid,24,2.0,6.7,5.1,1.0,11,3,No,No,1.4,6,75.5,82.7,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-02,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP703,Laiba Baig,Research & Development,POS-687,Research Analyst,Mid,18,1.5,5.8,3.6,0.5,7,1,Yes,No,1.3,8,95.0,78.9,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP704,Minal Sultan,Research & Development,POS-688,Research Analyst,Mid,24,2.0,4.3,3.2,0.3,4,0,No,No,0.2,8,89.4,72.9,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP705,Taha Akhtar,Research & Development,POS-689,Research Associate,Junior,31,2.6,2.9,2.0,1.2,4,0,No,No,1.3,3,87.5,71.1,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-01,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP706,Sidra Mahmood,Research & Development,POS-690,Research Associate,Junior,18,1.5,1.9,1.1,0.6,2,0,No,No,0.3,1,84.9,65.9,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-01,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP707,Laiba Munir,Research & Development,POS-691,Research Associate,Junior,17,1.4,2.7,1.7,0.5,3,0,No,No,1.4,7,77.8,68.5,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP708,Maryam Akhtar,Research & Development,POS-692,Research Associate,Junior,8,0.7,1.7,1.1,0.5,3,0,No,No,0.1,3,88.0,66.1,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-02,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP709,Ayesha Tariq,Research & Development,POS-693,Research Associate,Junior,39,3.2,3.3,2.0,0.8,3,0,No,No,0.3,1,82.6,68.1,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-01,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP710,Sara Hameed,Research & Development,POS-694,Research Associate,Junior,31,2.6,3.3,1.9,2.0,5,0,No,No,1.0,0,84.0,69.5,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-01,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP711,Shahzaib Siddiqui,Research & Development,POS-695,Research Associate,Junior,35,2.9,4.6,3.0,2.1,5,0,Yes,No,0.3,2,71.0,68.8,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-02,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP712,Minal Hussain,Research & Development,POS-696,Research Associate,Junior,15,1.2,2.1,1.6,0.6,3,0,No,No,1.2,4,78.3,67.9,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP713,Kashif Qureshi,Research & Development,POS-697,Research Associate,Junior,6,0.5,3.1,2.3,0.5,7,1,No,No,1.5,2,96.4,75.7,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP714,Maryam Ejaz,Research & Development,POS-698,Research Associate,Junior,35,2.9,5.4,4.1,2.7,5,0,No,No,1.1,6,86.8,76.9,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-01,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP715,Ali Munir,Research & Development,POS-699,Research Associate,Junior,23,1.9,2.4,1.9,0.7,5,0,No,No,0.5,2,82.5,68.2,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-01,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP716,Saba Awan,Research & Development,POS-700,Research Associate,Junior,23,1.9,2.9,2.4,1.3,4,1,No,No,1.3,4,82.8,72.9,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP717,Minal Hameed,Research & Development,POS-701,Research Associate,Junior,37,3.1,4.4,2.8,2.6,8,1,No,No,0.0,1,82.8,71.5,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-02,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP718,Laiba Ansari,Research & Development,POS-702,Research Intern,Intern,11,0.9,0.9,0.7,0.4,1,0,No,No,1.0,6,82.8,65.7,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP719,Mahnoor Sultan,Research & Development,POS-703,Research Intern,Intern,2,0.2,0.4,0.2,0.2,0,0,No,No,0.2,0,86.4,63.3,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-02,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP720,Fahad Awan,Research & Development,POS-704,Research Intern,Intern,4,0.3,0.6,0.5,0.3,1,0,No,Yes,0.4,1,73.5,62.0,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-01,LOC-HQ,COST-CENTER-RND,2026-08-01

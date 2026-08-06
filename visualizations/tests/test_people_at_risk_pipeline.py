@@ -31,7 +31,7 @@ service = PeopleAtRiskService(
 
 summary = service.get_summary()
 
-assert summary["total_employees"] == 200
+assert summary["total_employees"] == 720
 assert summary["people_at_risk"] > 0
 assert (
     summary["people_at_risk"] + summary["people_not_at_risk"]

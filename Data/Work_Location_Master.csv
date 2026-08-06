@@ -1,0 +1,9 @@
+﻿Work_Location_ID,Work_Location_Name,Work_Location_Type,City,Region,Operational_Capacity
+LOC-HQ,Corporate Headquarters,Headquarters,Islamabad,Capital Region,500
+LOC-NORTH,Northern Regional Office,Regional Office,Islamabad,North,250
+LOC-SOUTH,Southern Regional Office,Regional Office,Karachi,South,300
+LOC-CENTRAL,Central Operations Site,Operations Center,Lahore,Central,450
+LOC-MEDICAL,Integrated Medical Center,Medical Center,Rawalpindi,North,200
+LOC-CAMPUS,Learning and Training Campus,Training Campus,Lahore,Central,250
+LOC-PLANT,Manufacturing and Quality Plant,Manufacturing Plant,Faisalabad,Central,600
+LOC-HUB,National Logistics Hub,Logistics Hub,Karachi,South,400

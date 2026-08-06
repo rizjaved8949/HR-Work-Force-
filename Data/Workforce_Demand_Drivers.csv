@@ -1,0 +1,385 @@
+﻿Driver_Record_ID,Snapshot_Month,Department_ID,Department_Name,Demand_Driver_Name,Demand_Driver_Value,Measurement_Unit,Baseline_Driver_Value,Demand_Growth_Percentage,Expected_Staffing_Need,Demand_to_Approved_Headcount_Gap,Data_Pattern_Description,Data_As_Of_Date
+DEMAND-HR-202409,2024-09-01,DEPARTMENT-001,HR,Employee Service Requests,583.0,Requests,600,-2.83,43,-1,Seasonal and trend-adjusted demand aligned to department operations,2024-09-28
+DEMAND-HR-202410,2024-10-01,DEPARTMENT-001,HR,Employee Service Requests,614.2,Requests,600,2.37,45,1,Seasonal and trend-adjusted demand aligned to department operations,2024-10-28
+DEMAND-HR-202411,2024-11-01,DEPARTMENT-001,HR,Employee Service Requests,594.4,Requests,600,-0.93,44,0,Seasonal and trend-adjusted demand aligned to department operations,2024-11-28
+DEMAND-HR-202412,2024-12-01,DEPARTMENT-001,HR,Employee Service Requests,610.5,Requests,600,1.75,45,1,Seasonal and trend-adjusted demand aligned to department operations,2024-12-28
+DEMAND-HR-202501,2025-01-01,DEPARTMENT-001,HR,Employee Service Requests,632.7,Requests,600,5.45,46,2,Seasonal and trend-adjusted demand aligned to department operations,2025-01-28
+DEMAND-HR-202502,2025-02-01,DEPARTMENT-001,HR,Employee Service Requests,610.2,Requests,600,1.7,45,1,Seasonal and trend-adjusted demand aligned to department operations,2025-02-28
+DEMAND-HR-202503,2025-03-01,DEPARTMENT-001,HR,Employee Service Requests,605.4,Requests,600,0.9,44,0,Seasonal and trend-adjusted demand aligned to department operations,2025-03-28
+DEMAND-HR-202504,2025-04-01,DEPARTMENT-001,HR,Employee Service Requests,631.0,Requests,600,5.17,46,2,Seasonal and trend-adjusted demand aligned to department operations,2025-04-28
+DEMAND-HR-202505,2025-05-01,DEPARTMENT-001,HR,Employee Service Requests,636.8,Requests,600,6.13,47,3,Seasonal and trend-adjusted demand aligned to department operations,2025-05-28
+DEMAND-HR-202506,2025-06-01,DEPARTMENT-001,HR,Employee Service Requests,636.1,Requests,600,6.02,47,3,Seasonal and trend-adjusted demand aligned to department operations,2025-06-28
+DEMAND-HR-202507,2025-07-01,DEPARTMENT-001,HR,Employee Service Requests,666.8,Requests,600,11.13,49,5,Seasonal and trend-adjusted demand aligned to department operations,2025-07-28
+DEMAND-HR-202508,2025-08-01,DEPARTMENT-001,HR,Employee Service Requests,627.8,Requests,600,4.63,46,2,Seasonal and trend-adjusted demand aligned to department operations,2025-08-28
+DEMAND-HR-202509,2025-09-01,DEPARTMENT-001,HR,Employee Service Requests,638.5,Requests,600,6.42,47,3,Seasonal and trend-adjusted demand aligned to department operations,2025-09-28
+DEMAND-HR-202510,2025-10-01,DEPARTMENT-001,HR,Employee Service Requests,664.7,Requests,600,10.78,49,5,Seasonal and trend-adjusted demand aligned to department operations,2025-10-28
+DEMAND-HR-202511,2025-11-01,DEPARTMENT-001,HR,Employee Service Requests,669.8,Requests,600,11.63,49,5,Seasonal and trend-adjusted demand aligned to department operations,2025-11-28
+DEMAND-HR-202512,2025-12-01,DEPARTMENT-001,HR,Employee Service Requests,650.3,Requests,600,8.38,48,4,Seasonal and trend-adjusted demand aligned to department operations,2025-12-28
+DEMAND-HR-202601,2026-01-01,DEPARTMENT-001,HR,Employee Service Requests,673.8,Requests,600,12.3,49,5,Seasonal and trend-adjusted demand aligned to department operations,2026-01-28
+DEMAND-HR-202602,2026-02-01,DEPARTMENT-001,HR,Employee Service Requests,690.2,Requests,600,15.03,51,7,Seasonal and trend-adjusted demand aligned to department operations,2026-02-28
+DEMAND-HR-202603,2026-03-01,DEPARTMENT-001,HR,Employee Service Requests,657.9,Requests,600,9.65,48,4,Seasonal and trend-adjusted demand aligned to department operations,2026-03-28
+DEMAND-HR-202604,2026-04-01,DEPARTMENT-001,HR,Employee Service Requests,689.8,Requests,600,14.97,51,7,Seasonal and trend-adjusted demand aligned to department operations,2026-04-28
+DEMAND-HR-202605,2026-05-01,DEPARTMENT-001,HR,Employee Service Requests,684.8,Requests,600,14.13,50,6,Seasonal and trend-adjusted demand aligned to department operations,2026-05-28
+DEMAND-HR-202606,2026-06-01,DEPARTMENT-001,HR,Employee Service Requests,671.4,Requests,600,11.9,49,5,Seasonal and trend-adjusted demand aligned to department operations,2026-06-28
+DEMAND-HR-202607,2026-07-01,DEPARTMENT-001,HR,Employee Service Requests,698.8,Requests,600,16.47,51,7,Seasonal and trend-adjusted demand aligned to department operations,2026-07-28
+DEMAND-HR-202608,2026-08-01,DEPARTMENT-001,HR,Employee Service Requests,717.7,Requests,600,19.62,53,9,Seasonal and trend-adjusted demand aligned to department operations,2026-08-28
+DEMAND-FIN-202409,2024-09-01,DEPARTMENT-002,Finance,Financial Transactions Processed,909.1,Transactions,900,1.01,46,0,Seasonal and trend-adjusted demand aligned to department operations,2024-09-28
+DEMAND-FIN-202410,2024-10-01,DEPARTMENT-002,Finance,Financial Transactions Processed,899.6,Transactions,900,-0.04,46,0,Seasonal and trend-adjusted demand aligned to department operations,2024-10-28
+DEMAND-FIN-202411,2024-11-01,DEPARTMENT-002,Finance,Financial Transactions Processed,945.2,Transactions,900,5.02,48,2,Seasonal and trend-adjusted demand aligned to department operations,2024-11-28
+DEMAND-FIN-202412,2024-12-01,DEPARTMENT-002,Finance,Financial Transactions Processed,983.5,Transactions,900,9.28,50,4,Seasonal and trend-adjusted demand aligned to department operations,2024-12-28
+DEMAND-FIN-202501,2025-01-01,DEPARTMENT-002,Finance,Financial Transactions Processed,991.3,Transactions,900,10.14,52,5,Seasonal and trend-adjusted demand aligned to department operations,2025-01-28
+DEMAND-FIN-202502,2025-02-01,DEPARTMENT-002,Finance,Financial Transactions Processed,929.8,Transactions,900,3.31,49,2,Seasonal and trend-adjusted demand aligned to department operations,2025-02-28
+DEMAND-FIN-202503,2025-03-01,DEPARTMENT-002,Finance,Financial Transactions Processed,932.1,Transactions,900,3.57,49,2,Seasonal and trend-adjusted demand aligned to department operations,2025-03-28
+DEMAND-FIN-202504,2025-04-01,DEPARTMENT-002,Finance,Financial Transactions Processed,945.9,Transactions,900,5.1,49,2,Seasonal and trend-adjusted demand aligned to department operations,2025-04-28
+DEMAND-FIN-202505,2025-05-01,DEPARTMENT-002,Finance,Financial Transactions Processed,930.8,Transactions,900,3.42,49,2,Seasonal and trend-adjusted demand aligned to department operations,2025-05-28
+DEMAND-FIN-202506,2025-06-01,DEPARTMENT-002,Finance,Financial Transactions Processed,1002.7,Transactions,900,11.41,52,5,Seasonal and trend-adjusted demand aligned to department operations,2025-06-28
+DEMAND-FIN-202507,2025-07-01,DEPARTMENT-002,Finance,Financial Transactions Processed,975.5,Transactions,900,8.39,51,4,Seasonal and trend-adjusted demand aligned to department operations,2025-07-28
+DEMAND-FIN-202508,2025-08-01,DEPARTMENT-002,Finance,Financial Transactions Processed,950.4,Transactions,900,5.6,50,3,Seasonal and trend-adjusted demand aligned to department operations,2025-08-28
+DEMAND-FIN-202509,2025-09-01,DEPARTMENT-002,Finance,Financial Transactions Processed,996.3,Transactions,900,10.7,52,5,Seasonal and trend-adjusted demand aligned to department operations,2025-09-28
+DEMAND-FIN-202510,2025-10-01,DEPARTMENT-002,Finance,Financial Transactions Processed,992.9,Transactions,900,10.32,52,5,Seasonal and trend-adjusted demand aligned to department operations,2025-10-28
+DEMAND-FIN-202511,2025-11-01,DEPARTMENT-002,Finance,Financial Transactions Processed,964.7,Transactions,900,7.19,50,3,Seasonal and trend-adjusted demand aligned to department operations,2025-11-28
+DEMAND-FIN-202512,2025-12-01,DEPARTMENT-002,Finance,Financial Transactions Processed,1105.2,Transactions,900,22.8,58,11,Seasonal and trend-adjusted demand aligned to department operations,2025-12-28
+DEMAND-FIN-202601,2026-01-01,DEPARTMENT-002,Finance,Financial Transactions Processed,1036.8,Transactions,900,15.2,55,7,Seasonal and trend-adjusted demand aligned to department operations,2026-01-28
+DEMAND-FIN-202602,2026-02-01,DEPARTMENT-002,Finance,Financial Transactions Processed,1003.2,Transactions,900,11.47,54,6,Seasonal and trend-adjusted demand aligned to department operations,2026-02-28
+DEMAND-FIN-202603,2026-03-01,DEPARTMENT-002,Finance,Financial Transactions Processed,993.3,Transactions,900,10.37,53,5,Seasonal and trend-adjusted demand aligned to department operations,2026-03-28
+DEMAND-FIN-202604,2026-04-01,DEPARTMENT-002,Finance,Financial Transactions Processed,1027.0,Transactions,900,14.11,55,7,Seasonal and trend-adjusted demand aligned to department operations,2026-04-28
+DEMAND-FIN-202605,2026-05-01,DEPARTMENT-002,Finance,Financial Transactions Processed,1070.9,Transactions,900,18.99,57,9,Seasonal and trend-adjusted demand aligned to department operations,2026-05-28
+DEMAND-FIN-202606,2026-06-01,DEPARTMENT-002,Finance,Financial Transactions Processed,1121.0,Transactions,900,24.56,60,12,Seasonal and trend-adjusted demand aligned to department operations,2026-06-28
+DEMAND-FIN-202607,2026-07-01,DEPARTMENT-002,Finance,Financial Transactions Processed,1052.8,Transactions,900,16.98,56,8,Seasonal and trend-adjusted demand aligned to department operations,2026-07-28
+DEMAND-FIN-202608,2026-08-01,DEPARTMENT-002,Finance,Financial Transactions Processed,1036.4,Transactions,900,15.16,55,7,Seasonal and trend-adjusted demand aligned to department operations,2026-08-28
+DEMAND-SAL-202409,2024-09-01,DEPARTMENT-003,Sales,Sales Pipeline Volume,182.6,Millions of PKR,180,1.44,51,1,Seasonal and trend-adjusted demand aligned to department operations,2024-09-28
+DEMAND-SAL-202410,2024-10-01,DEPARTMENT-003,Sales,Sales Pipeline Volume,175.8,Millions of PKR,180,-2.33,49,-1,Seasonal and trend-adjusted demand aligned to department operations,2024-10-28
+DEMAND-SAL-202411,2024-11-01,DEPARTMENT-003,Sales,Sales Pipeline Volume,199.2,Millions of PKR,180,10.67,55,5,Seasonal and trend-adjusted demand aligned to department operations,2024-11-28
+DEMAND-SAL-202412,2024-12-01,DEPARTMENT-003,Sales,Sales Pipeline Volume,214.4,Millions of PKR,180,19.11,60,10,Seasonal and trend-adjusted demand aligned to department operations,2024-12-28
+DEMAND-SAL-202501,2025-01-01,DEPARTMENT-003,Sales,Sales Pipeline Volume,186.6,Millions of PKR,180,3.67,53,2,Seasonal and trend-adjusted demand aligned to department operations,2025-01-28
+DEMAND-SAL-202502,2025-02-01,DEPARTMENT-003,Sales,Sales Pipeline Volume,172.3,Millions of PKR,180,-4.28,49,-2,Seasonal and trend-adjusted demand aligned to department operations,2025-02-28
+DEMAND-SAL-202503,2025-03-01,DEPARTMENT-003,Sales,Sales Pipeline Volume,180.3,Millions of PKR,180,0.17,51,0,Seasonal and trend-adjusted demand aligned to department operations,2025-03-28
+DEMAND-SAL-202504,2025-04-01,DEPARTMENT-003,Sales,Sales Pipeline Volume,185.1,Millions of PKR,180,2.83,52,1,Seasonal and trend-adjusted demand aligned to department operations,2025-04-28
+DEMAND-SAL-202505,2025-05-01,DEPARTMENT-003,Sales,Sales Pipeline Volume,197.4,Millions of PKR,180,9.67,56,5,Seasonal and trend-adjusted demand aligned to department operations,2025-05-28
+DEMAND-SAL-202506,2025-06-01,DEPARTMENT-003,Sales,Sales Pipeline Volume,191.0,Millions of PKR,180,6.11,54,3,Seasonal and trend-adjusted demand aligned to department operations,2025-06-28
+DEMAND-SAL-202507,2025-07-01,DEPARTMENT-003,Sales,Sales Pipeline Volume,196.3,Millions of PKR,180,9.06,56,5,Seasonal and trend-adjusted demand aligned to department operations,2025-07-28
+DEMAND-SAL-202508,2025-08-01,DEPARTMENT-003,Sales,Sales Pipeline Volume,193.0,Millions of PKR,180,7.22,55,4,Seasonal and trend-adjusted demand aligned to department operations,2025-08-28
+DEMAND-SAL-202509,2025-09-01,DEPARTMENT-003,Sales,Sales Pipeline Volume,202.3,Millions of PKR,180,12.39,57,6,Seasonal and trend-adjusted demand aligned to department operations,2025-09-28
+DEMAND-SAL-202510,2025-10-01,DEPARTMENT-003,Sales,Sales Pipeline Volume,191.2,Millions of PKR,180,6.22,54,3,Seasonal and trend-adjusted demand aligned to department operations,2025-10-28
+DEMAND-SAL-202511,2025-11-01,DEPARTMENT-003,Sales,Sales Pipeline Volume,218.8,Millions of PKR,180,21.56,62,11,Seasonal and trend-adjusted demand aligned to department operations,2025-11-28
+DEMAND-SAL-202512,2025-12-01,DEPARTMENT-003,Sales,Sales Pipeline Volume,219.2,Millions of PKR,180,21.78,62,11,Seasonal and trend-adjusted demand aligned to department operations,2025-12-28
+DEMAND-SAL-202601,2026-01-01,DEPARTMENT-003,Sales,Sales Pipeline Volume,194.8,Millions of PKR,180,8.22,56,4,Seasonal and trend-adjusted demand aligned to department operations,2026-01-28
+DEMAND-SAL-202602,2026-02-01,DEPARTMENT-003,Sales,Sales Pipeline Volume,191.3,Millions of PKR,180,6.28,55,3,Seasonal and trend-adjusted demand aligned to department operations,2026-02-28
+DEMAND-SAL-202603,2026-03-01,DEPARTMENT-003,Sales,Sales Pipeline Volume,197.9,Millions of PKR,180,9.94,57,5,Seasonal and trend-adjusted demand aligned to department operations,2026-03-28
+DEMAND-SAL-202604,2026-04-01,DEPARTMENT-003,Sales,Sales Pipeline Volume,204.2,Millions of PKR,180,13.44,59,7,Seasonal and trend-adjusted demand aligned to department operations,2026-04-28
+DEMAND-SAL-202605,2026-05-01,DEPARTMENT-003,Sales,Sales Pipeline Volume,203.7,Millions of PKR,180,13.17,59,7,Seasonal and trend-adjusted demand aligned to department operations,2026-05-28
+DEMAND-SAL-202606,2026-06-01,DEPARTMENT-003,Sales,Sales Pipeline Volume,202.0,Millions of PKR,180,12.22,58,6,Seasonal and trend-adjusted demand aligned to department operations,2026-06-28
+DEMAND-SAL-202607,2026-07-01,DEPARTMENT-003,Sales,Sales Pipeline Volume,208.9,Millions of PKR,180,16.06,60,8,Seasonal and trend-adjusted demand aligned to department operations,2026-07-28
+DEMAND-SAL-202608,2026-08-01,DEPARTMENT-003,Sales,Sales Pipeline Volume,204.8,Millions of PKR,180,13.78,59,7,Seasonal and trend-adjusted demand aligned to department operations,2026-08-28
+DEMAND-CS-202409,2024-09-01,DEPARTMENT-004,Customer Support,Customer Support Tickets,2811.8,Tickets,2800,0.42,48,0,Seasonal and trend-adjusted demand aligned to department operations,2024-09-28
+DEMAND-CS-202410,2024-10-01,DEPARTMENT-004,Customer Support,Customer Support Tickets,2913.5,Tickets,2800,4.05,50,2,Seasonal and trend-adjusted demand aligned to department operations,2024-10-28
+DEMAND-CS-202411,2024-11-01,DEPARTMENT-004,Customer Support,Customer Support Tickets,3093.7,Tickets,2800,10.49,53,5,Seasonal and trend-adjusted demand aligned to department operations,2024-11-28
+DEMAND-CS-202412,2024-12-01,DEPARTMENT-004,Customer Support,Customer Support Tickets,3296.7,Tickets,2800,17.74,57,9,Seasonal and trend-adjusted demand aligned to department operations,2024-12-28
+DEMAND-CS-202501,2025-01-01,DEPARTMENT-004,Customer Support,Customer Support Tickets,2966.5,Tickets,2800,5.95,52,3,Seasonal and trend-adjusted demand aligned to department operations,2025-01-28
+DEMAND-CS-202502,2025-02-01,DEPARTMENT-004,Customer Support,Customer Support Tickets,2671.1,Tickets,2800,-4.6,47,-2,Seasonal and trend-adjusted demand aligned to department operations,2025-02-28
+DEMAND-CS-202503,2025-03-01,DEPARTMENT-004,Customer Support,Customer Support Tickets,2670.6,Tickets,2800,-4.62,47,-2,Seasonal and trend-adjusted demand aligned to department operations,2025-03-28
+DEMAND-CS-202504,2025-04-01,DEPARTMENT-004,Customer Support,Customer Support Tickets,2974.0,Tickets,2800,6.21,52,3,Seasonal and trend-adjusted demand aligned to department operations,2025-04-28
+DEMAND-CS-202505,2025-05-01,DEPARTMENT-004,Customer Support,Customer Support Tickets,2894.2,Tickets,2800,3.36,51,2,Seasonal and trend-adjusted demand aligned to department operations,2025-05-28
+DEMAND-CS-202506,2025-06-01,DEPARTMENT-004,Customer Support,Customer Support Tickets,3022.3,Tickets,2800,7.94,53,4,Seasonal and trend-adjusted demand aligned to department operations,2025-06-28
+DEMAND-CS-202507,2025-07-01,DEPARTMENT-004,Customer Support,Customer Support Tickets,2955.0,Tickets,2800,5.54,52,3,Seasonal and trend-adjusted demand aligned to department operations,2025-07-28
+DEMAND-CS-202508,2025-08-01,DEPARTMENT-004,Customer Support,Customer Support Tickets,2923.2,Tickets,2800,4.4,51,2,Seasonal and trend-adjusted demand aligned to department operations,2025-08-28
+DEMAND-CS-202509,2025-09-01,DEPARTMENT-004,Customer Support,Customer Support Tickets,3143.2,Tickets,2800,12.26,55,6,Seasonal and trend-adjusted demand aligned to department operations,2025-09-28
+DEMAND-CS-202510,2025-10-01,DEPARTMENT-004,Customer Support,Customer Support Tickets,3189.7,Tickets,2800,13.92,56,7,Seasonal and trend-adjusted demand aligned to department operations,2025-10-28
+DEMAND-CS-202511,2025-11-01,DEPARTMENT-004,Customer Support,Customer Support Tickets,3457.8,Tickets,2800,23.49,61,12,Seasonal and trend-adjusted demand aligned to department operations,2025-11-28
+DEMAND-CS-202512,2025-12-01,DEPARTMENT-004,Customer Support,Customer Support Tickets,3410.0,Tickets,2800,21.79,60,11,Seasonal and trend-adjusted demand aligned to department operations,2025-12-28
+DEMAND-CS-202601,2026-01-01,DEPARTMENT-004,Customer Support,Customer Support Tickets,3150.4,Tickets,2800,12.51,56,6,Seasonal and trend-adjusted demand aligned to department operations,2026-01-28
+DEMAND-CS-202602,2026-02-01,DEPARTMENT-004,Customer Support,Customer Support Tickets,2863.1,Tickets,2800,2.25,51,1,Seasonal and trend-adjusted demand aligned to department operations,2026-02-28
+DEMAND-CS-202603,2026-03-01,DEPARTMENT-004,Customer Support,Customer Support Tickets,2937.2,Tickets,2800,4.9,52,2,Seasonal and trend-adjusted demand aligned to department operations,2026-03-28
+DEMAND-CS-202604,2026-04-01,DEPARTMENT-004,Customer Support,Customer Support Tickets,3315.2,Tickets,2800,18.4,59,9,Seasonal and trend-adjusted demand aligned to department operations,2026-04-28
+DEMAND-CS-202605,2026-05-01,DEPARTMENT-004,Customer Support,Customer Support Tickets,3133.1,Tickets,2800,11.9,56,6,Seasonal and trend-adjusted demand aligned to department operations,2026-05-28
+DEMAND-CS-202606,2026-06-01,DEPARTMENT-004,Customer Support,Customer Support Tickets,3138.9,Tickets,2800,12.1,56,6,Seasonal and trend-adjusted demand aligned to department operations,2026-06-28
+DEMAND-CS-202607,2026-07-01,DEPARTMENT-004,Customer Support,Customer Support Tickets,3222.5,Tickets,2800,15.09,58,8,Seasonal and trend-adjusted demand aligned to department operations,2026-07-28
+DEMAND-CS-202608,2026-08-01,DEPARTMENT-004,Customer Support,Customer Support Tickets,3323.1,Tickets,2800,18.68,59,9,Seasonal and trend-adjusted demand aligned to department operations,2026-08-28
+DEMAND-ENG-202409,2024-09-01,DEPARTMENT-005,Engineering,Active Technology Projects,22,Projects,22,0.0,50,0,Seasonal and trend-adjusted demand aligned to department operations,2024-09-28
+DEMAND-ENG-202410,2024-10-01,DEPARTMENT-005,Engineering,Active Technology Projects,22,Projects,22,0.0,50,0,Seasonal and trend-adjusted demand aligned to department operations,2024-10-28
+DEMAND-ENG-202411,2024-11-01,DEPARTMENT-005,Engineering,Active Technology Projects,22,Projects,22,0.0,50,0,Seasonal and trend-adjusted demand aligned to department operations,2024-11-28
+DEMAND-ENG-202412,2024-12-01,DEPARTMENT-005,Engineering,Active Technology Projects,22,Projects,22,0.0,50,0,Seasonal and trend-adjusted demand aligned to department operations,2024-12-28
+DEMAND-ENG-202501,2025-01-01,DEPARTMENT-005,Engineering,Active Technology Projects,23,Projects,22,4.55,54,2,Seasonal and trend-adjusted demand aligned to department operations,2025-01-28
+DEMAND-ENG-202502,2025-02-01,DEPARTMENT-005,Engineering,Active Technology Projects,23,Projects,22,4.55,54,2,Seasonal and trend-adjusted demand aligned to department operations,2025-02-28
+DEMAND-ENG-202503,2025-03-01,DEPARTMENT-005,Engineering,Active Technology Projects,22,Projects,22,0.0,52,0,Seasonal and trend-adjusted demand aligned to department operations,2025-03-28
+DEMAND-ENG-202504,2025-04-01,DEPARTMENT-005,Engineering,Active Technology Projects,23,Projects,22,4.55,54,2,Seasonal and trend-adjusted demand aligned to department operations,2025-04-28
+DEMAND-ENG-202505,2025-05-01,DEPARTMENT-005,Engineering,Active Technology Projects,24,Projects,22,9.09,57,5,Seasonal and trend-adjusted demand aligned to department operations,2025-05-28
+DEMAND-ENG-202506,2025-06-01,DEPARTMENT-005,Engineering,Active Technology Projects,23,Projects,22,4.55,54,2,Seasonal and trend-adjusted demand aligned to department operations,2025-06-28
+DEMAND-ENG-202507,2025-07-01,DEPARTMENT-005,Engineering,Active Technology Projects,23,Projects,22,4.55,54,2,Seasonal and trend-adjusted demand aligned to department operations,2025-07-28
+DEMAND-ENG-202508,2025-08-01,DEPARTMENT-005,Engineering,Active Technology Projects,25,Projects,22,13.64,59,7,Seasonal and trend-adjusted demand aligned to department operations,2025-08-28
+DEMAND-ENG-202509,2025-09-01,DEPARTMENT-005,Engineering,Active Technology Projects,23,Projects,22,4.55,54,2,Seasonal and trend-adjusted demand aligned to department operations,2025-09-28
+DEMAND-ENG-202510,2025-10-01,DEPARTMENT-005,Engineering,Active Technology Projects,25,Projects,22,13.64,59,7,Seasonal and trend-adjusted demand aligned to department operations,2025-10-28
+DEMAND-ENG-202511,2025-11-01,DEPARTMENT-005,Engineering,Active Technology Projects,23,Projects,22,4.55,54,2,Seasonal and trend-adjusted demand aligned to department operations,2025-11-28
+DEMAND-ENG-202512,2025-12-01,DEPARTMENT-005,Engineering,Active Technology Projects,24,Projects,22,9.09,57,5,Seasonal and trend-adjusted demand aligned to department operations,2025-12-28
+DEMAND-ENG-202601,2026-01-01,DEPARTMENT-005,Engineering,Active Technology Projects,25,Projects,22,13.64,61,7,Seasonal and trend-adjusted demand aligned to department operations,2026-01-28
+DEMAND-ENG-202602,2026-02-01,DEPARTMENT-005,Engineering,Active Technology Projects,25,Projects,22,13.64,61,7,Seasonal and trend-adjusted demand aligned to department operations,2026-02-28
+DEMAND-ENG-202603,2026-03-01,DEPARTMENT-005,Engineering,Active Technology Projects,24,Projects,22,9.09,59,5,Seasonal and trend-adjusted demand aligned to department operations,2026-03-28
+DEMAND-ENG-202604,2026-04-01,DEPARTMENT-005,Engineering,Active Technology Projects,26,Projects,22,18.18,64,10,Seasonal and trend-adjusted demand aligned to department operations,2026-04-28
+DEMAND-ENG-202605,2026-05-01,DEPARTMENT-005,Engineering,Active Technology Projects,25,Projects,22,13.64,61,7,Seasonal and trend-adjusted demand aligned to department operations,2026-05-28
+DEMAND-ENG-202606,2026-06-01,DEPARTMENT-005,Engineering,Active Technology Projects,26,Projects,22,18.18,64,10,Seasonal and trend-adjusted demand aligned to department operations,2026-06-28
+DEMAND-ENG-202607,2026-07-01,DEPARTMENT-005,Engineering,Active Technology Projects,26,Projects,22,18.18,64,10,Seasonal and trend-adjusted demand aligned to department operations,2026-07-28
+DEMAND-ENG-202608,2026-08-01,DEPARTMENT-005,Engineering,Active Technology Projects,25,Projects,22,13.64,61,7,Seasonal and trend-adjusted demand aligned to department operations,2026-08-28
+DEMAND-OPS-202409,2024-09-01,DEPARTMENT-006,Operations,Operational Work Orders,1217.2,Work Orders,1200,1.43,49,1,Seasonal and trend-adjusted demand aligned to department operations,2024-09-28
+DEMAND-OPS-202410,2024-10-01,DEPARTMENT-006,Operations,Operational Work Orders,1161.1,Work Orders,1200,-3.24,46,-2,Seasonal and trend-adjusted demand aligned to department operations,2024-10-28
+DEMAND-OPS-202411,2024-11-01,DEPARTMENT-006,Operations,Operational Work Orders,1206.9,Work Orders,1200,0.58,48,0,Seasonal and trend-adjusted demand aligned to department operations,2024-11-28
+DEMAND-OPS-202412,2024-12-01,DEPARTMENT-006,Operations,Operational Work Orders,1192.0,Work Orders,1200,-0.67,48,0,Seasonal and trend-adjusted demand aligned to department operations,2024-12-28
+DEMAND-OPS-202501,2025-01-01,DEPARTMENT-006,Operations,Operational Work Orders,1220.7,Work Orders,1200,1.72,50,1,Seasonal and trend-adjusted demand aligned to department operations,2025-01-28
+DEMAND-OPS-202502,2025-02-01,DEPARTMENT-006,Operations,Operational Work Orders,1237.2,Work Orders,1200,3.1,51,2,Seasonal and trend-adjusted demand aligned to department operations,2025-02-28
+DEMAND-OPS-202503,2025-03-01,DEPARTMENT-006,Operations,Operational Work Orders,1258.3,Work Orders,1200,4.86,51,2,Seasonal and trend-adjusted demand aligned to department operations,2025-03-28
+DEMAND-OPS-202504,2025-04-01,DEPARTMENT-006,Operations,Operational Work Orders,1245.1,Work Orders,1200,3.76,51,2,Seasonal and trend-adjusted demand aligned to department operations,2025-04-28
+DEMAND-OPS-202505,2025-05-01,DEPARTMENT-006,Operations,Operational Work Orders,1232.2,Work Orders,1200,2.68,50,1,Seasonal and trend-adjusted demand aligned to department operations,2025-05-28
+DEMAND-OPS-202506,2025-06-01,DEPARTMENT-006,Operations,Operational Work Orders,1305.6,Work Orders,1200,8.8,53,4,Seasonal and trend-adjusted demand aligned to department operations,2025-06-28
+DEMAND-OPS-202507,2025-07-01,DEPARTMENT-006,Operations,Operational Work Orders,1281.2,Work Orders,1200,6.77,52,3,Seasonal and trend-adjusted demand aligned to department operations,2025-07-28
+DEMAND-OPS-202508,2025-08-01,DEPARTMENT-006,Operations,Operational Work Orders,1314.7,Work Orders,1200,9.56,54,5,Seasonal and trend-adjusted demand aligned to department operations,2025-08-28
+DEMAND-OPS-202509,2025-09-01,DEPARTMENT-006,Operations,Operational Work Orders,1290.7,Work Orders,1200,7.56,53,4,Seasonal and trend-adjusted demand aligned to department operations,2025-09-28
+DEMAND-OPS-202510,2025-10-01,DEPARTMENT-006,Operations,Operational Work Orders,1331.6,Work Orders,1200,10.97,54,5,Seasonal and trend-adjusted demand aligned to department operations,2025-10-28
+DEMAND-OPS-202511,2025-11-01,DEPARTMENT-006,Operations,Operational Work Orders,1329.2,Work Orders,1200,10.77,54,5,Seasonal and trend-adjusted demand aligned to department operations,2025-11-28
+DEMAND-OPS-202512,2025-12-01,DEPARTMENT-006,Operations,Operational Work Orders,1320.7,Work Orders,1200,10.06,54,5,Seasonal and trend-adjusted demand aligned to department operations,2025-12-28
+DEMAND-OPS-202601,2026-01-01,DEPARTMENT-006,Operations,Operational Work Orders,1374.8,Work Orders,1200,14.57,58,7,Seasonal and trend-adjusted demand aligned to department operations,2026-01-28
+DEMAND-OPS-202602,2026-02-01,DEPARTMENT-006,Operations,Operational Work Orders,1340.0,Work Orders,1200,11.67,57,6,Seasonal and trend-adjusted demand aligned to department operations,2026-02-28
+DEMAND-OPS-202603,2026-03-01,DEPARTMENT-006,Operations,Operational Work Orders,1327.1,Work Orders,1200,10.59,56,5,Seasonal and trend-adjusted demand aligned to department operations,2026-03-28
+DEMAND-OPS-202604,2026-04-01,DEPARTMENT-006,Operations,Operational Work Orders,1369.7,Work Orders,1200,14.14,58,7,Seasonal and trend-adjusted demand aligned to department operations,2026-04-28
+DEMAND-OPS-202605,2026-05-01,DEPARTMENT-006,Operations,Operational Work Orders,1360.3,Work Orders,1200,13.36,58,7,Seasonal and trend-adjusted demand aligned to department operations,2026-05-28
+DEMAND-OPS-202606,2026-06-01,DEPARTMENT-006,Operations,Operational Work Orders,1445.4,Work Orders,1200,20.45,61,10,Seasonal and trend-adjusted demand aligned to department operations,2026-06-28
+DEMAND-OPS-202607,2026-07-01,DEPARTMENT-006,Operations,Operational Work Orders,1426.8,Work Orders,1200,18.9,61,10,Seasonal and trend-adjusted demand aligned to department operations,2026-07-28
+DEMAND-OPS-202608,2026-08-01,DEPARTMENT-006,Operations,Operational Work Orders,1420.9,Work Orders,1200,18.41,60,9,Seasonal and trend-adjusted demand aligned to department operations,2026-08-28
+DEMAND-IT-202409,2024-09-01,DEPARTMENT-007,IT,Technology Service Requests,776.1,Requests,750,3.48,49,2,Seasonal and trend-adjusted demand aligned to department operations,2024-09-28
+DEMAND-IT-202410,2024-10-01,DEPARTMENT-007,IT,Technology Service Requests,784.9,Requests,750,4.65,49,2,Seasonal and trend-adjusted demand aligned to department operations,2024-10-28
+DEMAND-IT-202411,2024-11-01,DEPARTMENT-007,IT,Technology Service Requests,743.4,Requests,750,-0.88,47,0,Seasonal and trend-adjusted demand aligned to department operations,2024-11-28
+DEMAND-IT-202412,2024-12-01,DEPARTMENT-007,IT,Technology Service Requests,756.4,Requests,750,0.85,47,0,Seasonal and trend-adjusted demand aligned to department operations,2024-12-28
+DEMAND-IT-202501,2025-01-01,DEPARTMENT-007,IT,Technology Service Requests,773.0,Requests,750,3.07,49,1,Seasonal and trend-adjusted demand aligned to department operations,2025-01-28
+DEMAND-IT-202502,2025-02-01,DEPARTMENT-007,IT,Technology Service Requests,805.2,Requests,750,7.36,52,4,Seasonal and trend-adjusted demand aligned to department operations,2025-02-28
+DEMAND-IT-202503,2025-03-01,DEPARTMENT-007,IT,Technology Service Requests,793.8,Requests,750,5.84,51,3,Seasonal and trend-adjusted demand aligned to department operations,2025-03-28
+DEMAND-IT-202504,2025-04-01,DEPARTMENT-007,IT,Technology Service Requests,768.7,Requests,750,2.49,49,1,Seasonal and trend-adjusted demand aligned to department operations,2025-04-28
+DEMAND-IT-202505,2025-05-01,DEPARTMENT-007,IT,Technology Service Requests,819.0,Requests,750,9.2,52,4,Seasonal and trend-adjusted demand aligned to department operations,2025-05-28
+DEMAND-IT-202506,2025-06-01,DEPARTMENT-007,IT,Technology Service Requests,773.8,Requests,750,3.17,50,2,Seasonal and trend-adjusted demand aligned to department operations,2025-06-28
+DEMAND-IT-202507,2025-07-01,DEPARTMENT-007,IT,Technology Service Requests,827.1,Requests,750,10.28,53,5,Seasonal and trend-adjusted demand aligned to department operations,2025-07-28
+DEMAND-IT-202508,2025-08-01,DEPARTMENT-007,IT,Technology Service Requests,822.3,Requests,750,9.64,53,5,Seasonal and trend-adjusted demand aligned to department operations,2025-08-28
+DEMAND-IT-202509,2025-09-01,DEPARTMENT-007,IT,Technology Service Requests,843.4,Requests,750,12.45,54,6,Seasonal and trend-adjusted demand aligned to department operations,2025-09-28
+DEMAND-IT-202510,2025-10-01,DEPARTMENT-007,IT,Technology Service Requests,849.7,Requests,750,13.29,54,6,Seasonal and trend-adjusted demand aligned to department operations,2025-10-28
+DEMAND-IT-202511,2025-11-01,DEPARTMENT-007,IT,Technology Service Requests,807.8,Requests,750,7.71,52,4,Seasonal and trend-adjusted demand aligned to department operations,2025-11-28
+DEMAND-IT-202512,2025-12-01,DEPARTMENT-007,IT,Technology Service Requests,818.4,Requests,750,9.12,52,4,Seasonal and trend-adjusted demand aligned to department operations,2025-12-28
+DEMAND-IT-202601,2026-01-01,DEPARTMENT-007,IT,Technology Service Requests,869.6,Requests,750,15.95,57,8,Seasonal and trend-adjusted demand aligned to department operations,2026-01-28
+DEMAND-IT-202602,2026-02-01,DEPARTMENT-007,IT,Technology Service Requests,866.7,Requests,750,15.56,57,8,Seasonal and trend-adjusted demand aligned to department operations,2026-02-28
+DEMAND-IT-202603,2026-03-01,DEPARTMENT-007,IT,Technology Service Requests,865.3,Requests,750,15.37,57,8,Seasonal and trend-adjusted demand aligned to department operations,2026-03-28
+DEMAND-IT-202604,2026-04-01,DEPARTMENT-007,IT,Technology Service Requests,846.3,Requests,750,12.84,55,6,Seasonal and trend-adjusted demand aligned to department operations,2026-04-28
+DEMAND-IT-202605,2026-05-01,DEPARTMENT-007,IT,Technology Service Requests,838.9,Requests,750,11.85,55,6,Seasonal and trend-adjusted demand aligned to department operations,2026-05-28
+DEMAND-IT-202606,2026-06-01,DEPARTMENT-007,IT,Technology Service Requests,879.9,Requests,750,17.32,57,8,Seasonal and trend-adjusted demand aligned to department operations,2026-06-28
+DEMAND-IT-202607,2026-07-01,DEPARTMENT-007,IT,Technology Service Requests,885.9,Requests,750,18.12,58,9,Seasonal and trend-adjusted demand aligned to department operations,2026-07-28
+DEMAND-IT-202608,2026-08-01,DEPARTMENT-007,IT,Technology Service Requests,918.2,Requests,750,22.43,60,11,Seasonal and trend-adjusted demand aligned to department operations,2026-08-28
+DEMAND-MED-202409,2024-09-01,DEPARTMENT-008,Medical Care,Patient Encounters,3100.4,Encounters,3200,-3.11,48,-2,Seasonal and trend-adjusted demand aligned to department operations,2024-09-28
+DEMAND-MED-202410,2024-10-01,DEPARTMENT-008,Medical Care,Patient Encounters,3304.6,Encounters,3200,3.27,52,2,Seasonal and trend-adjusted demand aligned to department operations,2024-10-28
+DEMAND-MED-202411,2024-11-01,DEPARTMENT-008,Medical Care,Patient Encounters,3284.7,Encounters,3200,2.65,51,1,Seasonal and trend-adjusted demand aligned to department operations,2024-11-28
+DEMAND-MED-202412,2024-12-01,DEPARTMENT-008,Medical Care,Patient Encounters,3799.1,Encounters,3200,18.72,59,9,Seasonal and trend-adjusted demand aligned to department operations,2024-12-28
+DEMAND-MED-202501,2025-01-01,DEPARTMENT-008,Medical Care,Patient Encounters,3603.8,Encounters,3200,12.62,59,7,Seasonal and trend-adjusted demand aligned to department operations,2025-01-28
+DEMAND-MED-202502,2025-02-01,DEPARTMENT-008,Medical Care,Patient Encounters,3757.1,Encounters,3200,17.41,61,9,Seasonal and trend-adjusted demand aligned to department operations,2025-02-28
+DEMAND-MED-202503,2025-03-01,DEPARTMENT-008,Medical Care,Patient Encounters,3258.0,Encounters,3200,1.81,53,1,Seasonal and trend-adjusted demand aligned to department operations,2025-03-28
+DEMAND-MED-202504,2025-04-01,DEPARTMENT-008,Medical Care,Patient Encounters,3474.0,Encounters,3200,8.56,56,4,Seasonal and trend-adjusted demand aligned to department operations,2025-04-28
+DEMAND-MED-202505,2025-05-01,DEPARTMENT-008,Medical Care,Patient Encounters,3410.7,Encounters,3200,6.58,55,3,Seasonal and trend-adjusted demand aligned to department operations,2025-05-28
+DEMAND-MED-202506,2025-06-01,DEPARTMENT-008,Medical Care,Patient Encounters,3306.5,Encounters,3200,3.33,54,2,Seasonal and trend-adjusted demand aligned to department operations,2025-06-28
+DEMAND-MED-202507,2025-07-01,DEPARTMENT-008,Medical Care,Patient Encounters,3561.0,Encounters,3200,11.28,58,6,Seasonal and trend-adjusted demand aligned to department operations,2025-07-28
+DEMAND-MED-202508,2025-08-01,DEPARTMENT-008,Medical Care,Patient Encounters,3369.9,Encounters,3200,5.31,55,3,Seasonal and trend-adjusted demand aligned to department operations,2025-08-28
+DEMAND-MED-202509,2025-09-01,DEPARTMENT-008,Medical Care,Patient Encounters,3361.4,Encounters,3200,5.04,55,3,Seasonal and trend-adjusted demand aligned to department operations,2025-09-28
+DEMAND-MED-202510,2025-10-01,DEPARTMENT-008,Medical Care,Patient Encounters,3583.7,Encounters,3200,11.99,58,6,Seasonal and trend-adjusted demand aligned to department operations,2025-10-28
+DEMAND-MED-202511,2025-11-01,DEPARTMENT-008,Medical Care,Patient Encounters,3425.8,Encounters,3200,7.06,56,4,Seasonal and trend-adjusted demand aligned to department operations,2025-11-28
+DEMAND-MED-202512,2025-12-01,DEPARTMENT-008,Medical Care,Patient Encounters,4082.4,Encounters,3200,27.57,66,14,Seasonal and trend-adjusted demand aligned to department operations,2025-12-28
+DEMAND-MED-202601,2026-01-01,DEPARTMENT-008,Medical Care,Patient Encounters,4162.9,Encounters,3200,30.09,72,17,Seasonal and trend-adjusted demand aligned to department operations,2026-01-28
+DEMAND-MED-202602,2026-02-01,DEPARTMENT-008,Medical Care,Patient Encounters,4006.3,Encounters,3200,25.2,69,14,Seasonal and trend-adjusted demand aligned to department operations,2026-02-28
+DEMAND-MED-202603,2026-03-01,DEPARTMENT-008,Medical Care,Patient Encounters,3614.7,Encounters,3200,12.96,62,7,Seasonal and trend-adjusted demand aligned to department operations,2026-03-28
+DEMAND-MED-202604,2026-04-01,DEPARTMENT-008,Medical Care,Patient Encounters,3564.4,Encounters,3200,11.39,61,6,Seasonal and trend-adjusted demand aligned to department operations,2026-04-28
+DEMAND-MED-202605,2026-05-01,DEPARTMENT-008,Medical Care,Patient Encounters,3833.0,Encounters,3200,19.78,66,11,Seasonal and trend-adjusted demand aligned to department operations,2026-05-28
+DEMAND-MED-202606,2026-06-01,DEPARTMENT-008,Medical Care,Patient Encounters,3599.8,Encounters,3200,12.49,62,7,Seasonal and trend-adjusted demand aligned to department operations,2026-06-28
+DEMAND-MED-202607,2026-07-01,DEPARTMENT-008,Medical Care,Patient Encounters,3854.5,Encounters,3200,20.45,66,11,Seasonal and trend-adjusted demand aligned to department operations,2026-07-28
+DEMAND-MED-202608,2026-08-01,DEPARTMENT-008,Medical Care,Patient Encounters,3665.5,Encounters,3200,14.55,63,8,Seasonal and trend-adjusted demand aligned to department operations,2026-08-28
+DEMAND-TRN-202409,2024-09-01,DEPARTMENT-009,Training & Development,Training Enrollments,1003.3,Enrollments,900,11.48,50,5,Seasonal and trend-adjusted demand aligned to department operations,2024-09-28
+DEMAND-TRN-202410,2024-10-01,DEPARTMENT-009,Training & Development,Training Enrollments,877.4,Enrollments,900,-2.51,44,-1,Seasonal and trend-adjusted demand aligned to department operations,2024-10-28
+DEMAND-TRN-202411,2024-11-01,DEPARTMENT-009,Training & Development,Training Enrollments,905.8,Enrollments,900,0.64,45,0,Seasonal and trend-adjusted demand aligned to department operations,2024-11-28
+DEMAND-TRN-202412,2024-12-01,DEPARTMENT-009,Training & Development,Training Enrollments,950.6,Enrollments,900,5.62,48,3,Seasonal and trend-adjusted demand aligned to department operations,2024-12-28
+DEMAND-TRN-202501,2025-01-01,DEPARTMENT-009,Training & Development,Training Enrollments,952.3,Enrollments,900,5.81,49,3,Seasonal and trend-adjusted demand aligned to department operations,2025-01-28
+DEMAND-TRN-202502,2025-02-01,DEPARTMENT-009,Training & Development,Training Enrollments,1013.1,Enrollments,900,12.57,52,6,Seasonal and trend-adjusted demand aligned to department operations,2025-02-28
+DEMAND-TRN-202503,2025-03-01,DEPARTMENT-009,Training & Development,Training Enrollments,1015.4,Enrollments,900,12.82,52,6,Seasonal and trend-adjusted demand aligned to department operations,2025-03-28
+DEMAND-TRN-202504,2025-04-01,DEPARTMENT-009,Training & Development,Training Enrollments,959.5,Enrollments,900,6.61,49,3,Seasonal and trend-adjusted demand aligned to department operations,2025-04-28
+DEMAND-TRN-202505,2025-05-01,DEPARTMENT-009,Training & Development,Training Enrollments,940.0,Enrollments,900,4.44,48,2,Seasonal and trend-adjusted demand aligned to department operations,2025-05-28
+DEMAND-TRN-202506,2025-06-01,DEPARTMENT-009,Training & Development,Training Enrollments,934.9,Enrollments,900,3.88,48,2,Seasonal and trend-adjusted demand aligned to department operations,2025-06-28
+DEMAND-TRN-202507,2025-07-01,DEPARTMENT-009,Training & Development,Training Enrollments,957.3,Enrollments,900,6.37,49,3,Seasonal and trend-adjusted demand aligned to department operations,2025-07-28
+DEMAND-TRN-202508,2025-08-01,DEPARTMENT-009,Training & Development,Training Enrollments,1081.8,Enrollments,900,20.2,55,9,Seasonal and trend-adjusted demand aligned to department operations,2025-08-28
+DEMAND-TRN-202509,2025-09-01,DEPARTMENT-009,Training & Development,Training Enrollments,1058.6,Enrollments,900,17.62,54,8,Seasonal and trend-adjusted demand aligned to department operations,2025-09-28
+DEMAND-TRN-202510,2025-10-01,DEPARTMENT-009,Training & Development,Training Enrollments,1004.0,Enrollments,900,11.56,51,5,Seasonal and trend-adjusted demand aligned to department operations,2025-10-28
+DEMAND-TRN-202511,2025-11-01,DEPARTMENT-009,Training & Development,Training Enrollments,987.3,Enrollments,900,9.7,50,4,Seasonal and trend-adjusted demand aligned to department operations,2025-11-28
+DEMAND-TRN-202512,2025-12-01,DEPARTMENT-009,Training & Development,Training Enrollments,1011.5,Enrollments,900,12.39,52,6,Seasonal and trend-adjusted demand aligned to department operations,2025-12-28
+DEMAND-TRN-202601,2026-01-01,DEPARTMENT-009,Training & Development,Training Enrollments,982.0,Enrollments,900,9.11,51,4,Seasonal and trend-adjusted demand aligned to department operations,2026-01-28
+DEMAND-TRN-202602,2026-02-01,DEPARTMENT-009,Training & Development,Training Enrollments,1154.6,Enrollments,900,28.29,60,13,Seasonal and trend-adjusted demand aligned to department operations,2026-02-28
+DEMAND-TRN-202603,2026-03-01,DEPARTMENT-009,Training & Development,Training Enrollments,1168.0,Enrollments,900,29.78,61,14,Seasonal and trend-adjusted demand aligned to department operations,2026-03-28
+DEMAND-TRN-202604,2026-04-01,DEPARTMENT-009,Training & Development,Training Enrollments,1060.8,Enrollments,900,17.87,55,8,Seasonal and trend-adjusted demand aligned to department operations,2026-04-28
+DEMAND-TRN-202605,2026-05-01,DEPARTMENT-009,Training & Development,Training Enrollments,1022.2,Enrollments,900,13.58,53,6,Seasonal and trend-adjusted demand aligned to department operations,2026-05-28
+DEMAND-TRN-202606,2026-06-01,DEPARTMENT-009,Training & Development,Training Enrollments,1037.5,Enrollments,900,15.28,54,7,Seasonal and trend-adjusted demand aligned to department operations,2026-06-28
+DEMAND-TRN-202607,2026-07-01,DEPARTMENT-009,Training & Development,Training Enrollments,1066.9,Enrollments,900,18.54,56,9,Seasonal and trend-adjusted demand aligned to department operations,2026-07-28
+DEMAND-TRN-202608,2026-08-01,DEPARTMENT-009,Training & Development,Training Enrollments,1163.7,Enrollments,900,29.3,61,14,Seasonal and trend-adjusted demand aligned to department operations,2026-08-28
+DEMAND-ADM-202409,2024-09-01,DEPARTMENT-010,Administration & Facilities,Facility Service Requests,508.0,Requests,500,1.6,45,1,Seasonal and trend-adjusted demand aligned to department operations,2024-09-28
+DEMAND-ADM-202410,2024-10-01,DEPARTMENT-010,Administration & Facilities,Facility Service Requests,490.8,Requests,500,-1.84,43,-1,Seasonal and trend-adjusted demand aligned to department operations,2024-10-28
+DEMAND-ADM-202411,2024-11-01,DEPARTMENT-010,Administration & Facilities,Facility Service Requests,505.7,Requests,500,1.14,45,1,Seasonal and trend-adjusted demand aligned to department operations,2024-11-28
+DEMAND-ADM-202412,2024-12-01,DEPARTMENT-010,Administration & Facilities,Facility Service Requests,506.3,Requests,500,1.26,45,1,Seasonal and trend-adjusted demand aligned to department operations,2024-12-28
+DEMAND-ADM-202501,2025-01-01,DEPARTMENT-010,Administration & Facilities,Facility Service Requests,502.3,Requests,500,0.46,44,0,Seasonal and trend-adjusted demand aligned to department operations,2025-01-28
+DEMAND-ADM-202502,2025-02-01,DEPARTMENT-010,Administration & Facilities,Facility Service Requests,500.0,Requests,500,0.0,44,0,Seasonal and trend-adjusted demand aligned to department operations,2025-02-28
+DEMAND-ADM-202503,2025-03-01,DEPARTMENT-010,Administration & Facilities,Facility Service Requests,526.6,Requests,500,5.32,46,2,Seasonal and trend-adjusted demand aligned to department operations,2025-03-28
+DEMAND-ADM-202504,2025-04-01,DEPARTMENT-010,Administration & Facilities,Facility Service Requests,516.2,Requests,500,3.24,45,1,Seasonal and trend-adjusted demand aligned to department operations,2025-04-28
+DEMAND-ADM-202505,2025-05-01,DEPARTMENT-010,Administration & Facilities,Facility Service Requests,528.0,Requests,500,5.6,46,2,Seasonal and trend-adjusted demand aligned to department operations,2025-05-28
+DEMAND-ADM-202506,2025-06-01,DEPARTMENT-010,Administration & Facilities,Facility Service Requests,544.7,Requests,500,8.94,48,4,Seasonal and trend-adjusted demand aligned to department operations,2025-06-28
+DEMAND-ADM-202507,2025-07-01,DEPARTMENT-010,Administration & Facilities,Facility Service Requests,538.8,Requests,500,7.76,47,3,Seasonal and trend-adjusted demand aligned to department operations,2025-07-28
+DEMAND-ADM-202508,2025-08-01,DEPARTMENT-010,Administration & Facilities,Facility Service Requests,526.4,Requests,500,5.28,46,2,Seasonal and trend-adjusted demand aligned to department operations,2025-08-28
+DEMAND-ADM-202509,2025-09-01,DEPARTMENT-010,Administration & Facilities,Facility Service Requests,561.4,Requests,500,12.28,49,5,Seasonal and trend-adjusted demand aligned to department operations,2025-09-28
+DEMAND-ADM-202510,2025-10-01,DEPARTMENT-010,Administration & Facilities,Facility Service Requests,556.5,Requests,500,11.3,49,5,Seasonal and trend-adjusted demand aligned to department operations,2025-10-28
+DEMAND-ADM-202511,2025-11-01,DEPARTMENT-010,Administration & Facilities,Facility Service Requests,569.7,Requests,500,13.94,50,6,Seasonal and trend-adjusted demand aligned to department operations,2025-11-28
+DEMAND-ADM-202512,2025-12-01,DEPARTMENT-010,Administration & Facilities,Facility Service Requests,553.4,Requests,500,10.68,49,5,Seasonal and trend-adjusted demand aligned to department operations,2025-12-28
+DEMAND-ADM-202601,2026-01-01,DEPARTMENT-010,Administration & Facilities,Facility Service Requests,583.9,Requests,500,16.78,53,8,Seasonal and trend-adjusted demand aligned to department operations,2026-01-28
+DEMAND-ADM-202602,2026-02-01,DEPARTMENT-010,Administration & Facilities,Facility Service Requests,549.1,Requests,500,9.82,49,4,Seasonal and trend-adjusted demand aligned to department operations,2026-02-28
+DEMAND-ADM-202603,2026-03-01,DEPARTMENT-010,Administration & Facilities,Facility Service Requests,567.4,Requests,500,13.48,51,6,Seasonal and trend-adjusted demand aligned to department operations,2026-03-28
+DEMAND-ADM-202604,2026-04-01,DEPARTMENT-010,Administration & Facilities,Facility Service Requests,594.0,Requests,500,18.8,53,8,Seasonal and trend-adjusted demand aligned to department operations,2026-04-28
+DEMAND-ADM-202605,2026-05-01,DEPARTMENT-010,Administration & Facilities,Facility Service Requests,591.0,Requests,500,18.2,53,8,Seasonal and trend-adjusted demand aligned to department operations,2026-05-28
+DEMAND-ADM-202606,2026-06-01,DEPARTMENT-010,Administration & Facilities,Facility Service Requests,603.4,Requests,500,20.68,54,9,Seasonal and trend-adjusted demand aligned to department operations,2026-06-28
+DEMAND-ADM-202607,2026-07-01,DEPARTMENT-010,Administration & Facilities,Facility Service Requests,592.2,Requests,500,18.44,53,8,Seasonal and trend-adjusted demand aligned to department operations,2026-07-28
+DEMAND-ADM-202608,2026-08-01,DEPARTMENT-010,Administration & Facilities,Facility Service Requests,575.5,Requests,500,15.1,52,7,Seasonal and trend-adjusted demand aligned to department operations,2026-08-28
+DEMAND-LGL-202409,2024-09-01,DEPARTMENT-011,Legal & Compliance,Compliance Cases and Reviews,237.1,Cases,240,-1.21,43,-1,Seasonal and trend-adjusted demand aligned to department operations,2024-09-28
+DEMAND-LGL-202410,2024-10-01,DEPARTMENT-011,Legal & Compliance,Compliance Cases and Reviews,250.9,Cases,240,4.54,46,2,Seasonal and trend-adjusted demand aligned to department operations,2024-10-28
+DEMAND-LGL-202411,2024-11-01,DEPARTMENT-011,Legal & Compliance,Compliance Cases and Reviews,246.7,Cases,240,2.79,45,1,Seasonal and trend-adjusted demand aligned to department operations,2024-11-28
+DEMAND-LGL-202412,2024-12-01,DEPARTMENT-011,Legal & Compliance,Compliance Cases and Reviews,253.9,Cases,240,5.79,47,3,Seasonal and trend-adjusted demand aligned to department operations,2024-12-28
+DEMAND-LGL-202501,2025-01-01,DEPARTMENT-011,Legal & Compliance,Compliance Cases and Reviews,248.3,Cases,240,3.46,46,2,Seasonal and trend-adjusted demand aligned to department operations,2025-01-28
+DEMAND-LGL-202502,2025-02-01,DEPARTMENT-011,Legal & Compliance,Compliance Cases and Reviews,258.5,Cases,240,7.71,47,3,Seasonal and trend-adjusted demand aligned to department operations,2025-02-28
+DEMAND-LGL-202503,2025-03-01,DEPARTMENT-011,Legal & Compliance,Compliance Cases and Reviews,244.6,Cases,240,1.92,45,1,Seasonal and trend-adjusted demand aligned to department operations,2025-03-28
+DEMAND-LGL-202504,2025-04-01,DEPARTMENT-011,Legal & Compliance,Compliance Cases and Reviews,259.5,Cases,240,8.13,48,4,Seasonal and trend-adjusted demand aligned to department operations,2025-04-28
+DEMAND-LGL-202505,2025-05-01,DEPARTMENT-011,Legal & Compliance,Compliance Cases and Reviews,264.8,Cases,240,10.33,49,5,Seasonal and trend-adjusted demand aligned to department operations,2025-05-28
+DEMAND-LGL-202506,2025-06-01,DEPARTMENT-011,Legal & Compliance,Compliance Cases and Reviews,264.7,Cases,240,10.29,49,5,Seasonal and trend-adjusted demand aligned to department operations,2025-06-28
+DEMAND-LGL-202507,2025-07-01,DEPARTMENT-011,Legal & Compliance,Compliance Cases and Reviews,256.2,Cases,240,6.75,47,3,Seasonal and trend-adjusted demand aligned to department operations,2025-07-28
+DEMAND-LGL-202508,2025-08-01,DEPARTMENT-011,Legal & Compliance,Compliance Cases and Reviews,268.9,Cases,240,12.04,49,5,Seasonal and trend-adjusted demand aligned to department operations,2025-08-28
+DEMAND-LGL-202509,2025-09-01,DEPARTMENT-011,Legal & Compliance,Compliance Cases and Reviews,255.2,Cases,240,6.33,47,3,Seasonal and trend-adjusted demand aligned to department operations,2025-09-28
+DEMAND-LGL-202510,2025-10-01,DEPARTMENT-011,Legal & Compliance,Compliance Cases and Reviews,268.4,Cases,240,11.83,49,5,Seasonal and trend-adjusted demand aligned to department operations,2025-10-28
+DEMAND-LGL-202511,2025-11-01,DEPARTMENT-011,Legal & Compliance,Compliance Cases and Reviews,265.6,Cases,240,10.67,49,5,Seasonal and trend-adjusted demand aligned to department operations,2025-11-28
+DEMAND-LGL-202512,2025-12-01,DEPARTMENT-011,Legal & Compliance,Compliance Cases and Reviews,266.9,Cases,240,11.21,49,5,Seasonal and trend-adjusted demand aligned to department operations,2025-12-28
+DEMAND-LGL-202601,2026-01-01,DEPARTMENT-011,Legal & Compliance,Compliance Cases and Reviews,279.8,Cases,240,16.58,50,7,Seasonal and trend-adjusted demand aligned to department operations,2026-01-28
+DEMAND-LGL-202602,2026-02-01,DEPARTMENT-011,Legal & Compliance,Compliance Cases and Reviews,273.4,Cases,240,13.92,49,6,Seasonal and trend-adjusted demand aligned to department operations,2026-02-28
+DEMAND-LGL-202603,2026-03-01,DEPARTMENT-011,Legal & Compliance,Compliance Cases and Reviews,284.1,Cases,240,18.38,51,8,Seasonal and trend-adjusted demand aligned to department operations,2026-03-28
+DEMAND-LGL-202604,2026-04-01,DEPARTMENT-011,Legal & Compliance,Compliance Cases and Reviews,281.0,Cases,240,17.08,50,7,Seasonal and trend-adjusted demand aligned to department operations,2026-04-28
+DEMAND-LGL-202605,2026-05-01,DEPARTMENT-011,Legal & Compliance,Compliance Cases and Reviews,282.9,Cases,240,17.87,51,8,Seasonal and trend-adjusted demand aligned to department operations,2026-05-28
+DEMAND-LGL-202606,2026-06-01,DEPARTMENT-011,Legal & Compliance,Compliance Cases and Reviews,285.0,Cases,240,18.75,51,8,Seasonal and trend-adjusted demand aligned to department operations,2026-06-28
+DEMAND-LGL-202607,2026-07-01,DEPARTMENT-011,Legal & Compliance,Compliance Cases and Reviews,288.0,Cases,240,20.0,52,9,Seasonal and trend-adjusted demand aligned to department operations,2026-07-28
+DEMAND-LGL-202608,2026-08-01,DEPARTMENT-011,Legal & Compliance,Compliance Cases and Reviews,287.2,Cases,240,19.67,51,8,Seasonal and trend-adjusted demand aligned to department operations,2026-08-28
+DEMAND-PRC-202409,2024-09-01,DEPARTMENT-012,Procurement & Supply Chain,Purchase Orders Processed,674.2,Purchase Orders,700,-3.69,44,-2,Seasonal and trend-adjusted demand aligned to department operations,2024-09-28
+DEMAND-PRC-202410,2024-10-01,DEPARTMENT-012,Procurement & Supply Chain,Purchase Orders Processed,725.2,Purchase Orders,700,3.6,48,2,Seasonal and trend-adjusted demand aligned to department operations,2024-10-28
+DEMAND-PRC-202411,2024-11-01,DEPARTMENT-012,Procurement & Supply Chain,Purchase Orders Processed,685.2,Purchase Orders,700,-2.11,45,-1,Seasonal and trend-adjusted demand aligned to department operations,2024-11-28
+DEMAND-PRC-202412,2024-12-01,DEPARTMENT-012,Procurement & Supply Chain,Purchase Orders Processed,726.7,Purchase Orders,700,3.81,48,2,Seasonal and trend-adjusted demand aligned to department operations,2024-12-28
+DEMAND-PRC-202501,2025-01-01,DEPARTMENT-012,Procurement & Supply Chain,Purchase Orders Processed,732.6,Purchase Orders,700,4.66,49,2,Seasonal and trend-adjusted demand aligned to department operations,2025-01-28
+DEMAND-PRC-202502,2025-02-01,DEPARTMENT-012,Procurement & Supply Chain,Purchase Orders Processed,713.9,Purchase Orders,700,1.99,48,1,Seasonal and trend-adjusted demand aligned to department operations,2025-02-28
+DEMAND-PRC-202503,2025-03-01,DEPARTMENT-012,Procurement & Supply Chain,Purchase Orders Processed,705.6,Purchase Orders,700,0.8,47,0,Seasonal and trend-adjusted demand aligned to department operations,2025-03-28
+DEMAND-PRC-202504,2025-04-01,DEPARTMENT-012,Procurement & Supply Chain,Purchase Orders Processed,723.1,Purchase Orders,700,3.3,49,2,Seasonal and trend-adjusted demand aligned to department operations,2025-04-28
+DEMAND-PRC-202505,2025-05-01,DEPARTMENT-012,Procurement & Supply Chain,Purchase Orders Processed,744.2,Purchase Orders,700,6.31,50,3,Seasonal and trend-adjusted demand aligned to department operations,2025-05-28
+DEMAND-PRC-202506,2025-06-01,DEPARTMENT-012,Procurement & Supply Chain,Purchase Orders Processed,742.0,Purchase Orders,700,6.0,50,3,Seasonal and trend-adjusted demand aligned to department operations,2025-06-28
+DEMAND-PRC-202507,2025-07-01,DEPARTMENT-012,Procurement & Supply Chain,Purchase Orders Processed,757.5,Purchase Orders,700,8.21,51,4,Seasonal and trend-adjusted demand aligned to department operations,2025-07-28
+DEMAND-PRC-202508,2025-08-01,DEPARTMENT-012,Procurement & Supply Chain,Purchase Orders Processed,751.0,Purchase Orders,700,7.29,50,3,Seasonal and trend-adjusted demand aligned to department operations,2025-08-28
+DEMAND-PRC-202509,2025-09-01,DEPARTMENT-012,Procurement & Supply Chain,Purchase Orders Processed,775.5,Purchase Orders,700,10.79,52,5,Seasonal and trend-adjusted demand aligned to department operations,2025-09-28
+DEMAND-PRC-202510,2025-10-01,DEPARTMENT-012,Procurement & Supply Chain,Purchase Orders Processed,759.3,Purchase Orders,700,8.47,51,4,Seasonal and trend-adjusted demand aligned to department operations,2025-10-28
+DEMAND-PRC-202511,2025-11-01,DEPARTMENT-012,Procurement & Supply Chain,Purchase Orders Processed,795.0,Purchase Orders,700,13.57,53,6,Seasonal and trend-adjusted demand aligned to department operations,2025-11-28
+DEMAND-PRC-202512,2025-12-01,DEPARTMENT-012,Procurement & Supply Chain,Purchase Orders Processed,759.6,Purchase Orders,700,8.51,51,4,Seasonal and trend-adjusted demand aligned to department operations,2025-12-28
+DEMAND-PRC-202601,2026-01-01,DEPARTMENT-012,Procurement & Supply Chain,Purchase Orders Processed,793.2,Purchase Orders,700,13.31,54,6,Seasonal and trend-adjusted demand aligned to department operations,2026-01-28
+DEMAND-PRC-202602,2026-02-01,DEPARTMENT-012,Procurement & Supply Chain,Purchase Orders Processed,794.1,Purchase Orders,700,13.44,54,6,Seasonal and trend-adjusted demand aligned to department operations,2026-02-28
+DEMAND-PRC-202603,2026-03-01,DEPARTMENT-012,Procurement & Supply Chain,Purchase Orders Processed,796.6,Purchase Orders,700,13.8,55,7,Seasonal and trend-adjusted demand aligned to department operations,2026-03-28
+DEMAND-PRC-202604,2026-04-01,DEPARTMENT-012,Procurement & Supply Chain,Purchase Orders Processed,800.0,Purchase Orders,700,14.29,55,7,Seasonal and trend-adjusted demand aligned to department operations,2026-04-28
+DEMAND-PRC-202605,2026-05-01,DEPARTMENT-012,Procurement & Supply Chain,Purchase Orders Processed,807.6,Purchase Orders,700,15.37,55,7,Seasonal and trend-adjusted demand aligned to department operations,2026-05-28
+DEMAND-PRC-202606,2026-06-01,DEPARTMENT-012,Procurement & Supply Chain,Purchase Orders Processed,829.8,Purchase Orders,700,18.54,57,9,Seasonal and trend-adjusted demand aligned to department operations,2026-06-28
+DEMAND-PRC-202607,2026-07-01,DEPARTMENT-012,Procurement & Supply Chain,Purchase Orders Processed,852.8,Purchase Orders,700,21.83,58,10,Seasonal and trend-adjusted demand aligned to department operations,2026-07-28
+DEMAND-PRC-202608,2026-08-01,DEPARTMENT-012,Procurement & Supply Chain,Purchase Orders Processed,830.0,Purchase Orders,700,18.57,57,9,Seasonal and trend-adjusted demand aligned to department operations,2026-08-28
+DEMAND-LOG-202409,2024-09-01,DEPARTMENT-013,Logistics & Warehouse,Shipments Processed,7782.7,Shipments,7800,-0.22,49,0,Seasonal and trend-adjusted demand aligned to department operations,2024-09-28
+DEMAND-LOG-202410,2024-10-01,DEPARTMENT-013,Logistics & Warehouse,Shipments Processed,7926.4,Shipments,7800,1.62,50,1,Seasonal and trend-adjusted demand aligned to department operations,2024-10-28
+DEMAND-LOG-202411,2024-11-01,DEPARTMENT-013,Logistics & Warehouse,Shipments Processed,9413.2,Shipments,7800,20.68,59,10,Seasonal and trend-adjusted demand aligned to department operations,2024-11-28
+DEMAND-LOG-202412,2024-12-01,DEPARTMENT-013,Logistics & Warehouse,Shipments Processed,9606.4,Shipments,7800,23.16,60,11,Seasonal and trend-adjusted demand aligned to department operations,2024-12-28
+DEMAND-LOG-202501,2025-01-01,DEPARTMENT-013,Logistics & Warehouse,Shipments Processed,8106.1,Shipments,7800,3.92,53,2,Seasonal and trend-adjusted demand aligned to department operations,2025-01-28
+DEMAND-LOG-202502,2025-02-01,DEPARTMENT-013,Logistics & Warehouse,Shipments Processed,7460.6,Shipments,7800,-4.35,49,-2,Seasonal and trend-adjusted demand aligned to department operations,2025-02-28
+DEMAND-LOG-202503,2025-03-01,DEPARTMENT-013,Logistics & Warehouse,Shipments Processed,7783.7,Shipments,7800,-0.21,51,0,Seasonal and trend-adjusted demand aligned to department operations,2025-03-28
+DEMAND-LOG-202504,2025-04-01,DEPARTMENT-013,Logistics & Warehouse,Shipments Processed,7973.4,Shipments,7800,2.22,52,1,Seasonal and trend-adjusted demand aligned to department operations,2025-04-28
+DEMAND-LOG-202505,2025-05-01,DEPARTMENT-013,Logistics & Warehouse,Shipments Processed,8065.3,Shipments,7800,3.4,53,2,Seasonal and trend-adjusted demand aligned to department operations,2025-05-28
+DEMAND-LOG-202506,2025-06-01,DEPARTMENT-013,Logistics & Warehouse,Shipments Processed,8438.7,Shipments,7800,8.19,55,4,Seasonal and trend-adjusted demand aligned to department operations,2025-06-28
+DEMAND-LOG-202507,2025-07-01,DEPARTMENT-013,Logistics & Warehouse,Shipments Processed,8707.7,Shipments,7800,11.64,57,6,Seasonal and trend-adjusted demand aligned to department operations,2025-07-28
+DEMAND-LOG-202508,2025-08-01,DEPARTMENT-013,Logistics & Warehouse,Shipments Processed,8308.3,Shipments,7800,6.52,54,3,Seasonal and trend-adjusted demand aligned to department operations,2025-08-28
+DEMAND-LOG-202509,2025-09-01,DEPARTMENT-013,Logistics & Warehouse,Shipments Processed,8797.0,Shipments,7800,12.78,58,7,Seasonal and trend-adjusted demand aligned to department operations,2025-09-28
+DEMAND-LOG-202510,2025-10-01,DEPARTMENT-013,Logistics & Warehouse,Shipments Processed,8910.0,Shipments,7800,14.23,58,7,Seasonal and trend-adjusted demand aligned to department operations,2025-10-28
+DEMAND-LOG-202511,2025-11-01,DEPARTMENT-013,Logistics & Warehouse,Shipments Processed,10284.2,Shipments,7800,31.85,67,16,Seasonal and trend-adjusted demand aligned to department operations,2025-11-28
+DEMAND-LOG-202512,2025-12-01,DEPARTMENT-013,Logistics & Warehouse,Shipments Processed,10221.5,Shipments,7800,31.04,67,16,Seasonal and trend-adjusted demand aligned to department operations,2025-12-28
+DEMAND-LOG-202601,2026-01-01,DEPARTMENT-013,Logistics & Warehouse,Shipments Processed,8861.7,Shipments,7800,13.61,60,7,Seasonal and trend-adjusted demand aligned to department operations,2026-01-28
+DEMAND-LOG-202602,2026-02-01,DEPARTMENT-013,Logistics & Warehouse,Shipments Processed,8041.4,Shipments,7800,3.09,55,2,Seasonal and trend-adjusted demand aligned to department operations,2026-02-28
+DEMAND-LOG-202603,2026-03-01,DEPARTMENT-013,Logistics & Warehouse,Shipments Processed,8194.6,Shipments,7800,5.06,56,3,Seasonal and trend-adjusted demand aligned to department operations,2026-03-28
+DEMAND-LOG-202604,2026-04-01,DEPARTMENT-013,Logistics & Warehouse,Shipments Processed,9139.1,Shipments,7800,17.17,62,9,Seasonal and trend-adjusted demand aligned to department operations,2026-04-28
+DEMAND-LOG-202605,2026-05-01,DEPARTMENT-013,Logistics & Warehouse,Shipments Processed,9066.8,Shipments,7800,16.24,62,9,Seasonal and trend-adjusted demand aligned to department operations,2026-05-28
+DEMAND-LOG-202606,2026-06-01,DEPARTMENT-013,Logistics & Warehouse,Shipments Processed,9187.5,Shipments,7800,17.79,62,9,Seasonal and trend-adjusted demand aligned to department operations,2026-06-28
+DEMAND-LOG-202607,2026-07-01,DEPARTMENT-013,Logistics & Warehouse,Shipments Processed,9483.9,Shipments,7800,21.59,64,11,Seasonal and trend-adjusted demand aligned to department operations,2026-07-28
+DEMAND-LOG-202608,2026-08-01,DEPARTMENT-013,Logistics & Warehouse,Shipments Processed,8983.6,Shipments,7800,15.17,61,8,Seasonal and trend-adjusted demand aligned to department operations,2026-08-28
+DEMAND-PRD-202409,2024-09-01,DEPARTMENT-014,Production & Manufacturing,Production Orders,1556.7,Production Orders,1600,-2.71,50,-1,Seasonal and trend-adjusted demand aligned to department operations,2024-09-28
+DEMAND-PRD-202410,2024-10-01,DEPARTMENT-014,Production & Manufacturing,Production Orders,1661.4,Production Orders,1600,3.84,53,2,Seasonal and trend-adjusted demand aligned to department operations,2024-10-28
+DEMAND-PRD-202411,2024-11-01,DEPARTMENT-014,Production & Manufacturing,Production Orders,1947.6,Production Orders,1600,21.72,62,11,Seasonal and trend-adjusted demand aligned to department operations,2024-11-28
+DEMAND-PRD-202412,2024-12-01,DEPARTMENT-014,Production & Manufacturing,Production Orders,1950.1,Production Orders,1600,21.88,62,11,Seasonal and trend-adjusted demand aligned to department operations,2024-12-28
+DEMAND-PRD-202501,2025-01-01,DEPARTMENT-014,Production & Manufacturing,Production Orders,1676.6,Production Orders,1600,4.79,56,3,Seasonal and trend-adjusted demand aligned to department operations,2025-01-28
+DEMAND-PRD-202502,2025-02-01,DEPARTMENT-014,Production & Manufacturing,Production Orders,1578.5,Production Orders,1600,-1.34,52,-1,Seasonal and trend-adjusted demand aligned to department operations,2025-02-28
+DEMAND-PRD-202503,2025-03-01,DEPARTMENT-014,Production & Manufacturing,Production Orders,1535.3,Production Orders,1600,-4.04,51,-2,Seasonal and trend-adjusted demand aligned to department operations,2025-03-28
+DEMAND-PRD-202504,2025-04-01,DEPARTMENT-014,Production & Manufacturing,Production Orders,1625.7,Production Orders,1600,1.61,54,1,Seasonal and trend-adjusted demand aligned to department operations,2025-04-28
+DEMAND-PRD-202505,2025-05-01,DEPARTMENT-014,Production & Manufacturing,Production Orders,1710.5,Production Orders,1600,6.91,57,4,Seasonal and trend-adjusted demand aligned to department operations,2025-05-28
+DEMAND-PRD-202506,2025-06-01,DEPARTMENT-014,Production & Manufacturing,Production Orders,1740.9,Production Orders,1600,8.81,58,5,Seasonal and trend-adjusted demand aligned to department operations,2025-06-28
+DEMAND-PRD-202507,2025-07-01,DEPARTMENT-014,Production & Manufacturing,Production Orders,1746.2,Production Orders,1600,9.14,58,5,Seasonal and trend-adjusted demand aligned to department operations,2025-07-28
+DEMAND-PRD-202508,2025-08-01,DEPARTMENT-014,Production & Manufacturing,Production Orders,1801.3,Production Orders,1600,12.58,60,7,Seasonal and trend-adjusted demand aligned to department operations,2025-08-28
+DEMAND-PRD-202509,2025-09-01,DEPARTMENT-014,Production & Manufacturing,Production Orders,1692.8,Production Orders,1600,5.8,56,3,Seasonal and trend-adjusted demand aligned to department operations,2025-09-28
+DEMAND-PRD-202510,2025-10-01,DEPARTMENT-014,Production & Manufacturing,Production Orders,1736.9,Production Orders,1600,8.56,58,5,Seasonal and trend-adjusted demand aligned to department operations,2025-10-28
+DEMAND-PRD-202511,2025-11-01,DEPARTMENT-014,Production & Manufacturing,Production Orders,2153.7,Production Orders,1600,34.61,71,18,Seasonal and trend-adjusted demand aligned to department operations,2025-11-28
+DEMAND-PRD-202512,2025-12-01,DEPARTMENT-014,Production & Manufacturing,Production Orders,2052.9,Production Orders,1600,28.31,68,15,Seasonal and trend-adjusted demand aligned to department operations,2025-12-28
+DEMAND-PRD-202601,2026-01-01,DEPARTMENT-014,Production & Manufacturing,Production Orders,1731.1,Production Orders,1600,8.19,61,5,Seasonal and trend-adjusted demand aligned to department operations,2026-01-28
+DEMAND-PRD-202602,2026-02-01,DEPARTMENT-014,Production & Manufacturing,Production Orders,1667.7,Production Orders,1600,4.23,58,2,Seasonal and trend-adjusted demand aligned to department operations,2026-02-28
+DEMAND-PRD-202603,2026-03-01,DEPARTMENT-014,Production & Manufacturing,Production Orders,1778.8,Production Orders,1600,11.18,62,6,Seasonal and trend-adjusted demand aligned to department operations,2026-03-28
+DEMAND-PRD-202604,2026-04-01,DEPARTMENT-014,Production & Manufacturing,Production Orders,1791.8,Production Orders,1600,11.99,63,7,Seasonal and trend-adjusted demand aligned to department operations,2026-04-28
+DEMAND-PRD-202605,2026-05-01,DEPARTMENT-014,Production & Manufacturing,Production Orders,1855.9,Production Orders,1600,15.99,65,9,Seasonal and trend-adjusted demand aligned to department operations,2026-05-28
+DEMAND-PRD-202606,2026-06-01,DEPARTMENT-014,Production & Manufacturing,Production Orders,1908.7,Production Orders,1600,19.29,67,11,Seasonal and trend-adjusted demand aligned to department operations,2026-06-28
+DEMAND-PRD-202607,2026-07-01,DEPARTMENT-014,Production & Manufacturing,Production Orders,1939.4,Production Orders,1600,21.21,68,12,Seasonal and trend-adjusted demand aligned to department operations,2026-07-28
+DEMAND-PRD-202608,2026-08-01,DEPARTMENT-014,Production & Manufacturing,Production Orders,1824.6,Production Orders,1600,14.04,64,8,Seasonal and trend-adjusted demand aligned to department operations,2026-08-28
+DEMAND-QAS-202409,2024-09-01,DEPARTMENT-015,Quality Assurance,Quality Inspections,1124.4,Inspections,1100,2.22,49,1,Seasonal and trend-adjusted demand aligned to department operations,2024-09-28
+DEMAND-QAS-202410,2024-10-01,DEPARTMENT-015,Quality Assurance,Quality Inspections,1145.3,Inspections,1100,4.12,50,2,Seasonal and trend-adjusted demand aligned to department operations,2024-10-28
+DEMAND-QAS-202411,2024-11-01,DEPARTMENT-015,Quality Assurance,Quality Inspections,1258.7,Inspections,1100,14.43,55,7,Seasonal and trend-adjusted demand aligned to department operations,2024-11-28
+DEMAND-QAS-202412,2024-12-01,DEPARTMENT-015,Quality Assurance,Quality Inspections,1269.7,Inspections,1100,15.43,55,7,Seasonal and trend-adjusted demand aligned to department operations,2024-12-28
+DEMAND-QAS-202501,2025-01-01,DEPARTMENT-015,Quality Assurance,Quality Inspections,1111.6,Inspections,1100,1.05,50,1,Seasonal and trend-adjusted demand aligned to department operations,2025-01-28
+DEMAND-QAS-202502,2025-02-01,DEPARTMENT-015,Quality Assurance,Quality Inspections,1081.7,Inspections,1100,-1.66,48,-1,Seasonal and trend-adjusted demand aligned to department operations,2025-02-28
+DEMAND-QAS-202503,2025-03-01,DEPARTMENT-015,Quality Assurance,Quality Inspections,1090.6,Inspections,1100,-0.85,49,0,Seasonal and trend-adjusted demand aligned to department operations,2025-03-28
+DEMAND-QAS-202504,2025-04-01,DEPARTMENT-015,Quality Assurance,Quality Inspections,1133.6,Inspections,1100,3.05,50,1,Seasonal and trend-adjusted demand aligned to department operations,2025-04-28
+DEMAND-QAS-202505,2025-05-01,DEPARTMENT-015,Quality Assurance,Quality Inspections,1151.1,Inspections,1100,4.65,51,2,Seasonal and trend-adjusted demand aligned to department operations,2025-05-28
+DEMAND-QAS-202506,2025-06-01,DEPARTMENT-015,Quality Assurance,Quality Inspections,1140.1,Inspections,1100,3.65,51,2,Seasonal and trend-adjusted demand aligned to department operations,2025-06-28
+DEMAND-QAS-202507,2025-07-01,DEPARTMENT-015,Quality Assurance,Quality Inspections,1152.4,Inspections,1100,4.76,51,2,Seasonal and trend-adjusted demand aligned to department operations,2025-07-28
+DEMAND-QAS-202508,2025-08-01,DEPARTMENT-015,Quality Assurance,Quality Inspections,1175.7,Inspections,1100,6.88,52,3,Seasonal and trend-adjusted demand aligned to department operations,2025-08-28
+DEMAND-QAS-202509,2025-09-01,DEPARTMENT-015,Quality Assurance,Quality Inspections,1231.8,Inspections,1100,11.98,55,6,Seasonal and trend-adjusted demand aligned to department operations,2025-09-28
+DEMAND-QAS-202510,2025-10-01,DEPARTMENT-015,Quality Assurance,Quality Inspections,1243.6,Inspections,1100,13.05,55,6,Seasonal and trend-adjusted demand aligned to department operations,2025-10-28
+DEMAND-QAS-202511,2025-11-01,DEPARTMENT-015,Quality Assurance,Quality Inspections,1400.0,Inspections,1100,27.27,62,13,Seasonal and trend-adjusted demand aligned to department operations,2025-11-28
+DEMAND-QAS-202512,2025-12-01,DEPARTMENT-015,Quality Assurance,Quality Inspections,1328.5,Inspections,1100,20.77,59,10,Seasonal and trend-adjusted demand aligned to department operations,2025-12-28
+DEMAND-QAS-202601,2026-01-01,DEPARTMENT-015,Quality Assurance,Quality Inspections,1215.8,Inspections,1100,10.53,55,5,Seasonal and trend-adjusted demand aligned to department operations,2026-01-28
+DEMAND-QAS-202602,2026-02-01,DEPARTMENT-015,Quality Assurance,Quality Inspections,1213.4,Inspections,1100,10.31,55,5,Seasonal and trend-adjusted demand aligned to department operations,2026-02-28
+DEMAND-QAS-202603,2026-03-01,DEPARTMENT-015,Quality Assurance,Quality Inspections,1212.9,Inspections,1100,10.26,55,5,Seasonal and trend-adjusted demand aligned to department operations,2026-03-28
+DEMAND-QAS-202604,2026-04-01,DEPARTMENT-015,Quality Assurance,Quality Inspections,1286.7,Inspections,1100,16.97,58,8,Seasonal and trend-adjusted demand aligned to department operations,2026-04-28
+DEMAND-QAS-202605,2026-05-01,DEPARTMENT-015,Quality Assurance,Quality Inspections,1235.6,Inspections,1100,12.33,56,6,Seasonal and trend-adjusted demand aligned to department operations,2026-05-28
+DEMAND-QAS-202606,2026-06-01,DEPARTMENT-015,Quality Assurance,Quality Inspections,1258.4,Inspections,1100,14.4,57,7,Seasonal and trend-adjusted demand aligned to department operations,2026-06-28
+DEMAND-QAS-202607,2026-07-01,DEPARTMENT-015,Quality Assurance,Quality Inspections,1307.2,Inspections,1100,18.84,59,9,Seasonal and trend-adjusted demand aligned to department operations,2026-07-28
+DEMAND-QAS-202608,2026-08-01,DEPARTMENT-015,Quality Assurance,Quality Inspections,1319.5,Inspections,1100,19.95,60,10,Seasonal and trend-adjusted demand aligned to department operations,2026-08-28
+DEMAND-RND-202409,2024-09-01,DEPARTMENT-016,Research & Development,Active Research Initiatives,18,Initiatives,18,0.0,48,0,Seasonal and trend-adjusted demand aligned to department operations,2024-09-28
+DEMAND-RND-202410,2024-10-01,DEPARTMENT-016,Research & Development,Active Research Initiatives,17,Initiatives,18,-5.56,45,-3,Seasonal and trend-adjusted demand aligned to department operations,2024-10-28
+DEMAND-RND-202411,2024-11-01,DEPARTMENT-016,Research & Development,Active Research Initiatives,19,Initiatives,18,5.56,51,3,Seasonal and trend-adjusted demand aligned to department operations,2024-11-28
+DEMAND-RND-202412,2024-12-01,DEPARTMENT-016,Research & Development,Active Research Initiatives,18,Initiatives,18,0.0,48,0,Seasonal and trend-adjusted demand aligned to department operations,2024-12-28
+DEMAND-RND-202501,2025-01-01,DEPARTMENT-016,Research & Development,Active Research Initiatives,19,Initiatives,18,5.56,53,3,Seasonal and trend-adjusted demand aligned to department operations,2025-01-28
+DEMAND-RND-202502,2025-02-01,DEPARTMENT-016,Research & Development,Active Research Initiatives,19,Initiatives,18,5.56,53,3,Seasonal and trend-adjusted demand aligned to department operations,2025-02-28
+DEMAND-RND-202503,2025-03-01,DEPARTMENT-016,Research & Development,Active Research Initiatives,18,Initiatives,18,0.0,50,0,Seasonal and trend-adjusted demand aligned to department operations,2025-03-28
+DEMAND-RND-202504,2025-04-01,DEPARTMENT-016,Research & Development,Active Research Initiatives,19,Initiatives,18,5.56,53,3,Seasonal and trend-adjusted demand aligned to department operations,2025-04-28
+DEMAND-RND-202505,2025-05-01,DEPARTMENT-016,Research & Development,Active Research Initiatives,19,Initiatives,18,5.56,53,3,Seasonal and trend-adjusted demand aligned to department operations,2025-05-28
+DEMAND-RND-202506,2025-06-01,DEPARTMENT-016,Research & Development,Active Research Initiatives,19,Initiatives,18,5.56,53,3,Seasonal and trend-adjusted demand aligned to department operations,2025-06-28
+DEMAND-RND-202507,2025-07-01,DEPARTMENT-016,Research & Development,Active Research Initiatives,20,Initiatives,18,11.11,56,6,Seasonal and trend-adjusted demand aligned to department operations,2025-07-28
+DEMAND-RND-202508,2025-08-01,DEPARTMENT-016,Research & Development,Active Research Initiatives,20,Initiatives,18,11.11,56,6,Seasonal and trend-adjusted demand aligned to department operations,2025-08-28
+DEMAND-RND-202509,2025-09-01,DEPARTMENT-016,Research & Development,Active Research Initiatives,20,Initiatives,18,11.11,56,6,Seasonal and trend-adjusted demand aligned to department operations,2025-09-28
+DEMAND-RND-202510,2025-10-01,DEPARTMENT-016,Research & Development,Active Research Initiatives,20,Initiatives,18,11.11,56,6,Seasonal and trend-adjusted demand aligned to department operations,2025-10-28
+DEMAND-RND-202511,2025-11-01,DEPARTMENT-016,Research & Development,Active Research Initiatives,20,Initiatives,18,11.11,56,6,Seasonal and trend-adjusted demand aligned to department operations,2025-11-28
+DEMAND-RND-202512,2025-12-01,DEPARTMENT-016,Research & Development,Active Research Initiatives,21,Initiatives,18,16.67,58,8,Seasonal and trend-adjusted demand aligned to department operations,2025-12-28
+DEMAND-RND-202601,2026-01-01,DEPARTMENT-016,Research & Development,Active Research Initiatives,20,Initiatives,18,11.11,58,6,Seasonal and trend-adjusted demand aligned to department operations,2026-01-28
+DEMAND-RND-202602,2026-02-01,DEPARTMENT-016,Research & Development,Active Research Initiatives,20,Initiatives,18,11.11,58,6,Seasonal and trend-adjusted demand aligned to department operations,2026-02-28
+DEMAND-RND-202603,2026-03-01,DEPARTMENT-016,Research & Development,Active Research Initiatives,20,Initiatives,18,11.11,58,6,Seasonal and trend-adjusted demand aligned to department operations,2026-03-28
+DEMAND-RND-202604,2026-04-01,DEPARTMENT-016,Research & Development,Active Research Initiatives,21,Initiatives,18,16.67,61,9,Seasonal and trend-adjusted demand aligned to department operations,2026-04-28
+DEMAND-RND-202605,2026-05-01,DEPARTMENT-016,Research & Development,Active Research Initiatives,20,Initiatives,18,11.11,58,6,Seasonal and trend-adjusted demand aligned to department operations,2026-05-28
+DEMAND-RND-202606,2026-06-01,DEPARTMENT-016,Research & Development,Active Research Initiatives,21,Initiatives,18,16.67,61,9,Seasonal and trend-adjusted demand aligned to department operations,2026-06-28
+DEMAND-RND-202607,2026-07-01,DEPARTMENT-016,Research & Development,Active Research Initiatives,20,Initiatives,18,11.11,58,6,Seasonal and trend-adjusted demand aligned to department operations,2026-07-28
+DEMAND-RND-202608,2026-08-01,DEPARTMENT-016,Research & Development,Active Research Initiatives,21,Initiatives,18,16.67,61,9,Seasonal and trend-adjusted demand aligned to department operations,2026-08-28

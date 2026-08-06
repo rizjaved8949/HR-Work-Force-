@@ -1,0 +1,18 @@
+﻿Department_ID,Department_Name,Business_Unit,Actual_Employee_Count,Approved_Position_Count,Budgeted_Position_Count,Vacant_Approved_Position_Count,Funded_Vacant_Position_Count,Overstaffed_Employee_Count,Vacancy_Rate_Percentage,Positions_Vacant_More_Than_90_Days,Critical_or_High_Priority_Open_Positions,Monthly_Salary_Cost,Total_Approved_People_Budget,Total_Actual_People_Cost,Budget_Utilization_Percentage,Expected_Employee_Exit_Count_from_Labels,Data_As_Of_Date
+DEPARTMENT-001,HR,Corporate Services,45,44,44,0,0,1,0.0,0,0,7372959,9485636,9069084,95.61,13,2026-08-01
+DEPARTMENT-002,Finance,Corporate Services,45,48,47,3,2,0,6.25,2,1,8445960,11610383,10384347,89.44,13,2026-08-01
+DEPARTMENT-003,Sales,Commercial Services,45,52,50,7,5,0,13.46,6,2,6496000,9527665,7985529,83.81,18,2026-08-01
+DEPARTMENT-004,Customer Support,Commercial Services,45,50,49,5,4,0,10.0,4,1,5289600,7607150,6529766,85.84,23,2026-08-01
+DEPARTMENT-005,Engineering,Technology and Innovation,45,54,51,9,6,0,16.67,6,3,8246439,12331483,10174061,82.5,17,2026-08-01
+DEPARTMENT-006,Operations,Enterprise Operations,45,51,49,6,4,0,11.76,6,2,6107400,8776300,7530136,85.8,17,2026-08-01
+DEPARTMENT-007,IT,Technology and Innovation,45,49,48,4,3,0,8.16,4,1,8648959,12149069,10632208,87.51,13,2026-08-01
+DEPARTMENT-008,Medical Care,Healthcare Services,45,55,52,10,7,0,18.18,9,10,10047920,15318414,12363266,80.71,15,2026-08-01
+DEPARTMENT-009,Training & Development,Learning Services,45,47,47,2,2,0,4.26,1,0,8365919,11500780,10273120,89.33,13,2026-08-01
+DEPARTMENT-010,Administration & Facilities,Corporate Services,45,45,45,0,0,0,0.0,0,0,7164159,9423254,8776506,93.14,13,2026-08-01
+DEPARTMENT-011,Legal & Compliance,Corporate Services,45,43,43,0,0,2,0.0,0,0,10980560,13790788,13407443,97.22,13,2026-08-01
+DEPARTMENT-012,Procurement & Supply Chain,Enterprise Operations,45,48,47,3,2,0,6.25,3,1,8665200,11910597,10651127,89.43,13,2026-08-01
+DEPARTMENT-013,Logistics & Warehouse,Enterprise Operations,45,53,50,8,5,0,15.09,6,2,7871759,11535960,9720208,84.26,15,2026-08-01
+DEPARTMENT-014,Production & Manufacturing,Industrial Operations,45,56,52,11,7,0,19.64,8,11,7834639,11954102,9649833,80.72,15,2026-08-01
+DEPARTMENT-015,Quality Assurance,Industrial Operations,45,50,49,5,4,0,10.0,3,1,8970280,12869148,11058975,85.93,13,2026-08-01
+DEPARTMENT-016,Research & Development,Technology and Innovation,45,52,50,7,5,0,13.46,5,2,10638360,15574560,13008015,83.52,13,2026-08-01
+ORGANIZATION-TOTAL,Organization Total,All Business Units,720,797,773,77,53,3,9.66,63,37,131146113,185365289,161213624,86.97,237,2026-08-01

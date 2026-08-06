@@ -357,7 +357,11 @@ def create_stateful_check_employee_attrition_tool(
         employee_id: Optional[str] = None,
         employee_name: Optional[str] = None,
         department: Optional[str] = None,
-        runtime: ToolRuntime = None,
+        # Must stay a bare `ToolRuntime`. LangChain matches this exact
+        # annotation to inject the runtime; widening it to Optional, or
+        # stringizing it via `from __future__ import annotations`, leaves
+        # it None and the emitted ToolMessage id stops matching the call.
+        runtime: ToolRuntime = None,  # pyright: ignore[reportArgumentType]
     ) -> Command:
         """
         Check attrition risk for one employee and preserve the

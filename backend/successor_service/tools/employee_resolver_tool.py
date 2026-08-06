@@ -98,7 +98,7 @@ class EmployeeResolverTool:
                     "status": "not_found",
                     "message": (
                         f"Employee ID {normalized_id} "
-                        "dataset mein nahi mili."
+                        "was not found in the dataset."
                     ),
                     "matches": [],
                 }
@@ -116,10 +116,9 @@ class EmployeeResolverTool:
                 return {
                     "status": "identifier_mismatch",
                     "message": (
-                        f"Employee ID {normalized_id} "
-                        f"aur employee name "
-                        f"'{employee_name}' same employee "
-                        "ko identify nahi karte."
+                        f"Employee ID {normalized_id} and employee "
+                        f"name '{employee_name}' do not identify the "
+                        "same employee."
                     ),
                     "matches": [
                         {
@@ -178,7 +177,7 @@ class EmployeeResolverTool:
                     "status": "not_found",
                     "message": (
                         f"Employee ID {normalized_id} "
-                        "dataset mein nahi mili."
+                        "was not found in the dataset."
                     ),
                     "matches": [],
                 }
@@ -217,7 +216,7 @@ class EmployeeResolverTool:
                         "status": "not_found",
                         "message": (
                             f"Employee ID {message_id} "
-                            "dataset mein nahi mili."
+                            "was not found in the dataset."
                         ),
                         "matches": [],
                     }
@@ -276,7 +275,7 @@ class EmployeeResolverTool:
                 "status": "not_found",
                 "message": (
                     f"'{name_query}' naam ka employee "
-                    "dataset mein nahi mila."
+                    "was not found in the dataset."
                 ),
                 "matches": [],
             }

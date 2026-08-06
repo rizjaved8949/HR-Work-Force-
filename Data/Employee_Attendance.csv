@@ -1,201 +1,721 @@
-﻿Employee_ID,Employee_Name,Department,Position_ID,Attendance_Period,Scheduled_Working_Days,Present_Days,Approved_Leave_Days,Absent_Days,Unapproved_Absent_Days,Late_Arrivals,Overtime_Hours_Last_30D,Attendance_Percentage,Punctuality_Percentage,Attendance_Score,Attendance_Status
-EMP001,Sonia Hassan,HR,POS-001,Last 90 Days,65,63,2,0,0,5,4,100.0,92.1,98.0,Excellent
-EMP002,Bilal Aziz,Sales,POS-002,Last 90 Days,65,61,4,0,0,7,8,100.0,88.5,97.1,Excellent
-EMP003,Kamran Ali,Finance,POS-003,Last 90 Days,65,62,1,2,0,0,0,96.9,100.0,97.7,Excellent
-EMP004,Ali Masood,Finance,POS-004,Last 90 Days,65,62,1,2,0,3,32,96.9,95.2,96.4,Excellent
-EMP005,Farhan Shah,Engineering,POS-005,Last 90 Days,65,60,4,1,1,1,14,98.4,98.3,95.4,Excellent
-EMP006,Sehrish Tariq,Engineering,POS-006,Last 90 Days,65,63,0,2,0,3,33,96.9,95.2,96.5,Excellent
-EMP007,Sonia Ahmad,Customer Support,POS-007,Last 90 Days,65,62,3,0,0,2,22,100.0,96.8,99.2,Excellent
-EMP008,Iqra Bashir,Finance,POS-008,Last 90 Days,65,61,4,0,0,3,13,100.0,95.1,98.8,Excellent
-EMP009,Hassan Dar,Customer Support,POS-009,Last 90 Days,65,65,0,0,0,4,25,100.0,93.8,98.5,Excellent
-EMP010,Salman Shah,Engineering,POS-010,Last 90 Days,65,61,3,1,0,5,22,98.4,91.8,96.7,Excellent
-EMP011,Khurram Iqbal,Sales,POS-011,Last 90 Days,65,60,4,1,0,0,7,98.4,100.0,98.8,Excellent
-EMP012,Danish Masood,HR,POS-012,Last 90 Days,65,62,2,1,0,6,28,98.4,90.3,96.4,Excellent
-EMP013,Anum Ahmad,HR,POS-013,Last 90 Days,65,64,0,1,0,4,14,98.5,93.8,97.3,Excellent
-EMP014,Shahid Ali,Engineering,POS-014,Last 90 Days,65,65,0,0,0,2,11,100.0,96.9,99.2,Excellent
-EMP015,Anum Rehman,Engineering,POS-015,Last 90 Days,65,61,4,0,0,4,14,100.0,93.4,98.4,Excellent
-EMP016,Khurram Gill,Sales,POS-016,Last 90 Days,65,62,1,2,0,7,30,96.9,88.7,94.8,Excellent
-EMP017,Amir Haider,Customer Support,POS-017,Last 90 Days,65,62,1,2,0,6,40,96.9,90.3,95.2,Excellent
-EMP018,Sidra Tariq,Engineering,POS-018,Last 90 Days,65,61,3,1,1,6,29,98.4,90.2,93.3,Needs Improvement
-EMP019,Hina Hussain,IT,POS-019,Last 90 Days,65,58,4,3,0,5,18,95.1,91.4,94.2,Excellent
-EMP020,Waqas Khan,Customer Support,POS-020,Last 90 Days,65,62,3,0,0,3,20,100.0,95.2,98.8,Excellent
-EMP021,Usman Khan,Customer Support,POS-021,Last 90 Days,65,62,3,0,0,2,21,100.0,96.8,99.2,Excellent
-EMP022,Laiba Raza,Sales,POS-022,Last 90 Days,65,61,2,2,0,2,15,96.8,96.7,96.8,Excellent
-EMP023,Fatima Masood,Operations,POS-023,Last 90 Days,65,59,4,2,0,3,36,96.7,94.9,96.3,Excellent
-EMP024,Fatima Arif,IT,POS-024,Last 90 Days,65,63,0,2,0,1,20,96.9,98.4,97.3,Excellent
-EMP025,Raza Mughal,Finance,POS-025,Last 90 Days,65,64,1,0,0,5,30,100.0,92.2,98.0,Excellent
-EMP026,Anum Qureshi,Operations,POS-026,Last 90 Days,65,62,1,2,1,9,27,96.9,85.5,91.0,Needs Improvement
-EMP027,Akbar Hassan,Customer Support,POS-027,Last 90 Days,65,61,2,2,1,10,46,96.8,83.6,90.5,Needs Improvement
-EMP028,Salman Aziz,Sales,POS-028,Last 90 Days,65,59,3,3,0,8,36,95.2,86.4,93.0,Needs Improvement
-EMP029,Ali Saleem,Engineering,POS-029,Last 90 Days,65,63,1,1,0,6,38,98.4,90.5,96.4,Excellent
-EMP030,Hamza Ahmad,Finance,POS-030,Last 90 Days,65,63,1,1,0,6,8,98.4,90.5,96.4,Excellent
-EMP031,Sadia Haider,Engineering,POS-031,Last 90 Days,65,61,3,1,0,3,8,98.4,95.1,97.6,Excellent
-EMP032,Laiba Mahmood,Sales,POS-032,Last 90 Days,65,64,1,0,0,2,19,100.0,96.9,99.2,Excellent
-EMP033,Ali Chaudhry,IT,POS-033,Last 90 Days,65,63,2,0,0,5,28,100.0,92.1,98.0,Excellent
-EMP034,Nida Sheikh,Sales,POS-034,Last 90 Days,65,64,1,0,0,6,22,100.0,90.6,97.7,Excellent
-EMP035,Shahbaz Malik,Engineering,POS-035,Last 90 Days,65,63,1,1,0,4,26,98.4,93.7,97.2,Excellent
-EMP036,Zoya Chaudhry,Sales,POS-036,Last 90 Days,65,60,4,1,0,4,14,98.4,93.3,97.1,Excellent
-EMP037,Zara Mahmood,IT,POS-037,Last 90 Days,65,61,3,1,0,0,19,98.4,100.0,98.8,Excellent
-EMP038,Ali Mahmood,Customer Support,POS-038,Last 90 Days,65,62,3,0,0,6,47,100.0,90.3,97.6,Excellent
-EMP039,Kamran Hussain,Operations,POS-039,Last 90 Days,65,64,1,0,0,3,22,100.0,95.3,98.8,Excellent
-EMP040,Ahmad Sheikh,Customer Support,POS-040,Last 90 Days,65,61,4,0,0,6,29,100.0,90.2,97.5,Excellent
-EMP041,Omer Nawaz,Operations,POS-041,Last 90 Days,65,64,0,1,0,4,30,98.5,93.8,97.3,Excellent
-EMP042,Amna Aslam,Customer Support,POS-042,Last 90 Days,65,60,3,2,0,6,29,96.8,90.0,95.1,Excellent
-EMP043,Amir Javed,Operations,POS-043,Last 90 Days,65,62,2,1,0,6,46,98.4,90.3,96.4,Excellent
-EMP044,Hafsa Khan,Finance,POS-044,Last 90 Days,65,63,2,0,0,3,19,100.0,95.2,98.8,Excellent
-EMP045,Saad Ahmad,Operations,POS-045,Last 90 Days,65,58,4,3,0,8,39,95.1,86.2,92.9,Needs Improvement
-EMP046,Salman Iqbal,Customer Support,POS-046,Last 90 Days,65,63,2,0,0,3,25,100.0,95.2,98.8,Excellent
-EMP047,Mahnoor Iqbal,Finance,POS-047,Last 90 Days,65,63,2,0,0,4,10,100.0,93.7,98.4,Excellent
-EMP048,Sehrish Shah,Operations,POS-048,Last 90 Days,65,60,1,4,0,3,61,93.8,95.0,94.1,Excellent
-EMP049,Sara Aslam,Sales,POS-049,Last 90 Days,65,60,3,2,1,7,39,96.8,88.3,91.7,Needs Improvement
-EMP050,Mohsin Butt,Finance,POS-050,Last 90 Days,65,64,0,1,0,3,14,98.5,95.3,97.7,Excellent
-EMP051,Asad Ahmad,IT,POS-051,Last 90 Days,65,65,0,0,0,2,22,100.0,96.9,99.2,Excellent
-EMP052,Raza Hassan,Customer Support,POS-052,Last 90 Days,65,64,1,0,0,5,25,100.0,92.2,98.0,Excellent
-EMP053,Zeeshan Abbasi,HR,POS-053,Last 90 Days,65,65,0,0,0,4,0,100.0,93.8,98.5,Excellent
-EMP054,Waqas Aslam,Engineering,POS-054,Last 90 Days,65,59,4,2,0,9,30,96.7,84.7,93.7,Excellent
-EMP055,Sadia Mahmood,Engineering,POS-055,Last 90 Days,65,62,1,2,1,3,34,96.9,95.2,93.4,Excellent
-EMP056,Saba Hassan,Operations,POS-056,Last 90 Days,65,62,3,0,0,1,24,100.0,98.4,99.6,Excellent
-EMP057,Raza Haider,IT,POS-057,Last 90 Days,65,63,0,2,0,4,43,96.9,93.7,96.1,Excellent
-EMP058,Shahid Malik,Engineering,POS-058,Last 90 Days,65,64,0,1,1,7,27,98.5,89.1,93.1,Needs Improvement
-EMP059,Anum Masood,Sales,POS-059,Last 90 Days,65,64,1,0,0,2,26,100.0,96.9,99.2,Excellent
-EMP060,Mohsin Yousaf,Sales,POS-060,Last 90 Days,65,62,3,0,0,5,21,100.0,91.9,98.0,Excellent
-EMP061,Asad Bashir,Sales,POS-061,Last 90 Days,65,64,1,0,0,5,17,100.0,92.2,98.0,Excellent
-EMP062,Fahad Dar,Sales,POS-062,Last 90 Days,65,61,4,0,0,0,6,100.0,100.0,100.0,Excellent
-EMP063,Ahmad Tariq,Sales,POS-063,Last 90 Days,65,62,3,0,0,5,7,100.0,91.9,98.0,Excellent
-EMP064,Hassan Sheikh,Sales,POS-064,Last 90 Days,65,60,4,1,0,3,31,98.4,95.0,97.5,Excellent
-EMP065,Amna Gill,Sales,POS-065,Last 90 Days,65,62,3,0,0,13,23,100.0,79.0,94.8,Excellent
-EMP066,Ali Gill,HR,POS-066,Last 90 Days,65,61,3,1,1,6,7,98.4,90.2,93.3,Excellent
-EMP067,Nida Hameed,Operations,POS-067,Last 90 Days,65,60,0,5,1,9,48,92.3,85.0,87.5,Needs Improvement
-EMP068,Sidra Hussain,Customer Support,POS-068,Last 90 Days,65,64,1,0,0,4,1,100.0,93.8,98.4,Excellent
-EMP069,Mehwish Hussain,Operations,POS-069,Last 90 Days,65,61,3,1,0,7,19,98.4,88.5,95.9,Excellent
-EMP070,Bilal Saeed,Engineering,POS-070,Last 90 Days,65,58,4,3,0,4,12,95.1,93.1,94.6,Excellent
-EMP071,Eman Abbasi,Finance,POS-071,Last 90 Days,65,59,4,2,0,2,35,96.7,96.6,96.7,Excellent
-EMP072,Fahad Hassan,Customer Support,POS-072,Last 90 Days,65,62,3,0,0,4,4,100.0,93.5,98.4,Excellent
-EMP073,Ali Yousaf,Customer Support,POS-073,Last 90 Days,65,62,0,3,1,5,42,95.4,91.9,91.5,Needs Improvement
-EMP074,Omer Hameed,Sales,POS-074,Last 90 Days,65,60,3,2,0,8,34,96.8,86.7,94.2,Excellent
-EMP075,Asad Raza,Operations,POS-075,Last 90 Days,65,61,4,0,0,2,17,100.0,96.7,99.2,Excellent
-EMP076,Fahad Shah,Engineering,POS-076,Last 90 Days,65,64,1,0,0,6,2,100.0,90.6,97.7,Excellent
-EMP077,Ahmad Awan,Customer Support,POS-077,Last 90 Days,65,65,0,0,0,2,17,100.0,96.9,99.2,Excellent
-EMP078,Ahmad Nawaz,Engineering,POS-078,Last 90 Days,65,59,4,2,0,6,20,96.7,89.8,95.0,Excellent
-EMP079,Hina Aslam,Customer Support,POS-079,Last 90 Days,65,64,0,1,0,2,11,98.5,96.9,98.1,Excellent
-EMP080,Ali Mughal,Engineering,POS-080,Last 90 Days,65,64,1,0,0,2,16,100.0,96.9,99.2,Excellent
-EMP081,Sonia Arif,HR,POS-081,Last 90 Days,65,60,3,2,0,4,0,96.8,93.3,95.9,Excellent
-EMP082,Ali Dar,Engineering,POS-082,Last 90 Days,65,64,1,0,0,0,22,100.0,100.0,100.0,Excellent
-EMP083,Raza Aziz,Customer Support,POS-083,Last 90 Days,65,62,3,0,0,3,31,100.0,95.2,98.8,Excellent
-EMP084,Zara Ullah,HR,POS-084,Last 90 Days,65,60,3,2,0,12,10,96.8,80.0,92.6,Needs Improvement
-EMP085,Sara Yousaf,HR,POS-085,Last 90 Days,65,63,1,1,0,1,22,98.4,98.4,98.4,Excellent
-EMP086,Hina Tariq,Operations,POS-086,Last 90 Days,65,64,1,0,0,0,24,100.0,100.0,100.0,Excellent
-EMP087,Kashif Hameed,HR,POS-087,Last 90 Days,65,61,3,1,0,7,3,98.4,88.5,95.9,Excellent
-EMP088,Sana Mughal,Operations,POS-088,Last 90 Days,65,62,3,0,0,2,25,100.0,96.8,99.2,Excellent
-EMP089,Muneeb Haider,HR,POS-089,Last 90 Days,65,62,2,1,0,2,22,98.4,96.8,98.0,Excellent
-EMP090,Noman Ahmad,Finance,POS-090,Last 90 Days,65,64,1,0,0,6,16,100.0,90.6,97.7,Excellent
-EMP091,Nida Mughal,Finance,POS-091,Last 90 Days,65,61,4,0,0,0,4,100.0,100.0,100.0,Excellent
-EMP092,Mahnoor Ali,Engineering,POS-092,Last 90 Days,65,62,3,0,0,4,27,100.0,93.5,98.4,Excellent
-EMP093,Danish Siddiqui,Sales,POS-093,Last 90 Days,65,63,2,0,0,1,11,100.0,98.4,99.6,Excellent
-EMP094,Akbar Abbasi,IT,POS-094,Last 90 Days,65,60,4,1,0,2,25,98.4,96.7,97.9,Excellent
-EMP095,Haris Mahmood,IT,POS-095,Last 90 Days,65,63,2,0,0,0,28,100.0,100.0,100.0,Excellent
-EMP096,Ayesha Abbasi,Sales,POS-096,Last 90 Days,65,62,3,0,0,6,42,100.0,90.3,97.6,Excellent
-EMP097,Sana Arif,Sales,POS-097,Last 90 Days,65,63,2,0,0,3,15,100.0,95.2,98.8,Excellent
-EMP098,Sidra Zafar,Customer Support,POS-098,Last 90 Days,65,63,0,2,2,7,27,96.9,88.9,88.9,Needs Improvement
-EMP099,Bilal Aslam,Finance,POS-099,Last 90 Days,65,64,1,0,0,4,18,100.0,93.8,98.4,Excellent
-EMP100,Rabia Javed,Engineering,POS-100,Last 90 Days,65,61,1,3,1,6,29,95.3,90.2,91.0,Needs Improvement
-EMP101,Talha Dar,IT,POS-101,Last 90 Days,65,65,0,0,0,0,32,100.0,100.0,100.0,Excellent
-EMP102,Akbar Gill,Sales,POS-102,Last 90 Days,65,64,0,1,0,1,17,98.5,98.4,98.5,Excellent
-EMP103,Noor Masood,Customer Support,POS-103,Last 90 Days,65,65,0,0,0,0,18,100.0,100.0,100.0,Excellent
-EMP104,Rabia Ali,IT,POS-104,Last 90 Days,65,59,4,2,0,9,18,96.7,84.7,93.7,Excellent
-EMP105,Areeba Raza,Sales,POS-105,Last 90 Days,65,61,2,2,0,3,16,96.8,95.1,96.4,Excellent
-EMP106,Hina Saleem,HR,POS-106,Last 90 Days,65,62,3,0,0,2,6,100.0,96.8,99.2,Excellent
-EMP107,Zoya Mahmood,Engineering,POS-107,Last 90 Days,65,65,0,0,0,1,31,100.0,98.5,99.6,Excellent
-EMP108,Ayesha Ahmad,HR,POS-108,Last 90 Days,65,61,4,0,0,1,11,100.0,98.4,99.6,Excellent
-EMP109,Ali Farooq,Sales,POS-109,Last 90 Days,65,59,2,4,1,7,36,93.7,88.1,89.3,Needs Improvement
-EMP110,Arslan Masood,IT,POS-110,Last 90 Days,65,61,3,1,0,1,11,98.4,98.4,98.4,Excellent
-EMP111,Sadia Bashir,Sales,POS-111,Last 90 Days,65,61,4,0,0,5,27,100.0,91.8,98.0,Excellent
-EMP112,Sara Javed,Sales,POS-112,Last 90 Days,65,65,0,0,0,2,24,100.0,96.9,99.2,Excellent
-EMP113,Shahbaz Gill,IT,POS-113,Last 90 Days,65,61,4,0,0,5,15,100.0,91.8,98.0,Excellent
-EMP114,Hamza Hussain,HR,POS-114,Last 90 Days,65,63,2,0,0,4,12,100.0,93.7,98.4,Excellent
-EMP115,Hafsa Abbasi,Engineering,POS-115,Last 90 Days,65,62,3,0,0,1,30,100.0,98.4,99.6,Excellent
-EMP116,Ali Abbasi,Engineering,POS-116,Last 90 Days,65,59,2,4,0,6,34,93.7,89.8,92.7,Needs Improvement
-EMP117,Saad Ullah,Engineering,POS-117,Last 90 Days,65,59,4,2,0,6,21,96.7,89.8,95.0,Excellent
-EMP118,Zoya Ali,Customer Support,POS-118,Last 90 Days,65,62,3,0,0,6,16,100.0,90.3,97.6,Excellent
-EMP119,Ayesha Nawaz,Customer Support,POS-119,Last 90 Days,65,61,2,2,0,1,43,96.8,98.4,97.2,Excellent
-EMP120,Ahmad Aziz,Operations,POS-120,Last 90 Days,65,60,4,1,0,2,16,98.4,96.7,97.9,Excellent
-EMP121,Mehwish Tariq,Operations,POS-121,Last 90 Days,65,62,2,1,0,0,30,98.4,100.0,98.8,Excellent
-EMP122,Hafsa Ullah,Operations,POS-122,Last 90 Days,65,62,3,0,0,0,27,100.0,100.0,100.0,Excellent
-EMP123,Sehrish Ullah,Finance,POS-123,Last 90 Days,65,60,4,1,0,2,11,98.4,96.7,97.9,Excellent
-EMP124,Fahad Javed,Sales,POS-124,Last 90 Days,65,64,0,1,0,0,43,98.5,100.0,98.8,Excellent
-EMP125,Fatima Zafar,Sales,POS-125,Last 90 Days,65,61,4,0,0,6,16,100.0,90.2,97.5,Excellent
-EMP126,Laiba Sheikh,Customer Support,POS-126,Last 90 Days,65,59,3,3,0,7,35,95.2,88.1,93.4,Excellent
-EMP127,Khurram Yousaf,HR,POS-127,Last 90 Days,65,62,3,0,0,2,0,100.0,96.8,99.2,Excellent
-EMP128,Zoya Farooq,Customer Support,POS-128,Last 90 Days,65,64,0,1,0,6,30,98.5,90.6,96.5,Excellent
-EMP129,Danish Dar,Engineering,POS-129,Last 90 Days,65,62,3,0,0,1,11,100.0,98.4,99.6,Excellent
-EMP130,Waqas Siddiqui,HR,POS-130,Last 90 Days,65,61,3,1,0,6,0,98.4,90.2,96.3,Excellent
-EMP131,Ahmad Yousaf,IT,POS-131,Last 90 Days,65,62,3,0,0,0,17,100.0,100.0,100.0,Excellent
-EMP132,Arham Qureshi,IT,POS-132,Last 90 Days,65,59,2,4,1,6,40,93.7,89.8,89.7,Needs Improvement
-EMP133,Usman Raza,Engineering,POS-133,Last 90 Days,65,61,4,0,0,5,33,100.0,91.8,98.0,Excellent
-EMP134,Talha Awan,IT,POS-134,Last 90 Days,65,59,3,3,2,10,34,95.2,83.1,86.1,Needs Improvement
-EMP135,Eman Butt,Customer Support,POS-135,Last 90 Days,65,63,1,1,0,3,17,98.4,95.2,97.6,Excellent
-EMP136,Fatima Saleem,HR,POS-136,Last 90 Days,65,64,0,1,0,1,13,98.5,98.4,98.5,Excellent
-EMP137,Areeba Farooq,Customer Support,POS-137,Last 90 Days,65,60,4,1,0,5,53,98.4,91.7,96.7,Excellent
-EMP138,Amir Saleem,Engineering,POS-138,Last 90 Days,65,59,1,5,1,3,35,92.2,94.9,89.9,Needs Improvement
-EMP139,Iqra Saeed,Operations,POS-139,Last 90 Days,65,62,2,1,0,3,27,98.4,95.2,97.6,Excellent
-EMP140,Noman Rehman,Finance,POS-140,Last 90 Days,65,63,2,0,0,5,3,100.0,92.1,98.0,Excellent
-EMP141,Asad Zafar,Operations,POS-141,Last 90 Days,65,62,3,0,0,5,9,100.0,91.9,98.0,Excellent
-EMP142,Fahad Farooq,Engineering,POS-142,Last 90 Days,65,61,2,2,1,3,8,96.8,95.1,93.4,Excellent
-EMP143,Hamza Awan,Finance,POS-143,Last 90 Days,65,64,1,0,0,6,13,100.0,90.6,97.7,Excellent
-EMP144,Imran Ullah,Customer Support,POS-144,Last 90 Days,65,60,3,2,1,3,22,96.8,95.0,93.3,Excellent
-EMP145,Ahsan Anwar,Sales,POS-145,Last 90 Days,65,61,4,0,0,0,10,100.0,100.0,100.0,Excellent
-EMP146,Talha Khan,Finance,POS-146,Last 90 Days,65,61,3,1,1,3,2,98.4,95.1,94.6,Excellent
-EMP147,Hassan Javed,Customer Support,POS-147,Last 90 Days,65,62,2,1,0,7,32,98.4,88.7,96.0,Excellent
-EMP148,Sadia Malik,Sales,POS-148,Last 90 Days,65,62,2,1,0,0,38,98.4,100.0,98.8,Excellent
-EMP149,Muneeb Hameed,Operations,POS-149,Last 90 Days,65,64,1,0,0,7,17,100.0,89.1,97.3,Excellent
-EMP150,Sana Nawaz,Customer Support,POS-150,Last 90 Days,65,60,3,2,1,3,52,96.8,95.0,93.3,Excellent
-EMP151,Farhan Rehman,Engineering,POS-151,Last 90 Days,65,62,0,3,0,3,43,95.4,95.2,95.3,Excellent
-EMP152,Mahnoor Tariq,IT,POS-152,Last 90 Days,65,62,3,0,0,5,26,100.0,91.9,98.0,Excellent
-EMP153,Kashif Abbasi,Engineering,POS-153,Last 90 Days,65,60,3,2,0,8,22,96.8,86.7,94.2,Excellent
-EMP154,Hina Abbasi,Engineering,POS-154,Last 90 Days,65,61,3,1,1,4,28,98.4,93.4,94.2,Excellent
-EMP155,Noman Malik,Customer Support,POS-155,Last 90 Days,65,63,2,0,0,6,35,100.0,90.5,97.6,Excellent
-EMP156,Asad Malik,Engineering,POS-156,Last 90 Days,65,64,1,0,0,1,28,100.0,98.4,99.6,Excellent
-EMP157,Saba Qureshi,Operations,POS-157,Last 90 Days,65,61,4,0,0,6,9,100.0,90.2,97.5,Excellent
-EMP158,Imran Zafar,Operations,POS-158,Last 90 Days,65,64,1,0,0,5,29,100.0,92.2,98.0,Excellent
-EMP159,Raza Ahmad,Engineering,POS-159,Last 90 Days,65,60,3,2,1,6,37,96.8,90.0,92.1,Needs Improvement
-EMP160,Rabia Ullah,Finance,POS-160,Last 90 Days,65,64,0,1,1,5,8,98.5,92.2,93.9,Excellent
-EMP161,Iqra Yousaf,Finance,POS-161,Last 90 Days,65,61,3,1,1,4,0,98.4,93.4,94.2,Excellent
-EMP162,Bilal Shah,Customer Support,POS-162,Last 90 Days,65,61,3,1,0,5,35,98.4,91.8,96.7,Excellent
-EMP163,Sidra Sheikh,Engineering,POS-163,Last 90 Days,65,63,0,2,0,4,26,96.9,93.7,96.1,Excellent
-EMP164,Zoya Saleem,Sales,POS-164,Last 90 Days,65,61,3,1,0,4,32,98.4,93.4,97.2,Excellent
-EMP165,Waqas Butt,Sales,POS-165,Last 90 Days,65,63,1,1,0,6,38,98.4,90.5,96.4,Excellent
-EMP166,Arslan Siddiqui,Sales,POS-166,Last 90 Days,65,64,0,1,0,5,26,98.5,92.2,96.9,Excellent
-EMP167,Bilal Raza,Sales,POS-167,Last 90 Days,65,60,3,2,1,9,26,96.8,85.0,90.8,Needs Improvement
-EMP168,Akbar Saleem,Customer Support,POS-168,Last 90 Days,65,62,1,2,0,6,56,96.9,90.3,95.2,Excellent
-EMP169,Iqra Qureshi,IT,POS-169,Last 90 Days,65,62,2,1,0,4,12,98.4,93.5,97.2,Excellent
-EMP170,Hina Ahmad,Customer Support,POS-170,Last 90 Days,65,62,3,0,0,2,22,100.0,96.8,99.2,Excellent
-EMP171,Usman Ullah,IT,POS-171,Last 90 Days,65,62,2,1,0,1,12,98.4,98.4,98.4,Excellent
-EMP172,Zoya Hassan,Operations,POS-172,Last 90 Days,65,61,3,1,1,4,31,98.4,93.4,94.2,Excellent
-EMP173,Sidra Abbasi,Finance,POS-173,Last 90 Days,65,63,2,0,0,4,15,100.0,93.7,98.4,Excellent
-EMP174,Hassan Aslam,Sales,POS-174,Last 90 Days,65,62,2,1,0,5,20,98.4,91.9,96.8,Excellent
-EMP175,Hassan Arif,Operations,POS-175,Last 90 Days,65,62,3,0,0,2,9,100.0,96.8,99.2,Excellent
-EMP176,Ahsan Aziz,Sales,POS-176,Last 90 Days,65,65,0,0,0,4,7,100.0,93.8,98.5,Excellent
-EMP177,Danish Anwar,HR,POS-177,Last 90 Days,65,64,0,1,0,11,29,98.5,82.8,94.5,Excellent
-EMP178,Fatima Rehman,Sales,POS-178,Last 90 Days,65,60,3,2,0,7,21,96.8,88.3,94.7,Excellent
-EMP179,Muneeb Javed,Operations,POS-179,Last 90 Days,65,60,4,1,0,5,40,98.4,91.7,96.7,Excellent
-EMP180,Arham Hussain,Customer Support,POS-180,Last 90 Days,65,63,2,0,0,7,25,100.0,88.9,97.2,Excellent
-EMP181,Saad Yousaf,Operations,POS-181,Last 90 Days,65,64,1,0,0,7,8,100.0,89.1,97.3,Excellent
-EMP182,Waqas Ahmad,Sales,POS-182,Last 90 Days,65,63,1,1,0,2,7,98.4,96.8,98.0,Excellent
-EMP183,Zain Saleem,IT,POS-183,Last 90 Days,65,64,0,1,0,4,21,98.5,93.8,97.3,Excellent
-EMP184,Iqra Hassan,Operations,POS-184,Last 90 Days,65,61,3,1,0,4,24,98.4,93.4,97.2,Excellent
-EMP185,Salman Hameed,Finance,POS-185,Last 90 Days,65,63,2,0,0,0,26,100.0,100.0,100.0,Excellent
-EMP186,Zara Masood,IT,POS-186,Last 90 Days,65,60,3,2,0,4,8,96.8,93.3,95.9,Excellent
-EMP187,Nida Mahmood,Operations,POS-187,Last 90 Days,65,59,4,2,1,2,48,96.7,96.6,93.7,Excellent
-EMP188,Areeba Ahmad,IT,POS-188,Last 90 Days,65,62,2,1,0,4,18,98.4,93.5,97.2,Excellent
-EMP189,Omer Masood,Engineering,POS-189,Last 90 Days,65,61,2,2,0,6,48,96.8,90.2,95.2,Excellent
-EMP190,Noor Saeed,HR,POS-190,Last 90 Days,65,58,4,3,0,0,13,95.1,100.0,96.3,Excellent
-EMP191,Danish Yousaf,Operations,POS-191,Last 90 Days,65,61,3,1,0,7,14,98.4,88.5,95.9,Excellent
-EMP192,Kashif Hussain,Sales,POS-192,Last 90 Days,65,63,2,0,0,0,23,100.0,100.0,100.0,Excellent
-EMP193,Zain Qureshi,Operations,POS-193,Last 90 Days,65,58,4,3,0,5,10,95.1,91.4,94.2,Excellent
-EMP194,Shahid Ahmad,Customer Support,POS-194,Last 90 Days,65,64,1,0,0,2,28,100.0,96.9,99.2,Excellent
-EMP195,Mohsin Khan,Engineering,POS-195,Last 90 Days,65,61,4,0,0,5,19,100.0,91.8,98.0,Excellent
-EMP196,Mohsin Abbasi,Engineering,POS-196,Last 90 Days,65,63,2,0,0,3,27,100.0,95.2,98.8,Excellent
-EMP197,Zeeshan Qureshi,HR,POS-197,Last 90 Days,65,61,2,2,0,9,31,96.8,85.2,93.9,Excellent
-EMP198,Ali Tariq,Operations,POS-198,Last 90 Days,65,61,3,1,0,3,27,98.4,95.1,97.6,Excellent
-EMP199,Zara Tariq,Customer Support,POS-199,Last 90 Days,65,63,1,1,0,3,37,98.4,95.2,97.6,Excellent
-EMP200,Ahmad Abbasi,Customer Support,POS-200,Last 90 Days,65,60,2,3,1,8,39,95.2,86.7,90.1,Needs Improvement
+﻿Employee_ID,Employee_Name,Department,Position_ID,Attendance_Period,Scheduled_Working_Days,Present_Days,Approved_Leave_Days,Absent_Days,Unapproved_Absent_Days,Late_Arrivals,Overtime_Hours_Last_30D,Attendance_Percentage,Punctuality_Percentage,Attendance_Score,Attendance_Status,Department_ID,Business_Unit,Organizational_Unit_ID,Work_Location_ID,Cost_Center_ID,Data_As_Of_Date
+EMP001,Sonia Hassan,HR,POS-001,Last 90 Days,65,63,2,0,0,5,4,100.0,92.1,98.0,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP002,Bilal Aziz,Sales,POS-002,Last 90 Days,65,61,4,0,0,7,8,100.0,88.5,97.1,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-03,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP003,Kamran Ali,Finance,POS-003,Last 90 Days,65,62,1,2,0,0,0,96.9,100.0,97.7,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP004,Ali Masood,Finance,POS-004,Last 90 Days,65,62,1,2,0,3,32,96.9,95.2,96.4,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-02,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP005,Farhan Shah,Engineering,POS-005,Last 90 Days,65,60,4,1,1,1,14,98.4,98.3,95.4,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP006,Sehrish Tariq,Engineering,POS-006,Last 90 Days,65,63,0,2,0,3,33,96.9,95.2,96.5,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-01,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP007,Sonia Ahmad,Customer Support,POS-007,Last 90 Days,65,62,3,0,0,2,22,100.0,96.8,99.2,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-02,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP008,Iqra Bashir,Finance,POS-008,Last 90 Days,65,61,4,0,0,3,13,100.0,95.1,98.8,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP009,Hassan Dar,Customer Support,POS-009,Last 90 Days,65,65,0,0,0,4,25,100.0,93.8,98.5,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP010,Salman Shah,Engineering,POS-010,Last 90 Days,65,61,3,1,0,5,22,98.4,91.8,96.7,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP011,Khurram Iqbal,Sales,POS-011,Last 90 Days,65,60,4,1,0,0,7,98.4,100.0,98.8,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP012,Danish Masood,HR,POS-012,Last 90 Days,65,62,2,1,0,6,28,98.4,90.3,96.4,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP013,Anum Ahmad,HR,POS-013,Last 90 Days,65,64,0,1,0,4,14,98.5,93.8,97.3,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-02,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP014,Shahid Ali,Engineering,POS-014,Last 90 Days,65,65,0,0,0,2,11,100.0,96.9,99.2,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP015,Anum Rehman,Engineering,POS-015,Last 90 Days,65,61,4,0,0,4,14,100.0,93.4,98.4,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP016,Khurram Gill,Sales,POS-016,Last 90 Days,65,62,1,2,0,7,30,96.9,88.7,94.8,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP017,Amir Haider,Customer Support,POS-017,Last 90 Days,65,62,1,2,0,6,40,96.9,90.3,95.2,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP018,Sidra Tariq,Engineering,POS-018,Last 90 Days,65,61,3,1,1,6,29,98.4,90.2,93.3,Needs Improvement,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-01,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP019,Hina Hussain,IT,POS-019,Last 90 Days,65,58,4,3,0,5,18,95.1,91.4,94.2,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-02,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP020,Waqas Khan,Customer Support,POS-020,Last 90 Days,65,62,3,0,0,3,20,100.0,95.2,98.8,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP021,Usman Khan,Customer Support,POS-021,Last 90 Days,65,62,3,0,0,2,21,100.0,96.8,99.2,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP022,Laiba Raza,Sales,POS-022,Last 90 Days,65,61,2,2,0,2,15,96.8,96.7,96.8,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP023,Fatima Masood,Operations,POS-023,Last 90 Days,65,59,4,2,0,3,36,96.7,94.9,96.3,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP024,Fatima Arif,IT,POS-024,Last 90 Days,65,63,0,2,0,1,20,96.9,98.4,97.3,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP025,Raza Mughal,Finance,POS-025,Last 90 Days,65,64,1,0,0,5,30,100.0,92.2,98.0,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-02,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP026,Anum Qureshi,Operations,POS-026,Last 90 Days,65,62,1,2,1,9,27,96.9,85.5,91.0,Needs Improvement,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP027,Akbar Hassan,Customer Support,POS-027,Last 90 Days,65,61,2,2,1,10,46,96.8,83.6,90.5,Needs Improvement,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP028,Salman Aziz,Sales,POS-028,Last 90 Days,65,59,3,3,0,8,36,95.2,86.4,93.0,Needs Improvement,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP029,Ali Saleem,Engineering,POS-029,Last 90 Days,65,63,1,1,0,6,38,98.4,90.5,96.4,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP030,Hamza Ahmad,Finance,POS-030,Last 90 Days,65,63,1,1,0,6,8,98.4,90.5,96.4,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP031,Sadia Haider,Engineering,POS-031,Last 90 Days,65,61,3,1,0,3,8,98.4,95.1,97.6,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP032,Laiba Mahmood,Sales,POS-032,Last 90 Days,65,64,1,0,0,2,19,100.0,96.9,99.2,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-03,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP033,Ali Chaudhry,IT,POS-033,Last 90 Days,65,63,2,0,0,5,28,100.0,92.1,98.0,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP034,Nida Sheikh,Sales,POS-034,Last 90 Days,65,64,1,0,0,6,22,100.0,90.6,97.7,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP035,Shahbaz Malik,Engineering,POS-035,Last 90 Days,65,63,1,1,0,4,26,98.4,93.7,97.2,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP036,Zoya Chaudhry,Sales,POS-036,Last 90 Days,65,60,4,1,0,4,14,98.4,93.3,97.1,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-01,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP037,Zara Mahmood,IT,POS-037,Last 90 Days,65,61,3,1,0,0,19,98.4,100.0,98.8,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-02,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP038,Ali Mahmood,Customer Support,POS-038,Last 90 Days,65,62,3,0,0,6,47,100.0,90.3,97.6,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP039,Kamran Hussain,Operations,POS-039,Last 90 Days,65,64,1,0,0,3,22,100.0,95.3,98.8,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-01,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP040,Ahmad Sheikh,Customer Support,POS-040,Last 90 Days,65,61,4,0,0,6,29,100.0,90.2,97.5,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-02,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP041,Omer Nawaz,Operations,POS-041,Last 90 Days,65,64,0,1,0,4,30,98.5,93.8,97.3,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP042,Amna Aslam,Customer Support,POS-042,Last 90 Days,65,60,3,2,0,6,29,96.8,90.0,95.1,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP043,Amir Javed,Operations,POS-043,Last 90 Days,65,62,2,1,0,6,46,98.4,90.3,96.4,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP044,Hafsa Khan,Finance,POS-044,Last 90 Days,65,63,2,0,0,3,19,100.0,95.2,98.8,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP045,Saad Ahmad,Operations,POS-045,Last 90 Days,65,58,4,3,0,8,39,95.1,86.2,92.9,Needs Improvement,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-01,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP046,Salman Iqbal,Customer Support,POS-046,Last 90 Days,65,63,2,0,0,3,25,100.0,95.2,98.8,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-02,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP047,Mahnoor Iqbal,Finance,POS-047,Last 90 Days,65,63,2,0,0,4,10,100.0,93.7,98.4,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP048,Sehrish Shah,Operations,POS-048,Last 90 Days,65,60,1,4,0,3,61,93.8,95.0,94.1,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-01,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP049,Sara Aslam,Sales,POS-049,Last 90 Days,65,60,3,2,1,7,39,96.8,88.3,91.7,Needs Improvement,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP050,Mohsin Butt,Finance,POS-050,Last 90 Days,65,64,0,1,0,3,14,98.5,95.3,97.7,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP051,Asad Ahmad,IT,POS-051,Last 90 Days,65,65,0,0,0,2,22,100.0,96.9,99.2,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP052,Raza Hassan,Customer Support,POS-052,Last 90 Days,65,64,1,0,0,5,25,100.0,92.2,98.0,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-02,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP053,Zeeshan Abbasi,HR,POS-053,Last 90 Days,65,65,0,0,0,4,0,100.0,93.8,98.5,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-03,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP054,Waqas Aslam,Engineering,POS-054,Last 90 Days,65,59,4,2,0,9,30,96.7,84.7,93.7,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-01,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP055,Sadia Mahmood,Engineering,POS-055,Last 90 Days,65,62,1,2,1,3,34,96.9,95.2,93.4,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP056,Saba Hassan,Operations,POS-056,Last 90 Days,65,62,3,0,0,1,24,100.0,98.4,99.6,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP057,Raza Haider,IT,POS-057,Last 90 Days,65,63,0,2,0,4,43,96.9,93.7,96.1,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP058,Shahid Malik,Engineering,POS-058,Last 90 Days,65,64,0,1,1,7,27,98.5,89.1,93.1,Needs Improvement,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP059,Anum Masood,Sales,POS-059,Last 90 Days,65,64,1,0,0,2,26,100.0,96.9,99.2,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-03,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP060,Mohsin Yousaf,Sales,POS-060,Last 90 Days,65,62,3,0,0,5,21,100.0,91.9,98.0,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-01,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP061,Asad Bashir,Sales,POS-061,Last 90 Days,65,64,1,0,0,5,17,100.0,92.2,98.0,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP062,Fahad Dar,Sales,POS-062,Last 90 Days,65,61,4,0,0,0,6,100.0,100.0,100.0,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-03,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP063,Ahmad Tariq,Sales,POS-063,Last 90 Days,65,62,3,0,0,5,7,100.0,91.9,98.0,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-01,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP064,Hassan Sheikh,Sales,POS-064,Last 90 Days,65,60,4,1,0,3,31,98.4,95.0,97.5,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP065,Amna Gill,Sales,POS-065,Last 90 Days,65,62,3,0,0,13,23,100.0,79.0,94.8,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-03,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP066,Ali Gill,HR,POS-066,Last 90 Days,65,61,3,1,1,6,7,98.4,90.2,93.3,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP067,Nida Hameed,Operations,POS-067,Last 90 Days,65,60,0,5,1,9,48,92.3,85.0,87.5,Needs Improvement,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP068,Sidra Hussain,Customer Support,POS-068,Last 90 Days,65,64,1,0,0,4,1,100.0,93.8,98.4,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP069,Mehwish Hussain,Operations,POS-069,Last 90 Days,65,61,3,1,0,7,19,98.4,88.5,95.9,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-01,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP070,Bilal Saeed,Engineering,POS-070,Last 90 Days,65,58,4,3,0,4,12,95.1,93.1,94.6,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP071,Eman Abbasi,Finance,POS-071,Last 90 Days,65,59,4,2,0,2,35,96.7,96.6,96.7,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP072,Fahad Hassan,Customer Support,POS-072,Last 90 Days,65,62,3,0,0,4,4,100.0,93.5,98.4,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP073,Ali Yousaf,Customer Support,POS-073,Last 90 Days,65,62,0,3,1,5,42,95.4,91.9,91.5,Needs Improvement,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-02,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP074,Omer Hameed,Sales,POS-074,Last 90 Days,65,60,3,2,0,8,34,96.8,86.7,94.2,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-03,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP075,Asad Raza,Operations,POS-075,Last 90 Days,65,61,4,0,0,2,17,100.0,96.7,99.2,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-01,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP076,Fahad Shah,Engineering,POS-076,Last 90 Days,65,64,1,0,0,6,2,100.0,90.6,97.7,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP077,Ahmad Awan,Customer Support,POS-077,Last 90 Days,65,65,0,0,0,2,17,100.0,96.9,99.2,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP078,Ahmad Nawaz,Engineering,POS-078,Last 90 Days,65,59,4,2,0,6,20,96.7,89.8,95.0,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-01,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP079,Hina Aslam,Customer Support,POS-079,Last 90 Days,65,64,0,1,0,2,11,98.5,96.9,98.1,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-02,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP080,Ali Mughal,Engineering,POS-080,Last 90 Days,65,64,1,0,0,2,16,100.0,96.9,99.2,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP081,Sonia Arif,HR,POS-081,Last 90 Days,65,60,3,2,0,4,0,96.8,93.3,95.9,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP082,Ali Dar,Engineering,POS-082,Last 90 Days,65,64,1,0,0,0,22,100.0,100.0,100.0,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP083,Raza Aziz,Customer Support,POS-083,Last 90 Days,65,62,3,0,0,3,31,100.0,95.2,98.8,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP084,Zara Ullah,HR,POS-084,Last 90 Days,65,60,3,2,0,12,10,96.8,80.0,92.6,Needs Improvement,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP085,Sara Yousaf,HR,POS-085,Last 90 Days,65,63,1,1,0,1,22,98.4,98.4,98.4,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-02,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP086,Hina Tariq,Operations,POS-086,Last 90 Days,65,64,1,0,0,0,24,100.0,100.0,100.0,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP087,Kashif Hameed,HR,POS-087,Last 90 Days,65,61,3,1,0,7,3,98.4,88.5,95.9,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP088,Sana Mughal,Operations,POS-088,Last 90 Days,65,62,3,0,0,2,25,100.0,96.8,99.2,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP089,Muneeb Haider,HR,POS-089,Last 90 Days,65,62,2,1,0,2,22,98.4,96.8,98.0,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-03,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP090,Noman Ahmad,Finance,POS-090,Last 90 Days,65,64,1,0,0,6,16,100.0,90.6,97.7,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP091,Nida Mughal,Finance,POS-091,Last 90 Days,65,61,4,0,0,0,4,100.0,100.0,100.0,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-02,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP092,Mahnoor Ali,Engineering,POS-092,Last 90 Days,65,62,3,0,0,4,27,100.0,93.5,98.4,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP093,Danish Siddiqui,Sales,POS-093,Last 90 Days,65,63,2,0,0,1,11,100.0,98.4,99.6,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-01,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP094,Akbar Abbasi,IT,POS-094,Last 90 Days,65,60,4,1,0,2,25,98.4,96.7,97.9,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-02,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP095,Haris Mahmood,IT,POS-095,Last 90 Days,65,63,2,0,0,0,28,100.0,100.0,100.0,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP096,Ayesha Abbasi,Sales,POS-096,Last 90 Days,65,62,3,0,0,6,42,100.0,90.3,97.6,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-01,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP097,Sana Arif,Sales,POS-097,Last 90 Days,65,63,2,0,0,3,15,100.0,95.2,98.8,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP098,Sidra Zafar,Customer Support,POS-098,Last 90 Days,65,63,0,2,2,7,27,96.9,88.9,88.9,Needs Improvement,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP099,Bilal Aslam,Finance,POS-099,Last 90 Days,65,64,1,0,0,4,18,100.0,93.8,98.4,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP100,Rabia Javed,Engineering,POS-100,Last 90 Days,65,61,1,3,1,6,29,95.3,90.2,91.0,Needs Improvement,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP101,Talha Dar,IT,POS-101,Last 90 Days,65,65,0,0,0,0,32,100.0,100.0,100.0,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP102,Akbar Gill,Sales,POS-102,Last 90 Days,65,64,0,1,0,1,17,98.5,98.4,98.5,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-01,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP103,Noor Masood,Customer Support,POS-103,Last 90 Days,65,65,0,0,0,0,18,100.0,100.0,100.0,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-02,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP104,Rabia Ali,IT,POS-104,Last 90 Days,65,59,4,2,0,9,18,96.7,84.7,93.7,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP105,Areeba Raza,Sales,POS-105,Last 90 Days,65,61,2,2,0,3,16,96.8,95.1,96.4,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP106,Hina Saleem,HR,POS-106,Last 90 Days,65,62,3,0,0,2,6,100.0,96.8,99.2,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-02,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP107,Zoya Mahmood,Engineering,POS-107,Last 90 Days,65,65,0,0,0,1,31,100.0,98.5,99.6,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP108,Ayesha Ahmad,HR,POS-108,Last 90 Days,65,61,4,0,0,1,11,100.0,98.4,99.6,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP109,Ali Farooq,Sales,POS-109,Last 90 Days,65,59,2,4,1,7,36,93.7,88.1,89.3,Needs Improvement,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP110,Arslan Masood,IT,POS-110,Last 90 Days,65,61,3,1,0,1,11,98.4,98.4,98.4,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP111,Sadia Bashir,Sales,POS-111,Last 90 Days,65,61,4,0,0,5,27,100.0,91.8,98.0,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-01,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP112,Sara Javed,Sales,POS-112,Last 90 Days,65,65,0,0,0,2,24,100.0,96.9,99.2,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP113,Shahbaz Gill,IT,POS-113,Last 90 Days,65,61,4,0,0,5,15,100.0,91.8,98.0,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP114,Hamza Hussain,HR,POS-114,Last 90 Days,65,63,2,0,0,4,12,100.0,93.7,98.4,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP115,Hafsa Abbasi,Engineering,POS-115,Last 90 Days,65,62,3,0,0,1,30,100.0,98.4,99.6,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP116,Ali Abbasi,Engineering,POS-116,Last 90 Days,65,59,2,4,0,6,34,93.7,89.8,92.7,Needs Improvement,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP117,Saad Ullah,Engineering,POS-117,Last 90 Days,65,59,4,2,0,6,21,96.7,89.8,95.0,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-01,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP118,Zoya Ali,Customer Support,POS-118,Last 90 Days,65,62,3,0,0,6,16,100.0,90.3,97.6,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-02,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP119,Ayesha Nawaz,Customer Support,POS-119,Last 90 Days,65,61,2,2,0,1,43,96.8,98.4,97.2,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP120,Ahmad Aziz,Operations,POS-120,Last 90 Days,65,60,4,1,0,2,16,98.4,96.7,97.9,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-01,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP121,Mehwish Tariq,Operations,POS-121,Last 90 Days,65,62,2,1,0,0,30,98.4,100.0,98.8,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP122,Hafsa Ullah,Operations,POS-122,Last 90 Days,65,62,3,0,0,0,27,100.0,100.0,100.0,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP123,Sehrish Ullah,Finance,POS-123,Last 90 Days,65,60,4,1,0,2,11,98.4,96.7,97.9,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP124,Fahad Javed,Sales,POS-124,Last 90 Days,65,64,0,1,0,0,43,98.5,100.0,98.8,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP125,Fatima Zafar,Sales,POS-125,Last 90 Days,65,61,4,0,0,6,16,100.0,90.2,97.5,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-03,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP126,Laiba Sheikh,Customer Support,POS-126,Last 90 Days,65,59,3,3,0,7,35,95.2,88.1,93.4,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP127,Khurram Yousaf,HR,POS-127,Last 90 Days,65,62,3,0,0,2,0,100.0,96.8,99.2,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-02,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP128,Zoya Farooq,Customer Support,POS-128,Last 90 Days,65,64,0,1,0,6,30,98.5,90.6,96.5,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP129,Danish Dar,Engineering,POS-129,Last 90 Days,65,62,3,0,0,1,11,100.0,98.4,99.6,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP130,Waqas Siddiqui,HR,POS-130,Last 90 Days,65,61,3,1,0,6,0,98.4,90.2,96.3,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-02,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP131,Ahmad Yousaf,IT,POS-131,Last 90 Days,65,62,3,0,0,0,17,100.0,100.0,100.0,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP132,Arham Qureshi,IT,POS-132,Last 90 Days,65,59,2,4,1,6,40,93.7,89.8,89.7,Needs Improvement,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP133,Usman Raza,Engineering,POS-133,Last 90 Days,65,61,4,0,0,5,33,100.0,91.8,98.0,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP134,Talha Awan,IT,POS-134,Last 90 Days,65,59,3,3,2,10,34,95.2,83.1,86.1,Needs Improvement,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP135,Eman Butt,Customer Support,POS-135,Last 90 Days,65,63,1,1,0,3,17,98.4,95.2,97.6,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP136,Fatima Saleem,HR,POS-136,Last 90 Days,65,64,0,1,0,1,13,98.5,98.4,98.5,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-02,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP137,Areeba Farooq,Customer Support,POS-137,Last 90 Days,65,60,4,1,0,5,53,98.4,91.7,96.7,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP138,Amir Saleem,Engineering,POS-138,Last 90 Days,65,59,1,5,1,3,35,92.2,94.9,89.9,Needs Improvement,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-01,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP139,Iqra Saeed,Operations,POS-139,Last 90 Days,65,62,2,1,0,3,27,98.4,95.2,97.6,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP140,Noman Rehman,Finance,POS-140,Last 90 Days,65,63,2,0,0,5,3,100.0,92.1,98.0,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP141,Asad Zafar,Operations,POS-141,Last 90 Days,65,62,3,0,0,5,9,100.0,91.9,98.0,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP142,Fahad Farooq,Engineering,POS-142,Last 90 Days,65,61,2,2,1,3,8,96.8,95.1,93.4,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP143,Hamza Awan,Finance,POS-143,Last 90 Days,65,64,1,0,0,6,13,100.0,90.6,97.7,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP144,Imran Ullah,Customer Support,POS-144,Last 90 Days,65,60,3,2,1,3,22,96.8,95.0,93.3,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP145,Ahsan Anwar,Sales,POS-145,Last 90 Days,65,61,4,0,0,0,10,100.0,100.0,100.0,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP146,Talha Khan,Finance,POS-146,Last 90 Days,65,61,3,1,1,3,2,98.4,95.1,94.6,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP147,Hassan Javed,Customer Support,POS-147,Last 90 Days,65,62,2,1,0,7,32,98.4,88.7,96.0,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP148,Sadia Malik,Sales,POS-148,Last 90 Days,65,62,2,1,0,0,38,98.4,100.0,98.8,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP149,Muneeb Hameed,Operations,POS-149,Last 90 Days,65,64,1,0,0,7,17,100.0,89.1,97.3,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP150,Sana Nawaz,Customer Support,POS-150,Last 90 Days,65,60,3,2,1,3,52,96.8,95.0,93.3,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP151,Farhan Rehman,Engineering,POS-151,Last 90 Days,65,62,0,3,0,3,43,95.4,95.2,95.3,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP152,Mahnoor Tariq,IT,POS-152,Last 90 Days,65,62,3,0,0,5,26,100.0,91.9,98.0,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP153,Kashif Abbasi,Engineering,POS-153,Last 90 Days,65,60,3,2,0,8,22,96.8,86.7,94.2,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-01,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP154,Hina Abbasi,Engineering,POS-154,Last 90 Days,65,61,3,1,1,4,28,98.4,93.4,94.2,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP155,Noman Malik,Customer Support,POS-155,Last 90 Days,65,63,2,0,0,6,35,100.0,90.5,97.6,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP156,Asad Malik,Engineering,POS-156,Last 90 Days,65,64,1,0,0,1,28,100.0,98.4,99.6,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-01,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP157,Saba Qureshi,Operations,POS-157,Last 90 Days,65,61,4,0,0,6,9,100.0,90.2,97.5,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP158,Imran Zafar,Operations,POS-158,Last 90 Days,65,64,1,0,0,5,29,100.0,92.2,98.0,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP159,Raza Ahmad,Engineering,POS-159,Last 90 Days,65,60,3,2,1,6,37,96.8,90.0,92.1,Needs Improvement,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-01,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP160,Rabia Ullah,Finance,POS-160,Last 90 Days,65,64,0,1,1,5,8,98.5,92.2,93.9,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-02,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP161,Iqra Yousaf,Finance,POS-161,Last 90 Days,65,61,3,1,1,4,0,98.4,93.4,94.2,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP162,Bilal Shah,Customer Support,POS-162,Last 90 Days,65,61,3,1,0,5,35,98.4,91.8,96.7,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP163,Sidra Sheikh,Engineering,POS-163,Last 90 Days,65,63,0,2,0,4,26,96.9,93.7,96.1,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP164,Zoya Saleem,Sales,POS-164,Last 90 Days,65,61,3,1,0,4,32,98.4,93.4,97.2,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-03,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP165,Waqas Butt,Sales,POS-165,Last 90 Days,65,63,1,1,0,6,38,98.4,90.5,96.4,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-01,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP166,Arslan Siddiqui,Sales,POS-166,Last 90 Days,65,64,0,1,0,5,26,98.5,92.2,96.9,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP167,Bilal Raza,Sales,POS-167,Last 90 Days,65,60,3,2,1,9,26,96.8,85.0,90.8,Needs Improvement,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-03,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP168,Akbar Saleem,Customer Support,POS-168,Last 90 Days,65,62,1,2,0,6,56,96.9,90.3,95.2,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP169,Iqra Qureshi,IT,POS-169,Last 90 Days,65,62,2,1,0,4,12,98.4,93.5,97.2,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP170,Hina Ahmad,Customer Support,POS-170,Last 90 Days,65,62,3,0,0,2,22,100.0,96.8,99.2,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP171,Usman Ullah,IT,POS-171,Last 90 Days,65,62,2,1,0,1,12,98.4,98.4,98.4,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP172,Zoya Hassan,Operations,POS-172,Last 90 Days,65,61,3,1,1,4,31,98.4,93.4,94.2,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP173,Sidra Abbasi,Finance,POS-173,Last 90 Days,65,63,2,0,0,4,15,100.0,93.7,98.4,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP174,Hassan Aslam,Sales,POS-174,Last 90 Days,65,62,2,1,0,5,20,98.4,91.9,96.8,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-01,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP175,Hassan Arif,Operations,POS-175,Last 90 Days,65,62,3,0,0,2,9,100.0,96.8,99.2,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP176,Ahsan Aziz,Sales,POS-176,Last 90 Days,65,65,0,0,0,4,7,100.0,93.8,98.5,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-03,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP177,Danish Anwar,HR,POS-177,Last 90 Days,65,64,0,1,0,11,29,98.5,82.8,94.5,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP178,Fatima Rehman,Sales,POS-178,Last 90 Days,65,60,3,2,0,7,21,96.8,88.3,94.7,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP179,Muneeb Javed,Operations,POS-179,Last 90 Days,65,60,4,1,0,5,40,98.4,91.7,96.7,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP180,Arham Hussain,Customer Support,POS-180,Last 90 Days,65,63,2,0,0,7,25,100.0,88.9,97.2,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP181,Saad Yousaf,Operations,POS-181,Last 90 Days,65,64,1,0,0,7,8,100.0,89.1,97.3,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP182,Waqas Ahmad,Sales,POS-182,Last 90 Days,65,63,1,1,0,2,7,98.4,96.8,98.0,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-03,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP183,Zain Saleem,IT,POS-183,Last 90 Days,65,64,0,1,0,4,21,98.5,93.8,97.3,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP184,Iqra Hassan,Operations,POS-184,Last 90 Days,65,61,3,1,0,4,24,98.4,93.4,97.2,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP185,Salman Hameed,Finance,POS-185,Last 90 Days,65,63,2,0,0,0,26,100.0,100.0,100.0,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP186,Zara Masood,IT,POS-186,Last 90 Days,65,60,3,2,0,4,8,96.8,93.3,95.9,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP187,Nida Mahmood,Operations,POS-187,Last 90 Days,65,59,4,2,1,2,48,96.7,96.6,93.7,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP188,Areeba Ahmad,IT,POS-188,Last 90 Days,65,62,2,1,0,4,18,98.4,93.5,97.2,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP189,Omer Masood,Engineering,POS-189,Last 90 Days,65,61,2,2,0,6,48,96.8,90.2,95.2,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP190,Noor Saeed,HR,POS-190,Last 90 Days,65,58,4,3,0,0,13,95.1,100.0,96.3,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-02,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP191,Danish Yousaf,Operations,POS-191,Last 90 Days,65,61,3,1,0,7,14,98.4,88.5,95.9,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP192,Kashif Hussain,Sales,POS-192,Last 90 Days,65,63,2,0,0,0,23,100.0,100.0,100.0,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-01,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP193,Zain Qureshi,Operations,POS-193,Last 90 Days,65,58,4,3,0,5,10,95.1,91.4,94.2,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP194,Shahid Ahmad,Customer Support,POS-194,Last 90 Days,65,64,1,0,0,2,28,100.0,96.9,99.2,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP195,Mohsin Khan,Engineering,POS-195,Last 90 Days,65,61,4,0,0,5,19,100.0,91.8,98.0,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP196,Mohsin Abbasi,Engineering,POS-196,Last 90 Days,65,63,2,0,0,3,27,100.0,95.2,98.8,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-02,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP197,Zeeshan Qureshi,HR,POS-197,Last 90 Days,65,61,2,2,0,9,31,96.8,85.2,93.9,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP198,Ali Tariq,Operations,POS-198,Last 90 Days,65,61,3,1,0,3,27,98.4,95.1,97.6,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-01,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP199,Zara Tariq,Customer Support,POS-199,Last 90 Days,65,63,1,1,0,3,37,98.4,95.2,97.6,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-02,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP200,Ahmad Abbasi,Customer Support,POS-200,Last 90 Days,65,60,2,3,1,8,39,95.2,86.7,90.1,Needs Improvement,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP201,Taha Saeed,HR,EXEC-HR-HEAD,Last 90 Days,65,61,2,2,0,2,18,96.9,96.7,96.9,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP202,Usman Hashmi,HR,POS-201,Last 90 Days,65,58,4,3,0,0,20,95.4,100.0,96.5,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP203,Zainab Awan,HR,POS-202,Last 90 Days,65,65,0,0,0,6,7,100.0,90.8,97.7,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP204,Mahnoor Khan,HR,POS-203,Last 90 Days,65,61,0,4,0,9,0,93.8,85.2,91.7,Good,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP205,Farhan Nadeem,HR,POS-204,Last 90 Days,65,57,4,4,1,8,12,93.8,86.0,91.9,Good,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-03,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP206,Minal Abbasi,HR,POS-205,Last 90 Days,65,59,3,3,0,5,10,95.4,91.5,94.4,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-03,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP207,Nida Sultan,HR,POS-206,Last 90 Days,65,58,1,6,0,9,20,90.8,84.5,89.2,Good,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP208,Omar Rauf,HR,POS-207,Last 90 Days,65,64,1,0,0,11,9,100.0,82.8,95.7,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-02,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP209,Adnan Aziz,HR,POS-208,Last 90 Days,65,60,2,3,0,4,12,95.4,93.3,94.9,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP210,Maha Latif,HR,POS-209,Last 90 Days,65,63,2,0,0,5,0,100.0,92.1,98.0,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-03,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP211,Adnan Abbasi,HR,POS-210,Last 90 Days,65,63,0,2,0,1,29,96.9,98.4,97.3,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP212,Talha Saleem,HR,POS-211,Last 90 Days,65,59,3,3,0,4,23,95.4,93.2,94.8,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP213,Talha Khalid,HR,POS-212,Last 90 Days,65,60,2,3,1,1,18,95.4,98.3,96.1,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP214,Talha Ejaz,HR,POS-213,Last 90 Days,65,62,2,1,0,8,17,98.5,87.1,95.6,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-03,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP215,Mehwish Baig,HR,POS-214,Last 90 Days,65,63,1,1,0,2,12,98.5,96.8,98.1,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP216,Sana Mahmood,HR,POS-215,Last 90 Days,65,62,1,2,0,5,15,96.9,91.9,95.7,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP217,Laiba Qureshi,HR,POS-216,Last 90 Days,65,55,3,7,0,10,0,89.2,81.8,87.4,Good,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP218,Laiba Zafar,HR,POS-217,Last 90 Days,65,62,3,0,0,3,10,100.0,95.2,98.8,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP219,Komal Yousaf,HR,POS-218,Last 90 Days,65,61,2,2,1,1,0,96.9,98.4,97.3,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-03,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP220,Taha Saleem,HR,POS-219,Last 90 Days,65,63,1,1,0,4,8,98.5,93.7,97.3,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP221,Anam Akhtar,HR,POS-220,Last 90 Days,65,62,0,3,0,2,9,95.4,96.8,95.7,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP222,Farhan Khan,HR,POS-221,Last 90 Days,65,62,2,1,0,1,19,98.5,98.4,98.4,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP223,Talha Mahmood,HR,POS-222,Last 90 Days,65,59,4,2,0,5,11,96.9,91.5,95.6,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP224,Laiba Ali,HR,POS-223,Last 90 Days,65,61,3,1,1,3,13,98.5,95.1,97.6,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-02,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP225,Noor Rauf,HR,POS-224,Last 90 Days,65,64,1,0,0,7,16,100.0,89.1,97.3,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-02,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP226,Taha Raza,HR,POS-225,Last 90 Days,65,63,2,0,0,2,20,100.0,96.8,99.2,Excellent,DEPARTMENT-001,Corporate Services,ORGANIZATIONAL-UNIT-HR-TEAM-01,LOC-HQ,COST-CENTER-HR,2026-08-01
+EMP227,Fahad Sheikh,Finance,EXEC-FIN-HEAD,Last 90 Days,65,62,3,0,0,2,0,100.0,96.8,99.2,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP228,Ahmed Farooq,Finance,POS-226,Last 90 Days,65,61,2,2,1,2,13,96.9,96.7,96.9,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP229,Danish Sultan,Finance,POS-227,Last 90 Days,65,65,0,0,0,0,0,100.0,100.0,100,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP230,Saba Nadeem,Finance,POS-228,Last 90 Days,65,60,2,3,0,1,3,95.4,98.3,96.1,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP231,Ayesha Aziz,Finance,POS-229,Last 90 Days,65,61,2,2,1,3,7,96.9,95.1,96.5,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP232,Raza Iqbal,Finance,POS-230,Last 90 Days,65,61,3,1,0,3,2,98.5,95.1,97.6,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP233,Eman Akhtar,Finance,POS-231,Last 90 Days,65,63,2,0,0,2,10,100.0,96.8,99.2,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP234,Hira Qureshi,Finance,POS-232,Last 90 Days,65,61,2,2,0,2,20,96.9,96.7,96.9,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP235,Farhan Munir,Finance,POS-233,Last 90 Days,65,59,6,0,0,4,4,100.0,93.2,98.3,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-02,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP236,Anam Nadeem,Finance,POS-234,Last 90 Days,65,62,2,1,0,11,8,98.5,82.3,94.4,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-02,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP237,Areeba Munir,Finance,POS-235,Last 90 Days,65,62,3,0,0,7,0,100.0,88.7,97.2,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP238,Kinza Ali,Finance,POS-236,Last 90 Days,65,65,0,0,0,7,9,100.0,89.2,97.3,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP239,Komal Sultan,Finance,POS-237,Last 90 Days,65,58,4,3,0,3,13,95.4,94.8,95.2,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-02,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP240,Eman Latif,Finance,POS-238,Last 90 Days,65,64,1,0,0,2,10,100.0,96.9,99.2,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP241,Mahnoor Hameed,Finance,POS-239,Last 90 Days,65,60,3,2,1,0,14,96.9,100.0,97.7,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-02,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP242,Mehwish Dar,Finance,POS-240,Last 90 Days,65,58,3,4,0,4,4,93.8,93.1,93.7,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP243,Mehwish Khalid,Finance,POS-241,Last 90 Days,65,59,4,2,0,7,15,96.9,88.1,94.7,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP244,Saad Rauf,Finance,POS-242,Last 90 Days,65,60,2,3,0,1,10,95.4,98.3,96.1,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP245,Ayesha Habib,Finance,POS-243,Last 90 Days,65,58,3,4,1,4,1,93.8,93.1,93.7,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP246,Ahmed Zafar,Finance,POS-244,Last 90 Days,65,64,1,0,0,4,11,100.0,93.8,98.4,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-02,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP247,Maha Aslam,Finance,POS-245,Last 90 Days,65,62,3,0,0,0,2,100.0,100.0,100,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP248,Anam Zafar,Finance,POS-246,Last 90 Days,65,57,2,6,0,7,13,90.8,87.7,90.0,Good,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP249,Noor Qureshi,Finance,POS-247,Last 90 Days,65,63,0,2,0,4,3,96.9,93.7,96.1,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-01,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP250,Taha Malik,Finance,POS-248,Last 90 Days,65,64,1,0,0,3,17,100.0,95.3,98.8,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP251,Mahnoor Javed,Finance,POS-249,Last 90 Days,65,62,0,3,1,6,14,95.4,90.3,94.1,Excellent,DEPARTMENT-002,Corporate Services,ORGANIZATIONAL-UNIT-FIN-TEAM-03,LOC-HQ,COST-CENTER-FIN,2026-08-01
+EMP252,Iqra Ismail,Sales,EXEC-SAL-HEAD,Last 90 Days,65,63,2,0,0,1,4,100.0,98.4,99.6,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP253,Hassan Nawaz,Sales,POS-250,Last 90 Days,65,61,1,3,1,1,4,95.4,98.4,96.1,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP254,Farhan Awan,Sales,POS-251,Last 90 Days,65,61,2,2,0,6,17,96.9,90.2,95.2,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP255,Rabia Rashid,Sales,POS-252,Last 90 Days,65,62,2,1,1,3,2,98.5,95.2,97.6,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP256,Omar Farooq,Sales,POS-253,Last 90 Days,65,65,0,0,0,2,0,100.0,96.9,99.2,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP257,Adnan Baig,Sales,POS-254,Last 90 Days,65,60,3,2,0,2,12,96.9,96.7,96.9,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-02,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP258,Ayesha Khalid,Sales,POS-255,Last 90 Days,65,65,0,0,0,7,6,100.0,89.2,97.3,Excellent,DEPARTMENT-003,Commercial Services,ORGANIZATIONAL-UNIT-SAL-TEAM-01,LOC-NORTH,COST-CENTER-SAL,2026-08-01
+EMP259,Usman Nasir,Customer Support,EXEC-CS-HEAD,Last 90 Days,65,62,0,3,1,6,16,95.4,90.3,94.1,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP260,Rabia Farooq,Customer Support,POS-256,Last 90 Days,65,60,3,2,2,7,13,96.9,88.3,94.8,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP261,Anam Ahmed,Customer Support,POS-257,Last 90 Days,65,61,1,3,0,0,17,95.4,100.0,96.5,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP262,Omar Riaz,Customer Support,POS-258,Last 90 Days,65,64,1,0,0,0,31,100.0,100.0,100,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-02,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP263,Anusha Rauf,Customer Support,POS-259,Last 90 Days,65,62,2,1,0,6,5,98.5,90.3,96.4,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP264,Areeba Rauf,Customer Support,POS-260,Last 90 Days,65,64,1,0,0,8,15,100.0,87.5,96.9,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-03,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP265,Danish Saleem,Customer Support,POS-261,Last 90 Days,65,60,1,4,0,0,20,93.8,100.0,95.4,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP266,Maryam Khalid,Customer Support,POS-262,Last 90 Days,65,61,2,2,1,3,18,96.9,95.1,96.5,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP267,Haris Awan,Customer Support,POS-263,Last 90 Days,65,60,2,3,1,0,27,95.4,100.0,96.5,Excellent,DEPARTMENT-004,Commercial Services,ORGANIZATIONAL-UNIT-CS-TEAM-01,LOC-CENTRAL,COST-CENTER-CS,2026-08-01
+EMP268,Fatima Mughal,Engineering,EXEC-ENG-HEAD,Last 90 Days,65,64,1,0,0,9,21,100.0,85.9,96.5,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP269,Noor Bukhari,Engineering,POS-264,Last 90 Days,65,64,0,1,0,4,29,98.5,93.8,97.3,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP270,Laiba Saeed,Engineering,POS-265,Last 90 Days,65,61,0,4,0,0,29,93.8,100.0,95.4,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP271,Minal Khalid,Engineering,POS-266,Last 90 Days,65,64,0,1,0,0,20,98.5,100.0,98.8,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP272,Ali Siddiqui,Engineering,POS-267,Last 90 Days,65,63,2,0,0,5,10,100.0,92.1,98.0,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP273,Haris Ejaz,Engineering,POS-268,Last 90 Days,65,61,4,0,0,1,26,100.0,98.4,99.6,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-01,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP274,Adnan Awan,Engineering,POS-269,Last 90 Days,65,59,6,0,0,2,9,100.0,96.6,99.2,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP275,Fatima Saeed,Engineering,POS-270,Last 90 Days,65,62,2,1,0,7,8,98.5,88.7,96.0,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-01,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP276,Ali Riaz,Engineering,POS-271,Last 90 Days,65,62,3,0,0,8,18,100.0,87.1,96.8,Excellent,DEPARTMENT-005,Technology and Innovation,ORGANIZATIONAL-UNIT-ENG-TEAM-03,LOC-HQ,COST-CENTER-ENG,2026-08-01
+EMP277,Amna Chaudhry,Operations,EXEC-OPS-HEAD,Last 90 Days,65,60,3,2,1,5,15,96.9,91.7,95.6,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP278,Kinza Mirza,Operations,POS-272,Last 90 Days,65,61,4,0,0,1,22,100.0,98.4,99.6,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP279,Minal Ali,Operations,POS-273,Last 90 Days,65,61,3,1,1,0,28,98.5,100.0,98.8,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP280,Noman Waheed,Operations,POS-274,Last 90 Days,65,64,0,1,0,3,12,98.5,95.3,97.7,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP281,Noman Shah,Operations,POS-275,Last 90 Days,65,61,4,0,0,4,21,100.0,93.4,98.4,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-01,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP282,Sana Latif,Operations,POS-276,Last 90 Days,65,65,0,0,0,3,13,100.0,95.4,98.8,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-01,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP283,Komal Baig,Operations,POS-277,Last 90 Days,65,60,3,2,0,4,25,96.9,93.3,96.0,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP284,Hamza Aziz,Operations,POS-278,Last 90 Days,65,62,3,0,0,2,7,100.0,96.8,99.2,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP285,Maryam Baig,Operations,POS-279,Last 90 Days,65,59,4,2,1,4,22,96.9,93.2,96.0,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP286,Taha Munir,Operations,POS-280,Last 90 Days,65,63,2,0,0,4,25,100.0,93.7,98.4,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-01,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP287,Komal Waheed,Operations,POS-281,Last 90 Days,65,63,2,0,0,4,12,100.0,93.7,98.4,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP288,Hira Chaudhry,Operations,POS-282,Last 90 Days,65,59,2,4,0,2,5,93.8,96.6,94.5,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-01,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP289,Ali Javed,Operations,POS-283,Last 90 Days,65,60,3,2,0,0,22,96.9,100.0,97.7,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-03,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP290,Sara Shah,Operations,POS-284,Last 90 Days,65,64,1,0,0,5,24,100.0,92.2,98.0,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-01,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP291,Raza Khan,Operations,POS-285,Last 90 Days,65,61,1,3,1,3,7,95.4,95.1,95.3,Excellent,DEPARTMENT-006,Enterprise Operations,ORGANIZATIONAL-UNIT-OPS-TEAM-02,LOC-CENTRAL,COST-CENTER-OPS,2026-08-01
+EMP292,Imran Mughal,IT,EXEC-IT-HEAD,Last 90 Days,65,65,0,0,0,1,18,100.0,98.5,99.6,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP293,Asad Akhtar,IT,POS-286,Last 90 Days,65,56,3,6,0,7,19,90.8,87.5,90.0,Good,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP294,Sara Mirza,IT,POS-287,Last 90 Days,65,59,3,3,1,2,0,95.4,96.6,95.7,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP295,Raza Rehman,IT,POS-288,Last 90 Days,65,62,3,0,0,6,15,100.0,90.3,97.6,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP296,Fahad Aziz,IT,POS-289,Last 90 Days,65,60,3,2,2,6,0,96.9,90.0,95.2,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-02,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP297,Usman Mughal,IT,POS-290,Last 90 Days,65,62,3,0,0,7,9,100.0,88.7,97.2,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP298,Ayesha Mughal,IT,POS-291,Last 90 Days,65,61,4,0,0,4,8,100.0,93.4,98.4,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP299,Noor Nadeem,IT,POS-292,Last 90 Days,65,56,3,6,0,0,2,90.8,100.0,93.1,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-02,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP300,Talha Akhtar,IT,POS-293,Last 90 Days,65,61,2,2,2,6,14,96.9,90.2,95.2,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP301,Talha Ali,IT,POS-294,Last 90 Days,65,65,0,0,0,0,32,100.0,100.0,100,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP302,Zainab Mahmood,IT,POS-295,Last 90 Days,65,61,4,0,0,2,21,100.0,96.7,99.2,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP303,Saba Hameed,IT,POS-296,Last 90 Days,65,63,0,2,0,6,19,96.9,90.5,95.3,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP304,Sana Akhtar,IT,POS-297,Last 90 Days,65,60,4,1,0,4,27,98.5,93.3,97.2,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-02,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP305,Talha Habib,IT,POS-298,Last 90 Days,65,62,3,0,0,0,0,100.0,100.0,100,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-02,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP306,Imran Hameed,IT,POS-299,Last 90 Days,65,61,1,3,0,5,11,95.4,91.8,94.5,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-02,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP307,Omar Habib,IT,POS-300,Last 90 Days,65,62,3,0,0,0,11,100.0,100.0,100,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-02,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP308,Adnan Riaz,IT,POS-301,Last 90 Days,65,62,3,0,0,1,10,100.0,98.4,99.6,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP309,Shahzaib Hashmi,IT,POS-302,Last 90 Days,65,63,2,0,0,4,9,100.0,93.7,98.4,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP310,Maryam Chaudhry,IT,POS-303,Last 90 Days,65,62,0,3,1,3,10,95.4,95.2,95.3,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-02,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP311,Junaid Zafar,IT,POS-304,Last 90 Days,65,60,5,0,0,5,9,100.0,91.7,97.9,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-02,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP312,Areeba Tariq,IT,POS-305,Last 90 Days,65,59,2,4,1,3,6,93.8,94.9,94.1,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP313,Kamran Mughal,IT,POS-306,Last 90 Days,65,63,1,1,0,7,0,98.5,88.9,96.1,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP314,Anam Hameed,IT,POS-307,Last 90 Days,65,62,2,1,1,6,10,98.5,90.3,96.4,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-01,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP315,Maha Abbasi,IT,POS-308,Last 90 Days,65,63,0,2,2,1,20,96.9,98.4,97.3,Excellent,DEPARTMENT-007,Technology and Innovation,ORGANIZATIONAL-UNIT-IT-TEAM-03,LOC-HQ,COST-CENTER-IT,2026-08-01
+EMP316,Imran Abbasi,Medical Care,EXEC-MED-HEAD,Last 90 Days,65,62,2,1,1,5,14,98.5,91.9,96.8,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP317,Anam Khan,Medical Care,POS-309,Last 90 Days,65,63,1,1,0,0,23,98.5,100.0,98.8,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP318,Haris Khalid,Medical Care,POS-310,Last 90 Days,65,62,3,0,0,4,22,100.0,93.5,98.4,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP319,Anusha Baig,Medical Care,POS-311,Last 90 Days,65,57,5,3,1,5,30,95.4,91.2,94.3,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP320,Shahzaib Iqbal,Medical Care,POS-312,Last 90 Days,65,58,3,4,0,0,34,93.8,100.0,95.4,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP321,Hira Awan,Medical Care,POS-313,Last 90 Days,65,59,4,2,0,4,23,96.9,93.2,96.0,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP322,Kinza Butt,Medical Care,POS-314,Last 90 Days,65,60,2,3,0,3,25,95.4,95.0,95.3,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP323,Rabia Bukhari,Medical Care,POS-315,Last 90 Days,65,61,0,4,0,5,30,93.8,91.8,93.3,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP324,Waqas Farooq,Medical Care,POS-316,Last 90 Days,65,61,3,1,0,5,29,98.5,91.8,96.8,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP325,Eman Iqbal,Medical Care,POS-317,Last 90 Days,65,63,2,0,0,0,24,100.0,100.0,100,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP326,Hira Yousaf,Medical Care,POS-318,Last 90 Days,65,57,4,4,0,6,6,93.8,89.5,92.8,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-01,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP327,Sidra Yousaf,Medical Care,POS-319,Last 90 Days,65,62,1,2,0,7,22,96.9,88.7,94.9,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-01,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP328,Raza Javed,Medical Care,POS-320,Last 90 Days,65,58,0,7,0,6,25,89.2,89.7,89.3,Good,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP329,Ali Aziz,Medical Care,POS-321,Last 90 Days,65,62,1,2,0,0,26,96.9,100.0,97.7,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP330,Farhan Khalid,Medical Care,POS-322,Last 90 Days,65,65,0,0,0,7,8,100.0,89.2,97.3,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP331,Iqra Saleem,Medical Care,POS-323,Last 90 Days,65,59,4,2,0,0,26,96.9,100.0,97.7,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP332,Maryam Ismail,Medical Care,POS-324,Last 90 Days,65,64,0,1,0,6,31,98.5,90.6,96.5,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-01,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP333,Bilal Zafar,Medical Care,POS-325,Last 90 Days,65,61,1,3,0,3,27,95.4,95.1,95.3,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP334,Fahad Hashmi,Medical Care,POS-326,Last 90 Days,65,62,2,1,1,6,7,98.5,90.3,96.4,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP335,Haris Rauf,Medical Care,POS-327,Last 90 Days,65,64,1,0,0,0,34,100.0,100.0,100,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-01,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP336,Kinza Faisal,Medical Care,POS-328,Last 90 Days,65,64,0,1,1,6,28,98.5,90.6,96.5,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP337,Junaid Mahmood,Medical Care,POS-329,Last 90 Days,65,62,0,3,0,0,11,95.4,100.0,96.5,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP338,Imran Malik,Medical Care,POS-330,Last 90 Days,65,57,6,2,2,5,6,96.9,91.2,95.5,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-01,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP339,Saba Saleem,Medical Care,POS-331,Last 90 Days,65,62,1,2,0,5,23,96.9,91.9,95.7,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP340,Eman Raza,Medical Care,POS-332,Last 90 Days,65,64,1,0,0,2,26,100.0,96.9,99.2,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP341,Kashif Latif,Medical Care,POS-333,Last 90 Days,65,60,3,2,0,7,5,96.9,88.3,94.8,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP342,Maha Mughal,Medical Care,POS-334,Last 90 Days,65,61,0,4,0,4,34,93.8,93.4,93.7,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP343,Taha Butt,Medical Care,POS-335,Last 90 Days,65,62,2,1,0,8,39,98.5,87.1,95.6,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-01,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP344,Saba Latif,Medical Care,POS-336,Last 90 Days,65,61,3,1,0,0,26,98.5,100.0,98.8,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP345,Sana Chaudhry,Medical Care,POS-337,Last 90 Days,65,65,0,0,0,1,32,100.0,98.5,99.6,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP346,Hira Hashmi,Medical Care,POS-338,Last 90 Days,65,64,1,0,0,1,25,100.0,98.4,99.6,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP347,Maryam Tariq,Medical Care,POS-339,Last 90 Days,65,61,3,1,0,3,25,98.5,95.1,97.6,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-01,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP348,Anusha Latif,Medical Care,POS-340,Last 90 Days,65,56,6,3,0,5,27,95.4,91.1,94.3,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP349,Iqra Nawaz,Medical Care,POS-341,Last 90 Days,65,60,2,3,0,3,24,95.4,95.0,95.3,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP350,Noor Abbasi,Medical Care,POS-342,Last 90 Days,65,59,3,3,1,5,28,95.4,91.5,94.4,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP351,Talha Shah,Medical Care,POS-343,Last 90 Days,65,64,1,0,0,3,14,100.0,95.3,98.8,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP352,Bilal Mughal,Medical Care,POS-344,Last 90 Days,65,61,3,1,0,1,22,98.5,98.4,98.4,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-01,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP353,Nida Latif,Medical Care,POS-345,Last 90 Days,65,62,2,1,1,0,5,98.5,100.0,98.8,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP354,Anam Khalid,Medical Care,POS-346,Last 90 Days,65,64,0,1,0,5,26,98.5,92.2,96.9,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-02,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP355,Saad Shah,Medical Care,POS-347,Last 90 Days,65,63,2,0,0,2,8,100.0,96.8,99.2,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP356,Hira Mirza,Medical Care,POS-348,Last 90 Days,65,61,3,1,0,0,11,98.5,100.0,98.8,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP357,Kamran Ismail,Medical Care,POS-349,Last 90 Days,65,61,4,0,0,5,37,100.0,91.8,98.0,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP358,Junaid Saeed,Medical Care,POS-350,Last 90 Days,65,60,2,3,0,8,14,95.4,86.7,93.2,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-03,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP359,Saba Mahmood,Medical Care,POS-351,Last 90 Days,65,61,2,2,0,1,10,96.9,98.4,97.3,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-01,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP360,Omar Qureshi,Medical Care,POS-352,Last 90 Days,65,60,3,2,0,3,6,96.9,95.0,96.4,Excellent,DEPARTMENT-008,Healthcare Services,ORGANIZATIONAL-UNIT-MED-TEAM-01,LOC-MEDICAL,COST-CENTER-MED,2026-08-01
+EMP361,Hira Siddiqui,Training & Development,EXEC-TRN-HEAD,Last 90 Days,65,61,4,0,0,6,7,100.0,90.2,97.5,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP362,Iqra Mahmood,Training & Development,POS-353,Last 90 Days,65,58,3,4,0,2,3,93.8,96.6,94.5,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP363,Shahzaib Rauf,Training & Development,POS-354,Last 90 Days,65,62,0,3,2,5,6,95.4,91.9,94.5,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP364,Iqra Malik,Training & Development,POS-355,Last 90 Days,65,58,3,4,0,4,19,93.8,93.1,93.7,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP365,Noor Raza,Training & Development,POS-356,Last 90 Days,65,62,2,1,0,7,19,98.5,88.7,96.0,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP366,Saad Khan,Training & Development,POS-357,Last 90 Days,65,62,1,2,0,11,20,96.9,82.3,93.3,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP367,Laiba Siddiqui,Training & Development,POS-358,Last 90 Days,65,60,1,4,0,2,11,93.8,96.7,94.6,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP368,Saba Hashmi,Training & Development,POS-359,Last 90 Days,65,63,1,1,0,4,4,98.5,93.7,97.3,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP369,Maha Rauf,Training & Development,POS-360,Last 90 Days,65,65,0,0,0,1,10,100.0,98.5,99.6,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP370,Anusha Mahmood,Training & Development,POS-361,Last 90 Days,65,63,1,1,0,6,12,98.5,90.5,96.5,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-02,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP371,Omar Tariq,Training & Development,POS-362,Last 90 Days,65,64,1,0,0,2,17,100.0,96.9,99.2,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP372,Hassan Nadeem,Training & Development,POS-363,Last 90 Days,65,61,1,3,0,4,12,95.4,93.4,94.9,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP373,Noman Nawaz,Training & Development,POS-364,Last 90 Days,65,65,0,0,0,0,7,100.0,100.0,100,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP374,Iqra Habib,Training & Development,POS-365,Last 90 Days,65,62,2,1,0,4,8,98.5,93.5,97.2,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP375,Sana Mirza,Training & Development,POS-366,Last 90 Days,65,58,1,6,0,8,13,90.8,86.2,89.6,Good,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-02,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP376,Amna Nasir,Training & Development,POS-367,Last 90 Days,65,65,0,0,0,5,4,100.0,92.3,98.1,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP377,Anam Mirza,Training & Development,POS-368,Last 90 Days,65,55,4,6,0,4,14,90.8,92.7,91.3,Good,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-02,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP378,Anam Qureshi,Training & Development,POS-369,Last 90 Days,65,60,3,2,0,4,3,96.9,93.3,96.0,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP379,Anusha Qureshi,Training & Development,POS-370,Last 90 Days,65,55,5,5,0,2,19,92.3,96.4,93.3,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP380,Maha Waheed,Training & Development,POS-371,Last 90 Days,65,63,1,1,0,3,2,98.5,95.2,97.7,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-02,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP381,Iqra Latif,Training & Development,POS-372,Last 90 Days,65,60,4,1,0,5,0,98.5,91.7,96.8,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP382,Fahad Ahmed,Training & Development,POS-373,Last 90 Days,65,63,2,0,0,3,5,100.0,95.2,98.8,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP383,Rabia Awan,Training & Development,POS-374,Last 90 Days,65,61,3,1,1,4,25,98.5,93.4,97.2,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP384,Ayesha Farooq,Training & Development,POS-375,Last 90 Days,65,62,1,2,0,1,4,96.9,98.4,97.3,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP385,Waqas Raza,Training & Development,POS-376,Last 90 Days,65,61,4,0,0,8,14,100.0,86.9,96.7,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP386,Areeba Nasir,Training & Development,POS-377,Last 90 Days,65,61,1,3,0,6,2,95.4,90.2,94.1,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-02,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP387,Usman Rashid,Training & Development,POS-378,Last 90 Days,65,62,2,1,1,2,0,98.5,96.8,98.0,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP388,Kashif Mughal,Training & Development,POS-379,Last 90 Days,65,55,4,6,0,2,13,90.8,96.4,92.2,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP389,Amna Latif,Training & Development,POS-380,Last 90 Days,65,65,0,0,0,5,0,100.0,92.3,98.1,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP390,Nida Ali,Training & Development,POS-381,Last 90 Days,65,60,3,2,0,6,19,96.9,90.0,95.2,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP391,Zainab Aslam,Training & Development,POS-382,Last 90 Days,65,63,1,1,0,3,18,98.5,95.2,97.7,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-02,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP392,Danish Zafar,Training & Development,POS-383,Last 90 Days,65,61,0,4,0,5,4,93.8,91.8,93.3,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP393,Nida Awan,Training & Development,POS-384,Last 90 Days,65,61,2,2,0,1,4,96.9,98.4,97.3,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP394,Usman Ansari,Training & Development,POS-385,Last 90 Days,65,63,1,1,0,4,0,98.5,93.7,97.3,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-02,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP395,Ayesha Raza,Training & Development,POS-386,Last 90 Days,65,62,3,0,0,5,25,100.0,91.9,98.0,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP396,Minal Ahmed,Training & Development,POS-387,Last 90 Days,65,61,2,2,0,2,4,96.9,96.7,96.9,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP397,Maryam Ahmed,Training & Development,POS-388,Last 90 Days,65,59,2,4,0,4,20,93.8,93.2,93.7,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP398,Hassan Chaudhry,Training & Development,POS-389,Last 90 Days,65,62,2,1,0,6,19,98.5,90.3,96.4,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP399,Nida Khalid,Training & Development,POS-390,Last 90 Days,65,60,5,0,0,4,12,100.0,93.3,98.3,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP400,Hassan Shah,Training & Development,POS-391,Last 90 Days,65,65,0,0,0,6,17,100.0,90.8,97.7,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP401,Ahmed Malik,Training & Development,POS-392,Last 90 Days,65,58,3,4,0,9,10,93.8,84.5,91.5,Good,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP402,Asad Habib,Training & Development,POS-393,Last 90 Days,65,65,0,0,0,0,8,100.0,100.0,100,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-02,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP403,Ayesha Khan,Training & Development,POS-394,Last 90 Days,65,65,0,0,0,1,2,100.0,98.5,99.6,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-01,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP404,Adnan Aslam,Training & Development,POS-395,Last 90 Days,65,63,2,0,0,0,5,100.0,100.0,100,Excellent,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-03,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP405,Kinza Yousaf,Training & Development,POS-396,Last 90 Days,65,58,2,5,0,6,11,92.3,89.7,91.6,Good,DEPARTMENT-009,Learning Services,ORGANIZATIONAL-UNIT-TRN-TEAM-02,LOC-CAMPUS,COST-CENTER-TRN,2026-08-01
+EMP406,Taha Ejaz,Administration & Facilities,EXEC-ADM-HEAD,Last 90 Days,65,64,1,0,0,5,6,100.0,92.2,98.0,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP407,Rabia Raza,Administration & Facilities,POS-397,Last 90 Days,65,60,2,3,0,3,22,95.4,95.0,95.3,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP408,Anam Yousaf,Administration & Facilities,POS-398,Last 90 Days,65,59,3,3,0,2,9,95.4,96.6,95.7,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP409,Waqas Akhtar,Administration & Facilities,POS-399,Last 90 Days,65,62,3,0,0,2,8,100.0,96.8,99.2,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP410,Asad Rehman,Administration & Facilities,POS-400,Last 90 Days,65,63,1,1,0,0,0,98.5,100.0,98.8,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP411,Hamza Habib,Administration & Facilities,POS-401,Last 90 Days,65,65,0,0,0,7,2,100.0,89.2,97.3,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP412,Noor Mahmood,Administration & Facilities,POS-402,Last 90 Days,65,61,2,2,0,2,9,96.9,96.7,96.9,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP413,Ali Akhtar,Administration & Facilities,POS-403,Last 90 Days,65,62,3,0,0,2,20,100.0,96.8,99.2,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-01,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP414,Zainab Tariq,Administration & Facilities,POS-404,Last 90 Days,65,57,4,4,1,0,14,93.8,100.0,95.4,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-03,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP415,Mahnoor Aziz,Administration & Facilities,POS-405,Last 90 Days,65,60,2,3,0,0,10,95.4,100.0,96.5,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP416,Nida Raza,Administration & Facilities,POS-406,Last 90 Days,65,58,5,2,0,1,14,96.9,98.3,97.3,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-01,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP417,Saba Ali,Administration & Facilities,POS-407,Last 90 Days,65,62,2,1,0,5,12,98.5,91.9,96.8,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-03,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP418,Imran Raza,Administration & Facilities,POS-408,Last 90 Days,65,60,4,1,0,3,12,98.5,95.0,97.6,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP419,Anam Baig,Administration & Facilities,POS-409,Last 90 Days,65,62,2,1,1,0,11,98.5,100.0,98.8,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-03,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP420,Imran Faisal,Administration & Facilities,POS-410,Last 90 Days,65,63,2,0,0,5,8,100.0,92.1,98.0,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP421,Amna Mirza,Administration & Facilities,POS-411,Last 90 Days,65,59,1,5,1,4,2,92.3,93.2,92.5,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-03,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP422,Farhan Ismail,Administration & Facilities,POS-412,Last 90 Days,65,58,2,5,0,6,0,92.3,89.7,91.6,Good,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP423,Danish Latif,Administration & Facilities,POS-413,Last 90 Days,65,61,1,3,1,8,9,95.4,86.9,93.3,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP424,Omar Hameed,Administration & Facilities,POS-414,Last 90 Days,65,60,2,3,1,12,0,95.4,80.0,91.5,Good,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP425,Saad Awan,Administration & Facilities,POS-415,Last 90 Days,65,64,0,1,1,3,0,98.5,95.3,97.7,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-01,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP426,Hassan Khan,Administration & Facilities,POS-416,Last 90 Days,65,61,4,0,0,2,12,100.0,96.7,99.2,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP427,Zainab Ahmed,Administration & Facilities,POS-417,Last 90 Days,65,65,0,0,0,2,13,100.0,96.9,99.2,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-03,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP428,Kinza Munir,Administration & Facilities,POS-418,Last 90 Days,65,63,2,0,0,3,13,100.0,95.2,98.8,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP429,Komal Latif,Administration & Facilities,POS-419,Last 90 Days,65,60,4,1,0,6,15,98.5,90.0,96.3,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP430,Saad Raza,Administration & Facilities,POS-420,Last 90 Days,65,61,1,3,0,0,13,95.4,100.0,96.5,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-01,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP431,Noman Iqbal,Administration & Facilities,POS-421,Last 90 Days,65,64,1,0,0,4,1,100.0,93.8,98.4,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-03,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP432,Kinza Hashmi,Administration & Facilities,POS-422,Last 90 Days,65,61,3,1,1,4,13,98.5,93.4,97.2,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-01,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP433,Amna Mahmood,Administration & Facilities,POS-423,Last 90 Days,65,56,3,6,0,4,0,90.8,92.9,91.3,Good,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-03,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP434,Ayesha Awan,Administration & Facilities,POS-424,Last 90 Days,65,63,2,0,0,8,9,100.0,87.3,96.8,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP435,Kamran Sultan,Administration & Facilities,POS-425,Last 90 Days,65,64,1,0,0,5,7,100.0,92.2,98.0,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-01,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP436,Anusha Chaudhry,Administration & Facilities,POS-426,Last 90 Days,65,61,2,2,0,7,23,96.9,88.5,94.8,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-01,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP437,Ali Ismail,Administration & Facilities,POS-427,Last 90 Days,65,53,5,7,0,4,0,89.2,92.5,90.0,Good,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP438,Fahad Habib,Administration & Facilities,POS-428,Last 90 Days,65,64,0,1,1,0,12,98.5,100.0,98.8,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-01,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP439,Imran Shah,Administration & Facilities,POS-429,Last 90 Days,65,59,3,3,0,5,11,95.4,91.5,94.4,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP440,Iqra Zafar,Administration & Facilities,POS-430,Last 90 Days,65,59,2,4,0,5,10,93.8,91.5,93.3,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP441,Mahnoor Waheed,Administration & Facilities,POS-431,Last 90 Days,65,61,1,3,0,4,3,95.4,93.4,94.9,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-03,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP442,Usman Riaz,Administration & Facilities,POS-432,Last 90 Days,65,59,2,4,0,5,14,93.8,91.5,93.3,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP443,Noman Ismail,Administration & Facilities,POS-433,Last 90 Days,65,61,2,2,0,8,22,96.9,86.9,94.4,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-03,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP444,Ahmed Latif,Administration & Facilities,POS-434,Last 90 Days,65,59,2,4,0,7,4,93.8,88.1,92.4,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-03,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP445,Areeba Baig,Administration & Facilities,POS-435,Last 90 Days,65,57,3,5,1,3,8,92.3,94.7,92.9,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP446,Nida Khan,Administration & Facilities,POS-436,Last 90 Days,65,62,3,0,0,4,20,100.0,93.5,98.4,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-02,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP447,Junaid Qureshi,Administration & Facilities,POS-437,Last 90 Days,65,59,3,3,0,1,23,95.4,98.3,96.1,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-01,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP448,Kashif Siddiqui,Administration & Facilities,POS-438,Last 90 Days,65,62,1,2,2,7,12,96.9,88.7,94.9,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-01,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP449,Rabia Mahmood,Administration & Facilities,POS-439,Last 90 Days,65,62,3,0,0,2,22,100.0,96.8,99.2,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-01,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP450,Sana Baig,Administration & Facilities,POS-440,Last 90 Days,65,59,3,3,1,3,17,95.4,94.9,95.3,Excellent,DEPARTMENT-010,Corporate Services,ORGANIZATIONAL-UNIT-ADM-TEAM-01,LOC-HQ,COST-CENTER-ADM,2026-08-01
+EMP451,Nida Farooq,Legal & Compliance,EXEC-LGL-HEAD,Last 90 Days,65,61,4,0,0,3,10,100.0,95.1,98.8,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP452,Iqra Chaudhry,Legal & Compliance,POS-441,Last 90 Days,65,64,1,0,0,0,19,100.0,100.0,100,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP453,Arham Baig,Legal & Compliance,POS-442,Last 90 Days,65,65,0,0,0,4,9,100.0,93.8,98.5,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP454,Arham Rashid,Legal & Compliance,POS-443,Last 90 Days,65,63,2,0,0,1,11,100.0,98.4,99.6,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP455,Adnan Saeed,Legal & Compliance,POS-444,Last 90 Days,65,62,2,1,0,6,14,98.5,90.3,96.4,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP456,Areeba Saleem,Legal & Compliance,POS-445,Last 90 Days,65,63,0,2,0,7,10,96.9,88.9,94.9,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP457,Saba Abbasi,Legal & Compliance,POS-446,Last 90 Days,65,63,2,0,0,7,5,100.0,88.9,97.2,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP458,Taha Ansari,Legal & Compliance,POS-447,Last 90 Days,65,59,0,6,1,8,16,90.8,86.4,89.7,Good,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP459,Minal Iqbal,Legal & Compliance,POS-448,Last 90 Days,65,56,3,6,0,5,13,90.8,91.1,90.8,Good,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP460,Ayesha Javed,Legal & Compliance,POS-449,Last 90 Days,65,62,0,3,0,2,20,95.4,96.8,95.7,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP461,Taha Qureshi,Legal & Compliance,POS-450,Last 90 Days,65,56,5,4,0,1,11,93.8,98.2,94.9,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP462,Waqas Ali,Legal & Compliance,POS-451,Last 90 Days,65,60,1,4,1,1,2,93.8,98.3,95.0,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP463,Talha Ansari,Legal & Compliance,POS-452,Last 90 Days,65,63,0,2,1,3,13,96.9,95.2,96.5,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP464,Nida Ismail,Legal & Compliance,POS-453,Last 90 Days,65,63,1,1,0,5,19,98.5,92.1,96.9,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP465,Amna Habib,Legal & Compliance,POS-454,Last 90 Days,65,63,2,0,0,4,6,100.0,93.7,98.4,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP466,Kashif Saleem,Legal & Compliance,POS-455,Last 90 Days,65,57,6,2,0,1,0,96.9,98.2,97.3,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP467,Maryam Dar,Legal & Compliance,POS-456,Last 90 Days,65,58,6,1,0,0,20,98.5,100.0,98.8,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP468,Eman Mirza,Legal & Compliance,POS-457,Last 90 Days,65,60,2,3,0,3,13,95.4,95.0,95.3,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-01,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP469,Sidra Mughal,Legal & Compliance,POS-458,Last 90 Days,65,61,3,1,0,5,10,98.5,91.8,96.8,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-01,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP470,Anam Javed,Legal & Compliance,POS-459,Last 90 Days,65,62,1,2,1,8,0,96.9,87.1,94.5,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-01,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP471,Anusha Iqbal,Legal & Compliance,POS-460,Last 90 Days,65,63,2,0,0,0,0,100.0,100.0,100,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP472,Sidra Iqbal,Legal & Compliance,POS-461,Last 90 Days,65,65,0,0,0,4,10,100.0,93.8,98.5,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP473,Areeba Saeed,Legal & Compliance,POS-462,Last 90 Days,65,63,0,2,1,7,11,96.9,88.9,94.9,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP474,Mehwish Riaz,Legal & Compliance,POS-463,Last 90 Days,65,64,0,1,0,6,7,98.5,90.6,96.5,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP475,Amna Akhtar,Legal & Compliance,POS-464,Last 90 Days,65,61,2,2,0,3,11,96.9,95.1,96.5,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP476,Shahzaib Mahmood,Legal & Compliance,POS-465,Last 90 Days,65,61,1,3,0,5,14,95.4,91.8,94.5,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-01,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP477,Farhan Faisal,Legal & Compliance,POS-466,Last 90 Days,65,60,3,2,0,5,6,96.9,91.7,95.6,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP478,Kinza Iqbal,Legal & Compliance,POS-467,Last 90 Days,65,63,2,0,0,2,15,100.0,96.8,99.2,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-01,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP479,Noman Latif,Legal & Compliance,POS-468,Last 90 Days,65,60,2,3,0,3,13,95.4,95.0,95.3,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP480,Ahmed Saeed,Legal & Compliance,POS-469,Last 90 Days,65,59,4,2,0,2,12,96.9,96.6,96.8,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-01,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP481,Rabia Rehman,Legal & Compliance,POS-470,Last 90 Days,65,60,2,3,0,1,8,95.4,98.3,96.1,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP482,Danish Malik,Legal & Compliance,POS-471,Last 90 Days,65,60,2,3,3,7,3,95.4,88.3,93.6,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP483,Bilal Mahmood,Legal & Compliance,POS-472,Last 90 Days,65,64,0,1,0,8,27,98.5,87.5,95.7,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP484,Saba Mughal,Legal & Compliance,POS-473,Last 90 Days,65,57,5,3,0,9,0,95.4,84.2,92.6,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP485,Sana Nadeem,Legal & Compliance,POS-474,Last 90 Days,65,63,2,0,0,2,16,100.0,96.8,99.2,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-01,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP486,Junaid Nadeem,Legal & Compliance,POS-475,Last 90 Days,65,60,2,3,0,0,10,95.4,100.0,96.5,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP487,Talha Hashmi,Legal & Compliance,POS-476,Last 90 Days,65,59,2,4,0,7,14,93.8,88.1,92.4,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP488,Omar Akhtar,Legal & Compliance,POS-477,Last 90 Days,65,61,0,4,1,5,13,93.8,91.8,93.3,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP489,Sara Zafar,Legal & Compliance,POS-478,Last 90 Days,65,60,1,4,1,4,13,93.8,93.3,93.7,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-01,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP490,Farhan Hameed,Legal & Compliance,POS-479,Last 90 Days,65,63,2,0,0,1,9,100.0,98.4,99.6,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-01,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP491,Zainab Chaudhry,Legal & Compliance,POS-480,Last 90 Days,65,61,0,4,0,1,11,93.8,98.4,95.0,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP492,Hamza Javed,Legal & Compliance,POS-481,Last 90 Days,65,61,1,3,1,5,14,95.4,91.8,94.5,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP493,Komal Rehman,Legal & Compliance,POS-482,Last 90 Days,65,58,4,3,0,2,9,95.4,96.6,95.7,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-01,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP494,Anam Mahmood,Legal & Compliance,POS-483,Last 90 Days,65,59,3,3,1,3,12,95.4,94.9,95.3,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-03,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP495,Junaid Chaudhry,Legal & Compliance,POS-484,Last 90 Days,65,63,1,1,0,1,10,98.5,98.4,98.4,Excellent,DEPARTMENT-011,Corporate Services,ORGANIZATIONAL-UNIT-LGL-TEAM-02,LOC-HQ,COST-CENTER-LGL,2026-08-01
+EMP496,Ali Nadeem,Procurement & Supply Chain,EXEC-PRC-HEAD,Last 90 Days,65,61,3,1,0,0,4,98.5,100.0,98.8,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP497,Talha Riaz,Procurement & Supply Chain,POS-485,Last 90 Days,65,63,0,2,0,2,21,96.9,96.8,96.9,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP498,Usman Faisal,Procurement & Supply Chain,POS-486,Last 90 Days,65,61,2,2,0,4,6,96.9,93.4,96.1,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP499,Rabia Dar,Procurement & Supply Chain,POS-487,Last 90 Days,65,59,5,1,1,0,18,98.5,100.0,98.8,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP500,Kashif Nasir,Procurement & Supply Chain,POS-488,Last 90 Days,65,61,1,3,0,2,0,95.4,96.7,95.7,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP501,Kinza Mahmood,Procurement & Supply Chain,POS-489,Last 90 Days,65,61,2,2,0,4,13,96.9,93.4,96.1,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP502,Talha Rehman,Procurement & Supply Chain,POS-490,Last 90 Days,65,60,4,1,0,2,4,98.5,96.7,98.0,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP503,Sara Khan,Procurement & Supply Chain,POS-491,Last 90 Days,65,63,0,2,1,0,0,96.9,100.0,97.7,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-02,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP504,Omar Siddiqui,Procurement & Supply Chain,POS-492,Last 90 Days,65,58,5,2,2,6,12,96.9,89.7,95.1,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-02,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP505,Minal Butt,Procurement & Supply Chain,POS-493,Last 90 Days,65,61,3,1,0,7,16,98.5,88.5,96.0,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-01,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP506,Komal Munir,Procurement & Supply Chain,POS-494,Last 90 Days,65,63,0,2,0,2,19,96.9,96.8,96.9,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP507,Minal Malik,Procurement & Supply Chain,POS-495,Last 90 Days,65,62,1,2,1,2,0,96.9,96.8,96.9,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-02,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP508,Kinza Siddiqui,Procurement & Supply Chain,POS-496,Last 90 Days,65,60,5,0,0,1,4,100.0,98.3,99.6,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP509,Iqra Abbasi,Procurement & Supply Chain,POS-497,Last 90 Days,65,62,3,0,0,2,23,100.0,96.8,99.2,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-02,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP510,Laiba Butt,Procurement & Supply Chain,POS-498,Last 90 Days,65,58,2,5,1,5,4,92.3,91.4,92.1,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP511,Asad Mirza,Procurement & Supply Chain,POS-499,Last 90 Days,65,56,6,3,0,1,1,95.4,98.2,96.1,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP512,Asad Butt,Procurement & Supply Chain,POS-500,Last 90 Days,65,57,4,4,0,6,2,93.8,89.5,92.8,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-01,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP513,Noor Iqbal,Procurement & Supply Chain,POS-501,Last 90 Days,65,62,1,2,1,0,12,96.9,100.0,97.7,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP514,Sana Saleem,Procurement & Supply Chain,POS-502,Last 90 Days,65,54,2,9,1,2,0,86.2,96.3,88.7,Good,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP515,Mehwish Ali,Procurement & Supply Chain,POS-503,Last 90 Days,65,58,1,6,0,1,11,90.8,98.3,92.6,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-02,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP516,Maryam Yousaf,Procurement & Supply Chain,POS-504,Last 90 Days,65,62,3,0,0,0,8,100.0,100.0,100,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP517,Anam Rehman,Procurement & Supply Chain,POS-505,Last 90 Days,65,59,3,3,0,6,7,95.4,89.8,94.0,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-01,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP518,Maryam Mughal,Procurement & Supply Chain,POS-506,Last 90 Days,65,63,0,2,1,2,20,96.9,96.8,96.9,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-01,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP519,Areeba Hameed,Procurement & Supply Chain,POS-507,Last 90 Days,65,65,0,0,0,3,8,100.0,95.4,98.8,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP520,Maryam Munir,Procurement & Supply Chain,POS-508,Last 90 Days,65,65,0,0,0,5,0,100.0,92.3,98.1,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP521,Noman Zafar,Procurement & Supply Chain,POS-509,Last 90 Days,65,63,0,2,0,2,0,96.9,96.8,96.9,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP522,Nida Riaz,Procurement & Supply Chain,POS-510,Last 90 Days,65,64,1,0,0,6,10,100.0,90.6,97.7,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-01,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP523,Noor Siddiqui,Procurement & Supply Chain,POS-511,Last 90 Days,65,61,4,0,0,6,1,100.0,90.2,97.5,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-02,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP524,Sidra Siddiqui,Procurement & Supply Chain,POS-512,Last 90 Days,65,62,1,2,1,0,1,96.9,100.0,97.7,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-01,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP525,Imran Nasir,Procurement & Supply Chain,POS-513,Last 90 Days,65,63,1,1,0,1,0,98.5,98.4,98.4,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-02,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP526,Adnan Chaudhry,Procurement & Supply Chain,POS-514,Last 90 Days,65,57,6,2,1,2,11,96.9,96.5,96.8,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-02,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP527,Mehwish Nasir,Procurement & Supply Chain,POS-515,Last 90 Days,65,60,1,4,0,2,8,93.8,96.7,94.6,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-01,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP528,Minal Aslam,Procurement & Supply Chain,POS-516,Last 90 Days,65,61,3,1,0,4,10,98.5,93.4,97.2,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-02,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP529,Ayesha Waheed,Procurement & Supply Chain,POS-517,Last 90 Days,65,57,4,4,0,2,9,93.8,96.5,94.5,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP530,Kamran Rauf,Procurement & Supply Chain,POS-518,Last 90 Days,65,59,3,3,0,2,5,95.4,96.6,95.7,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-01,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP531,Kamran Iqbal,Procurement & Supply Chain,POS-519,Last 90 Days,65,63,2,0,0,2,8,100.0,96.8,99.2,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-02,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP532,Nida Habib,Procurement & Supply Chain,POS-520,Last 90 Days,65,62,1,2,0,1,12,96.9,98.4,97.3,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP533,Nida Nadeem,Procurement & Supply Chain,POS-521,Last 90 Days,65,63,2,0,0,8,0,100.0,87.3,96.8,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP534,Hassan Siddiqui,Procurement & Supply Chain,POS-522,Last 90 Days,65,61,0,4,0,5,21,93.8,91.8,93.3,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-02,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP535,Komal Zafar,Procurement & Supply Chain,POS-523,Last 90 Days,65,59,2,4,0,0,28,93.8,100.0,95.4,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-01,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP536,Anusha Butt,Procurement & Supply Chain,POS-524,Last 90 Days,65,63,2,0,0,4,13,100.0,93.7,98.4,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-01,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP537,Maryam Bukhari,Procurement & Supply Chain,POS-525,Last 90 Days,65,60,3,2,0,7,3,96.9,88.3,94.8,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-01,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP538,Saba Tariq,Procurement & Supply Chain,POS-526,Last 90 Days,65,61,1,3,0,4,6,95.4,93.4,94.9,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP539,Noman Ali,Procurement & Supply Chain,POS-527,Last 90 Days,65,59,3,3,1,8,13,95.4,86.4,93.1,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-02,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP540,Haris Hussain,Procurement & Supply Chain,POS-528,Last 90 Days,65,64,1,0,0,4,3,100.0,93.8,98.4,Excellent,DEPARTMENT-012,Enterprise Operations,ORGANIZATIONAL-UNIT-PRC-TEAM-03,LOC-CENTRAL,COST-CENTER-PRC,2026-08-01
+EMP541,Asad Hashmi,Logistics & Warehouse,EXEC-LOG-HEAD,Last 90 Days,65,58,4,3,1,6,34,95.4,89.7,94.0,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP542,Kashif Chaudhry,Logistics & Warehouse,POS-529,Last 90 Days,65,64,1,0,0,5,12,100.0,92.2,98.0,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP543,Kamran Chaudhry,Logistics & Warehouse,POS-530,Last 90 Days,65,63,1,1,0,7,13,98.5,88.9,96.1,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP544,Bilal Ansari,Logistics & Warehouse,POS-531,Last 90 Days,65,61,4,0,0,0,16,100.0,100.0,100,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP545,Junaid Aslam,Logistics & Warehouse,POS-532,Last 90 Days,65,61,3,1,0,2,24,98.5,96.7,98.0,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP546,Sara Baig,Logistics & Warehouse,POS-533,Last 90 Days,65,59,2,4,0,2,16,93.8,96.6,94.5,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP547,Usman Ali,Logistics & Warehouse,POS-534,Last 90 Days,65,60,2,3,0,8,25,95.4,86.7,93.2,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP548,Maryam Faisal,Logistics & Warehouse,POS-535,Last 90 Days,65,58,6,1,0,1,18,98.5,98.3,98.4,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-01,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP549,Saba Saeed,Logistics & Warehouse,POS-536,Last 90 Days,65,63,2,0,0,0,24,100.0,100.0,100,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP550,Hira Faisal,Logistics & Warehouse,POS-537,Last 90 Days,65,59,3,3,0,8,24,95.4,86.4,93.1,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP551,Saba Rehman,Logistics & Warehouse,POS-538,Last 90 Days,65,61,4,0,0,0,21,100.0,100.0,100,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP552,Anam Rauf,Logistics & Warehouse,POS-539,Last 90 Days,65,62,3,0,0,6,10,100.0,90.3,97.6,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP553,Iqra Mughal,Logistics & Warehouse,POS-540,Last 90 Days,65,60,3,2,1,0,23,96.9,100.0,97.7,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP554,Sana Rauf,Logistics & Warehouse,POS-541,Last 90 Days,65,58,6,1,1,0,24,98.5,100.0,98.8,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP555,Danish Hashmi,Logistics & Warehouse,POS-542,Last 90 Days,65,65,0,0,0,0,7,100.0,100.0,100,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP556,Kinza Farooq,Logistics & Warehouse,POS-543,Last 90 Days,65,56,4,5,0,3,36,92.3,94.6,92.9,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-01,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP557,Ali Rashid,Logistics & Warehouse,POS-544,Last 90 Days,65,65,0,0,0,9,30,100.0,86.2,96.5,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP558,Waqas Latif,Logistics & Warehouse,POS-545,Last 90 Days,65,65,0,0,0,4,20,100.0,93.8,98.5,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-01,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP559,Minal Qureshi,Logistics & Warehouse,POS-546,Last 90 Days,65,65,0,0,0,10,27,100.0,84.6,96.2,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-01,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP560,Fahad Ali,Logistics & Warehouse,POS-547,Last 90 Days,65,62,0,3,0,9,9,95.4,85.5,92.9,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP561,Maryam Waheed,Logistics & Warehouse,POS-548,Last 90 Days,65,62,2,1,0,1,33,98.5,98.4,98.4,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP562,Komal Khan,Logistics & Warehouse,POS-549,Last 90 Days,65,61,4,0,0,3,16,100.0,95.1,98.8,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP563,Hira Ali,Logistics & Warehouse,POS-550,Last 90 Days,65,61,2,2,0,0,10,96.9,100.0,97.7,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP564,Adnan Zafar,Logistics & Warehouse,POS-551,Last 90 Days,65,60,3,2,0,2,16,96.9,96.7,96.9,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-01,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP565,Rabia Tariq,Logistics & Warehouse,POS-552,Last 90 Days,65,62,2,1,1,3,30,98.5,95.2,97.6,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-01,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP566,Talha Ismail,Logistics & Warehouse,POS-553,Last 90 Days,65,63,0,2,0,8,14,96.9,87.3,94.5,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP567,Hira Javed,Logistics & Warehouse,POS-554,Last 90 Days,65,59,3,3,0,7,30,95.4,88.1,93.6,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-01,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP568,Mehwish Javed,Logistics & Warehouse,POS-555,Last 90 Days,65,62,3,0,0,2,30,100.0,96.8,99.2,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP569,Bilal Rauf,Logistics & Warehouse,POS-556,Last 90 Days,65,64,0,1,0,6,24,98.5,90.6,96.5,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-01,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP570,Komal Farooq,Logistics & Warehouse,POS-557,Last 90 Days,65,57,1,7,0,3,11,89.2,94.7,90.6,Good,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP571,Minal Saeed,Logistics & Warehouse,POS-558,Last 90 Days,65,65,0,0,0,2,31,100.0,96.9,99.2,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP572,Farhan Iqbal,Logistics & Warehouse,POS-559,Last 90 Days,65,59,3,3,0,2,36,95.4,96.6,95.7,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP573,Junaid Javed,Logistics & Warehouse,POS-560,Last 90 Days,65,61,0,4,0,3,11,93.8,95.1,94.2,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-01,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP574,Ahmed Javed,Logistics & Warehouse,POS-561,Last 90 Days,65,63,1,1,0,7,25,98.5,88.9,96.1,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP575,Komal Hameed,Logistics & Warehouse,POS-562,Last 90 Days,65,61,0,4,1,7,0,93.8,88.5,92.5,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-01,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP576,Fatima Sultan,Logistics & Warehouse,POS-563,Last 90 Days,65,55,5,5,1,2,15,92.3,96.4,93.3,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP577,Iqra Hussain,Logistics & Warehouse,POS-564,Last 90 Days,65,59,3,3,1,5,14,95.4,91.5,94.4,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP578,Maryam Rauf,Logistics & Warehouse,POS-565,Last 90 Days,65,57,2,6,1,7,12,90.8,87.7,90.0,Good,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP579,Farhan Aziz,Logistics & Warehouse,POS-566,Last 90 Days,65,62,3,0,0,8,24,100.0,87.1,96.8,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-01,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP580,Minal Bukhari,Logistics & Warehouse,POS-567,Last 90 Days,65,63,2,0,0,3,4,100.0,95.2,98.8,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP581,Noor Khalid,Logistics & Warehouse,POS-568,Last 90 Days,65,64,0,1,1,2,9,98.5,96.9,98.1,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP582,Noor Sheikh,Logistics & Warehouse,POS-569,Last 90 Days,65,62,1,2,0,5,18,96.9,91.9,95.7,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP583,Noman Aziz,Logistics & Warehouse,POS-570,Last 90 Days,65,62,3,0,0,3,6,100.0,95.2,98.8,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP584,Zainab Munir,Logistics & Warehouse,POS-571,Last 90 Days,65,65,0,0,0,0,22,100.0,100.0,100,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-02,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP585,Bilal Abbasi,Logistics & Warehouse,POS-572,Last 90 Days,65,62,3,0,0,2,27,100.0,96.8,99.2,Excellent,DEPARTMENT-013,Enterprise Operations,ORGANIZATIONAL-UNIT-LOG-TEAM-03,LOC-HUB,COST-CENTER-LOG,2026-08-01
+EMP586,Fahad Akhtar,Production & Manufacturing,EXEC-PRD-HEAD,Last 90 Days,65,62,3,0,0,2,29,100.0,96.8,99.2,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP587,Noman Baig,Production & Manufacturing,POS-573,Last 90 Days,65,63,2,0,0,4,13,100.0,93.7,98.4,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP588,Rabia Sultan,Production & Manufacturing,POS-574,Last 90 Days,65,62,2,1,1,1,23,98.5,98.4,98.4,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP589,Adnan Nawaz,Production & Manufacturing,POS-575,Last 90 Days,65,61,2,2,0,0,19,96.9,100.0,97.7,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP590,Taha Ali,Production & Manufacturing,POS-576,Last 90 Days,65,62,1,2,0,6,13,96.9,90.3,95.3,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP591,Adnan Hameed,Production & Manufacturing,POS-577,Last 90 Days,65,63,2,0,0,8,21,100.0,87.3,96.8,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP592,Hamza Qureshi,Production & Manufacturing,POS-578,Last 90 Days,65,62,0,3,1,1,16,95.4,98.4,96.1,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP593,Maha Saeed,Production & Manufacturing,POS-579,Last 90 Days,65,64,1,0,0,5,28,100.0,92.2,98.0,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP594,Raza Mirza,Production & Manufacturing,POS-580,Last 90 Days,65,62,3,0,0,3,22,100.0,95.2,98.8,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP595,Noman Dar,Production & Manufacturing,POS-581,Last 90 Days,65,60,0,5,0,2,30,92.3,96.7,93.4,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP596,Laiba Yousaf,Production & Manufacturing,POS-582,Last 90 Days,65,58,4,3,0,3,12,95.4,94.8,95.2,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-02,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP597,Raza Ali,Production & Manufacturing,POS-583,Last 90 Days,65,63,1,1,0,4,13,98.5,93.7,97.3,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-02,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP598,Asad Riaz,Production & Manufacturing,POS-584,Last 90 Days,65,60,3,2,2,6,11,96.9,90.0,95.2,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP599,Maryam Nawaz,Production & Manufacturing,POS-585,Last 90 Days,65,59,3,3,0,0,29,95.4,100.0,96.5,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-02,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP600,Usman Saleem,Production & Manufacturing,POS-586,Last 90 Days,65,64,0,1,0,4,22,98.5,93.8,97.3,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-01,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP601,Danish Javed,Production & Manufacturing,POS-587,Last 90 Days,65,62,3,0,0,9,0,100.0,85.5,96.4,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP602,Noor Baig,Production & Manufacturing,POS-588,Last 90 Days,65,63,1,1,0,0,8,98.5,100.0,98.8,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-01,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP603,Ayesha Qureshi,Production & Manufacturing,POS-589,Last 90 Days,65,62,3,0,0,8,31,100.0,87.1,96.8,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP604,Saba Shah,Production & Manufacturing,POS-590,Last 90 Days,65,59,2,4,0,2,30,93.8,96.6,94.5,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-02,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP605,Areeba Riaz,Production & Manufacturing,POS-591,Last 90 Days,65,60,3,2,0,2,9,96.9,96.7,96.9,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-02,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP606,Mahnoor Saeed,Production & Manufacturing,POS-592,Last 90 Days,65,61,4,0,0,2,17,100.0,96.7,99.2,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP607,Maryam Saeed,Production & Manufacturing,POS-593,Last 90 Days,65,65,0,0,0,5,26,100.0,92.3,98.1,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP608,Sidra Khan,Production & Manufacturing,POS-594,Last 90 Days,65,63,2,0,0,3,20,100.0,95.2,98.8,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP609,Laiba Iqbal,Production & Manufacturing,POS-595,Last 90 Days,65,63,2,0,0,4,9,100.0,93.7,98.4,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-01,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP610,Junaid Latif,Production & Manufacturing,POS-596,Last 90 Days,65,59,6,0,0,3,20,100.0,94.9,98.7,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP611,Omar Mahmood,Production & Manufacturing,POS-597,Last 90 Days,65,61,2,2,0,6,39,96.9,90.2,95.2,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP612,Hassan Khalid,Production & Manufacturing,POS-598,Last 90 Days,65,63,2,0,0,1,17,100.0,98.4,99.6,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-01,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP613,Sidra Saeed,Production & Manufacturing,POS-599,Last 90 Days,65,61,1,3,0,0,17,95.4,100.0,96.5,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP614,Asad Rashid,Production & Manufacturing,POS-600,Last 90 Days,65,57,5,3,0,6,31,95.4,89.5,93.9,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-02,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP615,Waqas Munir,Production & Manufacturing,POS-601,Last 90 Days,65,58,3,4,0,3,19,93.8,94.8,94.1,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-02,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP616,Rabia Sheikh,Production & Manufacturing,POS-602,Last 90 Days,65,61,1,3,0,6,14,95.4,90.2,94.1,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP617,Anusha Hussain,Production & Manufacturing,POS-603,Last 90 Days,65,59,3,3,0,2,14,95.4,96.6,95.7,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-02,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP618,Ali Malik,Production & Manufacturing,POS-604,Last 90 Days,65,60,1,4,0,3,20,93.8,95.0,94.1,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-02,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP619,Kashif Ansari,Production & Manufacturing,POS-605,Last 90 Days,65,63,2,0,0,1,15,100.0,98.4,99.6,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP620,Iqra Ansari,Production & Manufacturing,POS-606,Last 90 Days,65,61,1,3,1,5,22,95.4,91.8,94.5,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-02,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP621,Usman Malik,Production & Manufacturing,POS-607,Last 90 Days,65,59,4,2,0,4,22,96.9,93.2,96.0,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP622,Omar Latif,Production & Manufacturing,POS-608,Last 90 Days,65,56,2,7,0,3,22,89.2,94.6,90.6,Good,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP623,Ayesha Hussain,Production & Manufacturing,POS-609,Last 90 Days,65,62,0,3,0,4,9,95.4,93.5,94.9,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-02,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP624,Eman Sheikh,Production & Manufacturing,POS-610,Last 90 Days,65,59,2,4,0,5,12,93.8,91.5,93.3,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-01,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP625,Arham Ahmed,Production & Manufacturing,POS-611,Last 90 Days,65,59,3,3,0,2,17,95.4,96.6,95.7,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP626,Shahzaib Mughal,Production & Manufacturing,POS-612,Last 90 Days,65,59,3,3,0,5,14,95.4,91.5,94.4,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-01,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP627,Mahnoor Ismail,Production & Manufacturing,POS-613,Last 90 Days,65,62,2,1,1,4,2,98.5,93.5,97.2,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-01,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP628,Raza Hameed,Production & Manufacturing,POS-614,Last 90 Days,65,62,2,1,0,6,29,98.5,90.3,96.4,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-03,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP629,Bilal Malik,Production & Manufacturing,POS-615,Last 90 Days,65,63,0,2,1,2,15,96.9,96.8,96.9,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-01,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP630,Saba Dar,Production & Manufacturing,POS-616,Last 90 Days,65,61,4,0,0,0,19,100.0,100.0,100,Excellent,DEPARTMENT-014,Industrial Operations,ORGANIZATIONAL-UNIT-PRD-TEAM-02,LOC-PLANT,COST-CENTER-PRD,2026-08-01
+EMP631,Noman Tariq,Quality Assurance,EXEC-QAS-HEAD,Last 90 Days,65,63,1,1,0,10,22,98.5,84.1,94.9,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP632,Junaid Sultan,Quality Assurance,POS-617,Last 90 Days,65,59,4,2,0,4,32,96.9,93.2,96.0,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP633,Sara Tariq,Quality Assurance,POS-618,Last 90 Days,65,62,2,1,0,3,3,98.5,95.2,97.6,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP634,Hira Nadeem,Quality Assurance,POS-619,Last 90 Days,65,55,4,6,1,2,11,90.8,96.4,92.2,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP635,Ahmed Rashid,Quality Assurance,POS-620,Last 90 Days,65,60,3,2,0,1,24,96.9,98.3,97.3,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP636,Zainab Ejaz,Quality Assurance,POS-621,Last 90 Days,65,64,1,0,0,4,0,100.0,93.8,98.4,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP637,Kamran Sheikh,Quality Assurance,POS-622,Last 90 Days,65,60,2,3,0,2,4,95.4,96.7,95.7,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP638,Laiba Hashmi,Quality Assurance,POS-623,Last 90 Days,65,62,3,0,0,5,11,100.0,91.9,98.0,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP639,Sana Saeed,Quality Assurance,POS-624,Last 90 Days,65,62,3,0,0,6,9,100.0,90.3,97.6,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP640,Hamza Yousaf,Quality Assurance,POS-625,Last 90 Days,65,64,1,0,0,6,6,100.0,90.6,97.7,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-02,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP641,Ahmed Awan,Quality Assurance,POS-626,Last 90 Days,65,64,0,1,0,4,12,98.5,93.8,97.3,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP642,Taha Zafar,Quality Assurance,POS-627,Last 90 Days,65,64,1,0,0,7,7,100.0,89.1,97.3,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-02,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP643,Bilal Khan,Quality Assurance,POS-628,Last 90 Days,65,63,2,0,0,1,12,100.0,98.4,99.6,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP644,Imran Hussain,Quality Assurance,POS-629,Last 90 Days,65,65,0,0,0,2,0,100.0,96.9,99.2,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP645,Kinza Rehman,Quality Assurance,POS-630,Last 90 Days,65,60,5,0,0,2,9,100.0,96.7,99.2,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-02,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP646,Junaid Yousaf,Quality Assurance,POS-631,Last 90 Days,65,59,4,2,1,2,15,96.9,96.6,96.8,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP647,Amna Iqbal,Quality Assurance,POS-632,Last 90 Days,65,62,2,1,1,6,3,98.5,90.3,96.4,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-02,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP648,Kashif Hashmi,Quality Assurance,POS-633,Last 90 Days,65,65,0,0,0,0,26,100.0,100.0,100,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP649,Fatima Raza,Quality Assurance,POS-634,Last 90 Days,65,62,1,2,0,1,0,96.9,98.4,97.3,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-02,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP650,Hassan Akhtar,Quality Assurance,POS-635,Last 90 Days,65,62,2,1,0,2,20,98.5,96.8,98.0,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP651,Sana Habib,Quality Assurance,POS-636,Last 90 Days,65,55,6,4,0,6,11,93.8,89.1,92.7,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-02,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP652,Kinza Waheed,Quality Assurance,POS-637,Last 90 Days,65,62,1,2,1,6,19,96.9,90.3,95.3,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP653,Laiba Hussain,Quality Assurance,POS-638,Last 90 Days,65,61,1,3,0,0,13,95.4,100.0,96.5,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-02,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP654,Kinza Javed,Quality Assurance,POS-639,Last 90 Days,65,63,1,1,0,9,13,98.5,85.7,95.3,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP655,Taha Aslam,Quality Assurance,POS-640,Last 90 Days,65,64,0,1,1,1,0,98.5,98.4,98.5,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP656,Sara Hussain,Quality Assurance,POS-641,Last 90 Days,65,62,1,2,0,5,14,96.9,91.9,95.7,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP657,Mehwish Chaudhry,Quality Assurance,POS-642,Last 90 Days,65,57,4,4,0,0,14,93.8,100.0,95.4,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP658,Kinza Latif,Quality Assurance,POS-643,Last 90 Days,65,59,0,6,1,2,18,90.8,96.6,92.2,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP659,Fahad Sultan,Quality Assurance,POS-644,Last 90 Days,65,61,2,2,0,0,0,96.9,100.0,97.7,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP660,Shahzaib Saleem,Quality Assurance,POS-645,Last 90 Days,65,58,4,3,0,3,13,95.4,94.8,95.2,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP661,Fatima Sheikh,Quality Assurance,POS-646,Last 90 Days,65,62,1,2,2,11,6,96.9,82.3,93.3,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-02,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP662,Areeba Awan,Quality Assurance,POS-647,Last 90 Days,65,60,3,2,0,5,4,96.9,91.7,95.6,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP663,Eman Saleem,Quality Assurance,POS-648,Last 90 Days,65,57,4,4,0,7,8,93.8,87.7,92.3,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP664,Komal Shah,Quality Assurance,POS-649,Last 90 Days,65,60,2,3,0,5,3,95.4,91.7,94.5,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP665,Taha Waheed,Quality Assurance,POS-650,Last 90 Days,65,61,0,4,1,5,12,93.8,91.8,93.3,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP666,Saad Hashmi,Quality Assurance,POS-651,Last 90 Days,65,59,4,2,0,5,13,96.9,91.5,95.6,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-02,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP667,Nida Munir,Quality Assurance,POS-652,Last 90 Days,65,56,4,5,1,0,23,92.3,100.0,94.2,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP668,Talha Nawaz,Quality Assurance,POS-653,Last 90 Days,65,63,0,2,1,0,26,96.9,100.0,97.7,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP669,Saad Riaz,Quality Assurance,POS-654,Last 90 Days,65,58,3,4,0,7,11,93.8,87.9,92.4,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP670,Kinza Aziz,Quality Assurance,POS-655,Last 90 Days,65,64,0,1,1,4,6,98.5,93.8,97.3,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-02,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP671,Kashif Waheed,Quality Assurance,POS-656,Last 90 Days,65,63,0,2,1,2,1,96.9,96.8,96.9,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP672,Taha Nawaz,Quality Assurance,POS-657,Last 90 Days,65,65,0,0,0,2,3,100.0,96.9,99.2,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-01,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP673,Noman Javed,Quality Assurance,POS-658,Last 90 Days,65,59,4,2,0,0,15,96.9,100.0,97.7,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP674,Rabia Ismail,Quality Assurance,POS-659,Last 90 Days,65,65,0,0,0,6,9,100.0,90.8,97.7,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-03,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP675,Hira Munir,Quality Assurance,POS-660,Last 90 Days,65,60,3,2,0,10,2,96.9,83.3,93.5,Excellent,DEPARTMENT-015,Industrial Operations,ORGANIZATIONAL-UNIT-QAS-TEAM-02,LOC-PLANT,COST-CENTER-QAS,2026-08-01
+EMP676,Fahad Bukhari,Research & Development,EXEC-RND-HEAD,Last 90 Days,65,61,2,2,1,3,15,96.9,95.1,96.5,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP677,Eman Chaudhry,Research & Development,POS-661,Last 90 Days,65,61,2,2,1,3,15,96.9,95.1,96.5,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP678,Imran Akhtar,Research & Development,POS-662,Last 90 Days,65,62,1,2,0,2,18,96.9,96.8,96.9,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP679,Rabia Latif,Research & Development,POS-663,Last 90 Days,65,58,0,7,1,2,2,89.2,96.6,91.1,Good,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP680,Ayesha Dar,Research & Development,POS-664,Last 90 Days,65,57,6,2,1,6,15,96.9,89.5,95.1,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP681,Kashif Ejaz,Research & Development,POS-665,Last 90 Days,65,65,0,0,0,7,2,100.0,89.2,97.3,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP682,Hira Iqbal,Research & Development,POS-666,Last 90 Days,65,63,2,0,0,8,10,100.0,87.3,96.8,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP683,Farhan Qureshi,Research & Development,POS-667,Last 90 Days,65,58,4,3,1,3,10,95.4,94.8,95.2,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP684,Kamran Mirza,Research & Development,POS-668,Last 90 Days,65,62,2,1,1,4,8,98.5,93.5,97.2,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-01,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP685,Kinza Dar,Research & Development,POS-669,Last 90 Days,65,61,1,3,0,2,4,95.4,96.7,95.7,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-02,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP686,Usman Hussain,Research & Development,POS-670,Last 90 Days,65,62,2,1,1,1,0,98.5,98.4,98.4,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP687,Arham Khan,Research & Development,POS-671,Last 90 Days,65,58,5,2,0,4,8,96.9,93.1,96.0,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP688,Hamza Saeed,Research & Development,POS-672,Last 90 Days,65,62,1,2,0,0,4,96.9,100.0,97.7,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP689,Areeba Latif,Research & Development,POS-673,Last 90 Days,65,60,5,0,0,9,0,100.0,85.0,96.2,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP690,Imran Dar,Research & Development,POS-674,Last 90 Days,65,55,3,7,0,3,16,89.2,94.5,90.6,Good,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-02,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP691,Raza Bukhari,Research & Development,POS-675,Last 90 Days,65,54,4,7,0,3,10,89.2,94.4,90.5,Good,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-01,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP692,Amna Yousaf,Research & Development,POS-676,Last 90 Days,65,61,1,3,0,0,4,95.4,100.0,96.5,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP693,Waqas Bukhari,Research & Development,POS-677,Last 90 Days,65,60,3,2,1,8,14,96.9,86.7,94.4,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-01,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP694,Omar Khan,Research & Development,POS-678,Last 90 Days,65,65,0,0,0,0,13,100.0,100.0,100,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP695,Noman Hameed,Research & Development,POS-679,Last 90 Days,65,61,2,2,0,8,27,96.9,86.9,94.4,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-01,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP696,Taha Baig,Research & Development,POS-680,Last 90 Days,65,62,1,2,0,7,3,96.9,88.7,94.9,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-02,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP697,Fahad Khalid,Research & Development,POS-681,Last 90 Days,65,62,3,0,0,6,20,100.0,90.3,97.6,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP698,Amna Siddiqui,Research & Development,POS-682,Last 90 Days,65,64,1,0,0,6,0,100.0,90.6,97.7,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-01,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP699,Maha Shah,Research & Development,POS-683,Last 90 Days,65,61,3,1,0,5,16,98.5,91.8,96.8,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-02,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP700,Eman Ismail,Research & Development,POS-684,Last 90 Days,65,65,0,0,0,3,16,100.0,95.4,98.8,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-02,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP701,Zainab Faisal,Research & Development,POS-685,Last 90 Days,65,63,2,0,0,6,0,100.0,90.5,97.6,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-02,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP702,Laiba Sultan,Research & Development,POS-686,Last 90 Days,65,58,4,3,1,7,27,95.4,87.9,93.5,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-02,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP703,Laiba Baig,Research & Development,POS-687,Last 90 Days,65,62,2,1,0,4,18,98.5,93.5,97.2,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP704,Minal Sultan,Research & Development,POS-688,Last 90 Days,65,61,3,1,0,0,6,98.5,100.0,98.8,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP705,Taha Akhtar,Research & Development,POS-689,Last 90 Days,65,58,4,3,0,5,12,95.4,91.4,94.4,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-01,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP706,Sidra Mahmood,Research & Development,POS-690,Last 90 Days,65,64,0,1,0,2,19,98.5,96.9,98.1,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-01,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP707,Laiba Munir,Research & Development,POS-691,Last 90 Days,65,60,3,2,1,5,10,96.9,91.7,95.6,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP708,Maryam Akhtar,Research & Development,POS-692,Last 90 Days,65,57,3,5,1,7,21,92.3,87.7,91.2,Good,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-02,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP709,Ayesha Tariq,Research & Development,POS-693,Last 90 Days,65,62,3,0,0,3,0,100.0,95.2,98.8,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-01,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP710,Sara Hameed,Research & Development,POS-694,Last 90 Days,65,60,0,5,0,0,21,92.3,100.0,94.2,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-01,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP711,Shahzaib Siddiqui,Research & Development,POS-695,Last 90 Days,65,63,1,1,0,5,1,98.5,92.1,96.9,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-02,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP712,Minal Hussain,Research & Development,POS-696,Last 90 Days,65,60,2,3,0,4,5,95.4,93.3,94.9,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP713,Kashif Qureshi,Research & Development,POS-697,Last 90 Days,65,60,3,2,0,2,2,96.9,96.7,96.9,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP714,Maryam Ejaz,Research & Development,POS-698,Last 90 Days,65,59,3,3,0,4,5,95.4,93.2,94.8,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-01,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP715,Ali Munir,Research & Development,POS-699,Last 90 Days,65,63,1,1,1,6,10,98.5,90.5,96.5,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-01,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP716,Saba Awan,Research & Development,POS-700,Last 90 Days,65,62,2,1,1,1,15,98.5,98.4,98.4,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP717,Minal Hameed,Research & Development,POS-701,Last 90 Days,65,62,2,1,0,4,0,98.5,93.5,97.2,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-02,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP718,Laiba Ansari,Research & Development,POS-702,Last 90 Days,65,60,1,4,2,4,10,93.8,93.3,93.7,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-03,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP719,Mahnoor Sultan,Research & Development,POS-703,Last 90 Days,65,63,0,2,0,7,12,96.9,88.9,94.9,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-02,LOC-HQ,COST-CENTER-RND,2026-08-01
+EMP720,Fahad Awan,Research & Development,POS-704,Last 90 Days,65,65,0,0,0,6,28,100.0,90.8,97.7,Excellent,DEPARTMENT-016,Technology and Innovation,ORGANIZATIONAL-UNIT-RND-TEAM-01,LOC-HQ,COST-CENTER-RND,2026-08-01
