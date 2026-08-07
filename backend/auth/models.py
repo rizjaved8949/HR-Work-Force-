@@ -1,17 +1,51 @@
-"""Request and response models for Supabase authentication."""
+"""Authentication request and response models."""
 
 from pydantic import BaseModel, Field
 
 
-class AuthCredentials(BaseModel):
-    """Email and password submitted by the frontend."""
-
+class SignupRequest(BaseModel):
+    full_name: str = Field(
+        ...,
+        min_length=2,
+        max_length=100,
+    )
     email: str = Field(
         ...,
         min_length=3,
-        max_length=320,
+        max_length=254,
     )
     password: str = Field(
+        ...,
+        min_length=8,
+        max_length=128,
+    )
+    confirm_password: str = Field(
+        ...,
+        min_length=8,
+        max_length=128,
+    )
+
+
+class LoginRequest(BaseModel):
+    email: str
+    password: str
+
+
+class EmailRequest(BaseModel):
+    email: str
+
+
+class ResetPasswordRequest(BaseModel):
+    refresh_token: str = Field(
+        ...,
+        min_length=1,
+    )
+    new_password: str = Field(
+        ...,
+        min_length=8,
+        max_length=128,
+    )
+    confirm_password: str = Field(
         ...,
         min_length=8,
         max_length=128,
@@ -19,17 +53,14 @@ class AuthCredentials(BaseModel):
 
 
 class AuthenticatedUser(BaseModel):
-    """Verified Supabase user details."""
-
     id: str
+    full_name: str | None = None
     email: str | None = None
     role: str | None = None
     email_confirmed: bool = False
 
 
 class AuthSession(BaseModel):
-    """Supabase session returned after successful authentication."""
-
     access_token: str
     refresh_token: str
     token_type: str = "bearer"
@@ -38,24 +69,21 @@ class AuthSession(BaseModel):
 
 
 class SignupResponse(BaseModel):
-    """Response returned after account creation."""
-
     message: str
     user: AuthenticatedUser
-    session: AuthSession | None = None
-    email_confirmation_required: bool
+    email_verification_required: bool = True
 
 
 class LoginResponse(BaseModel):
-    """Response returned after successful login."""
-
     message: str
     user: AuthenticatedUser
     session: AuthSession
 
 
 class MeResponse(BaseModel):
-    """Response returned for the currently logged-in user."""
-
-    authenticated: bool
+    authenticated: bool = True
     user: AuthenticatedUser
+
+
+class MessageResponse(BaseModel):
+    message: str

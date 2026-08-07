@@ -27,3 +27,4 @@ pytest
 
 # Supabase authentication
 supabase
+email-validator
