@@ -1,0 +1,593 @@
+﻿Performance_Template_ID,Department_ID,Department,Role_Band,KPI_ID,KPI_Name,KPI_Group,KPI_Weight_pct,Measurement_Scope,Scoring_Direction,Floor_Value,Target_Value,Stretch_Value,Mandatory_Flag,Critical_KPI_Flag,Effective_Start_Date,Effective_End_Date,Active_Status
+PT-HR-INTERN,DEPARTMENT-001,HR,Intern/Trainee,KPI-HR-001,HR Service and Recruitment Target Achievement,OUTPUT,15,Individual,HIGHER_BETTER,70,100,115,Yes,No,2025-09-01,,Active
+PT-HR-INTERN,DEPARTMENT-001,HR,Intern/Trainee,KPI-HR-002,HR Data and Payroll Accuracy,QUALITY,15,Individual,HIGHER_BETTER,97,99.5,100,Yes,No,2025-09-01,,Active
+PT-HR-INTERN,DEPARTMENT-001,HR,Intern/Trainee,KPI-HR-003,Employee Case Resolution Time,EFFICIENCY,10,Individual,LOWER_BETTER,10,5,2,Yes,No,2025-09-01,,Active
+PT-HR-INTERN,DEPARTMENT-001,HR,Intern/Trainee,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,15,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-HR-INTERN,DEPARTMENT-001,HR,Intern/Trainee,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,15,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-HR-INTERN,DEPARTMENT-001,HR,Intern/Trainee,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-HR-INTERN,DEPARTMENT-001,HR,Intern/Trainee,KPI-COM-LEARN,Learning and Adaptability,LEARNING,20,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-HR-JUNIOR,DEPARTMENT-001,HR,Junior/Assistant,KPI-HR-001,HR Service and Recruitment Target Achievement,OUTPUT,25,Individual,HIGHER_BETTER,70,100,115,Yes,No,2025-09-01,,Active
+PT-HR-JUNIOR,DEPARTMENT-001,HR,Junior/Assistant,KPI-HR-002,HR Data and Payroll Accuracy,QUALITY,20,Individual,HIGHER_BETTER,97,99.5,100,Yes,No,2025-09-01,,Active
+PT-HR-JUNIOR,DEPARTMENT-001,HR,Junior/Assistant,KPI-HR-003,Employee Case Resolution Time,EFFICIENCY,15,Individual,LOWER_BETTER,10,5,2,Yes,No,2025-09-01,,Active
+PT-HR-JUNIOR,DEPARTMENT-001,HR,Junior/Assistant,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,10,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-HR-JUNIOR,DEPARTMENT-001,HR,Junior/Assistant,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-HR-JUNIOR,DEPARTMENT-001,HR,Junior/Assistant,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-HR-JUNIOR,DEPARTMENT-001,HR,Junior/Assistant,KPI-COM-LEARN,Learning and Adaptability,LEARNING,10,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-HR-PROFESSIONAL,DEPARTMENT-001,HR,Professional/Mid-level,KPI-HR-001,HR Service and Recruitment Target Achievement,OUTPUT,30,Individual,HIGHER_BETTER,70,100,115,Yes,No,2025-09-01,,Active
+PT-HR-PROFESSIONAL,DEPARTMENT-001,HR,Professional/Mid-level,KPI-HR-002,HR Data and Payroll Accuracy,QUALITY,25,Individual,HIGHER_BETTER,97,99.5,100,Yes,No,2025-09-01,,Active
+PT-HR-PROFESSIONAL,DEPARTMENT-001,HR,Professional/Mid-level,KPI-HR-003,Employee Case Resolution Time,EFFICIENCY,20,Individual,LOWER_BETTER,10,5,2,Yes,No,2025-09-01,,Active
+PT-HR-PROFESSIONAL,DEPARTMENT-001,HR,Professional/Mid-level,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,8,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-HR-PROFESSIONAL,DEPARTMENT-001,HR,Professional/Mid-level,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,7,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-HR-PROFESSIONAL,DEPARTMENT-001,HR,Professional/Mid-level,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,5,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-HR-PROFESSIONAL,DEPARTMENT-001,HR,Professional/Mid-level,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-HR-SENIOR,DEPARTMENT-001,HR,Senior/Lead,KPI-HR-001,HR Service and Recruitment Target Achievement,OUTPUT,25,Individual + Mentoring,HIGHER_BETTER,70,100,115,Yes,No,2025-09-01,,Active
+PT-HR-SENIOR,DEPARTMENT-001,HR,Senior/Lead,KPI-HR-002,HR Data and Payroll Accuracy,QUALITY,20,Individual + Mentoring,HIGHER_BETTER,97,99.5,100,Yes,No,2025-09-01,,Active
+PT-HR-SENIOR,DEPARTMENT-001,HR,Senior/Lead,KPI-HR-003,Employee Case Resolution Time,EFFICIENCY,15,Individual + Mentoring,LOWER_BETTER,10,5,2,Yes,No,2025-09-01,,Active
+PT-HR-SENIOR,DEPARTMENT-001,HR,Senior/Lead,KPI-LEAD-MENTOR,Mentoring and Knowledge Transfer,MENTORING,15,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-HR-SENIOR,DEPARTMENT-001,HR,Senior/Lead,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,5,Individual + Mentoring,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-HR-SENIOR,DEPARTMENT-001,HR,Senior/Lead,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,8,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-HR-SENIOR,DEPARTMENT-001,HR,Senior/Lead,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-HR-SENIOR,DEPARTMENT-001,HR,Senior/Lead,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-HR-MANAGER,DEPARTMENT-001,HR,Manager/Head,KPI-HR-001,HR Service and Recruitment Target Achievement,OUTPUT,25,Team/Department,HIGHER_BETTER,70,100,115,Yes,No,2025-09-01,,Active
+PT-HR-MANAGER,DEPARTMENT-001,HR,Manager/Head,KPI-HR-002,HR Data and Payroll Accuracy,QUALITY,15,Team/Department,HIGHER_BETTER,97,99.5,100,Yes,No,2025-09-01,,Active
+PT-HR-MANAGER,DEPARTMENT-001,HR,Manager/Head,KPI-HR-003,Employee Case Resolution Time,EFFICIENCY,10,Team/Department,LOWER_BETTER,10,5,2,Yes,No,2025-09-01,,Active
+PT-HR-MANAGER,DEPARTMENT-001,HR,Manager/Head,KPI-LEAD-TEAM,Team Leadership and Development,LEADERSHIP,25,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-HR-MANAGER,DEPARTMENT-001,HR,Manager/Head,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,3,Team/Department,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-HR-MANAGER,DEPARTMENT-001,HR,Manager/Head,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-HR-MANAGER,DEPARTMENT-001,HR,Manager/Head,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-HR-MANAGER,DEPARTMENT-001,HR,Manager/Head,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-FIN-INTERN,DEPARTMENT-002,Finance,Intern/Trainee,KPI-FIN-001,Reporting and Reconciliation Target Achievement,OUTPUT,15,Individual,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-FIN-INTERN,DEPARTMENT-002,Finance,Intern/Trainee,KPI-FIN-002,Financial Transaction and Reconciliation Accuracy,QUALITY,15,Individual,HIGHER_BETTER,97,99.5,100,Yes,Yes,2025-09-01,,Active
+PT-FIN-INTERN,DEPARTMENT-002,Finance,Intern/Trainee,KPI-FIN-003,Financial Reporting Turnaround Time,EFFICIENCY,10,Individual,LOWER_BETTER,7,4,2,Yes,No,2025-09-01,,Active
+PT-FIN-INTERN,DEPARTMENT-002,Finance,Intern/Trainee,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,15,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-FIN-INTERN,DEPARTMENT-002,Finance,Intern/Trainee,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,15,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-FIN-INTERN,DEPARTMENT-002,Finance,Intern/Trainee,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-FIN-INTERN,DEPARTMENT-002,Finance,Intern/Trainee,KPI-COM-LEARN,Learning and Adaptability,LEARNING,20,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-FIN-JUNIOR,DEPARTMENT-002,Finance,Junior/Assistant,KPI-FIN-001,Reporting and Reconciliation Target Achievement,OUTPUT,25,Individual,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-FIN-JUNIOR,DEPARTMENT-002,Finance,Junior/Assistant,KPI-FIN-002,Financial Transaction and Reconciliation Accuracy,QUALITY,20,Individual,HIGHER_BETTER,97,99.5,100,Yes,Yes,2025-09-01,,Active
+PT-FIN-JUNIOR,DEPARTMENT-002,Finance,Junior/Assistant,KPI-FIN-003,Financial Reporting Turnaround Time,EFFICIENCY,15,Individual,LOWER_BETTER,7,4,2,Yes,No,2025-09-01,,Active
+PT-FIN-JUNIOR,DEPARTMENT-002,Finance,Junior/Assistant,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,10,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-FIN-JUNIOR,DEPARTMENT-002,Finance,Junior/Assistant,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-FIN-JUNIOR,DEPARTMENT-002,Finance,Junior/Assistant,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-FIN-JUNIOR,DEPARTMENT-002,Finance,Junior/Assistant,KPI-COM-LEARN,Learning and Adaptability,LEARNING,10,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-FIN-PROFESSIONAL,DEPARTMENT-002,Finance,Professional/Mid-level,KPI-FIN-001,Reporting and Reconciliation Target Achievement,OUTPUT,30,Individual,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-FIN-PROFESSIONAL,DEPARTMENT-002,Finance,Professional/Mid-level,KPI-FIN-002,Financial Transaction and Reconciliation Accuracy,QUALITY,25,Individual,HIGHER_BETTER,97,99.5,100,Yes,Yes,2025-09-01,,Active
+PT-FIN-PROFESSIONAL,DEPARTMENT-002,Finance,Professional/Mid-level,KPI-FIN-003,Financial Reporting Turnaround Time,EFFICIENCY,20,Individual,LOWER_BETTER,7,4,2,Yes,No,2025-09-01,,Active
+PT-FIN-PROFESSIONAL,DEPARTMENT-002,Finance,Professional/Mid-level,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,8,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-FIN-PROFESSIONAL,DEPARTMENT-002,Finance,Professional/Mid-level,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,7,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-FIN-PROFESSIONAL,DEPARTMENT-002,Finance,Professional/Mid-level,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,5,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-FIN-PROFESSIONAL,DEPARTMENT-002,Finance,Professional/Mid-level,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-FIN-SENIOR,DEPARTMENT-002,Finance,Senior/Lead,KPI-FIN-001,Reporting and Reconciliation Target Achievement,OUTPUT,25,Individual + Mentoring,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-FIN-SENIOR,DEPARTMENT-002,Finance,Senior/Lead,KPI-FIN-002,Financial Transaction and Reconciliation Accuracy,QUALITY,20,Individual + Mentoring,HIGHER_BETTER,97,99.5,100,Yes,Yes,2025-09-01,,Active
+PT-FIN-SENIOR,DEPARTMENT-002,Finance,Senior/Lead,KPI-FIN-003,Financial Reporting Turnaround Time,EFFICIENCY,15,Individual + Mentoring,LOWER_BETTER,7,4,2,Yes,No,2025-09-01,,Active
+PT-FIN-SENIOR,DEPARTMENT-002,Finance,Senior/Lead,KPI-LEAD-MENTOR,Mentoring and Knowledge Transfer,MENTORING,15,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-FIN-SENIOR,DEPARTMENT-002,Finance,Senior/Lead,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,5,Individual + Mentoring,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-FIN-SENIOR,DEPARTMENT-002,Finance,Senior/Lead,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,8,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-FIN-SENIOR,DEPARTMENT-002,Finance,Senior/Lead,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-FIN-SENIOR,DEPARTMENT-002,Finance,Senior/Lead,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-FIN-MANAGER,DEPARTMENT-002,Finance,Manager/Head,KPI-FIN-001,Reporting and Reconciliation Target Achievement,OUTPUT,25,Team/Department,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-FIN-MANAGER,DEPARTMENT-002,Finance,Manager/Head,KPI-FIN-002,Financial Transaction and Reconciliation Accuracy,QUALITY,15,Team/Department,HIGHER_BETTER,97,99.5,100,Yes,Yes,2025-09-01,,Active
+PT-FIN-MANAGER,DEPARTMENT-002,Finance,Manager/Head,KPI-FIN-003,Financial Reporting Turnaround Time,EFFICIENCY,10,Team/Department,LOWER_BETTER,7,4,2,Yes,No,2025-09-01,,Active
+PT-FIN-MANAGER,DEPARTMENT-002,Finance,Manager/Head,KPI-LEAD-TEAM,Team Leadership and Development,LEADERSHIP,25,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-FIN-MANAGER,DEPARTMENT-002,Finance,Manager/Head,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,3,Team/Department,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-FIN-MANAGER,DEPARTMENT-002,Finance,Manager/Head,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-FIN-MANAGER,DEPARTMENT-002,Finance,Manager/Head,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-FIN-MANAGER,DEPARTMENT-002,Finance,Manager/Head,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-SAL-INTERN,DEPARTMENT-003,Sales,Intern/Trainee,KPI-SAL-001,Sales Target Achievement,OUTPUT,15,Individual,HIGHER_BETTER,70,100,120,Yes,No,2025-09-01,,Active
+PT-SAL-INTERN,DEPARTMENT-003,Sales,Intern/Trainee,KPI-SAL-002,Collection Achievement,QUALITY,15,Individual,HIGHER_BETTER,75,95,108,Yes,No,2025-09-01,,Active
+PT-SAL-INTERN,DEPARTMENT-003,Sales,Intern/Trainee,KPI-SAL-003,Lead Conversion and Customer Retention Score,EFFICIENCY,10,Individual,HIGHER_BETTER,65,85,95,Yes,No,2025-09-01,,Active
+PT-SAL-INTERN,DEPARTMENT-003,Sales,Intern/Trainee,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,15,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-SAL-INTERN,DEPARTMENT-003,Sales,Intern/Trainee,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,15,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-SAL-INTERN,DEPARTMENT-003,Sales,Intern/Trainee,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-SAL-INTERN,DEPARTMENT-003,Sales,Intern/Trainee,KPI-COM-LEARN,Learning and Adaptability,LEARNING,20,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-SAL-JUNIOR,DEPARTMENT-003,Sales,Junior/Assistant,KPI-SAL-001,Sales Target Achievement,OUTPUT,25,Individual,HIGHER_BETTER,70,100,120,Yes,No,2025-09-01,,Active
+PT-SAL-JUNIOR,DEPARTMENT-003,Sales,Junior/Assistant,KPI-SAL-002,Collection Achievement,QUALITY,20,Individual,HIGHER_BETTER,75,95,108,Yes,No,2025-09-01,,Active
+PT-SAL-JUNIOR,DEPARTMENT-003,Sales,Junior/Assistant,KPI-SAL-003,Lead Conversion and Customer Retention Score,EFFICIENCY,15,Individual,HIGHER_BETTER,65,85,95,Yes,No,2025-09-01,,Active
+PT-SAL-JUNIOR,DEPARTMENT-003,Sales,Junior/Assistant,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,10,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-SAL-JUNIOR,DEPARTMENT-003,Sales,Junior/Assistant,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-SAL-JUNIOR,DEPARTMENT-003,Sales,Junior/Assistant,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-SAL-JUNIOR,DEPARTMENT-003,Sales,Junior/Assistant,KPI-COM-LEARN,Learning and Adaptability,LEARNING,10,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-SAL-PROFESSIONAL,DEPARTMENT-003,Sales,Professional/Mid-level,KPI-SAL-001,Sales Target Achievement,OUTPUT,30,Individual,HIGHER_BETTER,70,100,120,Yes,No,2025-09-01,,Active
+PT-SAL-PROFESSIONAL,DEPARTMENT-003,Sales,Professional/Mid-level,KPI-SAL-002,Collection Achievement,QUALITY,25,Individual,HIGHER_BETTER,75,95,108,Yes,No,2025-09-01,,Active
+PT-SAL-PROFESSIONAL,DEPARTMENT-003,Sales,Professional/Mid-level,KPI-SAL-003,Lead Conversion and Customer Retention Score,EFFICIENCY,20,Individual,HIGHER_BETTER,65,85,95,Yes,No,2025-09-01,,Active
+PT-SAL-PROFESSIONAL,DEPARTMENT-003,Sales,Professional/Mid-level,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,8,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-SAL-PROFESSIONAL,DEPARTMENT-003,Sales,Professional/Mid-level,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,7,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-SAL-PROFESSIONAL,DEPARTMENT-003,Sales,Professional/Mid-level,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,5,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-SAL-PROFESSIONAL,DEPARTMENT-003,Sales,Professional/Mid-level,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-SAL-SENIOR,DEPARTMENT-003,Sales,Senior/Lead,KPI-SAL-001,Sales Target Achievement,OUTPUT,25,Individual + Mentoring,HIGHER_BETTER,70,100,120,Yes,No,2025-09-01,,Active
+PT-SAL-SENIOR,DEPARTMENT-003,Sales,Senior/Lead,KPI-SAL-002,Collection Achievement,QUALITY,20,Individual + Mentoring,HIGHER_BETTER,75,95,108,Yes,No,2025-09-01,,Active
+PT-SAL-SENIOR,DEPARTMENT-003,Sales,Senior/Lead,KPI-SAL-003,Lead Conversion and Customer Retention Score,EFFICIENCY,15,Individual + Mentoring,HIGHER_BETTER,65,85,95,Yes,No,2025-09-01,,Active
+PT-SAL-SENIOR,DEPARTMENT-003,Sales,Senior/Lead,KPI-LEAD-MENTOR,Mentoring and Knowledge Transfer,MENTORING,15,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-SAL-SENIOR,DEPARTMENT-003,Sales,Senior/Lead,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,5,Individual + Mentoring,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-SAL-SENIOR,DEPARTMENT-003,Sales,Senior/Lead,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,8,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-SAL-SENIOR,DEPARTMENT-003,Sales,Senior/Lead,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-SAL-SENIOR,DEPARTMENT-003,Sales,Senior/Lead,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-SAL-MANAGER,DEPARTMENT-003,Sales,Manager/Head,KPI-SAL-001,Sales Target Achievement,OUTPUT,25,Team/Department,HIGHER_BETTER,70,100,120,Yes,No,2025-09-01,,Active
+PT-SAL-MANAGER,DEPARTMENT-003,Sales,Manager/Head,KPI-SAL-002,Collection Achievement,QUALITY,15,Team/Department,HIGHER_BETTER,75,95,108,Yes,No,2025-09-01,,Active
+PT-SAL-MANAGER,DEPARTMENT-003,Sales,Manager/Head,KPI-SAL-003,Lead Conversion and Customer Retention Score,EFFICIENCY,10,Team/Department,HIGHER_BETTER,65,85,95,Yes,No,2025-09-01,,Active
+PT-SAL-MANAGER,DEPARTMENT-003,Sales,Manager/Head,KPI-LEAD-TEAM,Team Leadership and Development,LEADERSHIP,25,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-SAL-MANAGER,DEPARTMENT-003,Sales,Manager/Head,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,3,Team/Department,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-SAL-MANAGER,DEPARTMENT-003,Sales,Manager/Head,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-SAL-MANAGER,DEPARTMENT-003,Sales,Manager/Head,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-SAL-MANAGER,DEPARTMENT-003,Sales,Manager/Head,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-CS-INTERN,DEPARTMENT-004,Customer Support,Intern/Trainee,KPI-CS-001,Ticket Resolution Target Achievement,OUTPUT,15,Individual,HIGHER_BETTER,75,100,115,Yes,No,2025-09-01,,Active
+PT-CS-INTERN,DEPARTMENT-004,Customer Support,Intern/Trainee,KPI-CS-002,First Contact Resolution and Case Quality,QUALITY,15,Individual,HIGHER_BETTER,70,85,95,Yes,No,2025-09-01,,Active
+PT-CS-INTERN,DEPARTMENT-004,Customer Support,Intern/Trainee,KPI-CS-003,Support SLA Compliance,EFFICIENCY,10,Individual,HIGHER_BETTER,80,92,98,Yes,No,2025-09-01,,Active
+PT-CS-INTERN,DEPARTMENT-004,Customer Support,Intern/Trainee,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,15,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-CS-INTERN,DEPARTMENT-004,Customer Support,Intern/Trainee,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,15,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-CS-INTERN,DEPARTMENT-004,Customer Support,Intern/Trainee,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-CS-INTERN,DEPARTMENT-004,Customer Support,Intern/Trainee,KPI-COM-LEARN,Learning and Adaptability,LEARNING,20,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-CS-JUNIOR,DEPARTMENT-004,Customer Support,Junior/Assistant,KPI-CS-001,Ticket Resolution Target Achievement,OUTPUT,25,Individual,HIGHER_BETTER,75,100,115,Yes,No,2025-09-01,,Active
+PT-CS-JUNIOR,DEPARTMENT-004,Customer Support,Junior/Assistant,KPI-CS-002,First Contact Resolution and Case Quality,QUALITY,20,Individual,HIGHER_BETTER,70,85,95,Yes,No,2025-09-01,,Active
+PT-CS-JUNIOR,DEPARTMENT-004,Customer Support,Junior/Assistant,KPI-CS-003,Support SLA Compliance,EFFICIENCY,15,Individual,HIGHER_BETTER,80,92,98,Yes,No,2025-09-01,,Active
+PT-CS-JUNIOR,DEPARTMENT-004,Customer Support,Junior/Assistant,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,10,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-CS-JUNIOR,DEPARTMENT-004,Customer Support,Junior/Assistant,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-CS-JUNIOR,DEPARTMENT-004,Customer Support,Junior/Assistant,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-CS-JUNIOR,DEPARTMENT-004,Customer Support,Junior/Assistant,KPI-COM-LEARN,Learning and Adaptability,LEARNING,10,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-CS-PROFESSIONAL,DEPARTMENT-004,Customer Support,Professional/Mid-level,KPI-CS-001,Ticket Resolution Target Achievement,OUTPUT,30,Individual,HIGHER_BETTER,75,100,115,Yes,No,2025-09-01,,Active
+PT-CS-PROFESSIONAL,DEPARTMENT-004,Customer Support,Professional/Mid-level,KPI-CS-002,First Contact Resolution and Case Quality,QUALITY,25,Individual,HIGHER_BETTER,70,85,95,Yes,No,2025-09-01,,Active
+PT-CS-PROFESSIONAL,DEPARTMENT-004,Customer Support,Professional/Mid-level,KPI-CS-003,Support SLA Compliance,EFFICIENCY,20,Individual,HIGHER_BETTER,80,92,98,Yes,No,2025-09-01,,Active
+PT-CS-PROFESSIONAL,DEPARTMENT-004,Customer Support,Professional/Mid-level,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,8,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-CS-PROFESSIONAL,DEPARTMENT-004,Customer Support,Professional/Mid-level,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,7,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-CS-PROFESSIONAL,DEPARTMENT-004,Customer Support,Professional/Mid-level,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,5,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-CS-PROFESSIONAL,DEPARTMENT-004,Customer Support,Professional/Mid-level,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-CS-SENIOR,DEPARTMENT-004,Customer Support,Senior/Lead,KPI-CS-001,Ticket Resolution Target Achievement,OUTPUT,25,Individual + Mentoring,HIGHER_BETTER,75,100,115,Yes,No,2025-09-01,,Active
+PT-CS-SENIOR,DEPARTMENT-004,Customer Support,Senior/Lead,KPI-CS-002,First Contact Resolution and Case Quality,QUALITY,20,Individual + Mentoring,HIGHER_BETTER,70,85,95,Yes,No,2025-09-01,,Active
+PT-CS-SENIOR,DEPARTMENT-004,Customer Support,Senior/Lead,KPI-CS-003,Support SLA Compliance,EFFICIENCY,15,Individual + Mentoring,HIGHER_BETTER,80,92,98,Yes,No,2025-09-01,,Active
+PT-CS-SENIOR,DEPARTMENT-004,Customer Support,Senior/Lead,KPI-LEAD-MENTOR,Mentoring and Knowledge Transfer,MENTORING,15,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-CS-SENIOR,DEPARTMENT-004,Customer Support,Senior/Lead,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,5,Individual + Mentoring,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-CS-SENIOR,DEPARTMENT-004,Customer Support,Senior/Lead,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,8,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-CS-SENIOR,DEPARTMENT-004,Customer Support,Senior/Lead,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-CS-SENIOR,DEPARTMENT-004,Customer Support,Senior/Lead,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-CS-MANAGER,DEPARTMENT-004,Customer Support,Manager/Head,KPI-CS-001,Ticket Resolution Target Achievement,OUTPUT,25,Team/Department,HIGHER_BETTER,75,100,115,Yes,No,2025-09-01,,Active
+PT-CS-MANAGER,DEPARTMENT-004,Customer Support,Manager/Head,KPI-CS-002,First Contact Resolution and Case Quality,QUALITY,15,Team/Department,HIGHER_BETTER,70,85,95,Yes,No,2025-09-01,,Active
+PT-CS-MANAGER,DEPARTMENT-004,Customer Support,Manager/Head,KPI-CS-003,Support SLA Compliance,EFFICIENCY,10,Team/Department,HIGHER_BETTER,80,92,98,Yes,No,2025-09-01,,Active
+PT-CS-MANAGER,DEPARTMENT-004,Customer Support,Manager/Head,KPI-LEAD-TEAM,Team Leadership and Development,LEADERSHIP,25,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-CS-MANAGER,DEPARTMENT-004,Customer Support,Manager/Head,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,3,Team/Department,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-CS-MANAGER,DEPARTMENT-004,Customer Support,Manager/Head,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-CS-MANAGER,DEPARTMENT-004,Customer Support,Manager/Head,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-CS-MANAGER,DEPARTMENT-004,Customer Support,Manager/Head,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-ENG-INTERN,DEPARTMENT-005,Engineering,Intern/Trainee,KPI-ENG-001,Sprint Delivery Achievement,OUTPUT,15,Individual,HIGHER_BETTER,70,100,115,Yes,No,2025-09-01,,Active
+PT-ENG-INTERN,DEPARTMENT-005,Engineering,Intern/Trainee,KPI-ENG-002,Escaped Defects per Release,QUALITY,15,Individual,LOWER_BETTER,5,2,0.5,Yes,No,2025-09-01,,Active
+PT-ENG-INTERN,DEPARTMENT-005,Engineering,Intern/Trainee,KPI-ENG-003,Production Change Success Rate,EFFICIENCY,10,Individual,HIGHER_BETTER,88,96,99.5,Yes,No,2025-09-01,,Active
+PT-ENG-INTERN,DEPARTMENT-005,Engineering,Intern/Trainee,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,15,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-ENG-INTERN,DEPARTMENT-005,Engineering,Intern/Trainee,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,15,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-ENG-INTERN,DEPARTMENT-005,Engineering,Intern/Trainee,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-ENG-INTERN,DEPARTMENT-005,Engineering,Intern/Trainee,KPI-COM-LEARN,Learning and Adaptability,LEARNING,20,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-ENG-JUNIOR,DEPARTMENT-005,Engineering,Junior/Assistant,KPI-ENG-001,Sprint Delivery Achievement,OUTPUT,25,Individual,HIGHER_BETTER,70,100,115,Yes,No,2025-09-01,,Active
+PT-ENG-JUNIOR,DEPARTMENT-005,Engineering,Junior/Assistant,KPI-ENG-002,Escaped Defects per Release,QUALITY,20,Individual,LOWER_BETTER,5,2,0.5,Yes,No,2025-09-01,,Active
+PT-ENG-JUNIOR,DEPARTMENT-005,Engineering,Junior/Assistant,KPI-ENG-003,Production Change Success Rate,EFFICIENCY,15,Individual,HIGHER_BETTER,88,96,99.5,Yes,No,2025-09-01,,Active
+PT-ENG-JUNIOR,DEPARTMENT-005,Engineering,Junior/Assistant,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,10,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-ENG-JUNIOR,DEPARTMENT-005,Engineering,Junior/Assistant,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-ENG-JUNIOR,DEPARTMENT-005,Engineering,Junior/Assistant,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-ENG-JUNIOR,DEPARTMENT-005,Engineering,Junior/Assistant,KPI-COM-LEARN,Learning and Adaptability,LEARNING,10,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-ENG-PROFESSIONAL,DEPARTMENT-005,Engineering,Professional/Mid-level,KPI-ENG-001,Sprint Delivery Achievement,OUTPUT,30,Individual,HIGHER_BETTER,70,100,115,Yes,No,2025-09-01,,Active
+PT-ENG-PROFESSIONAL,DEPARTMENT-005,Engineering,Professional/Mid-level,KPI-ENG-002,Escaped Defects per Release,QUALITY,25,Individual,LOWER_BETTER,5,2,0.5,Yes,No,2025-09-01,,Active
+PT-ENG-PROFESSIONAL,DEPARTMENT-005,Engineering,Professional/Mid-level,KPI-ENG-003,Production Change Success Rate,EFFICIENCY,20,Individual,HIGHER_BETTER,88,96,99.5,Yes,No,2025-09-01,,Active
+PT-ENG-PROFESSIONAL,DEPARTMENT-005,Engineering,Professional/Mid-level,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,8,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-ENG-PROFESSIONAL,DEPARTMENT-005,Engineering,Professional/Mid-level,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,7,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-ENG-PROFESSIONAL,DEPARTMENT-005,Engineering,Professional/Mid-level,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,5,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-ENG-PROFESSIONAL,DEPARTMENT-005,Engineering,Professional/Mid-level,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-ENG-SENIOR,DEPARTMENT-005,Engineering,Senior/Lead,KPI-ENG-001,Sprint Delivery Achievement,OUTPUT,25,Individual + Mentoring,HIGHER_BETTER,70,100,115,Yes,No,2025-09-01,,Active
+PT-ENG-SENIOR,DEPARTMENT-005,Engineering,Senior/Lead,KPI-ENG-002,Escaped Defects per Release,QUALITY,20,Individual + Mentoring,LOWER_BETTER,5,2,0.5,Yes,No,2025-09-01,,Active
+PT-ENG-SENIOR,DEPARTMENT-005,Engineering,Senior/Lead,KPI-ENG-003,Production Change Success Rate,EFFICIENCY,15,Individual + Mentoring,HIGHER_BETTER,88,96,99.5,Yes,No,2025-09-01,,Active
+PT-ENG-SENIOR,DEPARTMENT-005,Engineering,Senior/Lead,KPI-LEAD-MENTOR,Mentoring and Knowledge Transfer,MENTORING,15,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-ENG-SENIOR,DEPARTMENT-005,Engineering,Senior/Lead,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,5,Individual + Mentoring,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-ENG-SENIOR,DEPARTMENT-005,Engineering,Senior/Lead,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,8,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-ENG-SENIOR,DEPARTMENT-005,Engineering,Senior/Lead,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-ENG-SENIOR,DEPARTMENT-005,Engineering,Senior/Lead,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-ENG-MANAGER,DEPARTMENT-005,Engineering,Manager/Head,KPI-ENG-001,Sprint Delivery Achievement,OUTPUT,25,Team/Department,HIGHER_BETTER,70,100,115,Yes,No,2025-09-01,,Active
+PT-ENG-MANAGER,DEPARTMENT-005,Engineering,Manager/Head,KPI-ENG-002,Escaped Defects per Release,QUALITY,15,Team/Department,LOWER_BETTER,5,2,0.5,Yes,No,2025-09-01,,Active
+PT-ENG-MANAGER,DEPARTMENT-005,Engineering,Manager/Head,KPI-ENG-003,Production Change Success Rate,EFFICIENCY,10,Team/Department,HIGHER_BETTER,88,96,99.5,Yes,No,2025-09-01,,Active
+PT-ENG-MANAGER,DEPARTMENT-005,Engineering,Manager/Head,KPI-LEAD-TEAM,Team Leadership and Development,LEADERSHIP,25,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-ENG-MANAGER,DEPARTMENT-005,Engineering,Manager/Head,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,3,Team/Department,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-ENG-MANAGER,DEPARTMENT-005,Engineering,Manager/Head,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-ENG-MANAGER,DEPARTMENT-005,Engineering,Manager/Head,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-ENG-MANAGER,DEPARTMENT-005,Engineering,Manager/Head,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-OPS-INTERN,DEPARTMENT-006,Operations,Intern/Trainee,KPI-OPS-001,Operational Throughput Target Achievement,OUTPUT,15,Individual,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-OPS-INTERN,DEPARTMENT-006,Operations,Intern/Trainee,KPI-OPS-002,Process Accuracy,QUALITY,15,Individual,HIGHER_BETTER,94,98.5,100,Yes,No,2025-09-01,,Active
+PT-OPS-INTERN,DEPARTMENT-006,Operations,Intern/Trainee,KPI-OPS-003,Operational SLA Compliance,EFFICIENCY,10,Individual,HIGHER_BETTER,80,92,98,Yes,No,2025-09-01,,Active
+PT-OPS-INTERN,DEPARTMENT-006,Operations,Intern/Trainee,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,15,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-OPS-INTERN,DEPARTMENT-006,Operations,Intern/Trainee,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,15,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-OPS-INTERN,DEPARTMENT-006,Operations,Intern/Trainee,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-OPS-INTERN,DEPARTMENT-006,Operations,Intern/Trainee,KPI-COM-LEARN,Learning and Adaptability,LEARNING,20,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-OPS-JUNIOR,DEPARTMENT-006,Operations,Junior/Assistant,KPI-OPS-001,Operational Throughput Target Achievement,OUTPUT,25,Individual,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-OPS-JUNIOR,DEPARTMENT-006,Operations,Junior/Assistant,KPI-OPS-002,Process Accuracy,QUALITY,20,Individual,HIGHER_BETTER,94,98.5,100,Yes,No,2025-09-01,,Active
+PT-OPS-JUNIOR,DEPARTMENT-006,Operations,Junior/Assistant,KPI-OPS-003,Operational SLA Compliance,EFFICIENCY,15,Individual,HIGHER_BETTER,80,92,98,Yes,No,2025-09-01,,Active
+PT-OPS-JUNIOR,DEPARTMENT-006,Operations,Junior/Assistant,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,10,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-OPS-JUNIOR,DEPARTMENT-006,Operations,Junior/Assistant,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-OPS-JUNIOR,DEPARTMENT-006,Operations,Junior/Assistant,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-OPS-JUNIOR,DEPARTMENT-006,Operations,Junior/Assistant,KPI-COM-LEARN,Learning and Adaptability,LEARNING,10,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-OPS-PROFESSIONAL,DEPARTMENT-006,Operations,Professional/Mid-level,KPI-OPS-001,Operational Throughput Target Achievement,OUTPUT,30,Individual,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-OPS-PROFESSIONAL,DEPARTMENT-006,Operations,Professional/Mid-level,KPI-OPS-002,Process Accuracy,QUALITY,25,Individual,HIGHER_BETTER,94,98.5,100,Yes,No,2025-09-01,,Active
+PT-OPS-PROFESSIONAL,DEPARTMENT-006,Operations,Professional/Mid-level,KPI-OPS-003,Operational SLA Compliance,EFFICIENCY,20,Individual,HIGHER_BETTER,80,92,98,Yes,No,2025-09-01,,Active
+PT-OPS-PROFESSIONAL,DEPARTMENT-006,Operations,Professional/Mid-level,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,8,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-OPS-PROFESSIONAL,DEPARTMENT-006,Operations,Professional/Mid-level,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,7,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-OPS-PROFESSIONAL,DEPARTMENT-006,Operations,Professional/Mid-level,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,5,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-OPS-PROFESSIONAL,DEPARTMENT-006,Operations,Professional/Mid-level,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-OPS-SENIOR,DEPARTMENT-006,Operations,Senior/Lead,KPI-OPS-001,Operational Throughput Target Achievement,OUTPUT,25,Individual + Mentoring,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-OPS-SENIOR,DEPARTMENT-006,Operations,Senior/Lead,KPI-OPS-002,Process Accuracy,QUALITY,20,Individual + Mentoring,HIGHER_BETTER,94,98.5,100,Yes,No,2025-09-01,,Active
+PT-OPS-SENIOR,DEPARTMENT-006,Operations,Senior/Lead,KPI-OPS-003,Operational SLA Compliance,EFFICIENCY,15,Individual + Mentoring,HIGHER_BETTER,80,92,98,Yes,No,2025-09-01,,Active
+PT-OPS-SENIOR,DEPARTMENT-006,Operations,Senior/Lead,KPI-LEAD-MENTOR,Mentoring and Knowledge Transfer,MENTORING,15,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-OPS-SENIOR,DEPARTMENT-006,Operations,Senior/Lead,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,5,Individual + Mentoring,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-OPS-SENIOR,DEPARTMENT-006,Operations,Senior/Lead,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,8,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-OPS-SENIOR,DEPARTMENT-006,Operations,Senior/Lead,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-OPS-SENIOR,DEPARTMENT-006,Operations,Senior/Lead,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-OPS-MANAGER,DEPARTMENT-006,Operations,Manager/Head,KPI-OPS-001,Operational Throughput Target Achievement,OUTPUT,25,Team/Department,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-OPS-MANAGER,DEPARTMENT-006,Operations,Manager/Head,KPI-OPS-002,Process Accuracy,QUALITY,15,Team/Department,HIGHER_BETTER,94,98.5,100,Yes,No,2025-09-01,,Active
+PT-OPS-MANAGER,DEPARTMENT-006,Operations,Manager/Head,KPI-OPS-003,Operational SLA Compliance,EFFICIENCY,10,Team/Department,HIGHER_BETTER,80,92,98,Yes,No,2025-09-01,,Active
+PT-OPS-MANAGER,DEPARTMENT-006,Operations,Manager/Head,KPI-LEAD-TEAM,Team Leadership and Development,LEADERSHIP,25,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-OPS-MANAGER,DEPARTMENT-006,Operations,Manager/Head,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,3,Team/Department,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-OPS-MANAGER,DEPARTMENT-006,Operations,Manager/Head,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-OPS-MANAGER,DEPARTMENT-006,Operations,Manager/Head,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-OPS-MANAGER,DEPARTMENT-006,Operations,Manager/Head,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-IT-INTERN,DEPARTMENT-007,IT,Intern/Trainee,KPI-IT-001,IT Service Delivery Target Achievement,OUTPUT,15,Individual,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-IT-INTERN,DEPARTMENT-007,IT,Intern/Trainee,KPI-IT-002,System Availability and Change Success,QUALITY,15,Individual,HIGHER_BETTER,97,99.3,99.9,Yes,No,2025-09-01,,Active
+PT-IT-INTERN,DEPARTMENT-007,IT,Intern/Trainee,KPI-IT-003,Incident Resolution within SLA,EFFICIENCY,10,Individual,HIGHER_BETTER,80,92,98,Yes,No,2025-09-01,,Active
+PT-IT-INTERN,DEPARTMENT-007,IT,Intern/Trainee,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,15,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-IT-INTERN,DEPARTMENT-007,IT,Intern/Trainee,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,15,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-IT-INTERN,DEPARTMENT-007,IT,Intern/Trainee,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-IT-INTERN,DEPARTMENT-007,IT,Intern/Trainee,KPI-COM-LEARN,Learning and Adaptability,LEARNING,20,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-IT-JUNIOR,DEPARTMENT-007,IT,Junior/Assistant,KPI-IT-001,IT Service Delivery Target Achievement,OUTPUT,25,Individual,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-IT-JUNIOR,DEPARTMENT-007,IT,Junior/Assistant,KPI-IT-002,System Availability and Change Success,QUALITY,20,Individual,HIGHER_BETTER,97,99.3,99.9,Yes,No,2025-09-01,,Active
+PT-IT-JUNIOR,DEPARTMENT-007,IT,Junior/Assistant,KPI-IT-003,Incident Resolution within SLA,EFFICIENCY,15,Individual,HIGHER_BETTER,80,92,98,Yes,No,2025-09-01,,Active
+PT-IT-JUNIOR,DEPARTMENT-007,IT,Junior/Assistant,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,10,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-IT-JUNIOR,DEPARTMENT-007,IT,Junior/Assistant,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-IT-JUNIOR,DEPARTMENT-007,IT,Junior/Assistant,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-IT-JUNIOR,DEPARTMENT-007,IT,Junior/Assistant,KPI-COM-LEARN,Learning and Adaptability,LEARNING,10,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-IT-PROFESSIONAL,DEPARTMENT-007,IT,Professional/Mid-level,KPI-IT-001,IT Service Delivery Target Achievement,OUTPUT,30,Individual,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-IT-PROFESSIONAL,DEPARTMENT-007,IT,Professional/Mid-level,KPI-IT-002,System Availability and Change Success,QUALITY,25,Individual,HIGHER_BETTER,97,99.3,99.9,Yes,No,2025-09-01,,Active
+PT-IT-PROFESSIONAL,DEPARTMENT-007,IT,Professional/Mid-level,KPI-IT-003,Incident Resolution within SLA,EFFICIENCY,20,Individual,HIGHER_BETTER,80,92,98,Yes,No,2025-09-01,,Active
+PT-IT-PROFESSIONAL,DEPARTMENT-007,IT,Professional/Mid-level,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,8,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-IT-PROFESSIONAL,DEPARTMENT-007,IT,Professional/Mid-level,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,7,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-IT-PROFESSIONAL,DEPARTMENT-007,IT,Professional/Mid-level,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,5,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-IT-PROFESSIONAL,DEPARTMENT-007,IT,Professional/Mid-level,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-IT-SENIOR,DEPARTMENT-007,IT,Senior/Lead,KPI-IT-001,IT Service Delivery Target Achievement,OUTPUT,25,Individual + Mentoring,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-IT-SENIOR,DEPARTMENT-007,IT,Senior/Lead,KPI-IT-002,System Availability and Change Success,QUALITY,20,Individual + Mentoring,HIGHER_BETTER,97,99.3,99.9,Yes,No,2025-09-01,,Active
+PT-IT-SENIOR,DEPARTMENT-007,IT,Senior/Lead,KPI-IT-003,Incident Resolution within SLA,EFFICIENCY,15,Individual + Mentoring,HIGHER_BETTER,80,92,98,Yes,No,2025-09-01,,Active
+PT-IT-SENIOR,DEPARTMENT-007,IT,Senior/Lead,KPI-LEAD-MENTOR,Mentoring and Knowledge Transfer,MENTORING,15,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-IT-SENIOR,DEPARTMENT-007,IT,Senior/Lead,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,5,Individual + Mentoring,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-IT-SENIOR,DEPARTMENT-007,IT,Senior/Lead,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,8,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-IT-SENIOR,DEPARTMENT-007,IT,Senior/Lead,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-IT-SENIOR,DEPARTMENT-007,IT,Senior/Lead,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-IT-MANAGER,DEPARTMENT-007,IT,Manager/Head,KPI-IT-001,IT Service Delivery Target Achievement,OUTPUT,25,Team/Department,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-IT-MANAGER,DEPARTMENT-007,IT,Manager/Head,KPI-IT-002,System Availability and Change Success,QUALITY,15,Team/Department,HIGHER_BETTER,97,99.3,99.9,Yes,No,2025-09-01,,Active
+PT-IT-MANAGER,DEPARTMENT-007,IT,Manager/Head,KPI-IT-003,Incident Resolution within SLA,EFFICIENCY,10,Team/Department,HIGHER_BETTER,80,92,98,Yes,No,2025-09-01,,Active
+PT-IT-MANAGER,DEPARTMENT-007,IT,Manager/Head,KPI-LEAD-TEAM,Team Leadership and Development,LEADERSHIP,25,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-IT-MANAGER,DEPARTMENT-007,IT,Manager/Head,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,3,Team/Department,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-IT-MANAGER,DEPARTMENT-007,IT,Manager/Head,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-IT-MANAGER,DEPARTMENT-007,IT,Manager/Head,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-IT-MANAGER,DEPARTMENT-007,IT,Manager/Head,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-MED-INTERN,DEPARTMENT-008,Medical Care,Intern/Trainee,KPI-MED-001,Planned Clinical Service Completion,OUTPUT,15,Individual,HIGHER_BETTER,80,100,108,Yes,No,2025-09-01,,Active
+PT-MED-INTERN,DEPARTMENT-008,Medical Care,Intern/Trainee,KPI-MED-002,Clinical Protocol and Documentation Compliance,QUALITY,15,Individual,HIGHER_BETTER,90,97,100,Yes,Yes,2025-09-01,,Active
+PT-MED-INTERN,DEPARTMENT-008,Medical Care,Intern/Trainee,KPI-MED-003,Patient Safety and Care Timeliness Score,EFFICIENCY,10,Individual,HIGHER_BETTER,75,90,97,Yes,No,2025-09-01,,Active
+PT-MED-INTERN,DEPARTMENT-008,Medical Care,Intern/Trainee,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,15,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-MED-INTERN,DEPARTMENT-008,Medical Care,Intern/Trainee,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,15,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-MED-INTERN,DEPARTMENT-008,Medical Care,Intern/Trainee,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-MED-INTERN,DEPARTMENT-008,Medical Care,Intern/Trainee,KPI-COM-LEARN,Learning and Adaptability,LEARNING,20,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-MED-JUNIOR,DEPARTMENT-008,Medical Care,Junior/Assistant,KPI-MED-001,Planned Clinical Service Completion,OUTPUT,25,Individual,HIGHER_BETTER,80,100,108,Yes,No,2025-09-01,,Active
+PT-MED-JUNIOR,DEPARTMENT-008,Medical Care,Junior/Assistant,KPI-MED-002,Clinical Protocol and Documentation Compliance,QUALITY,20,Individual,HIGHER_BETTER,90,97,100,Yes,Yes,2025-09-01,,Active
+PT-MED-JUNIOR,DEPARTMENT-008,Medical Care,Junior/Assistant,KPI-MED-003,Patient Safety and Care Timeliness Score,EFFICIENCY,15,Individual,HIGHER_BETTER,75,90,97,Yes,No,2025-09-01,,Active
+PT-MED-JUNIOR,DEPARTMENT-008,Medical Care,Junior/Assistant,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,10,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-MED-JUNIOR,DEPARTMENT-008,Medical Care,Junior/Assistant,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-MED-JUNIOR,DEPARTMENT-008,Medical Care,Junior/Assistant,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-MED-JUNIOR,DEPARTMENT-008,Medical Care,Junior/Assistant,KPI-COM-LEARN,Learning and Adaptability,LEARNING,10,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-MED-PROFESSIONAL,DEPARTMENT-008,Medical Care,Professional/Mid-level,KPI-MED-001,Planned Clinical Service Completion,OUTPUT,30,Individual,HIGHER_BETTER,80,100,108,Yes,No,2025-09-01,,Active
+PT-MED-PROFESSIONAL,DEPARTMENT-008,Medical Care,Professional/Mid-level,KPI-MED-002,Clinical Protocol and Documentation Compliance,QUALITY,25,Individual,HIGHER_BETTER,90,97,100,Yes,Yes,2025-09-01,,Active
+PT-MED-PROFESSIONAL,DEPARTMENT-008,Medical Care,Professional/Mid-level,KPI-MED-003,Patient Safety and Care Timeliness Score,EFFICIENCY,20,Individual,HIGHER_BETTER,75,90,97,Yes,No,2025-09-01,,Active
+PT-MED-PROFESSIONAL,DEPARTMENT-008,Medical Care,Professional/Mid-level,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,8,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-MED-PROFESSIONAL,DEPARTMENT-008,Medical Care,Professional/Mid-level,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,7,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-MED-PROFESSIONAL,DEPARTMENT-008,Medical Care,Professional/Mid-level,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,5,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-MED-PROFESSIONAL,DEPARTMENT-008,Medical Care,Professional/Mid-level,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-MED-SENIOR,DEPARTMENT-008,Medical Care,Senior/Lead,KPI-MED-001,Planned Clinical Service Completion,OUTPUT,25,Individual + Mentoring,HIGHER_BETTER,80,100,108,Yes,No,2025-09-01,,Active
+PT-MED-SENIOR,DEPARTMENT-008,Medical Care,Senior/Lead,KPI-MED-002,Clinical Protocol and Documentation Compliance,QUALITY,20,Individual + Mentoring,HIGHER_BETTER,90,97,100,Yes,Yes,2025-09-01,,Active
+PT-MED-SENIOR,DEPARTMENT-008,Medical Care,Senior/Lead,KPI-MED-003,Patient Safety and Care Timeliness Score,EFFICIENCY,15,Individual + Mentoring,HIGHER_BETTER,75,90,97,Yes,No,2025-09-01,,Active
+PT-MED-SENIOR,DEPARTMENT-008,Medical Care,Senior/Lead,KPI-LEAD-MENTOR,Mentoring and Knowledge Transfer,MENTORING,15,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-MED-SENIOR,DEPARTMENT-008,Medical Care,Senior/Lead,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,5,Individual + Mentoring,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-MED-SENIOR,DEPARTMENT-008,Medical Care,Senior/Lead,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,8,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-MED-SENIOR,DEPARTMENT-008,Medical Care,Senior/Lead,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-MED-SENIOR,DEPARTMENT-008,Medical Care,Senior/Lead,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-MED-MANAGER,DEPARTMENT-008,Medical Care,Manager/Head,KPI-MED-001,Planned Clinical Service Completion,OUTPUT,25,Team/Department,HIGHER_BETTER,80,100,108,Yes,No,2025-09-01,,Active
+PT-MED-MANAGER,DEPARTMENT-008,Medical Care,Manager/Head,KPI-MED-002,Clinical Protocol and Documentation Compliance,QUALITY,15,Team/Department,HIGHER_BETTER,90,97,100,Yes,Yes,2025-09-01,,Active
+PT-MED-MANAGER,DEPARTMENT-008,Medical Care,Manager/Head,KPI-MED-003,Patient Safety and Care Timeliness Score,EFFICIENCY,10,Team/Department,HIGHER_BETTER,75,90,97,Yes,No,2025-09-01,,Active
+PT-MED-MANAGER,DEPARTMENT-008,Medical Care,Manager/Head,KPI-LEAD-TEAM,Team Leadership and Development,LEADERSHIP,25,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-MED-MANAGER,DEPARTMENT-008,Medical Care,Manager/Head,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,3,Team/Department,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-MED-MANAGER,DEPARTMENT-008,Medical Care,Manager/Head,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-MED-MANAGER,DEPARTMENT-008,Medical Care,Manager/Head,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-MED-MANAGER,DEPARTMENT-008,Medical Care,Manager/Head,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-TRN-INTERN,DEPARTMENT-009,Training & Development,Intern/Trainee,KPI-TRN-001,Training Delivery Target Achievement,OUTPUT,15,Individual,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-TRN-INTERN,DEPARTMENT-009,Training & Development,Intern/Trainee,KPI-TRN-002,Learner Knowledge Improvement,QUALITY,15,Individual,HIGHER_BETTER,8,20,30,Yes,No,2025-09-01,,Active
+PT-TRN-INTERN,DEPARTMENT-009,Training & Development,Intern/Trainee,KPI-TRN-003,Learner Satisfaction and Application Score,EFFICIENCY,10,Individual,HIGHER_BETTER,75,88,95,Yes,No,2025-09-01,,Active
+PT-TRN-INTERN,DEPARTMENT-009,Training & Development,Intern/Trainee,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,15,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-TRN-INTERN,DEPARTMENT-009,Training & Development,Intern/Trainee,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,15,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-TRN-INTERN,DEPARTMENT-009,Training & Development,Intern/Trainee,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-TRN-INTERN,DEPARTMENT-009,Training & Development,Intern/Trainee,KPI-COM-LEARN,Learning and Adaptability,LEARNING,20,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-TRN-JUNIOR,DEPARTMENT-009,Training & Development,Junior/Assistant,KPI-TRN-001,Training Delivery Target Achievement,OUTPUT,25,Individual,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-TRN-JUNIOR,DEPARTMENT-009,Training & Development,Junior/Assistant,KPI-TRN-002,Learner Knowledge Improvement,QUALITY,20,Individual,HIGHER_BETTER,8,20,30,Yes,No,2025-09-01,,Active
+PT-TRN-JUNIOR,DEPARTMENT-009,Training & Development,Junior/Assistant,KPI-TRN-003,Learner Satisfaction and Application Score,EFFICIENCY,15,Individual,HIGHER_BETTER,75,88,95,Yes,No,2025-09-01,,Active
+PT-TRN-JUNIOR,DEPARTMENT-009,Training & Development,Junior/Assistant,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,10,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-TRN-JUNIOR,DEPARTMENT-009,Training & Development,Junior/Assistant,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-TRN-JUNIOR,DEPARTMENT-009,Training & Development,Junior/Assistant,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-TRN-JUNIOR,DEPARTMENT-009,Training & Development,Junior/Assistant,KPI-COM-LEARN,Learning and Adaptability,LEARNING,10,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-TRN-PROFESSIONAL,DEPARTMENT-009,Training & Development,Professional/Mid-level,KPI-TRN-001,Training Delivery Target Achievement,OUTPUT,30,Individual,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-TRN-PROFESSIONAL,DEPARTMENT-009,Training & Development,Professional/Mid-level,KPI-TRN-002,Learner Knowledge Improvement,QUALITY,25,Individual,HIGHER_BETTER,8,20,30,Yes,No,2025-09-01,,Active
+PT-TRN-PROFESSIONAL,DEPARTMENT-009,Training & Development,Professional/Mid-level,KPI-TRN-003,Learner Satisfaction and Application Score,EFFICIENCY,20,Individual,HIGHER_BETTER,75,88,95,Yes,No,2025-09-01,,Active
+PT-TRN-PROFESSIONAL,DEPARTMENT-009,Training & Development,Professional/Mid-level,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,8,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-TRN-PROFESSIONAL,DEPARTMENT-009,Training & Development,Professional/Mid-level,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,7,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-TRN-PROFESSIONAL,DEPARTMENT-009,Training & Development,Professional/Mid-level,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,5,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-TRN-PROFESSIONAL,DEPARTMENT-009,Training & Development,Professional/Mid-level,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-TRN-SENIOR,DEPARTMENT-009,Training & Development,Senior/Lead,KPI-TRN-001,Training Delivery Target Achievement,OUTPUT,25,Individual + Mentoring,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-TRN-SENIOR,DEPARTMENT-009,Training & Development,Senior/Lead,KPI-TRN-002,Learner Knowledge Improvement,QUALITY,20,Individual + Mentoring,HIGHER_BETTER,8,20,30,Yes,No,2025-09-01,,Active
+PT-TRN-SENIOR,DEPARTMENT-009,Training & Development,Senior/Lead,KPI-TRN-003,Learner Satisfaction and Application Score,EFFICIENCY,15,Individual + Mentoring,HIGHER_BETTER,75,88,95,Yes,No,2025-09-01,,Active
+PT-TRN-SENIOR,DEPARTMENT-009,Training & Development,Senior/Lead,KPI-LEAD-MENTOR,Mentoring and Knowledge Transfer,MENTORING,15,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-TRN-SENIOR,DEPARTMENT-009,Training & Development,Senior/Lead,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,5,Individual + Mentoring,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-TRN-SENIOR,DEPARTMENT-009,Training & Development,Senior/Lead,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,8,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-TRN-SENIOR,DEPARTMENT-009,Training & Development,Senior/Lead,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-TRN-SENIOR,DEPARTMENT-009,Training & Development,Senior/Lead,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-TRN-MANAGER,DEPARTMENT-009,Training & Development,Manager/Head,KPI-TRN-001,Training Delivery Target Achievement,OUTPUT,25,Team/Department,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-TRN-MANAGER,DEPARTMENT-009,Training & Development,Manager/Head,KPI-TRN-002,Learner Knowledge Improvement,QUALITY,15,Team/Department,HIGHER_BETTER,8,20,30,Yes,No,2025-09-01,,Active
+PT-TRN-MANAGER,DEPARTMENT-009,Training & Development,Manager/Head,KPI-TRN-003,Learner Satisfaction and Application Score,EFFICIENCY,10,Team/Department,HIGHER_BETTER,75,88,95,Yes,No,2025-09-01,,Active
+PT-TRN-MANAGER,DEPARTMENT-009,Training & Development,Manager/Head,KPI-LEAD-TEAM,Team Leadership and Development,LEADERSHIP,25,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-TRN-MANAGER,DEPARTMENT-009,Training & Development,Manager/Head,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,3,Team/Department,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-TRN-MANAGER,DEPARTMENT-009,Training & Development,Manager/Head,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-TRN-MANAGER,DEPARTMENT-009,Training & Development,Manager/Head,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-TRN-MANAGER,DEPARTMENT-009,Training & Development,Manager/Head,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-ADM-INTERN,DEPARTMENT-010,Administration & Facilities,Intern/Trainee,KPI-ADM-001,Administration Service Target Achievement,OUTPUT,15,Individual,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-ADM-INTERN,DEPARTMENT-010,Administration & Facilities,Intern/Trainee,KPI-ADM-002,Facility and Maintenance Reliability,QUALITY,15,Individual,HIGHER_BETTER,85,95,99,Yes,No,2025-09-01,,Active
+PT-ADM-INTERN,DEPARTMENT-010,Administration & Facilities,Intern/Trainee,KPI-ADM-003,Administrative Cost Variance,EFFICIENCY,10,Individual,LOWER_BETTER,10,5,1,Yes,No,2025-09-01,,Active
+PT-ADM-INTERN,DEPARTMENT-010,Administration & Facilities,Intern/Trainee,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,15,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-ADM-INTERN,DEPARTMENT-010,Administration & Facilities,Intern/Trainee,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,15,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-ADM-INTERN,DEPARTMENT-010,Administration & Facilities,Intern/Trainee,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-ADM-INTERN,DEPARTMENT-010,Administration & Facilities,Intern/Trainee,KPI-COM-LEARN,Learning and Adaptability,LEARNING,20,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-ADM-JUNIOR,DEPARTMENT-010,Administration & Facilities,Junior/Assistant,KPI-ADM-001,Administration Service Target Achievement,OUTPUT,25,Individual,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-ADM-JUNIOR,DEPARTMENT-010,Administration & Facilities,Junior/Assistant,KPI-ADM-002,Facility and Maintenance Reliability,QUALITY,20,Individual,HIGHER_BETTER,85,95,99,Yes,No,2025-09-01,,Active
+PT-ADM-JUNIOR,DEPARTMENT-010,Administration & Facilities,Junior/Assistant,KPI-ADM-003,Administrative Cost Variance,EFFICIENCY,15,Individual,LOWER_BETTER,10,5,1,Yes,No,2025-09-01,,Active
+PT-ADM-JUNIOR,DEPARTMENT-010,Administration & Facilities,Junior/Assistant,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,10,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-ADM-JUNIOR,DEPARTMENT-010,Administration & Facilities,Junior/Assistant,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-ADM-JUNIOR,DEPARTMENT-010,Administration & Facilities,Junior/Assistant,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-ADM-JUNIOR,DEPARTMENT-010,Administration & Facilities,Junior/Assistant,KPI-COM-LEARN,Learning and Adaptability,LEARNING,10,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-ADM-PROFESSIONAL,DEPARTMENT-010,Administration & Facilities,Professional/Mid-level,KPI-ADM-001,Administration Service Target Achievement,OUTPUT,30,Individual,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-ADM-PROFESSIONAL,DEPARTMENT-010,Administration & Facilities,Professional/Mid-level,KPI-ADM-002,Facility and Maintenance Reliability,QUALITY,25,Individual,HIGHER_BETTER,85,95,99,Yes,No,2025-09-01,,Active
+PT-ADM-PROFESSIONAL,DEPARTMENT-010,Administration & Facilities,Professional/Mid-level,KPI-ADM-003,Administrative Cost Variance,EFFICIENCY,20,Individual,LOWER_BETTER,10,5,1,Yes,No,2025-09-01,,Active
+PT-ADM-PROFESSIONAL,DEPARTMENT-010,Administration & Facilities,Professional/Mid-level,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,8,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-ADM-PROFESSIONAL,DEPARTMENT-010,Administration & Facilities,Professional/Mid-level,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,7,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-ADM-PROFESSIONAL,DEPARTMENT-010,Administration & Facilities,Professional/Mid-level,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,5,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-ADM-PROFESSIONAL,DEPARTMENT-010,Administration & Facilities,Professional/Mid-level,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-ADM-SENIOR,DEPARTMENT-010,Administration & Facilities,Senior/Lead,KPI-ADM-001,Administration Service Target Achievement,OUTPUT,25,Individual + Mentoring,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-ADM-SENIOR,DEPARTMENT-010,Administration & Facilities,Senior/Lead,KPI-ADM-002,Facility and Maintenance Reliability,QUALITY,20,Individual + Mentoring,HIGHER_BETTER,85,95,99,Yes,No,2025-09-01,,Active
+PT-ADM-SENIOR,DEPARTMENT-010,Administration & Facilities,Senior/Lead,KPI-ADM-003,Administrative Cost Variance,EFFICIENCY,15,Individual + Mentoring,LOWER_BETTER,10,5,1,Yes,No,2025-09-01,,Active
+PT-ADM-SENIOR,DEPARTMENT-010,Administration & Facilities,Senior/Lead,KPI-LEAD-MENTOR,Mentoring and Knowledge Transfer,MENTORING,15,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-ADM-SENIOR,DEPARTMENT-010,Administration & Facilities,Senior/Lead,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,5,Individual + Mentoring,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-ADM-SENIOR,DEPARTMENT-010,Administration & Facilities,Senior/Lead,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,8,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-ADM-SENIOR,DEPARTMENT-010,Administration & Facilities,Senior/Lead,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-ADM-SENIOR,DEPARTMENT-010,Administration & Facilities,Senior/Lead,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-ADM-MANAGER,DEPARTMENT-010,Administration & Facilities,Manager/Head,KPI-ADM-001,Administration Service Target Achievement,OUTPUT,25,Team/Department,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-ADM-MANAGER,DEPARTMENT-010,Administration & Facilities,Manager/Head,KPI-ADM-002,Facility and Maintenance Reliability,QUALITY,15,Team/Department,HIGHER_BETTER,85,95,99,Yes,No,2025-09-01,,Active
+PT-ADM-MANAGER,DEPARTMENT-010,Administration & Facilities,Manager/Head,KPI-ADM-003,Administrative Cost Variance,EFFICIENCY,10,Team/Department,LOWER_BETTER,10,5,1,Yes,No,2025-09-01,,Active
+PT-ADM-MANAGER,DEPARTMENT-010,Administration & Facilities,Manager/Head,KPI-LEAD-TEAM,Team Leadership and Development,LEADERSHIP,25,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-ADM-MANAGER,DEPARTMENT-010,Administration & Facilities,Manager/Head,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,3,Team/Department,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-ADM-MANAGER,DEPARTMENT-010,Administration & Facilities,Manager/Head,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-ADM-MANAGER,DEPARTMENT-010,Administration & Facilities,Manager/Head,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-ADM-MANAGER,DEPARTMENT-010,Administration & Facilities,Manager/Head,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-LGL-INTERN,DEPARTMENT-011,Legal & Compliance,Intern/Trainee,KPI-LGL-001,Contract and Case Milestone Achievement,OUTPUT,15,Individual,HIGHER_BETTER,70,100,112,Yes,No,2025-09-01,,Active
+PT-LGL-INTERN,DEPARTMENT-011,Legal & Compliance,Intern/Trainee,KPI-LGL-002,Regulatory and Policy Compliance Accuracy,QUALITY,15,Individual,HIGHER_BETTER,95,99,100,Yes,Yes,2025-09-01,,Active
+PT-LGL-INTERN,DEPARTMENT-011,Legal & Compliance,Intern/Trainee,KPI-LGL-003,Legal Advisory Turnaround Time,EFFICIENCY,10,Individual,LOWER_BETTER,8,4,2,Yes,No,2025-09-01,,Active
+PT-LGL-INTERN,DEPARTMENT-011,Legal & Compliance,Intern/Trainee,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,15,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-LGL-INTERN,DEPARTMENT-011,Legal & Compliance,Intern/Trainee,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,15,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-LGL-INTERN,DEPARTMENT-011,Legal & Compliance,Intern/Trainee,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-LGL-INTERN,DEPARTMENT-011,Legal & Compliance,Intern/Trainee,KPI-COM-LEARN,Learning and Adaptability,LEARNING,20,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-LGL-JUNIOR,DEPARTMENT-011,Legal & Compliance,Junior/Assistant,KPI-LGL-001,Contract and Case Milestone Achievement,OUTPUT,25,Individual,HIGHER_BETTER,70,100,112,Yes,No,2025-09-01,,Active
+PT-LGL-JUNIOR,DEPARTMENT-011,Legal & Compliance,Junior/Assistant,KPI-LGL-002,Regulatory and Policy Compliance Accuracy,QUALITY,20,Individual,HIGHER_BETTER,95,99,100,Yes,Yes,2025-09-01,,Active
+PT-LGL-JUNIOR,DEPARTMENT-011,Legal & Compliance,Junior/Assistant,KPI-LGL-003,Legal Advisory Turnaround Time,EFFICIENCY,15,Individual,LOWER_BETTER,8,4,2,Yes,No,2025-09-01,,Active
+PT-LGL-JUNIOR,DEPARTMENT-011,Legal & Compliance,Junior/Assistant,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,10,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-LGL-JUNIOR,DEPARTMENT-011,Legal & Compliance,Junior/Assistant,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-LGL-JUNIOR,DEPARTMENT-011,Legal & Compliance,Junior/Assistant,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-LGL-JUNIOR,DEPARTMENT-011,Legal & Compliance,Junior/Assistant,KPI-COM-LEARN,Learning and Adaptability,LEARNING,10,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-LGL-PROFESSIONAL,DEPARTMENT-011,Legal & Compliance,Professional/Mid-level,KPI-LGL-001,Contract and Case Milestone Achievement,OUTPUT,30,Individual,HIGHER_BETTER,70,100,112,Yes,No,2025-09-01,,Active
+PT-LGL-PROFESSIONAL,DEPARTMENT-011,Legal & Compliance,Professional/Mid-level,KPI-LGL-002,Regulatory and Policy Compliance Accuracy,QUALITY,25,Individual,HIGHER_BETTER,95,99,100,Yes,Yes,2025-09-01,,Active
+PT-LGL-PROFESSIONAL,DEPARTMENT-011,Legal & Compliance,Professional/Mid-level,KPI-LGL-003,Legal Advisory Turnaround Time,EFFICIENCY,20,Individual,LOWER_BETTER,8,4,2,Yes,No,2025-09-01,,Active
+PT-LGL-PROFESSIONAL,DEPARTMENT-011,Legal & Compliance,Professional/Mid-level,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,8,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-LGL-PROFESSIONAL,DEPARTMENT-011,Legal & Compliance,Professional/Mid-level,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,7,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-LGL-PROFESSIONAL,DEPARTMENT-011,Legal & Compliance,Professional/Mid-level,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,5,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-LGL-PROFESSIONAL,DEPARTMENT-011,Legal & Compliance,Professional/Mid-level,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-LGL-SENIOR,DEPARTMENT-011,Legal & Compliance,Senior/Lead,KPI-LGL-001,Contract and Case Milestone Achievement,OUTPUT,25,Individual + Mentoring,HIGHER_BETTER,70,100,112,Yes,No,2025-09-01,,Active
+PT-LGL-SENIOR,DEPARTMENT-011,Legal & Compliance,Senior/Lead,KPI-LGL-002,Regulatory and Policy Compliance Accuracy,QUALITY,20,Individual + Mentoring,HIGHER_BETTER,95,99,100,Yes,Yes,2025-09-01,,Active
+PT-LGL-SENIOR,DEPARTMENT-011,Legal & Compliance,Senior/Lead,KPI-LGL-003,Legal Advisory Turnaround Time,EFFICIENCY,15,Individual + Mentoring,LOWER_BETTER,8,4,2,Yes,No,2025-09-01,,Active
+PT-LGL-SENIOR,DEPARTMENT-011,Legal & Compliance,Senior/Lead,KPI-LEAD-MENTOR,Mentoring and Knowledge Transfer,MENTORING,15,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-LGL-SENIOR,DEPARTMENT-011,Legal & Compliance,Senior/Lead,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,5,Individual + Mentoring,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-LGL-SENIOR,DEPARTMENT-011,Legal & Compliance,Senior/Lead,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,8,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-LGL-SENIOR,DEPARTMENT-011,Legal & Compliance,Senior/Lead,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-LGL-SENIOR,DEPARTMENT-011,Legal & Compliance,Senior/Lead,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-LGL-MANAGER,DEPARTMENT-011,Legal & Compliance,Manager/Head,KPI-LGL-001,Contract and Case Milestone Achievement,OUTPUT,25,Team/Department,HIGHER_BETTER,70,100,112,Yes,No,2025-09-01,,Active
+PT-LGL-MANAGER,DEPARTMENT-011,Legal & Compliance,Manager/Head,KPI-LGL-002,Regulatory and Policy Compliance Accuracy,QUALITY,15,Team/Department,HIGHER_BETTER,95,99,100,Yes,Yes,2025-09-01,,Active
+PT-LGL-MANAGER,DEPARTMENT-011,Legal & Compliance,Manager/Head,KPI-LGL-003,Legal Advisory Turnaround Time,EFFICIENCY,10,Team/Department,LOWER_BETTER,8,4,2,Yes,No,2025-09-01,,Active
+PT-LGL-MANAGER,DEPARTMENT-011,Legal & Compliance,Manager/Head,KPI-LEAD-TEAM,Team Leadership and Development,LEADERSHIP,25,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-LGL-MANAGER,DEPARTMENT-011,Legal & Compliance,Manager/Head,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,3,Team/Department,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-LGL-MANAGER,DEPARTMENT-011,Legal & Compliance,Manager/Head,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-LGL-MANAGER,DEPARTMENT-011,Legal & Compliance,Manager/Head,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-LGL-MANAGER,DEPARTMENT-011,Legal & Compliance,Manager/Head,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRC-INTERN,DEPARTMENT-012,Procurement & Supply Chain,Intern/Trainee,KPI-PRC-001,Procurement Cycle Target Achievement,OUTPUT,15,Individual,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-PRC-INTERN,DEPARTMENT-012,Procurement & Supply Chain,Intern/Trainee,KPI-PRC-002,Verified Procurement Savings,QUALITY,15,Individual,HIGHER_BETTER,1,4,8,Yes,No,2025-09-01,,Active
+PT-PRC-INTERN,DEPARTMENT-012,Procurement & Supply Chain,Intern/Trainee,KPI-PRC-003,Supplier On-Time and Quality Score,EFFICIENCY,10,Individual,HIGHER_BETTER,75,90,97,Yes,No,2025-09-01,,Active
+PT-PRC-INTERN,DEPARTMENT-012,Procurement & Supply Chain,Intern/Trainee,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,15,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-PRC-INTERN,DEPARTMENT-012,Procurement & Supply Chain,Intern/Trainee,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,15,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRC-INTERN,DEPARTMENT-012,Procurement & Supply Chain,Intern/Trainee,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRC-INTERN,DEPARTMENT-012,Procurement & Supply Chain,Intern/Trainee,KPI-COM-LEARN,Learning and Adaptability,LEARNING,20,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRC-JUNIOR,DEPARTMENT-012,Procurement & Supply Chain,Junior/Assistant,KPI-PRC-001,Procurement Cycle Target Achievement,OUTPUT,25,Individual,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-PRC-JUNIOR,DEPARTMENT-012,Procurement & Supply Chain,Junior/Assistant,KPI-PRC-002,Verified Procurement Savings,QUALITY,20,Individual,HIGHER_BETTER,1,4,8,Yes,No,2025-09-01,,Active
+PT-PRC-JUNIOR,DEPARTMENT-012,Procurement & Supply Chain,Junior/Assistant,KPI-PRC-003,Supplier On-Time and Quality Score,EFFICIENCY,15,Individual,HIGHER_BETTER,75,90,97,Yes,No,2025-09-01,,Active
+PT-PRC-JUNIOR,DEPARTMENT-012,Procurement & Supply Chain,Junior/Assistant,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,10,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-PRC-JUNIOR,DEPARTMENT-012,Procurement & Supply Chain,Junior/Assistant,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRC-JUNIOR,DEPARTMENT-012,Procurement & Supply Chain,Junior/Assistant,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRC-JUNIOR,DEPARTMENT-012,Procurement & Supply Chain,Junior/Assistant,KPI-COM-LEARN,Learning and Adaptability,LEARNING,10,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRC-PROFESSIONAL,DEPARTMENT-012,Procurement & Supply Chain,Professional/Mid-level,KPI-PRC-001,Procurement Cycle Target Achievement,OUTPUT,30,Individual,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-PRC-PROFESSIONAL,DEPARTMENT-012,Procurement & Supply Chain,Professional/Mid-level,KPI-PRC-002,Verified Procurement Savings,QUALITY,25,Individual,HIGHER_BETTER,1,4,8,Yes,No,2025-09-01,,Active
+PT-PRC-PROFESSIONAL,DEPARTMENT-012,Procurement & Supply Chain,Professional/Mid-level,KPI-PRC-003,Supplier On-Time and Quality Score,EFFICIENCY,20,Individual,HIGHER_BETTER,75,90,97,Yes,No,2025-09-01,,Active
+PT-PRC-PROFESSIONAL,DEPARTMENT-012,Procurement & Supply Chain,Professional/Mid-level,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,8,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-PRC-PROFESSIONAL,DEPARTMENT-012,Procurement & Supply Chain,Professional/Mid-level,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,7,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRC-PROFESSIONAL,DEPARTMENT-012,Procurement & Supply Chain,Professional/Mid-level,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,5,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRC-PROFESSIONAL,DEPARTMENT-012,Procurement & Supply Chain,Professional/Mid-level,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRC-SENIOR,DEPARTMENT-012,Procurement & Supply Chain,Senior/Lead,KPI-PRC-001,Procurement Cycle Target Achievement,OUTPUT,25,Individual + Mentoring,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-PRC-SENIOR,DEPARTMENT-012,Procurement & Supply Chain,Senior/Lead,KPI-PRC-002,Verified Procurement Savings,QUALITY,20,Individual + Mentoring,HIGHER_BETTER,1,4,8,Yes,No,2025-09-01,,Active
+PT-PRC-SENIOR,DEPARTMENT-012,Procurement & Supply Chain,Senior/Lead,KPI-PRC-003,Supplier On-Time and Quality Score,EFFICIENCY,15,Individual + Mentoring,HIGHER_BETTER,75,90,97,Yes,No,2025-09-01,,Active
+PT-PRC-SENIOR,DEPARTMENT-012,Procurement & Supply Chain,Senior/Lead,KPI-LEAD-MENTOR,Mentoring and Knowledge Transfer,MENTORING,15,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRC-SENIOR,DEPARTMENT-012,Procurement & Supply Chain,Senior/Lead,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,5,Individual + Mentoring,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-PRC-SENIOR,DEPARTMENT-012,Procurement & Supply Chain,Senior/Lead,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,8,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRC-SENIOR,DEPARTMENT-012,Procurement & Supply Chain,Senior/Lead,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRC-SENIOR,DEPARTMENT-012,Procurement & Supply Chain,Senior/Lead,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRC-MANAGER,DEPARTMENT-012,Procurement & Supply Chain,Manager/Head,KPI-PRC-001,Procurement Cycle Target Achievement,OUTPUT,25,Team/Department,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-PRC-MANAGER,DEPARTMENT-012,Procurement & Supply Chain,Manager/Head,KPI-PRC-002,Verified Procurement Savings,QUALITY,15,Team/Department,HIGHER_BETTER,1,4,8,Yes,No,2025-09-01,,Active
+PT-PRC-MANAGER,DEPARTMENT-012,Procurement & Supply Chain,Manager/Head,KPI-PRC-003,Supplier On-Time and Quality Score,EFFICIENCY,10,Team/Department,HIGHER_BETTER,75,90,97,Yes,No,2025-09-01,,Active
+PT-PRC-MANAGER,DEPARTMENT-012,Procurement & Supply Chain,Manager/Head,KPI-LEAD-TEAM,Team Leadership and Development,LEADERSHIP,25,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRC-MANAGER,DEPARTMENT-012,Procurement & Supply Chain,Manager/Head,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,3,Team/Department,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-PRC-MANAGER,DEPARTMENT-012,Procurement & Supply Chain,Manager/Head,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRC-MANAGER,DEPARTMENT-012,Procurement & Supply Chain,Manager/Head,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRC-MANAGER,DEPARTMENT-012,Procurement & Supply Chain,Manager/Head,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-LOG-INTERN,DEPARTMENT-013,Logistics & Warehouse,Intern/Trainee,KPI-LOG-001,On-Time Dispatch Target Achievement,OUTPUT,15,Individual,HIGHER_BETTER,80,95,100,Yes,No,2025-09-01,,Active
+PT-LOG-INTERN,DEPARTMENT-013,Logistics & Warehouse,Intern/Trainee,KPI-LOG-002,Inventory and Order Accuracy,QUALITY,15,Individual,HIGHER_BETTER,95,99,100,Yes,No,2025-09-01,,Active
+PT-LOG-INTERN,DEPARTMENT-013,Logistics & Warehouse,Intern/Trainee,KPI-LOG-003,Damage and Loss Rate,EFFICIENCY,10,Individual,LOWER_BETTER,3,1,0.2,Yes,No,2025-09-01,,Active
+PT-LOG-INTERN,DEPARTMENT-013,Logistics & Warehouse,Intern/Trainee,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,15,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-LOG-INTERN,DEPARTMENT-013,Logistics & Warehouse,Intern/Trainee,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,15,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-LOG-INTERN,DEPARTMENT-013,Logistics & Warehouse,Intern/Trainee,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-LOG-INTERN,DEPARTMENT-013,Logistics & Warehouse,Intern/Trainee,KPI-COM-LEARN,Learning and Adaptability,LEARNING,20,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-LOG-JUNIOR,DEPARTMENT-013,Logistics & Warehouse,Junior/Assistant,KPI-LOG-001,On-Time Dispatch Target Achievement,OUTPUT,25,Individual,HIGHER_BETTER,80,95,100,Yes,No,2025-09-01,,Active
+PT-LOG-JUNIOR,DEPARTMENT-013,Logistics & Warehouse,Junior/Assistant,KPI-LOG-002,Inventory and Order Accuracy,QUALITY,20,Individual,HIGHER_BETTER,95,99,100,Yes,No,2025-09-01,,Active
+PT-LOG-JUNIOR,DEPARTMENT-013,Logistics & Warehouse,Junior/Assistant,KPI-LOG-003,Damage and Loss Rate,EFFICIENCY,15,Individual,LOWER_BETTER,3,1,0.2,Yes,No,2025-09-01,,Active
+PT-LOG-JUNIOR,DEPARTMENT-013,Logistics & Warehouse,Junior/Assistant,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,10,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-LOG-JUNIOR,DEPARTMENT-013,Logistics & Warehouse,Junior/Assistant,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-LOG-JUNIOR,DEPARTMENT-013,Logistics & Warehouse,Junior/Assistant,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-LOG-JUNIOR,DEPARTMENT-013,Logistics & Warehouse,Junior/Assistant,KPI-COM-LEARN,Learning and Adaptability,LEARNING,10,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-LOG-PROFESSIONAL,DEPARTMENT-013,Logistics & Warehouse,Professional/Mid-level,KPI-LOG-001,On-Time Dispatch Target Achievement,OUTPUT,30,Individual,HIGHER_BETTER,80,95,100,Yes,No,2025-09-01,,Active
+PT-LOG-PROFESSIONAL,DEPARTMENT-013,Logistics & Warehouse,Professional/Mid-level,KPI-LOG-002,Inventory and Order Accuracy,QUALITY,25,Individual,HIGHER_BETTER,95,99,100,Yes,No,2025-09-01,,Active
+PT-LOG-PROFESSIONAL,DEPARTMENT-013,Logistics & Warehouse,Professional/Mid-level,KPI-LOG-003,Damage and Loss Rate,EFFICIENCY,20,Individual,LOWER_BETTER,3,1,0.2,Yes,No,2025-09-01,,Active
+PT-LOG-PROFESSIONAL,DEPARTMENT-013,Logistics & Warehouse,Professional/Mid-level,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,8,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-LOG-PROFESSIONAL,DEPARTMENT-013,Logistics & Warehouse,Professional/Mid-level,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,7,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-LOG-PROFESSIONAL,DEPARTMENT-013,Logistics & Warehouse,Professional/Mid-level,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,5,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-LOG-PROFESSIONAL,DEPARTMENT-013,Logistics & Warehouse,Professional/Mid-level,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-LOG-SENIOR,DEPARTMENT-013,Logistics & Warehouse,Senior/Lead,KPI-LOG-001,On-Time Dispatch Target Achievement,OUTPUT,25,Individual + Mentoring,HIGHER_BETTER,80,95,100,Yes,No,2025-09-01,,Active
+PT-LOG-SENIOR,DEPARTMENT-013,Logistics & Warehouse,Senior/Lead,KPI-LOG-002,Inventory and Order Accuracy,QUALITY,20,Individual + Mentoring,HIGHER_BETTER,95,99,100,Yes,No,2025-09-01,,Active
+PT-LOG-SENIOR,DEPARTMENT-013,Logistics & Warehouse,Senior/Lead,KPI-LOG-003,Damage and Loss Rate,EFFICIENCY,15,Individual + Mentoring,LOWER_BETTER,3,1,0.2,Yes,No,2025-09-01,,Active
+PT-LOG-SENIOR,DEPARTMENT-013,Logistics & Warehouse,Senior/Lead,KPI-LEAD-MENTOR,Mentoring and Knowledge Transfer,MENTORING,15,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-LOG-SENIOR,DEPARTMENT-013,Logistics & Warehouse,Senior/Lead,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,5,Individual + Mentoring,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-LOG-SENIOR,DEPARTMENT-013,Logistics & Warehouse,Senior/Lead,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,8,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-LOG-SENIOR,DEPARTMENT-013,Logistics & Warehouse,Senior/Lead,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-LOG-SENIOR,DEPARTMENT-013,Logistics & Warehouse,Senior/Lead,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-LOG-MANAGER,DEPARTMENT-013,Logistics & Warehouse,Manager/Head,KPI-LOG-001,On-Time Dispatch Target Achievement,OUTPUT,25,Team/Department,HIGHER_BETTER,80,95,100,Yes,No,2025-09-01,,Active
+PT-LOG-MANAGER,DEPARTMENT-013,Logistics & Warehouse,Manager/Head,KPI-LOG-002,Inventory and Order Accuracy,QUALITY,15,Team/Department,HIGHER_BETTER,95,99,100,Yes,No,2025-09-01,,Active
+PT-LOG-MANAGER,DEPARTMENT-013,Logistics & Warehouse,Manager/Head,KPI-LOG-003,Damage and Loss Rate,EFFICIENCY,10,Team/Department,LOWER_BETTER,3,1,0.2,Yes,No,2025-09-01,,Active
+PT-LOG-MANAGER,DEPARTMENT-013,Logistics & Warehouse,Manager/Head,KPI-LEAD-TEAM,Team Leadership and Development,LEADERSHIP,25,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-LOG-MANAGER,DEPARTMENT-013,Logistics & Warehouse,Manager/Head,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,3,Team/Department,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-LOG-MANAGER,DEPARTMENT-013,Logistics & Warehouse,Manager/Head,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-LOG-MANAGER,DEPARTMENT-013,Logistics & Warehouse,Manager/Head,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-LOG-MANAGER,DEPARTMENT-013,Logistics & Warehouse,Manager/Head,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRD-INTERN,DEPARTMENT-014,Production & Manufacturing,Intern/Trainee,KPI-PRD-001,Production Target Achievement,OUTPUT,15,Individual,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-PRD-INTERN,DEPARTMENT-014,Production & Manufacturing,Intern/Trainee,KPI-PRD-002,First Pass Yield,QUALITY,15,Individual,HIGHER_BETTER,88,96,99,Yes,Yes,2025-09-01,,Active
+PT-PRD-INTERN,DEPARTMENT-014,Production & Manufacturing,Intern/Trainee,KPI-PRD-003,Unplanned Downtime,EFFICIENCY,10,Individual,LOWER_BETTER,8,4,1,Yes,No,2025-09-01,,Active
+PT-PRD-INTERN,DEPARTMENT-014,Production & Manufacturing,Intern/Trainee,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,15,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-PRD-INTERN,DEPARTMENT-014,Production & Manufacturing,Intern/Trainee,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,15,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRD-INTERN,DEPARTMENT-014,Production & Manufacturing,Intern/Trainee,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRD-INTERN,DEPARTMENT-014,Production & Manufacturing,Intern/Trainee,KPI-COM-LEARN,Learning and Adaptability,LEARNING,20,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRD-JUNIOR,DEPARTMENT-014,Production & Manufacturing,Junior/Assistant,KPI-PRD-001,Production Target Achievement,OUTPUT,25,Individual,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-PRD-JUNIOR,DEPARTMENT-014,Production & Manufacturing,Junior/Assistant,KPI-PRD-002,First Pass Yield,QUALITY,20,Individual,HIGHER_BETTER,88,96,99,Yes,Yes,2025-09-01,,Active
+PT-PRD-JUNIOR,DEPARTMENT-014,Production & Manufacturing,Junior/Assistant,KPI-PRD-003,Unplanned Downtime,EFFICIENCY,15,Individual,LOWER_BETTER,8,4,1,Yes,No,2025-09-01,,Active
+PT-PRD-JUNIOR,DEPARTMENT-014,Production & Manufacturing,Junior/Assistant,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,10,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-PRD-JUNIOR,DEPARTMENT-014,Production & Manufacturing,Junior/Assistant,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRD-JUNIOR,DEPARTMENT-014,Production & Manufacturing,Junior/Assistant,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRD-JUNIOR,DEPARTMENT-014,Production & Manufacturing,Junior/Assistant,KPI-COM-LEARN,Learning and Adaptability,LEARNING,10,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRD-PROFESSIONAL,DEPARTMENT-014,Production & Manufacturing,Professional/Mid-level,KPI-PRD-001,Production Target Achievement,OUTPUT,30,Individual,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-PRD-PROFESSIONAL,DEPARTMENT-014,Production & Manufacturing,Professional/Mid-level,KPI-PRD-002,First Pass Yield,QUALITY,25,Individual,HIGHER_BETTER,88,96,99,Yes,Yes,2025-09-01,,Active
+PT-PRD-PROFESSIONAL,DEPARTMENT-014,Production & Manufacturing,Professional/Mid-level,KPI-PRD-003,Unplanned Downtime,EFFICIENCY,20,Individual,LOWER_BETTER,8,4,1,Yes,No,2025-09-01,,Active
+PT-PRD-PROFESSIONAL,DEPARTMENT-014,Production & Manufacturing,Professional/Mid-level,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,8,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-PRD-PROFESSIONAL,DEPARTMENT-014,Production & Manufacturing,Professional/Mid-level,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,7,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRD-PROFESSIONAL,DEPARTMENT-014,Production & Manufacturing,Professional/Mid-level,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,5,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRD-PROFESSIONAL,DEPARTMENT-014,Production & Manufacturing,Professional/Mid-level,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRD-SENIOR,DEPARTMENT-014,Production & Manufacturing,Senior/Lead,KPI-PRD-001,Production Target Achievement,OUTPUT,25,Individual + Mentoring,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-PRD-SENIOR,DEPARTMENT-014,Production & Manufacturing,Senior/Lead,KPI-PRD-002,First Pass Yield,QUALITY,20,Individual + Mentoring,HIGHER_BETTER,88,96,99,Yes,Yes,2025-09-01,,Active
+PT-PRD-SENIOR,DEPARTMENT-014,Production & Manufacturing,Senior/Lead,KPI-PRD-003,Unplanned Downtime,EFFICIENCY,15,Individual + Mentoring,LOWER_BETTER,8,4,1,Yes,No,2025-09-01,,Active
+PT-PRD-SENIOR,DEPARTMENT-014,Production & Manufacturing,Senior/Lead,KPI-LEAD-MENTOR,Mentoring and Knowledge Transfer,MENTORING,15,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRD-SENIOR,DEPARTMENT-014,Production & Manufacturing,Senior/Lead,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,5,Individual + Mentoring,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-PRD-SENIOR,DEPARTMENT-014,Production & Manufacturing,Senior/Lead,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,8,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRD-SENIOR,DEPARTMENT-014,Production & Manufacturing,Senior/Lead,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRD-SENIOR,DEPARTMENT-014,Production & Manufacturing,Senior/Lead,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRD-MANAGER,DEPARTMENT-014,Production & Manufacturing,Manager/Head,KPI-PRD-001,Production Target Achievement,OUTPUT,25,Team/Department,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-PRD-MANAGER,DEPARTMENT-014,Production & Manufacturing,Manager/Head,KPI-PRD-002,First Pass Yield,QUALITY,15,Team/Department,HIGHER_BETTER,88,96,99,Yes,Yes,2025-09-01,,Active
+PT-PRD-MANAGER,DEPARTMENT-014,Production & Manufacturing,Manager/Head,KPI-PRD-003,Unplanned Downtime,EFFICIENCY,10,Team/Department,LOWER_BETTER,8,4,1,Yes,No,2025-09-01,,Active
+PT-PRD-MANAGER,DEPARTMENT-014,Production & Manufacturing,Manager/Head,KPI-LEAD-TEAM,Team Leadership and Development,LEADERSHIP,25,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRD-MANAGER,DEPARTMENT-014,Production & Manufacturing,Manager/Head,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,3,Team/Department,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-PRD-MANAGER,DEPARTMENT-014,Production & Manufacturing,Manager/Head,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRD-MANAGER,DEPARTMENT-014,Production & Manufacturing,Manager/Head,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-PRD-MANAGER,DEPARTMENT-014,Production & Manufacturing,Manager/Head,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-QAS-INTERN,DEPARTMENT-015,Quality Assurance,Intern/Trainee,KPI-QAS-001,Test and Inspection Plan Achievement,OUTPUT,15,Individual,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-QAS-INTERN,DEPARTMENT-015,Quality Assurance,Intern/Trainee,KPI-QAS-002,Escaped Defect Rate,QUALITY,15,Individual,LOWER_BETTER,5,2,0.5,Yes,Yes,2025-09-01,,Active
+PT-QAS-INTERN,DEPARTMENT-015,Quality Assurance,Intern/Trainee,KPI-QAS-003,CAPA and Audit Closure within SLA,EFFICIENCY,10,Individual,HIGHER_BETTER,75,92,100,Yes,No,2025-09-01,,Active
+PT-QAS-INTERN,DEPARTMENT-015,Quality Assurance,Intern/Trainee,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,15,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-QAS-INTERN,DEPARTMENT-015,Quality Assurance,Intern/Trainee,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,15,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-QAS-INTERN,DEPARTMENT-015,Quality Assurance,Intern/Trainee,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-QAS-INTERN,DEPARTMENT-015,Quality Assurance,Intern/Trainee,KPI-COM-LEARN,Learning and Adaptability,LEARNING,20,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-QAS-JUNIOR,DEPARTMENT-015,Quality Assurance,Junior/Assistant,KPI-QAS-001,Test and Inspection Plan Achievement,OUTPUT,25,Individual,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-QAS-JUNIOR,DEPARTMENT-015,Quality Assurance,Junior/Assistant,KPI-QAS-002,Escaped Defect Rate,QUALITY,20,Individual,LOWER_BETTER,5,2,0.5,Yes,Yes,2025-09-01,,Active
+PT-QAS-JUNIOR,DEPARTMENT-015,Quality Assurance,Junior/Assistant,KPI-QAS-003,CAPA and Audit Closure within SLA,EFFICIENCY,15,Individual,HIGHER_BETTER,75,92,100,Yes,No,2025-09-01,,Active
+PT-QAS-JUNIOR,DEPARTMENT-015,Quality Assurance,Junior/Assistant,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,10,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-QAS-JUNIOR,DEPARTMENT-015,Quality Assurance,Junior/Assistant,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-QAS-JUNIOR,DEPARTMENT-015,Quality Assurance,Junior/Assistant,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-QAS-JUNIOR,DEPARTMENT-015,Quality Assurance,Junior/Assistant,KPI-COM-LEARN,Learning and Adaptability,LEARNING,10,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-QAS-PROFESSIONAL,DEPARTMENT-015,Quality Assurance,Professional/Mid-level,KPI-QAS-001,Test and Inspection Plan Achievement,OUTPUT,30,Individual,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-QAS-PROFESSIONAL,DEPARTMENT-015,Quality Assurance,Professional/Mid-level,KPI-QAS-002,Escaped Defect Rate,QUALITY,25,Individual,LOWER_BETTER,5,2,0.5,Yes,Yes,2025-09-01,,Active
+PT-QAS-PROFESSIONAL,DEPARTMENT-015,Quality Assurance,Professional/Mid-level,KPI-QAS-003,CAPA and Audit Closure within SLA,EFFICIENCY,20,Individual,HIGHER_BETTER,75,92,100,Yes,No,2025-09-01,,Active
+PT-QAS-PROFESSIONAL,DEPARTMENT-015,Quality Assurance,Professional/Mid-level,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,8,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-QAS-PROFESSIONAL,DEPARTMENT-015,Quality Assurance,Professional/Mid-level,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,7,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-QAS-PROFESSIONAL,DEPARTMENT-015,Quality Assurance,Professional/Mid-level,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,5,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-QAS-PROFESSIONAL,DEPARTMENT-015,Quality Assurance,Professional/Mid-level,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-QAS-SENIOR,DEPARTMENT-015,Quality Assurance,Senior/Lead,KPI-QAS-001,Test and Inspection Plan Achievement,OUTPUT,25,Individual + Mentoring,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-QAS-SENIOR,DEPARTMENT-015,Quality Assurance,Senior/Lead,KPI-QAS-002,Escaped Defect Rate,QUALITY,20,Individual + Mentoring,LOWER_BETTER,5,2,0.5,Yes,Yes,2025-09-01,,Active
+PT-QAS-SENIOR,DEPARTMENT-015,Quality Assurance,Senior/Lead,KPI-QAS-003,CAPA and Audit Closure within SLA,EFFICIENCY,15,Individual + Mentoring,HIGHER_BETTER,75,92,100,Yes,No,2025-09-01,,Active
+PT-QAS-SENIOR,DEPARTMENT-015,Quality Assurance,Senior/Lead,KPI-LEAD-MENTOR,Mentoring and Knowledge Transfer,MENTORING,15,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-QAS-SENIOR,DEPARTMENT-015,Quality Assurance,Senior/Lead,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,5,Individual + Mentoring,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-QAS-SENIOR,DEPARTMENT-015,Quality Assurance,Senior/Lead,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,8,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-QAS-SENIOR,DEPARTMENT-015,Quality Assurance,Senior/Lead,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-QAS-SENIOR,DEPARTMENT-015,Quality Assurance,Senior/Lead,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-QAS-MANAGER,DEPARTMENT-015,Quality Assurance,Manager/Head,KPI-QAS-001,Test and Inspection Plan Achievement,OUTPUT,25,Team/Department,HIGHER_BETTER,75,100,112,Yes,No,2025-09-01,,Active
+PT-QAS-MANAGER,DEPARTMENT-015,Quality Assurance,Manager/Head,KPI-QAS-002,Escaped Defect Rate,QUALITY,15,Team/Department,LOWER_BETTER,5,2,0.5,Yes,Yes,2025-09-01,,Active
+PT-QAS-MANAGER,DEPARTMENT-015,Quality Assurance,Manager/Head,KPI-QAS-003,CAPA and Audit Closure within SLA,EFFICIENCY,10,Team/Department,HIGHER_BETTER,75,92,100,Yes,No,2025-09-01,,Active
+PT-QAS-MANAGER,DEPARTMENT-015,Quality Assurance,Manager/Head,KPI-LEAD-TEAM,Team Leadership and Development,LEADERSHIP,25,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-QAS-MANAGER,DEPARTMENT-015,Quality Assurance,Manager/Head,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,3,Team/Department,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-QAS-MANAGER,DEPARTMENT-015,Quality Assurance,Manager/Head,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-QAS-MANAGER,DEPARTMENT-015,Quality Assurance,Manager/Head,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-QAS-MANAGER,DEPARTMENT-015,Quality Assurance,Manager/Head,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-RND-INTERN,DEPARTMENT-016,Research & Development,Intern/Trainee,KPI-RND-001,Research Milestone Target Achievement,OUTPUT,15,Individual,HIGHER_BETTER,70,100,112,Yes,No,2025-09-01,,Active
+PT-RND-INTERN,DEPARTMENT-016,Research & Development,Intern/Trainee,KPI-RND-002,Experiment Validation Success,QUALITY,15,Individual,HIGHER_BETTER,60,80,92,Yes,No,2025-09-01,,Active
+PT-RND-INTERN,DEPARTMENT-016,Research & Development,Intern/Trainee,KPI-RND-003,Innovation and Knowledge Transfer Completion,EFFICIENCY,10,Individual,HIGHER_BETTER,65,85,100,Yes,No,2025-09-01,,Active
+PT-RND-INTERN,DEPARTMENT-016,Research & Development,Intern/Trainee,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,15,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-RND-INTERN,DEPARTMENT-016,Research & Development,Intern/Trainee,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,15,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-RND-INTERN,DEPARTMENT-016,Research & Development,Intern/Trainee,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-RND-INTERN,DEPARTMENT-016,Research & Development,Intern/Trainee,KPI-COM-LEARN,Learning and Adaptability,LEARNING,20,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-RND-JUNIOR,DEPARTMENT-016,Research & Development,Junior/Assistant,KPI-RND-001,Research Milestone Target Achievement,OUTPUT,25,Individual,HIGHER_BETTER,70,100,112,Yes,No,2025-09-01,,Active
+PT-RND-JUNIOR,DEPARTMENT-016,Research & Development,Junior/Assistant,KPI-RND-002,Experiment Validation Success,QUALITY,20,Individual,HIGHER_BETTER,60,80,92,Yes,No,2025-09-01,,Active
+PT-RND-JUNIOR,DEPARTMENT-016,Research & Development,Junior/Assistant,KPI-RND-003,Innovation and Knowledge Transfer Completion,EFFICIENCY,15,Individual,HIGHER_BETTER,65,85,100,Yes,No,2025-09-01,,Active
+PT-RND-JUNIOR,DEPARTMENT-016,Research & Development,Junior/Assistant,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,10,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-RND-JUNIOR,DEPARTMENT-016,Research & Development,Junior/Assistant,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-RND-JUNIOR,DEPARTMENT-016,Research & Development,Junior/Assistant,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,10,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-RND-JUNIOR,DEPARTMENT-016,Research & Development,Junior/Assistant,KPI-COM-LEARN,Learning and Adaptability,LEARNING,10,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-RND-PROFESSIONAL,DEPARTMENT-016,Research & Development,Professional/Mid-level,KPI-RND-001,Research Milestone Target Achievement,OUTPUT,30,Individual,HIGHER_BETTER,70,100,112,Yes,No,2025-09-01,,Active
+PT-RND-PROFESSIONAL,DEPARTMENT-016,Research & Development,Professional/Mid-level,KPI-RND-002,Experiment Validation Success,QUALITY,25,Individual,HIGHER_BETTER,60,80,92,Yes,No,2025-09-01,,Active
+PT-RND-PROFESSIONAL,DEPARTMENT-016,Research & Development,Professional/Mid-level,KPI-RND-003,Innovation and Knowledge Transfer Completion,EFFICIENCY,20,Individual,HIGHER_BETTER,65,85,100,Yes,No,2025-09-01,,Active
+PT-RND-PROFESSIONAL,DEPARTMENT-016,Research & Development,Professional/Mid-level,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,8,Individual,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-RND-PROFESSIONAL,DEPARTMENT-016,Research & Development,Professional/Mid-level,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,7,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-RND-PROFESSIONAL,DEPARTMENT-016,Research & Development,Professional/Mid-level,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,5,Individual,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-RND-PROFESSIONAL,DEPARTMENT-016,Research & Development,Professional/Mid-level,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-RND-SENIOR,DEPARTMENT-016,Research & Development,Senior/Lead,KPI-RND-001,Research Milestone Target Achievement,OUTPUT,25,Individual + Mentoring,HIGHER_BETTER,70,100,112,Yes,No,2025-09-01,,Active
+PT-RND-SENIOR,DEPARTMENT-016,Research & Development,Senior/Lead,KPI-RND-002,Experiment Validation Success,QUALITY,20,Individual + Mentoring,HIGHER_BETTER,60,80,92,Yes,No,2025-09-01,,Active
+PT-RND-SENIOR,DEPARTMENT-016,Research & Development,Senior/Lead,KPI-RND-003,Innovation and Knowledge Transfer Completion,EFFICIENCY,15,Individual + Mentoring,HIGHER_BETTER,65,85,100,Yes,No,2025-09-01,,Active
+PT-RND-SENIOR,DEPARTMENT-016,Research & Development,Senior/Lead,KPI-LEAD-MENTOR,Mentoring and Knowledge Transfer,MENTORING,15,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-RND-SENIOR,DEPARTMENT-016,Research & Development,Senior/Lead,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,5,Individual + Mentoring,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-RND-SENIOR,DEPARTMENT-016,Research & Development,Senior/Lead,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,8,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-RND-SENIOR,DEPARTMENT-016,Research & Development,Senior/Lead,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Individual + Mentoring,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-RND-SENIOR,DEPARTMENT-016,Research & Development,Senior/Lead,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Individual + Mentoring,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-RND-MANAGER,DEPARTMENT-016,Research & Development,Manager/Head,KPI-RND-001,Research Milestone Target Achievement,OUTPUT,25,Team/Department,HIGHER_BETTER,70,100,112,Yes,No,2025-09-01,,Active
+PT-RND-MANAGER,DEPARTMENT-016,Research & Development,Manager/Head,KPI-RND-002,Experiment Validation Success,QUALITY,15,Team/Department,HIGHER_BETTER,60,80,92,Yes,No,2025-09-01,,Active
+PT-RND-MANAGER,DEPARTMENT-016,Research & Development,Manager/Head,KPI-RND-003,Innovation and Knowledge Transfer Completion,EFFICIENCY,10,Team/Department,HIGHER_BETTER,65,85,100,Yes,No,2025-09-01,,Active
+PT-RND-MANAGER,DEPARTMENT-016,Research & Development,Manager/Head,KPI-LEAD-TEAM,Team Leadership and Development,LEADERSHIP,25,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active
+PT-RND-MANAGER,DEPARTMENT-016,Research & Development,Manager/Head,KPI-COM-ATT,Attendance and Punctuality,ATTENDANCE,3,Team/Department,HIGHER_BETTER,90.0,95.0,99.0,Yes,No,2025-09-01,,Active
+PT-RND-MANAGER,DEPARTMENT-016,Research & Development,Manager/Head,KPI-COM-RESP,Responsibility and Deadline Discipline,RESPONSIBILITY,10,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-RND-MANAGER,DEPARTMENT-016,Research & Development,Manager/Head,KPI-COM-TEAM,Teamwork and Professional Communication,TEAMWORK,7,Team/Department,HIGHER_BETTER,65.0,85.0,95.0,Yes,No,2025-09-01,,Active
+PT-RND-MANAGER,DEPARTMENT-016,Research & Development,Manager/Head,KPI-COM-LEARN,Learning and Adaptability,LEARNING,5,Team/Department,HIGHER_BETTER,60.0,82.0,95.0,Yes,No,2025-09-01,,Active

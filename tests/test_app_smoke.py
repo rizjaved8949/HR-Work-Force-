@@ -55,11 +55,7 @@ def test_route_is_registered(path: str) -> None:
     whole headcount layer 404'd over HTTP.
     """
 
-    registered = {
-        route.path
-        for route in app_module.app.routes
-        if hasattr(route, "methods")
-    }
+    registered = set(app_module.app.openapi()["paths"].keys())
 
     assert path in registered
 

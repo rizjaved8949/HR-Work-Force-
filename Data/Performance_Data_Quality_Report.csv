@@ -1,0 +1,18 @@
+﻿Check_ID,Check_Name,Severity,Expected_Value,Actual_Value,Status,Notes,Data_As_Of_Date
+DQ-001,Employee profile coverage,Error,720,720,Passed,,2026-08-01
+DQ-002,Role mapping coverage,Error,720,720,Passed,,2026-08-01
+DQ-003,Employee performance summary coverage,Error,720,720,Passed,,2026-08-01
+DQ-004,Unique employee summaries,Error,720 unique employees,720,Passed,,2026-08-01
+DQ-005,Role template weights,Error,100% for every template,All 80 templates validated,Passed,,2026-08-01
+DQ-006,Employee monthly weights,Error,100% for every employee-month,All employee-months validated,Passed,,2026-08-01
+DQ-007,Performance score range,Error,0 to 100,All scores within range,Passed,,2026-08-01
+DQ-008,KPI score range,Error,0 to 100,All KPI scores within range,Passed,,2026-08-01
+DQ-009,Monthly performance row count,Error,8640,8640,Passed,,2026-08-01
+DQ-010,Department monthly row count,Error,192,192,Passed,,2026-08-01
+DQ-011,Existing source filenames protected,Error,No protected source files written,No protected source files written,Passed,,2026-08-01
+DQ-012,All employees mapped to role band,Error,720 mapped,720 mapped,Passed,,2026-08-01
+DQ-013,All monthly calculations completed,Error,"8,640 completed",8640,Passed,,2026-08-01
+DQ-014,Demo evidence clearly labelled,Error,All evidence DERIVED_DEMO,63300,Passed,,2026-08-01
+DQ-015,KPI assignment count by role,Error,7 or 8 KPIs per employee,All employees validated,Passed,,2026-08-01
+DQ-016,New score alignment with existing performance pattern,Warning,Correlation >= 0.70,0.839,Passed,Confirms new role-specific results preserve the current employee performance pattern without copying the old score.,2026-08-01
+DQ-017,Operational values and production source mapping,Error,"Every evidence row has operational target, actual and production source",63300 of 63300,Passed,Operational values are business-pattern demo evidence; production systems will replace DERIVED_DEMO values.,2026-08-01

@@ -1,0 +1,13 @@
+﻿Validation_Check,Expected,Actual,Status,Detail,Data_As_Of_Date
+Learning profile covers all 720 employees,720,720,Passed,Every current employee has one learning/development summary row.,2026-08-01
+Course catalog covers all existing skills,99,99,Passed,"All skills in Skill_Catalog.csv have Foundation, Practitioner and Advanced courses.",2026-08-01
+KPI-skill mapping covers all performance KPIs,54,54,Passed,Every KPI can be traced to one or more development skills.,2026-08-01
+All recommendations reference valid employees,100%,1677/1677,Passed,Recommendations use Employee_IDs from the uploaded Employee_Profile.csv.,2026-08-01
+All recommendations reference valid courses,100%,1677/1677,Passed,Every recommendation points to a course in the generated course catalog.,2026-08-01
+No completed course is recommended again,0,0,Passed,Previously completed demo courses are excluded from recommendations.,2026-08-01
+All declining employees receive recommendations,56,56,Passed,Declining employees always receive at least one role-relevant development action.,2026-08-01
+Every recommendation has data-based evidence,100%,1677/1677,Passed,"Each recommendation cites KPI, skill gap, trend or early-career role evidence.",2026-08-01
+Intern completion coverage below Junior,Intern < Junior,20.83% < 44.95%,Passed,Early-career employees intentionally have fewer completed courses.,2026-08-01
+Junior completion coverage below Professional,Junior < Professional,44.95% < 72.15%,Passed,Learning history increases with role maturity.,2026-08-01
+Professional completion coverage below Senior,Professional < Senior,72.15% < 89.84%,Passed,Senior employees mostly show completed relevant learning.,2026-08-01
+Senior completion coverage below Manager,Senior < Manager,89.84% < 95.33%,Passed,Managers/heads have the highest learning completion coverage.,2026-08-01

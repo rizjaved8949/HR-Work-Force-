@@ -1,0 +1,8 @@
+﻿File_Name,Row_Count,Purpose,Primary_Source_Data,Storage_Location,Existing_Source_Files_Modified,Data_As_Of_Date
+Learning_Course_Catalog.csv,297,"Course catalogue based on the 99 existing skills, with three progressive levels per skill.",Skill_Catalog.csv,Existing shared Data folder,No,2026-08-01
+KPI_Skill_Development_Map.csv,110,Maps measured performance KPIs to the capabilities that can improve them.,KPI_Catalog.csv + Skill_Catalog.csv,Existing shared Data folder,No,2026-08-01
+Skill_Course_Mapping.csv,297,Graph-ready skill-to-course relationships.,Learning_Course_Catalog.csv,Existing shared Data folder,No,2026-08-01
+Employee_Learning_History.csv,960,"Derived demo completed learning grounded in actual role, skill, certification and seniority evidence.",Employee_Skills.csv + Performance_Role_Mapping.csv + Position_Skill_Requirements.csv,Existing shared Data folder,No,2026-08-01
+Employee_Development_Recommendation.csv,1677,"Traceable course recommendations based on performance trend, weak KPIs, skill gaps and early-career readiness.",Employee_Performance_Summary.csv + Employee_Skills.csv + Position_Skill_Requirements.csv,Existing shared Data folder,No,2026-08-01
+Employee_Learning_Profile_Summary.csv,720,One-row learning and development summary for every one of the 720 employees.,Generated learning outputs,Existing shared Data folder,No,2026-08-01
+Learning_Data_Quality_Report.csv,12,Validation and release-gate report for the learning package.,Generated learning package + uploaded employee data,Existing shared Data folder,No,2026-08-01
