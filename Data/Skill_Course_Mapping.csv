@@ -1,0 +1,298 @@
+﻿Skill_ID,Skill_Name,Course_ID,Course_Name,Course_Level,Target_Proficiency_Level,Relationship_Type,Mapping_Strength,Data_As_Of_Date
+S001,Python Programming,COURSE-S001-FND,Python Programming Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S001,Python Programming,COURSE-S001-PRC,Applied Python Programming,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S001,Python Programming,COURSE-S001-ADV,Advanced Python Programming and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S002,SQL & Databases,COURSE-S002-FND,SQL & Databases Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S002,SQL & Databases,COURSE-S002-PRC,Applied SQL & Databases,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S002,SQL & Databases,COURSE-S002-ADV,Advanced SQL & Databases and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S003,API Development,COURSE-S003-FND,API Development Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S003,API Development,COURSE-S003-PRC,Applied API Development,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S003,API Development,COURSE-S003-ADV,Advanced API Development and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S004,Software Testing,COURSE-S004-FND,Software Testing Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S004,Software Testing,COURSE-S004-PRC,Applied Software Testing,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S004,Software Testing,COURSE-S004-ADV,Advanced Software Testing and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S005,System Design,COURSE-S005-FND,System Design Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S005,System Design,COURSE-S005-PRC,Applied System Design,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S005,System Design,COURSE-S005-ADV,Advanced System Design and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S006,DevOps & CI/CD,COURSE-S006-FND,DevOps & CI/CD Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S006,DevOps & CI/CD,COURSE-S006-PRC,Applied DevOps & CI/CD,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S006,DevOps & CI/CD,COURSE-S006-ADV,Advanced DevOps & CI/CD and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S007,Cloud Platforms,COURSE-S007-FND,Cloud Platforms Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S007,Cloud Platforms,COURSE-S007-PRC,Applied Cloud Platforms,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S007,Cloud Platforms,COURSE-S007-ADV,Advanced Cloud Platforms and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S008,Cybersecurity,COURSE-S008-FND,Cybersecurity Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S008,Cybersecurity,COURSE-S008-PRC,Applied Cybersecurity,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S008,Cybersecurity,COURSE-S008-ADV,Advanced Cybersecurity and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S009,Network Administration,COURSE-S009-FND,Network Administration Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S009,Network Administration,COURSE-S009-PRC,Applied Network Administration,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S009,Network Administration,COURSE-S009-ADV,Advanced Network Administration and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S010,IT Service Management,COURSE-S010-FND,IT Service Management Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S010,IT Service Management,COURSE-S010-PRC,Applied IT Service Management,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S010,IT Service Management,COURSE-S010-ADV,Advanced IT Service Management and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S011,Incident Management,COURSE-S011-FND,Incident Management Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S011,Incident Management,COURSE-S011-PRC,Applied Incident Management,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S011,Incident Management,COURSE-S011-ADV,Advanced Incident Management and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S012,B2B Sales,COURSE-S012-FND,B2B Sales Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S012,B2B Sales,COURSE-S012-PRC,Applied B2B Sales,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S012,B2B Sales,COURSE-S012-ADV,Advanced B2B Sales and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S013,Lead Generation,COURSE-S013-FND,Lead Generation Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S013,Lead Generation,COURSE-S013-PRC,Applied Lead Generation,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S013,Lead Generation,COURSE-S013-ADV,Advanced Lead Generation and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S014,Negotiation,COURSE-S014-FND,Negotiation Essentials,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S014,Negotiation,COURSE-S014-PRC,Negotiation in Practice,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S014,Negotiation,COURSE-S014-ADV,Advanced Negotiation for Professional Growth,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S015,CRM Management,COURSE-S015-FND,CRM Management Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S015,CRM Management,COURSE-S015-PRC,Applied CRM Management,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S015,CRM Management,COURSE-S015-ADV,Advanced CRM Management and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S016,Account Management,COURSE-S016-FND,Account Management Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S016,Account Management,COURSE-S016-PRC,Applied Account Management,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S016,Account Management,COURSE-S016-ADV,Advanced Account Management and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S017,Pipeline Management,COURSE-S017-FND,Pipeline Management Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S017,Pipeline Management,COURSE-S017-PRC,Applied Pipeline Management,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S017,Pipeline Management,COURSE-S017-ADV,Advanced Pipeline Management and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S018,Product Knowledge,COURSE-S018-FND,Product Knowledge Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S018,Product Knowledge,COURSE-S018-PRC,Applied Product Knowledge,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S018,Product Knowledge,COURSE-S018-ADV,Advanced Product Knowledge and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S019,Process Management,COURSE-S019-FND,Process Management Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S019,Process Management,COURSE-S019-PRC,Applied Process Management,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S019,Process Management,COURSE-S019-ADV,Advanced Process Management and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S020,SOP Compliance,COURSE-S020-FND,SOP Compliance Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S020,SOP Compliance,COURSE-S020-PRC,Applied SOP Compliance,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S020,SOP Compliance,COURSE-S020-ADV,Advanced SOP Compliance and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S021,Process Improvement,COURSE-S021-FND,Process Improvement Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S021,Process Improvement,COURSE-S021-PRC,Applied Process Improvement,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S021,Process Improvement,COURSE-S021-ADV,Advanced Process Improvement and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S022,Quality Control,COURSE-S022-FND,Quality Control Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S022,Quality Control,COURSE-S022-PRC,Applied Quality Control,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S022,Quality Control,COURSE-S022-ADV,Advanced Quality Control and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S023,Risk & Controls,COURSE-S023-FND,Risk & Controls Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S023,Risk & Controls,COURSE-S023-PRC,Applied Risk & Controls,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S023,Risk & Controls,COURSE-S023-ADV,Advanced Risk & Controls and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S024,Workflow Coordination,COURSE-S024-FND,Workflow Coordination Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S024,Workflow Coordination,COURSE-S024-PRC,Applied Workflow Coordination,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S024,Workflow Coordination,COURSE-S024-ADV,Advanced Workflow Coordination and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S025,Financial Analysis,COURSE-S025-FND,Financial Analysis Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S025,Financial Analysis,COURSE-S025-PRC,Applied Financial Analysis,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S025,Financial Analysis,COURSE-S025-ADV,Advanced Financial Analysis and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S026,Accounting & Reconciliation,COURSE-S026-FND,Accounting & Reconciliation Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S026,Accounting & Reconciliation,COURSE-S026-PRC,Applied Accounting & Reconciliation,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S026,Accounting & Reconciliation,COURSE-S026-ADV,Advanced Accounting & Reconciliation and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S027,Budgeting & Forecasting,COURSE-S027-FND,Budgeting & Forecasting Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S027,Budgeting & Forecasting,COURSE-S027-PRC,Applied Budgeting & Forecasting,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S027,Budgeting & Forecasting,COURSE-S027-ADV,Advanced Budgeting & Forecasting and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S028,Regulatory Reporting,COURSE-S028-FND,Regulatory Reporting Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S028,Regulatory Reporting,COURSE-S028-PRC,Applied Regulatory Reporting,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S028,Regulatory Reporting,COURSE-S028-ADV,Advanced Regulatory Reporting and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S029,Advanced Excel,COURSE-S029-FND,Advanced Excel Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S029,Advanced Excel,COURSE-S029-PRC,Applied Advanced Excel,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S029,Advanced Excel,COURSE-S029-ADV,Advanced Advanced Excel and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S030,Risk Analysis,COURSE-S030-FND,Risk Analysis Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S030,Risk Analysis,COURSE-S030-PRC,Applied Risk Analysis,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S030,Risk Analysis,COURSE-S030-ADV,Advanced Risk Analysis and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S031,Recruitment & Selection,COURSE-S031-FND,Recruitment & Selection Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S031,Recruitment & Selection,COURSE-S031-PRC,Applied Recruitment & Selection,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S031,Recruitment & Selection,COURSE-S031-ADV,Advanced Recruitment & Selection and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S032,HRIS & Employee Data,COURSE-S032-FND,HRIS & Employee Data Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S032,HRIS & Employee Data,COURSE-S032-PRC,Applied HRIS & Employee Data,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S032,HRIS & Employee Data,COURSE-S032-ADV,Advanced HRIS & Employee Data and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S033,Performance Management,COURSE-S033-FND,Performance Management Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S033,Performance Management,COURSE-S033-PRC,Applied Performance Management,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S033,Performance Management,COURSE-S033-ADV,Advanced Performance Management and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S034,Employee Relations,COURSE-S034-FND,Employee Relations Essentials,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S034,Employee Relations,COURSE-S034-PRC,Employee Relations in Practice,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S034,Employee Relations,COURSE-S034-ADV,Advanced Employee Relations for Professional Growth,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S035,Learning & Development,COURSE-S035-FND,Learning & Development Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S035,Learning & Development,COURSE-S035-PRC,Applied Learning & Development,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S035,Learning & Development,COURSE-S035-ADV,Advanced Learning & Development and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S036,Payroll Administration,COURSE-S036-FND,Payroll Administration Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S036,Payroll Administration,COURSE-S036-PRC,Applied Payroll Administration,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S036,Payroll Administration,COURSE-S036-ADV,Advanced Payroll Administration and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S037,Customer Service,COURSE-S037-FND,Customer Service Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S037,Customer Service,COURSE-S037-PRC,Applied Customer Service,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S037,Customer Service,COURSE-S037-ADV,Advanced Customer Service and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S038,Complaint Resolution,COURSE-S038-FND,Complaint Resolution Essentials,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S038,Complaint Resolution,COURSE-S038-PRC,Complaint Resolution in Practice,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S038,Complaint Resolution,COURSE-S038-ADV,Advanced Complaint Resolution for Professional Growth,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S039,Call Handling,COURSE-S039-FND,Call Handling Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S039,Call Handling,COURSE-S039-PRC,Applied Call Handling,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S039,Call Handling,COURSE-S039-ADV,Advanced Call Handling and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S040,SLA Management,COURSE-S040-FND,SLA Management Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S040,SLA Management,COURSE-S040-PRC,Applied SLA Management,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S040,SLA Management,COURSE-S040-ADV,Advanced SLA Management and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S041,Knowledge Base Management,COURSE-S041-FND,Knowledge Base Management Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S041,Knowledge Base Management,COURSE-S041-PRC,Applied Knowledge Base Management,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S041,Knowledge Base Management,COURSE-S041-ADV,Advanced Knowledge Base Management and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S042,Communication,COURSE-S042-FND,Communication Essentials,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S042,Communication,COURSE-S042-PRC,Communication in Practice,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S042,Communication,COURSE-S042-ADV,Advanced Communication for Professional Growth,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S043,Teamwork,COURSE-S043-FND,Teamwork Essentials,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S043,Teamwork,COURSE-S043-PRC,Teamwork in Practice,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S043,Teamwork,COURSE-S043-ADV,Advanced Teamwork for Professional Growth,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S044,Problem Solving,COURSE-S044-FND,Problem Solving Essentials,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S044,Problem Solving,COURSE-S044-PRC,Problem Solving in Practice,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S044,Problem Solving,COURSE-S044-ADV,Advanced Problem Solving for Professional Growth,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S045,Stakeholder Management,COURSE-S045-FND,Stakeholder Management Essentials,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S045,Stakeholder Management,COURSE-S045-PRC,Stakeholder Management in Practice,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S045,Stakeholder Management,COURSE-S045-ADV,Advanced Stakeholder Management for Professional Growth,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S046,Leadership,COURSE-S046-FND,Leadership Essentials,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S046,Leadership,COURSE-S046-PRC,Leadership in Practice,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S046,Leadership,COURSE-S046-ADV,Advanced Leadership for Professional Growth,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S047,Coaching & Mentoring,COURSE-S047-FND,Coaching & Mentoring Essentials,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S047,Coaching & Mentoring,COURSE-S047-PRC,Coaching & Mentoring in Practice,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S047,Coaching & Mentoring,COURSE-S047-ADV,Advanced Coaching & Mentoring for Professional Growth,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S048,Adaptability,COURSE-S048-FND,Adaptability Essentials,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S048,Adaptability,COURSE-S048-PRC,Adaptability in Practice,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S048,Adaptability,COURSE-S048-ADV,Advanced Adaptability for Professional Growth,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S049,Data Analysis,COURSE-S049-FND,Data Analysis Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S049,Data Analysis,COURSE-S049-PRC,Applied Data Analysis,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S049,Data Analysis,COURSE-S049-ADV,Advanced Data Analysis and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S050,Project Management,COURSE-S050-FND,Project Management Essentials,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S050,Project Management,COURSE-S050-PRC,Project Management in Practice,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S050,Project Management,COURSE-S050-ADV,Advanced Project Management for Professional Growth,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S051,Empathy & Active Listening,COURSE-S051-FND,Empathy & Active Listening Essentials,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S051,Empathy & Active Listening,COURSE-S051-PRC,Empathy & Active Listening in Practice,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S051,Empathy & Active Listening,COURSE-S051-ADV,Advanced Empathy & Active Listening for Professional Growth,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S052,Time Management,COURSE-S052-FND,Time Management Essentials,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S052,Time Management,COURSE-S052-PRC,Time Management in Practice,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S052,Time Management,COURSE-S052-ADV,Advanced Time Management for Professional Growth,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S053,Documentation,COURSE-S053-FND,Documentation Essentials,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S053,Documentation,COURSE-S053-PRC,Documentation in Practice,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S053,Documentation,COURSE-S053-ADV,Advanced Documentation for Professional Growth,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S054,Clinical Assessment,COURSE-S054-FND,Clinical Assessment Foundations,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S054,Clinical Assessment,COURSE-S054-PRC,Applied Clinical Assessment in Clinical Practice,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S054,Clinical Assessment,COURSE-S054-ADV,Advanced Clinical Assessment and Patient Safety,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S055,Patient Care,COURSE-S055-FND,Patient Care Foundations,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S055,Patient Care,COURSE-S055-PRC,Applied Patient Care in Clinical Practice,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S055,Patient Care,COURSE-S055-ADV,Advanced Patient Care and Patient Safety,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S056,Clinical Documentation,COURSE-S056-FND,Clinical Documentation Foundations,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S056,Clinical Documentation,COURSE-S056-PRC,Applied Clinical Documentation in Clinical Practice,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S056,Clinical Documentation,COURSE-S056-ADV,Advanced Clinical Documentation and Patient Safety,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S057,Medication Safety,COURSE-S057-FND,Medication Safety Foundations,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S057,Medication Safety,COURSE-S057-PRC,Applied Medication Safety in Clinical Practice,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S057,Medication Safety,COURSE-S057-ADV,Advanced Medication Safety and Patient Safety,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S058,Infection Prevention,COURSE-S058-FND,Infection Prevention Foundations,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S058,Infection Prevention,COURSE-S058-PRC,Applied Infection Prevention in Clinical Practice,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S058,Infection Prevention,COURSE-S058-ADV,Advanced Infection Prevention and Patient Safety,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S059,Emergency Response,COURSE-S059-FND,Emergency Response Foundations,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S059,Emergency Response,COURSE-S059-PRC,Applied Emergency Response in Clinical Practice,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S059,Emergency Response,COURSE-S059-ADV,Advanced Emergency Response and Patient Safety,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S060,Care Coordination,COURSE-S060-FND,Care Coordination Foundations,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S060,Care Coordination,COURSE-S060-PRC,Applied Care Coordination in Clinical Practice,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S060,Care Coordination,COURSE-S060-ADV,Advanced Care Coordination and Patient Safety,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S061,Training Needs Analysis,COURSE-S061-FND,Training Needs Analysis Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S061,Training Needs Analysis,COURSE-S061-PRC,Applied Training Needs Analysis for Learning Delivery,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S061,Training Needs Analysis,COURSE-S061-ADV,Advanced Training Needs Analysis and Learning Impact,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S062,Curriculum Design,COURSE-S062-FND,Curriculum Design Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S062,Curriculum Design,COURSE-S062-PRC,Applied Curriculum Design for Learning Delivery,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S062,Curriculum Design,COURSE-S062-ADV,Advanced Curriculum Design and Learning Impact,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S063,Facilitation,COURSE-S063-FND,Facilitation Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S063,Facilitation,COURSE-S063-PRC,Applied Facilitation for Learning Delivery,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S063,Facilitation,COURSE-S063-ADV,Advanced Facilitation and Learning Impact,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S064,Learning Evaluation,COURSE-S064-FND,Learning Evaluation Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S064,Learning Evaluation,COURSE-S064-PRC,Applied Learning Evaluation for Learning Delivery,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S064,Learning Evaluation,COURSE-S064-ADV,Advanced Learning Evaluation and Learning Impact,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S065,Learning Management Systems,COURSE-S065-FND,Learning Management Systems Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S065,Learning Management Systems,COURSE-S065-PRC,Applied Learning Management Systems for Learning Delivery,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S065,Learning Management Systems,COURSE-S065-ADV,Advanced Learning Management Systems and Learning Impact,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S066,Office Administration,COURSE-S066-FND,Office Administration Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S066,Office Administration,COURSE-S066-PRC,Applied Office Administration,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S066,Office Administration,COURSE-S066-ADV,Advanced Office Administration and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S067,Facilities Management,COURSE-S067-FND,Facilities Management Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S067,Facilities Management,COURSE-S067-PRC,Applied Facilities Management,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S067,Facilities Management,COURSE-S067-ADV,Advanced Facilities Management and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S068,Vendor Coordination,COURSE-S068-FND,Vendor Coordination Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S068,Vendor Coordination,COURSE-S068-PRC,Applied Vendor Coordination,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S068,Vendor Coordination,COURSE-S068-ADV,Advanced Vendor Coordination and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S069,Asset Management,COURSE-S069-FND,Asset Management Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S069,Asset Management,COURSE-S069-PRC,Applied Asset Management,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S069,Asset Management,COURSE-S069-ADV,Advanced Asset Management and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S070,Records Management,COURSE-S070-FND,Records Management Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S070,Records Management,COURSE-S070-PRC,Applied Records Management,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S070,Records Management,COURSE-S070-ADV,Advanced Records Management and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S071,Contract Review,COURSE-S071-FND,Contract Review Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S071,Contract Review,COURSE-S071-PRC,Applied Contract Review,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S071,Contract Review,COURSE-S071-ADV,Advanced Contract Review and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S072,Regulatory Compliance,COURSE-S072-FND,Regulatory Compliance Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S072,Regulatory Compliance,COURSE-S072-PRC,Applied Regulatory Compliance,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S072,Regulatory Compliance,COURSE-S072-ADV,Advanced Regulatory Compliance and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S073,Policy Interpretation,COURSE-S073-FND,Policy Interpretation Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S073,Policy Interpretation,COURSE-S073-PRC,Applied Policy Interpretation,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S073,Policy Interpretation,COURSE-S073-ADV,Advanced Policy Interpretation and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S074,Legal Research,COURSE-S074-FND,Legal Research Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S074,Legal Research,COURSE-S074-PRC,Applied Legal Research,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S074,Legal Research,COURSE-S074-ADV,Advanced Legal Research and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S075,Case Management,COURSE-S075-FND,Case Management Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S075,Case Management,COURSE-S075-PRC,Applied Case Management,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S075,Case Management,COURSE-S075-ADV,Advanced Case Management and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S076,Strategic Sourcing,COURSE-S076-FND,Strategic Sourcing Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S076,Strategic Sourcing,COURSE-S076-PRC,Applied Strategic Sourcing,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S076,Strategic Sourcing,COURSE-S076-ADV,Advanced Strategic Sourcing and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S077,Purchase Order Management,COURSE-S077-FND,Purchase Order Management Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S077,Purchase Order Management,COURSE-S077-PRC,Applied Purchase Order Management,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S077,Purchase Order Management,COURSE-S077-ADV,Advanced Purchase Order Management and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S078,Supplier Management,COURSE-S078-FND,Supplier Management Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S078,Supplier Management,COURSE-S078-PRC,Applied Supplier Management,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S078,Supplier Management,COURSE-S078-ADV,Advanced Supplier Management and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S079,Contract Negotiation,COURSE-S079-FND,Contract Negotiation Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S079,Contract Negotiation,COURSE-S079-PRC,Applied Contract Negotiation,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S079,Contract Negotiation,COURSE-S079-ADV,Advanced Contract Negotiation and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S080,Inventory Planning,COURSE-S080-FND,Inventory Planning Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S080,Inventory Planning,COURSE-S080-PRC,Applied Inventory Planning,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S080,Inventory Planning,COURSE-S080-ADV,Advanced Inventory Planning and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S081,Cost Analysis,COURSE-S081-FND,Cost Analysis Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S081,Cost Analysis,COURSE-S081-PRC,Applied Cost Analysis,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S081,Cost Analysis,COURSE-S081-ADV,Advanced Cost Analysis and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S082,Warehouse Operations,COURSE-S082-FND,Warehouse Operations Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S082,Warehouse Operations,COURSE-S082-PRC,Applied Warehouse Operations,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S082,Warehouse Operations,COURSE-S082-ADV,Advanced Warehouse Operations and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S083,Inventory Control,COURSE-S083-FND,Inventory Control Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S083,Inventory Control,COURSE-S083-PRC,Applied Inventory Control,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S083,Inventory Control,COURSE-S083-ADV,Advanced Inventory Control and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S084,Transport Planning,COURSE-S084-FND,Transport Planning Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S084,Transport Planning,COURSE-S084-PRC,Applied Transport Planning,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S084,Transport Planning,COURSE-S084-ADV,Advanced Transport Planning and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S085,Route Optimization,COURSE-S085-FND,Route Optimization Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S085,Route Optimization,COURSE-S085-PRC,Applied Route Optimization,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S085,Route Optimization,COURSE-S085-ADV,Advanced Route Optimization and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S086,Dispatch Coordination,COURSE-S086-FND,Dispatch Coordination Fundamentals,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S086,Dispatch Coordination,COURSE-S086-PRC,Applied Dispatch Coordination,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S086,Dispatch Coordination,COURSE-S086-ADV,Advanced Dispatch Coordination and Decision Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S087,Health and Safety,COURSE-S087-FND,Health and Safety Essentials,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S087,Health and Safety,COURSE-S087-PRC,Applied Health and Safety in Operations,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S087,Health and Safety,COURSE-S087-ADV,Advanced Health and Safety and Continuous Improvement,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S088,Production Planning,COURSE-S088-FND,Production Planning Essentials,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S088,Production Planning,COURSE-S088-PRC,Applied Production Planning in Operations,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S088,Production Planning,COURSE-S088-ADV,Advanced Production Planning and Continuous Improvement,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S089,Machine Operation,COURSE-S089-FND,Machine Operation Essentials,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S089,Machine Operation,COURSE-S089-PRC,Applied Machine Operation in Operations,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S089,Machine Operation,COURSE-S089-ADV,Advanced Machine Operation and Continuous Improvement,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S090,Preventive Maintenance,COURSE-S090-FND,Preventive Maintenance Essentials,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S090,Preventive Maintenance,COURSE-S090-PRC,Applied Preventive Maintenance in Operations,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S090,Preventive Maintenance,COURSE-S090-ADV,Advanced Preventive Maintenance and Continuous Improvement,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S091,Lean Manufacturing,COURSE-S091-FND,Lean Manufacturing Essentials,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S091,Lean Manufacturing,COURSE-S091-PRC,Applied Lean Manufacturing in Operations,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S091,Lean Manufacturing,COURSE-S091-ADV,Advanced Lean Manufacturing and Continuous Improvement,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S092,Quality Auditing,COURSE-S092-FND,Quality Auditing Essentials,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S092,Quality Auditing,COURSE-S092-PRC,Applied Quality Auditing in Operations,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S092,Quality Auditing,COURSE-S092-ADV,Advanced Quality Auditing and Continuous Improvement,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S093,Root Cause Analysis,COURSE-S093-FND,Root Cause Analysis Essentials,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S093,Root Cause Analysis,COURSE-S093-PRC,Applied Root Cause Analysis in Operations,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S093,Root Cause Analysis,COURSE-S093-ADV,Advanced Root Cause Analysis and Continuous Improvement,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S094,Corrective Action Management,COURSE-S094-FND,Corrective Action Management Essentials,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S094,Corrective Action Management,COURSE-S094-PRC,Applied Corrective Action Management in Operations,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S094,Corrective Action Management,COURSE-S094-ADV,Advanced Corrective Action Management and Continuous Improvement,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S095,Statistical Process Control,COURSE-S095-FND,Statistical Process Control Essentials,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S095,Statistical Process Control,COURSE-S095-PRC,Applied Statistical Process Control in Operations,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S095,Statistical Process Control,COURSE-S095-ADV,Advanced Statistical Process Control and Continuous Improvement,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S096,Research Methodology,COURSE-S096-FND,Research Methodology Foundations,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S096,Research Methodology,COURSE-S096-PRC,Applied Research Methodology for R&D,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S096,Research Methodology,COURSE-S096-ADV,Advanced Research Methodology and Innovation Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S097,Experimental Design,COURSE-S097-FND,Experimental Design Foundations,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S097,Experimental Design,COURSE-S097-PRC,Applied Experimental Design for R&D,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S097,Experimental Design,COURSE-S097-ADV,Advanced Experimental Design and Innovation Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S098,Technical Writing,COURSE-S098-FND,Technical Writing Foundations,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S098,Technical Writing,COURSE-S098-PRC,Applied Technical Writing for R&D,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S098,Technical Writing,COURSE-S098-ADV,Advanced Technical Writing and Innovation Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01
+S099,Innovation Management,COURSE-S099-FND,Innovation Management Foundations,Foundation,2,DEVELOPS_SKILL,1.00,2026-08-01
+S099,Innovation Management,COURSE-S099-PRC,Applied Innovation Management for R&D,Practitioner,3,DEVELOPS_SKILL,1.00,2026-08-01
+S099,Innovation Management,COURSE-S099-ADV,Advanced Innovation Management and Innovation Practice,Advanced,5,DEVELOPS_SKILL,1.00,2026-08-01

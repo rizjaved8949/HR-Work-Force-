@@ -1,0 +1,11 @@
+﻿File_Name,Row_Count,Purpose,Existing_File_Overwritten,Data_Folder,Data_As_Of_Date
+Performance_Cycle.csv,1,Performance cycle configuration,No,Data,2026-08-01
+Performance_Role_Mapping.csv,720,Maps all 720 employees to role bands and templates,No,Data,2026-08-01
+KPI_Catalog.csv,54,"Essential common, leadership and department-specific KPI definitions",No,Data,2026-08-01
+Role_KPI_Template.csv,592,Department and role-band KPI weights and thresholds,No,Data,2026-08-01
+Employee_KPI_Assignment.csv,5275,Assigned KPIs for each employee,No,Data,2026-08-01
+Employee_Performance_Evidence_Monthly.csv,63300,12 months of business-pattern KPI evidence,No,Data,2026-08-01
+Employee_Performance_Monthly.csv,8640,Monthly final performance score for each employee,No,Data,2026-08-01
+Employee_Performance_Summary.csv,720,Latest and 12-month performance summary for 720 employees,No,Data,2026-08-01
+Department_Performance_Monthly.csv,192,Monthly department performance aggregates,No,Data,2026-08-01
+Performance_Data_Quality_Report.csv,17,Validation and safety checks,No,Data,2026-08-01

@@ -67,6 +67,9 @@ from employee_record_tool import (  # noqa: E402
 from headcount.repository import HeadcountRepository  # noqa: E402
 from headcount.router import create_headcount_router  # noqa: E402
 from headcount.service import HeadcountService  # noqa: E402
+from performance.repository import PerformanceRepository  # noqa: E402
+from performance.router import create_performance_router  # noqa: E402
+from performance.service import PerformanceService  # noqa: E402
 from hr_agent import create_hr_reasoning_agent  # noqa: E402
 from replacement_tool import (  # noqa: E402
     create_replacement_recommendation_tool,
@@ -131,11 +134,17 @@ headcount_service = HeadcountService(
         DATA_PATH
     )
 )
+performance_service = PerformanceService(
+    PerformanceRepository(
+        DATA_PATH
+    )
+)
 hr_agent = create_hr_reasoning_agent(
     employee_search_tool=employee_search_tool,
     attrition_prediction_tool=attrition_prediction_tool,
     data_path=DATA_PATH,
     headcount_service=headcount_service,
+    performance_service=performance_service,
 )
 
 
@@ -210,6 +219,17 @@ app.include_router(
 
 app.include_router(
     create_headcount_router(headcount_service)
+)
+
+
+# ============================================================
+# EMPLOYEE PERFORMANCE ANALYTICS
+# ============================================================
+# Employee performance APIs reuse the same shared Data folder and the
+# isolated deterministic PerformanceService.
+
+app.include_router(
+    create_performance_router(performance_service)
 )
 
 
@@ -572,6 +592,7 @@ def stream_chat_with_hr_agent(request: ChatRequest):
         "check_employee_attrition": "Checking attrition risk...",
         "recommend_replacement": "Finding successor candidates...",
         "analyze_headcount": "Analyzing headcount data...",
+        "analyze_employee_performance": "Analyzing employee performance...",
     }
 
     def generate():

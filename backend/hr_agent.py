@@ -7,6 +7,7 @@ from langchain.agents import create_agent
 from langchain_core.tools import BaseTool
 from langgraph.checkpoint.memory import InMemorySaver
 from pydantic import SecretStr
+from typing_extensions import NotRequired
 
 from resilient_model import ResilientChatOpenAI
 
@@ -20,11 +21,28 @@ from headcount.service import HeadcountService
 from headcount.tool import (
     create_stateful_analyze_headcount_tool,
 )
+from performance.repository import PerformanceRepository
+from performance.service import PerformanceService
+from performance.tool import (
+    create_stateful_analyze_employee_performance_tool,
+)
 from replacement_tool import (
     create_replacement_recommendation_tool,
     create_stateful_replacement_recommendation_tool,
 )
 from settings import get_llm_settings
+
+
+# ============================================================
+# ADDITIVE PERFORMANCE STATE
+# ============================================================
+# Extend the existing HRAgentState locally instead of changing agent_state.py.
+# This preserves every existing Attrition, Replacement, Headcount, and employee
+# context field while adding only Performance memory.
+
+class HRPerformanceAgentState(HRAgentState):
+    last_performance_question: NotRequired[str | None]
+    last_performance_result: NotRequired[dict[str, Any] | None]
 
 
 # ============================================================
@@ -36,6 +54,7 @@ def create_hr_reasoning_agent(
     attrition_prediction_tool: BaseTool,
     data_path: str | Path,
     headcount_service: HeadcountService | None = None,
+    performance_service: PerformanceService | None = None,
 ) -> Any:
     """
     Create the main multilingual HR reasoning agent.
@@ -44,10 +63,11 @@ def create_hr_reasoning_agent(
     into this function from the FastAPI application. This keeps
     the model and CSV data loaded only once.
 
-    The agent exposes three high-level tools:
-    check_employee_attrition, recommend_replacement, and
-    analyze_headcount. Headcount calculations remain deterministic,
-    while the reasoning model only selects tools and explains results.
+    The agent exposes four high-level tools:
+    check_employee_attrition, recommend_replacement, analyze_headcount,
+    and analyze_employee_performance. Headcount and Performance calculations
+    remain deterministic, while the reasoning model only selects tools and
+    explains results.
     """
 
     # --------------------------------------------------------
@@ -148,6 +168,29 @@ def create_hr_reasoning_agent(
         )
     )
 
+
+    # --------------------------------------------------------
+    # CREATE THE HIGH-LEVEL EMPLOYEE PERFORMANCE TOOL
+    # --------------------------------------------------------
+
+    # Reuse the FastAPI PerformanceService when supplied so the chat agent
+    # and the Performance API read the same cached data and cannot diverge.
+    active_performance_service = (
+        performance_service
+        if performance_service is not None
+        else PerformanceService(
+            PerformanceRepository(
+                data_path
+            )
+        )
+    )
+
+    analyze_employee_performance_tool = (
+        create_stateful_analyze_employee_performance_tool(
+            service=active_performance_service,
+        )
+    )
+
     # --------------------------------------------------------
     # CREATE DEVELOPMENT CONVERSATION MEMORY
     # --------------------------------------------------------
@@ -164,21 +207,23 @@ def create_hr_reasoning_agent(
     hr_agent = create_agent(
         model=model,
 
-        # Expose only the three tested high-level HR tools.
-        # Internal employee search, CatBoost, and individual
-        # Headcount services are not exposed directly.
+        # Expose only the four high-level HR tools. Internal employee
+        # search, CatBoost, Headcount services, and Performance services
+        # are not exposed directly to the reasoning model.
         tools=[
             check_employee_attrition_tool,
             recommend_replacement_tool,
             analyze_headcount_tool,
+            analyze_employee_performance_tool,
         ],
 
-        # Detailed permanent instructions created in Task 5.
+        # Detailed permanent instructions, including Employee Performance
+        # routing and response rules, live in agent_prompts.py.
         system_prompt=HR_AGENT_SYSTEM_PROMPT,
 
         # Structured employee and workflow memory created
         # in Task 8.
-        state_schema=HRAgentState,
+        state_schema=HRPerformanceAgentState,
 
         # Thread-based in-server conversation memory.
         checkpointer=checkpointer,

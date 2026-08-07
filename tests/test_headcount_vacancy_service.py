@@ -322,3 +322,4 @@ def test_engineering_vacancy_details(
         values["critical_open_position_count"]
         == 3
     )
+    
