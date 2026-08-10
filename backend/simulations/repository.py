@@ -7,14 +7,19 @@ from typing import Dict
 
 import pandas as pd
 
-from .errors import SimulationDataError, SimulationEmployeeNotFoundError
+from .errors import (
+    SimulationDataError,
+    SimulationEmployeeNotFoundError,
+    SimulationPositionNotFoundError,
+)
 
 
 class SimulationRepository:
     """Loads existing HR truth plus isolated simulation data.
 
-    Existing Data/*.csv files remain the source of truth.  Simulation-only
+    Existing Data/*.csv files remain the source of truth. Simulation-only
     assumptions and derived employee features live under Data/Simulation/.
+    The repository never writes to the existing HR datasets.
     """
 
     EXISTING_FILES = {
@@ -55,12 +60,8 @@ class SimulationRepository:
     def _load_all(self) -> None:
         for key, filename in self.EXISTING_FILES.items():
             self._frames[key] = self._read_csv(self.data_dir / filename, key)
-
         for key, filename in self.SIMULATION_FILES.items():
-            self._frames[key] = self._read_csv(
-                self.simulation_dir / filename,
-                key,
-            )
+            self._frames[key] = self._read_csv(self.simulation_dir / filename, key)
 
     def get(self, key: str) -> pd.DataFrame:
         try:
@@ -113,45 +114,63 @@ class SimulationRepository:
             "scenario_count": len(catalog),
         }
 
+    def _one(self, frame_key: str, column: str, value: str) -> dict | None:
+        frame = self.get(frame_key)
+        match = frame[frame[column].astype(str) == str(value)]
+        return None if match.empty else match.iloc[0].to_dict()
+
     def resolve_employee(self, employee_id: str) -> dict:
         employee_id = str(employee_id).strip()
-        profile = self.get("employee_profile")
-        match = profile[profile["Employee_ID"].astype(str) == employee_id]
-        if match.empty:
+        result = self._one("employee_profile", "Employee_ID", employee_id)
+        if result is None:
             raise SimulationEmployeeNotFoundError(
                 f"Employee_ID {employee_id!r} was not found in Employee_Profile.csv."
             )
-        return match.iloc[0].to_dict()
+        return result
+
+    def resolve_position(self, position_id: str) -> dict:
+        position_id = str(position_id).strip()
+        result = self._one("position_master", "Position_ID", position_id)
+        if result is None:
+            raise SimulationPositionNotFoundError(
+                f"Position_ID {position_id!r} was not found in Position_Master.csv."
+            )
+        return result
+
+    def employee_skills(self, employee_id: str) -> pd.DataFrame:
+        frame = self.get("employee_skills")
+        return frame[frame["Employee_ID"].astype(str) == str(employee_id)].copy()
+
+    def position_skill_requirements(self, position_id: str) -> pd.DataFrame:
+        frame = self.get("position_skills")
+        return frame[frame["Position_ID"].astype(str) == str(position_id)].copy()
+
+    def position_budget(self, position_id: str) -> dict | None:
+        return self._one("position_budget", "Position_ID", position_id)
+
+    def position_business(self, position_id: str) -> dict | None:
+        return self._one("position_business", "Position_ID", position_id)
+
+    def department_business(self, department_id: str) -> dict | None:
+        return self._one("department_business", "Department_ID", department_id)
+
+    def department_headcount(self, department_id: str) -> dict | None:
+        return self._one("headcount_summary", "Department_ID", department_id)
 
     def employee_context(self, employee_id: str) -> dict:
         employee = self.resolve_employee(employee_id)
         position_id = employee["Position_ID"]
         department_id = employee["Department_ID"]
-
-        def one(frame_key: str, column: str, value: str) -> dict | None:
-            frame = self.get(frame_key)
-            match = frame[frame[column].astype(str) == str(value)]
-            return None if match.empty else match.iloc[0].to_dict()
-
         return {
             "employee": employee,
-            "simulation_features": one(
-                "employee_features", "Employee_ID", employee_id
-            ),
-            "performance": one(
-                "performance_summary", "Employee_ID", employee_id
-            ),
-            "attendance": one("attendance", "Employee_ID", employee_id),
-            "experience": one("experience", "Employee_ID", employee_id),
-            "learning": one("learning_summary", "Employee_ID", employee_id),
-            "position": one("position_master", "Position_ID", position_id),
-            "position_business": one(
-                "position_business", "Position_ID", position_id
-            ),
-            "headcount": one(
-                "headcount_summary", "Department_ID", department_id
-            ),
-            "department_business": one(
-                "department_business", "Department_ID", department_id
-            ),
+            "simulation_features": self._one("employee_features", "Employee_ID", employee_id),
+            "performance": self._one("performance_summary", "Employee_ID", employee_id),
+            "attendance": self._one("attendance", "Employee_ID", employee_id),
+            "experience": self._one("experience", "Employee_ID", employee_id),
+            "learning": self._one("learning_summary", "Employee_ID", employee_id),
+            "position": self._one("position_master", "Position_ID", position_id),
+            "position_business": self.position_business(position_id),
+            "position_budget": self.position_budget(position_id),
+            "headcount": self.department_headcount(department_id),
+            "department_business": self.department_business(department_id),
         }

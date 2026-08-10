@@ -1,11 +1,18 @@
 """Isolated Scenario Simulation package.
 
-Step 1 intentionally contains only the data-access and feature layer.  No
-existing attrition, replacement, performance, headcount, or chat code is
-modified by this package.
+The package reads existing HR datasets without mutating them. Step 2 adds a
+reusable deterministic engine architecture plus Employee Promotion simulation.
 """
 
 from .repository import SimulationRepository
-from .service import SimulationDataService
+from .schemas import ScenarioType, SimulationRequest, SimulationResponse
+from .service import SimulationDataService, SimulationService
 
-__all__ = ["SimulationRepository", "SimulationDataService"]
+__all__ = [
+    "SimulationRepository",
+    "SimulationDataService",
+    "SimulationService",
+    "ScenarioType",
+    "SimulationRequest",
+    "SimulationResponse",
+]

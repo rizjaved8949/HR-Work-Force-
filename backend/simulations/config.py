@@ -1,11 +1,11 @@
-"""Transparent deterministic weights for simulation-only derived features.
+"""Transparent deterministic weights for the Scenario Simulation layer.
 
-These are not prediction-model outputs. They create reusable baseline features
-for the Scenario Simulation layer. Target-role/target-department fit is still
-calculated later by the relevant scenario engine.
+No value here is a prediction-model output. These constants make the simulation
+calculations explicit, testable, and easy for HR/business owners to review.
 """
 
 FEATURE_VERSION = "1.0"
+SIMULATION_ENGINE_VERSION = "2.0"
 
 MOBILITY_SCORE = {
     "Ready Now": 100.0,
@@ -44,3 +44,25 @@ RESKILLING_BASE_WEIGHTS = {
     "learning_activity": 0.25,
     "mobility": 0.20,
 }
+
+JOB_LEVEL_ORDER = {
+    "Intern": 0,
+    "Junior": 1,
+    "Mid": 2,
+    "Senior": 3,
+    "Lead/Manager": 4,
+    "Executive": 5,
+}
+
+PROMOTION_FINAL_WEIGHTS = {
+    "base_readiness": 0.60,
+    "target_skill_match": 0.30,
+    "mandatory_skill_coverage": 0.10,
+}
+
+READINESS_BANDS = (
+    (85.0, "ready_now"),
+    (70.0, "ready_with_minor_gaps"),
+    (55.0, "development_required"),
+    (0.0, "not_ready"),
+)
