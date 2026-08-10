@@ -83,6 +83,11 @@ from visualizations.attrition.router import (  # noqa: E402
     create_attrition_dashboard_router,
 )
 
+from simulations.lookup_service import SimulationLookupService  # noqa: E402
+from simulations.repository import SimulationRepository  # noqa: E402
+from simulations.router import create_simulation_router  # noqa: E402
+from simulations.service import SimulationDataService, SimulationService  # noqa: E402
+
 
 DATA_PATH = paths.data_dir()
 MODEL_PATH = paths.model_path()
@@ -139,12 +144,23 @@ performance_service = PerformanceService(
         DATA_PATH
     )
 )
+# ============================================================
+# SCENARIO SIMULATION — SHARED SERVICES
+# ============================================================
+# Isolated from the existing attrition, replacement and HR-agent pipelines.
+simulation_repository = SimulationRepository(DATA_PATH)
+simulation_data_service = SimulationDataService(simulation_repository)
+simulation_service = SimulationService(simulation_repository)
+simulation_lookup_service = SimulationLookupService(simulation_repository)
+
+
 hr_agent = create_hr_reasoning_agent(
     employee_search_tool=employee_search_tool,
     attrition_prediction_tool=attrition_prediction_tool,
     data_path=DATA_PATH,
     headcount_service=headcount_service,
     performance_service=performance_service,
+    simulation_service=simulation_service,
 )
 
 
@@ -230,6 +246,19 @@ app.include_router(
 
 app.include_router(
     create_performance_router(performance_service)
+)
+
+
+# ============================================================
+# SCENARIO SIMULATION API
+# ============================================================
+# Dedicated REST endpoints for the Scenario Simulator UI.
+app.include_router(
+    create_simulation_router(
+        simulation_service=simulation_service,
+        data_service=simulation_data_service,
+        lookup_service=simulation_lookup_service,
+    )
 )
 
 
@@ -593,6 +622,7 @@ def stream_chat_with_hr_agent(request: ChatRequest):
         "recommend_replacement": "Finding successor candidates...",
         "analyze_headcount": "Analyzing headcount data...",
         "analyze_employee_performance": "Analyzing employee performance...",
+        "scenario_simulation": "Running scenario simulation...",
     }
 
     def generate():
