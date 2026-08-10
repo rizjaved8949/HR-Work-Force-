@@ -66,3 +66,14 @@ READINESS_BANDS = (
     (55.0, "development_required"),
     (0.0, "not_ready"),
 )
+
+TRANSFER_FINAL_WEIGHTS = {
+    "base_readiness": 0.55,
+    "target_skill_match": 0.35,
+    "mandatory_skill_coverage": 0.10,
+}
+
+HEADCOUNT_CAPACITY_CRITICAL_PCT = 110.0
+HEADCOUNT_CAPACITY_HIGH_PCT = 100.0
+BUDGET_CRITICAL_UTILIZATION_PCT = 100.0
+BUDGET_WARNING_UTILIZATION_PCT = 90.0

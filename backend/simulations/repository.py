@@ -137,6 +137,15 @@ class SimulationRepository:
             )
         return result
 
+    def resolve_department(self, department_id: str) -> dict:
+        department_id = str(department_id).strip()
+        result = self._one("headcount_summary", "Department_ID", department_id)
+        if result is None:
+            raise SimulationDataError(
+                f"Department_ID {department_id!r} was not found in Current_Headcount_Summary.csv."
+            )
+        return result
+
     def employee_skills(self, employee_id: str) -> pd.DataFrame:
         frame = self.get("employee_skills")
         return frame[frame["Employee_ID"].astype(str) == str(employee_id)].copy()
@@ -144,6 +153,10 @@ class SimulationRepository:
     def position_skill_requirements(self, position_id: str) -> pd.DataFrame:
         frame = self.get("position_skills")
         return frame[frame["Position_ID"].astype(str) == str(position_id)].copy()
+
+    def positions_for_department(self, department_id: str) -> pd.DataFrame:
+        frame = self.get("position_master")
+        return frame[frame["Department_ID"].astype(str) == str(department_id)].copy()
 
     def position_budget(self, position_id: str) -> dict | None:
         return self._one("position_budget", "Position_ID", position_id)
@@ -156,6 +169,30 @@ class SimulationRepository:
 
     def department_headcount(self, department_id: str) -> dict | None:
         return self._one("headcount_summary", "Department_ID", department_id)
+
+    def latest_department_budget(self, department_id: str) -> dict | None:
+        frame = self.get("department_budget")
+        match = frame[frame["Department_ID"].astype(str) == str(department_id)].copy()
+        if match.empty:
+            return None
+        match["_sort"] = pd.to_datetime(match["Budget_Month"], errors="coerce")
+        return match.sort_values("_sort").iloc[-1].drop(labels=["_sort"]).to_dict()
+
+    def latest_demand_driver(self, department_id: str) -> dict | None:
+        frame = self.get("demand_drivers")
+        match = frame[frame["Department_ID"].astype(str) == str(department_id)].copy()
+        if match.empty:
+            return None
+        match["_sort"] = pd.to_datetime(match["Snapshot_Month"], errors="coerce")
+        return match.sort_values("_sort").iloc[-1].drop(labels=["_sort"]).to_dict()
+
+    def resolve_course(self, course_id: str) -> dict:
+        result = self._one("learning_business", "Course_ID", str(course_id).strip())
+        if result is None:
+            raise SimulationDataError(
+                f"Course_ID {course_id!r} was not found in Simulation_Learning_Business_Evaluation.csv."
+            )
+        return result
 
     def employee_context(self, employee_id: str) -> dict:
         employee = self.resolve_employee(employee_id)
@@ -173,4 +210,16 @@ class SimulationRepository:
             "position_budget": self.position_budget(position_id),
             "headcount": self.department_headcount(department_id),
             "department_business": self.department_business(department_id),
+            "department_budget": self.latest_department_budget(department_id),
+            "demand_driver": self.latest_demand_driver(department_id),
+        }
+
+    def department_context(self, department_id: str) -> dict:
+        headcount = self.resolve_department(department_id)
+        return {
+            "headcount": headcount,
+            "department_business": self.department_business(department_id),
+            "department_budget": self.latest_department_budget(department_id),
+            "demand_driver": self.latest_demand_driver(department_id),
+            "positions": self.positions_for_department(department_id),
         }
