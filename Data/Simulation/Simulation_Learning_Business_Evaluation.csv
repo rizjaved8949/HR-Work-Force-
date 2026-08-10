@@ -1,0 +1,298 @@
+﻿Course_ID,Course_Name,Skill_ID,Skill_Name,Course_Level,Estimated_Training_Cost_PKR,Expected_Productivity_Lift_pct,Expected_Time_to_Competency_Days,Target_Application_Adoption_pct,ROI_Evaluation_Window_Days,Assumption_Status,Assumption_Effective_Date
+COURSE-S001-FND,Python Programming Fundamentals,S001,Python Programming,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S001-PRC,Applied Python Programming,S001,Python Programming,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S001-ADV,Advanced Python Programming and Decision Practice,S001,Python Programming,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S002-FND,SQL & Databases Fundamentals,S002,SQL & Databases,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S002-PRC,Applied SQL & Databases,S002,SQL & Databases,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S002-ADV,Advanced SQL & Databases and Decision Practice,S002,SQL & Databases,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S003-FND,API Development Fundamentals,S003,API Development,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S003-PRC,Applied API Development,S003,API Development,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S003-ADV,Advanced API Development and Decision Practice,S003,API Development,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S004-FND,Software Testing Fundamentals,S004,Software Testing,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S004-PRC,Applied Software Testing,S004,Software Testing,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S004-ADV,Advanced Software Testing and Decision Practice,S004,Software Testing,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S005-FND,System Design Fundamentals,S005,System Design,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S005-PRC,Applied System Design,S005,System Design,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S005-ADV,Advanced System Design and Decision Practice,S005,System Design,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S006-FND,DevOps & CI/CD Fundamentals,S006,DevOps & CI/CD,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S006-PRC,Applied DevOps & CI/CD,S006,DevOps & CI/CD,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S006-ADV,Advanced DevOps & CI/CD and Decision Practice,S006,DevOps & CI/CD,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S007-FND,Cloud Platforms Fundamentals,S007,Cloud Platforms,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S007-PRC,Applied Cloud Platforms,S007,Cloud Platforms,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S007-ADV,Advanced Cloud Platforms and Decision Practice,S007,Cloud Platforms,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S008-FND,Cybersecurity Fundamentals,S008,Cybersecurity,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S008-PRC,Applied Cybersecurity,S008,Cybersecurity,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S008-ADV,Advanced Cybersecurity and Decision Practice,S008,Cybersecurity,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S009-FND,Network Administration Fundamentals,S009,Network Administration,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S009-PRC,Applied Network Administration,S009,Network Administration,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S009-ADV,Advanced Network Administration and Decision Practice,S009,Network Administration,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S010-FND,IT Service Management Fundamentals,S010,IT Service Management,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S010-PRC,Applied IT Service Management,S010,IT Service Management,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S010-ADV,Advanced IT Service Management and Decision Practice,S010,IT Service Management,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S011-FND,Incident Management Fundamentals,S011,Incident Management,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S011-PRC,Applied Incident Management,S011,Incident Management,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S011-ADV,Advanced Incident Management and Decision Practice,S011,Incident Management,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S012-FND,B2B Sales Fundamentals,S012,B2B Sales,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S012-PRC,Applied B2B Sales,S012,B2B Sales,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S012-ADV,Advanced B2B Sales and Decision Practice,S012,B2B Sales,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S013-FND,Lead Generation Fundamentals,S013,Lead Generation,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S013-PRC,Applied Lead Generation,S013,Lead Generation,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S013-ADV,Advanced Lead Generation and Decision Practice,S013,Lead Generation,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S014-FND,Negotiation Essentials,S014,Negotiation,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S014-PRC,Negotiation in Practice,S014,Negotiation,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S014-ADV,Advanced Negotiation for Professional Growth,S014,Negotiation,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S015-FND,CRM Management Fundamentals,S015,CRM Management,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S015-PRC,Applied CRM Management,S015,CRM Management,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S015-ADV,Advanced CRM Management and Decision Practice,S015,CRM Management,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S016-FND,Account Management Fundamentals,S016,Account Management,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S016-PRC,Applied Account Management,S016,Account Management,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S016-ADV,Advanced Account Management and Decision Practice,S016,Account Management,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S017-FND,Pipeline Management Fundamentals,S017,Pipeline Management,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S017-PRC,Applied Pipeline Management,S017,Pipeline Management,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S017-ADV,Advanced Pipeline Management and Decision Practice,S017,Pipeline Management,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S018-FND,Product Knowledge Fundamentals,S018,Product Knowledge,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S018-PRC,Applied Product Knowledge,S018,Product Knowledge,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S018-ADV,Advanced Product Knowledge and Decision Practice,S018,Product Knowledge,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S019-FND,Process Management Fundamentals,S019,Process Management,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S019-PRC,Applied Process Management,S019,Process Management,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S019-ADV,Advanced Process Management and Decision Practice,S019,Process Management,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S020-FND,SOP Compliance Fundamentals,S020,SOP Compliance,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S020-PRC,Applied SOP Compliance,S020,SOP Compliance,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S020-ADV,Advanced SOP Compliance and Decision Practice,S020,SOP Compliance,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S021-FND,Process Improvement Fundamentals,S021,Process Improvement,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S021-PRC,Applied Process Improvement,S021,Process Improvement,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S021-ADV,Advanced Process Improvement and Decision Practice,S021,Process Improvement,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S022-FND,Quality Control Fundamentals,S022,Quality Control,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S022-PRC,Applied Quality Control,S022,Quality Control,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S022-ADV,Advanced Quality Control and Decision Practice,S022,Quality Control,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S023-FND,Risk & Controls Fundamentals,S023,Risk & Controls,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S023-PRC,Applied Risk & Controls,S023,Risk & Controls,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S023-ADV,Advanced Risk & Controls and Decision Practice,S023,Risk & Controls,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S024-FND,Workflow Coordination Fundamentals,S024,Workflow Coordination,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S024-PRC,Applied Workflow Coordination,S024,Workflow Coordination,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S024-ADV,Advanced Workflow Coordination and Decision Practice,S024,Workflow Coordination,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S025-FND,Financial Analysis Fundamentals,S025,Financial Analysis,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S025-PRC,Applied Financial Analysis,S025,Financial Analysis,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S025-ADV,Advanced Financial Analysis and Decision Practice,S025,Financial Analysis,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S026-FND,Accounting & Reconciliation Fundamentals,S026,Accounting & Reconciliation,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S026-PRC,Applied Accounting & Reconciliation,S026,Accounting & Reconciliation,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S026-ADV,Advanced Accounting & Reconciliation and Decision Practice,S026,Accounting & Reconciliation,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S027-FND,Budgeting & Forecasting Fundamentals,S027,Budgeting & Forecasting,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S027-PRC,Applied Budgeting & Forecasting,S027,Budgeting & Forecasting,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S027-ADV,Advanced Budgeting & Forecasting and Decision Practice,S027,Budgeting & Forecasting,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S028-FND,Regulatory Reporting Fundamentals,S028,Regulatory Reporting,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S028-PRC,Applied Regulatory Reporting,S028,Regulatory Reporting,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S028-ADV,Advanced Regulatory Reporting and Decision Practice,S028,Regulatory Reporting,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S029-FND,Advanced Excel Fundamentals,S029,Advanced Excel,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S029-PRC,Applied Advanced Excel,S029,Advanced Excel,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S029-ADV,Advanced Advanced Excel and Decision Practice,S029,Advanced Excel,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S030-FND,Risk Analysis Fundamentals,S030,Risk Analysis,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S030-PRC,Applied Risk Analysis,S030,Risk Analysis,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S030-ADV,Advanced Risk Analysis and Decision Practice,S030,Risk Analysis,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S031-FND,Recruitment & Selection Fundamentals,S031,Recruitment & Selection,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S031-PRC,Applied Recruitment & Selection,S031,Recruitment & Selection,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S031-ADV,Advanced Recruitment & Selection and Decision Practice,S031,Recruitment & Selection,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S032-FND,HRIS & Employee Data Fundamentals,S032,HRIS & Employee Data,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S032-PRC,Applied HRIS & Employee Data,S032,HRIS & Employee Data,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S032-ADV,Advanced HRIS & Employee Data and Decision Practice,S032,HRIS & Employee Data,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S033-FND,Performance Management Fundamentals,S033,Performance Management,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S033-PRC,Applied Performance Management,S033,Performance Management,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S033-ADV,Advanced Performance Management and Decision Practice,S033,Performance Management,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S034-FND,Employee Relations Essentials,S034,Employee Relations,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S034-PRC,Employee Relations in Practice,S034,Employee Relations,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S034-ADV,Advanced Employee Relations for Professional Growth,S034,Employee Relations,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S035-FND,Learning & Development Fundamentals,S035,Learning & Development,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S035-PRC,Applied Learning & Development,S035,Learning & Development,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S035-ADV,Advanced Learning & Development and Decision Practice,S035,Learning & Development,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S036-FND,Payroll Administration Fundamentals,S036,Payroll Administration,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S036-PRC,Applied Payroll Administration,S036,Payroll Administration,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S036-ADV,Advanced Payroll Administration and Decision Practice,S036,Payroll Administration,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S037-FND,Customer Service Fundamentals,S037,Customer Service,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S037-PRC,Applied Customer Service,S037,Customer Service,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S037-ADV,Advanced Customer Service and Decision Practice,S037,Customer Service,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S038-FND,Complaint Resolution Essentials,S038,Complaint Resolution,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S038-PRC,Complaint Resolution in Practice,S038,Complaint Resolution,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S038-ADV,Advanced Complaint Resolution for Professional Growth,S038,Complaint Resolution,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S039-FND,Call Handling Fundamentals,S039,Call Handling,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S039-PRC,Applied Call Handling,S039,Call Handling,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S039-ADV,Advanced Call Handling and Decision Practice,S039,Call Handling,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S040-FND,SLA Management Fundamentals,S040,SLA Management,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S040-PRC,Applied SLA Management,S040,SLA Management,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S040-ADV,Advanced SLA Management and Decision Practice,S040,SLA Management,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S041-FND,Knowledge Base Management Fundamentals,S041,Knowledge Base Management,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S041-PRC,Applied Knowledge Base Management,S041,Knowledge Base Management,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S041-ADV,Advanced Knowledge Base Management and Decision Practice,S041,Knowledge Base Management,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S042-FND,Communication Essentials,S042,Communication,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S042-PRC,Communication in Practice,S042,Communication,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S042-ADV,Advanced Communication for Professional Growth,S042,Communication,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S043-FND,Teamwork Essentials,S043,Teamwork,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S043-PRC,Teamwork in Practice,S043,Teamwork,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S043-ADV,Advanced Teamwork for Professional Growth,S043,Teamwork,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S044-FND,Problem Solving Essentials,S044,Problem Solving,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S044-PRC,Problem Solving in Practice,S044,Problem Solving,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S044-ADV,Advanced Problem Solving for Professional Growth,S044,Problem Solving,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S045-FND,Stakeholder Management Essentials,S045,Stakeholder Management,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S045-PRC,Stakeholder Management in Practice,S045,Stakeholder Management,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S045-ADV,Advanced Stakeholder Management for Professional Growth,S045,Stakeholder Management,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S046-FND,Leadership Essentials,S046,Leadership,Foundation,24000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S046-PRC,Leadership in Practice,S046,Leadership,Practitioner,36000,5,18,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S046-ADV,Advanced Leadership for Professional Growth,S046,Leadership,Advanced,54000,7,27,85,90,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S047-FND,Coaching & Mentoring Essentials,S047,Coaching & Mentoring,Foundation,24000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S047-PRC,Coaching & Mentoring in Practice,S047,Coaching & Mentoring,Practitioner,36000,5,18,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S047-ADV,Advanced Coaching & Mentoring for Professional Growth,S047,Coaching & Mentoring,Advanced,54000,7,27,85,90,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S048-FND,Adaptability Essentials,S048,Adaptability,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S048-PRC,Adaptability in Practice,S048,Adaptability,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S048-ADV,Advanced Adaptability for Professional Growth,S048,Adaptability,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S049-FND,Data Analysis Fundamentals,S049,Data Analysis,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S049-PRC,Applied Data Analysis,S049,Data Analysis,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S049-ADV,Advanced Data Analysis and Decision Practice,S049,Data Analysis,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S050-FND,Project Management Essentials,S050,Project Management,Foundation,24000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S050-PRC,Project Management in Practice,S050,Project Management,Practitioner,36000,5,18,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S050-ADV,Advanced Project Management for Professional Growth,S050,Project Management,Advanced,54000,7,27,85,90,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S051-FND,Empathy & Active Listening Essentials,S051,Empathy & Active Listening,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S051-PRC,Empathy & Active Listening in Practice,S051,Empathy & Active Listening,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S051-ADV,Advanced Empathy & Active Listening for Professional Growth,S051,Empathy & Active Listening,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S052-FND,Time Management Essentials,S052,Time Management,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S052-PRC,Time Management in Practice,S052,Time Management,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S052-ADV,Advanced Time Management for Professional Growth,S052,Time Management,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S053-FND,Documentation Essentials,S053,Documentation,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S053-PRC,Documentation in Practice,S053,Documentation,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S053-ADV,Advanced Documentation for Professional Growth,S053,Documentation,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S054-FND,Clinical Assessment Foundations,S054,Clinical Assessment,Foundation,30000,3,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S054-PRC,Applied Clinical Assessment in Clinical Practice,S054,Clinical Assessment,Practitioner,42000,5,21,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S054-ADV,Advanced Clinical Assessment and Patient Safety,S054,Clinical Assessment,Advanced,60000,7,30,85,90,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S055-FND,Patient Care Foundations,S055,Patient Care,Foundation,30000,3,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S055-PRC,Applied Patient Care in Clinical Practice,S055,Patient Care,Practitioner,42000,5,21,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S055-ADV,Advanced Patient Care and Patient Safety,S055,Patient Care,Advanced,60000,7,30,85,90,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S056-FND,Clinical Documentation Foundations,S056,Clinical Documentation,Foundation,30000,3,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S056-PRC,Applied Clinical Documentation in Clinical Practice,S056,Clinical Documentation,Practitioner,42000,5,21,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S056-ADV,Advanced Clinical Documentation and Patient Safety,S056,Clinical Documentation,Advanced,60000,7,30,85,90,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S057-FND,Medication Safety Foundations,S057,Medication Safety,Foundation,30000,3,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S057-PRC,Applied Medication Safety in Clinical Practice,S057,Medication Safety,Practitioner,42000,5,21,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S057-ADV,Advanced Medication Safety and Patient Safety,S057,Medication Safety,Advanced,60000,7,30,85,90,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S058-FND,Infection Prevention Foundations,S058,Infection Prevention,Foundation,30000,3,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S058-PRC,Applied Infection Prevention in Clinical Practice,S058,Infection Prevention,Practitioner,42000,5,21,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S058-ADV,Advanced Infection Prevention and Patient Safety,S058,Infection Prevention,Advanced,60000,7,30,85,90,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S059-FND,Emergency Response Foundations,S059,Emergency Response,Foundation,30000,3,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S059-PRC,Applied Emergency Response in Clinical Practice,S059,Emergency Response,Practitioner,42000,5,21,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S059-ADV,Advanced Emergency Response and Patient Safety,S059,Emergency Response,Advanced,60000,7,30,85,90,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S060-FND,Care Coordination Foundations,S060,Care Coordination,Foundation,30000,3,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S060-PRC,Applied Care Coordination in Clinical Practice,S060,Care Coordination,Practitioner,42000,5,21,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S060-ADV,Advanced Care Coordination and Patient Safety,S060,Care Coordination,Advanced,60000,7,30,85,90,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S061-FND,Training Needs Analysis Fundamentals,S061,Training Needs Analysis,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S061-PRC,Applied Training Needs Analysis for Learning Delivery,S061,Training Needs Analysis,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S061-ADV,Advanced Training Needs Analysis and Learning Impact,S061,Training Needs Analysis,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S062-FND,Curriculum Design Fundamentals,S062,Curriculum Design,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S062-PRC,Applied Curriculum Design for Learning Delivery,S062,Curriculum Design,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S062-ADV,Advanced Curriculum Design and Learning Impact,S062,Curriculum Design,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S063-FND,Facilitation Fundamentals,S063,Facilitation,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S063-PRC,Applied Facilitation for Learning Delivery,S063,Facilitation,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S063-ADV,Advanced Facilitation and Learning Impact,S063,Facilitation,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S064-FND,Learning Evaluation Fundamentals,S064,Learning Evaluation,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S064-PRC,Applied Learning Evaluation for Learning Delivery,S064,Learning Evaluation,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S064-ADV,Advanced Learning Evaluation and Learning Impact,S064,Learning Evaluation,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S065-FND,Learning Management Systems Fundamentals,S065,Learning Management Systems,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S065-PRC,Applied Learning Management Systems for Learning Delivery,S065,Learning Management Systems,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S065-ADV,Advanced Learning Management Systems and Learning Impact,S065,Learning Management Systems,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S066-FND,Office Administration Fundamentals,S066,Office Administration,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S066-PRC,Applied Office Administration,S066,Office Administration,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S066-ADV,Advanced Office Administration and Decision Practice,S066,Office Administration,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S067-FND,Facilities Management Fundamentals,S067,Facilities Management,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S067-PRC,Applied Facilities Management,S067,Facilities Management,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S067-ADV,Advanced Facilities Management and Decision Practice,S067,Facilities Management,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S068-FND,Vendor Coordination Fundamentals,S068,Vendor Coordination,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S068-PRC,Applied Vendor Coordination,S068,Vendor Coordination,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S068-ADV,Advanced Vendor Coordination and Decision Practice,S068,Vendor Coordination,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S069-FND,Asset Management Fundamentals,S069,Asset Management,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S069-PRC,Applied Asset Management,S069,Asset Management,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S069-ADV,Advanced Asset Management and Decision Practice,S069,Asset Management,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S070-FND,Records Management Fundamentals,S070,Records Management,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S070-PRC,Applied Records Management,S070,Records Management,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S070-ADV,Advanced Records Management and Decision Practice,S070,Records Management,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S071-FND,Contract Review Fundamentals,S071,Contract Review,Foundation,24000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S071-PRC,Applied Contract Review,S071,Contract Review,Practitioner,36000,5,18,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S071-ADV,Advanced Contract Review and Decision Practice,S071,Contract Review,Advanced,54000,7,27,85,90,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S072-FND,Regulatory Compliance Fundamentals,S072,Regulatory Compliance,Foundation,24000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S072-PRC,Applied Regulatory Compliance,S072,Regulatory Compliance,Practitioner,36000,5,18,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S072-ADV,Advanced Regulatory Compliance and Decision Practice,S072,Regulatory Compliance,Advanced,54000,7,27,85,90,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S073-FND,Policy Interpretation Fundamentals,S073,Policy Interpretation,Foundation,24000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S073-PRC,Applied Policy Interpretation,S073,Policy Interpretation,Practitioner,36000,5,18,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S073-ADV,Advanced Policy Interpretation and Decision Practice,S073,Policy Interpretation,Advanced,54000,7,27,85,90,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S074-FND,Legal Research Fundamentals,S074,Legal Research,Foundation,24000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S074-PRC,Applied Legal Research,S074,Legal Research,Practitioner,36000,5,18,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S074-ADV,Advanced Legal Research and Decision Practice,S074,Legal Research,Advanced,54000,7,27,85,90,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S075-FND,Case Management Fundamentals,S075,Case Management,Foundation,24000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S075-PRC,Applied Case Management,S075,Case Management,Practitioner,36000,5,18,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S075-ADV,Advanced Case Management and Decision Practice,S075,Case Management,Advanced,54000,7,27,85,90,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S076-FND,Strategic Sourcing Fundamentals,S076,Strategic Sourcing,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S076-PRC,Applied Strategic Sourcing,S076,Strategic Sourcing,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S076-ADV,Advanced Strategic Sourcing and Decision Practice,S076,Strategic Sourcing,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S077-FND,Purchase Order Management Fundamentals,S077,Purchase Order Management,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S077-PRC,Applied Purchase Order Management,S077,Purchase Order Management,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S077-ADV,Advanced Purchase Order Management and Decision Practice,S077,Purchase Order Management,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S078-FND,Supplier Management Fundamentals,S078,Supplier Management,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S078-PRC,Applied Supplier Management,S078,Supplier Management,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S078-ADV,Advanced Supplier Management and Decision Practice,S078,Supplier Management,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S079-FND,Contract Negotiation Fundamentals,S079,Contract Negotiation,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S079-PRC,Applied Contract Negotiation,S079,Contract Negotiation,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S079-ADV,Advanced Contract Negotiation and Decision Practice,S079,Contract Negotiation,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S080-FND,Inventory Planning Fundamentals,S080,Inventory Planning,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S080-PRC,Applied Inventory Planning,S080,Inventory Planning,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S080-ADV,Advanced Inventory Planning and Decision Practice,S080,Inventory Planning,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S081-FND,Cost Analysis Fundamentals,S081,Cost Analysis,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S081-PRC,Applied Cost Analysis,S081,Cost Analysis,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S081-ADV,Advanced Cost Analysis and Decision Practice,S081,Cost Analysis,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S082-FND,Warehouse Operations Fundamentals,S082,Warehouse Operations,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S082-PRC,Applied Warehouse Operations,S082,Warehouse Operations,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S082-ADV,Advanced Warehouse Operations and Decision Practice,S082,Warehouse Operations,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S083-FND,Inventory Control Fundamentals,S083,Inventory Control,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S083-PRC,Applied Inventory Control,S083,Inventory Control,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S083-ADV,Advanced Inventory Control and Decision Practice,S083,Inventory Control,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S084-FND,Transport Planning Fundamentals,S084,Transport Planning,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S084-PRC,Applied Transport Planning,S084,Transport Planning,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S084-ADV,Advanced Transport Planning and Decision Practice,S084,Transport Planning,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S085-FND,Route Optimization Fundamentals,S085,Route Optimization,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S085-PRC,Applied Route Optimization,S085,Route Optimization,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S085-ADV,Advanced Route Optimization and Decision Practice,S085,Route Optimization,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S086-FND,Dispatch Coordination Fundamentals,S086,Dispatch Coordination,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S086-PRC,Applied Dispatch Coordination,S086,Dispatch Coordination,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S086-ADV,Advanced Dispatch Coordination and Decision Practice,S086,Dispatch Coordination,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S087-FND,Health and Safety Essentials,S087,Health and Safety,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S087-PRC,Applied Health and Safety in Operations,S087,Health and Safety,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S087-ADV,Advanced Health and Safety and Continuous Improvement,S087,Health and Safety,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S088-FND,Production Planning Essentials,S088,Production Planning,Foundation,30000,3,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S088-PRC,Applied Production Planning in Operations,S088,Production Planning,Practitioner,42000,5,21,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S088-ADV,Advanced Production Planning and Continuous Improvement,S088,Production Planning,Advanced,60000,7,30,85,90,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S089-FND,Machine Operation Essentials,S089,Machine Operation,Foundation,30000,3,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S089-PRC,Applied Machine Operation in Operations,S089,Machine Operation,Practitioner,42000,5,21,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S089-ADV,Advanced Machine Operation and Continuous Improvement,S089,Machine Operation,Advanced,60000,7,30,85,90,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S090-FND,Preventive Maintenance Essentials,S090,Preventive Maintenance,Foundation,30000,3,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S090-PRC,Applied Preventive Maintenance in Operations,S090,Preventive Maintenance,Practitioner,42000,5,21,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S090-ADV,Advanced Preventive Maintenance and Continuous Improvement,S090,Preventive Maintenance,Advanced,60000,7,30,85,90,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S091-FND,Lean Manufacturing Essentials,S091,Lean Manufacturing,Foundation,30000,3,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S091-PRC,Applied Lean Manufacturing in Operations,S091,Lean Manufacturing,Practitioner,42000,5,21,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S091-ADV,Advanced Lean Manufacturing and Continuous Improvement,S091,Lean Manufacturing,Advanced,60000,7,30,85,90,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S092-FND,Quality Auditing Essentials,S092,Quality Auditing,Foundation,30000,3,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S092-PRC,Applied Quality Auditing in Operations,S092,Quality Auditing,Practitioner,42000,5,21,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S092-ADV,Advanced Quality Auditing and Continuous Improvement,S092,Quality Auditing,Advanced,60000,7,30,85,90,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S093-FND,Root Cause Analysis Essentials,S093,Root Cause Analysis,Foundation,30000,3,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S093-PRC,Applied Root Cause Analysis in Operations,S093,Root Cause Analysis,Practitioner,42000,5,21,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S093-ADV,Advanced Root Cause Analysis and Continuous Improvement,S093,Root Cause Analysis,Advanced,60000,7,30,85,90,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S094-FND,Corrective Action Management Essentials,S094,Corrective Action Management,Foundation,30000,3,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S094-PRC,Applied Corrective Action Management in Operations,S094,Corrective Action Management,Practitioner,42000,5,21,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S094-ADV,Advanced Corrective Action Management and Continuous Improvement,S094,Corrective Action Management,Advanced,60000,7,30,85,90,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S095-FND,Statistical Process Control Essentials,S095,Statistical Process Control,Foundation,30000,3,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S095-PRC,Applied Statistical Process Control in Operations,S095,Statistical Process Control,Practitioner,42000,5,21,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S095-ADV,Advanced Statistical Process Control and Continuous Improvement,S095,Statistical Process Control,Advanced,60000,7,30,85,90,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S096-FND,Research Methodology Foundations,S096,Research Methodology,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S096-PRC,Applied Research Methodology for R&D,S096,Research Methodology,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S096-ADV,Advanced Research Methodology and Innovation Practice,S096,Research Methodology,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S097-FND,Experimental Design Foundations,S097,Experimental Design,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S097-PRC,Applied Experimental Design for R&D,S097,Experimental Design,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S097-ADV,Advanced Experimental Design and Innovation Practice,S097,Experimental Design,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S098-FND,Technical Writing Foundations,S098,Technical Writing,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S098-PRC,Applied Technical Writing for R&D,S098,Technical Writing,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S098-ADV,Advanced Technical Writing and Innovation Practice,S098,Technical Writing,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S099-FND,Innovation Management Foundations,S099,Innovation Management,Foundation,18000,3,14,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S099-PRC,Applied Innovation Management for R&D,S099,Innovation Management,Practitioner,30000,5,15,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
+COURSE-S099-ADV,Advanced Innovation Management and Innovation Practice,S099,Innovation Management,Advanced,48000,7,24,85,60,NEW_SIMULATION_BUSINESS_INPUT,2026-08-01
