@@ -31,6 +31,9 @@ from replacement_tool import (
     create_replacement_recommendation_tool,
     create_stateful_replacement_recommendation_tool,
 )
+from simulations.repository import SimulationRepository
+from simulations.service import SimulationService
+from simulations.tool import create_stateful_scenario_simulation_tool
 from settings import get_llm_settings
 
 
@@ -48,6 +51,12 @@ class HRPerformanceAgentState(HRAgentState):
     last_employee_record_result: NotRequired[dict[str, Any] | None]
 
 
+class HRSimulationAgentState(HRPerformanceAgentState):
+    # Add Scenario Simulation memory without changing existing base state.
+    last_simulation_request: NotRequired[dict[str, Any] | None]
+    last_simulation_result: NotRequired[dict[str, Any] | None]
+
+
 # ============================================================
 # AGENT FACTORY
 # ============================================================
@@ -58,6 +67,7 @@ def create_hr_reasoning_agent(
     data_path: str | Path,
     headcount_service: HeadcountService | None = None,
     performance_service: PerformanceService | None = None,
+    simulation_service: SimulationService | None = None,
 ) -> Any:
     """
     Create the main multilingual HR reasoning agent.
@@ -206,6 +216,19 @@ def create_hr_reasoning_agent(
     )
 
     # --------------------------------------------------------
+    # CREATE THE HIGH-LEVEL SCENARIO SIMULATION TOOL
+    # --------------------------------------------------------
+
+    active_simulation_service = (
+        simulation_service
+        if simulation_service is not None
+        else SimulationService(SimulationRepository(data_path))
+    )
+    scenario_simulation_tool = create_stateful_scenario_simulation_tool(
+        active_simulation_service
+    )
+
+    # --------------------------------------------------------
     # CREATE DEVELOPMENT CONVERSATION MEMORY
     # --------------------------------------------------------
 
@@ -231,6 +254,7 @@ def create_hr_reasoning_agent(
             recommend_replacement_tool,
             analyze_headcount_tool,
             analyze_employee_performance_tool,
+            scenario_simulation_tool,
         ],
 
         # Detailed permanent instructions, including Employee Performance
@@ -239,7 +263,7 @@ def create_hr_reasoning_agent(
 
         # Structured employee and workflow memory created
         # in Task 8.
-        state_schema=HRPerformanceAgentState,
+        state_schema=HRSimulationAgentState,
 
         # Thread-based in-server conversation memory.
         checkpointer=checkpointer,

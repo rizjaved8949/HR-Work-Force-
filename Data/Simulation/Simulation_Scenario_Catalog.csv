@@ -1,0 +1,8 @@
+﻿Scenario_Code,Scenario_Name,Primary_Existing_Extracts,New_Business_Evaluation_File,Example_HR_Question
+employee_promotion,Employee Promotion,01 Employee + 03 Position,04 Department + 05 Position,What if EMP025 is promoted to a senior role?
+employee_transfer,Employee Transfer,01 Employee + 02 Department + 03 Position,04 Department + 05 Position,What if EMP120 moves from Finance to Operations?
+headcount_reduction,Headcount Reduction,02 Department + 03 Position,04 Department + 05 Position,What if Engineering headcount is reduced by 10%?
+workforce_expansion,Workforce Expansion / Hiring,02 Department + 03 Position,04 Department + 05 Position,What if Sales hires 10 additional employees?
+budget_change,Budget Change,02 Department + 03 Position,04 Department + 05 Position,What if Finance people budget is reduced by 15%?
+skill_reskilling,Skill Gap / Reskilling,01 Employee + 03 Position + existing Employee_Skills/Position_Skill_Requirements,06 Learning,What if selected employees are trained for data skills?
+business_demand_change,Business Demand / Workload Change,02 Department,04 Department,What if Operations workload increases by 25%?
