@@ -129,12 +129,12 @@ def get_llm_settings() -> LLMSettings:
 
         # Large enough that a three-candidate successor answer is never
         # truncated mid-sentence.
-        max_tokens=_env_int("OPENROUTER_MAX_TOKENS", 1200),
+        max_tokens=_env_int("OPENROUTER_MAX_TOKENS", 600),
 
         # Free OpenRouter models regularly return transient upstream errors.
-        max_retries=_env_int("OPENROUTER_MAX_RETRIES", 3),
+        max_retries=_env_int("OPENROUTER_MAX_RETRIES", 1),
 
-        timeout_seconds=_env_float("OPENROUTER_TIMEOUT_SECONDS", 120.0),
+        timeout_seconds=_env_float("OPENROUTER_TIMEOUT_SECONDS", 40.0),
 
         # off | low | medium | high | on. See LLMSettings.extra_body.
         reasoning=_env_str("OPENROUTER_REASONING", "off").lower(),
