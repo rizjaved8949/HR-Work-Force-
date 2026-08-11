@@ -379,13 +379,11 @@ def create_stateful_scenario_simulation_tool(service: SimulationService) -> Base
 
     @stateful_tool(SCENARIO_SIMULATION_TOOL_NAME, args_schema=ScenarioSimulationToolInput)
     def scenario_simulation_tool(
-        runtime: ToolRuntime = None,  # pyright: ignore[reportArgumentType]
+        runtime: ToolRuntime,
         **kwargs: Any,
     ) -> Command:
         """Run Scenario Simulation and preserve its structured result in agent state."""
         result = base_tool.invoke(kwargs)
-        tool_call_id = getattr(runtime, "tool_call_id", None) or "scenario-simulation-tool-call"
-
         resolved = result.get("resolved_inputs") or {}
         update: dict[str, Any] = {
             "last_user_intent": "scenario_simulation",
@@ -395,7 +393,7 @@ def create_stateful_scenario_simulation_tool(service: SimulationService) -> Base
             "messages": [
                 ToolMessage(
                     content=json.dumps(result, ensure_ascii=False, default=str),
-                    tool_call_id=tool_call_id,
+                    tool_call_id=runtime.tool_call_id,
                 )
             ],
         }
