@@ -13,6 +13,7 @@ from resilient_model import ResilientChatOpenAI
 
 from agent_prompts import HR_AGENT_SYSTEM_PROMPT
 from agent_state import HRAgentState
+from employee_profile_tool import create_stateful_employee_record_tool
 from agent_tools import (
     create_stateful_check_employee_attrition_tool,
 )
@@ -46,6 +47,8 @@ from settings import get_llm_settings
 class HRPerformanceAgentState(HRAgentState):
     last_performance_question: NotRequired[str | None]
     last_performance_result: NotRequired[dict[str, Any] | None]
+    last_employee_record_query: NotRequired[dict[str, Any] | None]
+    last_employee_record_result: NotRequired[dict[str, Any] | None]
 
 
 class HRSimulationAgentState(HRPerformanceAgentState):
@@ -73,9 +76,9 @@ def create_hr_reasoning_agent(
     into this function from the FastAPI application. This keeps
     the model and CSV data loaded only once.
 
-    The agent exposes four high-level tools:
-    check_employee_attrition, recommend_replacement, analyze_headcount,
-    and analyze_employee_performance. Headcount and Performance calculations
+    The agent exposes five high-level tools:
+    get_employee_record, check_employee_attrition, recommend_replacement,
+    analyze_headcount, and analyze_employee_performance. Headcount and Performance calculations
     remain deterministic, while the reasoning model only selects tools and
     explains results.
     """
@@ -123,6 +126,17 @@ def create_hr_reasoning_agent(
             "HTTP-Referer": "http://localhost:8000",
             "X-Title": "HR Workforce Intelligence Backend",
         },
+    )
+
+    # --------------------------------------------------------
+    # CREATE THE HIGH-LEVEL EMPLOYEE PROFILE TOOL
+    # --------------------------------------------------------
+
+    # Reuse the exact employee-search tool instance already created by
+    # FastAPI. The wrapper adds conversation-state updates only; it does
+    # not create another repository, reload CSV data, or alter lookup logic.
+    get_employee_record_tool = create_stateful_employee_record_tool(
+        employee_search_tool=employee_search_tool,
     )
 
     # --------------------------------------------------------
@@ -230,10 +244,12 @@ def create_hr_reasoning_agent(
     hr_agent = create_agent(
         model=model,
 
-        # Expose only the four high-level HR tools. Internal employee
-        # search, CatBoost, Headcount services, and Performance services
-        # are not exposed directly to the reasoning model.
+        # Expose five high-level HR tools. Employee profile lookup reuses
+        # the existing employee-search repository through a state-aware
+        # wrapper; CatBoost, Headcount services, and Performance services
+        # remain internal deterministic components.
         tools=[
+            get_employee_record_tool,
             check_employee_attrition_tool,
             recommend_replacement_tool,
             analyze_headcount_tool,
