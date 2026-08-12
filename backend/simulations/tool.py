@@ -377,14 +377,24 @@ def create_scenario_simulation_tool(service: SimulationService) -> BaseTool:
 def create_stateful_scenario_simulation_tool(service: SimulationService) -> BaseTool:
     base_tool = create_scenario_simulation_tool(service)
 
-    @stateful_tool(SCENARIO_SIMULATION_TOOL_NAME, args_schema=ScenarioSimulationToolInput)
+    @stateful_tool(
+        SCENARIO_SIMULATION_TOOL_NAME,
+        args_schema=ScenarioSimulationToolInput,
+    )
     def scenario_simulation_tool(
-        runtime: ToolRuntime,
+        runtime: ToolRuntime | None = None,
         **kwargs: Any,
-    ) -> Command:
+    ) -> Command | dict[str, Any]:
         """Run Scenario Simulation and preserve its structured result in agent state."""
+
         result = base_tool.invoke(kwargs)
+
+        # Safe fallback when ToolRuntime is not injected.
+        if runtime is None:
+            return result
+
         resolved = result.get("resolved_inputs") or {}
+
         update: dict[str, Any] = {
             "last_user_intent": "scenario_simulation",
             "last_simulation_request": kwargs,
@@ -392,15 +402,22 @@ def create_stateful_scenario_simulation_tool(service: SimulationService) -> Base
             "last_tool_status": result.get("status"),
             "messages": [
                 ToolMessage(
-                    content=json.dumps(result, ensure_ascii=False, default=str),
+                    content=json.dumps(
+                        result,
+                        ensure_ascii=False,
+                        default=str,
+                    ),
                     tool_call_id=runtime.tool_call_id,
                 )
             ],
         }
+
         if resolved.get("employee_id"):
             update["selected_employee_id"] = resolved.get("employee_id")
+
         if resolved.get("employee_name"):
             update["selected_employee_name"] = resolved.get("employee_name")
+
         if resolved.get("department"):
             update["selected_department"] = resolved.get("department")
 
