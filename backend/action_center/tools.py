@@ -3,11 +3,17 @@
 from __future__ import annotations
 
 import json
-from typing import Any
+from typing import Annotated, Any
 
-from langchain.messages import ToolMessage
 from langchain.tools import ToolRuntime, tool as stateful_tool
+from langchain_core.messages import ToolMessage
 from langchain_core.tools import BaseTool
+
+try:
+    from langchain_core.tools.base import InjectedToolCallId
+except ImportError:  # compatibility fallback
+    from langchain_core.tools import InjectedToolCallId
+
 from langgraph.types import Command
 
 from .errors import ActionCenterError
@@ -38,21 +44,10 @@ def _actor_from_runtime(runtime: ToolRuntime | None) -> ActionActor | None:
     )
 
 
-def _message(result: dict[str, Any], runtime: ToolRuntime | None, fallback: str) -> ToolMessage:
-    tool_call_id = None
-
-    if runtime is not None:
-        tool_call_id = getattr(runtime, "tool_call_id", None)
-
-    if not tool_call_id:
-        tool_call_id = fallback
-
+def _message(result: dict[str, Any], tool_call_id: str) -> ToolMessage:
+    """Create a ToolMessage tied to the exact LLM tool call."""
     return ToolMessage(
-        content=json.dumps(
-            result,
-            ensure_ascii=False,
-            default=str,
-        ),
+        content=json.dumps(result, ensure_ascii=False, default=str),
         tool_call_id=tool_call_id,
     )
 
@@ -71,7 +66,9 @@ def create_stateful_action_center_query_tool(service: ActionCenterService) -> Ba
         start_date: str | None = None,
         end_date: str | None = None,
         limit: int = 20,
-        runtime: ToolRuntime = None,  # pyright: ignore[reportArgumentType]
+        *,
+        tool_call_id: Annotated[str, InjectedToolCallId],
+        runtime: ToolRuntime,
     ) -> Command:
         """Read authoritative HR Action Center operational data.
 
@@ -85,10 +82,12 @@ def create_stateful_action_center_query_tool(service: ActionCenterService) -> Ba
         runtime_state = runtime.state if runtime is not None else {}
         effective_employee_id = employee_id
         effective_employee_name = employee_name
-        if not effective_employee_id and not effective_employee_name and mode in {
-            "employee_history",
-            "employee_state",
-        }:
+
+        if (
+            not effective_employee_id
+            and not effective_employee_name
+            and mode in {"employee_history", "employee_state"}
+        ):
             selected = runtime_state.get("selected_employee_id")
             if selected:
                 effective_employee_id = str(selected)
@@ -103,6 +102,7 @@ def create_stateful_action_center_query_tool(service: ActionCenterService) -> Ba
             "end_date": end_date,
             "limit": limit,
         }
+
         try:
             result = service.query(payload)
             tool_status = result.get("status", "success")
@@ -116,17 +116,31 @@ def create_stateful_action_center_query_tool(service: ActionCenterService) -> Ba
             "last_action_center_result": result,
             "last_tool_status": tool_status,
             "last_error_message": result.get("message") if tool_status == "error" else None,
-            "messages": [_message(result, runtime, "action-center-query-local")],
+            "messages": [_message(result, tool_call_id)],
         }
 
         employee = result.get("employee") if isinstance(result, dict) else None
         if isinstance(employee, dict):
-            update.update({
-                "selected_employee_id": employee.get("Employee_ID") or employee.get("employee_id"),
-                "selected_employee_name": employee.get("Employee_Name") or employee.get("employee_name"),
-                "selected_department": employee.get("Operational_Department_Name") or employee.get("department"),
-                "selected_designation": employee.get("Operational_Position_Title") or employee.get("position"),
-            })
+            update.update(
+                {
+                    "selected_employee_id": (
+                        employee.get("Employee_ID")
+                        or employee.get("employee_id")
+                    ),
+                    "selected_employee_name": (
+                        employee.get("Employee_Name")
+                        or employee.get("employee_name")
+                    ),
+                    "selected_department": (
+                        employee.get("Operational_Department_Name")
+                        or employee.get("department")
+                    ),
+                    "selected_designation": (
+                        employee.get("Operational_Position_Title")
+                        or employee.get("position")
+                    ),
+                }
+            )
 
         return Command(update=update)
 
@@ -144,7 +158,9 @@ def create_stateful_perform_hr_action_tool(service: ActionCenterService) -> Base
         employee_name: str | None = None,
         fields: dict[str, Any] | None = None,
         confirm: bool = False,
-        runtime: ToolRuntime = None,  # pyright: ignore[reportArgumentType]
+        *,
+        tool_call_id: Annotated[str, InjectedToolCallId],
+        runtime: ToolRuntime,
     ) -> Command:
         """Preview or execute one of the 15 supported Action Center HR actions.
 
@@ -169,12 +185,16 @@ def create_stateful_perform_hr_action_tool(service: ActionCenterService) -> Base
                         ),
                     }
                 else:
-                    if process_code and str(process_code).strip().upper() != str(pending.get("process_code", "")).upper():
+                    if (
+                        process_code
+                        and str(process_code).strip().upper()
+                        != str(pending.get("process_code", "")).upper()
+                    ):
                         result = {
                             "status": "confirmation_conflict",
                             "message": (
-                                "The confirmation refers to a different process than the pending HR action. "
-                                "Preview the new action first."
+                                "The confirmation refers to a different process than the "
+                                "pending HR action. Preview the new action first."
                             ),
                         }
                     else:
@@ -188,6 +208,7 @@ def create_stateful_perform_hr_action_tool(service: ActionCenterService) -> Base
             else:
                 effective_employee_id = employee_id
                 effective_employee_name = employee_name
+
                 if not effective_employee_id and not effective_employee_name:
                     selected = state.get("selected_employee_id")
                     if selected:
@@ -196,7 +217,10 @@ def create_stateful_perform_hr_action_tool(service: ActionCenterService) -> Base
                 if not process_code:
                     result = {
                         "status": "invalid_request",
-                        "message": "A supported Action Center process is required before an HR action can be previewed.",
+                        "message": (
+                            "A supported Action Center process is required before an HR "
+                            "action can be previewed."
+                        ),
                     }
                 else:
                     result = service.preview_action(
@@ -215,40 +239,68 @@ def create_stateful_perform_hr_action_tool(service: ActionCenterService) -> Base
             "last_user_intent": "action_center_write",
             "last_hr_action_result": result,
             "last_tool_status": status,
-            "last_error_message": result.get("message") if status in {"error", "invalid_request"} else None,
+            "last_error_message": (
+                result.get("message")
+                if status in {"error", "invalid_request"}
+                else None
+            ),
         }
 
         if status == "ready":
             employee = result.get("employee") or {}
             pending_action = {
                 "process_code": result["process"]["process_code"],
-                "employee_id": employee.get("employee_id") or employee.get("Employee_ID"),
+                "employee_id": (
+                    employee.get("employee_id")
+                    or employee.get("Employee_ID")
+                ),
                 "fields": result.get("normalized_fields") or {},
                 "preview": result,
             }
             update["pending_hr_action"] = pending_action
             update["selected_employee_id"] = pending_action["employee_id"]
-            update["selected_employee_name"] = employee.get("employee_name") or employee.get("Employee_Name")
-            update["selected_department"] = employee.get("department") or employee.get("Operational_Department_Name")
-            update["selected_designation"] = employee.get("position") or employee.get("Operational_Position_Title")
+            update["selected_employee_name"] = (
+                employee.get("employee_name")
+                or employee.get("Employee_Name")
+            )
+            update["selected_department"] = (
+                employee.get("department")
+                or employee.get("Operational_Department_Name")
+            )
+            update["selected_designation"] = (
+                employee.get("position")
+                or employee.get("Operational_Position_Title")
+            )
 
         elif status == "completed":
             update["pending_hr_action"] = None
             employee = result.get("employee") or {}
-            update["selected_employee_id"] = employee.get("Employee_ID") or employee.get("employee_id")
-            update["selected_employee_name"] = employee.get("Employee_Name") or employee.get("employee_name")
-            update["selected_department"] = employee.get("Operational_Department_Name") or employee.get("department")
-            update["selected_designation"] = employee.get("Operational_Position_Title") or employee.get("position")
+            update["selected_employee_id"] = (
+                employee.get("Employee_ID")
+                or employee.get("employee_id")
+            )
+            update["selected_employee_name"] = (
+                employee.get("Employee_Name")
+                or employee.get("employee_name")
+            )
+            update["selected_department"] = (
+                employee.get("Operational_Department_Name")
+                or employee.get("department")
+            )
+            update["selected_designation"] = (
+                employee.get("Operational_Position_Title")
+                or employee.get("position")
+            )
 
-        update["messages"] = [
-            _message(result, runtime, "action-center-write-local")
-        ]
+        update["messages"] = [_message(result, tool_call_id)]
         return Command(update=update)
 
     return perform_hr_action
 
 
-def create_stateful_update_hr_action_record_tool(service: ActionCenterService) -> BaseTool:
+def create_stateful_update_hr_action_record_tool(
+    service: ActionCenterService,
+) -> BaseTool:
     @stateful_tool(
         UPDATE_HR_ACTION_RECORD_TOOL_NAME,
         args_schema=AgentUpdateActionRecordInput,
@@ -257,7 +309,9 @@ def create_stateful_update_hr_action_record_tool(service: ActionCenterService) -
         action_record_id: str | None = None,
         updates: dict[str, Any] | None = None,
         confirm: bool = False,
-        runtime: ToolRuntime = None,  # pyright: ignore[reportArgumentType]
+        *,
+        tool_call_id: Annotated[str, InjectedToolCallId],
+        runtime: ToolRuntime,
     ) -> Command:
         """Safely edit a SCHEDULED Action Center record with an audit event.
 
@@ -287,22 +341,35 @@ def create_stateful_update_hr_action_record_tool(service: ActionCenterService) -
                 if not action_record_id or not updates:
                     result = {
                         "status": "invalid_request",
-                        "message": "action_record_id and updates are required to preview a record update.",
+                        "message": (
+                            "action_record_id and updates are required to preview a "
+                            "record update."
+                        ),
                     }
                 else:
                     current = service.repository.get_action_record(action_record_id)
+
                     if str(current.get("Record_Status", "")).upper() != "SCHEDULED":
                         result = {
                             "status": "error",
                             "message": "Only SCHEDULED Action Center records can be edited.",
                         }
                     else:
-                        allowed = {"Effective_Date", "Reason_Category", "Reason_Details", "Action_Data_JSON"}
+                        allowed = {
+                            "Effective_Date",
+                            "Reason_Category",
+                            "Reason_Details",
+                            "Action_Data_JSON",
+                        }
                         unsupported = sorted(set(updates) - allowed)
+
                         if unsupported:
                             result = {
                                 "status": "error",
-                                "message": "Unsupported update fields: " + ", ".join(unsupported),
+                                "message": (
+                                    "Unsupported update fields: "
+                                    + ", ".join(unsupported)
+                                ),
                             }
                         else:
                             result = {
@@ -311,8 +378,12 @@ def create_stateful_update_hr_action_record_tool(service: ActionCenterService) -
                                 "action_record_id": action_record_id,
                                 "current": current,
                                 "updates": updates,
-                                "message": "The scheduled record update is valid. Confirm before saving it.",
+                                "message": (
+                                    "The scheduled record update is valid. "
+                                    "Confirm before saving it."
+                                ),
                             }
+
         except ActionCenterError as exc:
             result = {"status": "error", "message": str(exc)}
 
@@ -321,8 +392,11 @@ def create_stateful_update_hr_action_record_tool(service: ActionCenterService) -
             "last_user_intent": "action_center_record_update",
             "last_hr_action_result": result,
             "last_tool_status": status,
-            "last_error_message": result.get("message") if status == "error" else None,
+            "last_error_message": (
+                result.get("message") if status == "error" else None
+            ),
         }
+
         if status == "ready":
             update["pending_hr_record_update"] = {
                 "action_record_id": result["action_record_id"],
@@ -331,9 +405,7 @@ def create_stateful_update_hr_action_record_tool(service: ActionCenterService) -
         elif status == "completed":
             update["pending_hr_record_update"] = None
 
-        update["messages"] = [
-            _message(result, runtime, "action-center-record-update-local")
-        ]
+        update["messages"] = [_message(result, tool_call_id)]
         return Command(update=update)
 
     return update_hr_action_record
