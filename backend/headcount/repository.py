@@ -10,6 +10,7 @@ Files are loaded lazily and cached after their first use.
 from __future__ import annotations
 
 from dataclasses import dataclass
+import os
 from pathlib import Path
 from threading import RLock
 from typing import Final
@@ -366,10 +367,25 @@ TABLE_SPECIFICATIONS: Final[
 class HeadcountRepository:
     """Lazy, cached and read-only access to Headcount CSV tables."""
 
-    def __init__(self, data_directory: str | Path) -> None:
+    def __init__(
+        self,
+        data_directory: str | Path,
+        *,
+        use_action_center_overlay: bool | None = None,
+    ) -> None:
         self.data_directory = Path(data_directory).expanduser().resolve()
         self._cache: dict[str, pd.DataFrame] = {}
         self._lock = RLock()
+        if use_action_center_overlay is None:
+            use_action_center_overlay = os.getenv(
+                "ACTION_CENTER_HEADCOUNT_OVERLAY",
+                "false",
+            ).strip().casefold() in {"1", "true", "yes", "on"}
+        self.use_action_center_overlay = bool(use_action_center_overlay)
+        self.action_center_overlay_path = (
+            self.data_directory / "Employee_HR_Operational_State.csv"
+        )
+        self._overlay_last_error: str | None = None
 
     # ========================================================
     # PUBLIC INFORMATION
@@ -417,10 +433,25 @@ class HeadcountRepository:
 
         with self._lock:
             if table_name not in self._cache:
-                self._cache[table_name] = self._load_table(
+                dataframe = self._load_table(
                     table_name=table_name,
                     specification=specification,
                 )
+                # The Action Center overlay is opt-in and read-time only.
+                # It never writes the original Headcount CSVs.  If the overlay
+                # is unavailable/invalid, the legacy table is returned exactly
+                # as before so the existing application cannot be taken down
+                # by the new operational module.
+                if self.use_action_center_overlay:
+                    try:
+                        dataframe = self._apply_action_center_overlay(
+                            table_name,
+                            dataframe,
+                        )
+                        self._overlay_last_error = None
+                    except Exception as error:  # fail open to legacy analytics
+                        self._overlay_last_error = str(error)
+                self._cache[table_name] = dataframe
 
             dataframe = self._cache[table_name]
 
@@ -534,6 +565,401 @@ class HeadcountRepository:
     # ========================================================
     # INTERNAL HELPERS
     # ========================================================
+
+    # ========================================================
+    # OPTIONAL ACTION CENTER OPERATIONAL OVERLAY
+    # ========================================================
+
+    @property
+    def action_center_overlay_status(self) -> dict[str, object]:
+        """Describe the optional operational overlay without changing data."""
+
+        return {
+            "enabled": self.use_action_center_overlay,
+            "file_exists": self.action_center_overlay_path.is_file(),
+            "last_error": self._overlay_last_error,
+        }
+
+    def _apply_action_center_overlay(
+        self,
+        table_name: str,
+        dataframe: pd.DataFrame,
+    ) -> pd.DataFrame:
+        """Apply current Action Center state to selected Headcount tables.
+
+        This is intentionally an in-memory compatibility overlay.  It makes a
+        confirmed resignation/transfer/promotion visible to the deterministic
+        Headcount service immediately while preserving every legacy CSV byte on
+        disk.  Before any Action Center action is applied, the overlay mirrors
+        the original source values and therefore produces the same results.
+        """
+
+        if table_name not in {
+            "employees",
+            "assignments",
+            "positions",
+            "departments",
+        }:
+            return dataframe
+        if not self.action_center_overlay_path.is_file():
+            return dataframe
+
+        state = pd.read_csv(
+            self.action_center_overlay_path,
+            encoding="utf-8-sig",
+            keep_default_na=False,
+            low_memory=False,
+        )
+        required = {
+            "Employee_ID",
+            "Employee_Status_Operational",
+            "Operational_Department_ID",
+            "Operational_Position_ID",
+        }
+        if not required.issubset(state.columns):
+            return dataframe
+
+        state.columns = [str(column).strip() for column in state.columns]
+        if state["Employee_ID"].astype(str).str.upper().duplicated().any():
+            raise HeadcountDataError(
+                "Employee_HR_Operational_State.csv contains duplicate Employee_ID values."
+            )
+
+        if table_name == "employees":
+            return self._overlay_employees(dataframe, state)
+        if table_name == "assignments":
+            return self._overlay_assignments(dataframe, state)
+        if table_name == "positions":
+            return self._overlay_positions(dataframe, state)
+        if table_name == "departments":
+            return self._overlay_departments(dataframe, state)
+        return dataframe
+
+    @staticmethod
+    def _active_operational_state(state: pd.DataFrame) -> pd.DataFrame:
+        status = (
+            state["Employee_Status_Operational"]
+            .astype("string")
+            .str.strip()
+            .str.casefold()
+        )
+        return state[
+            status.isin({"active", "probation", "acting", "seconded"})
+        ].copy()
+
+    @staticmethod
+    def _coalesce_overlay(
+        frame: pd.DataFrame,
+        state: pd.DataFrame,
+        *,
+        source_column: str,
+        overlay_column: str,
+    ) -> pd.DataFrame:
+        if source_column not in frame.columns or overlay_column not in state.columns:
+            return frame
+        mapping = (
+            state[["Employee_ID", overlay_column]]
+            .drop_duplicates("Employee_ID")
+            .set_index("Employee_ID")[overlay_column]
+        )
+        employee_key = frame["Employee_ID"].astype(str)
+        overlay = employee_key.map(mapping)
+        usable = overlay.notna() & overlay.astype(str).str.strip().ne("")
+        frame.loc[usable, source_column] = overlay.loc[usable].values
+        return frame
+
+    def _overlay_employees(
+        self,
+        dataframe: pd.DataFrame,
+        state: pd.DataFrame,
+    ) -> pd.DataFrame:
+        frame = dataframe.copy()
+        active = self._active_operational_state(state)
+        active_ids = set(active["Employee_ID"].astype(str).str.upper())
+        frame = frame[
+            frame["Employee_ID"].astype(str).str.upper().isin(active_ids)
+        ].copy()
+
+        column_map = {
+            "Employee_Status": "Employee_Status_Operational",
+            "Department_ID": "Operational_Department_ID",
+            "Department": "Operational_Department_Name",
+            "Business_Unit": "Operational_Business_Unit",
+            "Organizational_Unit_ID": "Operational_Organizational_Unit_ID",
+            "Work_Location_ID": "Operational_Work_Location_ID",
+            "Position_ID": "Operational_Position_ID",
+            "Position_Title": "Operational_Position_Title",
+            "Job_Level": "Operational_Job_Level",
+            "Employment_Type": "Operational_Employment_Type",
+            "Manager_Employee_ID": "Operational_Manager_Employee_ID",
+        }
+        for source, overlay in column_map.items():
+            frame = self._coalesce_overlay(
+                frame,
+                active,
+                source_column=source,
+                overlay_column=overlay,
+            )
+        frame.attrs.update(dataframe.attrs)
+        frame.attrs["action_center_overlay"] = True
+        return frame
+
+    def _overlay_assignments(
+        self,
+        dataframe: pd.DataFrame,
+        state: pd.DataFrame,
+    ) -> pd.DataFrame:
+        frame = dataframe.copy()
+        active = self._active_operational_state(state)
+        active_ids = set(active["Employee_ID"].astype(str).str.upper())
+        current_mask = (
+            frame["Assignment_Status"]
+            .astype("string")
+            .str.casefold()
+            .eq("current")
+        )
+        employee_ids = frame["Employee_ID"].astype(str).str.upper()
+        ended = current_mask & ~employee_ids.isin(active_ids)
+        frame.loc[ended, "Assignment_Status"] = "Ended"
+        if "Assignment_End_Date" in frame.columns:
+            updated_at = (
+                state[["Employee_ID", "Operational_State_Updated_At"]]
+                .drop_duplicates("Employee_ID")
+                .set_index("Employee_ID")["Operational_State_Updated_At"]
+                if "Operational_State_Updated_At" in state.columns
+                else pd.Series(dtype="object")
+            )
+            end_values = frame.loc[ended, "Employee_ID"].astype(str).map(updated_at)
+            parsed = pd.to_datetime(end_values, errors="coerce")
+            frame.loc[ended, "Assignment_End_Date"] = parsed.values
+
+        active_rows = current_mask & employee_ids.isin(active_ids)
+        subset = frame.loc[active_rows].copy()
+        column_map = {
+            "Position_ID": "Operational_Position_ID",
+            "Position_Title": "Operational_Position_Title",
+            "Department_ID": "Operational_Department_ID",
+            "Department_Name": "Operational_Department_Name",
+            "Business_Unit": "Operational_Business_Unit",
+            "Organizational_Unit_ID": "Operational_Organizational_Unit_ID",
+            "Work_Location_ID": "Operational_Work_Location_ID",
+            "Manager_Employee_ID": "Operational_Manager_Employee_ID",
+            "Employment_Type": "Operational_Employment_Type",
+        }
+        for source, overlay in column_map.items():
+            subset = self._coalesce_overlay(
+                subset,
+                active,
+                source_column=source,
+                overlay_column=overlay,
+            )
+
+        # Keep assignment cost center aligned to the selected operational
+        # position when the employee moves between departments/positions.
+        if not subset.empty and "Cost_Center_ID" in subset.columns:
+            positions = pd.read_csv(
+                self.data_directory / "Position_Master.csv",
+                encoding="utf-8-sig",
+                keep_default_na=False,
+                low_memory=False,
+            )
+            pos_cost = (
+                positions[["Position_ID", "Cost_Center_ID"]]
+                .drop_duplicates("Position_ID")
+                .set_index("Position_ID")["Cost_Center_ID"]
+            )
+            mapped = subset["Position_ID"].astype(str).map(pos_cost)
+            good = mapped.astype(str).str.strip().ne("")
+            subset.loc[good, "Cost_Center_ID"] = mapped.loc[good].values
+
+        frame.loc[active_rows, subset.columns] = subset.values
+        frame.attrs.update(dataframe.attrs)
+        frame.attrs["action_center_overlay"] = True
+        return frame
+
+    def _overlay_positions(
+        self,
+        dataframe: pd.DataFrame,
+        state: pd.DataFrame,
+    ) -> pd.DataFrame:
+        frame = dataframe.copy()
+        active = self._active_operational_state(state)
+        active = active[
+            active["Operational_Position_ID"].astype(str).str.strip().ne("")
+        ].copy()
+        dupes = (
+            active["Operational_Position_ID"]
+            .astype(str)
+            .str.upper()
+            .duplicated(keep=False)
+        )
+        if dupes.any():
+            ids = sorted(
+                active.loc[dupes, "Operational_Position_ID"]
+                .astype(str)
+                .str.upper()
+                .unique()
+                .tolist()
+            )
+            raise HeadcountDataError(
+                "Action Center operational state assigns multiple active employees "
+                "to the same position: " + ", ".join(ids[:10])
+            )
+
+        occupant = {
+            str(row["Operational_Position_ID"]).upper(): (
+                str(row["Employee_ID"]),
+                str(row.get("Employee_Name", "")),
+                str(row.get("Operational_State_Updated_At", "")),
+            )
+            for _, row in active.iterrows()
+        }
+
+        for index, row in frame.iterrows():
+            position_id = str(row.get("Position_ID", "")).upper()
+            freeze_status = str(row.get("Position_Freeze_Status", "")).casefold()
+            source_status = str(row.get("Position_Status", "")).casefold()
+            person = occupant.get(position_id)
+            if person:
+                frame.at[index, "Position_Status"] = "Filled"
+                frame.at[index, "Current_Employee_ID"] = person[0]
+                frame.at[index, "Current_Employee_Name"] = person[1]
+                if "Vacancy_Start_Date" in frame.columns:
+                    frame.at[index, "Vacancy_Start_Date"] = pd.NaT
+            elif freeze_status == "frozen" or source_status == "frozen":
+                frame.at[index, "Position_Status"] = "Frozen"
+                frame.at[index, "Current_Employee_ID"] = pd.NA
+                frame.at[index, "Current_Employee_Name"] = pd.NA
+            else:
+                became_vacant = source_status == "filled"
+                frame.at[index, "Position_Status"] = "Vacant"
+                frame.at[index, "Current_Employee_ID"] = pd.NA
+                frame.at[index, "Current_Employee_Name"] = pd.NA
+                if became_vacant and "Vacancy_Start_Date" in frame.columns:
+                    # Use the former source occupant's operational update time
+                    # when available; otherwise current UTC date is a safe
+                    # reporting fallback for the read-time overlay.
+                    former = str(row.get("Current_Employee_ID", ""))
+                    change_map = (
+                        state[["Employee_ID", "Operational_State_Updated_At"]]
+                        .drop_duplicates("Employee_ID")
+                        .set_index("Employee_ID")["Operational_State_Updated_At"]
+                        if "Operational_State_Updated_At" in state.columns
+                        else pd.Series(dtype="object")
+                    )
+                    changed = change_map.get(former, "") if former else ""
+                    parsed = pd.to_datetime(changed, errors="coerce", utc=True)
+                    if not pd.isna(parsed):
+                        parsed = parsed.tz_localize(None)
+                    frame.at[index, "Vacancy_Start_Date"] = (
+                        parsed if not pd.isna(parsed) else pd.Timestamp.utcnow().tz_localize(None).normalize()
+                    )
+
+        frame.attrs.update(dataframe.attrs)
+        frame.attrs["action_center_overlay"] = True
+        return frame
+
+    def _overlay_departments(
+        self,
+        dataframe: pd.DataFrame,
+        state: pd.DataFrame,
+    ) -> pd.DataFrame:
+        frame = dataframe.copy()
+        active = self._active_operational_state(state)
+        counts = (
+            active.groupby("Operational_Department_ID")["Employee_ID"]
+            .nunique()
+            .to_dict()
+        )
+        if "Current_Employee_Count" in frame.columns:
+            frame["Current_Employee_Count"] = (
+                frame["Department_ID"].astype(str).map(counts).fillna(0).astype(int)
+            )
+        frame.attrs.update(dataframe.attrs)
+        frame.attrs["action_center_overlay"] = True
+        return frame
+
+    def _overlay_current_summary(
+        self,
+        dataframe: pd.DataFrame,
+        state: pd.DataFrame,
+    ) -> pd.DataFrame:
+        frame = dataframe.copy()
+        active = self._active_operational_state(state)
+        actual = (
+            active.groupby("Operational_Department_ID")["Employee_ID"]
+            .nunique()
+            .to_dict()
+        )
+        positions = self._overlay_positions(
+            self._load_table(
+                table_name="positions",
+                specification=TABLE_SPECIFICATIONS["positions"],
+            ),
+            state,
+        )
+        approved = positions["Approved_Position"].astype(str).str.casefold().eq("yes")
+        budgeted = positions["Budgeted_Position"].astype(str).str.casefold().eq("yes")
+        open_status = positions["Position_Status"].astype(str).str.casefold().isin({"vacant", "frozen"})
+        tmp = positions.assign(
+            _approved=approved.astype(int),
+            _budgeted=budgeted.astype(int),
+            _vacant_approved=(approved & open_status).astype(int),
+            _funded_vacant=(budgeted & open_status).astype(int),
+        )
+        sums = tmp.groupby("Department_ID").agg(
+            Approved_Position_Count=("_approved", "sum"),
+            Budgeted_Position_Count=("_budgeted", "sum"),
+            Vacant_Approved_Position_Count=("_vacant_approved", "sum"),
+            Funded_Vacant_Position_Count=("_funded_vacant", "sum"),
+        )
+        total_row_indexes: list[int] = []
+        department_overstaffed = 0
+        for index, row in frame.iterrows():
+            dept = str(row.get("Department_ID", ""))
+            if dept.strip().upper() in {"ORGANIZATION-TOTAL", "ORGANISATION-TOTAL", "TOTAL"}:
+                total_row_indexes.append(index)
+                continue
+            current = int(actual.get(dept, 0))
+            frame.at[index, "Actual_Employee_Count"] = current
+            if dept in sums.index:
+                for column in sums.columns:
+                    if column in frame.columns:
+                        frame.at[index, column] = int(sums.at[dept, column])
+            approved_count = float(frame.at[index, "Approved_Position_Count"] or 0)
+            vacancy = float(frame.at[index, "Vacant_Approved_Position_Count"] or 0)
+            overstaffed = max(0, current - int(approved_count))
+            department_overstaffed += overstaffed
+            if "Overstaffed_Employee_Count" in frame.columns:
+                frame.at[index, "Overstaffed_Employee_Count"] = overstaffed
+            if "Vacancy_Rate_Percentage" in frame.columns:
+                frame.at[index, "Vacancy_Rate_Percentage"] = (
+                    round((vacancy / approved_count) * 100.0, 2)
+                    if approved_count
+                    else 0.0
+                )
+
+        # Preserve the reference file's organization-total row semantics while
+        # making the few headcount-derived values operationally current.
+        for index in total_row_indexes:
+            current = int(len(active))
+            frame.at[index, "Actual_Employee_Count"] = current
+            for column in sums.columns:
+                if column in frame.columns:
+                    frame.at[index, column] = int(sums[column].sum())
+            if "Overstaffed_Employee_Count" in frame.columns:
+                frame.at[index, "Overstaffed_Employee_Count"] = department_overstaffed
+            approved_count = float(frame.at[index, "Approved_Position_Count"] or 0)
+            vacancy = float(frame.at[index, "Vacant_Approved_Position_Count"] or 0)
+            if "Vacancy_Rate_Percentage" in frame.columns:
+                frame.at[index, "Vacancy_Rate_Percentage"] = (
+                    round((vacancy / approved_count) * 100.0, 2)
+                    if approved_count
+                    else 0.0
+                )
+        frame.attrs.update(dataframe.attrs)
+        frame.attrs["action_center_overlay"] = True
+        return frame
 
     def _get_specification(
         self,

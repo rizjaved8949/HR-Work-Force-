@@ -64,6 +64,19 @@ except ImportError:  # Lightweight local fallback; install langchain in the app.
         return decorate
 
 
+# Action Center operational/audit CSVs intentionally stay out of the generic
+# employee-profile index. This preserves the exact pre-Action-Center lookup
+# behavior even when the new files live inside the shared Data folder. The
+# dedicated Action Center repository reads these files directly.
+ACTION_CENTER_INDEX_EXCLUDES = {
+    "employee_hr_operational_state.csv",
+    "hr_action_process_catalog.csv",
+    "hr_action_process_fields.csv",
+    "hr_action_records.csv",
+    "hr_action_record_events.csv",
+}
+
+
 # ---------------------------------------------------------------------------
 # Input schema exposed to the reasoning LLM
 # ---------------------------------------------------------------------------
@@ -265,7 +278,11 @@ class EmployeeRecordRepository:
             candidate_files = sorted(
                 path
                 for path in self.data_path.rglob("*")
-                if path.is_file() and path.suffix.casefold() in {".csv", ".zip"}
+                if (
+                    path.is_file()
+                    and path.suffix.casefold() in {".csv", ".zip"}
+                    and path.name.casefold() not in ACTION_CENTER_INDEX_EXCLUDES
+                )
             )
             root = self.data_path
 

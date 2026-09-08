@@ -53,7 +53,7 @@ load_dotenv(REPO_ROOT / ".env")
 # BACKEND IMPORTS — MUST COME AFTER sys.path AND .env SETUP
 # ============================================================
 
-from fastapi import FastAPI, HTTPException  # noqa: E402
+from fastapi import FastAPI, HTTPException, Request  # noqa: E402
 from fastapi.middleware.cors import CORSMiddleware  # noqa: E402
 from fastapi.responses import StreamingResponse  # noqa: E402
 from pydantic import BaseModel, Field, SecretStr  # noqa: E402
@@ -90,6 +90,9 @@ from simulations.repository import SimulationRepository  # noqa: E402
 from simulations.router import create_simulation_router  # noqa: E402
 from simulations.service import SimulationDataService, SimulationService  # noqa: E402
 from simulations.tool import run_scenario_simulation_tool  # noqa: E402
+from action_center.repository import ActionCenterRepository  # noqa: E402
+from action_center.router import create_action_center_router  # noqa: E402
+from action_center.service import ActionCenterService  # noqa: E402
 
 
 DATA_PATH = paths.data_dir()
@@ -137,11 +140,16 @@ attrition_prediction_tool = create_attrition_prediction_tool(MODEL_PATH)
 replacement_recommendation_tool = create_replacement_recommendation_tool(
     data_dir=DATA_PATH,
 )
-headcount_service = HeadcountService(
-    HeadcountRepository(
-        DATA_PATH
-    )
+# The optional Action Center overlay is in-memory only.  It keeps the legacy
+# Headcount CSVs byte-for-byte untouched while letting confirmed HR lifecycle
+# actions (exit/transfer/promotion/rehire) appear in current Headcount results.
+# If the Action Center CSV is missing or invalid, Headcount automatically falls
+# back to the original source tables.
+headcount_repository = HeadcountRepository(
+    DATA_PATH,
+    use_action_center_overlay=True,
 )
+headcount_service = HeadcountService(headcount_repository)
 performance_service = PerformanceService(
     PerformanceRepository(
         DATA_PATH
@@ -156,6 +164,25 @@ simulation_data_service = SimulationDataService(simulation_repository)
 simulation_service = SimulationService(simulation_repository)
 simulation_lookup_service = SimulationLookupService(simulation_repository)
 
+# ============================================================
+# HR ACTION CENTER — ISOLATED OPERATIONAL WRITE LAYER
+# ============================================================
+# Reads existing employee/position reference data but writes only the five
+# Action Center CSVs. Existing Headcount/Attrition/Performance/Simulation CSVs
+# remain untouched.
+action_center_service: ActionCenterService | None = None
+action_center_startup_error: str | None = None
+try:
+    action_center_repository = ActionCenterRepository(DATA_PATH)
+    action_center_service = ActionCenterService(
+        action_center_repository,
+        post_commit_callbacks=[headcount_repository.clear_cache],
+    )
+except Exception as action_center_error:
+    # The new module must never take down the previously working analytics app.
+    # If Action Center data is absent/invalid, old APIs and chat tools still load.
+    action_center_startup_error = str(action_center_error)
+
 
 hr_agent = create_hr_reasoning_agent(
     employee_search_tool=employee_search_tool,
@@ -164,6 +191,7 @@ hr_agent = create_hr_reasoning_agent(
     headcount_service=headcount_service,
     performance_service=performance_service,
     simulation_service=simulation_service,
+    action_center_service=action_center_service,
 )
 
 # A plain chat model is used only to turn an already-computed deterministic
@@ -229,7 +257,7 @@ app.add_middleware(
     # Supabase authentication uses the Authorization: Bearer header,
     # not browser cookies, so credentials remain disabled.
     allow_credentials=False,
-    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_methods=["GET", "POST", "PATCH", "OPTIONS"],
     allow_headers=["*"],
 )
 
@@ -285,6 +313,13 @@ app.include_router(
 
 
 # ============================================================
+# HR ACTION CENTER API
+# ============================================================
+if action_center_service is not None:
+    app.include_router(create_action_center_router(action_center_service))
+
+
+# ============================================================
 # REQUEST SCHEMAS
 # ============================================================
 
@@ -314,6 +349,25 @@ class ChatRequest(BaseModel):
     # Conversation memory is kept per thread_id for as long as the server
     # runs. Send the same value to continue an existing conversation.
     thread_id: Optional[str] = None
+
+
+def _chat_actor_state(http_request: Request) -> dict[str, Any]:
+    """Expose authenticated HR actor metadata to stateful agent write tools."""
+
+    user = getattr(http_request.state, "user", None)
+    if user is None:
+        return {
+            "actor_user_id": "local-hr-demo",
+            "actor_name": "Local HR Demo User",
+            "actor_email": None,
+            "actor_role": "hr",
+        }
+    return {
+        "actor_user_id": str(getattr(user, "id", "") or ""),
+        "actor_name": getattr(user, "full_name", None),
+        "actor_email": getattr(user, "email", None),
+        "actor_role": getattr(user, "role", None),
+    }
 
 
 # ============================================================
@@ -423,6 +477,25 @@ _SIMULATION_HINTS = (
     "effect can occur",
     "future impact",
 )
+
+# Direct imperative HR commands must reach the Action Center write tool rather
+# than the older simulation fast path. Explicit what-if wording still wins.
+_ACTION_CENTER_WRITE_RE = re.compile(
+    r"^\s*(?:please\s+)?(?:record\s+|execute\s+|perform\s+|process\s+|apply\s+)?"
+    r"(?:confirm(?:\s+the)?\s+probation|extend(?:\s+the)?\s+probation|"
+    r"renew(?:\s+the)?\s+contract|end(?:\s+the)?\s+contract|rehire|rejoin|"
+    r"resign|record\s+resignation|withdraw\s+resignation|retire|terminate|"
+    r"final\s+settlement|promote|transfer|demote|deputation|secondment|"
+    r"acting\s+charge|additional\s+charge)\b",
+    re.IGNORECASE,
+)
+
+
+def _looks_like_action_center_write_request(message: str) -> bool:
+    lower = message.casefold()
+    if any(hint in lower for hint in _SIMULATION_HINTS):
+        return False
+    return bool(_ACTION_CENTER_WRITE_RE.search(message))
 
 
 def _canonical_id(match: re.Match[str] | None, prefix: str) -> str | None:
@@ -1391,7 +1464,7 @@ def complete_replacement_pipeline(request: ReplacementRequest):
 # ============================================================
 
 @app.post("/chat")
-def chat_with_hr_agent(request: ChatRequest):
+def chat_with_hr_agent(request: ChatRequest, http_request: Request):
     """Send one message to the HR agent and return its reply.
 
     The agent decides on its own whether to check attrition risk or to
@@ -1407,7 +1480,11 @@ def chat_with_hr_agent(request: ChatRequest):
     # Clear Scenario Simulation questions bypass the LLM routing round trip and
     # call the same deterministic simulation core used by the REST API.
     # Every non-simulation message continues through the existing hr_agent.
-    simulation_result = _run_simulation_fast_path(request.message)
+    simulation_result = (
+        None
+        if _looks_like_action_center_write_request(request.message)
+        else _run_simulation_fast_path(request.message)
+    )
     if simulation_result is not None:
         resolved = simulation_result.get("resolved_inputs") or {}
         return {
@@ -1431,9 +1508,12 @@ def chat_with_hr_agent(request: ChatRequest):
     # the tool results are already in its state.
     for attempt in range(CHAT_ATTEMPTS):
         payload = (
-            {"messages": [{"role": "user", "content": request.message}]}
+            {
+                "messages": [{"role": "user", "content": request.message}],
+                **_chat_actor_state(http_request),
+            }
             if attempt == 0
-            else {"messages": []}
+            else {"messages": [], **_chat_actor_state(http_request)}
         )
 
         try:
@@ -1477,7 +1557,7 @@ def chat_with_hr_agent(request: ChatRequest):
 # ============================================================
 
 @app.post("/chat/stream")
-def stream_chat_with_hr_agent(request: ChatRequest):
+def stream_chat_with_hr_agent(request: ChatRequest, http_request: Request):
     """Same conversation as /chat, streamed token by token.
 
     A tool-using turn costs two sequential model round trips, so the
@@ -1509,6 +1589,9 @@ def stream_chat_with_hr_agent(request: ChatRequest):
         "analyze_headcount": "Analyzing headcount data...",
         "analyze_employee_performance": "Analyzing employee performance...",
         "scenario_simulation": "Running scenario simulation...",
+        "query_action_center": "Checking HR Action Center data...",
+        "perform_hr_action": "Validating HR action...",
+        "update_hr_action_record": "Validating record update...",
     }
 
     def generate():
@@ -1518,7 +1601,11 @@ def stream_chat_with_hr_agent(request: ChatRequest):
         # service immediately, then give that authoritative result to a plain
         # tool-free LLM for the final human-friendly wording. All non-simulation
         # messages continue through the existing hr_agent unchanged.
-        simulation_result = _run_simulation_fast_path(request.message)
+        simulation_result = (
+            None
+            if _looks_like_action_center_write_request(request.message)
+            else _run_simulation_fast_path(request.message)
+        )
         if simulation_result is not None:
             yield event({
                 "type": "status",
@@ -1550,7 +1637,10 @@ def stream_chat_with_hr_agent(request: ChatRequest):
             # tokens. The first round trip only produces tool calls with no
             # text, so nothing is shown until the answer itself starts.
             for chunk, _metadata in hr_agent.stream(
-                {"messages": [{"role": "user", "content": request.message}]},
+                {
+                    "messages": [{"role": "user", "content": request.message}],
+                    **_chat_actor_state(http_request),
+                },
                 config=config,
                 stream_mode="messages",
             ):
