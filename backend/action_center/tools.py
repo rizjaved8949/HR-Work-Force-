@@ -39,9 +39,21 @@ def _actor_from_runtime(runtime: ToolRuntime | None) -> ActionActor | None:
 
 
 def _message(result: dict[str, Any], runtime: ToolRuntime | None, fallback: str) -> ToolMessage:
+    tool_call_id = None
+
+    if runtime is not None:
+        tool_call_id = getattr(runtime, "tool_call_id", None)
+
+    if not tool_call_id:
+        tool_call_id = fallback
+
     return ToolMessage(
-        content=json.dumps(result, ensure_ascii=False, default=str),
-        tool_call_id=(runtime.tool_call_id if runtime is not None else fallback),
+        content=json.dumps(
+            result,
+            ensure_ascii=False,
+            default=str,
+        ),
+        tool_call_id=tool_call_id,
     )
 
 
