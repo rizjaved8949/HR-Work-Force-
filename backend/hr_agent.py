@@ -34,12 +34,6 @@ from replacement_tool import (
 from simulations.repository import SimulationRepository
 from simulations.service import SimulationService
 from simulations.tool import create_stateful_scenario_simulation_tool
-from action_center.service import ActionCenterService
-from action_center.tools import (
-    create_stateful_action_center_query_tool,
-    create_stateful_perform_hr_action_tool,
-    create_stateful_update_hr_action_record_tool,
-)
 from settings import get_llm_settings
 
 
@@ -63,20 +57,6 @@ class HRSimulationAgentState(HRPerformanceAgentState):
     last_simulation_result: NotRequired[dict[str, Any] | None]
 
 
-class HRActionCenterAgentState(HRSimulationAgentState):
-    """Add Action Center + authenticated actor context without altering old state."""
-
-    actor_user_id: NotRequired[str | None]
-    actor_name: NotRequired[str | None]
-    actor_email: NotRequired[str | None]
-    actor_role: NotRequired[str | None]
-    last_action_center_query: NotRequired[dict[str, Any] | None]
-    last_action_center_result: NotRequired[dict[str, Any] | None]
-    pending_hr_action: NotRequired[dict[str, Any] | None]
-    pending_hr_record_update: NotRequired[dict[str, Any] | None]
-    last_hr_action_result: NotRequired[dict[str, Any] | None]
-
-
 # ============================================================
 # AGENT FACTORY
 # ============================================================
@@ -88,7 +68,6 @@ def create_hr_reasoning_agent(
     headcount_service: HeadcountService | None = None,
     performance_service: PerformanceService | None = None,
     simulation_service: SimulationService | None = None,
-    action_center_service: ActionCenterService | None = None,
 ) -> Any:
     """
     Create the main multilingual HR reasoning agent.
@@ -97,7 +76,7 @@ def create_hr_reasoning_agent(
     into this function from the FastAPI application. This keeps
     the model and CSV data loaded only once.
 
-    The agent exposes the existing analytical tools plus optional Action Center tools:
+    The agent exposes five high-level tools:
     get_employee_record, check_employee_attrition, recommend_replacement,
     analyze_headcount, and analyze_employee_performance. Headcount and Performance calculations
     remain deterministic, while the reasoning model only selects tools and
@@ -250,18 +229,6 @@ def create_hr_reasoning_agent(
     )
 
     # --------------------------------------------------------
-    # CREATE HR ACTION CENTER TOOLS
-    # --------------------------------------------------------
-
-    action_center_tools: list[BaseTool] = []
-    if action_center_service is not None:
-        action_center_tools = [
-            create_stateful_action_center_query_tool(action_center_service),
-            create_stateful_perform_hr_action_tool(action_center_service),
-            create_stateful_update_hr_action_record_tool(action_center_service),
-        ]
-
-    # --------------------------------------------------------
     # CREATE DEVELOPMENT CONVERSATION MEMORY
     # --------------------------------------------------------
 
@@ -288,7 +255,6 @@ def create_hr_reasoning_agent(
             analyze_headcount_tool,
             analyze_employee_performance_tool,
             scenario_simulation_tool,
-            *action_center_tools,
         ],
 
         # Detailed permanent instructions, including Employee Performance
@@ -297,7 +263,7 @@ def create_hr_reasoning_agent(
 
         # Structured employee and workflow memory created
         # in Task 8.
-        state_schema=HRActionCenterAgentState,
+        state_schema=HRSimulationAgentState,
 
         # Thread-based in-server conversation memory.
         checkpointer=checkpointer,
