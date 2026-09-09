@@ -93,8 +93,6 @@ from simulations.tool import run_scenario_simulation_tool  # noqa: E402
 from action_center.repository import ActionCenterRepository  # noqa: E402
 from action_center.router import create_action_center_router  # noqa: E402
 from action_center.service import ActionCenterService  # noqa: E402
-from attendance.router import router as attendance_router
-
 
 DATA_PATH = paths.data_dir()
 MODEL_PATH = paths.model_path()
@@ -320,16 +318,6 @@ app.include_router(
 if action_center_service is not None:
     app.include_router(create_action_center_router(action_center_service))
 
-
-# ============================================================
-# ATTENDANCE API
-# ============================================================
-
-app.include_router(
-    attendance_router,
-    prefix="/attendance",
-    tags=["Attendance"]
-)
 
 # ============================================================
 # REQUEST SCHEMAS
