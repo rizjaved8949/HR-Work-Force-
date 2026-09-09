@@ -90,7 +90,6 @@ from simulations.repository import SimulationRepository  # noqa: E402
 from simulations.router import create_simulation_router  # noqa: E402
 from simulations.service import SimulationDataService, SimulationService  # noqa: E402
 from simulations.tool import run_scenario_simulation_tool  # noqa: E402
-from attendance.router import router as attendance_router
 
 
 DATA_PATH = paths.data_dir()
@@ -286,16 +285,6 @@ app.include_router(
 
 
 # ============================================================
-# ATTENDANCE API
-# ============================================================
-
-app.include_router(
-    attendance_router,
-    prefix="/attendance",
-    tags=["Attendance"]
-)
-
-
 # ============================================================
 # REQUEST SCHEMAS
 # ============================================================
