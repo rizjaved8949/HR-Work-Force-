@@ -88,24 +88,83 @@ class PerformanceDashboardService:
         *,
         month: str | pd.Timestamp | None = None,
         limit: int = 16,
+        ascending: bool = False,
+        departments: list[str] | None = None,
     ) -> list[dict[str, Any]]:
+        """Rank departments by the official monthly average Performance score.
+
+        ``Performance_Rank`` is always the organization-wide rank from best to
+        lowest for the selected month. ``ascending=True`` only changes the
+        returned order so bottom/worst requests can be answered directly.
+        """
+
         frame = self.repository.get("department_monthly")
         target_month = self._resolve_month(frame, month)
         rows = frame[frame["Performance_Month"] == target_month].copy()
-        rows = rows.sort_values("Average_Performance_Score", ascending=False).head(limit)
+        rows = rows.sort_values("Average_Performance_Score", ascending=False)
+        rows["Performance_Rank"] = range(1, len(rows) + 1)
+
+        if departments:
+            wanted = {name.casefold() for name in departments}
+            rows = rows[rows["Department"].astype(str).str.casefold().isin(wanted)]
+
+        rows = rows.sort_values("Average_Performance_Score", ascending=ascending).head(limit)
         columns = [
+            "Performance_Rank",
             "Department_ID",
             "Department",
             "Business_Unit",
             "Employee_Count",
             "Average_Performance_Score",
             "Median_Performance_Score",
+            "Minimum_Performance_Score",
+            "Maximum_Performance_Score",
             "Exceptional_Count",
             "Strong_Count",
             "Meets_Expectations_Count",
             "Partially_Meets_Count",
             "Improvement_Required_Count",
             "Critical_KPI_Breach_Count",
+            "Average_Evidence_Quality",
+            "Performance_Month",
+        ]
+        return self._records(rows[columns])
+
+    def employee_ranking(
+        self,
+        *,
+        month: str | pd.Timestamp | None = None,
+        department: str | None = None,
+        role_band: str | None = None,
+        limit: int = 20,
+        ascending: bool = False,
+    ) -> list[dict[str, Any]]:
+        """Rank employees by their official normalized monthly Performance score."""
+
+        rows = self._monthly_scope(
+            month=month,
+            department=department,
+            role_band=role_band,
+        ).copy()
+        if rows.empty:
+            return []
+
+        rows = rows.sort_values("Final_Performance_Score", ascending=False)
+        rows["Performance_Rank"] = range(1, len(rows) + 1)
+        rows = rows.sort_values("Final_Performance_Score", ascending=ascending).head(limit)
+
+        columns = [
+            "Performance_Rank",
+            "Employee_ID",
+            "Employee_Name",
+            "Department",
+            "Business_Unit",
+            "Position_Title",
+            "Job_Level",
+            "Role_Band",
+            "Final_Performance_Score",
+            "Performance_Band",
+            "Critical_KPI_Breach_Flag",
             "Average_Evidence_Quality",
             "Performance_Month",
         ]

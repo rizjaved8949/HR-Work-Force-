@@ -4,10 +4,9 @@ The adapter remains deterministic: PerformanceService supplies the facts and the
 LLM only selects this tool and explains its structured result.
 """
 
-from __future__ import annotations
-
 import json
 import logging
+from time import perf_counter
 from collections.abc import Mapping
 from functools import lru_cache
 from typing import Any, Final
@@ -32,7 +31,8 @@ ANALYZE_EMPLOYEE_PERFORMANCE_TOOL_DESCRIPTION: Final[str] = (
     "departments, or the organization. Use it for performance scores and bands, "
     "role-specific KPI actual-versus-target results, KPI strengths and gaps, "
     "monthly trends, improving or declining performance, department comparisons "
-    "and rankings, best or lowest-performing departments, performance distribution, "
+    "and rankings, best or lowest-performing departments, top/bottom employee "
+    "rankings within an organization or department, performance distribution, "
     "employees requiring attention, learning history, skill-development areas, "
     "and evidence-based course or training recommendations. The tool calculates "
     "or retrieves exact values; the LLM must only explain them."
@@ -153,13 +153,20 @@ def create_stateful_analyze_employee_performance_tool(
         employee_id: str | None = None,
         employee_name: str | None = None,
         department: str | None = None,
+        # IMPORTANT: keep this as a bare ToolRuntime annotation. LangChain
+        # recognizes this exact type and injects the active tool-call runtime.
+        # Postponed/string annotations can prevent injection and leave a fake
+        # ToolMessage id, which breaks the agent loop.
         runtime: ToolRuntime = None,  # pyright: ignore[reportArgumentType]
-    ) -> Command:
+    ) -> Command | dict[str, Any]:
         """
         Analyze deterministic Employee Performance evidence for individual,
-        department, organization, KPI, trend, ranking, learning-history, skill-gap,
-        and course-recommendation questions, while preserving other HR-tool context.
+        department, and organization questions. Handles natural paraphrases for
+        scores/bands, KPI target-vs-actual, trends, top/bottom employees,
+        department rankings/comparisons, distributions, attention lists, learning
+        history, skill gaps, and course recommendations.
         """
+        started = perf_counter()
         try:
             result = base_tool.invoke({
                 "question": question,
@@ -167,15 +174,36 @@ def create_stateful_analyze_employee_performance_tool(
                 "employee_name": employee_name,
                 "department": department,
             })
-        except Exception:
+        except Exception as exc:
             logger.exception("Performance tool failed for question: %r", question)
-            raise
+            result = {
+                "status": "error",
+                "question": question,
+                "message": "The Performance analysis service could not complete this request.",
+            }
+        finally:
+            logger.info(
+                "Performance tool completed in %.3fs for question=%r",
+                perf_counter() - started,
+                question,
+            )
+
+        # Direct tool invocation (for tests or local debugging) has no LangGraph
+        # runtime. Returning the plain result is safer than fabricating a tool-call
+        # id that cannot match the agent's AIMessage.
+        if runtime is None:
+            return result
 
         state_update: dict[str, Any] = {
             "last_user_intent": "performance",
             "last_performance_question": question,
             "last_performance_result": result,
             "last_tool_status": result.get("status"),
+            "last_error_message": (
+                result.get("message")
+                if result.get("status") not in {"success", "partial"}
+                else None
+            ),
         }
 
         employee = result.get("employee")
@@ -183,7 +211,7 @@ def create_stateful_analyze_employee_performance_tool(
             resolved_id = employee.get("Employee_ID")
             resolved_name = employee.get("Employee_Name")
             resolved_department = employee.get("Department")
-            resolved_designation = employee.get("Designation")
+            resolved_designation = employee.get("Designation") or employee.get("Position_Title")
             if resolved_id:
                 state_update["selected_employee_id"] = str(resolved_id)
             if resolved_name:
@@ -193,12 +221,10 @@ def create_stateful_analyze_employee_performance_tool(
             if resolved_designation:
                 state_update["selected_designation"] = str(resolved_designation)
 
-        tool_call_id = getattr(runtime, "tool_call_id", None) or "performance-tool-call"
-        content = json.dumps(result, ensure_ascii=False, default=str)
         state_update["messages"] = [
             ToolMessage(
-                content=content,
-                tool_call_id=tool_call_id,
+                content=json.dumps(result, ensure_ascii=False, default=str),
+                tool_call_id=runtime.tool_call_id,
             )
         ]
         return Command(update=state_update)

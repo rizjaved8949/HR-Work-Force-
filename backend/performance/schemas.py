@@ -31,6 +31,7 @@ class PerformanceAnalysisType(str, Enum):
     EMPLOYEE_TREND = "employee_trend"
     KPI_BREAKDOWN = "kpi_breakdown"
     DEPARTMENT_RANKING = "department_ranking"
+    EMPLOYEE_RANKING = "employee_ranking"
     DISTRIBUTION = "distribution"
     ATTENTION = "attention"
     LEARNING = "learning"
