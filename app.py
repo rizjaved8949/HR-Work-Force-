@@ -23,7 +23,8 @@ from pathlib import Path
 from time import perf_counter
 from typing import Any, Optional
 from uuid import uuid4
-
+from fastapi import FastAPI, HTTPException, Request
+from fastapi import Request
 from dotenv import load_dotenv
 
 # ============================================================
@@ -1385,19 +1386,159 @@ def complete_replacement_pipeline(request: ReplacementRequest):
         raise HTTPException(status_code=400, detail=result)
 
     raise HTTPException(status_code=500, detail=result)
+def _extract_visualization_metadata(messages: list[Any] | None) -> dict[str, Any]:
+    """
+    Inspect the current agent turn and expose visualization metadata only
+    when the LLM actually called visualization_tool.
 
+    This does not decide whether a visualization is needed.
+    The LLM remains responsible for that decision.
+    """
+
+    default = {
+        "visualization": False,
+        "chart_type": None,
+        "chart_data": None,
+        "chart_url": None,
+        "visualization_reason": None,
+    }
+
+    if not messages:
+        return default
+
+    for message in reversed(messages):
+        tool_name = getattr(message, "name", None)
+
+        if tool_name != "visualization_tool":
+            continue
+
+        content = getattr(message, "content", None)
+        payload = None
+
+        if isinstance(content, dict):
+            payload = content
+
+        elif isinstance(content, str):
+            try:
+                payload = json.loads(content)
+            except (json.JSONDecodeError, TypeError):
+                payload = None
+
+        if not isinstance(payload, dict):
+            return {
+                **default,
+                "visualization": True,
+            }
+
+        return {
+            "visualization": bool(payload.get("visualization", True)),
+            "chart_type": payload.get("chart_type"),
+            "chart_data": payload.get("chart_data", payload.get("data")),
+            "chart_url": payload.get("chart_url"),
+            "visualization_reason": payload.get(
+                "reason",
+                payload.get("visualization_reason"),
+            ),
+        }
+
+    return default
 
 # ============================================================
 # ENDPOINT 5 — MULTILINGUAL HR REASONING AGENT
 # ============================================================
 
+
+
+
+def _chat_actor_state(http_request: Request) -> dict[str, Any]:
+    """Expose authenticated HR actor metadata to stateful agent tools."""
+
+    user = getattr(http_request.state, "user", None)
+
+    if user is None:
+        return {
+            "actor_user_id": "local-hr-demo",
+            "actor_name": "Local HR Demo User",
+            "actor_email": None,
+            "actor_role": "hr",
+        }
+
+    return {
+        "actor_user_id": str(getattr(user, "id", "") or ""),
+        "actor_name": getattr(user, "full_name", None),
+        "actor_email": getattr(user, "email", None),
+        "actor_role": getattr(user, "role", None),
+    }
+
+
+def _looks_like_action_center_write_request(message: str) -> bool:
+    """
+    Detect direct HR Action Center write commands so they are not
+    accidentally routed through the Scenario Simulation fast path.
+    Explicit simulation/what-if requests remain simulations.
+    """
+    lower = (message or "").casefold()
+
+    simulation_hints = (
+        "what if",
+        "what would happen",
+        "simulate",
+        "simulation",
+        "impact if",
+        "effects can occur",
+        "effect can occur",
+        "future impact",
+    )
+
+    if any(hint in lower for hint in simulation_hints):
+        return False
+
+    action_center_write_re = re.compile(
+        r"^\s*(?:please\s+)?(?:record\s+|execute\s+|perform\s+|process\s+|apply\s+)?"
+        r"(?:confirm(?:\s+the)?\s+probation|extend(?:\s+the)?\s+probation|"
+        r"renew(?:\s+the)?\s+contract|end(?:\s+the)?\s+contract|rehire|rejoin|"
+        r"resign|record\s+resignation|withdraw\s+resignation|retire|terminate|"
+        r"final\s+settlement|promote|transfer|demote|deputation|secondment|"
+        r"acting\s+charge|additional\s+charge)\b",
+        re.IGNORECASE,
+    )
+
+    return bool(action_center_write_re.search(message or ""))
+
+
+
+
+def _looks_like_tool_plan_reply(reply: str) -> bool:
+    """Detect when the LLM talks about future tool use instead of executing it."""
+
+    value = (reply or "").strip().casefold()
+
+    markers = (
+        "i'll start by",
+        "i will start by",
+        "let me retrieve",
+        "let me first",
+        "i'll retrieve",
+        "i will retrieve",
+        "i'll start with",
+        "i will start with",
+        "then create a visualization",
+        "then create the visualization",
+        "i'll create a visualization",
+        "i will create a visualization",
+        "then visualize",
+    )
+
+    return any(marker in value for marker in markers)
+
+
 @app.post("/chat")
-def chat_with_hr_agent(request: ChatRequest):
+def chat_with_hr_agent(request: ChatRequest, http_request: Request):
     """Send one message to the HR agent and return its reply.
 
-    The agent decides on its own whether to check attrition risk or to
-    recommend successors, and remembers the selected employee for the
-    rest of the thread.
+    The agent independently decides whether an HR data tool is required
+    and whether visualization_tool should be called. Visualization metadata
+    is exposed to the frontend only when that tool was actually called.
     """
 
     started = perf_counter()
@@ -1405,48 +1546,95 @@ def chat_with_hr_agent(request: ChatRequest):
     thread_id = request.thread_id or str(uuid4())
     config = {"configurable": {"thread_id": thread_id}}
 
-    # Clear Scenario Simulation questions bypass the LLM routing round trip and
-    # call the same deterministic simulation core used by the REST API.
-    # Every non-simulation message continues through the existing hr_agent.
-    simulation_result = _run_simulation_fast_path(request.message)
+    # --------------------------------------------------------
+    # EXISTING SCENARIO SIMULATION FAST PATH
+    # --------------------------------------------------------
+    simulation_result = (
+        None
+        if _looks_like_action_center_write_request(request.message)
+        else _run_simulation_fast_path(request.message)
+    )
+
     if simulation_result is not None:
         resolved = simulation_result.get("resolved_inputs") or {}
+
         return {
             "thread_id": thread_id,
             "reply": _generate_simulation_llm_reply(
-                request.message, simulation_result
+                request.message,
+                simulation_result,
             ),
             "selected_employee_id": resolved.get("employee_id"),
             "selected_employee_name": resolved.get("employee_name"),
             "last_tool_status": simulation_result.get("status"),
-            "elapsed_ms": round((perf_counter() - started) * 1000),
+
+            # Visualization was not called in this fast path.
+            "visualization": False,
+            "chart_type": None,
+            "chart_data": None,
+            "chart_url": None,
+            "visualization_reason": None,
+
+            "elapsed_ms": round(
+                (perf_counter() - started) * 1000
+            ),
         }
 
+    # --------------------------------------------------------
+    # EXISTING HR AGENT FLOW
+    # --------------------------------------------------------
     last_error: Optional[Exception] = None
     result: dict[str, Any] = {}
     reply = ""
 
-    # Free models occasionally return a reply with no content at all. One
-    # retry recovers those without the user having to resend the message.
-    # The tools are not re-run: the agent replays from the same thread and
-    # the tool results are already in its state.
     for attempt in range(CHAT_ATTEMPTS):
-        payload = (
-            {"messages": [{"role": "user", "content": request.message}]}
-            if attempt == 0
-            else {"messages": []}
-        )
+        if attempt == 0:
+            turn_message = request.message
+        else:
+            turn_message = (
+                "Execute the requested work now. "
+                "Do not describe what you are going to do. "
+                "Call the appropriate authoritative HR data tool immediately. "
+                "If the user explicitly requested visualization, or the result "
+                "is best represented as a ranking, comparison, trend, or distribution, "
+                "call visualization_tool after retrieving the real HR data. "
+                "Then return the completed final answer."
+            )
+
+        payload = {
+            "messages": [
+                {
+                    "role": "user",
+                    "content": turn_message,
+                }
+            ],
+            **_chat_actor_state(http_request),
+        }
 
         try:
-            result = hr_agent.invoke(payload, config=config)
+            result = hr_agent.invoke(
+                payload,
+                config=config,
+            )
         except Exception as error:
             last_error = error
             continue
 
-        reply = extract_agent_reply(result.get("messages", []))
+        reply = extract_agent_reply(
+            result.get("messages", [])
+        )
 
-        if reply:
-            break
+        if not reply:
+            continue
+
+        if (
+            _looks_like_tool_plan_reply(reply)
+            and attempt + 1 < CHAT_ATTEMPTS
+        ):
+            reply = ""
+            continue
+
+        break
 
     if not reply:
         detail = (
@@ -1458,20 +1646,59 @@ def chat_with_hr_agent(request: ChatRequest):
                 "Please send the message again."
             )
         )
-        raise HTTPException(status_code=502, detail=detail)
 
+        raise HTTPException(
+            status_code=502,
+            detail=detail,
+        )
+
+    # --------------------------------------------------------
+    # NEW: READ ACTUAL VISUALIZATION TOOL RESULT
+    # --------------------------------------------------------
+    visualization_metadata = _extract_visualization_metadata(
+        result.get("messages", [])
+    )
+
+    # --------------------------------------------------------
+    # FINAL RESPONSE
+    # --------------------------------------------------------
     return {
         "thread_id": thread_id,
         "reply": reply,
-        "selected_employee_id": result.get("selected_employee_id"),
-        "selected_employee_name": result.get("selected_employee_name"),
-        "last_tool_status": result.get("last_tool_status"),
 
-        # Server-side round trip for this turn, so slow replies can be
-        # attributed without guessing.
-        "elapsed_ms": round((perf_counter() - started) * 1000),
+        # Existing fields.
+        "selected_employee_id": result.get(
+            "selected_employee_id"
+        ),
+        "selected_employee_name": result.get(
+            "selected_employee_name"
+        ),
+        "last_tool_status": result.get(
+            "last_tool_status"
+        ),
+
+        # New frontend visualization contract.
+        "visualization": visualization_metadata[
+            "visualization"
+        ],
+        "chart_type": visualization_metadata[
+            "chart_type"
+        ],
+        "chart_data": visualization_metadata[
+            "chart_data"
+        ],
+        "chart_url": visualization_metadata[
+            "chart_url"
+        ],
+        "visualization_reason": visualization_metadata[
+            "visualization_reason"
+        ],
+
+        # Existing timing.
+        "elapsed_ms": round(
+            (perf_counter() - started) * 1000
+        ),
     }
-
 
 # ============================================================
 # ENDPOINT 6 — STREAMING CHAT

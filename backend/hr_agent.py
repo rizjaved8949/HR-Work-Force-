@@ -8,9 +8,8 @@ from langchain_core.tools import BaseTool
 from langgraph.checkpoint.memory import InMemorySaver
 from pydantic import SecretStr
 from typing_extensions import NotRequired
-
 from resilient_model import ResilientChatOpenAI
-
+from visualization.tool import visualization_tool
 from agent_prompts import HR_AGENT_SYSTEM_PROMPT
 from agent_state import HRAgentState
 from employee_profile_tool import create_stateful_employee_record_tool
@@ -249,14 +248,14 @@ def create_hr_reasoning_agent(
         # wrapper; CatBoost, Headcount services, and Performance services
         # remain internal deterministic components.
         tools=[
-            get_employee_record_tool,
-            check_employee_attrition_tool,
-            recommend_replacement_tool,
-            analyze_headcount_tool,
-            analyze_employee_performance_tool,
-            scenario_simulation_tool,
-        ],
-
+    get_employee_record_tool,
+    check_employee_attrition_tool,
+    recommend_replacement_tool,
+    analyze_headcount_tool,
+    analyze_employee_performance_tool,
+    scenario_simulation_tool,
+    visualization_tool,
+],
         # Detailed permanent instructions, including Employee Performance
         # routing and response rules, live in agent_prompts.py.
         system_prompt=HR_AGENT_SYSTEM_PROMPT,
