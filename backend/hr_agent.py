@@ -33,6 +33,8 @@ from replacement_tool import (
 from simulations.repository import SimulationRepository
 from simulations.service import SimulationService
 from simulations.tool import create_stateful_scenario_simulation_tool
+from decision_cases.service import DecisionCaseService
+from decision_cases.tool import create_query_decision_cases_tool
 from settings import get_llm_settings
 
 
@@ -67,6 +69,7 @@ def create_hr_reasoning_agent(
     headcount_service: HeadcountService | None = None,
     performance_service: PerformanceService | None = None,
     simulation_service: SimulationService | None = None,
+    decision_case_service: DecisionCaseService | None = None,
 ) -> Any:
     """
     Create the main multilingual HR reasoning agent.
@@ -75,7 +78,7 @@ def create_hr_reasoning_agent(
     into this function from the FastAPI application. This keeps
     the model and CSV data loaded only once.
 
-    The agent exposes five high-level tools:
+    The agent exposes the existing HR tools plus an optional read-only decision-case tool:
     get_employee_record, check_employee_attrition, recommend_replacement,
     analyze_headcount, and analyze_employee_performance. Headcount and Performance calculations
     remain deterministic, while the reasoning model only selects tools and
@@ -228,6 +231,16 @@ def create_hr_reasoning_agent(
     )
 
     # --------------------------------------------------------
+    # CREATE THE READ-ONLY DECISION-CASE TOOL
+    # --------------------------------------------------------
+
+    decision_case_tool = (
+        create_query_decision_cases_tool(decision_case_service)
+        if decision_case_service is not None
+        else None
+    )
+
+    # --------------------------------------------------------
     # CREATE DEVELOPMENT CONVERSATION MEMORY
     # --------------------------------------------------------
 
@@ -254,6 +267,7 @@ def create_hr_reasoning_agent(
     analyze_headcount_tool,
     analyze_employee_performance_tool,
     scenario_simulation_tool,
+    *([decision_case_tool] if decision_case_tool is not None else []),
     visualization_tool,
 ],
         # Detailed permanent instructions, including Employee Performance

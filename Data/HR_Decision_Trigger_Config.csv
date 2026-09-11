@@ -1,0 +1,11 @@
+Config_Key,Config_Value,Description
+DATA_SOURCE_DEFAULT,csv,"Current HR data source. Runtime env DECISION_CASE_DATA_SOURCE can switch this to supabase later without changing rule code."
+CASE_STORAGE_DEFAULT,csv,"Current decision-case workflow storage. Runtime env DECISION_CASE_STORAGE can switch this to supabase later."
+DASHBOARD_LIMIT,5,"Maximum active cases returned to the HR dashboard and default LLM case query."
+QUEUE_POLICY,priority_then_rule_diversity,"Critical before High, while preferring one case from each active rule before additional cases from the same rule."
+RULE_CATALOG,HR_Decision_Trigger_Rules.csv,"Contains rule configuration only; it does not contain hardcoded case rows."
+SOURCE_MAP,HR_Decision_Data_Source_Map.csv,"Maps logical datasets to both current CSV filenames and future Supabase table names."
+CASE_STATE_FILE,HR_Decision_Cases.csv,"Generated runtime case state. Evaluation creates/refreshes this file from actual source data."
+ACTIONABLE_STATUSES,Open|Under Review|In Progress,"Only active cases in these workflow states are actionable."
+ALL_STATUSES,Open|Under Review|In Progress|Resolved|Closed,"Allowed HR case workflow states."
+AUTO_EMPLOYEE_ACTIONS,false,"Decision support only: no automatic termination, transfer, promotion, compensation or employee-record mutation."

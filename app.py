@@ -82,6 +82,18 @@ from auth import (  # noqa: E402
     auth_router,
     install_authentication,
 )
+from auth.supabase_client import get_supabase_admin_client  # noqa: E402
+from decision_cases.data_repository import DecisionCaseDataRepository  # noqa: E402
+from decision_cases.engine import DecisionTriggerEngine  # noqa: E402
+from decision_cases.router import create_decision_case_router  # noqa: E402
+from decision_cases.service import DecisionCaseService  # noqa: E402
+from decision_cases.store import (  # noqa: E402
+    CsvDecisionCaseStore,
+    InMemoryDecisionCaseStore,
+    SupabaseDecisionCaseStore,
+    csv_store_path as decision_case_csv_store_path,
+    storage_mode as decision_case_storage_mode,
+)
 from visualizations.attrition.router import (  # noqa: E402
     create_attrition_dashboard_router,
 )
@@ -148,6 +160,45 @@ performance_service = PerformanceService(
         DATA_PATH
     )
 )
+
+# ============================================================
+# HR DECISION TRIGGER ENGINE — ISOLATED DECISION-SUPPORT LAYER
+# ============================================================
+# Reads the existing Attrition, Performance, Headcount and successor outputs.
+# It never mutates those source datasets or calculations. The current default
+# is CSV for both HR source data and case workflow state. Later, setting
+# DECISION_CASE_DATA_SOURCE=supabase and/or DECISION_CASE_STORAGE=supabase
+# switches the Decision Trigger layer without changing any rule/endpoint code.
+decision_case_data_repository = DecisionCaseDataRepository(
+    DATA_PATH,
+    client_factory=get_supabase_admin_client,
+)
+decision_case_engine = DecisionTriggerEngine(
+    data_repository=decision_case_data_repository,
+    attrition_prediction_tool=attrition_prediction_tool,
+)
+
+decision_case_store_mode = decision_case_storage_mode()
+if decision_case_store_mode == "csv":
+    decision_case_store = CsvDecisionCaseStore(
+        decision_case_csv_store_path(DATA_PATH)
+    )
+elif decision_case_store_mode == "memory":
+    decision_case_store = InMemoryDecisionCaseStore()
+elif decision_case_store_mode == "supabase":
+    decision_case_store = SupabaseDecisionCaseStore(
+        client_factory=get_supabase_admin_client,
+        table_name=os.getenv("DECISION_CASE_TABLE", "hr_decision_cases"),
+    )
+else:
+    raise RuntimeError(
+        "DECISION_CASE_STORAGE must be csv, memory, or supabase."
+    )
+
+decision_case_service = DecisionCaseService(
+    engine=decision_case_engine,
+    store=decision_case_store,
+)
 # ============================================================
 # SCENARIO SIMULATION — SHARED SERVICES
 # ============================================================
@@ -165,6 +216,7 @@ hr_agent = create_hr_reasoning_agent(
     headcount_service=headcount_service,
     performance_service=performance_service,
     simulation_service=simulation_service,
+    decision_case_service=decision_case_service,
 )
 
 # A plain chat model is used only to turn an already-computed deterministic
@@ -230,7 +282,7 @@ app.add_middleware(
     # Supabase authentication uses the Authorization: Bearer header,
     # not browser cookies, so credentials remain disabled.
     allow_credentials=False,
-    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_methods=["GET", "POST", "PATCH", "OPTIONS"],
     allow_headers=["*"],
 )
 
@@ -269,6 +321,16 @@ app.include_router(
 
 app.include_router(
     create_performance_router(performance_service)
+)
+
+
+# ============================================================
+# HR DECISION TRIGGER ENGINE
+# ============================================================
+# Frontend reads a deliberately small priority queue (default maximum 5).
+# POST /evaluate is scheduler-safe and only writes to the isolated case table.
+app.include_router(
+    create_decision_case_router(decision_case_service)
 )
 
 
