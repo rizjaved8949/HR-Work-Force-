@@ -1,0 +1,375 @@
+{
+  "version": "1.0.0-step3",
+  "rules": [
+    {
+      "id": "business_unit_org",
+      "source_file": "Business_Unit_Master.csv",
+      "source_entity": "Organization",
+      "relation": "HAS_BUSINESS_UNIT",
+      "target_entity": "BusinessUnit",
+      "required_columns": [
+        "Organization_ID",
+        "Business_Unit_ID"
+      ]
+    },
+    {
+      "id": "business_unit_leader",
+      "source_file": "Business_Unit_Master.csv",
+      "source_entity": "BusinessUnit",
+      "relation": "LED_BY",
+      "target_entity": "Position",
+      "required_columns": [
+        "Business_Unit_ID",
+        "Business_Unit_Leader_Position_ID"
+      ]
+    },
+    {
+      "id": "department_bu",
+      "source_file": "Department_Master.csv",
+      "source_entity": "BusinessUnit",
+      "relation": "HAS_DEPARTMENT",
+      "target_entity": "Department",
+      "required_columns": [
+        "Business_Unit_ID",
+        "Department_ID"
+      ]
+    },
+    {
+      "id": "department_parent",
+      "source_file": "Department_Master.csv",
+      "source_entity": "Department",
+      "relation": "PARENT_OF",
+      "target_entity": "Department",
+      "required_columns": [
+        "Parent_Department_ID",
+        "Department_ID"
+      ]
+    },
+    {
+      "id": "department_head",
+      "source_file": "Department_Master.csv",
+      "source_entity": "Department",
+      "relation": "LED_BY",
+      "target_entity": "Position",
+      "required_columns": [
+        "Department_ID",
+        "Department_Head_Position_ID"
+      ]
+    },
+    {
+      "id": "department_location",
+      "source_file": "Department_Master.csv",
+      "source_entity": "Department",
+      "relation": "PRIMARY_LOCATION",
+      "target_entity": "WorkLocation",
+      "required_columns": [
+        "Department_ID",
+        "Primary_Work_Location_ID"
+      ]
+    },
+    {
+      "id": "department_cost_center",
+      "source_file": "Department_Master.csv",
+      "source_entity": "Department",
+      "relation": "USES_COST_CENTER",
+      "target_entity": "CostCenter",
+      "required_columns": [
+        "Department_ID",
+        "Cost_Center_ID"
+      ]
+    },
+    {
+      "id": "org_unit_department",
+      "source_file": "Organizational_Unit_Master.csv",
+      "source_entity": "Department",
+      "relation": "HAS_ORGANIZATIONAL_UNIT",
+      "target_entity": "OrganizationalUnit",
+      "required_columns": [
+        "Department_ID",
+        "Organizational_Unit_ID"
+      ]
+    },
+    {
+      "id": "org_unit_parent",
+      "source_file": "Organizational_Unit_Master.csv",
+      "source_entity": "OrganizationalUnit",
+      "relation": "PARENT_OF",
+      "target_entity": "OrganizationalUnit",
+      "required_columns": [
+        "Parent_Organizational_Unit_ID",
+        "Organizational_Unit_ID"
+      ]
+    },
+    {
+      "id": "cost_center_department",
+      "source_file": "Cost_Center_Master.csv",
+      "source_entity": "Department",
+      "relation": "USES_COST_CENTER",
+      "target_entity": "CostCenter",
+      "required_columns": [
+        "Department_ID",
+        "Cost_Center_ID"
+      ]
+    },
+    {
+      "id": "cost_center_owner",
+      "source_file": "Cost_Center_Master.csv",
+      "source_entity": "CostCenter",
+      "relation": "BUDGET_OWNED_BY",
+      "target_entity": "Employee",
+      "required_columns": [
+        "Cost_Center_ID",
+        "Budget_Owner_Employee_ID"
+      ]
+    },
+    {
+      "id": "employee_reports_to",
+      "source_file": "Employee_Profile.csv",
+      "source_entity": "Employee",
+      "relation": "REPORTS_TO",
+      "target_entity": "Employee",
+      "required_columns": [
+        "Employee_ID",
+        "Manager_Employee_ID"
+      ]
+    },
+    {
+      "id": "assignment_employee",
+      "source_file": "Employee_Assignment_History.csv",
+      "source_entity": "Employee",
+      "relation": "HAS_ASSIGNMENT",
+      "target_entity": "Assignment",
+      "required_columns": [
+        "Employee_ID",
+        "Assignment_ID"
+      ]
+    },
+    {
+      "id": "assignment_position",
+      "source_file": "Employee_Assignment_History.csv",
+      "source_entity": "Assignment",
+      "relation": "TO_POSITION",
+      "target_entity": "Position",
+      "required_columns": [
+        "Assignment_ID",
+        "Position_ID"
+      ]
+    },
+    {
+      "id": "assignment_department",
+      "source_file": "Employee_Assignment_History.csv",
+      "source_entity": "Assignment",
+      "relation": "IN_DEPARTMENT",
+      "target_entity": "Department",
+      "required_columns": [
+        "Assignment_ID",
+        "Department_ID"
+      ]
+    },
+    {
+      "id": "assignment_org_unit",
+      "source_file": "Employee_Assignment_History.csv",
+      "source_entity": "Assignment",
+      "relation": "IN_ORGANIZATIONAL_UNIT",
+      "target_entity": "OrganizationalUnit",
+      "required_columns": [
+        "Assignment_ID",
+        "Organizational_Unit_ID"
+      ]
+    },
+    {
+      "id": "assignment_location",
+      "source_file": "Employee_Assignment_History.csv",
+      "source_entity": "Assignment",
+      "relation": "AT_LOCATION",
+      "target_entity": "WorkLocation",
+      "required_columns": [
+        "Assignment_ID",
+        "Work_Location_ID"
+      ]
+    },
+    {
+      "id": "assignment_cost_center",
+      "source_file": "Employee_Assignment_History.csv",
+      "source_entity": "Assignment",
+      "relation": "CHARGED_TO",
+      "target_entity": "CostCenter",
+      "required_columns": [
+        "Assignment_ID",
+        "Cost_Center_ID"
+      ]
+    },
+    {
+      "id": "position_department",
+      "source_file": "Position_Master.csv",
+      "source_entity": "Position",
+      "relation": "IN_DEPARTMENT",
+      "target_entity": "Department",
+      "required_columns": [
+        "Position_ID",
+        "Department_ID"
+      ]
+    },
+    {
+      "id": "position_reports",
+      "source_file": "Position_Master.csv",
+      "source_entity": "Position",
+      "relation": "REPORTS_TO_POSITION",
+      "target_entity": "Position",
+      "required_columns": [
+        "Position_ID",
+        "Reporting_Position_ID"
+      ]
+    },
+    {
+      "id": "position_location",
+      "source_file": "Position_Master.csv",
+      "source_entity": "Position",
+      "relation": "AT_LOCATION",
+      "target_entity": "WorkLocation",
+      "required_columns": [
+        "Position_ID",
+        "Work_Location_ID"
+      ]
+    },
+    {
+      "id": "position_cost_center",
+      "source_file": "Position_Master.csv",
+      "source_entity": "Position",
+      "relation": "CHARGED_TO",
+      "target_entity": "CostCenter",
+      "required_columns": [
+        "Position_ID",
+        "Cost_Center_ID"
+      ]
+    },
+    {
+      "id": "movement_from_department",
+      "source_file": "Workforce_Movement_History.csv",
+      "source_entity": "CareerMovement",
+      "relation": "FROM_DEPARTMENT",
+      "target_entity": "Department",
+      "required_columns": [
+        "Movement_ID",
+        "From_Department_ID"
+      ]
+    },
+    {
+      "id": "movement_to_department",
+      "source_file": "Workforce_Movement_History.csv",
+      "source_entity": "CareerMovement",
+      "relation": "TO_DEPARTMENT",
+      "target_entity": "Department",
+      "required_columns": [
+        "Movement_ID",
+        "To_Department_ID"
+      ]
+    },
+    {
+      "id": "movement_from_position",
+      "source_file": "Workforce_Movement_History.csv",
+      "source_entity": "CareerMovement",
+      "relation": "FROM_POSITION",
+      "target_entity": "Position",
+      "required_columns": [
+        "Movement_ID",
+        "From_Position_ID"
+      ]
+    },
+    {
+      "id": "movement_to_position",
+      "source_file": "Workforce_Movement_History.csv",
+      "source_entity": "CareerMovement",
+      "relation": "TO_POSITION",
+      "target_entity": "Position",
+      "required_columns": [
+        "Movement_ID",
+        "To_Position_ID"
+      ]
+    },
+    {
+      "id": "decision_rule_case",
+      "source_file": "HR_Decision_Cases.csv",
+      "source_entity": "DecisionRule",
+      "relation": "GENERATES_CASE",
+      "target_entity": "DecisionCase",
+      "required_columns": [
+        "rule_id",
+        "id"
+      ]
+    },
+    {
+      "id": "decision_case_employee",
+      "source_file": "HR_Decision_Cases.csv",
+      "source_entity": "DecisionCase",
+      "relation": "ABOUT_EMPLOYEE",
+      "target_entity": "Employee",
+      "required_columns": [
+        "id",
+        "employee_id"
+      ]
+    },
+    {
+      "id": "decision_case_position",
+      "source_file": "HR_Decision_Cases.csv",
+      "source_entity": "DecisionCase",
+      "relation": "ABOUT_POSITION",
+      "target_entity": "Position",
+      "required_columns": [
+        "id",
+        "position_id"
+      ]
+    },
+    {
+      "id": "decision_case_department",
+      "source_file": "HR_Decision_Cases.csv",
+      "source_entity": "DecisionCase",
+      "relation": "ABOUT_DEPARTMENT",
+      "target_entity": "Department",
+      "required_columns": [
+        "id",
+        "department_id"
+      ]
+    },
+    {
+      "id": "sim_employee_scope",
+      "source_file": "Simulation/Simulation_Employee_Features.csv",
+      "source_entity": "ScenarioAssumption",
+      "relation": "APPLIES_TO_EMPLOYEE",
+      "target_entity": "Employee",
+      "required_columns": [
+        "Employee_ID"
+      ]
+    },
+    {
+      "id": "sim_department_scope",
+      "source_file": "Simulation/Simulation_Department_Business_Evaluation.csv",
+      "source_entity": "ScenarioAssumption",
+      "relation": "APPLIES_TO_DEPARTMENT",
+      "target_entity": "Department",
+      "required_columns": [
+        "Department_ID"
+      ]
+    },
+    {
+      "id": "sim_position_scope",
+      "source_file": "Simulation/Simulation_Position_Business_Evaluation.csv",
+      "source_entity": "ScenarioAssumption",
+      "relation": "APPLIES_TO_POSITION",
+      "target_entity": "Position",
+      "required_columns": [
+        "Position_ID"
+      ]
+    },
+    {
+      "id": "sim_course_scope",
+      "source_file": "Simulation/Simulation_Learning_Business_Evaluation.csv",
+      "source_entity": "ScenarioAssumption",
+      "relation": "APPLIES_TO_COURSE",
+      "target_entity": "LearningCourse",
+      "required_columns": [
+        "Course_ID"
+      ]
+    }
+  ]
+}

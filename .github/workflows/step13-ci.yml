@@ -1,0 +1,35 @@
+name: HR Workforce CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt -r requirements-graph.txt -r requirements-ingestion.txt
+      - name: Compile
+        run: python -m compileall -q backend app.py
+      - name: Roadmap regression suite
+        env:
+          PYTHONPATH: ${{ github.workspace }}/backend
+        run: |
+          python -m pytest \
+            tests/test_ontology_v1.py \
+            tests/test_current_data_mapping.py \
+            tests/test_graph_model.py \
+            tests/test_semantic_graph_service.py \
+            tests/test_data_ingestion_step6.py \
+            tests/test_current_supabase_graph_step7.py \
+            tests/test_feature_resolution_step8.py \
+            tests/test_existing_ai_services_refactor_step9.py \
+            tests/test_ontology_studio_step10.py \
+            tests/test_existing_hr_ui_integration_step11.py \
+            tests/test_multi_organization_onboarding_step12.py \
+            tests/test_production_readiness_step13.py -q

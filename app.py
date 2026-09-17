@@ -103,6 +103,21 @@ from simulations.repository import SimulationRepository  # noqa: E402
 from simulations.router import create_simulation_router  # noqa: E402
 from simulations.service import SimulationDataService, SimulationService  # noqa: E402
 from simulations.tool import run_scenario_simulation_tool  # noqa: E402
+from service_refactor.config import Step9RuntimeConfig  # noqa: E402
+from service_refactor.runtime import Step9RuntimeManager  # noqa: E402
+from service_refactor.router import create_step9_runtime_router  # noqa: E402
+from ontology.router import router as ontology_router  # noqa: E402
+from mapping.router import router as mapping_router  # noqa: E402
+from ontology_studio.router import create_ontology_studio_router  # noqa: E402
+from ui_integration.router import create_ui_integration_router  # noqa: E402
+from multi_org.service import MultiOrganizationOnboardingService  # noqa: E402
+from multi_org.router import create_multi_org_router  # noqa: E402
+from multi_org.middleware import install_multi_organization_tenant_context  # noqa: E402
+from graph.factory import create_graph_repository_from_env  # noqa: E402
+from production.config import ProductionSettings  # noqa: E402
+from production.middleware import install_production_hardening  # noqa: E402
+from production.router import create_production_router  # noqa: E402
+from production.service import ProductionReadinessService  # noqa: E402
 
 
 DATA_PATH = paths.data_dir()
@@ -143,22 +158,73 @@ _verify_startup_paths()
 # The CSV data, the CatBoost model, and the successor graph are each
 # loaded a single time and shared by every endpoint.
 
-employee_search_tool = create_employee_record_tool(DATA_PATH)
-
-attrition_prediction_tool = create_attrition_prediction_tool(MODEL_PATH)
-
-replacement_recommendation_tool = create_replacement_recommendation_tool(
+# Step 9 keeps the already-built UI/API contracts stable while moving the
+# employee and attrition paths behind graph-first adapters. Legacy components
+# remain available only as an explicit compatibility/fallback boundary.
+legacy_employee_search_tool = create_employee_record_tool(DATA_PATH)
+legacy_attrition_prediction_tool = create_attrition_prediction_tool(MODEL_PATH)
+legacy_replacement_recommendation_tool = create_replacement_recommendation_tool(
     data_dir=DATA_PATH,
 )
-headcount_service = HeadcountService(
-    HeadcountRepository(
-        DATA_PATH
-    )
+legacy_headcount_service = HeadcountService(
+    HeadcountRepository(DATA_PATH)
 )
-performance_service = PerformanceService(
-    PerformanceRepository(
-        DATA_PATH
-    )
+legacy_performance_service = PerformanceService(
+    PerformanceRepository(DATA_PATH)
+)
+
+step9_runtime = Step9RuntimeManager.build(
+    config=Step9RuntimeConfig.from_env(),
+    model_path=MODEL_PATH,
+    legacy_employee_search_tool=legacy_employee_search_tool,
+    legacy_attrition_prediction_tool=legacy_attrition_prediction_tool,
+    legacy_headcount_service=legacy_headcount_service,
+    legacy_performance_service=legacy_performance_service,
+    legacy_replacement_tool=legacy_replacement_recommendation_tool,
+)
+
+employee_search_tool = step9_runtime.employee_search_tool
+attrition_prediction_tool = step9_runtime.attrition_prediction_tool
+replacement_recommendation_tool = step9_runtime.replacement_tool
+headcount_service = step9_runtime.headcount_service
+performance_service = step9_runtime.performance_service
+
+# ============================================================
+# STEP 12 — MULTI-ORGANIZATION ONBOARDING
+# ============================================================
+# Reuse the Step-9 semantic repository when graph-first is active so all
+# tenant-scoped reads/writes share the same graph repository connection.  In legacy
+# mode we create a repository handle lazily from the configured GRAPH_BACKEND.
+if step9_runtime.semantic_service is not None:
+    step12_repository = step9_runtime.semantic_service.repository
+else:
+    step12_repository = create_graph_repository_from_env(verify_connectivity=False)
+
+multi_org_service = MultiOrganizationOnboardingService(
+    repository=step12_repository,
+)
+multi_org_service.ensure_default_organization(
+    tenant_id=step9_runtime.config.tenant_id,
+    name=os.getenv("STEP12_DEFAULT_ORGANIZATION_NAME", "Current Organization"),
+    legacy_open_access=os.getenv("STEP12_DEFAULT_TENANT_OPEN_ACCESS", "true").strip().lower()
+    in {"1", "true", "yes", "on"},
+)
+
+# ============================================================
+# STEP 13 — TESTING, VERSIONING & PRODUCTION READINESS
+# ============================================================
+step13_settings = ProductionSettings.from_env()
+
+def _step13_supabase_check() -> bool:
+    client = get_supabase_admin_client()
+    client.table("organization_master").select("Organization_ID").limit(1).execute()
+    return True
+
+step13_production_service = ProductionReadinessService(
+    project_root=REPO_ROOT,
+    repository=step12_repository,
+    settings=step13_settings,
+    supabase_check=_step13_supabase_check,
 )
 
 # ============================================================
@@ -207,6 +273,9 @@ simulation_repository = SimulationRepository(DATA_PATH)
 simulation_data_service = SimulationDataService(simulation_repository)
 simulation_service = SimulationService(simulation_repository)
 simulation_lookup_service = SimulationLookupService(simulation_repository)
+step9_runtime.simulation_service = simulation_service
+step9_runtime.simulation_data_service = simulation_data_service
+step9_runtime.simulation_lookup_service = simulation_lookup_service
 
 
 hr_agent = create_hr_reasoning_agent(
@@ -253,8 +322,24 @@ app = FastAPI(
 )
 
 
+# Install Step-12 tenant context before auth is added. Starlette wraps the
+# later auth middleware outside it, so request.state.user is available when
+# tenant membership is validated.
+install_multi_organization_tenant_context(
+    app,
+    registry=multi_org_service.registry,
+    access=multi_org_service.access,
+    default_tenant_id=step9_runtime.config.tenant_id,
+)
 install_authentication(app)
 app.include_router(auth_router)
+app.include_router(create_step9_runtime_router(step9_runtime))
+app.include_router(ontology_router)
+app.include_router(mapping_router)
+app.include_router(create_ontology_studio_router())
+app.include_router(create_ui_integration_router(step9_runtime))
+app.include_router(create_multi_org_router(multi_org_service))
+app.include_router(create_production_router(step13_production_service))
 
 
 # ============================================================
@@ -285,6 +370,11 @@ app.add_middleware(
     allow_methods=["GET", "POST", "PATCH", "OPTIONS"],
     allow_headers=["*"],
 )
+
+# Step 13 adds request correlation IDs and defensive response headers.
+# HTTPS redirect / trusted-host enforcement are opt-in through environment
+# variables so local development remains non-breaking.
+install_production_hardening(app, step13_settings)
 
 
 # ============================================================
@@ -1318,6 +1408,7 @@ def health():
         "successor_graph": "loaded",
         "hr_agent": "loaded",
         "shared_data_path": str(DATA_PATH),
+        "step9_runtime": step9_runtime.status().model_dump(mode="json"),
 
         # Straight from .env, so it is obvious which model is actually
         # serving requests.

@@ -1,0 +1,142 @@
+{
+  "service": "attrition_prediction",
+  "status": "confirmed_current_contract",
+  "implementation_evidence": [
+    "backend/attrition_prediction_tool.py",
+    "models/catboost_attrition_model.cbm"
+  ],
+  "migration_policy": "Do not change saved CatBoost feature names/order/types. Future semantic adapter must emit this exact contract and pass parity tests before cutover.",
+  "features": [
+    {
+      "order": 1,
+      "current_feature": "Tenure_Months",
+      "ontology_path": "Employment.tenureMonths",
+      "model_type": "numeric",
+      "unit": "months",
+      "current_missing_behavior": "numeric missing -> NaN",
+      "required_by_saved_model": true
+    },
+    {
+      "order": 2,
+      "current_feature": "Monthly_Salary_PKR",
+      "ontology_path": "CompensationRecord.monthlyAmount",
+      "model_type": "numeric",
+      "unit": "PKR/month in current adapter",
+      "current_missing_behavior": "numeric missing -> NaN",
+      "required_by_saved_model": true
+    },
+    {
+      "order": 3,
+      "current_feature": "Salary_vs_Market_pct",
+      "ontology_path": "CompensationRecord.salaryVsMarketPercentage",
+      "model_type": "numeric",
+      "unit": "percentage points",
+      "current_missing_behavior": "numeric missing -> NaN",
+      "required_by_saved_model": true
+    },
+    {
+      "order": 4,
+      "current_feature": "Last_Increment_pct",
+      "ontology_path": "CompensationRecord.lastIncrementPercentage",
+      "model_type": "numeric",
+      "unit": "percent",
+      "current_missing_behavior": "numeric missing -> NaN",
+      "required_by_saved_model": true
+    },
+    {
+      "order": 5,
+      "current_feature": "Months_Since_Last_Promotion",
+      "ontology_path": "ExperienceProfile.monthsSinceLastPromotion",
+      "model_type": "numeric",
+      "unit": "months",
+      "current_missing_behavior": "numeric missing -> NaN",
+      "required_by_saved_model": true
+    },
+    {
+      "order": 6,
+      "current_feature": "KPI_Achievement_pct",
+      "ontology_path": "PerformanceRecord.kpiAchievementPercentage",
+      "model_type": "numeric",
+      "unit": "percent",
+      "current_missing_behavior": "numeric missing -> NaN",
+      "required_by_saved_model": true
+    },
+    {
+      "order": 7,
+      "current_feature": "Performance_Trend_6M",
+      "ontology_path": "PerformanceRecord.performanceTrend6M",
+      "model_type": "numeric",
+      "unit": "numeric trend score; exact semantic scale pending confirmation",
+      "current_missing_behavior": "numeric missing -> NaN",
+      "required_by_saved_model": true
+    },
+    {
+      "order": 8,
+      "current_feature": "Overtime_Hours_Last_30D",
+      "ontology_path": "AttendanceRecord.overtimeHoursLast30Days",
+      "model_type": "numeric",
+      "unit": "hours/30 days",
+      "current_missing_behavior": "numeric missing -> NaN",
+      "required_by_saved_model": true
+    },
+    {
+      "order": 9,
+      "current_feature": "Engagement_Score",
+      "ontology_path": "EngagementRecord.engagementScore",
+      "model_type": "numeric",
+      "unit": "score",
+      "current_missing_behavior": "numeric missing -> NaN",
+      "required_by_saved_model": true
+    },
+    {
+      "order": 10,
+      "current_feature": "Job_Satisfaction_Score",
+      "ontology_path": "EngagementRecord.jobSatisfactionScore",
+      "model_type": "numeric",
+      "unit": "score",
+      "current_missing_behavior": "numeric missing -> NaN",
+      "required_by_saved_model": true
+    },
+    {
+      "order": 11,
+      "current_feature": "Work_Life_Balance_Score",
+      "ontology_path": "EngagementRecord.workLifeBalanceScore",
+      "model_type": "numeric",
+      "unit": "score",
+      "current_missing_behavior": "numeric missing -> NaN",
+      "required_by_saved_model": true
+    },
+    {
+      "order": 12,
+      "current_feature": "Manager_Relationship_Score",
+      "ontology_path": "EngagementRecord.managerRelationshipScore",
+      "model_type": "numeric",
+      "unit": "score",
+      "current_missing_behavior": "numeric missing -> NaN",
+      "required_by_saved_model": true
+    },
+    {
+      "order": 13,
+      "current_feature": "Career_Growth_Score",
+      "ontology_path": "EngagementRecord.careerGrowthScore",
+      "model_type": "numeric",
+      "unit": "score",
+      "current_missing_behavior": "numeric missing -> NaN",
+      "required_by_saved_model": true
+    },
+    {
+      "order": 14,
+      "current_feature": "Pay_Concern_Raised_Last_6M",
+      "ontology_path": "CompensationRecord.payConcernRaisedLast6Months",
+      "model_type": "categorical",
+      "unit": "Yes/No in current CatBoost adapter",
+      "current_missing_behavior": "categorical missing -> 'Missing'",
+      "required_by_saved_model": true
+    }
+  ],
+  "categorical_feature_indices": [
+    13
+  ],
+  "current_default_classification_threshold": 0.5,
+  "blocking_on_missing": false
+}

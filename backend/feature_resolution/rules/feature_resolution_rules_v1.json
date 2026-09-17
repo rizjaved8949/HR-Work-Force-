@@ -1,0 +1,19 @@
+{
+  "step": 8,
+  "version": "1.0.0-step8",
+  "ontology_version": "1.0.2-draft",
+  "derivations": [
+    {
+      "ontology_path": "Employment.tenureMonths",
+      "rule_id": "derive_tenure_months_from_hire_date",
+      "status": "approved",
+      "inputs": [
+        "Employment.hireDate",
+        "Employment.dataAsOfDate"
+      ],
+      "request_fallback": "as_of_date",
+      "description": "Calculate completed calendar months between hire date and the semantic data-as-of date, or the explicitly supplied request as-of date when the record has no dataAsOfDate."
+    }
+  ],
+  "safe_defaults": []
+}

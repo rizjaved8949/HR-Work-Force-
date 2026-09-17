@@ -1,0 +1,24 @@
+{
+  "service": "people_at_risk_dashboard",
+  "status": "confirmed_current_contract",
+  "implementation_evidence": [
+    "visualizations/attrition/people_at_risk_service.py"
+  ],
+  "required_source_files": [
+    "Final_Attrition_Dataset_200_Employees.csv",
+    "Employee_Profile.csv",
+    "Position_Master.csv"
+  ],
+  "attrition_contract_ref": "attrition.json",
+  "additional_ontology_paths": [
+    "Employee.employeeId",
+    "Employee.name",
+    "Position.positionId",
+    "Position.title",
+    "Position.criticality",
+    "Department.name"
+  ],
+  "current_default_risk_threshold": 0.5,
+  "threshold_configurable": true,
+  "missing_behavior": "Missing required columns and duplicate key IDs are rejected; missing individual model values use the attrition model preparation behavior."
+}

@@ -1,0 +1,31 @@
+{
+  "service": "employee_record_retrieval",
+  "status": "confirmed_current_contract",
+  "implementation_evidence": [
+    "backend/employee_record_tool.py"
+  ],
+  "identity_inputs": {
+    "preferred": [
+      "employee_id"
+    ],
+    "alternate": [
+      "employee_name"
+    ],
+    "optional_disambiguators": [
+      "department",
+      "designation",
+      "position_id",
+      "office"
+    ]
+  },
+  "ontology_identity_paths": [
+    "Employee.employeeId",
+    "Employee.name",
+    "Department.name",
+    "Position.title",
+    "Position.positionId",
+    "WorkLocation.name",
+    "Employment.jobLevel"
+  ],
+  "note": "Existing identity aliases are lookup conveniences, not a general ontology mapper."
+}

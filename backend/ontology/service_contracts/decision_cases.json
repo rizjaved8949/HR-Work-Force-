@@ -1,0 +1,29 @@
+{
+  "service": "decision_cases",
+  "status": "confirmed_current_contract",
+  "implementation_evidence": [
+    "backend/decision_cases/engine.py",
+    "backend/decision_cases/data_repository.py",
+    "Data/HR_Decision_Trigger_Rules.csv",
+    "Data/HR_Decision_Data_Source_Map.csv"
+  ],
+  "ontology_domains": [
+    "DecisionRule",
+    "DecisionCase",
+    "Employee",
+    "Employment",
+    "Position",
+    "Department",
+    "CompensationRecord",
+    "PerformanceRecord",
+    "PerformanceSummary",
+    "AttendanceRecord",
+    "EngagementRecord",
+    "VacancyRecord",
+    "HeadcountException",
+    "AttritionRiskPrediction",
+    "SuccessorRecommendation"
+  ],
+  "missing_behavior": "A trigger is skipped when required evidence cannot be established. Missing evidence is not inferred as a positive trigger.",
+  "note": "Existing CSV/Supabase source abstraction is not a general semantic mapper; canonical business columns are still expected."
+}

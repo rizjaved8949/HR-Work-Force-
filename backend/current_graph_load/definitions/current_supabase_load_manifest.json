@@ -1,0 +1,887 @@
+{
+  "version": "1.0.0-step7",
+  "ontology_version": "1.0.2-draft",
+  "source_system": "supabase",
+  "description": "Curated current-project Supabase -> ontology -> Knowledge Graph load set. Stable master entities are loaded only from their authoritative current tables; source-record entities retain source provenance. Tables without confirmed ontology meaning are intentionally excluded.",
+  "tables": [
+    {
+      "table": "organization_master",
+      "matching_csv": "Organization_Master.csv",
+      "required": true,
+      "entity_types": [
+        "Organization"
+      ]
+    },
+    {
+      "table": "business_unit_master",
+      "matching_csv": "Business_Unit_Master.csv",
+      "required": true,
+      "entity_types": [
+        "BusinessUnit"
+      ]
+    },
+    {
+      "table": "department_master",
+      "matching_csv": "Department_Master.csv",
+      "required": true,
+      "entity_types": [
+        "Department"
+      ]
+    },
+    {
+      "table": "organizational_unit_master",
+      "matching_csv": "Organizational_Unit_Master.csv",
+      "required": true,
+      "entity_types": [
+        "OrganizationalUnit"
+      ]
+    },
+    {
+      "table": "work_location_master",
+      "matching_csv": "Work_Location_Master.csv",
+      "required": true,
+      "entity_types": [
+        "WorkLocation"
+      ]
+    },
+    {
+      "table": "cost_center_master",
+      "matching_csv": "Cost_Center_Master.csv",
+      "required": true,
+      "entity_types": [
+        "CostCenter"
+      ]
+    },
+    {
+      "table": "position_master",
+      "matching_csv": "Position_Master.csv",
+      "required": true,
+      "entity_types": [
+        "Position"
+      ]
+    },
+    {
+      "table": "employee_profile",
+      "matching_csv": "Employee_Profile.csv",
+      "required": true,
+      "entity_types": [
+        "Employee",
+        "Employment",
+        "SuccessionReadiness"
+      ],
+      "record_keys": {
+        "Employment": [
+          "id"
+        ],
+        "SuccessionReadiness": [
+          "id"
+        ]
+      },
+      "valid_from": {
+        "Employment": "Data_As_Of_Date",
+        "SuccessionReadiness": "Data_As_Of_Date"
+      },
+      "links": [
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "Employee",
+            "column": "Employee_ID"
+          },
+          "relation": "HAS_EMPLOYMENT",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "Employment"
+          }
+        },
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "Employee",
+            "column": "Employee_ID"
+          },
+          "relation": "HAS_SUCCESSION_READINESS",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "SuccessionReadiness"
+          }
+        }
+      ]
+    },
+    {
+      "table": "employee_assignment_history",
+      "matching_csv": "Employee_Assignment_History.csv",
+      "required": true,
+      "entity_types": [
+        "Assignment"
+      ]
+    },
+    {
+      "table": "final_attrition_dataset_200_employees",
+      "matching_csv": "Final_Attrition_Dataset_200_Employees.csv",
+      "required": true,
+      "entity_types": [
+        "CompensationRecord",
+        "ExperienceProfile",
+        "PerformanceRecord",
+        "AttendanceRecord",
+        "EngagementRecord"
+      ],
+      "record_keys": {
+        "CompensationRecord": [
+          "id"
+        ],
+        "ExperienceProfile": [
+          "id"
+        ],
+        "PerformanceRecord": [
+          "id"
+        ],
+        "AttendanceRecord": [
+          "id"
+        ],
+        "EngagementRecord": [
+          "id"
+        ]
+      },
+      "valid_from": {
+        "CompensationRecord": "Data_As_Of_Date",
+        "ExperienceProfile": "Data_As_Of_Date",
+        "PerformanceRecord": "Data_As_Of_Date",
+        "AttendanceRecord": "Data_As_Of_Date",
+        "EngagementRecord": "Data_As_Of_Date"
+      },
+      "links": [
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "Employee",
+            "column": "Employee_ID"
+          },
+          "relation": "HAS_COMPENSATION",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "CompensationRecord"
+          }
+        },
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "Employee",
+            "column": "Employee_ID"
+          },
+          "relation": "HAS_EXPERIENCE_PROFILE",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "ExperienceProfile"
+          }
+        },
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "Employee",
+            "column": "Employee_ID"
+          },
+          "relation": "HAS_PERFORMANCE_RECORD",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "PerformanceRecord"
+          }
+        },
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "Employee",
+            "column": "Employee_ID"
+          },
+          "relation": "HAS_ATTENDANCE_RECORD",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "AttendanceRecord"
+          }
+        },
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "Employee",
+            "column": "Employee_ID"
+          },
+          "relation": "HAS_ENGAGEMENT_RECORD",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "EngagementRecord"
+          }
+        }
+      ]
+    },
+    {
+      "table": "employee_experience",
+      "matching_csv": "Employee_Experience.csv",
+      "required": true,
+      "entity_types": [
+        "ExperienceProfile"
+      ],
+      "record_keys": {
+        "ExperienceProfile": [
+          "id"
+        ]
+      },
+      "valid_from": {
+        "ExperienceProfile": "Data_As_Of_Date"
+      },
+      "links": [
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "Employee",
+            "column": "Employee_ID"
+          },
+          "relation": "HAS_EXPERIENCE_PROFILE",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "ExperienceProfile"
+          }
+        }
+      ]
+    },
+    {
+      "table": "employee_performance",
+      "matching_csv": "Employee_Performance.csv",
+      "required": true,
+      "entity_types": [
+        "PerformanceRecord"
+      ],
+      "record_keys": {
+        "PerformanceRecord": [
+          "id"
+        ]
+      },
+      "valid_from": {
+        "PerformanceRecord": "Data_As_Of_Date"
+      },
+      "links": [
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "Employee",
+            "column": "Employee_ID"
+          },
+          "relation": "HAS_PERFORMANCE_RECORD",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "PerformanceRecord"
+          }
+        }
+      ]
+    },
+    {
+      "table": "employee_performance_monthly",
+      "matching_csv": "Employee_Performance_Monthly.csv",
+      "required": true,
+      "entity_types": [
+        "PerformanceRecord"
+      ],
+      "record_keys": {
+        "PerformanceRecord": [
+          "Employee_ID",
+          "Performance_Month"
+        ]
+      },
+      "valid_from": {
+        "PerformanceRecord": "Data_As_Of_Date"
+      },
+      "links": [
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "Employee",
+            "column": "Employee_ID"
+          },
+          "relation": "HAS_PERFORMANCE_RECORD",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "PerformanceRecord"
+          }
+        }
+      ]
+    },
+    {
+      "table": "employee_performance_summary",
+      "matching_csv": "Employee_Performance_Summary.csv",
+      "required": true,
+      "entity_types": [
+        "PerformanceSummary"
+      ],
+      "record_keys": {
+        "PerformanceSummary": [
+          "id"
+        ]
+      },
+      "valid_from": {
+        "PerformanceSummary": "Data_As_Of_Date"
+      },
+      "links": [
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "Employee",
+            "column": "Employee_ID"
+          },
+          "relation": "HAS_PERFORMANCE_SUMMARY",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "PerformanceSummary"
+          }
+        }
+      ]
+    },
+    {
+      "table": "kpi_catalog",
+      "matching_csv": "KPI_Catalog.csv",
+      "required": true,
+      "entity_types": [
+        "KPI"
+      ]
+    },
+    {
+      "table": "employee_performance_evidence_monthly",
+      "matching_csv": "Employee_Performance_Evidence_Monthly.csv",
+      "required": true,
+      "entity_types": [
+        "PerformanceEvidence"
+      ],
+      "links": [
+        {
+          "source": {
+            "mode": "source_record_ref",
+            "entity_type": "PerformanceRecord",
+            "source_object": "employee_performance_monthly",
+            "record_key_columns": [
+              "Employee_ID",
+              "Performance_Month"
+            ]
+          },
+          "relation": "HAS_EVIDENCE",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "PerformanceEvidence"
+          }
+        },
+        {
+          "source": {
+            "mode": "row_entity",
+            "entity_type": "PerformanceEvidence"
+          },
+          "relation": "MEASURES",
+          "target": {
+            "mode": "business_id",
+            "entity_type": "KPI",
+            "column": "KPI_ID"
+          }
+        }
+      ]
+    },
+    {
+      "table": "employee_attendance",
+      "matching_csv": "Employee_Attendance.csv",
+      "required": true,
+      "entity_types": [
+        "AttendanceRecord"
+      ],
+      "record_keys": {
+        "AttendanceRecord": [
+          "id"
+        ]
+      },
+      "valid_from": {
+        "AttendanceRecord": "Data_As_Of_Date"
+      },
+      "links": [
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "Employee",
+            "column": "Employee_ID"
+          },
+          "relation": "HAS_ATTENDANCE_RECORD",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "AttendanceRecord"
+          }
+        }
+      ]
+    },
+    {
+      "table": "skill_catalog",
+      "matching_csv": "Skill_Catalog.csv",
+      "required": true,
+      "entity_types": [
+        "Skill"
+      ]
+    },
+    {
+      "table": "employee_skills",
+      "matching_csv": "Employee_Skills.csv",
+      "required": true,
+      "entity_types": [
+        "EmployeeSkill"
+      ],
+      "record_keys": {
+        "EmployeeSkill": [
+          "id"
+        ]
+      },
+      "valid_from": {
+        "EmployeeSkill": "Data_As_Of_Date"
+      },
+      "links": [
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "Employee",
+            "column": "Employee_ID"
+          },
+          "relation": "HAS_SKILL",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "EmployeeSkill"
+          }
+        },
+        {
+          "source": {
+            "mode": "row_entity",
+            "entity_type": "EmployeeSkill"
+          },
+          "relation": "OF_SKILL",
+          "target": {
+            "mode": "business_id",
+            "entity_type": "Skill",
+            "column": "Skill_ID"
+          }
+        }
+      ]
+    },
+    {
+      "table": "position_requirements",
+      "matching_csv": "Position_Requirements.csv",
+      "required": true,
+      "entity_types": [
+        "PositionRequirement"
+      ],
+      "record_keys": {
+        "PositionRequirement": [
+          "id"
+        ]
+      },
+      "valid_from": {
+        "PositionRequirement": "Data_As_Of_Date"
+      },
+      "links": [
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "Position",
+            "column": "Position_ID"
+          },
+          "relation": "HAS_REQUIREMENT",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "PositionRequirement"
+          }
+        }
+      ]
+    },
+    {
+      "table": "position_skill_requirements",
+      "matching_csv": "Position_Skill_Requirements.csv",
+      "required": true,
+      "entity_types": [
+        "PositionSkillRequirement"
+      ],
+      "record_keys": {
+        "PositionSkillRequirement": [
+          "id"
+        ]
+      },
+      "valid_from": {
+        "PositionSkillRequirement": "Data_As_Of_Date"
+      },
+      "links": [
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "Position",
+            "column": "Position_ID"
+          },
+          "relation": "REQUIRES_SKILL",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "PositionSkillRequirement"
+          }
+        },
+        {
+          "source": {
+            "mode": "row_entity",
+            "entity_type": "PositionSkillRequirement"
+          },
+          "relation": "OF_SKILL",
+          "target": {
+            "mode": "business_id",
+            "entity_type": "Skill",
+            "column": "Skill_ID"
+          }
+        }
+      ]
+    },
+    {
+      "table": "learning_course_catalog",
+      "matching_csv": "Learning_Course_Catalog.csv",
+      "required": true,
+      "entity_types": [
+        "LearningCourse"
+      ],
+      "links": [
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "LearningCourse",
+            "column": "Course_ID"
+          },
+          "relation": "DEVELOPS_SKILL",
+          "target": {
+            "mode": "business_id",
+            "entity_type": "Skill",
+            "column": "Skill_ID"
+          }
+        }
+      ]
+    },
+    {
+      "table": "employee_learning_history",
+      "matching_csv": "Employee_Learning_History.csv",
+      "required": true,
+      "entity_types": [
+        "LearningRecord"
+      ],
+      "links": [
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "Employee",
+            "column": "Employee_ID"
+          },
+          "relation": "HAS_LEARNING_RECORD",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "LearningRecord"
+          }
+        },
+        {
+          "source": {
+            "mode": "row_entity",
+            "entity_type": "LearningRecord"
+          },
+          "relation": "FOR_COURSE",
+          "target": {
+            "mode": "business_id",
+            "entity_type": "LearningCourse",
+            "column": "Course_ID"
+          }
+        },
+        {
+          "source": {
+            "mode": "row_entity",
+            "entity_type": "LearningRecord"
+          },
+          "relation": "DEVELOPS_SKILL",
+          "target": {
+            "mode": "business_id",
+            "entity_type": "Skill",
+            "column": "Skill_ID"
+          }
+        }
+      ]
+    },
+    {
+      "table": "workforce_movement_history",
+      "matching_csv": "Workforce_Movement_History.csv",
+      "required": true,
+      "entity_types": [
+        "CareerMovement"
+      ],
+      "links": [
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "Employee",
+            "column": "Employee_ID"
+          },
+          "relation": "HAS_CAREER_MOVEMENT",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "CareerMovement"
+          }
+        }
+      ]
+    },
+    {
+      "table": "position_vacancy_history",
+      "matching_csv": "Position_Vacancy_History.csv",
+      "required": true,
+      "entity_types": [
+        "VacancyRecord"
+      ],
+      "links": [
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "Position",
+            "column": "Position_ID"
+          },
+          "relation": "HAS_VACANCY",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "VacancyRecord"
+          }
+        }
+      ]
+    },
+    {
+      "table": "department_budget",
+      "matching_csv": "Department_Budget.csv",
+      "required": true,
+      "entity_types": [
+        "DepartmentBudget"
+      ],
+      "links": [
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "Department",
+            "column": "Department_ID"
+          },
+          "relation": "HAS_BUDGET",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "DepartmentBudget"
+          }
+        }
+      ]
+    },
+    {
+      "table": "position_budget",
+      "matching_csv": "Position_Budget.csv",
+      "required": true,
+      "entity_types": [
+        "PositionBudget"
+      ],
+      "links": [
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "Position",
+            "column": "Position_ID"
+          },
+          "relation": "HAS_BUDGET",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "PositionBudget"
+          }
+        }
+      ]
+    },
+    {
+      "table": "monthly_headcount_snapshot",
+      "matching_csv": "Monthly_Headcount_Snapshot.csv",
+      "required": true,
+      "entity_types": [
+        "HeadcountSnapshot"
+      ],
+      "record_keys": {
+        "HeadcountSnapshot": [
+          "id"
+        ]
+      },
+      "valid_from": {
+        "HeadcountSnapshot": "Data_As_Of_Date"
+      },
+      "links": [
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "Department",
+            "column": "Department_ID"
+          },
+          "relation": "HAS_HEADCOUNT_SNAPSHOT",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "HeadcountSnapshot"
+          }
+        }
+      ]
+    },
+    {
+      "table": "daily_headcount_activity",
+      "matching_csv": "Daily_Headcount_Activity.csv",
+      "required": true,
+      "entity_types": [
+        "DailyWorkforceActivity"
+      ],
+      "record_keys": {
+        "DailyWorkforceActivity": [
+          "id"
+        ]
+      },
+      "valid_from": {
+        "DailyWorkforceActivity": "Activity_Date"
+      },
+      "links": [
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "Department",
+            "column": "Department_ID"
+          },
+          "relation": "HAS_DAILY_WORKFORCE_ACTIVITY",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "DailyWorkforceActivity"
+          }
+        }
+      ]
+    },
+    {
+      "table": "workforce_demand_drivers",
+      "matching_csv": "Workforce_Demand_Drivers.csv",
+      "required": true,
+      "entity_types": [
+        "WorkforceDemandDriver"
+      ],
+      "links": [
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "Department",
+            "column": "Department_ID"
+          },
+          "relation": "HAS_DEMAND_DRIVER",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "WorkforceDemandDriver"
+          }
+        }
+      ]
+    },
+    {
+      "table": "headcount_exception_register",
+      "matching_csv": "Headcount_Exception_Register.csv",
+      "required": true,
+      "entity_types": [
+        "HeadcountException"
+      ],
+      "links": [
+        {
+          "source": {
+            "mode": "business_id",
+            "entity_type": "Department",
+            "column": "Department_ID"
+          },
+          "relation": "HAS_HEADCOUNT_EXCEPTION",
+          "target": {
+            "mode": "row_entity",
+            "entity_type": "HeadcountException"
+          }
+        }
+      ]
+    },
+    {
+      "table": "headcount_management_rules",
+      "matching_csv": "Headcount_Management_Rules.csv",
+      "required": false,
+      "entity_types": [
+        "DecisionRule"
+      ]
+    }
+  ],
+  "intentionally_not_loaded": [
+    {
+      "table": "headcount_scenario_assumptions",
+      "reason": "Step-3 classified numeric scenario columns as scenario_assumption_value but did not define one-to-many normalization into ScenarioAssumption.assumptionName/numericValue. Step 7 will not invent that normalization."
+    },
+    {
+      "table": "current_headcount_summary",
+      "reason": "Dashboard aggregate/summary table; authoritative detailed snapshot and budget sources are loaded instead."
+    },
+    {
+      "table": "department_performance_monthly",
+      "reason": "Department aggregate; individual performance/evidence sources are loaded instead."
+    },
+    {
+      "table": "employee_development_recommendation",
+      "reason": "Derived recommendation output, not a base HR fact for current graph load."
+    },
+    {
+      "table": "employee_learning_profile_summary",
+      "reason": "Derived summary; detailed learning/performance/skill sources are loaded instead."
+    },
+    {
+      "table": "historical_employee_register",
+      "reason": "No HistoricalEmployee ontology entity exists in HR Ontology v1."
+    },
+    {
+      "table": "headcount_management_metric_definitions",
+      "reason": "Metric registry metadata; not modeled as graph facts in HR Ontology v1."
+    },
+    {
+      "table": "learning_data_package_manifest",
+      "reason": "Operational package metadata only."
+    },
+    {
+      "table": "learning_data_quality_report",
+      "reason": "Operational data-quality metadata only."
+    },
+    {
+      "table": "performance_data_package_manifest",
+      "reason": "Operational package metadata only."
+    },
+    {
+      "table": "performance_data_quality_report",
+      "reason": "Operational data-quality metadata only."
+    },
+    {
+      "table": "performance_cycle",
+      "reason": "PerformanceCycle is not an ontology entity in HR Ontology v1."
+    },
+    {
+      "table": "performance_role_mapping",
+      "reason": "Configuration/denormalized mapping table; base Position/KPI/Department facts are loaded from authoritative sources."
+    },
+    {
+      "table": "role_kpi_template",
+      "reason": "Configuration table; KPI evidence and KPI catalog are loaded from authoritative sources."
+    },
+    {
+      "table": "skill_course_mapping",
+      "reason": "LearningCourse->Skill relationship is loaded from Learning_Course_Catalog, avoiding duplicate relationship provenance."
+    },
+    {
+      "table": "employee_kpi_assignment",
+      "reason": "Its Assignment_ID represents KPI assignment semantics while current ontology Assignment is workforce-position assignment; loading it as Assignment would risk identity collision."
+    },
+    {
+      "table": "kpi_skill_development_map",
+      "reason": "No confirmed KPI->Skill relationship exists in HR Ontology v1."
+    }
+  ],
+  "bundled_schema_only_not_loaded": [
+    "employee_hr_operational_state",
+    "hr_action_process_catalog",
+    "hr_action_process_fields",
+    "hr_action_record_events",
+    "hr_action_records"
+  ],
+  "known_supabase_snapshot_gaps": [
+    "HR_Decision_Cases.csv and related Decision Trigger CSVs are not represented by the bundled tables.sql snapshot.",
+    "Data/Simulation datasets are not represented by the bundled tables.sql snapshot."
+  ]
+}

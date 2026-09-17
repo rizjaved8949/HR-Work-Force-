@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: hr-ontology-management
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements-management.txt
+    startCommand: uvicorn management_portal:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: GRAPH_BACKEND
+        value: supabase
+      - key: SUPABASE_GRAPH_NODES_TABLE
+        value: kg_nodes
+      - key: SUPABASE_GRAPH_RELATIONSHIPS_TABLE
+        value: kg_relationships
+      - key: STEP9_TENANT_ID
+        value: ORGANIZATION-001
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SECRET_KEY
+        sync: false
+      - key: SUPABASE_PUBLISHABLE_KEY
+        sync: false
+      - key: MANAGEMENT_ALLOWED_ORIGINS
+        sync: false

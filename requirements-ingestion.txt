@@ -1,0 +1,2 @@
+# Optional adapter dependency used only when ingesting .xlsx files.
+openpyxl>=3.1,<4

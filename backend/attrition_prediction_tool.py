@@ -6,8 +6,36 @@ from typing import Any
 import numpy as np
 import pandas as pd
 from catboost import CatBoostClassifier, Pool
-from langchain_core.tools import BaseTool, tool
 from pydantic import BaseModel, Field
+
+try:
+    from langchain_core.tools import BaseTool, tool
+except ImportError:  # Lightweight fallback for local validation/minimal installs.
+    class BaseTool:  # pragma: no cover - real app installs langchain-core
+        pass
+
+    class _LocalTool:
+        def __init__(self, function):
+            self.function = function
+            self.name = function.__name__
+            self.description = function.__doc__ or ""
+
+        def invoke(self, arguments: dict[str, Any]):
+            return self.function(**arguments)
+
+        def __call__(self, *args, **kwargs):
+            return self.function(*args, **kwargs)
+
+    def tool(*decorator_args, **decorator_kwargs):
+        def decorate(function):
+            local = _LocalTool(function)
+            if decorator_args and isinstance(decorator_args[0], str):
+                local.name = decorator_args[0]
+            return local
+
+        if decorator_args and callable(decorator_args[0]):
+            return decorate(decorator_args[0])
+        return decorate
 
 EXPECTED_FEATURES = [
     "Tenure_Months",
@@ -185,6 +213,46 @@ class AttritionPredictor:
             for feature, _ in ranked_features[:limit]
         ]
 
+    def _predict_frame(self, input_frame: pd.DataFrame) -> dict[str, Any]:
+        """Run the already-loaded CatBoost model on an exact model-contract frame.
+
+        Step 9 reuses this path for ontology-resolved features so model scoring,
+        thresholding, and SHAP reason selection remain identical to the legacy path.
+        """
+        model_pool = Pool(
+            data=input_frame,
+            cat_features=CATEGORICAL_FEATURES,
+            feature_names=self.feature_order,
+        )
+
+        attrition_probability = float(
+            self.model.predict_proba(model_pool)[0, 1]
+        )
+        predicted_label = "Yes" if attrition_probability >= 0.50 else "No"
+        top_reasons = self._build_reasons(
+            model_pool=model_pool, predicted_label=predicted_label, limit=3
+        )
+        return {
+            "attrition": predicted_label,
+            "top_reasons": top_reasons,
+        }
+
+    def predict_feature_values(self, values: dict[str, Any]) -> dict[str, Any]:
+        """Score values already adapted to the saved CatBoost feature contract.
+
+        Unknown keys are ignored and missing keys preserve the audited legacy
+        behavior: numeric -> NaN, categorical -> "Missing".
+        """
+        prepared: dict[str, Any] = {}
+        for feature in self.feature_order:
+            raw_value = values.get(feature)
+            if feature in CATEGORICAL_FEATURES:
+                prepared[feature] = self._normalize_yes_no(raw_value)
+            else:
+                prepared[feature] = self._to_float(raw_value)
+        frame = pd.DataFrame([prepared], columns=self.feature_order)
+        return self._predict_frame(frame)
+
     def predict(
         self,
         employee_record: dict[str, Any],
@@ -197,36 +265,8 @@ class AttritionPredictor:
                 "top_reasons": [],
             }
 
-        input_frame, _, _ = self._extract_features(
-            employee_record
-        )
-
-        model_pool = Pool(
-            data=input_frame,
-            cat_features=CATEGORICAL_FEATURES,
-            feature_names=self.feature_order,
-        )
-
-        attrition_probability = float(
-            self.model.predict_proba(model_pool)[0, 1]
-        )
-
-        predicted_label = (
-            "Yes"
-            if attrition_probability >= 0.50
-            else "No"
-        )
-
-        top_reasons = self._build_reasons(
-            model_pool=model_pool,
-            predicted_label=predicted_label,
-            limit=3,
-        )
-
-        return {
-            "attrition": predicted_label,
-            "top_reasons": top_reasons,
-        }
+        input_frame, _, _ = self._extract_features(employee_record)
+        return self._predict_frame(input_frame)
 
 
 def create_attrition_prediction_tool(model_path: str | Path) -> BaseTool:

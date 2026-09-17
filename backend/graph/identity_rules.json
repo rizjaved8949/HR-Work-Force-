@@ -1,0 +1,96 @@
+{
+  "version": "1.0.0-step4",
+  "ontology_version": "1.0.2-draft",
+  "description": "Knowledge-graph identity strategy. Explicit business IDs are used where the ontology has a stable ID; record-like entities without a stable business ID use the source-record identity supplied by the ingestion layer.",
+  "default_mode": "source_record",
+  "entities": {
+    "Organization": {
+      "mode": "ontology_property",
+      "property": "organizationId"
+    },
+    "BusinessUnit": {
+      "mode": "ontology_property",
+      "property": "businessUnitId"
+    },
+    "Department": {
+      "mode": "ontology_property",
+      "property": "departmentId"
+    },
+    "OrganizationalUnit": {
+      "mode": "ontology_property",
+      "property": "organizationalUnitId"
+    },
+    "WorkLocation": {
+      "mode": "ontology_property",
+      "property": "workLocationId"
+    },
+    "CostCenter": {
+      "mode": "ontology_property",
+      "property": "costCenterId"
+    },
+    "Employee": {
+      "mode": "ontology_property",
+      "property": "employeeId"
+    },
+    "Position": {
+      "mode": "ontology_property",
+      "property": "positionId"
+    },
+    "Assignment": {
+      "mode": "ontology_property",
+      "property": "assignmentId"
+    },
+    "KPI": {
+      "mode": "ontology_property",
+      "property": "kpiId"
+    },
+    "PerformanceEvidence": {
+      "mode": "ontology_property",
+      "property": "evidenceId"
+    },
+    "Skill": {
+      "mode": "ontology_property",
+      "property": "skillId"
+    },
+    "LearningCourse": {
+      "mode": "ontology_property",
+      "property": "courseId"
+    },
+    "LearningRecord": {
+      "mode": "ontology_property",
+      "property": "learningRecordId"
+    },
+    "CareerMovement": {
+      "mode": "ontology_property",
+      "property": "movementId"
+    },
+    "VacancyRecord": {
+      "mode": "ontology_property",
+      "property": "vacancyRecordId"
+    },
+    "DepartmentBudget": {
+      "mode": "ontology_property",
+      "property": "departmentBudgetRecordId"
+    },
+    "PositionBudget": {
+      "mode": "ontology_property",
+      "property": "positionBudgetId"
+    },
+    "WorkforceDemandDriver": {
+      "mode": "ontology_property",
+      "property": "driverRecordId"
+    },
+    "HeadcountException": {
+      "mode": "ontology_property",
+      "property": "exceptionId"
+    },
+    "DecisionRule": {
+      "mode": "ontology_property",
+      "property": "ruleId"
+    },
+    "DecisionCase": {
+      "mode": "ontology_property",
+      "property": "caseId"
+    }
+  }
+}

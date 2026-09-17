@@ -1,0 +1,68 @@
+{
+  "plan_id": "example-partner-workers-v1",
+  "version": "1.0.0",
+  "tenant_id": "ORG-EXAMPLE",
+  "source_system": "partner_hrms",
+  "source_object": "workers",
+  "source_format": "csv",
+  "ontology_version": "1.0.2-draft",
+  "status": "draft",
+  "property_mappings": [
+    {
+      "source_column": "staff_id",
+      "ontology_path": "Employee.employeeId",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ]
+    },
+    {
+      "source_column": "full_name",
+      "ontology_path": "Employee.name",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ]
+    },
+    {
+      "source_column": "monthly_pay",
+      "ontology_path": "CompensationRecord.monthlyAmount",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ]
+    },
+    {
+      "source_column": "pay_currency",
+      "ontology_path": "CompensationRecord.currency",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ]
+    }
+  ],
+  "entity_rules": [
+    {
+      "entity_type": "CompensationRecord",
+      "record_key_columns": [
+        "staff_id",
+        "effective_date"
+      ],
+      "valid_from_column": "effective_date",
+      "valid_to_column": null
+    }
+  ],
+  "relationship_mappings": [
+    {
+      "relation_type": "HAS_COMPENSATION",
+      "source_entity_type": "Employee",
+      "target_entity_type": "CompensationRecord",
+      "target_mode": "same_row_entity",
+      "target_source_column": null,
+      "skip_if_empty": true
+    }
+  ],
+  "approved_by": null,
+  "approved_at": null,
+  "notes": "Example only. Review mappings against the actual organization schema before approval."
+}

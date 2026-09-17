@@ -1,0 +1,1093 @@
+{
+  "version": "1.0.0-step4",
+  "ontology_version": "1.0.2-draft",
+  "identity_rules_version": "1.0.0-step4",
+  "storage_model": "property_graph",
+  "base_node_label": "KGNode",
+  "tenant_isolation": {
+    "required": true,
+    "tenant_property": "kg_tenant_id",
+    "rule": "Every node and relationship is tenant-scoped; cross-tenant relationships are rejected."
+  },
+  "node_metadata": [
+    "kg_graph_id",
+    "kg_tenant_id",
+    "kg_entity_type",
+    "kg_ontology_version",
+    "kg_provenance_json",
+    "kg_valid_from",
+    "kg_valid_to",
+    "kg_created_at",
+    "kg_updated_at"
+  ],
+  "relationship_metadata": [
+    "kg_graph_id",
+    "kg_tenant_id",
+    "kg_ontology_version",
+    "kg_provenance_json",
+    "kg_valid_from",
+    "kg_valid_to",
+    "kg_created_at",
+    "kg_updated_at"
+  ],
+  "nodes": [
+    {
+      "label": "Organization",
+      "module": "organization_structure",
+      "property_names": [
+        "organizationId",
+        "name",
+        "organizationType",
+        "country",
+        "currency",
+        "fiscalYearStartMonth",
+        "standardWorkweekHours",
+        "workforceDataAsOfDate"
+      ],
+      "identity_mode": "ontology_property",
+      "identity_property": "organizationId"
+    },
+    {
+      "label": "BusinessUnit",
+      "module": "organization_structure",
+      "property_names": [
+        "businessUnitId",
+        "name",
+        "activeStatus",
+        "effectiveStartDate",
+        "effectiveEndDate"
+      ],
+      "identity_mode": "ontology_property",
+      "identity_property": "businessUnitId"
+    },
+    {
+      "label": "Department",
+      "module": "organization_structure",
+      "property_names": [
+        "departmentId",
+        "name",
+        "departmentCode",
+        "activeStatus",
+        "effectiveStartDate",
+        "effectiveEndDate"
+      ],
+      "identity_mode": "ontology_property",
+      "identity_property": "departmentId"
+    },
+    {
+      "label": "OrganizationalUnit",
+      "module": "organization_structure",
+      "property_names": [
+        "organizationalUnitId",
+        "name",
+        "unitType",
+        "activeStatus"
+      ],
+      "identity_mode": "ontology_property",
+      "identity_property": "organizationalUnitId"
+    },
+    {
+      "label": "WorkLocation",
+      "module": "organization_structure",
+      "property_names": [
+        "workLocationId",
+        "name",
+        "locationType",
+        "city",
+        "region",
+        "operationalCapacity"
+      ],
+      "identity_mode": "ontology_property",
+      "identity_property": "workLocationId"
+    },
+    {
+      "label": "CostCenter",
+      "module": "organization_structure",
+      "property_names": [
+        "costCenterId",
+        "name",
+        "currency",
+        "activeStatus",
+        "effectiveStartDate",
+        "effectiveEndDate"
+      ],
+      "identity_mode": "ontology_property",
+      "identity_property": "costCenterId"
+    },
+    {
+      "label": "Employee",
+      "module": "employee_employment",
+      "property_names": [
+        "employeeId",
+        "name"
+      ],
+      "identity_mode": "ontology_property",
+      "identity_property": "employeeId"
+    },
+    {
+      "label": "Employment",
+      "module": "employee_employment",
+      "property_names": [
+        "hireDate",
+        "employeeStatus",
+        "employmentType",
+        "employeeCategory",
+        "careerLevel",
+        "jobLevel",
+        "workMode",
+        "shiftType",
+        "standardWeeklyHours",
+        "tenureMonths",
+        "yearsInCompany",
+        "headcountInclusionCategory",
+        "includedInApprovedHeadcount",
+        "dataAsOfDate",
+        "roleBand"
+      ],
+      "identity_mode": "source_record",
+      "identity_property": null
+    },
+    {
+      "label": "Position",
+      "module": "position_role",
+      "property_names": [
+        "positionId",
+        "title",
+        "designation",
+        "jobLevel",
+        "employmentType",
+        "workModeRequirement",
+        "shiftRequirement",
+        "positionStatus",
+        "vacancyPlanningStatus",
+        "criticality",
+        "approvedPosition",
+        "budgetedPosition",
+        "fullTimeEquivalentCapacity",
+        "approvalDate",
+        "effectiveStartDate",
+        "effectiveEndDate",
+        "freezeStatus",
+        "workforcePlanYear",
+        "headcountInclusionCategory"
+      ],
+      "identity_mode": "ontology_property",
+      "identity_property": "positionId"
+    },
+    {
+      "label": "Assignment",
+      "module": "assignment_reporting",
+      "property_names": [
+        "assignmentId",
+        "startDate",
+        "endDate",
+        "status",
+        "assignmentType",
+        "fullTimeEquivalent",
+        "dataAsOfDate"
+      ],
+      "identity_mode": "ontology_property",
+      "identity_property": "assignmentId"
+    },
+    {
+      "label": "CompensationRecord",
+      "module": "compensation",
+      "property_names": [
+        "monthlyAmount",
+        "currency",
+        "salaryVsMarketPercentage",
+        "lastIncrementPercentage",
+        "payConcernRaisedLast6Months"
+      ],
+      "identity_mode": "source_record",
+      "identity_property": null
+    },
+    {
+      "label": "ExperienceProfile",
+      "module": "career_mobility",
+      "property_names": [
+        "totalExperienceYears",
+        "relevantExperienceYears",
+        "yearsInCurrentRole",
+        "leadershipExperienceYears",
+        "projectsCompleted",
+        "highImpactProjects",
+        "previousSameRole",
+        "previousDepartmentExperience",
+        "crossFunctionalProjects",
+        "projectSuccessRatePercentage",
+        "experienceScore",
+        "monthsSinceLastPromotion"
+      ],
+      "identity_mode": "source_record",
+      "identity_property": null
+    },
+    {
+      "label": "EngagementRecord",
+      "module": "engagement_experience",
+      "property_names": [
+        "engagementScore",
+        "jobSatisfactionScore",
+        "workLifeBalanceScore",
+        "managerRelationshipScore",
+        "careerGrowthScore",
+        "dataAsOfDate"
+      ],
+      "identity_mode": "source_record",
+      "identity_property": null
+    },
+    {
+      "label": "PerformanceRecord",
+      "module": "performance_kpi",
+      "property_names": [
+        "assessmentPeriod",
+        "kpiAchievementPercentage",
+        "performanceTrend6M",
+        "productivityScore",
+        "goalCompletionScore",
+        "managerRating",
+        "teamworkScore",
+        "qualityScore",
+        "learningAgilityScore",
+        "performanceScore",
+        "performanceBand",
+        "promotionReadiness",
+        "dataAsOfDate"
+      ],
+      "identity_mode": "source_record",
+      "identity_property": null
+    },
+    {
+      "label": "PerformanceSummary",
+      "module": "performance_kpi",
+      "property_names": [
+        "latestPerformanceMonth",
+        "latestPerformanceScore",
+        "latestPerformanceBand",
+        "average12MonthPerformanceScore",
+        "lowest12MonthPerformanceScore",
+        "highest12MonthPerformanceScore",
+        "threeMonthChangePoints",
+        "performanceTrend",
+        "averageEvidenceQuality",
+        "reviewStatus",
+        "dataAsOfDate"
+      ],
+      "identity_mode": "source_record",
+      "identity_property": null
+    },
+    {
+      "label": "KPI",
+      "module": "performance_kpi",
+      "property_names": [
+        "kpiId",
+        "name",
+        "group",
+        "measurementScope",
+        "measurementUnit",
+        "scoringDirection"
+      ],
+      "identity_mode": "ontology_property",
+      "identity_property": "kpiId"
+    },
+    {
+      "label": "PerformanceEvidence",
+      "module": "performance_kpi",
+      "property_names": [
+        "evidenceId",
+        "performanceMonth",
+        "actualKpiValue",
+        "floorValue",
+        "targetValue",
+        "stretchValue",
+        "kpiWeightPercentage",
+        "normalizedKpiScore",
+        "weightedScore",
+        "evidenceQualityScore",
+        "evidenceSourceMode",
+        "calculationVersion",
+        "dataAsOfDate",
+        "operationalTargetValue",
+        "operationalActualValue",
+        "operationalUnit",
+        "productionReplacementSource"
+      ],
+      "identity_mode": "ontology_property",
+      "identity_property": "evidenceId"
+    },
+    {
+      "label": "AttendanceRecord",
+      "module": "attendance_workload",
+      "property_names": [
+        "attendancePeriod",
+        "scheduledWorkingDays",
+        "presentDays",
+        "approvedLeaveDays",
+        "absentDays",
+        "unapprovedAbsentDays",
+        "absenceDaysLast90Days",
+        "lateArrivals",
+        "overtimeHoursLast30Days",
+        "attendancePercentage",
+        "punctualityPercentage",
+        "attendanceScore",
+        "attendanceStatus",
+        "dataAsOfDate"
+      ],
+      "identity_mode": "source_record",
+      "identity_property": null
+    },
+    {
+      "label": "Skill",
+      "module": "skills_competencies",
+      "property_names": [
+        "skillId",
+        "name",
+        "category",
+        "skillType"
+      ],
+      "identity_mode": "ontology_property",
+      "identity_property": "skillId"
+    },
+    {
+      "label": "EmployeeSkill",
+      "module": "skills_competencies",
+      "property_names": [
+        "skillStatus",
+        "proficiencyLevel",
+        "proficiencyLabel",
+        "skillScore",
+        "yearsUsingSkill",
+        "lastAssessedMonthsAgo",
+        "certificationStatus",
+        "isPrimarySkill",
+        "dataAsOfDate"
+      ],
+      "identity_mode": "source_record",
+      "identity_property": null
+    },
+    {
+      "label": "PositionRequirement",
+      "module": "position_role",
+      "property_names": [
+        "minimumTotalExperienceYears",
+        "minimumRelevantExperienceYears",
+        "minimumCompanyTenureMonths",
+        "minimumPerformanceScore",
+        "minimumAttendanceScore",
+        "minimumProficiencyLevel",
+        "leadershipRequired",
+        "dataAsOfDate"
+      ],
+      "identity_mode": "source_record",
+      "identity_property": null
+    },
+    {
+      "label": "PositionSkillRequirement",
+      "module": "skills_competencies",
+      "property_names": [
+        "requirementType",
+        "mandatory",
+        "minimumProficiencyLevel",
+        "minimumSkillScore",
+        "skillWeightPercentage",
+        "dataAsOfDate"
+      ],
+      "identity_mode": "source_record",
+      "identity_property": null
+    },
+    {
+      "label": "LearningCourse",
+      "module": "learning_development",
+      "property_names": [
+        "courseId",
+        "name",
+        "courseLevel",
+        "recommendedFromProficiencyLevel",
+        "targetProficiencyLevel",
+        "estimatedDurationHours",
+        "deliveryMode",
+        "certificateAvailable",
+        "activeStatus",
+        "dataAsOfDate"
+      ],
+      "identity_mode": "ontology_property",
+      "identity_property": "courseId"
+    },
+    {
+      "label": "LearningRecord",
+      "module": "learning_development",
+      "property_names": [
+        "learningRecordId",
+        "learningStatus",
+        "completionDate",
+        "currentProficiencyLevel",
+        "currentSkillScore",
+        "certificationStatus",
+        "positionRequiredSkill",
+        "dataAsOfDate"
+      ],
+      "identity_mode": "ontology_property",
+      "identity_property": "learningRecordId"
+    },
+    {
+      "label": "CareerMovement",
+      "module": "career_mobility",
+      "property_names": [
+        "movementId",
+        "movementType",
+        "effectiveDate",
+        "reason",
+        "voluntaryMovement",
+        "sourceSystem"
+      ],
+      "identity_mode": "ontology_property",
+      "identity_property": "movementId"
+    },
+    {
+      "label": "SuccessionReadiness",
+      "module": "succession_readiness",
+      "property_names": [
+        "candidateBaseEligibility",
+        "internalMobilityReadiness"
+      ],
+      "identity_mode": "source_record",
+      "identity_property": null
+    },
+    {
+      "label": "VacancyRecord",
+      "module": "headcount_vacancy",
+      "property_names": [
+        "vacancyRecordId",
+        "vacancyStartDate",
+        "vacancyEndDate",
+        "vacancyStatus",
+        "vacancyAgeDays",
+        "recruitmentStage",
+        "targetFillDate",
+        "vacancyReason",
+        "expectedTimeToFillDays",
+        "actualTimeToFillDays",
+        "dataAsOfDate"
+      ],
+      "identity_mode": "ontology_property",
+      "identity_property": "vacancyRecordId"
+    },
+    {
+      "label": "HeadcountSnapshot",
+      "module": "headcount_vacancy",
+      "property_names": [
+        "snapshotMonth",
+        "actualEmployeeCount",
+        "approvedPositionCount",
+        "budgetedPositionCount",
+        "actualFullTimeEquivalent",
+        "approvedFullTimeEquivalent",
+        "budgetedFullTimeEquivalent",
+        "vacantApprovedPositionCount",
+        "fundedVacantPositionCount",
+        "overstaffedEmployeeCount",
+        "employeesJoiningDuringMonth",
+        "employeesLeavingDuringMonth",
+        "employeesTransferredIn",
+        "employeesTransferredOut",
+        "employeesPromoted",
+        "vacancyRatePercentage",
+        "dataAsOfDate"
+      ],
+      "identity_mode": "source_record",
+      "identity_property": null
+    },
+    {
+      "label": "DailyWorkforceActivity",
+      "module": "headcount_vacancy",
+      "property_names": [
+        "activityDate",
+        "actualEmployeeCount",
+        "employeesAvailableForWork",
+        "employeesOnApprovedLeave",
+        "employeesAbsent",
+        "totalOvertimeHours",
+        "openPositionCount",
+        "criticalOpenPositionCount",
+        "workforceAvailabilityPercentage",
+        "dataQualityStatus",
+        "refreshTimestamp"
+      ],
+      "identity_mode": "source_record",
+      "identity_property": null
+    },
+    {
+      "label": "DepartmentBudget",
+      "module": "workforce_cost_budget",
+      "property_names": [
+        "departmentBudgetRecordId",
+        "budgetMonth",
+        "budgetedPositionCount",
+        "approvedSalaryAndBenefitsBudget",
+        "recruitmentBudget",
+        "trainingAndDevelopmentBudget",
+        "overtimeBudget",
+        "workforceContingencyBudget",
+        "totalApprovedPeopleBudget",
+        "actualSalaryCost",
+        "actualBenefitsCost",
+        "actualRecruitmentCost",
+        "actualTrainingCost",
+        "actualOvertimeCost",
+        "totalActualPeopleCost",
+        "remainingPeopleBudget",
+        "budgetUtilizationPercentage",
+        "budgetStatus",
+        "currency",
+        "dataAsOfDate"
+      ],
+      "identity_mode": "ontology_property",
+      "identity_property": "departmentBudgetRecordId"
+    },
+    {
+      "label": "PositionBudget",
+      "module": "workforce_cost_budget",
+      "property_names": [
+        "positionBudgetId",
+        "fiscalYear",
+        "annualSalaryBudget",
+        "annualBenefitsBudget",
+        "annualEmployerTaxAndContributionBudget",
+        "annualRecruitmentBudget",
+        "annualTrainingBudget",
+        "totalAnnualPositionCostBudget",
+        "budgetStartDate",
+        "budgetEndDate",
+        "budgetStatus",
+        "currency",
+        "dataAsOfDate"
+      ],
+      "identity_mode": "ontology_property",
+      "identity_property": "positionBudgetId"
+    },
+    {
+      "label": "WorkforceDemandDriver",
+      "module": "workforce_demand",
+      "property_names": [
+        "driverRecordId",
+        "snapshotMonth",
+        "name",
+        "value",
+        "measurementUnit",
+        "baselineValue",
+        "demandGrowthPercentage",
+        "expectedStaffingNeed",
+        "demandToApprovedHeadcountGap",
+        "dataAsOfDate"
+      ],
+      "identity_mode": "ontology_property",
+      "identity_property": "driverRecordId"
+    },
+    {
+      "label": "ScenarioAssumption",
+      "module": "workforce_demand",
+      "property_names": [
+        "scenarioCode",
+        "name",
+        "description",
+        "assumptionName",
+        "numericValue",
+        "unit",
+        "sourceDataAsOfDate",
+        "assumptionStatus",
+        "effectiveDate",
+        "source",
+        "version"
+      ],
+      "identity_mode": "source_record",
+      "identity_property": null
+    },
+    {
+      "label": "HeadcountException",
+      "module": "governance_decisions",
+      "property_names": [
+        "exceptionId",
+        "exceptionType",
+        "severity",
+        "metricName",
+        "currentValue",
+        "thresholdValue",
+        "description",
+        "recommendedAction",
+        "detectedDate",
+        "status"
+      ],
+      "identity_mode": "ontology_property",
+      "identity_property": "exceptionId"
+    },
+    {
+      "label": "DecisionRule",
+      "module": "governance_decisions",
+      "property_names": [
+        "ruleId",
+        "name",
+        "subjectType",
+        "triggerCondition",
+        "thresholdValue",
+        "severity",
+        "priority",
+        "suggestedAction",
+        "enabled"
+      ],
+      "identity_mode": "ontology_property",
+      "identity_property": "ruleId"
+    },
+    {
+      "label": "DecisionCase",
+      "module": "governance_decisions",
+      "property_names": [
+        "caseId",
+        "caseKey",
+        "caseType",
+        "title",
+        "status",
+        "priority",
+        "reason",
+        "suggestedAction",
+        "detectedAt",
+        "dataAsOf",
+        "isTriggerActive",
+        "evidence"
+      ],
+      "identity_mode": "ontology_property",
+      "identity_property": "caseId"
+    },
+    {
+      "label": "AttritionRiskPrediction",
+      "module": "analytical_outputs",
+      "property_names": [
+        "probability",
+        "riskThreshold",
+        "modelVersion",
+        "predictedAt",
+        "featureCompleteness"
+      ],
+      "identity_mode": "source_record",
+      "identity_property": null
+    },
+    {
+      "label": "SuccessorRecommendation",
+      "module": "analytical_outputs",
+      "property_names": [
+        "finalScore",
+        "qualificationStatus",
+        "readinessLabel",
+        "rank",
+        "hardRequirementGapCount"
+      ],
+      "identity_mode": "source_record",
+      "identity_property": null
+    },
+    {
+      "label": "ScenarioResult",
+      "module": "analytical_outputs",
+      "property_names": [
+        "scenarioCode",
+        "scenarioName",
+        "resultPayload",
+        "calculatedAt",
+        "sourceDataAsOfDate"
+      ],
+      "identity_mode": "source_record",
+      "identity_property": null
+    }
+  ],
+  "relationships": [
+    {
+      "source_label": "Organization",
+      "relation_type": "HAS_BUSINESS_UNIT",
+      "target_label": "BusinessUnit",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "BusinessUnit",
+      "relation_type": "HAS_DEPARTMENT",
+      "target_label": "Department",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "Department",
+      "relation_type": "PARENT_OF",
+      "target_label": "Department",
+      "cardinality": "one_to_many_optional"
+    },
+    {
+      "source_label": "Department",
+      "relation_type": "HAS_ORGANIZATIONAL_UNIT",
+      "target_label": "OrganizationalUnit",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "OrganizationalUnit",
+      "relation_type": "PARENT_OF",
+      "target_label": "OrganizationalUnit",
+      "cardinality": "one_to_many_optional"
+    },
+    {
+      "source_label": "Department",
+      "relation_type": "PRIMARY_LOCATION",
+      "target_label": "WorkLocation",
+      "cardinality": "many_to_one_optional"
+    },
+    {
+      "source_label": "Department",
+      "relation_type": "USES_COST_CENTER",
+      "target_label": "CostCenter",
+      "cardinality": "many_to_one_optional"
+    },
+    {
+      "source_label": "Employee",
+      "relation_type": "HAS_EMPLOYMENT",
+      "target_label": "Employment",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "Employment",
+      "relation_type": "WORKS_FOR",
+      "target_label": "Organization",
+      "cardinality": "many_to_one"
+    },
+    {
+      "source_label": "Employee",
+      "relation_type": "HAS_ASSIGNMENT",
+      "target_label": "Assignment",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "Assignment",
+      "relation_type": "TO_POSITION",
+      "target_label": "Position",
+      "cardinality": "many_to_one"
+    },
+    {
+      "source_label": "Assignment",
+      "relation_type": "IN_DEPARTMENT",
+      "target_label": "Department",
+      "cardinality": "many_to_one"
+    },
+    {
+      "source_label": "Assignment",
+      "relation_type": "IN_ORGANIZATIONAL_UNIT",
+      "target_label": "OrganizationalUnit",
+      "cardinality": "many_to_one_optional"
+    },
+    {
+      "source_label": "Assignment",
+      "relation_type": "AT_LOCATION",
+      "target_label": "WorkLocation",
+      "cardinality": "many_to_one_optional"
+    },
+    {
+      "source_label": "Assignment",
+      "relation_type": "CHARGED_TO",
+      "target_label": "CostCenter",
+      "cardinality": "many_to_one_optional"
+    },
+    {
+      "source_label": "Employee",
+      "relation_type": "REPORTS_TO",
+      "target_label": "Employee",
+      "cardinality": "many_to_one_optional"
+    },
+    {
+      "source_label": "Position",
+      "relation_type": "IN_DEPARTMENT",
+      "target_label": "Department",
+      "cardinality": "many_to_one"
+    },
+    {
+      "source_label": "Position",
+      "relation_type": "REPORTS_TO_POSITION",
+      "target_label": "Position",
+      "cardinality": "many_to_one_optional"
+    },
+    {
+      "source_label": "Position",
+      "relation_type": "AT_LOCATION",
+      "target_label": "WorkLocation",
+      "cardinality": "many_to_one_optional"
+    },
+    {
+      "source_label": "Position",
+      "relation_type": "CHARGED_TO",
+      "target_label": "CostCenter",
+      "cardinality": "many_to_one_optional"
+    },
+    {
+      "source_label": "Employee",
+      "relation_type": "HAS_COMPENSATION",
+      "target_label": "CompensationRecord",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "Employee",
+      "relation_type": "HAS_EXPERIENCE_PROFILE",
+      "target_label": "ExperienceProfile",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "Employee",
+      "relation_type": "HAS_ENGAGEMENT_RECORD",
+      "target_label": "EngagementRecord",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "Employee",
+      "relation_type": "HAS_PERFORMANCE_RECORD",
+      "target_label": "PerformanceRecord",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "Employee",
+      "relation_type": "HAS_PERFORMANCE_SUMMARY",
+      "target_label": "PerformanceSummary",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "PerformanceRecord",
+      "relation_type": "HAS_EVIDENCE",
+      "target_label": "PerformanceEvidence",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "PerformanceEvidence",
+      "relation_type": "MEASURES",
+      "target_label": "KPI",
+      "cardinality": "many_to_one"
+    },
+    {
+      "source_label": "Employee",
+      "relation_type": "HAS_ATTENDANCE_RECORD",
+      "target_label": "AttendanceRecord",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "Employee",
+      "relation_type": "HAS_SKILL",
+      "target_label": "EmployeeSkill",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "EmployeeSkill",
+      "relation_type": "OF_SKILL",
+      "target_label": "Skill",
+      "cardinality": "many_to_one"
+    },
+    {
+      "source_label": "Position",
+      "relation_type": "HAS_REQUIREMENT",
+      "target_label": "PositionRequirement",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "Position",
+      "relation_type": "REQUIRES_SKILL",
+      "target_label": "PositionSkillRequirement",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "PositionSkillRequirement",
+      "relation_type": "OF_SKILL",
+      "target_label": "Skill",
+      "cardinality": "many_to_one"
+    },
+    {
+      "source_label": "Employee",
+      "relation_type": "HAS_LEARNING_RECORD",
+      "target_label": "LearningRecord",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "LearningRecord",
+      "relation_type": "FOR_COURSE",
+      "target_label": "LearningCourse",
+      "cardinality": "many_to_one"
+    },
+    {
+      "source_label": "LearningRecord",
+      "relation_type": "DEVELOPS_SKILL",
+      "target_label": "Skill",
+      "cardinality": "many_to_one_optional"
+    },
+    {
+      "source_label": "LearningCourse",
+      "relation_type": "DEVELOPS_SKILL",
+      "target_label": "Skill",
+      "cardinality": "many_to_one"
+    },
+    {
+      "source_label": "Employee",
+      "relation_type": "HAS_CAREER_MOVEMENT",
+      "target_label": "CareerMovement",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "CareerMovement",
+      "relation_type": "FROM_DEPARTMENT",
+      "target_label": "Department",
+      "cardinality": "many_to_one_optional"
+    },
+    {
+      "source_label": "CareerMovement",
+      "relation_type": "TO_DEPARTMENT",
+      "target_label": "Department",
+      "cardinality": "many_to_one_optional"
+    },
+    {
+      "source_label": "CareerMovement",
+      "relation_type": "FROM_POSITION",
+      "target_label": "Position",
+      "cardinality": "many_to_one_optional"
+    },
+    {
+      "source_label": "CareerMovement",
+      "relation_type": "TO_POSITION",
+      "target_label": "Position",
+      "cardinality": "many_to_one_optional"
+    },
+    {
+      "source_label": "Employee",
+      "relation_type": "HAS_SUCCESSION_READINESS",
+      "target_label": "SuccessionReadiness",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "Position",
+      "relation_type": "HAS_VACANCY",
+      "target_label": "VacancyRecord",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "Department",
+      "relation_type": "HAS_HEADCOUNT_SNAPSHOT",
+      "target_label": "HeadcountSnapshot",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "Department",
+      "relation_type": "HAS_DAILY_WORKFORCE_ACTIVITY",
+      "target_label": "DailyWorkforceActivity",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "Department",
+      "relation_type": "HAS_BUDGET",
+      "target_label": "DepartmentBudget",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "Position",
+      "relation_type": "HAS_BUDGET",
+      "target_label": "PositionBudget",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "Department",
+      "relation_type": "HAS_DEMAND_DRIVER",
+      "target_label": "WorkforceDemandDriver",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "Department",
+      "relation_type": "HAS_HEADCOUNT_EXCEPTION",
+      "target_label": "HeadcountException",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "DecisionRule",
+      "relation_type": "GENERATES_CASE",
+      "target_label": "DecisionCase",
+      "cardinality": "one_to_many"
+    },
+    {
+      "source_label": "DecisionCase",
+      "relation_type": "ABOUT_EMPLOYEE",
+      "target_label": "Employee",
+      "cardinality": "many_to_one_optional"
+    },
+    {
+      "source_label": "DecisionCase",
+      "relation_type": "ABOUT_POSITION",
+      "target_label": "Position",
+      "cardinality": "many_to_one_optional"
+    },
+    {
+      "source_label": "DecisionCase",
+      "relation_type": "ABOUT_DEPARTMENT",
+      "target_label": "Department",
+      "cardinality": "many_to_one_optional"
+    },
+    {
+      "source_label": "AttritionRiskPrediction",
+      "relation_type": "ABOUT_EMPLOYEE",
+      "target_label": "Employee",
+      "cardinality": "many_to_one"
+    },
+    {
+      "source_label": "SuccessorRecommendation",
+      "relation_type": "TARGET_POSITION",
+      "target_label": "Position",
+      "cardinality": "many_to_one"
+    },
+    {
+      "source_label": "SuccessorRecommendation",
+      "relation_type": "RECOMMENDS_EMPLOYEE",
+      "target_label": "Employee",
+      "cardinality": "many_to_one"
+    },
+    {
+      "source_label": "ScenarioResult",
+      "relation_type": "USES_ASSUMPTION",
+      "target_label": "ScenarioAssumption",
+      "cardinality": "many_to_many"
+    },
+    {
+      "source_label": "BusinessUnit",
+      "relation_type": "LED_BY",
+      "target_label": "Position",
+      "cardinality": "many_to_one_optional"
+    },
+    {
+      "source_label": "Department",
+      "relation_type": "LED_BY",
+      "target_label": "Position",
+      "cardinality": "many_to_one_optional"
+    },
+    {
+      "source_label": "CostCenter",
+      "relation_type": "BUDGET_OWNED_BY",
+      "target_label": "Employee",
+      "cardinality": "many_to_one_optional"
+    },
+    {
+      "source_label": "ScenarioAssumption",
+      "relation_type": "APPLIES_TO_EMPLOYEE",
+      "target_label": "Employee",
+      "cardinality": "many_to_one_optional"
+    },
+    {
+      "source_label": "ScenarioAssumption",
+      "relation_type": "APPLIES_TO_DEPARTMENT",
+      "target_label": "Department",
+      "cardinality": "many_to_one_optional"
+    },
+    {
+      "source_label": "ScenarioAssumption",
+      "relation_type": "APPLIES_TO_POSITION",
+      "target_label": "Position",
+      "cardinality": "many_to_one_optional"
+    },
+    {
+      "source_label": "ScenarioAssumption",
+      "relation_type": "APPLIES_TO_COURSE",
+      "target_label": "LearningCourse",
+      "cardinality": "many_to_one_optional"
+    }
+  ]
+}

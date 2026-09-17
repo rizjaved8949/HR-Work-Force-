@@ -1,0 +1,489 @@
+{
+  "plan_id": "plan-ds-0a20e3c5eee445fa",
+  "version": "1.0.0",
+  "tenant_id": "NEXACORE-HR-001",
+  "source_system": "partner_hr",
+  "source_object": "nexacore_employee_feed",
+  "source_format": "records",
+  "ontology_version": "1.0.2-draft",
+  "status": "draft",
+  "property_mappings": [
+    {
+      "source_column": "org_code",
+      "ontology_path": "Organization.organizationId",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "company_name",
+      "ontology_path": "Organization.name",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "business_unit",
+      "ontology_path": "BusinessUnit.businessUnitId",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "division",
+      "ontology_path": "Department.departmentId",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "staff_no",
+      "ontology_path": "Employee.employeeId",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "worker_name",
+      "ontology_path": "Employee.name",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "position_code",
+      "ontology_path": "Position.positionId",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "designation",
+      "ontology_path": "Position.title",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "joined_on",
+      "ontology_path": "Employment.hireDate",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "emp_status",
+      "ontology_path": "Employment.employeeStatus",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "data_as_of",
+      "ontology_path": "Employment.dataAsOfDate",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "currency",
+      "ontology_path": "CompensationRecord.currency",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "monthly_income_pkr",
+      "ontology_path": "CompensationRecord.monthlyAmount",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "salary_market_gap_pct",
+      "ontology_path": "CompensationRecord.salaryVsMarketPercentage",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "last_raise_pct",
+      "ontology_path": "CompensationRecord.lastIncrementPercentage",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "pay_concern_recent",
+      "ontology_path": "CompensationRecord.payConcernRaisedLast6Months",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "months_since_promotion",
+      "ontology_path": "ExperienceProfile.monthsSinceLastPromotion",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "engagement_rating",
+      "ontology_path": "EngagementRecord.engagementScore",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "job_satisfaction",
+      "ontology_path": "EngagementRecord.jobSatisfactionScore",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "work_life_balance",
+      "ontology_path": "EngagementRecord.workLifeBalanceScore",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "manager_relation_score",
+      "ontology_path": "EngagementRecord.managerRelationshipScore",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "career_growth_rating",
+      "ontology_path": "EngagementRecord.careerGrowthScore",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "kpi_score_pct",
+      "ontology_path": "PerformanceRecord.kpiAchievementPercentage",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "overtime_last_30d",
+      "ontology_path": "AttendanceRecord.overtimeHoursLast30Days",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "primary_skill",
+      "ontology_path": "Skill.skillId",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "skill_proficiency",
+      "ontology_path": "EmployeeSkill.proficiencyLabel",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    }
+  ],
+  "entity_rules": [
+    {
+      "entity_type": "Employment",
+      "record_key_columns": [
+        "staff_no"
+      ],
+      "valid_from_column": null,
+      "valid_to_column": null
+    },
+    {
+      "entity_type": "CompensationRecord",
+      "record_key_columns": [
+        "staff_no",
+        "data_as_of"
+      ],
+      "valid_from_column": null,
+      "valid_to_column": null
+    },
+    {
+      "entity_type": "ExperienceProfile",
+      "record_key_columns": [
+        "staff_no",
+        "data_as_of"
+      ],
+      "valid_from_column": null,
+      "valid_to_column": null
+    },
+    {
+      "entity_type": "EngagementRecord",
+      "record_key_columns": [
+        "staff_no",
+        "data_as_of"
+      ],
+      "valid_from_column": null,
+      "valid_to_column": null
+    },
+    {
+      "entity_type": "PerformanceRecord",
+      "record_key_columns": [
+        "staff_no",
+        "data_as_of"
+      ],
+      "valid_from_column": null,
+      "valid_to_column": null
+    },
+    {
+      "entity_type": "AttendanceRecord",
+      "record_key_columns": [
+        "staff_no",
+        "data_as_of"
+      ],
+      "valid_from_column": null,
+      "valid_to_column": null
+    },
+    {
+      "entity_type": "EmployeeSkill",
+      "record_key_columns": [
+        "staff_no",
+        "primary_skill"
+      ],
+      "valid_from_column": null,
+      "valid_to_column": null
+    }
+  ],
+  "relationship_mappings": [
+    {
+      "relation_type": "HAS_BUSINESS_UNIT",
+      "source_entity_type": "Organization",
+      "target_entity_type": "BusinessUnit",
+      "target_mode": "same_row_entity",
+      "target_source_column": null,
+      "skip_if_empty": true
+    },
+    {
+      "relation_type": "HAS_DEPARTMENT",
+      "source_entity_type": "BusinessUnit",
+      "target_entity_type": "Department",
+      "target_mode": "same_row_entity",
+      "target_source_column": null,
+      "skip_if_empty": true
+    },
+    {
+      "relation_type": "HAS_EMPLOYMENT",
+      "source_entity_type": "Employee",
+      "target_entity_type": "Employment",
+      "target_mode": "same_row_entity",
+      "target_source_column": null,
+      "skip_if_empty": true
+    },
+    {
+      "relation_type": "REPORTS_TO",
+      "source_entity_type": "Employee",
+      "target_entity_type": "Employee",
+      "target_mode": "business_id_reference",
+      "target_source_column": "supervisor_staff_no",
+      "skip_if_empty": true
+    },
+    {
+      "relation_type": "IN_DEPARTMENT",
+      "source_entity_type": "Position",
+      "target_entity_type": "Department",
+      "target_mode": "same_row_entity",
+      "target_source_column": null,
+      "skip_if_empty": true
+    },
+    {
+      "relation_type": "HAS_COMPENSATION",
+      "source_entity_type": "Employee",
+      "target_entity_type": "CompensationRecord",
+      "target_mode": "same_row_entity",
+      "target_source_column": null,
+      "skip_if_empty": true
+    },
+    {
+      "relation_type": "HAS_EXPERIENCE_PROFILE",
+      "source_entity_type": "Employee",
+      "target_entity_type": "ExperienceProfile",
+      "target_mode": "same_row_entity",
+      "target_source_column": null,
+      "skip_if_empty": true
+    },
+    {
+      "relation_type": "HAS_ENGAGEMENT_RECORD",
+      "source_entity_type": "Employee",
+      "target_entity_type": "EngagementRecord",
+      "target_mode": "same_row_entity",
+      "target_source_column": null,
+      "skip_if_empty": true
+    },
+    {
+      "relation_type": "HAS_PERFORMANCE_RECORD",
+      "source_entity_type": "Employee",
+      "target_entity_type": "PerformanceRecord",
+      "target_mode": "same_row_entity",
+      "target_source_column": null,
+      "skip_if_empty": true
+    },
+    {
+      "relation_type": "HAS_ATTENDANCE_RECORD",
+      "source_entity_type": "Employee",
+      "target_entity_type": "AttendanceRecord",
+      "target_mode": "same_row_entity",
+      "target_source_column": null,
+      "skip_if_empty": true
+    },
+    {
+      "relation_type": "HAS_SKILL",
+      "source_entity_type": "Employee",
+      "target_entity_type": "EmployeeSkill",
+      "target_mode": "same_row_entity",
+      "target_source_column": null,
+      "skip_if_empty": true
+    },
+    {
+      "relation_type": "OF_SKILL",
+      "source_entity_type": "EmployeeSkill",
+      "target_entity_type": "Skill",
+      "target_mode": "same_row_entity",
+      "target_source_column": null,
+      "skip_if_empty": true
+    }
+  ],
+  "approved_by": null,
+  "approved_at": null,
+  "notes": null
+}

@@ -1,0 +1,111 @@
+{
+  "version": "1.0.0-step12",
+  "organizations": [
+    {
+      "tenant_id": "ORGANIZATION-001",
+      "name": "Current Organization",
+      "status": "active",
+      "country": null,
+      "currency": null,
+      "organization_type": null,
+      "is_default": true,
+      "legacy_default_access": true,
+      "created_by": "step12-bootstrap",
+      "created_at": "2026-09-17T13:54:17.243673Z",
+      "updated_at": "2026-09-17T13:54:17.243674Z",
+      "activated_at": "2026-09-17T13:54:17.243661Z",
+      "members": [],
+      "datasets": [],
+      "notes": "Bootstrapped from the existing Step-9 tenant so Step 12 remains non-breaking. Secondary organizations require explicit onboarding and access membership."
+    },
+    {
+      "tenant_id": "NEXACORE-HR-001",
+      "name": "NexaCore Technologies Pvt Ltd",
+      "status": "mapping_review",
+      "country": "Pakistan",
+      "currency": "PKR",
+      "organization_type": null,
+      "is_default": false,
+      "legacy_default_access": false,
+      "created_by": "local-dev",
+      "created_at": "2026-09-17T16:01:06.065758Z",
+      "updated_at": "2026-09-17T16:29:08.255890Z",
+      "activated_at": null,
+      "members": [
+        {
+          "user_id": "local-dev",
+          "role": "owner",
+          "added_at": "2026-09-17T16:01:06.065672Z",
+          "added_by": "local-dev"
+        }
+      ],
+      "datasets": [
+        {
+          "dataset_id": "ds-0a20e3c5eee445fa",
+          "tenant_id": "NEXACORE-HR-001",
+          "source_system": "partner_hr",
+          "source_object": "nexacore_employee_feed",
+          "source_format": "records",
+          "storage_key": "NEXACORE-HR-001/ds-0a20e3c5eee445fa.json",
+          "status": "mapping_review",
+          "row_count": 30,
+          "column_count": 30,
+          "mapping_plan_id": "plan-ds-0a20e3c5eee445fa",
+          "created_at": "2026-09-17T16:09:24.504075Z",
+          "updated_at": "2026-09-17T16:29:08.251434Z",
+          "last_error": null,
+          "load_result": null
+        },
+        {
+          "dataset_id": "ds-e68700f44b804df0",
+          "tenant_id": "NEXACORE-HR-001",
+          "source_system": "partner_hr",
+          "source_object": "nexacore_employee_feed",
+          "source_format": "records",
+          "storage_key": "NEXACORE-HR-001/ds-e68700f44b804df0.json",
+          "status": "registered",
+          "row_count": 30,
+          "column_count": 0,
+          "mapping_plan_id": null,
+          "created_at": "2026-09-17T16:09:31.722797Z",
+          "updated_at": "2026-09-17T16:09:31.722810Z",
+          "last_error": null,
+          "load_result": null
+        },
+        {
+          "dataset_id": "ds-b7cc6e233f3e43a0",
+          "tenant_id": "NEXACORE-HR-001",
+          "source_system": "partner_hr",
+          "source_object": "nexacore_employee_feed",
+          "source_format": "records",
+          "storage_key": "NEXACORE-HR-001/ds-b7cc6e233f3e43a0.json",
+          "status": "registered",
+          "row_count": 30,
+          "column_count": 0,
+          "mapping_plan_id": null,
+          "created_at": "2026-09-17T16:09:32.507921Z",
+          "updated_at": "2026-09-17T16:09:32.507931Z",
+          "last_error": null,
+          "load_result": null
+        },
+        {
+          "dataset_id": "ds-fa7cc0ec29534339",
+          "tenant_id": "NEXACORE-HR-001",
+          "source_system": "partner_hr",
+          "source_object": "nexacore_employee_feed",
+          "source_format": "csv",
+          "storage_key": "NEXACORE-HR-001/ds-fa7cc0ec29534339.json",
+          "status": "registered",
+          "row_count": 30,
+          "column_count": 0,
+          "mapping_plan_id": null,
+          "created_at": "2026-09-17T16:17:47.579423Z",
+          "updated_at": "2026-09-17T16:17:47.579436Z",
+          "last_error": null,
+          "load_result": null
+        }
+      ],
+      "notes": null
+    }
+  ]
+}

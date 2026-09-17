@@ -1,0 +1,113 @@
+{
+  "service": "employee_performance",
+  "status": "confirmed_current_contract",
+  "implementation_evidence": [
+    "backend/performance/repository.py",
+    "backend/performance/scoring.py",
+    "backend/performance/service.py",
+    "backend/performance/dashboard_service.py"
+  ],
+  "required_source_files": [
+    "Employee_Profile.csv",
+    "Performance_Role_Mapping.csv",
+    "KPI_Catalog.csv",
+    "Role_KPI_Template.csv",
+    "Employee_KPI_Assignment.csv",
+    "Employee_Performance_Evidence_Monthly.csv",
+    "Employee_Performance_Monthly.csv",
+    "Employee_Performance_Summary.csv",
+    "Department_Performance_Monthly.csv",
+    "Employee_Skills.csv",
+    "Skill_Catalog.csv",
+    "Position_Skill_Requirements.csv"
+  ],
+  "optional_source_files": [
+    "Learning_Course_Catalog.csv",
+    "KPI_Skill_Development_Map.csv",
+    "Skill_Course_Mapping.csv",
+    "Employee_Learning_History.csv",
+    "Employee_Development_Recommendation.csv",
+    "Employee_Learning_Profile_Summary.csv",
+    "Learning_Data_Quality_Report.csv"
+  ],
+  "supported_analysis_types": [
+    "overview",
+    "employee",
+    "employee_trend",
+    "kpi_breakdown",
+    "department_ranking",
+    "employee_ranking",
+    "distribution",
+    "attention",
+    "learning",
+    "recommendations",
+    "recalculate"
+  ],
+  "recalculation_inputs": [
+    {
+      "current_field": "Actual_KPI_Value",
+      "ontology_path": "PerformanceEvidence.actualKpiValue",
+      "required": true
+    },
+    {
+      "current_field": "Floor_Value",
+      "ontology_path": "PerformanceEvidence.floorValue",
+      "required": true
+    },
+    {
+      "current_field": "Target_Value",
+      "ontology_path": "PerformanceEvidence.targetValue",
+      "required": true
+    },
+    {
+      "current_field": "Stretch_Value",
+      "ontology_path": "PerformanceEvidence.stretchValue",
+      "required": true
+    },
+    {
+      "current_field": "Scoring_Direction",
+      "ontology_path": "KPI.scoringDirection",
+      "required": true
+    },
+    {
+      "current_field": "KPI_Weight_pct",
+      "ontology_path": "PerformanceEvidence.kpiWeightPercentage",
+      "required": true
+    },
+    {
+      "current_field": "Evidence_Quality_Score",
+      "ontology_path": "PerformanceEvidence.evidenceQualityScore",
+      "required": false
+    }
+  ],
+  "confirmed_scoring_anchors": {
+    "floor_score": 60,
+    "target_score": 85,
+    "stretch_score": 100,
+    "weight_total_percent": 100,
+    "weight_tolerance": 0.01
+  },
+  "bands": [
+    {
+      "minimum": 90,
+      "label": "Exceptional"
+    },
+    {
+      "minimum": 80,
+      "label": "Strong"
+    },
+    {
+      "minimum": 70,
+      "label": "Meets Expectations"
+    },
+    {
+      "minimum": 60,
+      "label": "Partially Meets Expectations"
+    },
+    {
+      "minimum": null,
+      "label": "Improvement Required"
+    }
+  ],
+  "missing_behavior": "Required recalculation evidence must be finite numeric and structurally valid; invalid evidence raises a scoring error. Optional learning datasets degrade learning/recommendation output without redefining performance scores."
+}

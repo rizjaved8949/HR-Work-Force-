@@ -1,0 +1,122 @@
+{
+  "service": "successor_replacement",
+  "status": "confirmed_current_contract",
+  "implementation_evidence": [
+    "backend/successor_service/services/feature_builder.py",
+    "backend/successor_service/services/scoring_engine.py",
+    "backend/successor_service/services/ranking_engine.py",
+    "backend/successor_service/resources/scoring_config.json"
+  ],
+  "required_source_files": [
+    "Employee_Profile.csv",
+    "Employee_Experience.csv",
+    "Employee_Performance.csv",
+    "Employee_Attendance.csv",
+    "Employee_Skills.csv",
+    "Position_Master.csv",
+    "Position_Requirements.csv",
+    "Position_Skill_Requirements.csv",
+    "Skill_Catalog.csv"
+  ],
+  "ontology_inputs": [
+    {
+      "ontology_path": "ExperienceProfile.totalExperienceYears",
+      "current_field": "Total_Experience_Years"
+    },
+    {
+      "ontology_path": "ExperienceProfile.relevantExperienceYears",
+      "current_field": "Relevant_Experience_Years"
+    },
+    {
+      "ontology_path": "Employment.tenureMonths",
+      "current_field": "Tenure_Months"
+    },
+    {
+      "ontology_path": "ExperienceProfile.leadershipExperienceYears",
+      "current_field": "Leadership_Experience_Years"
+    },
+    {
+      "ontology_path": "PerformanceRecord.performanceScore",
+      "current_field": "Performance_Score"
+    },
+    {
+      "ontology_path": "AttendanceRecord.attendanceScore",
+      "current_field": "Attendance_Score"
+    },
+    {
+      "ontology_path": "EmployeeSkill.proficiencyLevel",
+      "current_field": "Proficiency_Level"
+    },
+    {
+      "ontology_path": "EmployeeSkill.skillScore",
+      "current_field": "Skill_Score"
+    },
+    {
+      "ontology_path": "PositionRequirement.minimumTotalExperienceYears",
+      "current_field": "Minimum_Total_Experience_Years"
+    },
+    {
+      "ontology_path": "PositionRequirement.minimumRelevantExperienceYears",
+      "current_field": "Minimum_Relevant_Experience_Years"
+    },
+    {
+      "ontology_path": "PositionRequirement.minimumCompanyTenureMonths",
+      "current_field": "Minimum_Company_Tenure_Months"
+    },
+    {
+      "ontology_path": "PositionRequirement.minimumPerformanceScore",
+      "current_field": "Minimum_Performance_Score"
+    },
+    {
+      "ontology_path": "PositionRequirement.minimumAttendanceScore",
+      "current_field": "Minimum_Attendance_Score"
+    },
+    {
+      "ontology_path": "PositionRequirement.leadershipRequired",
+      "current_field": "Leadership_Required"
+    },
+    {
+      "ontology_path": "PositionSkillRequirement.minimumProficiencyLevel",
+      "current_field": "Minimum_Proficiency_Level"
+    },
+    {
+      "ontology_path": "PositionSkillRequirement.minimumSkillScore",
+      "current_field": "Minimum_Skill_Score"
+    },
+    {
+      "ontology_path": "PositionSkillRequirement.skillWeightPercentage",
+      "current_field": "Skill_Weight_pct"
+    },
+    {
+      "ontology_path": "PositionSkillRequirement.mandatory",
+      "current_field": "Mandatory_Flag"
+    },
+    {
+      "ontology_path": "SuccessionReadiness.candidateBaseEligibility",
+      "current_field": "Candidate_Base_Eligibility"
+    },
+    {
+      "ontology_path": "SuccessionReadiness.internalMobilityReadiness",
+      "current_field": "Internal_Mobility_Readiness"
+    }
+  ],
+  "confirmed_scoring": {
+    "experience": {
+      "total_weight": 0.35,
+      "relevant_weight": 0.45,
+      "company_tenure_weight": 0.2
+    },
+    "readiness_leadership": {
+      "readiness_weight": 0.7,
+      "leadership_weight": 0.3
+    },
+    "final": {
+      "skill_match_score": 0.5,
+      "experience_score": 0.15,
+      "performance_score": 0.15,
+      "attendance_score": 0.05,
+      "readiness_leadership_score": 0.15
+    }
+  },
+  "missing_behavior": "Missing mandatory source files are fatal. Candidate-specific invalid/missing evidence can cause that candidate to be skipped; missing skill can become a skill gap rather than a crash."
+}
