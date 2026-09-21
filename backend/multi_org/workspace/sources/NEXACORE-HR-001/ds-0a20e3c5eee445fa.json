@@ -3,7 +3,7 @@
   "dataset_id": "ds-0a20e3c5eee445fa",
   "source_system": "partner_hr",
   "source_object": "nexacore_employee_feed",
-  "source_format": "records",
+  "source_format": "csv",
   "rows": [
     {
       "org_code": "NEXACORE-HR-001",

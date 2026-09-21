@@ -28,6 +28,14 @@ class GraphRepository(Protocol):
         limit: int = 100,
     ) -> list[GraphNode]: ...
 
+    def find_nodes_by_ids(
+        self,
+        *,
+        tenant_id: str,
+        graph_ids: list[str],
+        limit: int = 500,
+    ) -> list[GraphNode]: ...
+
     def upsert_relationship(self, relationship: GraphRelationship) -> None: ...
 
     def get_relationship(
@@ -42,6 +50,14 @@ class GraphRepository(Protocol):
         target_graph_id: str | None = None,
         relation_type: str | None = None,
         limit: int = 100,
+    ) -> list[GraphRelationship]: ...
+
+    def find_relationships_between_nodes(
+        self,
+        *,
+        tenant_id: str,
+        graph_ids: list[str],
+        limit: int = 1200,
     ) -> list[GraphRelationship]: ...
 
     def related_nodes(

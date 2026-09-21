@@ -1,0 +1,31 @@
+:root { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color:#e8edf4; background:#0b1118; }
+* { box-sizing:border-box; } body { margin:0; background:#0b1118; } button,input,textarea,select { font:inherit; }
+.shell { width:min(1220px,calc(100% - 32px)); margin:0 auto; padding:34px 0 70px; }
+.topbar { display:flex; justify-content:space-between; gap:24px; align-items:flex-start; margin-bottom:24px; }
+h1 { margin:3px 0 8px; font-size:clamp(28px,4vw,46px); } h2 { margin:4px 0 16px; font-size:20px; } h3 { font-size:13px; color:#c7d9e8; margin:0 0 8px; }
+.eyebrow { margin:0; font-size:12px; letter-spacing:.13em; color:#7ec8ff; font-weight:700; } .sub,.muted { color:#97a7ba; max-width:860px; }
+.top-actions { display:flex; flex-wrap:wrap; gap:10px; } a,button { color:#dff2ff; } a { text-decoration:none; border:1px solid #243648; border-radius:10px; padding:10px 13px; background:#101b26; }
+button { border:1px solid #2a4b65; border-radius:10px; padding:10px 15px; background:#143149; cursor:pointer; } button:hover { background:#19405e; } button:disabled { opacity:.55; cursor:wait; }
+.panel { background:#101821; border:1px solid #1d2b39; border-radius:16px; padding:20px; margin-top:18px; box-shadow:0 14px 38px rgba(0,0,0,.18); }
+.panel-head { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+.summary-grid,.sync-cards { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; }
+.summary-card,.result-card { background:#101821; border:1px solid #1d2b39; border-radius:14px; padding:16px; } .result-card { background:#0c151e; }
+.summary-card span,.result-card span { color:#89a0b5; display:block; font-size:12px; } .summary-card strong,.result-card strong { display:block; margin-top:7px; font-size:20px; }
+.toolbar { display:flex; gap:10px; flex-wrap:wrap; } select,input,textarea { width:100%; border:1px solid #26394a; border-radius:9px; padding:10px 11px; background:#0b131b; color:#edf6ff; } select { width:min(520px,100%); }
+.two-col { display:grid; grid-template-columns:1fr 1fr; gap:30px; } .form-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; } .form-grid label,.upload-grid label { color:#9fb0c1; font-size:13px; display:grid; gap:6px; } .form-grid button { align-self:end; }
+.rules { color:#b6c5d3; padding-left:20px; line-height:1.65; } .detail { margin-top:16px; display:grid; gap:9px; }
+.chip { display:inline-flex; width:max-content; border:1px solid #284156; background:#132330; border-radius:999px; padding:5px 10px; font-size:12px; color:#9bd5ff; }
+pre { overflow:auto; min-height:150px; max-height:520px; background:#081018; border:1px solid #1b2a37; border-radius:12px; padding:16px; color:#bfe3ff; }
+.upload-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; align-items:end; } .upload-grid .file-field { grid-column:1 / span 2; }
+.upload-grid input[type="file"] { padding:8px; border-style:dashed; background:#0a151f; } .upload-grid input[type="file"]::file-selector-button { margin-right:12px; border:1px solid #315a78; border-radius:8px; padding:8px 12px; background:#173953; color:#e9f7ff; cursor:pointer; }
+.primary-upload { min-height:45px; background:#14527a; border-color:#3e8fbd; font-weight:700; } .primary-upload:hover { background:#17628f; } .file-note { color:#6f8ea6; font-size:12px; }
+.upload-status { margin-top:12px; padding:10px 12px; border:1px solid #1d3142; border-radius:10px; background:#0b141d; }
+.flow-strip { display:flex; flex-wrap:wrap; align-items:center; gap:9px; padding:12px 14px; margin:8px 0 18px; background:#0b151e; border:1px solid #20364a; border-radius:10px; color:#b9d7ec; font-size:13px; } .flow-strip b { color:#52d6ff; }
+.sync-cards { grid-template-columns:repeat(7,minmax(0,1fr)); margin:10px 0 16px; } .result-card strong { font-size:17px; overflow-wrap:anywhere; }
+.result-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:14px; } .result-grid > div { padding:14px; border:1px solid #203140; border-radius:12px; background:#0b141d; }
+.tag-wrap { display:flex; flex-wrap:wrap; gap:3px; }.tag { display:inline-flex; margin:3px 5px 3px 0; padding:5px 8px; border-radius:999px; background:#173149; color:#bfe3ff; font-size:11px; } .tag.good { background:#14382d; color:#a9f2cd; } .tag.warn { background:#3a2e16; color:#ffe2a1; } .tag.rel { background:#2c2148; color:#d7c1ff; }
+.tiny { color:#97a7ba; font-size:12px; line-height:1.55; margin:6px 0 0; }.preview-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:16px 0; }.preview-box { background:#0b141d; border:1px solid #203140; border-radius:12px; padding:14px; min-width:0; }.preview-label { color:#7ec8ff; font-size:11px; font-weight:700; letter-spacing:.08em; margin:12px 0 6px; text-transform:uppercase; }
+.mini-table { max-height:330px; overflow:auto; border:1px solid #1b2b39; border-radius:9px; }.mini-row { display:grid; grid-template-columns:minmax(130px,.85fr) minmax(210px,1.4fr); gap:12px; padding:8px 10px; border-bottom:1px solid #162838; font-size:12px; color:#c7d9e8; }.mini-row:last-child { border-bottom:0; }.mini-head { position:sticky; top:0; background:#122333; color:#7ec8ff; font-weight:700; z-index:1; }.edge-list { display:grid; gap:6px; }.edge-line { display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:7px; padding:7px 8px; background:#0a1118; border:1px solid #17293a; border-radius:8px; font-size:11px; }.edge-line b { color:#a78bfa; font-size:10px; text-align:center; }.raw-response { margin-top:12px; color:#b9d7ec; }.raw-response summary { cursor:pointer; padding:10px 0; }
+@media (max-width:1050px) { .sync-cards { grid-template-columns:repeat(4,1fr); } .result-grid { grid-template-columns:1fr 1fr; } }
+@media (max-width:900px) { .summary-grid,.sync-cards { grid-template-columns:1fr 1fr; } .topbar,.two-col { display:block; } .top-actions { margin-top:18px; } .form-grid,.upload-grid,.result-grid,.preview-grid { grid-template-columns:1fr; } .upload-grid .file-field { grid-column:auto; } }
+@media (max-width:560px) { .summary-grid,.sync-cards { grid-template-columns:1fr; } .mini-row,.edge-line { grid-template-columns:1fr; } }

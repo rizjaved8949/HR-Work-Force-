@@ -61,14 +61,31 @@
       </section>
 
       <section id="view-graph" class="view">
-        <div class="toolbar panel compact">
-          <input id="graph-search" class="search" placeholder="Filter entity…" />
-          <select id="graph-module"><option value="">All modules</option></select>
-          <button id="graph-reset" class="btn secondary">Reset</button>
+        <div class="panel graph-control-panel">
+          <div class="graph-control-top">
+            <div class="graph-mode-switch" aria-label="Graph mode">
+              <button type="button" class="graph-mode-btn" data-mode="live">Live Tenant Data</button>
+              <button type="button" class="graph-mode-btn" data-mode="schema">Ontology Schema</button>
+            </div>
+            <div id="graph-live-summary" class="graph-live-summary muted">Choose a graph mode.</div>
+          </div>
+          <div class="toolbar compact graph-toolbar">
+            <input id="graph-search" class="search" placeholder="Search graph…" />
+            <label class="inline-field"><span id="graph-module-label">Entity type</span><select id="graph-module"><option value="">All</option></select></label>
+            <button id="graph-load-live" class="btn primary">Search / Refresh Live</button>
+            <button id="graph-reset" class="btn secondary">Reset</button>
+            <div class="zoom-controls" aria-label="Graph zoom">
+              <button id="zoom-out" class="btn secondary" type="button">−</button>
+              <span id="zoom-label">100%</span>
+              <button id="zoom-in" class="btn secondary" type="button">+</button>
+              <button id="zoom-fit" class="btn secondary" type="button">Fit</button>
+            </div>
+          </div>
+          <p class="graph-help">Live mode reads actual tenant rows from <code>kg_nodes</code> and <code>kg_relationships</code>. Click a node to load its 1-hop neighbourhood; click any neighbour to continue traversing. Mouse wheel zooms and dragging empty space pans.</p>
         </div>
         <div class="graph-layout">
-          <article class="panel graph-panel"><svg id="ontology-graph" viewBox="0 0 1100 720" role="img" aria-label="Ontology entity relationship graph"></svg></article>
-          <article class="panel detail-panel"><div id="graph-detail"><h2>Select an entity</h2><p>Click a node to inspect its module, properties and relationship count.</p></div></article>
+          <article class="panel graph-panel"><svg id="ontology-graph" viewBox="0 0 1100 720" role="img" aria-label="Ontology and live tenant knowledge graph"></svg></article>
+          <article class="panel detail-panel"><div id="graph-detail"><h2>Select a node</h2><p>Live mode shows actual Supabase graph records. Schema mode shows ontology entity types.</p></div></article>
         </div>
       </section>
 
@@ -99,8 +116,8 @@
             <form id="mapping-review-form" class="form-stack">
               <label>Source dataset<select id="review-source-file" required></select></label>
               <label>Source column<select id="review-source-column" required></select></label>
-              <label>Proposed ontology path<input id="review-path" placeholder="e.g. Employee.employeeId" /></label>
-              <label>Proposed disposition<input id="review-disposition" placeholder="direct_property" /></label>
+              <label>Proposed ontology path<select id="review-path"><option value="">Loading ontology properties…</option></select></label>
+              <label>Proposed disposition<select id="review-disposition"><option value="">Loading dispositions…</option></select></label>
               <label>Reason<textarea id="review-reason" required placeholder="Why should this mapping be reviewed?"></textarea></label>
               <button class="btn primary" type="submit">Create review</button>
             </form>

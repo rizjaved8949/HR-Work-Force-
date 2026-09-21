@@ -74,6 +74,37 @@ def create_ontology_studio_router(
     def entities():
         return studio.entity_catalog()
 
+    @router.get("/ontology-studio/api/live-graph")
+    def live_graph(
+        tenant_id: str = Query(..., min_length=1),
+        entity_type: str | None = Query(default=None),
+        search: str | None = Query(default=None),
+        limit: int = Query(default=140, ge=10, le=240),
+    ):
+        try:
+            return studio.live_graph(
+                tenant_id, entity_type=entity_type, search=search, limit=limit
+            )
+        except ValueError as error:
+            raise HTTPException(status_code=422, detail=str(error)) from error
+
+    @router.get("/ontology-studio/api/live-graph/nodes/{graph_id:path}")
+    def live_graph_node(
+        graph_id: str,
+        tenant_id: str = Query(..., min_length=1),
+        limit: int = Query(default=100, ge=10, le=180),
+    ):
+        try:
+            return studio.live_node_neighborhood(tenant_id, graph_id, limit=limit)
+        except KeyError as error:
+            raise HTTPException(status_code=404, detail=str(error)) from error
+        except ValueError as error:
+            raise HTTPException(status_code=422, detail=str(error)) from error
+
+    @router.get("/ontology-studio/api/mapping-review-options")
+    def mapping_review_options():
+        return studio.mapping_review_options()
+
     @router.get("/ontology-studio/api/datasets")
     def datasets():
         return studio.dataset_catalog()
