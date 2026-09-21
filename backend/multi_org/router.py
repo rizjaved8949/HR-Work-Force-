@@ -35,6 +35,8 @@ def _translate(error: Exception):
         raise HTTPException(status_code=404, detail=str(error)) from error
     if isinstance(error, ValueError):
         raise HTTPException(status_code=422, detail=str(error)) from error
+    if isinstance(error, RuntimeError):
+        raise HTTPException(status_code=500, detail=str(error)) from error
     raise error
 
 
@@ -68,7 +70,10 @@ def create_multi_org_router(service: MultiOrganizationOnboardingService) -> APIR
             "organizations": [item.model_dump(mode="json") for item in organizations],
             "can_create_organization": access.can_create_organization(actor),
             "policies": {
-                "mapping_suggestions_require_human_approval": True,
+                "auto_sync_enabled": True,
+                "auto_mapping_confidence_gate": True,
+                "unmapped_columns_preserved_as_raw_jsonb": True,
+                "manual_mapping_api_still_available": True,
                 "cross_tenant_relationships_forbidden": True,
                 "secondary_tenant_legacy_services_blocked": True,
                 "credentials_stored_in_registry": False,
@@ -172,6 +177,55 @@ def create_multi_org_router(service: MultiOrganizationOnboardingService) -> APIR
                 sheet_name=(payload.sheet_name or "").strip() or None,
             )
             return dataset.model_dump(mode="json")
+        except Exception as error:
+            _translate(error)
+        finally:
+            if temp_path is not None:
+                temp_path.unlink(missing_ok=True)
+
+    @router.post("/api/organizations/{tenant_id}/datasets/auto-sync", status_code=200)
+    def auto_sync_dataset(tenant_id: str, payload: UploadDatasetRequest, request: Request):
+        """One-click upload, conservative mapping, Supabase raw persistence and graph upsert."""
+        actor = access.actor(_request_user(request))
+        filename = Path(payload.filename).name
+        suffix = Path(filename).suffix.lower()
+        allowed = {".csv", ".json", ".xlsx", ".xlsm"}
+        if suffix not in allowed:
+            raise HTTPException(
+                status_code=422,
+                detail="Supported upload types are CSV, JSON, XLSX and XLSM.",
+            )
+
+        raw_text = payload.content_base64.strip()
+        if raw_text.startswith("data:") and "," in raw_text:
+            raw_text = raw_text.split(",", 1)[1]
+        try:
+            file_bytes = base64.b64decode(raw_text, validate=True)
+        except (binascii.Error, ValueError) as error:
+            raise HTTPException(status_code=422, detail="Uploaded file content is not valid base64.") from error
+
+        max_mb = max(1, int(os.getenv("MULTI_ORG_MAX_UPLOAD_MB", "20")))
+        if len(file_bytes) > max_mb * 1024 * 1024:
+            raise HTTPException(
+                status_code=413,
+                detail=f"Uploaded file exceeds the {max_mb} MB onboarding limit.",
+            )
+        if not file_bytes:
+            raise HTTPException(status_code=422, detail="Uploaded file is empty.")
+
+        temp_path: Path | None = None
+        try:
+            with tempfile.NamedTemporaryFile(prefix="hr_auto_sync_", suffix=suffix, delete=False) as handle:
+                handle.write(file_bytes)
+                temp_path = Path(handle.name)
+            return service.auto_sync_file_dataset(
+                tenant_id,
+                temp_path,
+                actor=actor,
+                source_system=(payload.source_system or "browser_upload").strip() or "browser_upload",
+                source_object=(payload.source_object or filename).strip() or filename,
+                sheet_name=(payload.sheet_name or "").strip() or None,
+            )
         except Exception as error:
             _translate(error)
         finally:

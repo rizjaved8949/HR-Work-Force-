@@ -178,3 +178,37 @@ def test_standalone_management_portal_exposes_only_requested_management_uis():
     html = Path("backend/multi_org/static/index.html").read_text()
     assert "HR UI Integration" not in html
     assert "Ontology Studio" in html
+
+
+def test_supabase_graph_repository_bulk_lookup_and_induced_subgraph():
+    client = FakeSupabase()
+    repo = SupabaseGraphRepository(client=client)
+    a = employee("node-a", "ORG-A", "E-1", "Ali")
+    b = employee("node-b", "ORG-A", "E-2", "Sara")
+    c = employee("node-c", "ORG-A", "E-3", "Usman")
+    repo.upsert_nodes_bulk([a, b, c])
+    for graph_id, source, target in [
+        ("edge-1", "node-a", "node-b"),
+        ("edge-2", "node-b", "node-c"),
+    ]:
+        repo.upsert_relationship(
+            GraphRelationship(
+                graph_id=graph_id,
+                tenant_id="ORG-A",
+                relation_type="REPORTS_TO",
+                source_graph_id=source,
+                source_entity_type="Employee",
+                target_graph_id=target,
+                target_entity_type="Employee",
+                ontology_version="1.0.2-draft",
+            )
+        )
+
+    nodes = repo.find_nodes_by_ids(
+        tenant_id="ORG-A", graph_ids=["node-c", "node-a"], limit=10
+    )
+    assert [item.graph_id for item in nodes] == ["node-c", "node-a"]
+    edges = repo.find_relationships_between_nodes(
+        tenant_id="ORG-A", graph_ids=["node-a", "node-b"], limit=10
+    )
+    assert [item.graph_id for item in edges] == ["edge-1"]

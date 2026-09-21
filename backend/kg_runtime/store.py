@@ -1,0 +1,397 @@
+"""Reserved compatibility subgraph stored in the same Supabase KG tables.
+
+Canonical ontology nodes remain untouched. Runtime compatibility rows are written
+under a derived tenant (``__KG_RUNTIME__::<tenant>``) and namespaced internal
+entity/relation types. This keeps the canonical tenant counts/schema clean while
+letting old deterministic services consume data whose runtime source is the KG.
+"""
+from __future__ import annotations
+
+from dataclasses import dataclass
+from datetime import datetime, timezone
+from typing import Any, Iterable, Protocol
+import os
+
+from .config import KGRuntimeConfig
+
+
+RUNTIME_DATASET_ENTITY = "__RuntimeDataset"
+RUNTIME_ROW_ENTITY = "__RuntimeRow"
+RUNTIME_CONTAINS_RELATION = "__CONTAINS_ROW"
+RUNTIME_ONTOLOGY_VERSION = "runtime-compatibility-v1"
+
+
+def _now() -> str:
+    return datetime.now(timezone.utc).isoformat()
+
+
+@dataclass(frozen=True)
+class RuntimeDataset:
+    source_path: str
+    columns: tuple[str, ...]
+    row_count: int
+    content_sha256: str
+    dataset_hash: str
+
+
+class RuntimeGraphStore(Protocol):
+    def replace_dataset(
+        self,
+        *,
+        tenant_id: str,
+        dataset: RuntimeDataset,
+        rows: list[dict[str, str]],
+    ) -> None: ...
+
+    def list_datasets(self, *, tenant_id: str) -> list[RuntimeDataset]: ...
+
+    def read_rows(self, *, tenant_id: str, dataset_hash: str) -> list[dict[str, str]]: ...
+
+
+class SupabaseRuntimeGraphStore:
+    def __init__(self, *, client: Any, config: KGRuntimeConfig) -> None:
+        self.client = client
+        self.config = config
+        import os
+        self.nodes_table = os.getenv("SUPABASE_GRAPH_NODES_TABLE", "kg_nodes")
+        self.relationships_table = os.getenv(
+            "SUPABASE_GRAPH_RELATIONSHIPS_TABLE", "kg_relationships"
+        )
+
+    @classmethod
+    def from_env(cls, config: KGRuntimeConfig | None = None) -> "SupabaseRuntimeGraphStore":
+        from auth.supabase_client import get_supabase_admin_client
+
+        cfg = config or KGRuntimeConfig.from_env()
+        return cls(client=get_supabase_admin_client(), config=cfg)
+
+    @staticmethod
+    def _dataset_graph_id(dataset_hash: str) -> str:
+        return f"runtime-dataset:{dataset_hash}"
+
+    @staticmethod
+    def _row_prefix(dataset_hash: str) -> str:
+        return f"runtime-row:{dataset_hash}:"
+
+    @staticmethod
+    def _edge_prefix(dataset_hash: str) -> str:
+        return f"runtime-edge:{dataset_hash}:"
+
+    def _dataset_exists(self, *, mirror_tenant: str, dataset_hash: str) -> bool:
+        response = (
+            self.client.table(self.nodes_table)
+            .select("graph_id")
+            .eq("tenant_id", mirror_tenant)
+            .eq("graph_id", self._dataset_graph_id(dataset_hash))
+            .limit(1)
+            .execute()
+        )
+        return bool(response.data)
+
+    @staticmethod
+    def _delete_batch_size() -> int:
+        raw = os.getenv("KG_RUNTIME_DELETE_BATCH_SIZE", "100")
+        try:
+            value = int(raw)
+        except ValueError:
+            value = 100
+        return max(25, min(value, 500))
+
+    def _delete_prefixed_rows(
+        self,
+        *,
+        table_name: str,
+        mirror_tenant: str,
+        graph_id_prefix: str,
+    ) -> None:
+        # Do not issue one large DELETE ... LIKE statement. On Supabase/PostgREST
+        # that can exceed the statement timeout because kg_nodes has FK cascades.
+        # Resolve a small set of IDs first, then delete by the composite tenant/id
+        # key. Repeating small deletes keeps each statement bounded and resumable.
+        batch_size = self._delete_batch_size()
+        while True:
+            response = (
+                self.client.table(table_name)
+                .select("graph_id")
+                .eq("tenant_id", mirror_tenant)
+                .like("graph_id", graph_id_prefix + "%")
+                .limit(batch_size)
+                .execute()
+            )
+            graph_ids = [
+                str(row.get("graph_id"))
+                for row in (response.data or [])
+                if row.get("graph_id")
+            ]
+            if not graph_ids:
+                break
+            (
+                self.client.table(table_name)
+                .delete()
+                .eq("tenant_id", mirror_tenant)
+                .in_("graph_id", graph_ids)
+                .execute()
+            )
+
+    def _delete_existing(self, *, mirror_tenant: str, dataset_hash: str) -> None:
+        # Remove compatibility edges first for FK safety, then row nodes. Canonical
+        # HR graph rows live under the real tenant and are never touched here.
+        self._delete_prefixed_rows(
+            table_name=self.relationships_table,
+            mirror_tenant=mirror_tenant,
+            graph_id_prefix=self._edge_prefix(dataset_hash),
+        )
+        self._delete_prefixed_rows(
+            table_name=self.nodes_table,
+            mirror_tenant=mirror_tenant,
+            graph_id_prefix=self._row_prefix(dataset_hash),
+        )
+
+    def replace_dataset(
+        self,
+        *,
+        tenant_id: str,
+        dataset: RuntimeDataset,
+        rows: list[dict[str, str]],
+    ) -> None:
+        mirror_tenant = self.config.mirror_tenant_id(tenant_id)
+        # On a first bootstrap there is nothing to replace. Avoid a prefix DELETE
+        # scan entirely. If a previous/partial bootstrap exists, clean it in small
+        # batches so retrying is safe on Supabase free/hosted statement timeouts.
+        if self._dataset_exists(mirror_tenant=mirror_tenant, dataset_hash=dataset.dataset_hash):
+            self._delete_existing(
+                mirror_tenant=mirror_tenant,
+                dataset_hash=dataset.dataset_hash,
+            )
+        now = _now()
+        dataset_graph_id = self._dataset_graph_id(dataset.dataset_hash)
+        dataset_row = {
+            "tenant_id": mirror_tenant,
+            "graph_id": dataset_graph_id,
+            "entity_type": RUNTIME_DATASET_ENTITY,
+            "ontology_version": RUNTIME_ONTOLOGY_VERSION,
+            "properties": {
+                "runtimeKind": "dataset",
+                "sourcePath": dataset.source_path,
+                "columns": list(dataset.columns),
+                "rowCount": dataset.row_count,
+                "contentSha256": dataset.content_sha256,
+                "datasetHash": dataset.dataset_hash,
+                "syncState": "loading",
+            },
+            "provenance": [{
+                "source_system": "legacy_source_bootstrap",
+                "source_object": dataset.source_path,
+                "source_record_key": dataset.content_sha256,
+            }],
+            "valid_from": None,
+            "valid_to": None,
+            "created_at": now,
+            "updated_at": now,
+        }
+        self.client.table(self.nodes_table).upsert(
+            dataset_row, on_conflict="tenant_id,graph_id"
+        ).execute()
+
+        node_rows: list[dict[str, Any]] = []
+        for row_number, row in enumerate(rows, start=1):
+            suffix = f"{row_number:09d}"
+            row_graph_id = self._row_prefix(dataset.dataset_hash) + suffix
+            node_rows.append({
+                "tenant_id": mirror_tenant,
+                "graph_id": row_graph_id,
+                "entity_type": RUNTIME_ROW_ENTITY,
+                "ontology_version": RUNTIME_ONTOLOGY_VERSION,
+                "properties": {
+                    "runtimeKind": "row",
+                    "sourcePath": dataset.source_path,
+                    "rowNumber": row_number,
+                    "datasetHash": dataset.dataset_hash,
+                    "rowData": row,
+                },
+                "provenance": [{
+                    "source_system": "legacy_source_bootstrap",
+                    "source_object": dataset.source_path,
+                    "source_record_key": str(row_number),
+                }],
+                "valid_from": None,
+                "valid_to": None,
+                "created_at": now,
+                "updated_at": now,
+            })
+
+        batch = self.config.batch_size
+        for start in range(0, len(node_rows), batch):
+            self.client.table(self.nodes_table).upsert(
+                node_rows[start : start + batch], on_conflict="tenant_id,graph_id"
+            ).execute()
+
+        # Publish the dataset only after every row node has been written. If a
+        # bootstrap is interrupted, the loading marker prevents the materializer
+        # from treating a partial dataset as ready while a later retry can still
+        # detect and clean the reserved prefix safely.
+        complete_row = dict(dataset_row)
+        complete_props = dict(dataset_row["properties"])
+        complete_props["syncState"] = "complete"
+        complete_row["properties"] = complete_props
+        complete_row["updated_at"] = _now()
+        self.client.table(self.nodes_table).upsert(
+            complete_row, on_conflict="tenant_id,graph_id"
+        ).execute()
+
+    def _paged_nodes(self, query_builder: Any) -> list[dict[str, Any]]:
+        rows: list[dict[str, Any]] = []
+        page = max(100, min(self.config.batch_size, 1000))
+        start = 0
+        while True:
+            response = query_builder.range(start, start + page - 1).execute()
+            chunk = list(response.data or [])
+            rows.extend(chunk)
+            if len(chunk) < page:
+                break
+            start += page
+        return rows
+
+    def list_datasets(self, *, tenant_id: str) -> list[RuntimeDataset]:
+        mirror_tenant = self.config.mirror_tenant_id(tenant_id)
+        query = (
+            self.client.table(self.nodes_table)
+            .select("graph_id,properties")
+            .eq("tenant_id", mirror_tenant)
+            .eq("entity_type", RUNTIME_DATASET_ENTITY)
+            .order("graph_id")
+        )
+        rows = self._paged_nodes(query)
+        result: list[RuntimeDataset] = []
+        for row in rows:
+            props = dict(row.get("properties") or {})
+            sync_state = str(props.get("syncState") or "complete").strip().lower()
+            if sync_state != "complete":
+                continue
+            result.append(RuntimeDataset(
+                source_path=str(props.get("sourcePath") or ""),
+                columns=tuple(str(item) for item in (props.get("columns") or [])),
+                row_count=int(props.get("rowCount") or 0),
+                content_sha256=str(props.get("contentSha256") or ""),
+                dataset_hash=str(props.get("datasetHash") or ""),
+            ))
+        return [item for item in result if item.source_path and item.dataset_hash]
+
+    @staticmethod
+    def _read_page_size() -> int:
+        raw = os.getenv("KG_RUNTIME_READ_PAGE_SIZE", "500")
+        try:
+            value = int(raw)
+        except ValueError:
+            value = 500
+        return max(50, min(value, 1000))
+
+    @staticmethod
+    def _is_statement_timeout(exc: Exception) -> bool:
+        code = getattr(exc, "code", None)
+        if code == "57014":
+            return True
+        text = str(exc).lower()
+        return "57014" in text or "statement timeout" in text
+
+    def read_rows(self, *, tenant_id: str, dataset_hash: str) -> list[dict[str, str]]:
+        """Read one compatibility dataset without OFFSET scans.
+
+        Runtime row IDs are deterministic and zero padded. We keep the safe
+        prefix predicate so PostgreSQL can use ``text_pattern_ops`` and advance
+        through the result with a graph-id keyset cursor. This avoids both
+        problems seen in production:
+
+        * OFFSET/RANGE pagination becomes slower as the offset grows and can hit
+          Supabase statement timeouts on large datasets.
+        * Artificial upper bounds such as ``prefix + '~'`` are collation
+          sensitive and can incorrectly return zero rows on hosted PostgreSQL.
+
+        If Supabase still returns SQLSTATE 57014 for a page, the page is retried
+        with a smaller limit. No CSV fallback is used.
+        """
+        mirror_tenant = self.config.mirror_tenant_id(tenant_id)
+        prefix = self._row_prefix(dataset_hash)
+        page_size = self._read_page_size()
+        min_page_size = 50
+
+        result: list[dict[str, str]] = []
+        last_graph_id: str | None = None
+
+        while True:
+            effective_page = page_size
+            while True:
+                query = (
+                    self.client.table(self.nodes_table)
+                    .select("graph_id,properties")
+                    .eq("tenant_id", mirror_tenant)
+                    .eq("entity_type", RUNTIME_ROW_ENTITY)
+                    .like("graph_id", prefix + "%")
+                    .order("graph_id")
+                    .limit(effective_page)
+                )
+                if last_graph_id is not None:
+                    query = query.gt("graph_id", last_graph_id)
+
+                try:
+                    response = query.execute()
+                    break
+                except Exception as exc:
+                    if not self._is_statement_timeout(exc) or effective_page <= min_page_size:
+                        raise
+                    effective_page = max(min_page_size, effective_page // 2)
+
+            chunk = list(response.data or [])
+            if not chunk:
+                break
+
+            next_last_graph_id = str(chunk[-1].get("graph_id") or "")
+            if not next_last_graph_id:
+                raise RuntimeError(
+                    "KG runtime row query returned a row without graph_id; "
+                    "cannot continue deterministic keyset pagination."
+                )
+            if last_graph_id is not None and next_last_graph_id <= last_graph_id:
+                raise RuntimeError(
+                    "KG runtime keyset pagination did not advance; refusing a "
+                    "possible duplicate/infinite read."
+                )
+
+            for row in chunk:
+                props = dict(row.get("properties") or {})
+                raw = props.get("rowData") or {}
+                if isinstance(raw, dict):
+                    result.append({
+                        str(k): "" if v is None else str(v)
+                        for k, v in raw.items()
+                    })
+
+            last_graph_id = next_last_graph_id
+            # The server may have been retried with a reduced page size. Stop only
+            # relative to the actual successful request size.
+            if len(chunk) < effective_page:
+                break
+
+        return result
+
+
+
+class MemoryRuntimeGraphStore:
+    """Small deterministic store used by tests; mirrors the public store contract."""
+
+    def __init__(self) -> None:
+        self.datasets: dict[tuple[str, str], RuntimeDataset] = {}
+        self.rows: dict[tuple[str, str], list[dict[str, str]]] = {}
+
+    def replace_dataset(self, *, tenant_id: str, dataset: RuntimeDataset, rows: list[dict[str, str]]) -> None:
+        self.datasets[(tenant_id, dataset.dataset_hash)] = dataset
+        self.rows[(tenant_id, dataset.dataset_hash)] = [dict(row) for row in rows]
+
+    def list_datasets(self, *, tenant_id: str) -> list[RuntimeDataset]:
+        return sorted(
+            [dataset for (tid, _), dataset in self.datasets.items() if tid == tenant_id],
+            key=lambda item: item.source_path,
+        )
+
+    def read_rows(self, *, tenant_id: str, dataset_hash: str) -> list[dict[str, str]]:
+        return [dict(row) for row in self.rows.get((tenant_id, dataset_hash), [])]

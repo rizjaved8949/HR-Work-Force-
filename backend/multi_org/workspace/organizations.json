@@ -12,16 +12,33 @@
       "legacy_default_access": true,
       "created_by": "step12-bootstrap",
       "created_at": "2026-09-17T13:54:17.243673Z",
-      "updated_at": "2026-09-17T13:54:17.243674Z",
+      "updated_at": "2026-09-21T13:23:27.371373Z",
       "activated_at": "2026-09-17T13:54:17.243661Z",
       "members": [],
-      "datasets": [],
+      "datasets": [
+        {
+          "dataset_id": "ds-c5b1a6d19fed4554",
+          "tenant_id": "ORGANIZATION-001",
+          "source_system": "partner_hr",
+          "source_object": "NexaCore_Raw_Employee_Feed.csv",
+          "source_format": "csv",
+          "storage_key": "ORGANIZATION-001/ds-c5b1a6d19fed4554.json",
+          "status": "failed",
+          "row_count": 30,
+          "column_count": 30,
+          "mapping_plan_id": "plan-ds-c5b1a6d19fed4554",
+          "created_at": "2026-09-21T13:23:27.211312Z",
+          "updated_at": "2026-09-21T13:23:27.371118Z",
+          "last_error": "Canonicalization failed: Organization.organizationId must equal tenant_id in the graph model.; Organization.organizationId must equal tenant_id in the graph model.; Organization.organizationId must equal tenant_id in the graph model.; Organization.organizationId must equal tenant_id in the graph model.; Organization.organizationId must equal tenant_id in the graph model.; Organization.organizationId must equal tenant_id in the graph model.; Organization.organizationId must equal tenant_id in the graph model.; Organization.organizationId must equal tenant_id in the graph model.; Organization.organizationId must equal tenant_id in the graph model.; Organization.organizationId must equal tenant_id in the graph model.",
+          "load_result": null
+        }
+      ],
       "notes": "Bootstrapped from the existing Step-9 tenant so Step 12 remains non-breaking. Secondary organizations require explicit onboarding and access membership."
     },
     {
       "tenant_id": "NEXACORE-HR-001",
       "name": "NexaCore Technologies Pvt Ltd",
-      "status": "mapping_review",
+      "status": "draft",
       "country": "Pakistan",
       "currency": "PKR",
       "organization_type": null,
@@ -29,7 +46,7 @@
       "legacy_default_access": false,
       "created_by": "local-dev",
       "created_at": "2026-09-17T16:01:06.065758Z",
-      "updated_at": "2026-09-17T16:29:08.255890Z",
+      "updated_at": "2026-09-21T13:26:38.168551Z",
       "activated_at": null,
       "members": [
         {
@@ -45,16 +62,24 @@
           "tenant_id": "NEXACORE-HR-001",
           "source_system": "partner_hr",
           "source_object": "nexacore_employee_feed",
-          "source_format": "records",
+          "source_format": "csv",
           "storage_key": "NEXACORE-HR-001/ds-0a20e3c5eee445fa.json",
-          "status": "mapping_review",
+          "status": "loaded",
           "row_count": 30,
           "column_count": 30,
           "mapping_plan_id": "plan-ds-0a20e3c5eee445fa",
           "created_at": "2026-09-17T16:09:24.504075Z",
-          "updated_at": "2026-09-17T16:29:08.251434Z",
+          "updated_at": "2026-09-18T14:15:50.711933Z",
           "last_error": null,
-          "load_result": null
+          "load_result": {
+            "loaded_at": "2026-09-18T14:15:50.711954Z",
+            "node_upserts": 317,
+            "relationship_upserts": 345,
+            "graph_node_count_after": 317,
+            "graph_relationship_count_after": 345,
+            "mapping_plan_id": "plan-ds-0a20e3c5eee445fa",
+            "mapping_version": "auto-sync-1.0"
+          }
         },
         {
           "dataset_id": "ds-e68700f44b804df0",
@@ -103,6 +128,30 @@
           "updated_at": "2026-09-17T16:17:47.579436Z",
           "last_error": null,
           "load_result": null
+        },
+        {
+          "dataset_id": "ds-9c3ba65234114ea7",
+          "tenant_id": "NEXACORE-HR-001",
+          "source_system": "partner_hr",
+          "source_object": "NexaCore_Raw_Employee_Feed.csv",
+          "source_format": "csv",
+          "storage_key": "NEXACORE-HR-001/ds-9c3ba65234114ea7.json",
+          "status": "loaded",
+          "row_count": 30,
+          "column_count": 30,
+          "mapping_plan_id": "plan-ds-9c3ba65234114ea7",
+          "created_at": "2026-09-21T13:19:20.827595Z",
+          "updated_at": "2026-09-21T13:26:38.165807Z",
+          "last_error": null,
+          "load_result": {
+            "loaded_at": "2026-09-21T13:26:38.165826Z",
+            "node_upserts": 317,
+            "relationship_upserts": 345,
+            "graph_node_count_after": 527,
+            "graph_relationship_count_after": 615,
+            "mapping_plan_id": "plan-ds-9c3ba65234114ea7",
+            "mapping_version": "auto-sync-1.0"
+          }
         }
       ],
       "notes": null

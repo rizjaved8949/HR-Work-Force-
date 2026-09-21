@@ -3,6 +3,8 @@ from __future__ import annotations
 
 from pathlib import Path
 from typing import Any, Iterable
+from collections import Counter
+import os
 from uuid import uuid4
 
 from graph.ids import make_node_graph_id
@@ -18,6 +20,8 @@ from ingestion.validator import DEFAULT_PLAN_VALIDATOR, MappingPlanValidator
 from ontology.registry import DEFAULT_REGISTRY, OntologyRegistry
 
 from .access import DEFAULT_ORGANIZATION_ACCESS, OrganizationAccessService
+from .auto_mapping import DEFAULT_AUTO_MAPPING_BUILDER, AutoMappingBuilder
+from .supabase_ingestion_store import SupabaseOrganizationIngestionStore
 from .models import (
     ActorContext,
     CreateOrganizationRequest,
@@ -52,6 +56,8 @@ class MultiOrganizationOnboardingService:
         mapping_suggester: OntologyMappingSuggester = DEFAULT_MAPPING_SUGGESTER,
         plan_validator: MappingPlanValidator = DEFAULT_PLAN_VALIDATOR,
         canonicalizer: Canonicalizer = DEFAULT_CANONICALIZER,
+        auto_mapping_builder: AutoMappingBuilder = DEFAULT_AUTO_MAPPING_BUILDER,
+        ingestion_store: SupabaseOrganizationIngestionStore | None = None,
     ) -> None:
         self.repository = repository
         self.registry = registry
@@ -62,11 +68,15 @@ class MultiOrganizationOnboardingService:
         self.mapping_suggester = mapping_suggester
         self.plan_validator = plan_validator
         self.canonicalizer = canonicalizer
+        self.auto_mapping_builder = auto_mapping_builder
+        self.ingestion_store = ingestion_store
 
     @classmethod
     def from_env(cls, *, verify_connectivity: bool = True):
         repository = create_graph_repository_from_env(verify_connectivity=verify_connectivity)
-        return cls(repository=repository)
+        persist_raw = os.getenv("MULTI_ORG_PERSIST_UPLOADS_TO_SUPABASE", "true").strip().lower() not in {"0", "false", "no", "off"}
+        ingestion_store = SupabaseOrganizationIngestionStore.from_env() if persist_raw else None
+        return cls(repository=repository, ingestion_store=ingestion_store)
 
     def close(self) -> None:
         close = getattr(self.repository, "close", None)
@@ -238,6 +248,327 @@ class MultiOrganizationOnboardingService:
         )
         self.registry.upsert_dataset(tenant_id, dataset)
         return dataset
+
+    def register_or_replace_file_dataset(
+        self,
+        tenant_id: str,
+        path: str | Path,
+        *,
+        actor: ActorContext,
+        source_system: str | None = None,
+        source_object: str | None = None,
+        sheet_name: str | None = None,
+    ) -> OrganizationDataset:
+        """Register a source object once; later uploads replace its snapshot.
+
+        This prevents duplicate dataset records from blocking readiness and gives
+        repeat uploads true upsert/update semantics.
+        """
+        org = self.require_admin(tenant_id, actor=actor)
+        source_path = Path(path)
+        system = (source_system or source_path.suffix.lower().lstrip(".") or "browser_upload").strip()
+        obj = (source_object or source_path.name).strip()
+        existing = next(
+            (item for item in org.datasets if item.source_system == system and item.source_object == obj),
+            None,
+        )
+        dataset_id = existing.dataset_id if existing else f"ds-{uuid4().hex[:16]}"
+        storage_key, row_count, resolved_system, resolved_obj, fmt = self.source_store.import_file(
+            source_path,
+            tenant_id=tenant_id,
+            dataset_id=dataset_id,
+            source_system=system,
+            source_object=obj,
+            sheet_name=sheet_name,
+        )
+        if existing:
+            dataset = existing.model_copy(
+                update={
+                    "source_system": resolved_system,
+                    "source_object": resolved_obj,
+                    "source_format": fmt,
+                    "storage_key": storage_key,
+                    "status": DatasetStatus.REGISTERED,
+                    "row_count": row_count,
+                    "column_count": 0,
+                    "mapping_plan_id": None,
+                    "updated_at": utc_now(),
+                    "last_error": None,
+                    "load_result": None,
+                }
+            )
+        else:
+            dataset = OrganizationDataset(
+                dataset_id=dataset_id,
+                tenant_id=tenant_id,
+                source_system=resolved_system,
+                source_object=resolved_obj,
+                source_format=fmt,
+                storage_key=storage_key,
+                row_count=row_count,
+            )
+        self.registry.upsert_dataset(tenant_id, dataset)
+        return dataset
+
+    def _mark_dataset_failed(self, tenant_id: str, dataset_id: str, message: str) -> None:
+        dataset = self.registry.dataset(tenant_id, dataset_id)
+        self.registry.upsert_dataset(
+            tenant_id,
+            dataset.model_copy(
+                update={
+                    "status": DatasetStatus.FAILED,
+                    "updated_at": utc_now(),
+                    "last_error": message,
+                }
+            ),
+        )
+        if self.ingestion_store is not None:
+            try:
+                self.ingestion_store.update_status(
+                    tenant_id=tenant_id, dataset_id=dataset_id, status="failed"
+                )
+            except Exception:
+                pass
+
+    def auto_sync_file_dataset(
+        self,
+        tenant_id: str,
+        path: str | Path,
+        *,
+        actor: ActorContext,
+        source_system: str | None = None,
+        source_object: str | None = None,
+        sheet_name: str | None = None,
+    ) -> dict[str, Any]:
+        """One-click upload -> map -> validate -> graph upsert -> activate.
+
+        Unknown source columns are retained in Supabase JSONB raw storage but do
+        not become ontology facts unless the conservative mapper can resolve them
+        to confirmed ontology properties.  Existing manual workflow APIs remain
+        available for exceptional datasets.
+        """
+        self.require_admin(tenant_id, actor=actor)
+        dataset = self.register_or_replace_file_dataset(
+            tenant_id,
+            path,
+            actor=actor,
+            source_system=source_system,
+            source_object=source_object,
+            sheet_name=sheet_name,
+        )
+        source = self._source(tenant_id, dataset.dataset_id)
+        rows = source.rows()
+        profile = profile_source(source)
+        profiled = dataset.model_copy(
+            update={
+                "status": DatasetStatus.PROFILED,
+                "row_count": profile.row_count,
+                "column_count": len(profile.columns),
+                "updated_at": utc_now(),
+                "last_error": None,
+            }
+        )
+        self.registry.upsert_dataset(tenant_id, profiled)
+
+        auto = self.auto_mapping_builder.build(profile, rows)
+        mapping_summary = auto.summary()
+
+        if self.ingestion_store is not None:
+            self.ingestion_store.verify_schema()
+            self.ingestion_store.replace_dataset_rows(
+                tenant_id=tenant_id,
+                dataset_id=dataset.dataset_id,
+                source_system=dataset.source_system,
+                source_object=dataset.source_object,
+                source_format=dataset.source_format,
+                rows=rows,
+                columns=[item.name for item in profile.columns],
+                status="mapping",
+                mapping_summary=mapping_summary,
+            )
+
+        if not auto.property_mappings:
+            message = "No confirmed ontology mappings could be resolved automatically. Raw rows were preserved; graph write was blocked."
+            self._mark_dataset_failed(tenant_id, dataset.dataset_id, message)
+            return {
+                "mode": "auto_sync",
+                "status": "mapping_blocked",
+                "tenant_id": tenant_id,
+                "dataset_id": dataset.dataset_id,
+                "source_object": dataset.source_object,
+                "rows_received": profile.row_count,
+                "columns_received": [item.name for item in profile.columns],
+                "mapping": mapping_summary,
+                "graph_written": False,
+                "message": message,
+            }
+
+        plan = MappingPlan(
+            plan_id=f"plan-{dataset.dataset_id}",
+            version="auto-sync-1.0",
+            tenant_id=tenant_id,
+            source_system=dataset.source_system,
+            source_object=dataset.source_object,
+            source_format=dataset.source_format,
+            ontology_version=self.ontology.load().version,
+            status="approved",
+            property_mappings=auto.property_mappings,
+            entity_rules=auto.entity_rules,
+            relationship_mappings=auto.relationship_mappings,
+            approved_by=f"auto-sync:{actor.user_id or actor.role or 'local-dev'}",
+            approved_at=utc_now(),
+            notes=(
+                "Automatically accepted only after conservative confirmed-property mapping "
+                "and existing Step-6 validation. Unmapped source columns remain in raw Supabase JSONB."
+            ),
+        )
+        validation_issues = self.plan_validator.validate(plan, profile=profile, require_approved=True)
+        validation_errors = [item for item in validation_issues if item.severity == "error"]
+        if validation_errors:
+            message = "Automatic mapping failed validation: " + "; ".join(item.message for item in validation_errors)
+            self._mark_dataset_failed(tenant_id, dataset.dataset_id, message)
+            return {
+                "mode": "auto_sync",
+                "status": "validation_blocked",
+                "tenant_id": tenant_id,
+                "dataset_id": dataset.dataset_id,
+                "rows_received": profile.row_count,
+                "mapping": mapping_summary,
+                "validation": {
+                    "valid": False,
+                    "error_count": len(validation_errors),
+                    "issues": [item.model_dump(mode="json") for item in validation_issues],
+                },
+                "graph_written": False,
+                "message": message,
+            }
+
+        self.plan_store.save(tenant_id, plan)
+        current = self.registry.dataset(tenant_id, dataset.dataset_id)
+        self.registry.upsert_dataset(
+            tenant_id,
+            current.model_copy(
+                update={
+                    "status": DatasetStatus.MAPPING_APPROVED,
+                    "mapping_plan_id": plan.plan_id,
+                    "updated_at": utc_now(),
+                    "last_error": None,
+                }
+            ),
+        )
+
+        dry_batch = self.canonicalizer.normalize(plan, rows, profile=profile)
+        dry_errors = [item for item in dry_batch.issues if item.severity == "error"]
+        if dry_errors:
+            message = "Canonicalization failed: " + "; ".join(item.message for item in dry_errors[:10])
+            self._mark_dataset_failed(tenant_id, dataset.dataset_id, message)
+            return {
+                "mode": "auto_sync",
+                "status": "canonicalization_blocked",
+                "tenant_id": tenant_id,
+                "dataset_id": dataset.dataset_id,
+                "rows_received": profile.row_count,
+                "mapping": mapping_summary,
+                "canonical": {
+                    **dry_batch.summary(),
+                    "entity_types": dict(sorted(Counter(item.entity_type for item in dry_batch.entities).items())),
+                    "relationship_types": dict(sorted(Counter(item.relation_type for item in dry_batch.relationships).items())),
+                },
+                "graph_written": False,
+                "message": message,
+            }
+
+        load = self.load_organization(
+            tenant_id, actor=actor, dataset_ids=[dataset.dataset_id]
+        )
+        if load.error_count:
+            message = "Graph load blocked: " + "; ".join(item.message for item in load.issues if item.severity == "error")
+            self._mark_dataset_failed(tenant_id, dataset.dataset_id, message)
+            return {
+                "mode": "auto_sync",
+                "status": "graph_load_blocked",
+                "tenant_id": tenant_id,
+                "dataset_id": dataset.dataset_id,
+                "mapping": mapping_summary,
+                "load": load.model_dump(mode="json"),
+                "graph_written": False,
+                "message": message,
+            }
+
+        readiness = self.readiness(tenant_id, actor=actor)
+        activated = False
+        if readiness.ready_to_activate:
+            self.activate(tenant_id, actor=actor)
+            activated = True
+        final_dataset = self.registry.dataset(tenant_id, dataset.dataset_id)
+        final_org = self.registry.get(tenant_id)
+        readiness_after_sync = self.readiness(tenant_id, actor=actor)
+        if self.ingestion_store is not None:
+            self.ingestion_store.update_status(
+                tenant_id=tenant_id,
+                dataset_id=dataset.dataset_id,
+                status="synced",
+                mapping_summary=mapping_summary,
+            )
+
+        preview_nodes = self.repository.find_nodes(tenant_id=tenant_id, limit=12)
+        preview_relationships = self.repository.find_relationships(tenant_id=tenant_id, limit=12)
+        return {
+            "mode": "auto_sync",
+            "status": "synced",
+            "tenant_id": tenant_id,
+            "organization_status": final_org.status.value,
+            "organization_activated_now": activated,
+            "readiness": readiness_after_sync.model_dump(mode="json"),
+            "dataset_id": dataset.dataset_id,
+            "source_object": dataset.source_object,
+            "source_system": dataset.source_system,
+            "rows_received": profile.row_count,
+            "columns_received": [item.name for item in profile.columns],
+            "raw_supabase": {
+                "persisted": self.ingestion_store is not None,
+                "datasets_table": getattr(self.ingestion_store, "datasets_table", None),
+                "rows_table": getattr(self.ingestion_store, "rows_table", None),
+                "storage_model": "JSONB row_data preserves arbitrary organization columns; no dynamic ALTER TABLE",
+            },
+            "mapping": mapping_summary,
+            "canonical": {
+                **dry_batch.summary(),
+                "entity_types": dict(sorted(Counter(item.entity_type for item in dry_batch.entities).items())),
+                "relationship_types": dict(sorted(Counter(item.relation_type for item in dry_batch.relationships).items())),
+            },
+            "graph": {
+                "repository": type(self.repository).__name__,
+                "nodes_before": load.graph_node_count_before,
+                "nodes_after": load.graph_node_count_after,
+                "relationships_before": load.graph_relationship_count_before,
+                "relationships_after": load.graph_relationship_count_after,
+                "unique_nodes_in_this_sync": load.unique_node_count,
+                "unique_relationships_in_this_sync": load.unique_relationship_count,
+                "kg_nodes_table": getattr(self.repository, "nodes_table", "kg_nodes"),
+                "kg_relationships_table": getattr(self.repository, "relationships_table", "kg_relationships"),
+            },
+            "graph_preview": {
+                "nodes": [
+                    {
+                        "graph_id": node.graph_id,
+                        "entity_type": node.entity_type,
+                        "properties": node.properties,
+                    }
+                    for node in preview_nodes
+                ],
+                "relationships": [
+                    {
+                        "relation_type": edge.relation_type,
+                        "source_entity_type": edge.source_entity_type,
+                        "target_entity_type": edge.target_entity_type,
+                    }
+                    for edge in preview_relationships
+                ],
+            },
+            "dataset": final_dataset.model_dump(mode="json"),
+            "message": "Upload stored in Supabase raw ingestion tables and mapped facts upserted into the tenant knowledge graph.",
+        }
 
     def _source(self, tenant_id: str, dataset_id: str):
         self.registry.dataset(tenant_id, dataset_id)

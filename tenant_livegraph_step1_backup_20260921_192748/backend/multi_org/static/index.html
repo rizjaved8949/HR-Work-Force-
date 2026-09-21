@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Organization Data Sync</title>
+  <link rel="stylesheet" href="/organization-onboarding/assets/styles.css" />
+</head>
+<body>
+  <!-- Legacy API compatibility note: "Upload & register dataset" endpoints remain available to API clients, but the manual lifecycle is intentionally removed from this UI. -->
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">MULTI-ORGANIZATION DATA</p>
+        <h1>Organization Data Sync</h1>
+        <p class="sub">Upload an organization file once. The backend preserves the raw source in Supabase, resolves confirmed ontology mappings, validates them, and immediately upserts tenant-scoped knowledge-graph nodes and relationships.</p>
+      </div>
+      <div class="top-actions"><a href="/ontology-studio">Ontology Studio</a></div>
+    </header>
+
+    <section class="summary-grid" id="summary"></section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div><p class="eyebrow">ORGANIZATION</p><h2>Choose tenant</h2></div>
+        <button id="refresh">Refresh</button>
+      </div>
+      <div class="toolbar">
+        <select id="org-select"></select>
+        <button id="load-org">Open organization</button>
+      </div>
+      <div id="org-detail" class="detail"></div>
+    </section>
+
+    <section class="panel two-col">
+      <div>
+        <p class="eyebrow">CREATE</p>
+        <h2>New organization</h2>
+        <form id="create-org" class="form-grid">
+          <label>Tenant ID<input name="tenant_id" placeholder="ACME-HR-001" required /></label>
+          <label>Name<input name="name" placeholder="Acme Ltd" required /></label>
+          <label>Country<input name="country" placeholder="Pakistan" /></label>
+          <label>Currency<input name="currency" placeholder="PKR" /></label>
+          <button type="submit">Create organization</button>
+        </form>
+      </div>
+      <div>
+        <p class="eyebrow">AUTO-SYNC RULES</p>
+        <h2>Guarded one-click pipeline</h2>
+        <ul class="rules">
+          <li>Every uploaded source column is preserved in tenant-scoped Supabase JSONB raw storage.</li>
+          <li>Only confirmed or high-confidence confirmed ontology matches become graph properties.</li>
+          <li>Unknown and pending semantics stay raw-only and are reported in the Live Response.</li>
+          <li>Graph writes are tenant-scoped and use idempotent upserts.</li>
+          <li>Use the same <b>Source object</b> on re-upload to update the same dataset identity.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="panel sync-panel">
+      <p class="eyebrow">UPLOAD + AUTO SYNC</p>
+      <h2>Send organization data to Supabase & Knowledge Graph</h2>
+      <p class="muted">The old Profile → Map → Approve → Dry-run → Load controls are no longer required in this screen. The same validations still run inside the backend before graph write.</p>
+      <div class="flow-strip" aria-label="Automatic sync lifecycle">
+        <span>1 · Upload</span><b>→</b><span>2 · Raw Supabase</span><b>→</b><span>3 · Auto map</span><b>→</b><span>4 · Validate</span><b>→</b><span>5 · kg_nodes</span><b>→</b><span>6 · kg_relationships</span>
+      </div>
+      <form id="upload-dataset" class="upload-grid">
+        <label>Source system<input name="source_system" value="partner_hr" placeholder="nexacore_hr" /></label>
+        <label>Source object<input name="source_object" placeholder="employees_current" /></label>
+        <label>Excel sheet (optional)<input name="sheet_name" placeholder="Sheet1" /></label>
+        <label class="file-field">Dataset file
+          <input id="dataset-file" name="file" type="file" accept=".csv,.json,.xlsx,.xlsm" required />
+          <span id="file-note" class="file-note">CSV, JSON, XLSX or XLSM · max 20 MB by default</span>
+        </label>
+        <button type="submit" class="primary-upload" id="sync-button">Upload & Sync Now</button>
+      </form>
+      <div id="upload-status" class="upload-status muted">Waiting for a file.</div>
+    </section>
+
+    <section class="panel" id="sync-summary-panel">
+      <p class="eyebrow">LIVE RESPONSE</p>
+      <h2>Mapping, Supabase & graph result</h2>
+      <div id="sync-cards" class="sync-cards"></div>
+
+      <div class="result-grid" id="mapping-result"></div>
+
+      <div class="preview-grid">
+        <div class="preview-box">
+          <h3>Source → Ontology mapping</h3>
+          <div id="mapping-table" class="mini-table muted">Upload a file to see resolved mappings.</div>
+        </div>
+        <div class="preview-box">
+          <h3>Knowledge graph preview</h3>
+          <div id="graph-preview" class="mini-table muted">Graph nodes and relationships will appear here after sync.</div>
+        </div>
+      </div>
+
+      <details class="raw-response">
+        <summary>Full API response</summary>
+        <pre id="output">Select an organization and upload a dataset.</pre>
+      </details>
+    </section>
+  </main>
+  <script type="module" src="/organization-onboarding/assets/app.js"></script>
+</body>
+</html>

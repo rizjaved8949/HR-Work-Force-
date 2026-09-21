@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Organization Onboarding — Step 12</title>
+  <link rel="stylesheet" href="/organization-onboarding/assets/styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">ROADMAP STEP 12</p>
+        <h1>Multi-Organization Onboarding</h1>
+        <p class="sub">Create tenants, stage source data, review ontology mappings, build tenant-scoped Supabase graph facts, and activate organizations.</p>
+      </div>
+      <div class="top-actions">
+        <a href="/ontology-studio">Ontology Studio</a>
+      </div>
+    </header>
+
+    <section class="summary-grid" id="summary"></section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">ORGANIZATIONS</p>
+          <h2>Tenant registry</h2>
+        </div>
+        <button id="refresh">Refresh</button>
+      </div>
+      <div class="toolbar">
+        <select id="org-select"></select>
+        <button id="load-org">Open organization</button>
+      </div>
+      <div id="org-detail" class="detail"></div>
+    </section>
+
+    <section class="panel two-col">
+      <div>
+        <p class="eyebrow">CREATE</p>
+        <h2>New organization</h2>
+        <form id="create-org" class="form-grid">
+          <label>Tenant ID<input name="tenant_id" placeholder="ACME-HR-001" required /></label>
+          <label>Name<input name="name" placeholder="Acme Ltd" required /></label>
+          <label>Country<input name="country" placeholder="Pakistan" /></label>
+          <label>Currency<input name="currency" placeholder="PKR" /></label>
+          <button type="submit">Create organization</button>
+        </form>
+      </div>
+      <div>
+        <p class="eyebrow">TENANT SAFETY</p>
+        <h2>Enforced rules</h2>
+        <ul class="rules">
+          <li>Mappings remain human-reviewed and separately approved.</li>
+          <li>Every Supabase graph ID is tenant-scoped.</li>
+          <li>Cross-tenant relationships are forbidden.</li>
+          <li>Secondary tenants cannot use legacy/hybrid routes that could leak default-org CSV data.</li>
+          <li>Registry metadata never stores connector passwords or API keys.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="panel">
+      <p class="eyebrow">DATASET UPLOAD</p>
+      <h2>Upload CSV / JSON / Excel</h2>
+      <p class="muted">Select the active organization, choose a source file, then upload it. The backend stages an immutable tenant-scoped snapshot before profiling and mapping.</p>
+      <form id="upload-dataset" class="upload-grid">
+        <label>Source system<input name="source_system" value="partner_hr" placeholder="nexacore_hr" /></label>
+        <label>Source object<input name="source_object" placeholder="employees_2026" /></label>
+        <label>Excel sheet (optional)<input name="sheet_name" placeholder="Sheet1" /></label>
+        <label class="file-field">Dataset file
+          <input id="dataset-file" name="file" type="file" accept=".csv,.json,.xlsx,.xlsm" required />
+          <span id="file-note" class="file-note">CSV, JSON, XLSX or XLSM · max 20 MB by default</span>
+        </label>
+        <button type="submit" class="primary-upload">Upload & register dataset</button>
+      </form>
+      <div id="upload-status" class="upload-status muted">No file uploaded yet.</div>
+
+      <details class="fallback-panel">
+        <summary>Advanced fallback: paste JSON rows</summary>
+        <form id="register-dataset" class="form-grid wide" style="margin-top:14px">
+          <label>Source system<input name="source_system" value="partner_hr" required /></label>
+          <label>Source object<input name="source_object" placeholder="employees" required /></label>
+          <label class="span">Rows JSON<textarea name="rows" rows="8" placeholder='[{"Employee_ID":"E-1","Employee_Name":"Ali"}]' required></textarea></label>
+          <button type="submit">Register JSON rows</button>
+        </form>
+      </details>
+    </section>
+
+    <section class="panel">
+      <p class="eyebrow">DATASET WORKFLOW</p>
+      <h2>Upload → profile → map → approve → dry-run → load</h2>
+      <div class="workflow-hint">1. Upload file above &nbsp;→&nbsp; 2. Select dataset here &nbsp;→&nbsp; 3. Profile &nbsp;→&nbsp; 4. Suggest mappings</div>
+      <div class="toolbar">
+        <select id="dataset-select"><option value="">Select a dataset</option></select>
+        <button id="profile-dataset" type="button">Profile</button>
+        <button id="suggest-dataset" type="button">Suggest mappings</button>
+        <button id="validate-plan" type="button">Validate plan</button>
+        <button id="approve-plan" type="button">Approve plan</button>
+        <button id="dry-run" type="button">Dry run</button>
+      </div>
+      <form id="mapping-plan" class="form-grid wide" style="margin-top:14px">
+        <label class="span">Property mappings JSON
+          <textarea name="property_mappings" rows="8" placeholder='[{"source_column":"emp_code","ontology_path":"Employee.employeeId"},{"source_column":"full_name","ontology_path":"Employee.name"}]'></textarea>
+        </label>
+        <label class="span">Entity rules JSON
+          <textarea name="entity_rules" rows="4" placeholder='[]'></textarea>
+        </label>
+        <label class="span">Relationship mappings JSON
+          <textarea name="relationship_mappings" rows="4" placeholder='[]'></textarea>
+        </label>
+        <button type="submit">Save draft mapping plan</button>
+      </form>
+      <div class="toolbar" style="margin-top:14px">
+        <button id="load-organization" type="button">Load organization graph</button>
+        <button id="activate-organization" type="button">Activate organization</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <p class="eyebrow">LIVE RESPONSE</p>
+      <h2>API result</h2>
+      <pre id="output">Loading…</pre>
+    </section>
+  </main>
+  <script type="module" src="/organization-onboarding/assets/app.js"></script>
+</body>
+</html>

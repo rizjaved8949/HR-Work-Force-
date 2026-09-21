@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ontology Studio · HR Workforce Intelligence</title>
+  <link rel="stylesheet" href="/ontology-studio/assets/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">OS</div>
+        <div><strong>Ontology Studio</strong><span>HR Workforce Intelligence</span></div>
+      </div>
+      <nav id="nav">
+        <button class="nav-item active" data-view="overview">Overview</button>
+        <button class="nav-item" data-view="graph">Ontology Graph</button>
+        <button class="nav-item" data-view="entities">Entities & Properties</button>
+        <button class="nav-item" data-view="mappings">Source Mappings</button>
+        <button class="nav-item" data-view="coverage">AI Service Coverage</button>
+        <button class="nav-item" data-view="reviews">Mapping Reviews</button>
+        <button class="nav-item" data-view="changes">Change Requests</button>
+      </nav>
+      <div class="sidebar-note">
+        <span class="dot safe"></span>
+        <div><strong>Safe management mode</strong><small>Approvals are staged. Active ontology files are never silently rewritten.</small></div>
+      </div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <div>
+          <h1 id="page-title">Overview</h1>
+          <p id="page-subtitle">Ontology health, graph status and governance at a glance.</p>
+        </div>
+        <div class="top-actions">
+          <label class="tenant-field">Tenant <input id="tenant-id" value="ORGANIZATION-001" /></label>
+          <button id="refresh-btn" class="btn secondary">Refresh</button>
+        </div>
+      </header>
+
+      <div id="notice" class="notice hidden"></div>
+
+      <section id="view-overview" class="view active">
+        <div class="metric-grid" id="metrics"></div>
+        <div class="grid two">
+          <article class="panel">
+            <div class="panel-head"><div><h2>Knowledge Graph</h2><p>Live tenant graph connectivity and counts.</p></div><span id="graph-badge" class="badge">Checking</span></div>
+            <div id="graph-health" class="health-block skeleton"></div>
+          </article>
+          <article class="panel">
+            <div class="panel-head"><div><h2>Governance Safety</h2><p>How Step 10 manages ontology changes.</p></div></div>
+            <div id="safety-block"></div>
+          </article>
+        </div>
+        <div class="grid two">
+          <article class="panel"><div class="panel-head"><div><h2>Semantic Attention</h2><p>Items that are intentionally not treated as confirmed truth.</p></div></div><div id="semantic-items"></div></article>
+          <article class="panel"><div class="panel-head"><div><h2>Review Queue</h2><p>Pending mapping and ontology governance actions.</p></div></div><div id="review-summary"></div></article>
+        </div>
+      </section>
+
+      <section id="view-graph" class="view">
+        <div class="panel graph-control-panel">
+          <div class="graph-control-top">
+            <div class="graph-mode-switch" aria-label="Graph mode">
+              <button type="button" class="graph-mode-btn" data-mode="live">Live Tenant Data</button>
+              <button type="button" class="graph-mode-btn" data-mode="schema">Ontology Schema</button>
+            </div>
+            <div id="graph-live-summary" class="graph-live-summary muted">Choose a graph mode.</div>
+          </div>
+          <div class="toolbar compact graph-toolbar">
+            <input id="graph-search" class="search" placeholder="Search graph…" />
+            <label class="inline-field"><span id="graph-module-label">Entity type</span><select id="graph-module"><option value="">All</option></select></label>
+            <button id="graph-load-live" class="btn primary">Search / Refresh Live</button>
+            <button id="graph-reset" class="btn secondary">Reset</button>
+            <div class="zoom-controls" aria-label="Graph zoom">
+              <button id="zoom-out" class="btn secondary" type="button">−</button>
+              <span id="zoom-label">100%</span>
+              <button id="zoom-in" class="btn secondary" type="button">+</button>
+              <button id="zoom-fit" class="btn secondary" type="button">Fit</button>
+            </div>
+          </div>
+          <p class="graph-help">Live mode reads actual tenant rows from <code>kg_nodes</code> and <code>kg_relationships</code>. Click a node to load its 1-hop neighbourhood; click any neighbour to continue traversing. Mouse wheel zooms and dragging empty space pans.</p>
+        </div>
+        <div class="graph-layout">
+          <article class="panel graph-panel"><svg id="ontology-graph" viewBox="0 0 1100 720" role="img" aria-label="Ontology and live tenant knowledge graph"></svg></article>
+          <article class="panel detail-panel"><div id="graph-detail"><h2>Select a node</h2><p>Live mode shows actual Supabase graph records. Schema mode shows ontology entity types.</p></div></article>
+        </div>
+      </section>
+
+      <section id="view-entities" class="view">
+        <div class="toolbar panel compact"><input id="entity-search" class="search wide" placeholder="Search entity, property or module…" /></div>
+        <div id="entity-list" class="entity-grid"></div>
+      </section>
+
+      <section id="view-mappings" class="view">
+        <div class="mapping-layout">
+          <article class="panel">
+            <div class="panel-head"><div><h2>Source datasets</h2><p>Step-3 approved mapping inventory.</p></div></div>
+            <input id="dataset-search" class="search" placeholder="Search dataset…" />
+            <div id="dataset-list" class="dataset-list"></div>
+          </article>
+          <article class="panel"><div id="dataset-detail"><h2>Select a dataset</h2><p>Choose a source dataset to inspect every classified source column.</p></div></article>
+        </div>
+      </section>
+
+      <section id="view-coverage" class="view">
+        <div class="panel"><div class="panel-head"><div><h2>AI service → ontology coverage</h2><p>Shows whether each current service contract is backed by explicit semantic mappings.</p></div></div><div id="coverage-list"></div></div>
+      </section>
+
+      <section id="view-reviews" class="view">
+        <div class="grid two align-start">
+          <article class="panel">
+            <div class="panel-head"><div><h2>Submit mapping review</h2><p>Stage a proposal without mutating the active mapping.</p></div></div>
+            <form id="mapping-review-form" class="form-stack">
+              <label>Source dataset<select id="review-source-file" required></select></label>
+              <label>Source column<select id="review-source-column" required></select></label>
+              <label>Proposed ontology path<select id="review-path"><option value="">Loading ontology properties…</option></select></label>
+              <label>Proposed disposition<select id="review-disposition"><option value="">Loading dispositions…</option></select></label>
+              <label>Reason<textarea id="review-reason" required placeholder="Why should this mapping be reviewed?"></textarea></label>
+              <button class="btn primary" type="submit">Create review</button>
+            </form>
+          </article>
+          <article class="panel"><div class="panel-head"><div><h2>Review queue</h2><p>Approval records governance intent only; it does not apply the mapping automatically.</p></div></div><div id="mapping-reviews"></div></article>
+        </div>
+      </section>
+
+      <section id="view-changes" class="view">
+        <div class="grid two align-start">
+          <article class="panel">
+            <div class="panel-head"><div><h2>New ontology change request</h2><p>Stage entity/property/relationship/service-contract changes for review.</p></div></div>
+            <form id="change-form" class="form-stack">
+              <label>Kind<select id="change-kind"><option>property</option><option>entity</option><option>relationship</option><option>service_contract</option><option>mapping</option><option>other</option></select></label>
+              <label>Target<input id="change-target" required placeholder="e.g. PerformanceRecord.performanceTrend6M" /></label>
+              <label>Title<input id="change-title" required /></label>
+              <label>Description<textarea id="change-description" required></textarea></label>
+              <button class="btn primary" type="submit">Create change request</button>
+            </form>
+          </article>
+          <article class="panel"><div class="panel-head"><div><h2>Change requests</h2><p>Draft governance workflow for future versioned ontology releases.</p></div></div><div id="change-requests"></div></article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/ontology-studio/assets/app.js"></script>
+</body>
+</html>

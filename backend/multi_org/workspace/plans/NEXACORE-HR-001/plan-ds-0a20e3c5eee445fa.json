@@ -1,12 +1,12 @@
 {
   "plan_id": "plan-ds-0a20e3c5eee445fa",
-  "version": "1.0.0",
+  "version": "auto-sync-1.0",
   "tenant_id": "NEXACORE-HR-001",
   "source_system": "partner_hr",
   "source_object": "nexacore_employee_feed",
-  "source_format": "records",
+  "source_format": "csv",
   "ontology_version": "1.0.2-draft",
-  "status": "draft",
+  "status": "approved",
   "property_mappings": [
     {
       "source_column": "org_code",
@@ -23,30 +23,6 @@
     {
       "source_column": "company_name",
       "ontology_path": "Organization.name",
-      "transform": "semantic_cast",
-      "null_values": [
-        ""
-      ],
-      "date_format": null,
-      "numeric_multiplier": null,
-      "numeric_divisor": null,
-      "semantic_override_reason": null
-    },
-    {
-      "source_column": "business_unit",
-      "ontology_path": "BusinessUnit.businessUnitId",
-      "transform": "semantic_cast",
-      "null_values": [
-        ""
-      ],
-      "date_format": null,
-      "numeric_multiplier": null,
-      "numeric_divisor": null,
-      "semantic_override_reason": null
-    },
-    {
-      "source_column": "division",
-      "ontology_path": "Department.departmentId",
       "transform": "semantic_cast",
       "null_values": [
         ""
@@ -81,6 +57,42 @@
       "semantic_override_reason": null
     },
     {
+      "source_column": "business_unit",
+      "ontology_path": "BusinessUnit.businessUnitId",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "division",
+      "ontology_path": "Department.departmentId",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "team",
+      "ontology_path": "OrganizationalUnit.organizationalUnitId",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
       "source_column": "position_code",
       "ontology_path": "Position.positionId",
       "transform": "semantic_cast",
@@ -94,7 +106,7 @@
     },
     {
       "source_column": "designation",
-      "ontology_path": "Position.title",
+      "ontology_path": "Position.designation",
       "transform": "semantic_cast",
       "null_values": [
         ""
@@ -117,8 +129,8 @@
       "semantic_override_reason": null
     },
     {
-      "source_column": "emp_status",
-      "ontology_path": "Employment.employeeStatus",
+      "source_column": "data_as_of",
+      "ontology_path": "Employment.dataAsOfDate",
       "transform": "semantic_cast",
       "null_values": [
         ""
@@ -129,8 +141,8 @@
       "semantic_override_reason": null
     },
     {
-      "source_column": "data_as_of",
-      "ontology_path": "Employment.dataAsOfDate",
+      "source_column": "emp_status",
+      "ontology_path": "Employment.employeeStatus",
       "transform": "semantic_cast",
       "null_values": [
         ""
@@ -189,8 +201,8 @@
       "semantic_override_reason": null
     },
     {
-      "source_column": "pay_concern_recent",
-      "ontology_path": "CompensationRecord.payConcernRaisedLast6Months",
+      "source_column": "months_since_promotion",
+      "ontology_path": "ExperienceProfile.monthsSinceLastPromotion",
       "transform": "semantic_cast",
       "null_values": [
         ""
@@ -201,8 +213,20 @@
       "semantic_override_reason": null
     },
     {
-      "source_column": "months_since_promotion",
-      "ontology_path": "ExperienceProfile.monthsSinceLastPromotion",
+      "source_column": "kpi_score_pct",
+      "ontology_path": "PerformanceRecord.kpiAchievementPercentage",
+      "transform": "semantic_cast",
+      "null_values": [
+        ""
+      ],
+      "date_format": null,
+      "numeric_multiplier": null,
+      "numeric_divisor": null,
+      "semantic_override_reason": null
+    },
+    {
+      "source_column": "overtime_last_30d",
+      "ontology_path": "AttendanceRecord.overtimeHoursLast30Days",
       "transform": "semantic_cast",
       "null_values": [
         ""
@@ -273,20 +297,8 @@
       "semantic_override_reason": null
     },
     {
-      "source_column": "kpi_score_pct",
-      "ontology_path": "PerformanceRecord.kpiAchievementPercentage",
-      "transform": "semantic_cast",
-      "null_values": [
-        ""
-      ],
-      "date_format": null,
-      "numeric_multiplier": null,
-      "numeric_divisor": null,
-      "semantic_override_reason": null
-    },
-    {
-      "source_column": "overtime_last_30d",
-      "ontology_path": "AttendanceRecord.overtimeHoursLast30Days",
+      "source_column": "pay_concern_recent",
+      "ontology_path": "CompensationRecord.payConcernRaisedLast6Months",
       "transform": "semantic_cast",
       "null_values": [
         ""
@@ -323,11 +335,12 @@
   ],
   "entity_rules": [
     {
-      "entity_type": "Employment",
+      "entity_type": "AttendanceRecord",
       "record_key_columns": [
-        "staff_no"
+        "staff_no",
+        "data_as_of"
       ],
-      "valid_from_column": null,
+      "valid_from_column": "data_as_of",
       "valid_to_column": null
     },
     {
@@ -336,16 +349,26 @@
         "staff_no",
         "data_as_of"
       ],
-      "valid_from_column": null,
+      "valid_from_column": "data_as_of",
       "valid_to_column": null
     },
     {
-      "entity_type": "ExperienceProfile",
+      "entity_type": "EmployeeSkill",
+      "record_key_columns": [
+        "staff_no",
+        "primary_skill",
+        "data_as_of"
+      ],
+      "valid_from_column": "data_as_of",
+      "valid_to_column": null
+    },
+    {
+      "entity_type": "Employment",
       "record_key_columns": [
         "staff_no",
         "data_as_of"
       ],
-      "valid_from_column": null,
+      "valid_from_column": "data_as_of",
       "valid_to_column": null
     },
     {
@@ -354,7 +377,16 @@
         "staff_no",
         "data_as_of"
       ],
-      "valid_from_column": null,
+      "valid_from_column": "data_as_of",
+      "valid_to_column": null
+    },
+    {
+      "entity_type": "ExperienceProfile",
+      "record_key_columns": [
+        "staff_no",
+        "data_as_of"
+      ],
+      "valid_from_column": "data_as_of",
       "valid_to_column": null
     },
     {
@@ -363,25 +395,7 @@
         "staff_no",
         "data_as_of"
       ],
-      "valid_from_column": null,
-      "valid_to_column": null
-    },
-    {
-      "entity_type": "AttendanceRecord",
-      "record_key_columns": [
-        "staff_no",
-        "data_as_of"
-      ],
-      "valid_from_column": null,
-      "valid_to_column": null
-    },
-    {
-      "entity_type": "EmployeeSkill",
-      "record_key_columns": [
-        "staff_no",
-        "primary_skill"
-      ],
-      "valid_from_column": null,
+      "valid_from_column": "data_as_of",
       "valid_to_column": null
     }
   ],
@@ -403,6 +417,14 @@
       "skip_if_empty": true
     },
     {
+      "relation_type": "HAS_ORGANIZATIONAL_UNIT",
+      "source_entity_type": "Department",
+      "target_entity_type": "OrganizationalUnit",
+      "target_mode": "same_row_entity",
+      "target_source_column": null,
+      "skip_if_empty": true
+    },
+    {
       "relation_type": "HAS_EMPLOYMENT",
       "source_entity_type": "Employee",
       "target_entity_type": "Employment",
@@ -411,11 +433,11 @@
       "skip_if_empty": true
     },
     {
-      "relation_type": "REPORTS_TO",
-      "source_entity_type": "Employee",
-      "target_entity_type": "Employee",
-      "target_mode": "business_id_reference",
-      "target_source_column": "supervisor_staff_no",
+      "relation_type": "WORKS_FOR",
+      "source_entity_type": "Employment",
+      "target_entity_type": "Organization",
+      "target_mode": "same_row_entity",
+      "target_source_column": null,
       "skip_if_empty": true
     },
     {
@@ -481,9 +503,17 @@
       "target_mode": "same_row_entity",
       "target_source_column": null,
       "skip_if_empty": true
+    },
+    {
+      "relation_type": "REPORTS_TO",
+      "source_entity_type": "Employee",
+      "target_entity_type": "Employee",
+      "target_mode": "business_id_reference",
+      "target_source_column": "supervisor_staff_no",
+      "skip_if_empty": true
     }
   ],
-  "approved_by": null,
-  "approved_at": null,
-  "notes": null
+  "approved_by": "auto-sync:local-dev",
+  "approved_at": "2026-09-18T14:15:48.758856Z",
+  "notes": "Automatically accepted only after conservative confirmed-property mapping and existing Step-6 validation. Unmapped source columns remain in raw Supabase JSONB."
 }

@@ -336,6 +336,76 @@ class SupabaseGraphRepository:
                     break
         return result
 
+    def find_nodes_by_ids(
+        self,
+        *,
+        tenant_id: str,
+        graph_ids: list[str],
+        limit: int = 500,
+    ) -> list[GraphNode]:
+        """Fetch a tenant-scoped set of nodes in one/few PostgREST calls.
+
+        This is used by the management graph explorer. IDs are chunked so a
+        large neighbourhood cannot create an excessively long URL.
+        """
+        limit = self._validate_limit(limit)
+        wanted = list(dict.fromkeys(str(item) for item in graph_ids if item))[:limit]
+        if not wanted:
+            return []
+        rows: list[dict[str, Any]] = []
+        for start in range(0, len(wanted), 80):
+            chunk = wanted[start : start + 80]
+            response = (
+                self.client.table(self.nodes_table)
+                .select("*")
+                .eq("tenant_id", tenant_id)
+                .in_("graph_id", chunk)
+                .execute()
+            )
+            rows.extend(response.data or [])
+        by_id = {str(row["graph_id"]): _node_from_row(row) for row in rows}
+        return [by_id[item] for item in wanted if item in by_id]
+
+    def find_relationships_between_nodes(
+        self,
+        *,
+        tenant_id: str,
+        graph_ids: list[str],
+        limit: int = 1200,
+    ) -> list[GraphRelationship]:
+        """Return relationships whose source *and* target are in ``graph_ids``.
+
+        Two endpoint-indexed queries are used per chunk and merged by graph_id.
+        This keeps the Ontology Studio live-data view fast without scanning the
+        tenant's complete edge table.
+        """
+        limit = self._validate_limit(limit)
+        ids = list(dict.fromkeys(str(item) for item in graph_ids if item))
+        if not ids:
+            return []
+        id_set = set(ids)
+        found: dict[str, GraphRelationship] = {}
+        for start in range(0, len(ids), 60):
+            chunk = ids[start : start + 60]
+            for endpoint in ("source_graph_id", "target_graph_id"):
+                response = (
+                    self.client.table(self.relationships_table)
+                    .select("*")
+                    .eq("tenant_id", tenant_id)
+                    .in_(endpoint, chunk)
+                    .limit(limit)
+                    .execute()
+                )
+                for row in response.data or []:
+                    if (
+                        str(row.get("source_graph_id")) in id_set
+                        and str(row.get("target_graph_id")) in id_set
+                    ):
+                        found[str(row["graph_id"])] = _relationship_from_row(row)
+                        if len(found) >= limit:
+                            return list(found.values())
+        return list(found.values())
+
     def related_nodes(
         self,
         *,
