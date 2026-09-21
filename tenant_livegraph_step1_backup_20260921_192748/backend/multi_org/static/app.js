@@ -1,7 +1,5 @@
-const initialParams = new URLSearchParams(location.search);
-const state = { selected: initialParams.get("tenant_id") || initialParams.get("tenant") || localStorage.getItem("hr_selected_org") || "" };
-const API_BASE = String(window.HR_API_BASE || "").replace(/\/$/, "");
-const apiUrl = (path) => `${API_BASE}${path}`;
+const state = { selected: localStorage.getItem("hr_selected_org") || "" };
+const apiUrl = (path) => path;
 
 function esc(value) {
   return String(value ?? "").replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;");
@@ -169,11 +167,7 @@ document.querySelector("#upload-dataset").addEventListener("submit", async event
   try {
     const contentBase64 = arrayBufferToBase64(await file.arrayBuffer());
     status.textContent = `Uploading, mapping, validating and updating Supabase graph for ${file.name}…`;
-const mergeIntoTenant = Boolean(form.get("merge_into_existing"));
-const endpoint = mergeIntoTenant
-  ? `/tenant-management/api/organizations/${encodeURIComponent(tenant)}/merge-sync`
-  : `/organization-onboarding/api/organizations/${encodeURIComponent(tenant)}/datasets/auto-sync`;
-const data = await request(endpoint, {
+    const data = await request(`/organization-onboarding/api/organizations/${encodeURIComponent(tenant)}/datasets/auto-sync`, {
       method: "POST",
       body: {
         filename: file.name,
@@ -184,7 +178,7 @@ const data = await request(endpoint, {
       },
     });
     status.textContent = data.status === "synced"
-  ? `${data.sync_mode === "merge_into_existing_tenant" ? "Merge" : "Sync"} complete: ${data.rows_received} rows stored; ${data.mapping?.mapped_column_count ?? 0} columns mapped; graph now has ${data.graph?.nodes_after ?? "?"} nodes and ${data.graph?.relationships_after ?? "?"} relationships.`
+      ? `Sync complete: ${data.rows_received} rows stored; ${data.mapping?.mapped_column_count ?? 0} columns mapped; graph now has ${data.graph?.nodes_after ?? "?"} nodes and ${data.graph?.relationships_after ?? "?"} relationships.`
       : `Sync stopped safely: ${data.message || data.status}`;
     renderSync(data); show(data); await openOrg(false);
   } catch (error) {

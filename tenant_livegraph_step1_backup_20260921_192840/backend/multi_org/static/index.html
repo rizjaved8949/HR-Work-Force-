@@ -52,8 +52,8 @@
           <li>Only confirmed or high-confidence confirmed ontology matches become graph properties.</li>
           <li>Unknown and pending semantics stay raw-only and are reported in the Live Response.</li>
           <li>Graph writes are tenant-scoped and use idempotent upserts.</li>
-<li>Use the same <b>Source object</b> on normal re-upload to update the same dataset identity.</li>
-<li>The optional <b>Merge/add</b> mode preserves earlier raw snapshots and adds/updates graph entities in the selected tenant.</li>
+          <li>Use the same <b>Source object</b> on normal re-upload to update the same dataset identity.</li>
+          <li>The optional <b>Merge/add</b> mode preserves earlier raw snapshots and adds/updates graph entities in the selected tenant.</li>
         </ul>
       </div>
     </section>
@@ -73,10 +73,10 @@
           <input id="dataset-file" name="file" type="file" accept=".csv,.json,.xlsx,.xlsm" required />
           <span id="file-note" class="file-note">CSV, JSON, XLSX or XLSM · max 20 MB by default</span>
         </label>
-<label class="merge-option">
-  <input type="checkbox" name="merge_into_existing" value="1" />
-  <span><b>Merge/add into selected organization (optional)</b><small>Creates a new raw dataset snapshot, then safely upserts matching/new ontology entities into this tenant. Leave off to keep the existing auto-sync behavior unchanged.</small></span>
-</label>
+        <label class="merge-option">
+          <input type="checkbox" name="merge_into_existing" value="1" />
+          <span><b>Merge/add into selected organization (optional)</b><small>Creates a new raw dataset snapshot, then safely upserts matching/new ontology entities into this tenant. Leave off to keep the existing auto-sync behavior unchanged.</small></span>
+        </label>
         <button type="submit" class="primary-upload" id="sync-button">Upload & Sync Now</button>
       </form>
       <div id="upload-status" class="upload-status muted">Waiting for a file.</div>

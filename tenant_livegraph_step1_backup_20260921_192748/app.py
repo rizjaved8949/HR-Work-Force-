@@ -121,9 +121,6 @@ from production.service import ProductionReadinessService  # noqa: E402
 from kg_runtime.router import router as kg_runtime_router  # noqa: E402
 from kg_runtime.middleware import install_kg_runtime_source_headers  # noqa: E402
 from kg_runtime.status import runtime_source_metadata  # noqa: E402
-from tenant_management.router import create_tenant_management_router  # noqa: E402
-from tenant_graph_chat.router import create_tenant_graph_chat_router  # noqa: E402
-from tenant_graph_chat.service import TenantGraphChatService  # noqa: E402
 
 
 DATA_PATH = paths.data_dir()
@@ -347,12 +344,6 @@ app.include_router(mapping_router)
 app.include_router(create_ontology_studio_router())
 app.include_router(create_ui_integration_router(step9_runtime))
 app.include_router(create_multi_org_router(multi_org_service))
-app.include_router(create_tenant_management_router(multi_org_service))
-app.include_router(
-    create_tenant_graph_chat_router(
-        TenantGraphChatService(repository=step12_repository)
-    )
-)
 app.include_router(create_production_router(step13_production_service))
 
 

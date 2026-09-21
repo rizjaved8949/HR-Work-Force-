@@ -1,5 +1,4 @@
 const state = {
-  tenants:[],
   dashboard:null,
   graph:null,
   liveGraph:null,
@@ -12,12 +11,11 @@ const state = {
   zoom:{scale:1,x:0,y:0},
 };
 const $ = (id) => document.getElementById(id);
-const API_BASE = String(window.HR_API_BASE || '').replace(/\/$/, '');
 const api = async (path, options={}) => {
   const token = localStorage.getItem('ontologyStudioAccessToken');
   const headers = {'Content-Type':'application/json', ...(options.headers||{})};
   if (token) headers.Authorization = `Bearer ${token}`;
-  const response = await fetch(`${API_BASE}${path}`, {...options, headers});
+  const response = await fetch(path, {...options, headers});
   if (!response.ok) { const text = await response.text(); throw new Error(`${response.status} ${text}`); }
   return response.json();
 };
@@ -218,54 +216,15 @@ function syncReviewDefaults(){ const opt=$('review-source-column').selectedOptio
 $('mapping-review-form').addEventListener('submit',async(e)=>{e.preventDefault();try{await api('/ontology-studio/api/mapping-reviews',{method:'POST',body:JSON.stringify({source_file:$('review-source-file').value,source_column:$('review-source-column').value,proposed_ontology_path:$('review-path').value||null,proposed_disposition:$('review-disposition').value||null,reason:$('review-reason').value})});e.target.reset();await fillReviewOptions();await fillReviewSources();await renderReviews();await loadDashboard();notify('Mapping review created.')}catch(err){notify(err.message,true)}});
 $('change-form').addEventListener('submit',async(e)=>{e.preventDefault();try{await api('/ontology-studio/api/change-requests',{method:'POST',body:JSON.stringify({kind:$('change-kind').value,target:$('change-target').value,title:$('change-title').value,description:$('change-description').value,proposed_change:{}})});e.target.reset();await renderChanges();await loadDashboard();notify('Ontology change request created.')}catch(err){notify(err.message,true)}});
 
-function tenantLabel(item){
-  const name=item?.name ? ` · ${item.name}` : '';
-  const status=item?.status ? ` · ${item.status}` : '';
-  return `${item.tenant_id}${name}${status}`;
-}
-function syncTenantLinks(){
-  const tenant=$('tenant-id').value.trim();
-  const link=$('onboarding-link');
-  if(link) link.href=`/organization-onboarding?tenant_id=${encodeURIComponent(tenant)}`;
-}
-function fillTenantSelector(payload, requestedTenant=''){
-  const tenants=Array.isArray(payload?.tenants)?payload.tenants:[];
-  state.tenants=tenants;
-  const select=$('tenant-id');
-  const remembered=localStorage.getItem('ontologyStudioTenant')||'';
-  const preferred=requestedTenant||remembered||payload?.selected_tenant_id||'ORGANIZATION-001';
-  if(tenants.length){
-    select.innerHTML=tenants.map(item=>`<option value="${esc(item.tenant_id)}">${esc(tenantLabel(item))}</option>`).join('');
-    select.value=tenants.some(item=>item.tenant_id===preferred)?preferred:tenants[0].tenant_id;
-  }else{
-    select.innerHTML=`<option value="${esc(preferred)}">${esc(preferred)}</option>`;
-    select.value=preferred;
-  }
-  localStorage.setItem('ontologyStudioTenant',select.value);
-  syncTenantLinks();
-}
-async function switchTenant(){
-  const tenant=$('tenant-id').value.trim();
-  if(!tenant)return;
-  localStorage.setItem('ontologyStudioTenant',tenant);
-  const url=new URL(location.href); url.searchParams.set('tenant_id',tenant); history.replaceState({},'',url);
-  syncTenantLinks();
-  await loadDashboard();
-  if(state.graphMode==='live') await loadLiveGraph(); else renderSchemaGraph();
-  notify(`Switched to ${tenant}.`);
-}
 async function loadDashboard(){ state.dashboard=await api(`/ontology-studio/api/dashboard?tenant_id=${encodeURIComponent($('tenant-id').value)}`); renderDashboard(); }
 async function bootstrap(){
   try{
-    const params=new URLSearchParams(location.search); const requestedTenant=params.get('tenant_id')||params.get('tenant')||'';
-    const tenantPayload=await api('/tenant-management/api/tenants');
-    fillTenantSelector(tenantPayload,requestedTenant);
+    const params=new URLSearchParams(location.search); const requestedTenant=params.get('tenant_id')||params.get('tenant'); if(requestedTenant)$('tenant-id').value=requestedTenant;
     const [dashboard,graph,entities,datasets,reviewOptions]=await Promise.all([api(`/ontology-studio/api/dashboard?tenant_id=${encodeURIComponent($('tenant-id').value)}`),api('/ontology-studio/api/schema-graph'),api('/ontology-studio/api/entities'),api('/ontology-studio/api/datasets'),api('/ontology-studio/api/mapping-review-options')]);
     Object.assign(state,{dashboard,graph,entities,datasets,reviewOptions}); renderDashboard(); renderEntities(); renderDatasets(); await fillReviewOptions(); await fillReviewSources(); await Promise.all([renderReviews(),renderChanges()]); setGraphMode(state.graphMode==='schema'?'schema':'live');
   }catch(e){notify(e.message,true)}
 }
 $('refresh-btn').addEventListener('click',async()=>{await loadDashboard();if(state.graphMode==='live')await loadLiveGraph();else renderSchemaGraph()});
-$('tenant-id').addEventListener('change',switchTenant);
 $('entity-search').addEventListener('input',e=>renderEntities(e.target.value)); $('dataset-search').addEventListener('input',e=>renderDatasets(e.target.value));
 $('graph-search').addEventListener('input',()=>{if(state.graphMode==='schema')filterSchemaGraph()}); $('graph-search').addEventListener('keydown',e=>{if(e.key==='Enter'&&state.graphMode==='live')loadLiveGraph()});
 $('graph-module').addEventListener('change',()=>{if(state.graphMode==='schema')filterSchemaGraph();else loadLiveGraph()});

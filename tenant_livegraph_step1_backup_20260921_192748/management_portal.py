@@ -32,7 +32,6 @@ from multi_org.router import create_multi_org_router
 from multi_org.service import MultiOrganizationOnboardingService
 from ontology_studio.router import create_ontology_studio_router
 from ontology_studio.service import OntologyStudioService
-from tenant_management.router import create_tenant_management_router
 
 
 app = FastAPI(
@@ -73,7 +72,6 @@ ontology_service = OntologyStudioService(
 
 app.include_router(create_ontology_studio_router(ontology_service))
 app.include_router(create_multi_org_router(multi_org_service))
-app.include_router(create_tenant_management_router(multi_org_service))
 
 
 @app.get("/", include_in_schema=False)

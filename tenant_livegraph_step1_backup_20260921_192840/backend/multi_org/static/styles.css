@@ -32,5 +32,6 @@ pre { overflow:auto; min-height:150px; max-height:520px; background:#081018; bor
 
 .live-graph-link{display:inline-flex;margin-top:16px;padding:10px 14px;border-radius:9px;background:#746cff;color:#fff;text-decoration:none;font-weight:750;border:1px solid rgba(255,255,255,.08)}
 .live-graph-link:hover{filter:brightness(1.08)}
+
 .merge-option{grid-column:1 / span 2;display:flex!important;align-items:flex-start;gap:10px;padding:11px 12px;border:1px solid #29445a;border-radius:10px;background:#0b1822}.merge-option input{width:auto;margin-top:3px}.merge-option span{display:grid;gap:4px;color:#cde6f7}.merge-option small{color:#7f9bb0;line-height:1.45}.merge-option b{color:#a9f2cd}.merge-option:has(input:checked){border-color:#3e8fbd;background:#0d2230}
 @media (max-width:900px){.merge-option{grid-column:auto}}

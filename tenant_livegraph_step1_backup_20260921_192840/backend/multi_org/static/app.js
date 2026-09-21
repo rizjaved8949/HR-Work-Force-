@@ -169,11 +169,11 @@ document.querySelector("#upload-dataset").addEventListener("submit", async event
   try {
     const contentBase64 = arrayBufferToBase64(await file.arrayBuffer());
     status.textContent = `Uploading, mapping, validating and updating Supabase graph for ${file.name}…`;
-const mergeIntoTenant = Boolean(form.get("merge_into_existing"));
-const endpoint = mergeIntoTenant
-  ? `/tenant-management/api/organizations/${encodeURIComponent(tenant)}/merge-sync`
-  : `/organization-onboarding/api/organizations/${encodeURIComponent(tenant)}/datasets/auto-sync`;
-const data = await request(endpoint, {
+    const mergeIntoTenant = Boolean(form.get("merge_into_existing"));
+    const endpoint = mergeIntoTenant
+      ? `/tenant-management/api/organizations/${encodeURIComponent(tenant)}/merge-sync`
+      : `/organization-onboarding/api/organizations/${encodeURIComponent(tenant)}/datasets/auto-sync`;
+    const data = await request(endpoint, {
       method: "POST",
       body: {
         filename: file.name,
@@ -184,7 +184,7 @@ const data = await request(endpoint, {
       },
     });
     status.textContent = data.status === "synced"
-  ? `${data.sync_mode === "merge_into_existing_tenant" ? "Merge" : "Sync"} complete: ${data.rows_received} rows stored; ${data.mapping?.mapped_column_count ?? 0} columns mapped; graph now has ${data.graph?.nodes_after ?? "?"} nodes and ${data.graph?.relationships_after ?? "?"} relationships.`
+      ? `${data.sync_mode === "merge_into_existing_tenant" ? "Merge" : "Sync"} complete: ${data.rows_received} rows stored; ${data.mapping?.mapped_column_count ?? 0} columns mapped; graph now has ${data.graph?.nodes_after ?? "?"} nodes and ${data.graph?.relationships_after ?? "?"} relationships.`
       : `Sync stopped safely: ${data.message || data.status}`;
     renderSync(data); show(data); await openOrg(false);
   } catch (error) {
