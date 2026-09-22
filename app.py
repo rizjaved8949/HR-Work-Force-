@@ -1895,17 +1895,96 @@ def _format_deterministic_fast_path_reply(
         return "Top replacement candidates: " + ", ".join(names) + "."
 
     if kind == "headcount":
-        return str(
-            result.get("summary")
-            or result.get("message")
-            or "The headcount analysis completed successfully."
+        return _format_structured_analysis_reply(
+            "Headcount analysis",
+            result,
         )
 
-    return str(
-        result.get("summary")
-        or result.get("message")
-        or "The performance analysis completed successfully."
+    return _format_structured_analysis_reply(
+        "Performance analysis",
+        result,
     )
+
+
+def _format_structured_analysis_reply(
+    title: str,
+    result: dict[str, Any],
+) -> str:
+    """Turn deterministic metrics and records into useful chat text."""
+
+    lines = [title + ":"]
+    employee = result.get("employee")
+    if isinstance(employee, dict):
+        identity = employee.get("Employee_Name") or employee.get("employee_name")
+        employee_id = employee.get("Employee_ID") or employee.get("employee_id")
+        if identity or employee_id:
+            label = str(identity or employee_id)
+            if employee_id and identity:
+                label += f" ({employee_id})"
+            lines.append(f"Employee: {label}")
+
+    metrics = result.get("metrics") or []
+    metric_lines = []
+    for metric in metrics[:8]:
+        if not isinstance(metric, dict):
+            continue
+        name = metric.get("display_name") or metric.get("metric_name")
+        value = metric.get("value")
+        unit = metric.get("unit")
+        if name and value is not None:
+            metric_lines.append(
+                f"{name}: {value}{f' {unit}' if unit else ''}"
+            )
+    if metric_lines:
+        lines.append("Metrics: " + "; ".join(metric_lines))
+
+    records = result.get("records") or []
+    record_lines = []
+    for record in records[:5]:
+        if not isinstance(record, dict):
+            continue
+        preferred = (
+            record.get("Employee_Name")
+            or record.get("employee_name")
+            or record.get("Department")
+            or record.get("department")
+            or record.get("Metric")
+            or record.get("metric")
+        )
+        score = (
+            record.get("Final_Performance_Score")
+            or record.get("Average_Performance_Score")
+            or record.get("Performance_Score")
+            or record.get("score")
+        )
+        if preferred is not None and score is not None:
+            record_lines.append(f"{preferred}: {score}")
+        elif preferred is not None:
+            record_lines.append(str(preferred))
+    if record_lines:
+        lines.append("Results: " + "; ".join(record_lines))
+
+    recommendations = result.get("recommendations") or []
+    recommendation_text = []
+    for recommendation in recommendations[:3]:
+        if isinstance(recommendation, dict):
+            text = recommendation.get("message") or recommendation.get("recommendation")
+            if text:
+                recommendation_text.append(str(text))
+        elif recommendation:
+            recommendation_text.append(str(recommendation))
+    if recommendation_text:
+        lines.append("Recommendations: " + "; ".join(recommendation_text))
+
+    if len(lines) == 1:
+        lines.append(str(
+            result.get("message")
+            or "The analysis completed, but no displayable metrics were returned."
+        ))
+    elif result.get("data_as_of_date"):
+        lines.append(f"Data as of: {result['data_as_of_date']}")
+
+    return "\n".join(lines)
 
 
 def _fast_path_state_update(
