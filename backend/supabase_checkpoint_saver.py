@@ -12,6 +12,7 @@ import json
 import logging
 import os
 from collections.abc import Iterator, Sequence
+from time import perf_counter
 from typing import Any, Callable
 
 from langchain_core.runnables import RunnableConfig
@@ -28,6 +29,22 @@ from auth.supabase_client import get_supabase_admin_client
 
 
 logger = logging.getLogger(__name__)
+checkpoint_timing_logger = logging.getLogger("hr_workforce.checkpoint_timing")
+
+
+def _elapsed_ms(started: float) -> int:
+    return round((perf_counter() - started) * 1000)
+
+
+def _log_checkpoint_timing(event: str, **fields: Any) -> None:
+    payload = {
+        "event": event,
+        **{key: value for key, value in fields.items() if value is not None},
+    }
+    checkpoint_timing_logger.info(
+        "checkpoint_timing %s",
+        json.dumps(payload, ensure_ascii=False, default=str),
+    )
 
 
 class SupabaseCheckpointSaver(BaseCheckpointSaver[str]):
@@ -92,55 +109,80 @@ class SupabaseCheckpointSaver(BaseCheckpointSaver[str]):
         if not thread_id:
             return None
 
+        started = perf_counter()
+        status = "hit"
+        error_type: str | None = None
+        row_count = 0
+        pending_write_count = 0
         checkpoint_ns = configurable.get("checkpoint_ns", "")
         checkpoint_id = configurable.get("checkpoint_id")
 
-        query = self._table(self.checkpoints_table).select("*")
-        if checkpoint_id:
-            query = query.eq("checkpoint_id", checkpoint_id)
-        else:
-            query = query.order("created_at", desc=True).limit(1)
+        try:
+            query = self._table(self.checkpoints_table).select("*")
+            if checkpoint_id:
+                query = query.eq("checkpoint_id", checkpoint_id)
+            else:
+                query = query.order("created_at", desc=True).limit(1)
 
-        response = (
-            query.eq("thread_id", thread_id)
-            .eq("checkpoint_ns", checkpoint_ns)
-            .execute()
-        )
+            response = (
+                query.eq("thread_id", thread_id)
+                .eq("checkpoint_ns", checkpoint_ns)
+                .execute()
+            )
 
-        rows = list(response.data or [])
-        if not rows:
-            return None
+            rows = list(response.data or [])
+            row_count = len(rows)
+            if not rows:
+                status = "miss"
+                return None
 
-        row = rows[0]
-        checkpoint = self._row_to_checkpoint(row)
-        metadata = self._row_to_metadata(row)
+            row = rows[0]
+            checkpoint = self._row_to_checkpoint(row)
+            metadata = self._row_to_metadata(row)
 
-        parent_checkpoint_id = row.get("parent_checkpoint_id")
-        pending_writes = self._load_pending_writes(thread_id, checkpoint_ns, checkpoint["id"])
+            parent_checkpoint_id = row.get("parent_checkpoint_id")
+            pending_writes = self._load_pending_writes(thread_id, checkpoint_ns, checkpoint["id"])
+            pending_write_count = len(pending_writes)
 
-        return CheckpointTuple(
-            config={
-                "configurable": {
-                    "thread_id": thread_id,
-                    "checkpoint_ns": checkpoint_ns,
-                    "checkpoint_id": checkpoint["id"],
-                }
-            },
-            checkpoint=checkpoint,
-            metadata=metadata,
-            parent_config=(
-                {
+            return CheckpointTuple(
+                config={
                     "configurable": {
                         "thread_id": thread_id,
                         "checkpoint_ns": checkpoint_ns,
-                        "checkpoint_id": parent_checkpoint_id,
+                        "checkpoint_id": checkpoint["id"],
                     }
-                }
-                if parent_checkpoint_id
-                else None
-            ),
-            pending_writes=pending_writes,
-        )
+                },
+                checkpoint=checkpoint,
+                metadata=metadata,
+                parent_config=(
+                    {
+                        "configurable": {
+                            "thread_id": thread_id,
+                            "checkpoint_ns": checkpoint_ns,
+                            "checkpoint_id": parent_checkpoint_id,
+                        }
+                    }
+                    if parent_checkpoint_id
+                    else None
+                ),
+                pending_writes=pending_writes,
+            )
+        except Exception as error:
+            status = "error"
+            error_type = type(error).__name__
+            raise
+        finally:
+            _log_checkpoint_timing(
+                "checkpoint_get_tuple",
+                thread_id=thread_id,
+                checkpoint_ns=checkpoint_ns,
+                checkpoint_id=checkpoint_id,
+                elapsed_ms=_elapsed_ms(started),
+                status=status,
+                row_count=row_count,
+                pending_write_count=pending_write_count,
+                error_type=error_type,
+            )
 
     def list(
         self,
@@ -213,6 +255,9 @@ class SupabaseCheckpointSaver(BaseCheckpointSaver[str]):
         thread_id = configurable["thread_id"]
         checkpoint_ns = configurable.get("checkpoint_ns", "")
         parent_checkpoint_id = configurable.get("checkpoint_id")
+        started = perf_counter()
+        status = "ok"
+        error_type: str | None = None
 
         payload = {
             "thread_id": thread_id,
@@ -224,10 +269,26 @@ class SupabaseCheckpointSaver(BaseCheckpointSaver[str]):
             "created_at": checkpoint.get("ts"),
         }
 
-        self._table(self.checkpoints_table).upsert(
-            payload,
-            on_conflict="thread_id,checkpoint_ns,checkpoint_id",
-        ).execute()
+        try:
+            self._table(self.checkpoints_table).upsert(
+                payload,
+                on_conflict="thread_id,checkpoint_ns,checkpoint_id",
+            ).execute()
+        except Exception as error:
+            status = "error"
+            error_type = type(error).__name__
+            raise
+        finally:
+            _log_checkpoint_timing(
+                "checkpoint_put",
+                thread_id=thread_id,
+                checkpoint_ns=checkpoint_ns,
+                checkpoint_id=checkpoint["id"],
+                parent_checkpoint_id=parent_checkpoint_id,
+                elapsed_ms=_elapsed_ms(started),
+                status=status,
+                error_type=error_type,
+            )
 
         return {
             "configurable": {
@@ -248,22 +309,42 @@ class SupabaseCheckpointSaver(BaseCheckpointSaver[str]):
         thread_id = configurable["thread_id"]
         checkpoint_ns = configurable.get("checkpoint_ns", "")
         checkpoint_id = configurable["checkpoint_id"]
+        started = perf_counter()
+        status = "ok"
+        error_type: str | None = None
 
-        for write_idx, (channel, value) in enumerate(writes):
-            row = {
-                "thread_id": thread_id,
-                "checkpoint_ns": checkpoint_ns,
-                "checkpoint_id": checkpoint_id,
-                "task_id": task_id,
-                "write_idx": write_idx,
-                "channel": channel,
-                "value": json.dumps(value, default=str),
-                "task_path": task_path,
-            }
-            self._table(self.writes_table).upsert(
-                row,
-                on_conflict="thread_id,checkpoint_ns,checkpoint_id,task_id,write_idx",
-            ).execute()
+        try:
+            for write_idx, (channel, value) in enumerate(writes):
+                row = {
+                    "thread_id": thread_id,
+                    "checkpoint_ns": checkpoint_ns,
+                    "checkpoint_id": checkpoint_id,
+                    "task_id": task_id,
+                    "write_idx": write_idx,
+                    "channel": channel,
+                    "value": json.dumps(value, default=str),
+                    "task_path": task_path,
+                }
+                self._table(self.writes_table).upsert(
+                    row,
+                    on_conflict="thread_id,checkpoint_ns,checkpoint_id,task_id,write_idx",
+                ).execute()
+        except Exception as error:
+            status = "error"
+            error_type = type(error).__name__
+            raise
+        finally:
+            _log_checkpoint_timing(
+                "checkpoint_put_writes",
+                thread_id=thread_id,
+                checkpoint_ns=checkpoint_ns,
+                checkpoint_id=checkpoint_id,
+                task_id=task_id,
+                write_count=len(writes),
+                elapsed_ms=_elapsed_ms(started),
+                status=status,
+                error_type=error_type,
+            )
 
     def _load_pending_writes(
         self,
@@ -271,26 +352,46 @@ class SupabaseCheckpointSaver(BaseCheckpointSaver[str]):
         checkpoint_ns: str,
         checkpoint_id: str,
     ) -> list[tuple[str, str, Any]]:
-        response = (
-            self._table(self.writes_table)
-            .select("*")
-            .eq("thread_id", thread_id)
-            .eq("checkpoint_ns", checkpoint_ns)
-            .eq("checkpoint_id", checkpoint_id)
-            .order("write_idx", desc=False)
-            .execute()
-        )
-
+        started = perf_counter()
+        status = "ok"
+        error_type: str | None = None
         items: list[tuple[str, str, Any]] = []
-        for row in response.data or []:
-            value = row.get("value")
-            if isinstance(value, str):
-                try:
-                    value = json.loads(value)
-                except json.JSONDecodeError:
-                    pass
-            items.append((row.get("task_id", ""), row.get("channel", ""), value))
-        return items
+
+        try:
+            response = (
+                self._table(self.writes_table)
+                .select("*")
+                .eq("thread_id", thread_id)
+                .eq("checkpoint_ns", checkpoint_ns)
+                .eq("checkpoint_id", checkpoint_id)
+                .order("write_idx", desc=False)
+                .execute()
+            )
+
+            for row in response.data or []:
+                value = row.get("value")
+                if isinstance(value, str):
+                    try:
+                        value = json.loads(value)
+                    except json.JSONDecodeError:
+                        pass
+                items.append((row.get("task_id", ""), row.get("channel", ""), value))
+            return items
+        except Exception as error:
+            status = "error"
+            error_type = type(error).__name__
+            raise
+        finally:
+            _log_checkpoint_timing(
+                "checkpoint_pending_writes_loaded",
+                thread_id=thread_id,
+                checkpoint_ns=checkpoint_ns,
+                checkpoint_id=checkpoint_id,
+                elapsed_ms=_elapsed_ms(started),
+                status=status,
+                write_count=len(items),
+                error_type=error_type,
+            )
 
     def delete_thread(self, thread_id: str) -> None:
         self._table(self.writes_table).delete().eq("thread_id", thread_id).execute()

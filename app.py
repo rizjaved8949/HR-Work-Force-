@@ -16,6 +16,7 @@ The application exposes:
 - the multilingual HR reasoning agent (chat)
 """
 import json
+import logging
 import os
 import re
 import sys
@@ -137,6 +138,32 @@ LLM = get_llm_settings()
 # How many times /chat will run the agent for one user message before giving
 # up. The extra attempt only covers a reply that came back empty.
 CHAT_ATTEMPTS = 2
+
+chat_timing_logger = logging.getLogger("hr_workforce.chat_timing")
+
+
+def _elapsed_ms(started: float) -> int:
+    return round((perf_counter() - started) * 1000)
+
+
+def _request_id(http_request: Request | None) -> str | None:
+    if http_request is None:
+        return None
+    value = getattr(http_request.state, "request_id", None)
+    return str(value) if value else None
+
+
+def _log_chat_timing(event: str, **fields: Any) -> None:
+    """Emit machine-readable timing logs without leaking chat contents."""
+
+    payload = {
+        "event": event,
+        **{key: value for key, value in fields.items() if value is not None},
+    }
+    chat_timing_logger.info(
+        "chat_timing %s",
+        json.dumps(payload, ensure_ascii=False, default=str),
+    )
 
 
 def _verify_startup_paths() -> None:
@@ -1711,6 +1738,21 @@ def _looks_like_tool_plan_reply(reply: str) -> bool:
     return any(marker in value for marker in markers)
 
 
+def _tool_names_from_messages(messages: list[Any] | None) -> list[str]:
+    names: list[str] = []
+    for message in messages or []:
+        message_name = getattr(message, "name", None)
+        if message_name and str(message_name) not in names:
+            names.append(str(message_name))
+        for call in getattr(message, "tool_calls", None) or []:
+            if not isinstance(call, dict):
+                continue
+            call_name = call.get("name")
+            if call_name and str(call_name) not in names:
+                names.append(str(call_name))
+    return names
+
+
 @app.post("/chat")
 def chat_with_hr_agent(request: ChatRequest, http_request: Request):
     """Send one message to the HR agent and return its reply.
@@ -1721,28 +1763,64 @@ def chat_with_hr_agent(request: ChatRequest, http_request: Request):
     """
 
     started = perf_counter()
+    request_id = _request_id(http_request)
 
     thread_id = request.thread_id or str(uuid4())
     config = {"configurable": {"thread_id": thread_id}}
+    _log_chat_timing(
+        "chat_start",
+        route="/chat",
+        request_id=request_id,
+        thread_id=thread_id,
+        message_chars=len(request.message or ""),
+        supplied_thread_id=bool(request.thread_id),
+    )
 
     # --------------------------------------------------------
     # EXISTING SCENARIO SIMULATION FAST PATH
     # --------------------------------------------------------
-    simulation_result = (
-        None
-        if _looks_like_action_center_write_request(request.message)
-        else _run_simulation_fast_path(request.message)
-    )
+    simulation_result = None
+    if not _looks_like_action_center_write_request(request.message):
+        phase_started = perf_counter()
+        simulation_result = _run_simulation_fast_path(request.message)
+        _log_chat_timing(
+            "chat_simulation_fast_path_checked",
+            route="/chat",
+            request_id=request_id,
+            thread_id=thread_id,
+            elapsed_ms=_elapsed_ms(phase_started),
+            matched=simulation_result is not None,
+        )
 
     if simulation_result is not None:
         resolved = simulation_result.get("resolved_inputs") or {}
+        phase_started = perf_counter()
+        reply = _generate_simulation_llm_reply(
+            request.message,
+            simulation_result,
+        )
+        _log_chat_timing(
+            "chat_simulation_reply_generated",
+            route="/chat",
+            request_id=request_id,
+            thread_id=thread_id,
+            elapsed_ms=_elapsed_ms(phase_started),
+            status=simulation_result.get("status"),
+        )
+        elapsed_ms = _elapsed_ms(started)
+        _log_chat_timing(
+            "chat_done",
+            route="/chat",
+            request_id=request_id,
+            thread_id=thread_id,
+            elapsed_ms=elapsed_ms,
+            path="simulation_fast_path",
+            status=simulation_result.get("status"),
+        )
 
         return {
             "thread_id": thread_id,
-            "reply": _generate_simulation_llm_reply(
-                request.message,
-                simulation_result,
-            ),
+            "reply": reply,
             "selected_employee_id": resolved.get("employee_id"),
             "selected_employee_name": resolved.get("employee_name"),
             "last_tool_status": simulation_result.get("status"),
@@ -1755,9 +1833,7 @@ def chat_with_hr_agent(request: ChatRequest, http_request: Request):
             "visualization_reason": None,
             "runtime_source": runtime_source_metadata(),
 
-            "elapsed_ms": round(
-                (perf_counter() - started) * 1000
-            ),
+            "elapsed_ms": elapsed_ms,
         }
 
     # --------------------------------------------------------
@@ -1792,13 +1868,33 @@ def chat_with_hr_agent(request: ChatRequest, http_request: Request):
         }
 
         try:
+            phase_started = perf_counter()
             result = hr_agent.invoke(
                 payload,
                 config=config,
             )
         except Exception as error:
             last_error = error
+            _log_chat_timing(
+                "chat_agent_attempt_error",
+                route="/chat",
+                request_id=request_id,
+                thread_id=thread_id,
+                attempt=attempt + 1,
+                elapsed_ms=_elapsed_ms(phase_started),
+                error_type=type(error).__name__,
+            )
             continue
+        _log_chat_timing(
+            "chat_agent_attempt_done",
+            route="/chat",
+            request_id=request_id,
+            thread_id=thread_id,
+            attempt=attempt + 1,
+            elapsed_ms=_elapsed_ms(phase_started),
+            last_tool_status=result.get("last_tool_status"),
+            used_tools=_tool_names_from_messages(result.get("messages", [])),
+        )
 
         reply = extract_agent_reply(
             result.get("messages", [])
@@ -1811,12 +1907,20 @@ def chat_with_hr_agent(request: ChatRequest, http_request: Request):
             _looks_like_tool_plan_reply(reply)
             and attempt + 1 < CHAT_ATTEMPTS
         ):
+            _log_chat_timing(
+                "chat_agent_attempt_planned_instead_of_executed",
+                route="/chat",
+                request_id=request_id,
+                thread_id=thread_id,
+                attempt=attempt + 1,
+            )
             reply = ""
             continue
 
         break
 
     if not reply:
+        elapsed_ms = _elapsed_ms(started)
         detail = (
             "The HR reasoning agent could not complete the request: "
             f"{last_error}"
@@ -1825,6 +1929,14 @@ def chat_with_hr_agent(request: ChatRequest, http_request: Request):
                 "The HR reasoning agent returned an empty response. "
                 "Please send the message again."
             )
+        )
+        _log_chat_timing(
+            "chat_error",
+            route="/chat",
+            request_id=request_id,
+            thread_id=thread_id,
+            elapsed_ms=elapsed_ms,
+            error_type=type(last_error).__name__ if last_error else None,
         )
 
         raise HTTPException(
@@ -1837,6 +1949,18 @@ def chat_with_hr_agent(request: ChatRequest, http_request: Request):
     # --------------------------------------------------------
     visualization_metadata = _extract_visualization_metadata(
         result.get("messages", [])
+    )
+    elapsed_ms = _elapsed_ms(started)
+    _log_chat_timing(
+        "chat_done",
+        route="/chat",
+        request_id=request_id,
+        thread_id=thread_id,
+        elapsed_ms=elapsed_ms,
+        path="agent",
+        last_tool_status=result.get("last_tool_status"),
+        used_tools=_tool_names_from_messages(result.get("messages", [])),
+        visualization=visualization_metadata["visualization"],
     )
 
     # --------------------------------------------------------
@@ -1876,9 +2000,7 @@ def chat_with_hr_agent(request: ChatRequest, http_request: Request):
         "runtime_source": runtime_source_metadata(),
 
         # Existing timing.
-        "elapsed_ms": round(
-            (perf_counter() - started) * 1000
-        ),
+        "elapsed_ms": elapsed_ms,
     }
 
 # ============================================================
@@ -1886,7 +2008,7 @@ def chat_with_hr_agent(request: ChatRequest, http_request: Request):
 # ============================================================
 
 @app.post("/chat/stream")
-def stream_chat_with_hr_agent(request: ChatRequest):
+def stream_chat_with_hr_agent(request: ChatRequest, http_request: Request):
     """Same conversation as /chat, streamed token by token.
 
     A tool-using turn costs two sequential model round trips, so the
@@ -1903,8 +2025,17 @@ def stream_chat_with_hr_agent(request: ChatRequest):
     """
 
     started = perf_counter()
+    request_id = _request_id(http_request)
     thread_id = request.thread_id or str(uuid4())
     config = {"configurable": {"thread_id": thread_id}}
+    _log_chat_timing(
+        "chat_start",
+        route="/chat/stream",
+        request_id=request_id,
+        thread_id=thread_id,
+        message_chars=len(request.message or ""),
+        supplied_thread_id=bool(request.thread_id),
+    )
 
     def event(payload: dict[str, Any]) -> str:
         return f"data: {json.dumps(payload, ensure_ascii=False)}\n\n"
@@ -1927,20 +2058,59 @@ def stream_chat_with_hr_agent(request: ChatRequest):
         # service immediately, then give that authoritative result to a plain
         # tool-free LLM for the final human-friendly wording. All non-simulation
         # messages continue through the existing hr_agent unchanged.
+        phase_started = perf_counter()
         simulation_result = _run_simulation_fast_path(request.message)
+        _log_chat_timing(
+            "chat_simulation_fast_path_checked",
+            route="/chat/stream",
+            request_id=request_id,
+            thread_id=thread_id,
+            elapsed_ms=_elapsed_ms(phase_started),
+            matched=simulation_result is not None,
+        )
         if simulation_result is not None:
             yield event({
                 "type": "status",
                 "text": "Running scenario simulation...",
             })
 
+            phase_started = perf_counter()
             reply = _generate_simulation_llm_reply(
                 request.message, simulation_result
             )
+            _log_chat_timing(
+                "chat_simulation_reply_generated",
+                route="/chat/stream",
+                request_id=request_id,
+                thread_id=thread_id,
+                elapsed_ms=_elapsed_ms(phase_started),
+                status=simulation_result.get("status"),
+            )
+            first_token_logged = False
             for text_chunk in _stream_text_chunks(reply):
+                if not first_token_logged:
+                    first_token_logged = True
+                    _log_chat_timing(
+                        "chat_first_token",
+                        route="/chat/stream",
+                        request_id=request_id,
+                        thread_id=thread_id,
+                        elapsed_ms=_elapsed_ms(started),
+                        path="simulation_fast_path",
+                    )
                 yield event({"type": "token", "text": text_chunk})
 
             resolved = simulation_result.get("resolved_inputs") or {}
+            elapsed_ms = _elapsed_ms(started)
+            _log_chat_timing(
+                "chat_done",
+                route="/chat/stream",
+                request_id=request_id,
+                thread_id=thread_id,
+                elapsed_ms=elapsed_ms,
+                path="simulation_fast_path",
+                status=simulation_result.get("status"),
+            )
             yield event({
                 "type": "done",
                 "thread_id": thread_id,
@@ -1948,7 +2118,7 @@ def stream_chat_with_hr_agent(request: ChatRequest):
                 "selected_employee_name": resolved.get("employee_name"),
                 "last_tool_status": simulation_result.get("status"),
                 "runtime_source": runtime_source_metadata(),
-                "elapsed_ms": round((perf_counter() - started) * 1000),
+                "elapsed_ms": elapsed_ms,
             })
             return
 
@@ -1959,6 +2129,7 @@ def stream_chat_with_hr_agent(request: ChatRequest):
             # "messages" mode yields (chunk, metadata) as the model emits
             # tokens. The first round trip only produces tool calls with no
             # text, so nothing is shown until the answer itself starts.
+            phase_started = perf_counter()
             for chunk, _metadata in hr_agent.stream(
                 {"messages": [{"role": "user", "content": request.message}]},
                 config=config,
@@ -1973,6 +2144,14 @@ def stream_chat_with_hr_agent(request: ChatRequest):
                     name = call.get("name")
                     if name and name not in announced:
                         announced.add(name)
+                        _log_chat_timing(
+                            "chat_tool_announced",
+                            route="/chat/stream",
+                            request_id=request_id,
+                            thread_id=thread_id,
+                            elapsed_ms=_elapsed_ms(started),
+                            tool_name=name,
+                        )
                         yield event({
                             "type": "status",
                             "text": tool_status_text.get(
@@ -1996,10 +2175,37 @@ def stream_chat_with_hr_agent(request: ChatRequest):
                     if not text:
                         continue
 
-                streamed_any = True
+                if not streamed_any:
+                    streamed_any = True
+                    _log_chat_timing(
+                        "chat_first_token",
+                        route="/chat/stream",
+                        request_id=request_id,
+                        thread_id=thread_id,
+                        elapsed_ms=_elapsed_ms(started),
+                        path="agent",
+                    )
                 yield event({"type": "token", "text": text})
 
+            _log_chat_timing(
+                "chat_agent_stream_done",
+                route="/chat/stream",
+                request_id=request_id,
+                thread_id=thread_id,
+                elapsed_ms=_elapsed_ms(phase_started),
+                announced_tools=list(announced),
+            )
+
         except Exception as error:
+            elapsed_ms = _elapsed_ms(started)
+            _log_chat_timing(
+                "chat_error",
+                route="/chat/stream",
+                request_id=request_id,
+                thread_id=thread_id,
+                elapsed_ms=elapsed_ms,
+                error_type=type(error).__name__,
+            )
             yield event({
                 "type": "error",
                 "message": (
@@ -2010,9 +2216,26 @@ def stream_chat_with_hr_agent(request: ChatRequest):
             return
 
         # The agent's state after the turn, for the employee context.
+        phase_started = perf_counter()
         state = hr_agent.get_state(config).values
+        _log_chat_timing(
+            "chat_agent_state_loaded",
+            route="/chat/stream",
+            request_id=request_id,
+            thread_id=thread_id,
+            elapsed_ms=_elapsed_ms(phase_started),
+        )
 
         if not streamed_any:
+            elapsed_ms = _elapsed_ms(started)
+            _log_chat_timing(
+                "chat_error",
+                route="/chat/stream",
+                request_id=request_id,
+                thread_id=thread_id,
+                elapsed_ms=elapsed_ms,
+                error_type="EmptyResponse",
+            )
             yield event({
                 "type": "error",
                 "message": (
@@ -2022,6 +2245,17 @@ def stream_chat_with_hr_agent(request: ChatRequest):
             })
             return
 
+        elapsed_ms = _elapsed_ms(started)
+        _log_chat_timing(
+            "chat_done",
+            route="/chat/stream",
+            request_id=request_id,
+            thread_id=thread_id,
+            elapsed_ms=elapsed_ms,
+            path="agent",
+            last_tool_status=state.get("last_tool_status"),
+            announced_tools=list(announced),
+        )
         yield event({
             "type": "done",
             "thread_id": thread_id,
@@ -2029,7 +2263,7 @@ def stream_chat_with_hr_agent(request: ChatRequest):
             "selected_employee_name": state.get("selected_employee_name"),
             "last_tool_status": state.get("last_tool_status"),
             "runtime_source": runtime_source_metadata(),
-            "elapsed_ms": round((perf_counter() - started) * 1000),
+            "elapsed_ms": elapsed_ms,
         })
 
     return StreamingResponse(
