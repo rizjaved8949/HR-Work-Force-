@@ -81,6 +81,7 @@ from resilient_model import ResilientChatOpenAI  # noqa: E402
 from replacement_tool import (  # noqa: E402
     create_replacement_recommendation_tool,
 )
+from visualization.tool import visualization_tool  # noqa: E402
 from settings import get_llm_settings  # noqa: E402
 from auth import (  # noqa: E402
     auth_router,
@@ -2054,6 +2055,42 @@ def _fast_path_state_update(
     return update
 
 
+def _fast_path_visualization(
+    kind: str,
+    message: str,
+    result: dict[str, Any],
+) -> dict[str, Any]:
+    """Automatically visualize selected deterministic Performance results."""
+
+    default = {
+        "visualization": False,
+        "chart_type": None,
+        "chart_data": None,
+        "chart_url": None,
+        "visualization_reason": None,
+    }
+    analysis_type = str(result.get("analysis_type", "")).casefold()
+    if kind != "performance" or analysis_type not in {
+        "ranking",
+        "comparison",
+        "trend",
+        "employee_ranking",
+        "department_ranking",
+        "employee_trend",
+    } and not analysis_type.endswith(("_ranking", "_comparison", "_trend")):
+        return default
+
+    data = result.get("records") or result.get("metrics") or []
+    visualization = visualization_tool(message, data=data)
+    return {
+        "visualization": bool(visualization.get("visualization", True)),
+        "chart_type": visualization.get("chart_type"),
+        "chart_data": visualization.get("chart_data"),
+        "chart_url": visualization.get("chart_url"),
+        "visualization_reason": visualization.get("reason"),
+    }
+
+
 def _persist_fast_path_state(
     config: dict[str, Any],
     kind: str,
@@ -2087,21 +2124,19 @@ def _persist_fast_path_state(
 def _fast_path_response(
     thread_id: str,
     kind: str,
+    message: str,
     result: dict[str, Any],
     started: float,
 ) -> dict[str, Any]:
     employee = result.get("employee") or {}
+    visualization = _fast_path_visualization(kind, message, result)
     return {
         "thread_id": thread_id,
         "reply": _format_deterministic_fast_path_reply(kind, result),
         "selected_employee_id": employee.get("employee_id"),
         "selected_employee_name": employee.get("employee_name"),
         "last_tool_status": result.get("status"),
-        "visualization": False,
-        "chart_type": None,
-        "chart_data": None,
-        "chart_url": None,
-        "visualization_reason": None,
+        **visualization,
         "runtime_source": runtime_source_metadata(),
         "elapsed_ms": _elapsed_ms(started),
     }
@@ -2229,6 +2264,7 @@ def chat_with_hr_agent(request: ChatRequest, http_request: Request):
         return _fast_path_response(
             thread_id,
             kind,
+            request.message,
             fast_result,
             started,
         )
@@ -2558,6 +2594,7 @@ def stream_chat_with_hr_agent(request: ChatRequest, http_request: Request):
             fast_response = _fast_path_response(
                 thread_id,
                 kind,
+                request.message,
                 fast_result,
                 started,
             )
