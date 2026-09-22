@@ -578,7 +578,8 @@ For analytical questions follow this order:
 2. Get the required data.
 3. If the user requests visual output OR comparison/ranking/trend/distribution analysis:
    call visualization tool.
-4. Return the final answer with visualization metadata.
+4. Keep visualization information internal. Never expose chart type, reason,
+   or visualization configuration to the user.
 
 Examples:
 
