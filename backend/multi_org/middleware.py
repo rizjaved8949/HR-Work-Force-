@@ -8,6 +8,7 @@ silently return the default organization's CSV-backed facts to another tenant.
 from __future__ import annotations
 
 import os
+import re
 
 from starlette.middleware.base import BaseHTTPMiddleware, RequestResponseEndpoint
 from starlette.responses import JSONResponse, Response
@@ -85,6 +86,22 @@ class MultiOrganizationTenantMiddleware(BaseHTTPMiddleware):
             tenant_id = validate_tenant_id(tenant_id)
         except ValueError as error:
             return JSONResponse(status_code=400, content={"detail": str(error), "code": "invalid_tenant_id"})
+
+        route_match = re.match(
+            r"^/organization-onboarding/api/organizations/([^/]+)(?:/|$)",
+            request.url.path,
+        )
+        route_tenant = route_match.group(1) if route_match else None
+        if raw_tenant and route_tenant and str(route_tenant).strip() != tenant_id:
+            return JSONResponse(
+                status_code=400,
+                content={
+                    "detail": "X-Organization-ID must match the organization in the request path.",
+                    "code": "organization_context_mismatch",
+                    "header_tenant_id": tenant_id,
+                    "path_tenant_id": str(route_tenant).strip(),
+                },
+            )
 
         if self._auth_public_path(request.url.path):
             request.state.tenant_id = tenant_id

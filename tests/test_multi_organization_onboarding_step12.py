@@ -311,6 +311,41 @@ def test_step12_middleware_sets_tenant_context_and_blocks_unsafe_hybrid_routes(t
     assert blocked.json()["code"] == "service_not_multi_tenant_safe"
 
 
+def test_step12_middleware_rejects_header_and_path_organization_mismatch(tmp_path):
+    registry = OrganizationRegistry(tmp_path / "organizations.json")
+    for tenant_id in ("ORGANIZATION-001", "ORG-A", "ORG-B"):
+        registry.create(
+            OrganizationRecord(
+                tenant_id=tenant_id,
+                name=tenant_id,
+                status=OrganizationStatus.ACTIVE,
+                is_default=tenant_id == "ORGANIZATION-001",
+                legacy_default_access=tenant_id == "ORGANIZATION-001",
+            )
+        )
+    app = FastAPI()
+
+    @app.get("/organization-onboarding/api/organizations/{tenant_id}")
+    def organization(tenant_id: str, request: Request):
+        return {"tenant_id": tenant_id, "selected": request.state.tenant_id}
+
+    app.add_middleware(
+        MultiOrganizationTenantMiddleware,
+        registry=registry,
+        access=OrganizationAccessService(),
+        default_tenant_id="ORGANIZATION-001",
+    )
+    client = TestClient(app)
+
+    response = client.get(
+        "/organization-onboarding/api/organizations/ORG-A",
+        headers={"X-Organization-ID": "ORG-B"},
+    )
+
+    assert response.status_code == 400
+    assert response.json()["code"] == "organization_context_mismatch"
+
+
 def test_step12_graph_employee_adapter_uses_request_scoped_tenant_not_fixed_default(tmp_path, monkeypatch):
     repo = InMemoryGraphRepository()
     for tenant_id, name in (("ORG-A", "Alice"), ("ORG-B", "Bob")):
