@@ -141,7 +141,7 @@ LLM = get_llm_settings()
 
 # How many times /chat will run the agent for one user message before giving
 # up. The extra attempt only covers a reply that came back empty.
-CHAT_ATTEMPTS = 2
+CHAT_ATTEMPTS = 1
 
 chat_timing_logger = logging.getLogger("hr_workforce.chat_timing")
 
@@ -341,7 +341,8 @@ simulation_reply_model = ResilientChatOpenAI(
     base_url=LLM.base_url,
     temperature=LLM.temperature,
     max_completion_tokens=LLM.max_tokens,
-    max_retries=LLM.max_retries,
+    # ResilientChatOpenAI is the single retry layer for transient provider errors.
+    max_retries=0,
     timeout=LLM.timeout_seconds,
     transient_max_attempts=LLM.max_retries + 1,
     extra_body=LLM.extra_body(),

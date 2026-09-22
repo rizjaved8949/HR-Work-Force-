@@ -115,7 +115,8 @@ def create_hr_reasoning_agent(
         # `max_tokens` field. Both set the same value; the alias is the one
         # the constructor actually declares.
         max_completion_tokens=llm.max_tokens,
-        max_retries=llm.max_retries,
+        # ResilientChatOpenAI is the single retry layer for transient provider errors.
+        max_retries=0,
         timeout=llm.timeout_seconds,
         transient_max_attempts=llm.max_retries + 1,
 

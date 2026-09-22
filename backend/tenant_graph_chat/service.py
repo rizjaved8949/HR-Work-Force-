@@ -47,7 +47,8 @@ def _default_model_factory():
         base_url=llm.base_url,
         temperature=0,
         max_completion_tokens=min(llm.max_tokens, 1800),
-        max_retries=llm.max_retries,
+        # ResilientChatOpenAI is the single retry layer for transient provider errors.
+        max_retries=0,
         timeout=llm.timeout_seconds,
         transient_max_attempts=llm.max_retries + 1,
         extra_body=llm.extra_body(),
