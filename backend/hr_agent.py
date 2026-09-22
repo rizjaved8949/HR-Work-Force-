@@ -5,8 +5,8 @@ from typing import Any
 
 from langchain.agents import create_agent
 from langchain_core.tools import BaseTool
-from langgraph.checkpoint.memory import InMemorySaver
 from pydantic import SecretStr
+from supabase_checkpoint_saver import create_agent_checkpointer
 from typing_extensions import NotRequired
 from resilient_model import ResilientChatOpenAI
 from visualization.tool import visualization_tool
@@ -241,13 +241,14 @@ def create_hr_reasoning_agent(
     )
 
     # --------------------------------------------------------
-    # CREATE DEVELOPMENT CONVERSATION MEMORY
+    # CREATE PERSISTENT CONVERSATION MEMORY
     # --------------------------------------------------------
 
-    # Memory is maintained separately for every thread_id.
-    # It remains available while the FastAPI server is running.
-    # It resets when the server is restarted.
-    checkpointer = InMemorySaver()
+    # Use a durable Supabase-backed checkpointer by default. This keeps the
+    # existing thread_id behavior and preserves the agent's memory beyond a
+    # process restart, while still falling back to in-memory only when the DB is
+    # unavailable.
+    checkpointer = create_agent_checkpointer()
 
     # --------------------------------------------------------
     # CREATE THE MAIN HR AGENT
