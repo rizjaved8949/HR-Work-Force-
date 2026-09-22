@@ -16,6 +16,7 @@ from __future__ import annotations
 import logging
 import random
 import time
+from collections.abc import AsyncIterator, Iterator
 from typing import Any
 
 from langchain_openai import ChatOpenAI
@@ -70,6 +71,24 @@ class ResilientChatOpenAI(ChatOpenAI):
     transient_backoff_seconds: float = 0.6
     transient_backoff_cap_seconds: float = 2.5
 
+    def _retry_delay(self, attempt: int) -> float:
+        delay = min(
+            self.transient_backoff_seconds * (2 ** (attempt - 1)),
+            self.transient_backoff_cap_seconds,
+        )
+        return delay + random.uniform(0, 0.25)
+
+    def _log_retry(self, attempt: int, error: BaseException) -> None:
+        delay = self._retry_delay(attempt)
+        logger.warning(
+            "Transient model error on attempt %s/%s; retrying in %.1fs: %s",
+            attempt,
+            self.transient_max_attempts,
+            delay,
+            error,
+        )
+        time.sleep(delay)
+
     def _generate(self, *args: Any, **kwargs: Any) -> Any:
         last_error: BaseException | None = None
 
@@ -87,22 +106,54 @@ class ResilientChatOpenAI(ChatOpenAI):
 
                 # Capped exponential backoff with jitter, so simultaneous
                 # requests do not all retry at the same moment.
-                delay = min(
-                    self.transient_backoff_seconds * (2 ** (attempt - 1)),
-                    self.transient_backoff_cap_seconds,
-                )
-                delay += random.uniform(0, 0.25)
-
-                logger.warning(
-                    "Transient model error on attempt %s/%s; retrying in "
-                    "%.1fs: %s",
-                    attempt,
-                    self.transient_max_attempts,
-                    delay,
-                    error,
-                )
-
-                time.sleep(delay)
+                self._log_retry(attempt, error)
 
         assert last_error is not None
         raise last_error
+
+    def _stream(self, *args: Any, **kwargs: Any) -> Iterator[Any]:
+        """Retry transient failures before the first streamed chunk."""
+
+        for attempt in range(1, self.transient_max_attempts + 1):
+            yielded_chunk = False
+            try:
+                for chunk in super()._stream(*args, **kwargs):
+                    yielded_chunk = True
+                    yield chunk
+                return
+            except Exception as error:
+                if not is_transient_error(error) or yielded_chunk:
+                    raise
+                if attempt == self.transient_max_attempts:
+                    raise
+                self._log_retry(attempt, error)
+
+    async def _astream(self, *args: Any, **kwargs: Any) -> AsyncIterator[Any]:
+        """Retry transient failures before the first async streamed chunk."""
+
+        for attempt in range(1, self.transient_max_attempts + 1):
+            yielded_chunk = False
+            try:
+                async for chunk in super()._astream(*args, **kwargs):
+                    yielded_chunk = True
+                    yield chunk
+                return
+            except Exception as error:
+                if not is_transient_error(error) or yielded_chunk:
+                    raise
+                if attempt == self.transient_max_attempts:
+                    raise
+                await self._alog_retry(attempt, error)
+
+    async def _alog_retry(self, attempt: int, error: BaseException) -> None:
+        delay = self._retry_delay(attempt)
+        logger.warning(
+            "Transient async model error on attempt %s/%s; retrying in %.1fs: %s",
+            attempt,
+            self.transient_max_attempts,
+            delay,
+            error,
+        )
+        import asyncio
+
+        await asyncio.sleep(delay)
