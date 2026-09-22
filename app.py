@@ -64,15 +64,18 @@ import paths  # noqa: E402
 from attrition_prediction_tool import (  # noqa: E402
     create_attrition_prediction_tool,
 )
+from agent_tools import create_check_employee_attrition_tool  # noqa: E402
 from employee_record_tool import (  # noqa: E402
     create_employee_record_tool,
 )
 from headcount.repository import HeadcountRepository  # noqa: E402
 from headcount.router import create_headcount_router  # noqa: E402
 from headcount.service import HeadcountService  # noqa: E402
+from headcount.tool import run_analyze_headcount_tool  # noqa: E402
 from performance.repository import PerformanceRepository  # noqa: E402
 from performance.router import create_performance_router  # noqa: E402
 from performance.service import PerformanceService  # noqa: E402
+from performance.tool import run_analyze_employee_performance_tool  # noqa: E402
 from hr_agent import create_hr_reasoning_agent  # noqa: E402
 from resilient_model import ResilientChatOpenAI  # noqa: E402
 from replacement_tool import (  # noqa: E402
@@ -221,6 +224,13 @@ attrition_prediction_tool = step9_runtime.attrition_prediction_tool
 replacement_recommendation_tool = step9_runtime.replacement_tool
 headcount_service = step9_runtime.headcount_service
 performance_service = step9_runtime.performance_service
+
+# Direct deterministic wrappers used only by the conservative chat fast path.
+# The existing services and the normal LangGraph agent remain unchanged.
+direct_attrition_tool = create_check_employee_attrition_tool(
+    employee_search_tool=employee_search_tool,
+    attrition_prediction_tool=attrition_prediction_tool,
+)
 
 # ============================================================
 # STEP 12 — MULTI-ORGANIZATION ONBOARDING
@@ -1753,6 +1763,261 @@ def _tool_names_from_messages(messages: list[Any] | None) -> list[str]:
     return names
 
 
+_FAST_PATH_SIMULATION_HINTS = (
+    "what if",
+    "simulate",
+    "simulation",
+    "scenario",
+)
+
+
+def _deterministic_fast_path_kind(message: str) -> str | None:
+    """Return a fast-path kind only for an obvious single-purpose request."""
+
+    text = (message or "").strip().casefold()
+    if not text or any(hint in text for hint in _FAST_PATH_SIMULATION_HINTS):
+        return None
+
+    employee_id = re.search(r"\bemp\s*[-_]?\s*\d+\b", text)
+    attrition_terms = (
+        "attrition",
+        "attrition risk",
+        "flight risk",
+        "likelihood of leaving",
+        "leave the company",
+        "resign",
+    )
+    replacement_terms = (
+        "replacement",
+        "replace",
+        "successor",
+        "successors",
+        "succession",
+    )
+    headcount_terms = (
+        "headcount",
+        "workforce size",
+        "vacancies",
+        "vacancy",
+        "staffing level",
+        "employee count",
+    )
+    performance_terms = (
+        "performance",
+        "kpi",
+        "score",
+        "rating",
+        "goal achievement",
+        "skill gap",
+        "learning history",
+    )
+
+    matches = []
+    if employee_id and any(term in text for term in attrition_terms):
+        matches.append("attrition")
+    if employee_id and any(term in text for term in replacement_terms):
+        matches.append("replacement")
+    if any(term in text for term in headcount_terms):
+        matches.append("headcount")
+    if any(term in text for term in performance_terms):
+        matches.append("performance")
+
+    return matches[0] if len(matches) == 1 else None
+
+
+def _fast_path_employee_id(message: str) -> str | None:
+    match = re.search(r"\b(emp\s*[-_]?\s*\d+)\b", message or "", re.IGNORECASE)
+    if not match:
+        return None
+    return re.sub(r"[^A-Za-z0-9]", "", match.group(1)).upper()
+
+
+def _run_deterministic_fast_path(
+    message: str,
+) -> tuple[str, dict[str, Any]] | None:
+    kind = _deterministic_fast_path_kind(message)
+    if kind is None:
+        return None
+
+    if kind == "attrition":
+        result = direct_attrition_tool.invoke({
+            "employee_id": _fast_path_employee_id(message),
+        })
+    elif kind == "replacement":
+        result = replacement_recommendation_tool.invoke({
+            "employee_id": _fast_path_employee_id(message),
+        })
+    elif kind == "headcount":
+        result = run_analyze_headcount_tool(
+            message,
+            service=headcount_service,
+        )
+    else:
+        result = run_analyze_employee_performance_tool(
+            {"question": message},
+            service=performance_service,
+        )
+
+    return kind, result if isinstance(result, dict) else {"result": result}
+
+
+def _format_deterministic_fast_path_reply(
+    kind: str,
+    result: dict[str, Any],
+) -> str:
+    """Format deterministic output without a second LLM call."""
+
+    status = str(result.get("status", "error"))
+    if status not in {"completed", "success", "partial", "no_candidates"}:
+        return str(
+            result.get("message")
+            or "The requested HR analysis could not be completed."
+        )
+
+    if kind == "attrition":
+        employee = result.get("employee") or {}
+        employee_name = employee.get("employee_name") or employee.get("employee_id")
+        risk = result.get("attrition", "unavailable")
+        reasons = result.get("top_reasons") or []
+        reply = f"Attrition risk for {employee_name}: {risk}."
+        if reasons:
+            reply += " Main factors: " + "; ".join(map(str, reasons[:3])) + "."
+        return reply
+
+    if kind == "replacement":
+        candidates = result.get("recommended_successors") or []
+        if not candidates:
+            return str(result.get("message") or "No suitable replacement candidates were found.")
+        names = [
+            str(candidate.get("employee_name") or candidate.get("employee_id"))
+            for candidate in candidates[:5]
+        ]
+        return "Top replacement candidates: " + ", ".join(names) + "."
+
+    if kind == "headcount":
+        return str(
+            result.get("summary")
+            or result.get("message")
+            or "The headcount analysis completed successfully."
+        )
+
+    return str(
+        result.get("summary")
+        or result.get("message")
+        or "The performance analysis completed successfully."
+    )
+
+
+def _fast_path_state_update(
+    kind: str,
+    message: str,
+    result: dict[str, Any],
+) -> dict[str, Any]:
+    """Mirror the state fields written by the corresponding agent tool."""
+
+    status = result.get("status", "error")
+    update: dict[str, Any] = {
+        "last_user_intent": kind,
+        "last_tool_status": status,
+        "last_error_message": (
+            result.get("message")
+            if status not in {"completed", "success", "partial", "no_candidates"}
+            else None
+        ),
+    }
+
+    employee = result.get("employee") or {}
+    if employee:
+        update.update({
+            "selected_employee_id": employee.get("employee_id"),
+            "selected_employee_name": employee.get("employee_name"),
+            "selected_department": employee.get("department"),
+            "selected_designation": employee.get("designation"),
+        })
+
+    if kind == "attrition":
+        update.update({
+            "last_attrition_result": {
+                "attrition": result.get("attrition"),
+                "top_reasons": result.get("top_reasons", []),
+            },
+            "last_attrition_reasons": result.get("top_reasons", []),
+            "replacement_offer_pending": result.get("attrition") == "Yes",
+            "pending_clarification": False,
+            "pending_candidates": [],
+            "pending_original_request": None,
+        })
+    elif kind == "replacement":
+        update["last_replacement_result"] = result
+        update["replacement_tool_available"] = True
+        update["replacement_offer_pending"] = False
+    elif kind == "headcount":
+        update.update({
+            "last_headcount_question": message,
+            "last_headcount_result": result,
+        })
+    elif kind == "performance":
+        update.update({
+            "last_performance_question": message,
+            "last_performance_result": result,
+        })
+
+    return update
+
+
+def _persist_fast_path_state(
+    config: dict[str, Any],
+    kind: str,
+    message: str,
+    result: dict[str, Any],
+    *,
+    route: str,
+    request_id: str | None,
+    thread_id: str,
+) -> None:
+    """Persist deterministic results without running a model turn."""
+
+    try:
+        hr_agent.update_state(
+            config,
+            _fast_path_state_update(kind, message, result),
+        )
+    except Exception as error:
+        # A persistence problem must not turn a successful deterministic HR
+        # calculation into a failed request. The normal agent path remains
+        # available for the next turn, and the failure is observable in logs.
+        _log_chat_timing(
+            "chat_fast_path_state_persist_error",
+            route=route,
+            request_id=request_id,
+            thread_id=thread_id,
+            error_type=type(error).__name__,
+        )
+
+
+def _fast_path_response(
+    thread_id: str,
+    kind: str,
+    result: dict[str, Any],
+    started: float,
+) -> dict[str, Any]:
+    employee = result.get("employee") or {}
+    return {
+        "thread_id": thread_id,
+        "reply": _format_deterministic_fast_path_reply(kind, result),
+        "selected_employee_id": employee.get("employee_id"),
+        "selected_employee_name": employee.get("employee_name"),
+        "last_tool_status": result.get("status"),
+        "visualization": False,
+        "chart_type": None,
+        "chart_data": None,
+        "chart_url": None,
+        "visualization_reason": None,
+        "runtime_source": runtime_source_metadata(),
+        "elapsed_ms": _elapsed_ms(started),
+    }
+
+
 @app.post("/chat")
 def chat_with_hr_agent(request: ChatRequest, http_request: Request):
     """Send one message to the HR agent and return its reply.
@@ -1835,6 +2100,49 @@ def chat_with_hr_agent(request: ChatRequest, http_request: Request):
 
             "elapsed_ms": elapsed_ms,
         }
+
+    # Conservative deterministic fast path. Any unclear request continues to
+    # the existing agent flow below, preserving all current LLM behavior.
+    phase_started = perf_counter()
+    try:
+        fast_path = _run_deterministic_fast_path(request.message)
+    except Exception as error:
+        _log_chat_timing(
+            "chat_fast_path_error",
+            route="/chat",
+            request_id=request_id,
+            thread_id=thread_id,
+            elapsed_ms=_elapsed_ms(phase_started),
+            error_type=type(error).__name__,
+        )
+        fast_path = None
+
+    if fast_path is not None:
+        kind, fast_result = fast_path
+        _persist_fast_path_state(
+            config,
+            kind,
+            request.message,
+            fast_result,
+            route="/chat",
+            request_id=request_id,
+            thread_id=thread_id,
+        )
+        _log_chat_timing(
+            "chat_fast_path_done",
+            route="/chat",
+            request_id=request_id,
+            thread_id=thread_id,
+            elapsed_ms=_elapsed_ms(started),
+            fast_path=kind,
+            status=fast_result.get("status"),
+        )
+        return _fast_path_response(
+            thread_id,
+            kind,
+            fast_result,
+            started,
+        )
 
     # --------------------------------------------------------
     # EXISTING HR AGENT FLOW
@@ -2119,6 +2427,60 @@ def stream_chat_with_hr_agent(request: ChatRequest, http_request: Request):
                 "last_tool_status": simulation_result.get("status"),
                 "runtime_source": runtime_source_metadata(),
                 "elapsed_ms": elapsed_ms,
+            })
+            return
+
+        # Use the same conservative deterministic fast path as /chat. The
+        # response is streamed locally, so no additional LLM call is needed.
+        phase_started = perf_counter()
+        try:
+            fast_path = _run_deterministic_fast_path(request.message)
+        except Exception as error:
+            _log_chat_timing(
+                "chat_fast_path_error",
+                route="/chat/stream",
+                request_id=request_id,
+                thread_id=thread_id,
+                elapsed_ms=_elapsed_ms(phase_started),
+                error_type=type(error).__name__,
+            )
+            fast_path = None
+
+        if fast_path is not None:
+            kind, fast_result = fast_path
+            _persist_fast_path_state(
+                config,
+                kind,
+                request.message,
+                fast_result,
+                route="/chat/stream",
+                request_id=request_id,
+                thread_id=thread_id,
+            )
+            _log_chat_timing(
+                "chat_fast_path_done",
+                route="/chat/stream",
+                request_id=request_id,
+                thread_id=thread_id,
+                elapsed_ms=_elapsed_ms(started),
+                fast_path=kind,
+                status=fast_result.get("status"),
+            )
+            fast_response = _fast_path_response(
+                thread_id,
+                kind,
+                fast_result,
+                started,
+            )
+            yield event({
+                "type": "status",
+                "text": "Completed deterministic HR analysis.",
+            })
+            for text_chunk in _stream_text_chunks(fast_response["reply"]):
+                yield event({"type": "token", "text": text_chunk})
+            yield event({
+                "type": "done",
+                **fast_response,
             })
             return
 
