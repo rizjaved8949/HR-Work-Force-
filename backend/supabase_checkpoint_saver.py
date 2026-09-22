@@ -314,8 +314,8 @@ class SupabaseCheckpointSaver(BaseCheckpointSaver[str]):
         error_type: str | None = None
 
         try:
-            for write_idx, (channel, value) in enumerate(writes):
-                row = {
+            rows = [
+                {
                     "thread_id": thread_id,
                     "checkpoint_ns": checkpoint_ns,
                     "checkpoint_id": checkpoint_id,
@@ -325,8 +325,11 @@ class SupabaseCheckpointSaver(BaseCheckpointSaver[str]):
                     "value": json.dumps(value, default=str),
                     "task_path": task_path,
                 }
+                for write_idx, (channel, value) in enumerate(writes)
+            ]
+            if rows:
                 self._table(self.writes_table).upsert(
-                    row,
+                    rows,
                     on_conflict="thread_id,checkpoint_ns,checkpoint_id,task_id,write_idx",
                 ).execute()
         except Exception as error:
