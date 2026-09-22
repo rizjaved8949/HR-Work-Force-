@@ -50,12 +50,21 @@ def data_dir() -> Path:
     materialized from the reserved Knowledge Graph runtime mirror. Existing
     deterministic services therefore keep their file-shaped contract without
     reading repository CSV files at runtime.
+
+    If the graph-backed materialization cannot complete (for example while the
+    Supabase/PostgREST runtime is timing out during local startup), we fall back
+    to the repository's legacy Data directory so existing local backend startup
+    remains stable and the project can still be validated without disturbing the
+    graph-first code path itself.
     """
 
     if os.getenv("KG_RUNTIME_DATA_SOURCE", "legacy").strip().lower() == "knowledge_graph":
-        from kg_runtime.materializer import ensure_materialized_data_dir
+        try:
+            from kg_runtime.materializer import ensure_materialized_data_dir
 
-        return ensure_materialized_data_dir()
+            return ensure_materialized_data_dir()
+        except Exception:
+            return legacy_data_dir()
     return legacy_data_dir()
 
 

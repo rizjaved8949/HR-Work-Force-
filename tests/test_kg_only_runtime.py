@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import importlib
 from pathlib import Path
 
 from kg_runtime.bootstrap import bootstrap_directory
@@ -98,3 +99,27 @@ def test_kg_llm_graph_only_forces_step9_graph_only(monkeypatch) -> None:
     assert config.mode == RuntimeMode.GRAPH_ONLY
     assert config.allow_legacy_fallback is False
     assert config.tenant_id == "ORG-1"
+
+
+def test_data_dir_falls_back_to_legacy_when_kg_runtime_unavailable(monkeypatch, tmp_path: Path) -> None:
+    monkeypatch.setenv("KG_RUNTIME_DATA_SOURCE", "knowledge_graph")
+    monkeypatch.setenv("DATA_DIR", str(tmp_path / "Data"))
+    monkeypatch.setenv("STEP9_TENANT_ID", "ORG-1")
+
+    legacy_dir = tmp_path / "Data"
+    legacy_dir.mkdir(parents=True, exist_ok=True)
+
+    import paths
+
+    def _raise_materialize() -> Path:
+        raise RuntimeError("Supabase/PostgREST timeout while materializing runtime datasets")
+
+    import kg_runtime.materializer as materializer_module
+
+    monkeypatch.setattr(materializer_module, "ensure_materialized_data_dir", _raise_materialize)
+    importlib.reload(paths)
+
+    try:
+        assert paths.data_dir() == legacy_dir
+    finally:
+        importlib.reload(paths)
