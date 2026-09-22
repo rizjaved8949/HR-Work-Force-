@@ -122,7 +122,15 @@ silently falling back.
 | `DATA_DIR` | Shared CSV folder (relative to repo root, or absolute) |
 | `MODEL_PATH` | Saved CatBoost model |
 | `SUCCESSOR_LLM_ENABLED` | `false` uses fast deterministic successor reasons |
+| `USE_AGENT_SUPABASE_MEMORY` | `true` enables durable LangGraph conversation checkpoints |
+| `REQUIRE_AGENT_SUPABASE_MEMORY` | `true` prevents silent in-memory fallback in production |
 | `APP_HOST` / `APP_PORT` | Server bind address |
+
+For Render deployment, use [deploy/production.env.example](deploy/production.env.example)
+as the production environment template. Enter `OPENROUTER_API_KEY`, `SUPABASE_URL`,
+`SUPABASE_PUBLISHABLE_KEY`, and `SUPABASE_SECRET_KEY` in Render's secret environment
+variables; do not commit their values. The repository's `render.yaml` declares the
+non-secret defaults and marks these credentials with `sync: false`.
 
 Check what is actually in effect with `GET /health`.
 

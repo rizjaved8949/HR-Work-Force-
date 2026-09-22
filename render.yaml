@@ -27,13 +27,32 @@ services:
       - key: OPENROUTER_TEMPERATURE
         value: "0"
       - key: OPENROUTER_MAX_TOKENS
-        value: "1200"
+        value: "800"
       - key: OPENROUTER_MAX_RETRIES
-        value: "3"
+        value: "1"
       - key: OPENROUTER_TIMEOUT_SECONDS
-        value: "120"
+        value: "45"
       - key: OPENROUTER_REASONING
         value: "off"
+
+      # Existing Supabase project used for graph data, auth, and chat memory.
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_PUBLISHABLE_KEY
+        sync: false
+      - key: SUPABASE_SECRET_KEY
+        sync: false
+      - key: USE_AGENT_SUPABASE_MEMORY
+        value: "true"
+      - key: REQUIRE_AGENT_SUPABASE_MEMORY
+        value: "true"
+
+      - key: GRAPH_BACKEND
+        value: supabase
+      - key: SUPABASE_GRAPH_NODES_TABLE
+        value: kg_nodes
+      - key: SUPABASE_GRAPH_RELATIONSHIPS_TABLE
+        value: kg_relationships
 
       # Repo-relative paths, resolved against the app root by backend/paths.py.
       - key: DATA_DIR
@@ -49,6 +68,6 @@ services:
       - key: SUCCESSOR_LLM_ENABLED
         value: "false"
       - key: SUCCESSOR_OPENROUTER_TIMEOUT_SECONDS
-        value: "90"
+        value: "50"
       - key: SUCCESSOR_OPENROUTER_MAX_TOKENS
-        value: "900"
+        value: "600"
