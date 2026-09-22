@@ -2131,7 +2131,12 @@ def stream_chat_with_hr_agent(request: ChatRequest, http_request: Request):
             # text, so nothing is shown until the answer itself starts.
             phase_started = perf_counter()
             for chunk, _metadata in hr_agent.stream(
-                {"messages": [{"role": "user", "content": request.message}]},
+                {
+                    "messages": [
+                        {"role": "user", "content": request.message}
+                    ],
+                    **_chat_actor_state(http_request),
+                },
                 config=config,
                 stream_mode="messages",
             ):
