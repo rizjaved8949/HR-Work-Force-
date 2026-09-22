@@ -9,7 +9,7 @@ class TenantGraphContextRequest(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     message: str = Field(..., min_length=1, max_length=5000)
-    max_nodes: int = Field(default=80, ge=10, le=200)
+    max_nodes: int = Field(default=50, ge=10, le=150)
 
 
 class TenantGraphChatRequest(BaseModel):
@@ -17,7 +17,7 @@ class TenantGraphChatRequest(BaseModel):
 
     message: str = Field(..., min_length=1, max_length=5000)
     thread_id: str | None = Field(default=None, max_length=200)
-    max_nodes: int = Field(default=80, ge=10, le=200)
+    max_nodes: int = Field(default=50, ge=10, le=150)
 
 
 class TenantGraphEvidence(BaseModel):

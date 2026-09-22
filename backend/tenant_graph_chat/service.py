@@ -156,9 +156,9 @@ class TenantGraphChatService:
         *,
         tenant_id: str,
         message: str,
-        max_nodes: int = 80,
+        max_nodes: int = 50,
     ) -> TenantGraphEvidence:
-        max_nodes = max(10, min(int(max_nodes), 200))
+        max_nodes = max(10, min(int(max_nodes), 150))
         query_tokens = _tokens(message)
         entity_types = self._entity_types_for(message)
         per_type = max(20, min(500, max_nodes * 5))
@@ -254,7 +254,7 @@ class TenantGraphChatService:
         tenant_id: str,
         message: str,
         thread_id: str | None = None,
-        max_nodes: int = 80,
+        max_nodes: int = 50,
     ) -> dict[str, Any]:
         evidence = self.build_context(
             tenant_id=tenant_id,
@@ -269,7 +269,7 @@ class TenantGraphChatService:
         # Avoid an unbounded prompt if a tenant contains unusually large JSON
         # properties.  The structured response still exposes the full bounded
         # evidence object to the frontend.
-        prompt_context = evidence_json[:80_000]
+        prompt_context = evidence_json[:50_000]
         messages = [
             {
                 "role": "system",
