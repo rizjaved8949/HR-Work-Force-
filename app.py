@@ -1804,6 +1804,16 @@ def _deterministic_fast_path_kind(message: str) -> str | None:
     )
     performance_terms = (
         "performance",
+        "performer",
+        "performers",
+        "top performer",
+        "top performers",
+        "best performer",
+        "best performers",
+        "ranking",
+        "rank",
+        "highest score",
+        "lowest score",
         "kpi",
         "score",
         "rating",
