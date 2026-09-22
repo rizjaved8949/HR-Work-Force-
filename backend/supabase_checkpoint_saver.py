@@ -9,6 +9,7 @@ thread metadata required by the existing LangGraph conversation flow.
 from __future__ import annotations
 
 import json
+import logging
 import os
 from collections.abc import Iterator, Sequence
 from typing import Any, Callable
@@ -24,6 +25,9 @@ from langgraph.checkpoint.base import (
 from langgraph.checkpoint.memory import InMemorySaver
 
 from auth.supabase_client import get_supabase_admin_client
+
+
+logger = logging.getLogger(__name__)
 
 
 class SupabaseCheckpointSaver(BaseCheckpointSaver[str]):
@@ -327,11 +331,33 @@ def create_agent_checkpointer() -> BaseCheckpointSaver[str] | InMemorySaver:
         "off",
     }
     if not enabled:
+        logger.warning(
+            "Agent Supabase memory is disabled; using InMemorySaver."
+        )
         return InMemorySaver()
 
     try:
         saver = SupabaseCheckpointSaver(client_factory=get_supabase_admin_client)
         saver._table(saver.checkpoints_table).select("thread_id").limit(1).execute()
+        logger.info(
+            "Agent Supabase memory is active; using table %s.",
+            saver.checkpoints_table,
+        )
         return saver
-    except Exception:
+    except Exception as error:
+        require_persistent_memory = (
+            os.getenv("REQUIRE_AGENT_SUPABASE_MEMORY", "false")
+            .strip()
+            .lower()
+            in {"1", "true", "yes", "on"}
+        )
+        if require_persistent_memory:
+            raise RuntimeError(
+                "Supabase agent memory is required but could not be initialized. "
+                "Check the agent memory tables and Supabase credentials."
+            ) from error
+
+        logger.exception(
+            "Supabase agent memory unavailable; falling back to InMemorySaver."
+        )
         return InMemorySaver()
