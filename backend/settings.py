@@ -103,59 +103,41 @@ class LLMSettings:
 
 
 def get_llm_settings() -> LLMSettings:
-    """Build the agent's model configuration from .env.
-
-    `OPENROUTER_API_KEY` and `OPENROUTER_MODEL` are required so a typo or a
-    missing line fails loudly at startup instead of silently falling back to
-    some other model.
-    """
-
-    fallback_models = tuple(
-        model.strip()
-        for model in os.getenv("OPENROUTER_FALLBACK_MODELS", "").split(",")
-        if model.strip()
-    )
+    """Build Ollama model configuration from .env."""
 
     return LLMSettings(
-    api_key=require_env("OPENROUTER_API_KEY"),
-    model=require_env("OPENROUTER_MODEL"),
+        api_key=require_env("OLLAMA_API_KEY"),
 
-    fallback_models=tuple(
-        model
-        for model in (
-            _env_str("OPENROUTER_FALLBACK_MODEL_1", ""),
-            _env_str("OPENROUTER_FALLBACK_MODEL_2", ""),
-        )
-        if model
-    ),
+        model=require_env("OLLAMA_MODEL"),
 
-    base_url=_env_str(
-        "OPENROUTER_BASE_URL",
-        "https://openrouter.ai/api/v1",
-    ).rstrip("/"),
+        # Ollama does not support OpenRouter fallback models
+        fallback_models=(),
 
-    temperature=_env_float(
-        "OPENROUTER_TEMPERATURE",
-        0.0,
-    ),
+        base_url=_env_str(
+            "OLLAMA_BASE_URL",
+            "http://localhost:11434/v1",
+        ).rstrip("/"),
 
-    max_tokens=_env_int(
-        "OPENROUTER_MAX_TOKENS",
-        600,
-    ),
+        temperature=_env_float(
+            "OLLAMA_TEMPERATURE",
+            0.2,
+        ),
 
-    max_retries=_env_int(
-        "OPENROUTER_MAX_RETRIES",
-        0,
-    ),
+        max_tokens=_env_int(
+            "OLLAMA_MAX_TOKENS",
+            700,
+        ),
 
-    timeout_seconds=_env_float(
-        "OPENROUTER_TIMEOUT_SECONDS",
-        40.0,
-    ),
+        max_retries=_env_int(
+            "OLLAMA_MAX_RETRIES",
+            1,
+        ),
 
-    reasoning=_env_str(
-        "OPENROUTER_REASONING",
-        "off",
-    ).lower(),
-)
+        timeout_seconds=_env_float(
+            "OLLAMA_TIMEOUT_SECONDS",
+            120,
+        ),
+
+        # Ollama does not use OpenRouter reasoning parameter
+        reasoning="off",
+    )
