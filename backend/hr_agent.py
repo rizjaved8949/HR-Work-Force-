@@ -86,21 +86,20 @@ def create_hr_reasoning_agent(
     """
 
     # --------------------------------------------------------
-    # LOAD OPENROUTER CONFIGURATION FROM .env
+    # LOAD THE SELECTED LLM PROVIDER CONFIGURATION
     # --------------------------------------------------------
 
-    # Every value below comes from the single project .env. Nothing
-    # about the model is hardcoded here, so switching models is a
-    # one-line edit in .env with no code change.
+    # Process environment variables override the project .env. The settings
+    # select Ollama locally and OpenRouter on Render, unless LLM_PROVIDER
+    # explicitly selects one provider.
     llm = get_llm_settings()
 
     # --------------------------------------------------------
-    # CREATE THE OPENROUTER REASONING MODEL
+    # CREATE THE SELECTED REASONING MODEL
     # --------------------------------------------------------
 
-    # OpenRouter exposes an OpenAI-compatible API, so an OpenAI client is
-    # pointed at the OpenRouter base URL. This avoids depending on a
-    # separate OpenRouter integration package.
+    # Both providers expose an OpenAI-compatible API. Reuse the existing
+    # client and retry behavior with the selected provider base URL.
     #
     # The Resilient subclass additionally retries provider errors that
     # OpenRouter returns inside a 200 response, which the OpenAI SDK's own
@@ -120,15 +119,14 @@ def create_hr_reasoning_agent(
         timeout=llm.timeout_seconds,
         transient_max_attempts=llm.max_retries + 1,
 
-        # Turns off the model's chain of thought when OPENROUTER_REASONING
-        # is "off". Those tokens are pure latency for this workload.
+        # OpenRouter reasoning/fallback options; empty for Ollama.
         extra_body=llm.extra_body(),
 
-        # OpenRouter uses these for attribution on its dashboard.
+        # Send OpenRouter attribution headers only to OpenRouter.
         default_headers={
             "HTTP-Referer": "http://localhost:8000",
             "X-Title": "HR Workforce Intelligence Backend",
-        },
+        } if llm.provider == "openrouter" else {},
     )
 
     # --------------------------------------------------------

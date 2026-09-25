@@ -1,7 +1,8 @@
-"""Every language-model setting, read from the single project .env.
+"""LLM configuration from environment variables and the project .env.
 
-No model name, key, or tuning value is hardcoded anywhere in the codebase.
-Changing `.env` is the only way to change which model the agent uses.
+LLM_PROVIDER=auto (the default) selects OpenRouter on Render and Ollama
+elsewhere. Set LLM_PROVIDER=ollama or openrouter to select explicitly.
+Real environment variables always take precedence over the project .env.
 """
 
 from __future__ import annotations
@@ -21,18 +22,18 @@ load_dotenv(ENV_FILE, override=False)
 
 
 class MissingConfigurationError(RuntimeError):
-    """A required .env value is absent or blank."""
+    """A required configuration value is absent, blank, or invalid."""
 
 
 def require_env(variable_name: str) -> str:
-    """Return a required .env value, or fail with an actionable message."""
+    """Return a required environment value, or fail with an actionable message."""
 
     value = os.getenv(variable_name)
 
     if value is None or not value.strip():
         raise MissingConfigurationError(
-            f"{variable_name} is missing from {ENV_FILE}. "
-            f"Add a line such as: {variable_name}=<value>"
+            f"{variable_name} is missing or blank. Set it in the process "
+            f"environment (Render: Environment) or in {ENV_FILE}."
         )
 
     return value.strip()
@@ -73,7 +74,7 @@ def _env_int(variable_name: str, default: int) -> int:
 
 @dataclass(frozen=True)
 class LLMSettings:
-    """OpenRouter configuration for the main HR reasoning agent."""
+    """Selected provider configuration for the main HR reasoning agent."""
 
     api_key: str
     model: str
@@ -84,9 +85,14 @@ class LLMSettings:
     max_retries: int
     timeout_seconds: float
     reasoning: str
+    # Keep the original constructor fields/order compatible with other callers.
+    provider: str = "openrouter"
 
     def extra_body(self) -> dict:
-        """OpenRouter-specific request options."""
+        """Return OpenRouter options only for OpenRouter requests."""
+
+        if self.provider != "openrouter":
+            return {}
 
         body: dict = {}
         setting = self.reasoning.lower()
@@ -102,8 +108,52 @@ class LLMSettings:
         return body
 
 
+def get_llm_provider() -> str:
+    """Resolve the provider for this backend process, without network probes."""
+
+    provider = _env_str("LLM_PROVIDER", "auto").lower()
+
+    if provider == "auto":
+        # Render documents RENDER=true as its runtime detection flag.
+        return (
+            "openrouter"
+            if _env_str("RENDER", "false").lower() == "true"
+            else "ollama"
+        )
+
+    if provider not in {"ollama", "openrouter"}:
+        raise MissingConfigurationError(
+            "LLM_PROVIDER must be one of: auto, ollama, openrouter."
+        )
+
+    return provider
+
+
 def get_llm_settings() -> LLMSettings:
-    """Build Ollama model configuration from .env."""
+    """Read only the selected provider's settings; never switch on failure."""
+
+    provider = get_llm_provider()
+
+    if provider == "openrouter":
+        fallback_models = tuple(
+            model
+            for name in ("OPENROUTER_FALLBACK_MODEL_1", "OPENROUTER_FALLBACK_MODEL_2")
+            if (model := _env_str(name, ""))
+        )
+        return LLMSettings(
+            api_key=require_env("OPENROUTER_API_KEY"),
+            model=require_env("OPENROUTER_MODEL"),
+            fallback_models=fallback_models,
+            base_url=_env_str(
+                "OPENROUTER_BASE_URL", "https://openrouter.ai/api/v1"
+            ).rstrip("/"),
+            temperature=_env_float("OPENROUTER_TEMPERATURE", 0.0),
+            max_tokens=_env_int("OPENROUTER_MAX_TOKENS", 1200),
+            max_retries=_env_int("OPENROUTER_MAX_RETRIES", 3),
+            timeout_seconds=_env_float("OPENROUTER_TIMEOUT_SECONDS", 120),
+            reasoning=_env_str("OPENROUTER_REASONING", "off"),
+            provider=provider,
+        )
 
     return LLMSettings(
         api_key=require_env("OLLAMA_API_KEY"),
@@ -140,4 +190,5 @@ def get_llm_settings() -> LLMSettings:
 
         # Ollama does not use OpenRouter reasoning parameter
         reasoning="off",
+        provider=provider,
     )
